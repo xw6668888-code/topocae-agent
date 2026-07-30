@@ -1,0 +1,100 @@
+
+=== IDENTITY AND HOST ===
+user=ywx1
+host=node6
+home=/home/ywx1
+target=/home/ywx1
+
+=== TARGET DIRECTORY ===
+Filesystem                        Type  Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv ext4  1.8T  1.3T  375G  78% /
+Filesystem                           Inodes   IUsed     IFree IUse% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv 116867072 4597078 112269994    4% /
+quota: NOT_FOUND_OR_NOT_EXPOSED
+target_writable=true
+
+=== PRIVILEGES ===
+passwordless_sudo=false
+docker_group=false
+
+=== PYTHON BOOTSTRAP ===
+Python 3.12.3
+python_venv_module=true
+pip 24.0 from /usr/lib/python3/dist-packages/pip (python 3.12)
+nvcc=NOT_FOUND
+
+=== DNS ===
+pypi.org                     151.101.128.223 STREAM pypi.org
+files.pythonhosted.org       151.101.0.223   STREAM dualstack.python.map.fastly.net
+conda.anaconda.org           104.19.145.37   STREAM conda.anaconda.org
+repo.anaconda.com            104.16.191.158  STREAM repo.anaconda.com
+huggingface.co               162.125.32.12   STREAM huggingface.co
+github.com                   20.205.243.166  STREAM github.com
+
+=== HTTPS ENDPOINTS ===
+-- PyPI: https://pypi.org/simple/pip/
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  103k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+cache-control: max-age=600, public
+access-control-allow-origin: *
+access-control-allow-headers: Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+referrer-policy: origin-when-cross-origin
+access-control-max-age: 86400
+access-control-allow-methods: GET
+access-control-expose-headers: X-PyPI-Last-Serial
+content-security-policy: default-src 'none'; sandbox allow-top-navigation
+-- Conda Forge: https://conda.anaconda.org/conda-forge/linux-64/repodata.json.zst
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 53.1M    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+date: Sun, 26 Jul 2026 08:39:04 GMT
+content-type: binary/octet-stream
+content-length: 55719173
+cf-ray: a212177a3ab3c865-HKG
+cf-cache-status: HIT
+accept-ranges: bytes
+age: 1200
+cache-control: public, max-age=1200
+-- Miniforge: https://github.com/conda-forge/miniforge/releases/latest
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0HTTP/2 302 
+date: Sun, 26 Jul 2026 08:39:04 GMT
+content-type: text/html; charset=utf-8
+vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, X-GitHub-Client-Version, Sec-Fetch-Site,Accept-Encoding, Accept, X-Requested-With
+location: https://github.com/conda-forge/miniforge/releases/tag/26.3.2-3
+cache-control: no-cache
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+-- Hugging Face: https://huggingface.co/Qwen/Qwen3-8B
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0
+curl: (28) Failed to connect to huggingface.co port 443 after 5001 ms: Timeout was reached
+
+=== GPU AVAILABILITY ===
+0, NVIDIA A40, 46068 MiB, 9984 MiB, 100 %, Default
+1, NVIDIA A40, 46068 MiB, 9982 MiB, 44 %, Default
+
+Active compute processes:
+GPU-49f69deb-00b6-0bb3-232c-b8fdb81c1b95, 1241543, /opt/conda/envs/cird/bin/python, 4980 MiB
+GPU-49f69deb-00b6-0bb3-232c-b8fdb81c1b95, 1248627, /opt/conda/envs/cird/bin/python, 4980 MiB
+GPU-ab621f7f-adf4-ef8b-211d-42d4808ce3fe, 1241659, /opt/conda/envs/cird/bin/python, 4980 MiB
+GPU-ab621f7f-adf4-ef8b-211d-42d4808ce3fe, 1248744, /opt/conda/envs/cird/bin/python, 4980 MiB
+
+=== TRANSFER TOOLS ===
+ssh=/usr/bin/ssh
+scp=/usr/bin/scp
+rsync=/usr/bin/rsync
+tar=/usr/bin/tar
+zstd=/usr/bin/zstd
+sha256sum=/usr/bin/sha256sum
+
+=== NOTES ===
+No installation or system modification was attempted.
+Do not append passwords, private keys, tokens, proxy credentials, or other secrets to this report.

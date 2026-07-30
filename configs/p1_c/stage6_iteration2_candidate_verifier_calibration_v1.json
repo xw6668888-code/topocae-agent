@@ -1,0 +1,58 @@
+{
+  "schema_version": "topocae_p1_c_stage6_iteration_2_plan_1",
+  "iteration_index": 2,
+  "maximum_allowed_iterations": 2,
+  "frozen_before_iteration2_selection_results": true,
+  "frozen_at_utc": "2026-07-19T12:08:00Z",
+  "evidence_scope": "Synthetic-Val only",
+  "iteration1_result": "reports/p1_c_iterations_v1/stage6_iteration1_result_v2.json",
+  "iteration1_result_sha256": "823b031028f9cccbfab2a53f512cfb8334cf2ac77a461f9ac83ecd1a71e7e01b",
+  "single_falsifiable_hypothesis": "The remaining failures are caused by a miscalibrated candidate-verifier confidence interface: verifier-v4 treats the older face-GNN consensus as a near-hard veto even when the new generic cylinder-polarity candidate evidence is decisive, while record-level candidate threshold selection can choose high confidence cutoffs that destroy per-instance coverage. A polarity-aware, class-agnostic consensus fusion plus joint selection of one global post-verifier confidence threshold and one global decode tolerance on Synthetic-Val will make all six formal clean runs satisfy object, exact, context-gap, and worst-class gates.",
+  "change_scope": {
+    "layer": "candidate-verifier confidence interface only",
+    "candidate_models_retrained": false,
+    "gnn_models_retrained": false,
+    "polarity_aware_consensus": "effective_agreement = agreement + abs(mean_cylinder_polarity) * (1 - agreement)",
+    "confidence_correction": "0.05 + 0.95 * effective_agreement",
+    "class_names_used": false,
+    "thresholds_per_class_or_part": false,
+    "fixed_global_candidate_confidence_grid": [0.0, 0.01, 0.02, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95],
+    "fixed_global_decode_tolerance_grid": [0.0, 0.0001, 0.0005, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1],
+    "other_candidate_thresholds": "frozen from each iteration-1 Synthetic-Val selector"
+  },
+  "formal_runs": {
+    "clean_5000": [20260718, 20260719, 20260720],
+    "clean_7200": [20260718, 20260719, 20260720]
+  },
+  "selection_function": {
+    "split": "Synthetic-Val only",
+    "lexicographic_objective": [
+      "all(object_macro_f1>=0.90, exact_instance_ratio>=0.88, worst_active_class_f1>=0.80)",
+      "maximize worst_active_class_f1",
+      "maximize mean(object_macro_f1, object_micro_f1, exact_instance_ratio, boundary_f1)",
+      "maximize exact_instance_ratio",
+      "prefer lower global confidence threshold",
+      "prefer lower decode tolerance"
+    ],
+    "one_global_confidence_per_run": true,
+    "one_global_decode_tolerance_per_run": true
+  },
+  "keep_rule": {
+    "all_six_runs_pass": true,
+    "object_macro_f1_each_run_min": 0.90,
+    "exact_instance_ratio_each_run_min": 0.88,
+    "worst_class_object_f1_each_run_min": 0.80,
+    "single_multi_object_macro_gap_abs_max": 0.05,
+    "matched_size_object_noninferiority_margin": 0.02
+  },
+  "failure_action": "stop all tuning after this second iteration and request supervisor decision; do not bypass Stage 6",
+  "contracts": {
+    "real_dev_used": false,
+    "holdout_v2_results_used": false,
+    "holdout_v3_used": false,
+    "test_part_s3_accessed": false,
+    "real_specific_thresholds": false,
+    "llm_step_recognition": false,
+    "superpower_skills_used": false
+  }
+}

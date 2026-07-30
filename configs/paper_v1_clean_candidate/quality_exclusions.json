@@ -1,0 +1,18 @@
+{
+  "schema": "topocae_paper_v1_quality_exclusions_v1",
+  "phase": "P1-A1",
+  "source_split": "output_generation_v5_1_augmented_full_5400_clean/splits/train.json",
+  "exclusions": {
+    "train": {
+      "full_1767": "graph has 39 faces while the paired valid STEP has 22",
+      "full_1254": "graph has 36 faces while the paired valid STEP has 20",
+      "full_3964": "graph has 33 faces while the paired valid STEP has 17",
+      "full_4020": "graph has 37 faces while the paired valid STEP has 20",
+      "full_3829": "graph has 29 faces while the paired valid STEP has 13"
+    },
+    "val": {},
+    "test": {}
+  },
+  "policy": "Excluded from every Phase 1 auxiliary-model dataset, metric, and human-review sample. Original data and P0 artifacts are not modified.",
+  "source_gnn_disclosure": "The pre-existing frozen GNN was trained before this audit and saw these five synthetic graphs. They do not overlap Val/Test and contain no Real/S3 data; no GNN retraining is performed in P1-A1."
+}

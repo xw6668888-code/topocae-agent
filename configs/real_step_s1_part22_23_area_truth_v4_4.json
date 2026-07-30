@@ -1,0 +1,36 @@
+{
+  "schema": "cae_area_truth_v1",
+  "description": "Area-based manual truth for regenerated complex test parts part22 and part23.",
+  "samples": {
+    "part22": [
+      { "area": 121474.15, "macro": "rib", "face_count": 3 },
+      { "area": 121474.15, "macro": "rib", "face_count": 3 },
+      { "area": 1096.02, "macro": "chamfer", "face_count": 1 },
+      { "area": 989.95, "macro": "chamfer", "face_count": 1 },
+      { "area": 1096.02, "macro": "chamfer", "face_count": 1 },
+      { "area": 3141.59, "macro": "through_hole_round", "face_count": 1 },
+      { "area": 3141.59, "macro": "through_hole_round", "face_count": 1 },
+      { "area": 1570.80, "macro": "fillet", "face_count": 1 },
+      { "area": 1570.80, "macro": "fillet", "face_count": 1 },
+      { "area": 1319.47, "macro": "fillet", "face_count": 1 },
+      { "area": 1319.47, "macro": "fillet", "face_count": 1 },
+      { "area": 35966.79, "macro": "slot_o", "face_count": 1 },
+      { "area": 17009.73, "macro": "slot_v", "face_count": 2 }
+    ],
+    "part23": [
+      { "area": 121474.15, "macro": "rib", "face_count": 3 },
+      { "area": 121474.15, "macro": "rib", "face_count": 3 },
+      { "area": 1096.02, "macro": "chamfer", "face_count": 1 },
+      { "area": 989.95, "macro": "chamfer", "face_count": 1 },
+      { "area": 1096.02, "macro": "chamfer", "face_count": 1 },
+      { "area": 3141.59, "macro": "through_hole_round", "face_count": 1 },
+      { "area": 3141.59, "macro": "through_hole_round", "face_count": 1 },
+      { "area": 1570.80, "macro": "fillet", "face_count": 1 },
+      { "area": 1570.80, "macro": "fillet", "face_count": 1 },
+      { "area": 1319.47, "macro": "fillet", "face_count": 1 },
+      { "area": 1319.47, "macro": "fillet", "face_count": 1 },
+      { "area": 35966.79, "macro": "slot_o", "face_count": 1 },
+      { "area": 17009.73, "macro": "slot_v", "face_count": 2 }
+    ]
+  }
+}

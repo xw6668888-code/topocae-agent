@@ -1,0 +1,85 @@
+{
+  "schema_version": "topocae_p1_c_training_plan_1",
+  "frozen_before_p1_c_model_results": true,
+  "selection_data": "Synthetic-Val only",
+  "architecture_reference": "reports/p1_b_training_runs_v1/same_instance_seed_20260718/config.json",
+  "architecture": {
+    "kind": "EdgeAwareMultiHeadGNN",
+    "node_dim": 39,
+    "edge_dim": 20,
+    "primitive_class_count": 8,
+    "macro_class_count": 19,
+    "semantic_class_count": 64,
+    "hidden_dim": 128,
+    "num_layers": 4,
+    "primitive_embedding_dim": 16,
+    "dropout": 0.08
+  },
+  "optimization": {
+    "epochs": 56,
+    "batch_size": 192,
+    "learning_rate": 0.0025,
+    "weight_decay": 0.0001,
+    "patience": 14,
+    "label_smoothing": 0.01,
+    "loss_weights": {
+      "macro": 1.0,
+      "semantic": 0.55,
+      "same_instance": 0.65
+    },
+    "early_stop_minimum_epoch": 20
+  },
+  "formal_variants": {
+    "clean_5000": {
+      "seeds": [20260718, 20260719, 20260720],
+      "package": "output_generation_p1_c_clean_context_7200/training_packages/clean_5000",
+      "instance_balanced_loss": true,
+      "canonical_patch": true
+    },
+    "clean_7200": {
+      "seeds": [20260718, 20260719, 20260720],
+      "package": "output_generation_p1_c_clean_context_7200/training_packages/clean_7200",
+      "instance_balanced_loss": true,
+      "canonical_patch": true
+    },
+    "single_only": {
+      "seeds": [20260718],
+      "package": "output_generation_p1_c_clean_context_7200/training_packages/single_only",
+      "instance_balanced_loss": true,
+      "canonical_patch": true
+    },
+    "no_instance_balanced_loss": {
+      "seeds": [20260718],
+      "package": "output_generation_p1_c_clean_context_7200/training_packages/clean_7200",
+      "instance_balanced_loss": false,
+      "canonical_patch": true
+    },
+    "no_canonical_patch": {
+      "seeds": [20260718],
+      "package": "output_generation_p1_c_clean_context_7200/training_packages/clean_7200",
+      "instance_balanced_loss": true,
+      "canonical_patch": false
+    }
+  },
+  "selection_function": {
+    "gnn_epoch_score": "mean(face_macro_f1_all, semantic_macro_f1_active, same_instance_edge_f1_at_0_5)",
+    "same_instance_threshold": "maximize F1 on Synthetic-Val global undirected edges",
+    "final_model_default": "clean_7200_seed_20260718",
+    "seed_aggregation_allowed": false,
+    "real_dev_allowed": false,
+    "holdout_v2_allowed": false,
+    "holdout_v3_allowed_before_freeze": false
+  },
+  "candidate_classifier": {
+    "architecture": "P1-B candidate topology classifier unchanged",
+    "selection": "Synthetic-Val only",
+    "balanced_by_sample_instance_class": true
+  },
+  "contracts": {
+    "test_part_s3_accessed": false,
+    "real_specific_thresholds": false,
+    "llm_step_recognition": false,
+    "old_holdout_tuning": false,
+    "superpower_skills_used": false
+  }
+}

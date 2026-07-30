@@ -1,0 +1,31 @@
+{
+  "schema": "topocae_paper_v1_clean_recognition_v1",
+  "phase": "P1-A1",
+  "selected_variant": "clean_core",
+  "entry": "evaluate_paper_v1_recognition_v5.py",
+  "models": {
+    "gnn": "output_generation_v5_5_v51dist_looprole_5400/model_runs/edge_aware_v5_5_expanded_v51_compat_24dim/best.pt",
+    "candidate_classifier": "reports/paper_v1_p1/model_runs/candidate_topology_clean/model.joblib",
+    "rib_candidate_proposer": null,
+    "rib_boundary_classifier": null
+  },
+  "thresholds": {
+    "same_instance": 0.5,
+    "candidate_classifier_min_confidence": 0.5
+  },
+  "output_contract": {
+    "float_significant_digits": 12,
+    "candidate_diagnostic_source": "candidate_proposal",
+    "candidate_record_sort": "action,proposal_macro,predicted_label,face_indices,confidence"
+  },
+  "formal_datasets": [
+    "Synthetic-Test",
+    "Real-Dev/test_part",
+    "Real-Dev/test_part_s",
+    "Real-Dev/test_part_s1",
+    "Real-Dev/test_part_s2",
+    "Rotation-Dev/test_part_s traced groups"
+  ],
+  "real_dev_used_for_training_or_selection": false,
+  "forbidden_s3_reads": true
+}

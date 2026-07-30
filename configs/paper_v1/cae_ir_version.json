@@ -1,0 +1,52 @@
+{
+  "schema_version": "topocae_cae_ir_version_1",
+  "cae_ir_version": "1.0.0-h2.01",
+  "status": "frozen_h2_01",
+  "frozen_at_utc": "2026-07-20T14:16:44.945998+00:00",
+  "analysis_type": "static_structural",
+  "policy_revision": "h2_01_approved_2026-07-20",
+  "schema_ids": {
+    "intent": "cae-intent/1.0.0",
+    "intent_result": "cae-intent-result/1.0.0",
+    "grounding_context": "cae-grounding-context/1.0.0"
+  },
+  "counts": {
+    "canonical_features": 17,
+    "selectable_roles": 60,
+    "unsupported_roles": 3,
+    "operation_types": 7,
+    "compatible_feature_role_operations": 166,
+    "incompatible_feature_role_operations": 134,
+    "approved_requirements": 33,
+    "test_cases": 265
+  },
+  "h2_01": {
+    "status": "completed",
+    "review_counts": {
+      "feature_role_policy_review.csv": {
+        "rows": 302,
+        "reviewed": 302,
+        "decisions": {
+          "approve": 175,
+          "edit": 0,
+          "reject": 127
+        }
+      },
+      "cae_requirement_review_40.csv": {
+        "rows": 40,
+        "reviewed": 40,
+        "decisions": {
+          "approve": 33,
+          "edit": 0,
+          "reject": 7
+        }
+      }
+    }
+  },
+  "recognizer_dev": {
+    "capability_level": "LIMITED_CONTROLLED_DOMAIN",
+    "referenced_asset_count": 13,
+    "sha256_change_count": 0
+  },
+  "next_stage": "NO_GO_PENDING_SUPERVISOR"
+}

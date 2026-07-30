@@ -1,0 +1,91 @@
+{
+  "schema_version": "topocae-linux-codex-recovery-report/1",
+  "created_at_utc": "2026-07-27T10:05:54Z",
+  "status": "RECOVERY_SUMMARY_AWAITING_SUPERVISOR_CONFIRMATION",
+  "project_root": "/home/ywx1/dataset_generator",
+  "recovery_checks": {
+    "working_directory": "PASS",
+    "delivery_checksums": "PASS",
+    "migration_acceptance_json": {
+      "delivery_checksum": "PASS",
+      "json_tool_command": "NOT_RUN_SUCCESSFULLY: python command not found (exit 127)"
+    },
+    "m4_acceptance_json": {
+      "delivery_checksum": "PASS",
+      "json_tool_command": "NOT_RUN_SUCCESSFULLY: python command not found (exit 127)"
+    },
+    "core_environment": {
+      "status": "PASS",
+      "occ_version": "7.9.0",
+      "torch_version": "2.10.0",
+      "torch_cuda": "13.0",
+      "cuda_device_count": 2
+    },
+    "llm_environment": {
+      "status": "PRESENT; DOCUMENTED PASS_NO_MODEL_WEIGHTS",
+      "live_import_check_performed": false,
+      "model_weights_downloaded": false,
+      "llm_called": false
+    },
+    "frozen_assets": "M4 evidence: P1 13/13, P2 13/13, P3-A1R 1885/1885; zero changes",
+    "p4_test_ledger_zero": true
+  },
+  "reported_state": {
+    "current_phase": "M5",
+    "migration_status": "READY_FOR_MIGRATION_ACCEPTANCE",
+    "phase_acceptance": {
+      "M0": "PASS",
+      "M1": "PASS",
+      "M2": "PASS",
+      "M3": "PASS",
+      "M4": "PASS",
+      "M5": "PREPARED_AWAITING_NEW_CODEX_RECOVERY_AND_SUPERVISOR"
+    },
+    "snapshot_b": {
+      "archive": "snapshot_b_20260727T014528Z_05ecd6f9e92137a0.tar.zst",
+      "archive_sha256": "92bf5b961e0fc8cd74e2d845b0d3b10f472edfc20d6291305259701e6e6ce084",
+      "tree_manifest_sha256": "05ecd6f9e92137a00bedc561599ad8a5749f6562dc4b7796d12062921ee18a6f",
+      "file_count": 386455,
+      "total_bytes": 48094569238,
+      "linux_tree_compare": "PASS"
+    },
+    "incremental_manifest_chain": [
+      "reports/migration/m3_incremental_patch_manifest.json: PASS; M3 environment deliverables",
+      "reports/migration/m4_incremental_patch_manifest.json: PASS; retained test compatibility patches and M4 evidence",
+      "reports/migration/m5_incremental_patch_manifest.json: M5 recovery and final handoff deliverables"
+    ],
+    "frozen_boundaries": {
+      "P1": "Frozen; M4 verified 13/13, zero changes",
+      "P2": "Frozen; M4 verified 13/13, zero changes",
+      "P3_A1R": "Frozen; M4 verified 1885/1885, zero changes; attempted resolver edits reverted",
+      "P4": "Formal test remains locked and protected; only Oracle/Keyword train/val regression is within the accepted M4 boundary; test run count remains 0"
+    },
+    "m4_verification": {
+      "status": "M4_PASS",
+      "occ_graph": "13/13 PASS",
+      "p1_d_lite_smoke": "PASS",
+      "p2_a1": "27/27 tests; 1088/1088 fixture assertions",
+      "p3_a1r": "13/13 PASS with external compatibility harness",
+      "path_portability": "15/15 PASS; real P3/P4 Windows-path graph loading succeeded",
+      "p4_oracle_train_val": "PASS; failure count 0; decoded test lines 0",
+      "p4_keyword_train_val": "PASS_DETERMINISTIC_METRICS_MATCH"
+    }
+  },
+  "known_frozen_limitations_acknowledged": {
+    "legacy_pre_p3_a1r_suite": "6/7 on Linux",
+    "cause": "Frozen utils/cae_query_ground/constants.py treats a Windows path as a relative Linux path",
+    "required_handling": "Do not modify the frozen file; P3-A1R and real P3/P4 resolver loading are the migration acceptance boundaries"
+  },
+  "scope_guards_acknowledged": {
+    "project_files_modified_before_report": false,
+    "p4_formal_test_run": false,
+    "p4_test_content_accessed": false,
+    "p4_test_run_count": 0,
+    "llm_called": false,
+    "model_weights_downloaded": false,
+    "p5_entered": false
+  },
+  "next_gate": "SUPERVISOR_SIGNATURE_MIGRATION-PASS_ONLY",
+  "migration_pass_declared": false,
+  "supervisor_confirmed": false
+}

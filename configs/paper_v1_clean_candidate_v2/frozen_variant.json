@@ -1,0 +1,21 @@
+{
+  "schema": "topocae_paper_v1_clean_candidate_v2_frozen_variant_v1",
+  "phase": "P1-A2",
+  "selected_variant": "A0",
+  "selected_variant_label": "Raw-GNN",
+  "a4_base_variant": "A0",
+  "contract_mode": "safe_v1",
+  "stage_count": 1,
+  "thresholds": {
+    "candidate_classifier": 0.5,
+    "rib_candidate_proposer": 0.9,
+    "rib_boundary_classifier": 0.79,
+    "same_instance": 0.5
+  },
+  "selection_source": "W:\\python\\FEA\\dataset_generator\\reports\\paper_v1_p1_a2\\val_ablation\\final\\metrics.json",
+  "selection_datasets": [
+    "Synthetic-Val",
+    "Synthetic-Rotation-Val"
+  ],
+  "holdout_real_dev_used_for_selection": false
+}

@@ -1,0 +1,12 @@
+name: aagnet
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pythonocc-core=7.9.3
+  - cpuonly
+  - pytorch
+  - pyyaml
+  - pip

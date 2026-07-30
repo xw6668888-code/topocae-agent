@@ -1,0 +1,949 @@
+schema_version: topocae_cae_query_role_crosswalk_1
+derived_from:
+  p2_policy_schema: topocae_cae_feature_role_policy_1
+  p2_policy_revision: h2_01_approved_2026-07-20
+  p2_policy_sha256: 4022e7e0d6d09203bb456a81f5900f5570940f1e94294cb457fde249c2093943
+unit_provenance:
+  length_unit: mm
+  area_unit: mm2
+  contract: p1_b_synthetic_occt_model_coordinates_mm
+  brep_note: OpenCASCADE BREP text is unitless; P1 synthetic model-coordinate convention is explicit here.
+source_macro_aliases:
+  web:
+    canonical_feature: rib
+    preserve_source_macro: true
+    semantic_role_map:
+      web_side_plane: web_side_plane
+      web_top_plane: web_top_plane
+features:
+  through_hole_round:
+    family: hole
+    source_macros:
+    - through_hole_round
+    face_roles:
+    - face_role: feature_region
+      selection_status: direct
+      semantic_subtype_candidates:
+      - through_hole_cylinder
+      region_kind: feature_region
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: hole_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - through_hole_cylinder
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - displacement
+      - pressure
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: false
+  blind_hole_round:
+    family: hole
+    source_macros:
+    - blind_hole_round
+    face_roles:
+    - face_role: feature_region
+      selection_status: composite
+      semantic_subtype_candidates:
+      - blind_hole_cylinder
+      - blind_hole_bottom
+      region_kind: feature_region
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: hole_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - blind_hole_cylinder
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: hole_bottom
+      selection_status: direct
+      semantic_subtype_candidates:
+      - blind_hole_bottom
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: false
+  stepped_hole_round:
+    family: hole
+    source_macros:
+    - stepped_hole_round
+    face_roles:
+    - face_role: feature_region
+      selection_status: composite
+      semantic_subtype_candidates:
+      - stepped_hole_large_hole_cylinder
+      - stepped_hole_step_plane
+      - stepped_hole_small_hole_cylinder
+      - stepped_hole_small_hole_bottom
+      region_kind: feature_region
+      allowed_operations:
+      - fixed_support
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: large_hole_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - stepped_hole_large_hole_cylinder
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: step_face
+      selection_status: direct
+      semantic_subtype_candidates:
+      - stepped_hole_step_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: small_hole_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - stepped_hole_small_hole_cylinder
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: hole_bottom
+      selection_status: direct
+      semantic_subtype_candidates:
+      - stepped_hole_small_hole_bottom
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - local_mesh_size
+      requires_complete_instance: false
+  counterbore_hole:
+    family: hole
+    source_macros:
+    - counterbore_hole
+    face_roles:
+    - face_role: feature_region
+      selection_status: composite
+      semantic_subtype_candidates:
+      - counterbore_large_cylinder
+      - counterbore_step_plane
+      - counterbore_small_cylinder
+      region_kind: feature_region
+      allowed_operations:
+      - fixed_support
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: large_hole_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - counterbore_large_cylinder
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: step_face
+      selection_status: direct
+      semantic_subtype_candidates:
+      - counterbore_step_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: through_small_hole_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - counterbore_small_cylinder
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: false
+  countersink_hole:
+    family: hole
+    source_macros:
+    - countersink_hole
+    face_roles:
+    - face_role: feature_region
+      selection_status: composite
+      semantic_subtype_candidates:
+      - countersink_cone
+      - countersink_small_cylinder
+      region_kind: feature_region
+      allowed_operations:
+      - fixed_support
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: countersink_conical_face
+      selection_status: direct
+      semantic_subtype_candidates:
+      - countersink_cone
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: through_hole_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - countersink_small_cylinder
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: false
+  obround_hole:
+    family: hole
+    source_macros:
+    - obround_hole
+    face_roles:
+    - face_role: feature_region
+      selection_status: composite
+      semantic_subtype_candidates:
+      - obround_hole_side_plane
+      - obround_hole_end_cylinder
+      region_kind: feature_region
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: hole_wall
+      selection_status: composite
+      semantic_subtype_candidates:
+      - obround_hole_side_plane
+      - obround_hole_end_cylinder
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - displacement
+      - pressure
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: straight_side_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - obround_hole_side_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: rounded_end_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - obround_hole_end_cylinder
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: false
+  slot_rect:
+    family: slot
+    source_macros:
+    - slot_rect
+    face_roles:
+    - face_role: feature_region
+      selection_status: composite
+      semantic_subtype_candidates:
+      - slot_rect_side_plane
+      - slot_rect_bottom_plane
+      region_kind: feature_region
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: complete_slot_inner_wall
+      selection_status: composite
+      semantic_subtype_candidates:
+      - slot_rect_side_plane
+      - slot_rect_bottom_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: side_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - slot_rect_side_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: bottom_face
+      selection_status: direct
+      semantic_subtype_candidates:
+      - slot_rect_bottom_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: closed_end_face
+      selection_status: unsupported_no_distinct_subtype
+      semantic_subtype_candidates:
+      - slot_rect_side_plane
+      region_kind: face_set
+      allowed_operations: []
+      requires_complete_instance: false
+  slot_u:
+    family: slot
+    source_macros:
+    - slot_u
+    face_roles:
+    - face_role: feature_region
+      selection_status: composite
+      semantic_subtype_candidates:
+      - slot_u_side_plane
+      - slot_u_end_cylinder
+      - slot_u_bottom_plane
+      region_kind: feature_region
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: complete_slot_inner_wall
+      selection_status: composite
+      semantic_subtype_candidates:
+      - slot_u_side_plane
+      - slot_u_end_cylinder
+      - slot_u_bottom_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: side_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - slot_u_side_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: bottom_face
+      selection_status: direct
+      semantic_subtype_candidates:
+      - slot_u_bottom_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: closed_end_face
+      selection_status: direct
+      semantic_subtype_candidates:
+      - slot_u_end_cylinder
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+  slot_v:
+    family: slot
+    source_macros:
+    - slot_v
+    face_roles:
+    - face_role: feature_region
+      selection_status: composite
+      semantic_subtype_candidates:
+      - slot_v_side_plane
+      - slot_v_bottom_plane
+      region_kind: feature_region
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: complete_slot_inner_wall
+      selection_status: composite
+      semantic_subtype_candidates:
+      - slot_v_side_plane
+      - slot_v_bottom_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: side_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - slot_v_side_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: bottom_or_root_face
+      selection_status: direct
+      semantic_subtype_candidates:
+      - slot_v_bottom_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: closed_end_face
+      selection_status: unsupported_no_distinct_subtype
+      semantic_subtype_candidates:
+      - slot_v_side_plane
+      region_kind: face_set
+      allowed_operations: []
+      requires_complete_instance: false
+  slot_o:
+    family: slot
+    source_macros:
+    - slot_o
+    face_roles:
+    - face_role: feature_region
+      selection_status: composite
+      semantic_subtype_candidates:
+      - slot_o_side_plane
+      - slot_o_bottom_plane
+      region_kind: feature_region
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: complete_slot_inner_wall
+      selection_status: composite
+      semantic_subtype_candidates:
+      - slot_o_side_plane
+      - slot_o_bottom_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: side_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - slot_o_side_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: bottom_face
+      selection_status: direct
+      semantic_subtype_candidates:
+      - slot_o_bottom_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+  pocket_rect:
+    family: pocket
+    source_macros:
+    - pocket_rect
+    face_roles:
+    - face_role: feature_region
+      selection_status: composite
+      semantic_subtype_candidates:
+      - rect_pocket_side_plane
+      - rect_pocket_bottom_plane
+      region_kind: feature_region
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: side_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - rect_pocket_side_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: bottom_face
+      selection_status: direct
+      semantic_subtype_candidates:
+      - rect_pocket_bottom_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+  pocket_circular:
+    family: pocket
+    source_macros:
+    - pocket_circular
+    face_roles:
+    - face_role: feature_region
+      selection_status: composite
+      semantic_subtype_candidates:
+      - circular_pocket_side_cylinder
+      - circular_pocket_bottom_plane
+      region_kind: feature_region
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: side_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - circular_pocket_side_cylinder
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: bottom_face
+      selection_status: direct
+      semantic_subtype_candidates:
+      - circular_pocket_bottom_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+  cylinder_boss:
+    family: protrusion
+    source_macros:
+    - cylinder_boss
+    face_roles:
+    - face_role: feature_region
+      selection_status: composite
+      semantic_subtype_candidates:
+      - cylinder_boss_side
+      - cylinder_boss_top
+      region_kind: feature_region
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: side_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - cylinder_boss_side
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: top_face
+      selection_status: direct
+      semantic_subtype_candidates:
+      - cylinder_boss_top
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - displacement
+      - pressure
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: false
+  rectangular_boss:
+    family: protrusion
+    source_macros:
+    - rectangular_boss
+    face_roles:
+    - face_role: feature_region
+      selection_status: composite
+      semantic_subtype_candidates:
+      - pad_side_plane
+      - pad_top_plane
+      region_kind: feature_region
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: side_wall
+      selection_status: direct
+      semantic_subtype_candidates:
+      - pad_side_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - pressure
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: top_face
+      selection_status: direct
+      semantic_subtype_candidates:
+      - pad_top_plane
+      region_kind: face_set
+      allowed_operations:
+      - fixed_support
+      - displacement
+      - pressure
+      - surface_traction
+      - local_mesh_size
+      requires_complete_instance: false
+  rib:
+    family: stiffener
+    source_macros:
+    - rib
+    - web
+    face_roles:
+    - face_role: feature_region
+      selection_status: composite
+      semantic_subtype_candidates:
+      - rib_side_plane
+      - rib_top_plane
+      - web_side_plane
+      - web_top_plane
+      region_kind: feature_region
+      allowed_operations:
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: side_face
+      selection_status: composite
+      semantic_subtype_candidates:
+      - rib_side_plane
+      - web_side_plane
+      region_kind: face_set
+      allowed_operations:
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: top_or_end_face
+      selection_status: composite
+      semantic_subtype_candidates:
+      - rib_top_plane
+      - web_top_plane
+      region_kind: face_set
+      allowed_operations:
+      - local_mesh_size
+      requires_complete_instance: false
+    - face_role: end_face
+      selection_status: unsupported_no_distinct_subtype
+      semantic_subtype_candidates:
+      - rib_top_plane
+      - web_top_plane
+      region_kind: face_set
+      allowed_operations: []
+      requires_complete_instance: false
+  fillet:
+    family: transition
+    source_macros:
+    - fillet
+    face_roles:
+    - face_role: feature_region
+      selection_status: direct
+      semantic_subtype_candidates:
+      - fillet_blend_surface
+      region_kind: feature_region
+      allowed_operations:
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: blend_face
+      selection_status: direct
+      semantic_subtype_candidates:
+      - fillet_blend_surface
+      region_kind: face_set
+      allowed_operations:
+      - local_mesh_size
+      requires_complete_instance: false
+  chamfer:
+    family: transition
+    source_macros:
+    - chamfer
+    face_roles:
+    - face_role: feature_region
+      selection_status: direct
+      semantic_subtype_candidates:
+      - chamfer_bevel_plane
+      region_kind: feature_region
+      allowed_operations:
+      - local_mesh_size
+      requires_complete_instance: true
+    - face_role: bevel_face
+      selection_status: direct
+      semantic_subtype_candidates:
+      - chamfer_bevel_plane
+      region_kind: face_set
+      allowed_operations:
+      - local_mesh_size
+      requires_complete_instance: false
+semantic_role_to_p2_face_roles:
+  blind_hole_bottom:
+  - canonical_feature: blind_hole_round
+    face_role: feature_region
+  - canonical_feature: blind_hole_round
+    face_role: hole_bottom
+  blind_hole_cylinder:
+  - canonical_feature: blind_hole_round
+    face_role: feature_region
+  - canonical_feature: blind_hole_round
+    face_role: hole_wall
+  chamfer_bevel_plane:
+  - canonical_feature: chamfer
+    face_role: bevel_face
+  - canonical_feature: chamfer
+    face_role: feature_region
+  circular_pocket_bottom_plane:
+  - canonical_feature: pocket_circular
+    face_role: bottom_face
+  - canonical_feature: pocket_circular
+    face_role: feature_region
+  circular_pocket_side_cylinder:
+  - canonical_feature: pocket_circular
+    face_role: feature_region
+  - canonical_feature: pocket_circular
+    face_role: side_wall
+  counterbore_large_cylinder:
+  - canonical_feature: counterbore_hole
+    face_role: feature_region
+  - canonical_feature: counterbore_hole
+    face_role: large_hole_wall
+  counterbore_small_cylinder:
+  - canonical_feature: counterbore_hole
+    face_role: feature_region
+  - canonical_feature: counterbore_hole
+    face_role: through_small_hole_wall
+  counterbore_step_plane:
+  - canonical_feature: counterbore_hole
+    face_role: feature_region
+  - canonical_feature: counterbore_hole
+    face_role: step_face
+  countersink_cone:
+  - canonical_feature: countersink_hole
+    face_role: countersink_conical_face
+  - canonical_feature: countersink_hole
+    face_role: feature_region
+  countersink_small_cylinder:
+  - canonical_feature: countersink_hole
+    face_role: feature_region
+  - canonical_feature: countersink_hole
+    face_role: through_hole_wall
+  cylinder_boss_side:
+  - canonical_feature: cylinder_boss
+    face_role: feature_region
+  - canonical_feature: cylinder_boss
+    face_role: side_wall
+  cylinder_boss_top:
+  - canonical_feature: cylinder_boss
+    face_role: feature_region
+  - canonical_feature: cylinder_boss
+    face_role: top_face
+  fillet_blend_surface:
+  - canonical_feature: fillet
+    face_role: blend_face
+  - canonical_feature: fillet
+    face_role: feature_region
+  obround_hole_end_cylinder:
+  - canonical_feature: obround_hole
+    face_role: feature_region
+  - canonical_feature: obround_hole
+    face_role: hole_wall
+  - canonical_feature: obround_hole
+    face_role: rounded_end_wall
+  obround_hole_side_plane:
+  - canonical_feature: obround_hole
+    face_role: feature_region
+  - canonical_feature: obround_hole
+    face_role: hole_wall
+  - canonical_feature: obround_hole
+    face_role: straight_side_wall
+  pad_side_plane:
+  - canonical_feature: rectangular_boss
+    face_role: feature_region
+  - canonical_feature: rectangular_boss
+    face_role: side_wall
+  pad_top_plane:
+  - canonical_feature: rectangular_boss
+    face_role: feature_region
+  - canonical_feature: rectangular_boss
+    face_role: top_face
+  rect_pocket_bottom_plane:
+  - canonical_feature: pocket_rect
+    face_role: bottom_face
+  - canonical_feature: pocket_rect
+    face_role: feature_region
+  rect_pocket_side_plane:
+  - canonical_feature: pocket_rect
+    face_role: feature_region
+  - canonical_feature: pocket_rect
+    face_role: side_wall
+  rib_side_plane:
+  - canonical_feature: rib
+    face_role: feature_region
+  - canonical_feature: rib
+    face_role: side_face
+  rib_top_plane:
+  - canonical_feature: rib
+    face_role: end_face
+  - canonical_feature: rib
+    face_role: feature_region
+  - canonical_feature: rib
+    face_role: top_or_end_face
+  slot_o_bottom_plane:
+  - canonical_feature: slot_o
+    face_role: bottom_face
+  - canonical_feature: slot_o
+    face_role: complete_slot_inner_wall
+  - canonical_feature: slot_o
+    face_role: feature_region
+  slot_o_side_plane:
+  - canonical_feature: slot_o
+    face_role: complete_slot_inner_wall
+  - canonical_feature: slot_o
+    face_role: feature_region
+  - canonical_feature: slot_o
+    face_role: side_wall
+  slot_rect_bottom_plane:
+  - canonical_feature: slot_rect
+    face_role: bottom_face
+  - canonical_feature: slot_rect
+    face_role: complete_slot_inner_wall
+  - canonical_feature: slot_rect
+    face_role: feature_region
+  slot_rect_side_plane:
+  - canonical_feature: slot_rect
+    face_role: closed_end_face
+  - canonical_feature: slot_rect
+    face_role: complete_slot_inner_wall
+  - canonical_feature: slot_rect
+    face_role: feature_region
+  - canonical_feature: slot_rect
+    face_role: side_wall
+  slot_u_bottom_plane:
+  - canonical_feature: slot_u
+    face_role: bottom_face
+  - canonical_feature: slot_u
+    face_role: complete_slot_inner_wall
+  - canonical_feature: slot_u
+    face_role: feature_region
+  slot_u_end_cylinder:
+  - canonical_feature: slot_u
+    face_role: closed_end_face
+  - canonical_feature: slot_u
+    face_role: complete_slot_inner_wall
+  - canonical_feature: slot_u
+    face_role: feature_region
+  slot_u_side_plane:
+  - canonical_feature: slot_u
+    face_role: complete_slot_inner_wall
+  - canonical_feature: slot_u
+    face_role: feature_region
+  - canonical_feature: slot_u
+    face_role: side_wall
+  slot_v_bottom_plane:
+  - canonical_feature: slot_v
+    face_role: bottom_or_root_face
+  - canonical_feature: slot_v
+    face_role: complete_slot_inner_wall
+  - canonical_feature: slot_v
+    face_role: feature_region
+  slot_v_side_plane:
+  - canonical_feature: slot_v
+    face_role: closed_end_face
+  - canonical_feature: slot_v
+    face_role: complete_slot_inner_wall
+  - canonical_feature: slot_v
+    face_role: feature_region
+  - canonical_feature: slot_v
+    face_role: side_wall
+  stepped_hole_large_hole_cylinder:
+  - canonical_feature: stepped_hole_round
+    face_role: feature_region
+  - canonical_feature: stepped_hole_round
+    face_role: large_hole_wall
+  stepped_hole_small_hole_bottom:
+  - canonical_feature: stepped_hole_round
+    face_role: feature_region
+  - canonical_feature: stepped_hole_round
+    face_role: hole_bottom
+  stepped_hole_small_hole_cylinder:
+  - canonical_feature: stepped_hole_round
+    face_role: feature_region
+  - canonical_feature: stepped_hole_round
+    face_role: small_hole_wall
+  stepped_hole_step_plane:
+  - canonical_feature: stepped_hole_round
+    face_role: feature_region
+  - canonical_feature: stepped_hole_round
+    face_role: step_face
+  through_hole_cylinder:
+  - canonical_feature: through_hole_round
+    face_role: feature_region
+  - canonical_feature: through_hole_round
+    face_role: hole_wall
+  web_side_plane:
+  - canonical_feature: rib
+    face_role: feature_region
+  - canonical_feature: rib
+    face_role: side_face
+  web_top_plane:
+  - canonical_feature: rib
+    face_role: end_face
+  - canonical_feature: rib
+    face_role: feature_region
+  - canonical_feature: rib
+    face_role: top_or_end_face
+unsupported_exact_roles:
+- rib.end_face
+- slot_rect.closed_end_face
+- slot_v.closed_end_face
+source_only_instance_membership_roles:
+  slot_terminal_face:
+    canonical_feature_families:
+    - slot
+    p2_face_roles:
+    - feature_region
+    mapping_rule: complete_instance_membership_only
+    exact_subrole_target_allowed: false
+    reason: The source graph contains this generic terminal face but frozen P2 has no distinct selectable subtype. It is retained
+      only inside the complete feature instance.

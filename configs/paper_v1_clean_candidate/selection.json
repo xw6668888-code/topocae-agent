@@ -1,0 +1,27 @@
+{
+  "schema": "topocae_paper_v1_clean_candidate_selection_v1",
+  "phase": "P1-A1",
+  "selected_variant": "clean_core",
+  "selection_dataset": "Synthetic-Test plus Rotation-Dev consistency gate",
+  "synthetic_test_comparison": {
+    "clean_core_rib_object_f1": 0.7234042553191489,
+    "clean_rib_rib_object_f1": 0.7234042553191489,
+    "rib_object_f1_gain": 0.0,
+    "clean_core_face_macro_f1": 0.7397982829342591,
+    "clean_rib_face_macro_f1": 0.7397982829342591,
+    "face_macro_f1_drop": 0.0
+  },
+  "rotation_deltas_clean_rib_minus_clean_core": {
+    "class_consistency": 0.0,
+    "object_correspondence_consistency": 0.0,
+    "face_role_consistency": 0.0
+  },
+  "criteria": {
+    "stable_rib_object_f1_gain": false,
+    "overall_macro_f1_drop_at_most_0_005": true,
+    "rotation_consistency_not_decreased": true
+  },
+  "decision_reason": "Clean-Rib has no Synthetic-Test rib-object F1 gain; the required stable-gain criterion therefore fails. Clean-Core is selected.",
+  "real_dev_used_for_selection": false,
+  "s3_used_for_selection": false
+}

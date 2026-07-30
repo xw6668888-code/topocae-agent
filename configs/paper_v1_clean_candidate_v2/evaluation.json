@@ -1,0 +1,20 @@
+{
+  "schema": "topocae_paper_v1_p1_a2_evaluation_v1",
+  "phase": "P1-A2",
+  "object_match_iou": 0.5,
+  "bootstrap": {"replicates": 2000, "confidence": 0.95, "seed": 20260716},
+  "selection_protocol": {
+    "selection_dataset": "Synthetic-Val",
+    "primary_metric": "object_macro_f1",
+    "face_macro_f1_max_drop_from_a0": 0.005,
+    "semantic_macro_f1_max_drop_from_a0": 0.005,
+    "no_nonzero_to_zero_recall_min_support": 10,
+    "synthetic_rotation_consistency_max_drop_from_a0": 0.005,
+    "tie_break": ["exact_instance_ratio", "instance_iou", "fewer_stages"],
+    "fallback": "A0"
+  },
+  "rotation_selection_scalar": "minimum_of_class_object_and_face_role_consistency",
+  "real_dev_used_for_training_or_selection": false,
+  "synthetic_development_test_used_for_selection": false,
+  "holdout_used_for_selection": false
+}

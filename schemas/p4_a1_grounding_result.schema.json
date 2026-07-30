@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topocae.local/schemas/p4_a1_grounding_result.schema.json",
+  "title": "TopoCAE P4-A1 Deterministic Grounding Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "status",
+    "input_intent_status",
+    "part_ref",
+    "error_code",
+    "message",
+    "operations",
+    "verifier"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "topocae-grounding-result/1.0.0"
+    },
+    "status": {
+      "enum": ["VALID", "NEEDS_CLARIFICATION", "INVALID"]
+    },
+    "input_intent_status": {
+      "enum": ["VALID", "NEEDS_CLARIFICATION", "INVALID"]
+    },
+    "part_ref": {
+      "type": "string",
+      "pattern": "^part-[0-9a-f]{24}$"
+    },
+    "error_code": {
+      "type": ["string", "null"]
+    },
+    "message": {
+      "type": "string"
+    },
+    "operations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/operationResult"
+      }
+    },
+    "verifier": {
+      "$ref": "#/$defs/summaryVerifier"
+    }
+  },
+  "$defs": {
+    "operationResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "operation_type",
+        "status",
+        "error_code",
+        "message",
+        "target_contract",
+        "quantifier",
+        "face_role",
+        "selected_object_ids",
+        "selected_face_indices",
+        "candidate_count_before_filters",
+        "candidate_count_after_filters",
+        "trace",
+        "verifier"
+      ],
+      "properties": {
+        "operation_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "operation_type": {
+          "enum": [
+            "fixed_support",
+            "displacement",
+            "pressure",
+            "surface_traction",
+            "material_assignment",
+            "global_mesh_size",
+            "local_mesh_size"
+          ]
+        },
+        "status": {
+          "enum": ["VALID", "NEEDS_CLARIFICATION", "INVALID"]
+        },
+        "error_code": {
+          "type": ["string", "null"]
+        },
+        "message": {
+          "type": "string"
+        },
+        "target_contract": {
+          "enum": ["feature_face_set", "whole_part"]
+        },
+        "quantifier": {
+          "type": ["string", "null"]
+        },
+        "face_role": {
+          "type": ["string", "null"]
+        },
+        "selected_object_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^obj-[0-9]{4}$"
+          }
+        },
+        "selected_face_indices": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "candidate_count_before_filters": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "candidate_count_after_filters": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "trace": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "verifier": {
+          "$ref": "#/$defs/operationVerifier"
+        }
+      }
+    },
+    "operationVerifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "checks",
+        "errors",
+        "silent_fallback_used"
+      ],
+      "properties": {
+        "status": {
+          "enum": ["VALID", "NEEDS_CLARIFICATION", "INVALID"]
+        },
+        "checks": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "silent_fallback_used": {
+          "const": false
+        }
+      }
+    },
+    "summaryVerifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "all_operations_valid",
+        "illegal_face_id_count",
+        "silent_fallback_count"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "VALID",
+            "NEEDS_CLARIFICATION",
+            "INVALID",
+            "NOT_RUN"
+          ]
+        },
+        "all_operations_valid": {
+          "type": "boolean"
+        },
+        "illegal_face_id_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "silent_fallback_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

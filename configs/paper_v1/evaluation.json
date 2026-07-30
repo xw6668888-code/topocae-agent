@@ -1,0 +1,38 @@
+{
+  "schema": "topocae_paper_recognition_evaluation_v1",
+  "freeze_id": "paper_v1",
+  "phase": "P0-A1",
+  "status": "configuration_frozen_metrics_not_rerun",
+  "metrics": {
+    "face_level": [
+      "macro_accuracy",
+      "macro_f1",
+      "per_class_precision",
+      "per_class_recall",
+      "semantic_macro_f1",
+      "face_miou"
+    ],
+    "edge_level": [
+      "same_instance_precision",
+      "same_instance_recall",
+      "same_instance_f1"
+    ],
+    "object_level": [
+      "object_precision",
+      "object_recall",
+      "object_f1",
+      "instance_iou",
+      "exact_instance_ratio"
+    ],
+    "robustness": [
+      "rotation_consistency"
+    ]
+  },
+  "repeatability": {
+    "runs": 2,
+    "comparison": "canonical JSON equality after removing output-location-only fields",
+    "required": true
+  },
+  "phase_boundary": "P1 owns full Synthetic-Test, Real-Dev, Rotation-Dev reruns and dataset leakage audit"
+}
+

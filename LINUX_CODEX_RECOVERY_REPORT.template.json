@@ -1,0 +1,18 @@
+{
+  "schema_version": "topocae-linux-codex-recovery-report/1",
+  "status": "AWAITING_NEW_CODEX_RECOVERY",
+  "project_root": "/home/ywx1/dataset_generator",
+  "recovery_checks": {
+    "delivery_checksums": null,
+    "migration_acceptance_json": null,
+    "m4_acceptance_json": null,
+    "core_environment": null,
+    "frozen_assets": null,
+    "p4_test_ledger_zero": null
+  },
+  "reported_state": null,
+  "known_frozen_limitations_acknowledged": null,
+  "scope_guards_acknowledged": null,
+  "next_gate": "MIGRATION-PASS",
+  "supervisor_confirmed": false
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "topocae_p1_c_strict_candidate_training_plan_2",
+  "frozen_before_candidate_models": true,
+  "frozen_at_utc": "2026-07-19T10:02:00Z",
+  "source_training_plan": "configs/p1_c/training_plan_strict_v3.json",
+  "source_training_plan_sha256": "348fb03c111ff0c56c68c6f0641e5fe7d265cc1a337cc14d8ef1ff9b1231d19b",
+  "selection_data": "Synthetic-Val only",
+  "architecture_and_defaults": {
+    "reference": "P1-B CandidateTopologyClassifier unchanged",
+    "face_embedding_dim": 128,
+    "edge_embedding_dim": 20,
+    "engineered_feature_dim": 70,
+    "hidden_dim": 128,
+    "semantic_role_count": 8,
+    "epochs": 28,
+    "batch_size": 256,
+    "learning_rate": 0.002,
+    "weight_decay": 0.0001,
+    "patience": 8
+  },
+  "loss_normalization": {
+    "sample": "each sample has total candidate mass 1",
+    "instance": "positive mass is divided equally among truth instances and then among their candidates; negative mass is separate",
+    "validity": "when both signs exist, positives and negatives each receive 0.5 sample mass",
+    "candidate_faces": "membership, boundary, and semantic losses are averaged within each valid candidate before candidate weighting",
+    "class": "macro inverse-frequency and validity positive weights remain global train-only weights"
+  },
+  "training_packages": {
+    "clean_5000": {"manifest_sha256": "938a0444adca42c8780a41064c67e5798919ec7c7842033c7a0c77e6deff4285"},
+    "clean_7200": {"manifest_sha256": "197e1a535d7b165d664f41a92de04402fe5741a9956ad3999255b60b01db3ed6"},
+    "single_only": {"manifest_sha256": "b84d45a399f87579dd6341382659a884f393fe87b10fb0bda343ddaa6283d817"}
+  },
+  "source_gnn_runs": {
+    "clean_5000_seed_20260718": {"predictions_sha256": "e148705b2465a59dca677c1dec339cd27270ab9072e1d093329f65ec34bb01be", "config_sha256": "f9c08fea828465dec5ba5f96d691b5025a6167c9dde702a62a1d5f2e4b3064c1"},
+    "clean_5000_seed_20260719": {"predictions_sha256": "ddb2daa91b1ad11fde95467f1b468d9fa73a5a534e3e3998e14534cce48d29d7", "config_sha256": "af6366d7a8ef5be038448df07c5db699762e5a4e71f282f6c24759726231f20e"},
+    "clean_5000_seed_20260720": {"predictions_sha256": "2f2800d5e61daa98b414bdc3d780b78fba70943628fb8c4b4fe39d8897e77942", "config_sha256": "2048431e9e6ca1ea87f3a7bc0dd79ce07036cb15c916b58b593a75071ddee522"},
+    "clean_7200_seed_20260718": {"predictions_sha256": "624ccefc9dc4351d0eb353548ab4e59793893fdd9c86e140a481604a1f2ae29d", "config_sha256": "e8fd201132978dc6faa8e269f96bb6aea7f8cf1571a99751f90383ec560806a4"},
+    "clean_7200_seed_20260719": {"predictions_sha256": "04aa3c3b4c8bf28d7854789926242824a7dd37a50c09fc5cda3219654ac4028b", "config_sha256": "221e86768c19b68c22621bd3b59a5acc574674260a6551bc055cfd79208aedf1"},
+    "clean_7200_seed_20260720": {"predictions_sha256": "295cf8e938cc35a2db03b76f72eb11cbca9188d41df56deb6089af6f95bcc21f", "config_sha256": "7b6d77f223cc09b9289823dccab41447501746b0a7766cb55466477f04477ed3"},
+    "no_canonical_patch_seed_20260718": {"predictions_sha256": "a7237e61cbe85c7a25bbe6405ffc62f50fa0a08424aca88628130b635aec5845", "config_sha256": "b5012fd3b387b5fff55efcf041f8af60420508bba0d52016af7c340f1891b0c2"},
+    "no_instance_balanced_loss_seed_20260718": {"predictions_sha256": "5c9746581cda70803a88cbdffd53ad7094f0dd44c0cdae68d3955bf8e4b1099d", "config_sha256": "ab914599f1f6e9784977082edbc238a8bc10713f3ba194be11030118eb7dfaf4"},
+    "single_only_seed_20260718": {"predictions_sha256": "5f9d636a8d0c8aaafdd9a40f1d232258f6dfcef1c840f626f67664de4d04736f", "config_sha256": "71eca59e05944ebc1382f4eaf373689f6336bb9ef3ce15c0c093dc8be3fcb92d"}
+  },
+  "variant_contracts": {
+    "clean_5000": {"candidate_instance_balanced_loss": true, "canonical_patch": true},
+    "clean_7200": {"candidate_instance_balanced_loss": true, "canonical_patch": true},
+    "single_only": {"candidate_instance_balanced_loss": true, "canonical_patch": true},
+    "no_instance_balanced_loss": {"candidate_instance_balanced_loss": false, "canonical_patch": true},
+    "no_canonical_patch": {"candidate_instance_balanced_loss": true, "canonical_patch": false}
+  },
+  "selection": {
+    "candidate_checkpoint": "maximize the frozen candidate validation score on Synthetic-Val",
+    "candidate_thresholds": "Synthetic-Val global thresholds only",
+    "global_decode_tolerance": "fixed scan and objective on Synthetic-Val only",
+    "final_model_default": "clean_7200_seed_20260718",
+    "seed_aggregation": false
+  },
+  "contracts": {
+    "invalidated_p1_c_dataset_or_results_used": false,
+    "test_part_s3_accessed": false,
+    "real_specific_thresholds": false,
+    "llm_step_recognition": false,
+    "old_holdout_tuning": false,
+    "real_dev_used": false,
+    "holdout_v3_used": false,
+    "superpower_skills_used": false
+  }
+}

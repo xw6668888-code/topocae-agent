@@ -1,0 +1,29 @@
+{
+  "schema_version": "topocae_p1_c_candidate_training_plan_1",
+  "written_before_candidate_results": true,
+  "source_gnn_variant": "iteration2_full_cosine_schedule",
+  "seeds": [20260718, 20260719, 20260720],
+  "architecture_and_defaults": {
+    "reference": "P1-B CandidateTopologyClassifier",
+    "hidden_dim": 128,
+    "epochs": 28,
+    "batch_size": 256,
+    "learning_rate": 0.002,
+    "weight_decay": 0.0001,
+    "patience": 8
+  },
+  "loss_normalization": {
+    "sample": "each sample has total candidate mass 1",
+    "instance": "positive mass is divided equally among truth instances and then among their candidates; negative mass is separate",
+    "validity": "when both signs exist, positives and negatives each receive 0.5 sample mass",
+    "candidate_faces": "membership, boundary, and semantic loss are averaged within each valid candidate before candidate weighting",
+    "class": "positive macro classes use the frozen inverse-frequency class weights and validity uses its frozen positive weight"
+  },
+  "selection": {
+    "model": "Synthetic-Val selection score only",
+    "thresholds": "Synthetic-Val global thresholds only",
+    "main_seed": 20260718,
+    "seed_aggregation": false
+  },
+  "contracts": {"real_dev_used": false, "holdout_v2_used": false, "holdout_v3_used": false, "test_part_s3_accessed": false}
+}

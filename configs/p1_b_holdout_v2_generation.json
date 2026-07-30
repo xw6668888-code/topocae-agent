@@ -1,0 +1,26 @@
+{
+  "schema_version": "topocae_p1_b_holdout_v2_generation_config_1",
+  "phase": "P1-B",
+  "dataset_name": "Synthetic-Holdout-v2",
+  "output_root": "output_generation_p1_b_synthetic_holdout_v2",
+  "sample_count": 1080,
+  "samples_per_class": 60,
+  "seed_start": 2026071800001,
+  "seed_end": 2026071801080,
+  "target_macro_features": [
+    "through_hole_round", "blind_hole_round", "stepped_hole_round",
+    "counterbore_hole", "countersink_hole", "obround_hole",
+    "slot_u", "slot_rect", "pocket_rect", "pocket_circular",
+    "cylinder_boss", "rib", "web", "rectangular_boss",
+    "fillet", "chamfer", "slot_v", "slot_o"
+  ],
+  "stock_size_range": {
+    "L": [103.0, 157.0],
+    "W": [83.0, 143.0],
+    "H": [31.0, 73.0]
+  },
+  "instance_count_range": [1, 1],
+  "max_generation_attempts": 24,
+  "max_class_attempts_per_sample": 240,
+  "signature_precision": {"exact_ndigits": 6, "near_ndigits": 4}
+}

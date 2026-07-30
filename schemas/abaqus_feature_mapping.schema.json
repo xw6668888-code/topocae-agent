@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CAE Feature Objects to Abaqus Mapping",
+  "type": "object",
+  "required": [
+    "sample_id",
+    "mapping_mode",
+    "source_step_path",
+    "source_graph_path",
+    "source_prediction_path",
+    "source_feature_object_path",
+    "source_topology_path",
+    "feature_mapping_count",
+    "feature_mappings",
+    "suggested_abaqus_regions"
+  ],
+  "properties": {
+    "sample_id": { "type": "string" },
+    "mapping_mode": {
+      "type": "string",
+      "const": "feature_objects_to_abaqus_faces"
+    },
+    "source_step_path": { "type": ["string", "null"] },
+    "source_graph_path": { "type": ["string", "null"] },
+    "source_prediction_path": { "type": ["string", "null"] },
+    "source_feature_object_path": { "type": ["string", "null"] },
+    "source_topology_path": { "type": ["string", "null"] },
+    "feature_mapping_count": { "type": "integer", "minimum": 0 },
+    "feature_mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "feature_object_id",
+          "macro_feature_id",
+          "macro_feature",
+          "source_face_indices",
+          "mapped_abaqus_face_ids",
+          "mapping_score_mean",
+          "mapping_status"
+        ],
+        "properties": {
+          "feature_object_id": { "type": "string" },
+          "macro_feature_id": { "type": "integer" },
+          "macro_feature": { "type": "string" },
+          "source_face_indices": {
+            "type": "array",
+            "items": { "type": "integer" }
+          },
+          "mapped_abaqus_face_ids": {
+            "type": "array",
+            "items": { "type": "integer" }
+          },
+          "mapping_score_mean": { "type": "number" },
+          "mapping_status": { "type": "string" },
+          "face_matches": {
+            "type": "array",
+            "items": { "type": "object" }
+          }
+        }
+      }
+    },
+    "suggested_abaqus_regions": {
+      "type": "object",
+      "required": [
+        "feature_object_regions",
+        "stock_planar_regions"
+      ],
+      "properties": {
+        "feature_object_regions": {
+          "type": "array",
+          "items": { "type": "object" }
+        },
+        "stock_planar_regions": {
+          "type": "array",
+          "items": { "type": "object" }
+        }
+      }
+    }
+  }
+}

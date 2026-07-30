@@ -1,0 +1,97 @@
+schema_version: topocae_cae_query_reviewed_phrase_extensions_1
+source_review:
+  gate: H3-01
+  decision_csv: reports/p3_a1_cae_queryground_v1/human_review_package/human_expression_adoption_decisions.csv
+  adopted_expression_ids:
+    - EX-01
+    - EX-03
+    - EX-04
+    - EX-05
+    - EX-06
+    - EX-07
+    - EX-08
+    - EX-09
+    - EX-11
+    - EX-13
+    - EX-14
+    - EX-15
+    - EX-17
+    - EX-18
+    - EX-19
+    - EX-20
+  rejected_expression_ids: [EX-02, EX-10, EX-12, EX-16]
+  incorporation_policy: >-
+    Adopt sentence structure and engineering vocabulary only after normalization to frozen P2.
+    Do not add density, global-direction pressure, damaged signs, or new ontology fields.
+lexical_normalizations:
+  material_en: "CQG-LinearElastic (E=210 GPa, Poisson ratio 0.3)"
+  material_zh: "CQG-LinearElastic（弹性模量 210 GPa，泊松比 0.3）"
+  pressure_direction_en: [surface normal, opposite surface normal]
+  pressure_direction_zh: [表面法向, 表面法向反向]
+  displacement_dofs: [U1, U2, U3]
+  mesh_term_en: mesh size
+  mesh_term_zh: 网格尺寸
+templates:
+  train:
+    canonical:
+      - family_id: formal.train.canonical.engineering_request
+        template_id: formal.train.canonical.engineering_request.v1
+        pattern: "Please apply this engineering setup: {request}."
+        derived_from: [EX-11, EX-13, EX-14]
+    en-1:
+      - family_id: formal.train.en.preprocessing_setup
+        template_id: formal.train.en.preprocessing_setup.v1
+        pattern: "For the preprocessing setup, {request}."
+        derived_from: [EX-11, EX-15, EX-17]
+    en-2:
+      - family_id: formal.train.en.part_setup
+        template_id: formal.train.en.part_setup.v1
+        pattern: "Apply the following setup to the part: {request}."
+        derived_from: [EX-13, EX-18, EX-20]
+    zh-1:
+      - family_id: formal.train.zh.engineering_setup
+        template_id: formal.train.zh.engineering_setup.v1
+        pattern: "请按以下工程要求设置模型：{request}。"
+        derived_from: [EX-01, EX-03, EX-05]
+  val:
+    canonical:
+      - family_id: formal.val.canonical.analysis_definition
+        template_id: formal.val.canonical.analysis_definition.v1
+        pattern: "Define the analysis preprocessing requirement as follows: {request}."
+        derived_from: [EX-14, EX-18]
+    en-1:
+      - family_id: formal.val.en.model_configuration
+        template_id: formal.val.en.model_configuration.v1
+        pattern: "Configure the model with this requirement: {request}."
+        derived_from: [EX-11, EX-19]
+    en-2:
+      - family_id: formal.val.en.required_preprocessing
+        template_id: formal.val.en.required_preprocessing.v1
+        pattern: "The required preprocessing shall {request}."
+        derived_from: [EX-15, EX-20]
+    zh-1:
+      - family_id: formal.val.zh.preprocessing_requirement
+        template_id: formal.val.zh.preprocessing_requirement.v1
+        pattern: "零件前处理要求如下：{request}。"
+        derived_from: [EX-04, EX-06, EX-09]
+  test:
+    canonical:
+      - family_id: formal.test.canonical.cae_prescription
+        template_id: formal.test.canonical.cae_prescription.v1
+        pattern: "Create this CAE preprocessing prescription: {request}."
+        derived_from: [EX-17, EX-19]
+    en-1:
+      - family_id: formal.test.en.current_model_setup
+        template_id: formal.test.en.current_model_setup.v1
+        pattern: "For the current model, {request}."
+        derived_from: [EX-13, EX-20]
+    en-2:
+      - family_id: formal.test.en.execute_setup
+        template_id: formal.test.en.execute_setup.v1
+        pattern: "Use the CAE model to {request}."
+        derived_from: [EX-11, EX-14]
+    zh-1:
+      - family_id: formal.test.zh.model_setup
+        template_id: formal.test.zh.model_setup.v1
+        pattern: "对当前模型执行以下设置：{request}。"
+        derived_from: [EX-07, EX-08]

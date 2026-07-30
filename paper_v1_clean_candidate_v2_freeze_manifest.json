@@ -1,0 +1,331 @@
+{
+  "schema": "topocae_paper_v1_clean_candidate_v2_freeze_manifest_v1",
+  "phase": "P1-A2",
+  "generated_at": "2026-07-16T11:35:09.572425+00:00",
+  "selected_variant": "A0",
+  "selected_variant_label": "Raw-GNN",
+  "preholdout_selection_sha256": "3f334faaf04402eecb68a09868a551965f370267363e0a6c0c3d4f8fcd14a5eb",
+  "holdout_inference_pass_count": 1,
+  "uses_real_dev_for_training_or_selection": false,
+  "uses_synthetic_development_test_for_selection": false,
+  "uses_holdout_for_selection": false,
+  "uses_s3_geometry_truth_prediction_or_training_data": false,
+  "artifacts": [
+    {
+      "path": "W:\\python\\FEA\\dataset_generator\\output_generation_v5_5_v51dist_looprole_5400\\model_runs\\edge_aware_v5_5_expanded_v51_compat_24dim\\best.pt",
+      "sha256": "5a7c8cda2d60da5a2003ce165afbf30d81b0f884aebed7d2d75d79ce7a928c89",
+      "bytes": 1145167,
+      "role": "frozen_gnn",
+      "category": "model"
+    },
+    {
+      "path": "W:\\python\\FEA\\dataset_generator\\reports\\paper_v1_p1\\model_runs\\candidate_topology_clean\\model.joblib",
+      "sha256": "a1c9dd1060739873eff0584811fd2f7ecc7fbe1f004d08515a3b5d57f255939d",
+      "bytes": 46894896,
+      "role": "clean_candidate_classifier",
+      "category": "model"
+    },
+    {
+      "path": "W:\\python\\FEA\\dataset_generator\\reports\\paper_v1_p1\\model_runs\\rib_boundary_clean\\model.joblib",
+      "sha256": "28ee1c10f514a864f421a2e00448e2221b34a0036c8532f02a51faf2739106d1",
+      "bytes": 4549709,
+      "role": "clean_rib_boundary_classifier",
+      "category": "model"
+    },
+    {
+      "path": "W:\\python\\FEA\\dataset_generator\\reports\\paper_v1_p1\\model_runs\\rib_candidate_clean\\model.joblib",
+      "sha256": "cf361efc4f5b3954888d988282676ee0e927d73ee33355d5524275ec5ac1f64a",
+      "bytes": 981505,
+      "role": "clean_rib_candidate_proposer",
+      "category": "model"
+    },
+    {
+      "path": "configs/paper_v1_clean_candidate_v2/README.md",
+      "category": "config",
+      "sha256": "2689a21c1e0192b67dbe017330069e785651597f789e4b6193bd6cbc88ffd5e6",
+      "bytes": 620
+    },
+    {
+      "path": "configs/paper_v1_clean_candidate_v2/datasets.json",
+      "category": "config",
+      "sha256": "a0f1fbd715335b33fb14d65c16df01292d82393e8a7a80c2f9e80d3c7f161841",
+      "bytes": 2292
+    },
+    {
+      "path": "configs/paper_v1_clean_candidate_v2/evaluation.json",
+      "category": "config",
+      "sha256": "5d0f83b787e7511aa174aa3312a82fb27d05e42118d6effdd103ad907647c3ee",
+      "bytes": 825
+    },
+    {
+      "path": "configs/paper_v1_clean_candidate_v2/frozen_variant.json",
+      "category": "config",
+      "sha256": "4578a85e9fb6ce0e6ad7cdd88b9f4949b42c6f6f83d161114f9ab8dee71cdf78",
+      "bytes": 659
+    },
+    {
+      "path": "configs/paper_v1_clean_candidate_v2/holdout_generation.json",
+      "category": "config",
+      "sha256": "97854eaa42082b9c9671854534c13a30bef048bc1a87413d1dc5d9125374f445",
+      "bytes": 1018
+    },
+    {
+      "path": "configs/paper_v1_clean_candidate_v2/models.json",
+      "category": "config",
+      "sha256": "459b9e001fd9292e94e48c3a5bf82441f4f5ff235168ddf7fe96c7d41f2d1671",
+      "bytes": 1025
+    },
+    {
+      "path": "generate_paper_v1_synthetic_holdout.py",
+      "category": "code",
+      "sha256": "67bdc887480cd24546d948c17c53b787c6e3321b27df4989338a1dfc25304843",
+      "bytes": 17571
+    },
+    {
+      "path": "output_generation_paper_v1_synthetic_holdout_v1/fingerprint_audit.json",
+      "category": "data",
+      "sha256": "acece0ddf01e35f205322bb238161e0d4d9a04005c10e8bf461facb31812f003",
+      "bytes": 583
+    },
+    {
+      "path": "output_generation_paper_v1_synthetic_holdout_v1/graph_step_manifest.json",
+      "category": "data",
+      "sha256": "ba2bb0f786eb67ef5aa461b161b9ef889acb6a9daa555a80d0ef39d9a3715377",
+      "bytes": 1609012
+    },
+    {
+      "path": "output_generation_paper_v1_synthetic_holdout_v1/holdout_generation_manifest.json",
+      "category": "data",
+      "sha256": "32cd3debaaa2f797e159de03a0b178a8895ffa06f12966606737b00e628785e2",
+      "bytes": 1761
+    },
+    {
+      "path": "output_generation_paper_v1_synthetic_holdout_v1/quality_report.json",
+      "category": "data",
+      "sha256": "ab45b59028dd56e1256b8d1820bcd935a99a3faa2b3122d4f5af0144dc1e18ff",
+      "bytes": 840
+    },
+    {
+      "path": "p1_a2_protocol.py",
+      "category": "code",
+      "sha256": "b5cc125aacdc5ee88750e7058f1a2a76239bfe24e30a7e45a8f1221fc435aff1",
+      "bytes": 42742
+    },
+    {
+      "path": "reports/paper_v1_p1/model_data_provenance.json",
+      "category": "provenance",
+      "sha256": "b80ed8d759692ab05539bae45cace8666ae73dd09171081db39021c19fc01a25",
+      "bytes": 9567
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/formal/holdout_once/inference_complete.json",
+      "category": "report",
+      "sha256": "daac0db0412930e23d04e49733a6a7e6ce175c4c866c70b60dedd565e344e065",
+      "bytes": 269
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/formal_metrics.json",
+      "category": "report",
+      "sha256": "806298be5d667c636418009efff772ce359f90ec8f9f65df75954469d2bda672",
+      "bytes": 187856
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/human_review_real_dev_10.csv",
+      "category": "report",
+      "sha256": "fc23cf35fe1672a875087fb2bb40835042ba49a0919291a63a7207cc9fd20174",
+      "bytes": 3775
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/human_review_real_dev_10.json",
+      "category": "report",
+      "sha256": "0ddfbb3a080b777a950461050891b0bb96fc8f1aaa8ed7742c1f47e232e955ac",
+      "bytes": 6498
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/human_review_synthetic_20.csv",
+      "category": "report",
+      "sha256": "aa365dd86fe0e38a1462089b21057c6f79d381b7c338814063ab37e2a1af5821",
+      "bytes": 10878
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/human_review_synthetic_20.json",
+      "category": "report",
+      "sha256": "7beccf0d4c37c8dbdfead3d8171b6603d4d9f28188cb7240783d1a387da64ca1",
+      "bytes": 17290
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/p1_a2_report.zh-CN.md",
+      "category": "report",
+      "sha256": "ab1f0e0e75c32c1fda912e14a2bd55694a6bdb0fc06bea297fa132013d6781db",
+      "bytes": 3060
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/preholdout_selection.json",
+      "category": "report",
+      "sha256": "3f334faaf04402eecb68a09868a551965f370267363e0a6c0c3d4f8fcd14a5eb",
+      "bytes": 205673
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/preholdout_selection.sha256.json",
+      "category": "report",
+      "sha256": "73f718945b09227503dd38c4f517c4d0f74ab07f2d70f76a3b28c5a99f327d09",
+      "bytes": 220
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/repeatability.json",
+      "category": "report",
+      "sha256": "edaa4afd232126313f28a9db1cbf20f75fa757a57d58cb11a20fa578601da0a8",
+      "bytes": 348
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/superseded_review_packages.json",
+      "category": "report",
+      "sha256": "0aa29340ec66fe3e02cfada3563964fc136a09805dc72f4dccfce0ce90d81be7",
+      "bytes": 578
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/val_ablation/diagnostic_legacy_wired/decision_deltas/candidate_A0_to_A2.json",
+      "category": "report",
+      "sha256": "bff90ef93fd46be617585e9bae7d64328c9b5565ad72fd3e459b35c2c6220301",
+      "bytes": 8302
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/val_ablation/diagnostic_legacy_wired/decision_deltas/rib_A0_to_A4.json",
+      "category": "report",
+      "sha256": "18e947f3b1cf4c1810861bbaccf2958d8d44d6320d2e77e98f7db7b43b7ab049",
+      "bytes": 3597
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/val_ablation/diagnostic_legacy_wired/decision_deltas/topology_A0_to_A1.json",
+      "category": "report",
+      "sha256": "fd61f73ea81e10a66c31d6302eed50032a0dfac9fb041e7113953b4275efee2b",
+      "bytes": 8330
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/val_ablation/diagnostic_legacy_wired/decision_deltas/topology_A2_to_A3.json",
+      "category": "report",
+      "sha256": "55cfa6ab3ac11c90d7ac943791ee41d372a411f1c3dde4f0b90de58e1aa1834f",
+      "bytes": 7561
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/val_ablation/diagnostic_legacy_wired/degradation_attribution.json",
+      "category": "report",
+      "sha256": "9e12338cfbacfea2a0e401c9ba781f4835575d7d1a205f3e0db81b86408d4c53",
+      "bytes": 5036
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/val_ablation/diagnostic_legacy_wired/metrics.json",
+      "category": "report",
+      "sha256": "e0b26003e0e840aa890c129d7bf0c66da091a19133cb75017513453452fea37f",
+      "bytes": 337579
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/val_ablation/diagnostic_legacy_wired/selection_preview.json",
+      "category": "report",
+      "sha256": "4bee973c6aaef88f2be8c884c4ea3e016dd0987e5f5884b8e1954c8b471c37b3",
+      "bytes": 70277
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/val_ablation/final/decision_deltas/candidate_A0_to_A2.json",
+      "category": "report",
+      "sha256": "066e86389321ebf332605cafb34c131515448e23464259fb1a139f6d484bf3b9",
+      "bytes": 4619
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/val_ablation/final/decision_deltas/rib_A0_to_A4.json",
+      "category": "report",
+      "sha256": "18e947f3b1cf4c1810861bbaccf2958d8d44d6320d2e77e98f7db7b43b7ab049",
+      "bytes": 3597
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/val_ablation/final/decision_deltas/topology_A0_to_A1.json",
+      "category": "report",
+      "sha256": "9b01e806caafaac708499aab76808f724661bda21f6b3b012334aec62351c080",
+      "bytes": 7217
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/val_ablation/final/decision_deltas/topology_A2_to_A3.json",
+      "category": "report",
+      "sha256": "806b0400982a89fe8b60273f6090cf9081f5ac8de589155f4d6377966f5953a4",
+      "bytes": 7245
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/val_ablation/final/degradation_attribution.json",
+      "category": "report",
+      "sha256": "d03cd629c721c90bbe626341c7b2d347518adb036c76bf9943d60fc44f8e2c6a",
+      "bytes": 5016
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/val_ablation/final/metrics.json",
+      "category": "report",
+      "sha256": "ffc60c62def12a2df67891d4bab08c5f04c6929624349f0b2a374de6bd4b87bc",
+      "bytes": 340220
+    },
+    {
+      "path": "reports/paper_v1_p1_a2/val_ablation/final/selection_preview.json",
+      "category": "report",
+      "sha256": "6c81506585138fb51bff5c175058e93a8cfd9e244370ef93969a777d9b3a4e41",
+      "bytes": 70275
+    },
+    {
+      "path": "run_paper_v1_p1_a2.py",
+      "category": "code",
+      "sha256": "a3fd90246c6fe61b7687c7f015f050e6ee7d5dc02b3aae28ee617be658858130",
+      "bytes": 44291
+    },
+    {
+      "path": "tests/test_paper_v1_p1_a2.py",
+      "category": "test",
+      "sha256": "7295ec37ee46f7e29e6ffd0c2ff5b4a23d05b034713d76461e896c4a2a8efea7",
+      "bytes": 9105
+    }
+  ],
+  "directory_digests": [
+    {
+      "path": "W:\\python\\FEA\\dataset_generator\\output_generation_paper_v1_synthetic_holdout_v1\\graphs",
+      "file_count": 1080,
+      "bytes": 100596918,
+      "sha256": "0d338af1a5c2ac46a5476ad5f46a1d0a1b33bf9d25c63bf2914d8d9a6f7adcf9"
+    },
+    {
+      "path": "W:\\python\\FEA\\dataset_generator\\output_generation_paper_v1_synthetic_holdout_v1\\steps",
+      "file_count": 1080,
+      "bytes": 34497494,
+      "sha256": "cca28349c00f94b96c441599a4a5aea14d6a331c695ab23f6a4f68662b9af21d"
+    },
+    {
+      "path": "W:\\python\\FEA\\dataset_generator\\reports\\paper_v1_p1_a2\\formal\\holdout_once\\predictions",
+      "file_count": 1080,
+      "bytes": 12337858,
+      "sha256": "a4fcb25bc4b1d0d3d0a6fb4325d6d092d81ce7ad2ad74ac3aea65218b719720f"
+    },
+    {
+      "path": "W:\\python\\FEA\\dataset_generator\\reports\\paper_v1_p1_a2\\formal\\holdout_once\\feature_objects",
+      "file_count": 1080,
+      "bytes": 11624047,
+      "sha256": "1c18bc820e0f01e98b4a6a9748916bf8568af8abcaa290e415925e15371eecb2"
+    },
+    {
+      "path": "W:\\python\\FEA\\dataset_generator\\reports\\paper_v1_p1_a2\\formal\\holdout_once\\raw",
+      "file_count": 1081,
+      "bytes": 12372640,
+      "sha256": "46461b2737d1d62254bbf67028bb60141a7b72d0bbb0e2b9b05ce9c13ac37848"
+    },
+    {
+      "path": "W:\\python\\FEA\\dataset_generator\\reports\\paper_v1_p1_a2\\formal\\repeat_1",
+      "file_count": 105,
+      "bytes": 4488957,
+      "sha256": "2c97e0c138bf75f5f0caca97194afc97beff2037475d615aadd9bd6e24ef5ac0"
+    },
+    {
+      "path": "W:\\python\\FEA\\dataset_generator\\reports\\paper_v1_p1_a2\\formal\\repeat_2",
+      "file_count": 105,
+      "bytes": 4488957,
+      "sha256": "fbdf2350df709dd936d34812d4c78d793b4f6913e7f94e99adc2f32168e1100d"
+    }
+  ],
+  "formal_metric_summary": {
+    "holdout_sample_count": 1080,
+    "holdout_object_macro_f1": 0.848635047215
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CAE Inference Graph",
+  "type": "object",
+  "required": [
+    "graph_mode",
+    "source_step_path",
+    "nodes",
+    "edges",
+    "edge_attributes",
+    "feature_sets",
+    "label_maps"
+  ],
+  "properties": {
+    "graph_mode": {
+      "type": "string",
+      "const": "inference_unlabeled"
+    },
+    "source_step_path": {
+      "type": "string"
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "idx",
+          "primitive_surface",
+          "primitive_surface_id",
+          "attributes"
+        ],
+        "properties": {
+          "idx": { "type": "integer" },
+          "primitive_surface": { "type": "string" },
+          "primitive_surface_id": { "type": "integer" },
+          "attributes": { "type": "object" }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": { "type": "integer" }
+      }
+    },
+    "edge_attributes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "feature_sets": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "label_maps": {
+      "type": "object",
+      "required": ["primitive_surface"],
+      "properties": {
+        "primitive_surface": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

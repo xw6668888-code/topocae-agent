@@ -1,0 +1,269 @@
+{
+  "schema": "topocae_paper_freeze_manifest_v1",
+  "freeze_id": "paper_v1",
+  "phase": "P0-A1",
+  "created_at": "2026-07-16T12:25:29+08:00",
+  "vcs": {
+    "available": false,
+    "reason": "The workspace .git directory is not valid Git metadata; file-level SHA256 is authoritative for this freeze."
+  },
+  "environment": {
+    "python": "3.11.14",
+    "implementation": "CPython",
+    "executable": "W:\\python\\envs\\feagpt\\python.exe",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "torch": "2.10.0",
+    "numpy": "2.4.6",
+    "scikit_learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "seeds": {
+    "checkpoint_training_seed": 20260624,
+    "paper_pipeline_seed": 20260716,
+    "pythonhashseed": 0
+  },
+  "selection": {
+    "gnn_checkpoint": "v5.5 expanded v5.1-compatible 24-dimensional loop-role checkpoint",
+    "candidate_classifier": "v5.1 hard-weight-4 candidate topology classifier",
+    "instance_candidate_classifier": "disabled because the v5.10 assembled path and v5.24 replacement have recorded real-chain regressions",
+    "rib_candidate_proposer": "v5.9-B predefined-color-fix full-training proposer",
+    "rib_boundary_classifier": "v5.8-C colored rib boundary classifier",
+    "feature_object_grouping": "connected_components_same_macro_feature"
+  },
+  "excluded_research_artifacts": [
+    "test_part_s3",
+    "test_part_s3_rib_colored",
+    "all output_real_step_s3* derivatives",
+    "all configs/test_part_s3* truth files"
+  ],
+  "files": [
+    {
+      "path": ".env.example",
+      "role": "security_environment_template",
+      "bytes": 208,
+      "sha256": "13428937560d5a12bd749ba2d7b14812fd35eab41455fa68f4bc9ec67b9caf7e"
+    },
+    {
+      "path": ".gitignore",
+      "role": "security_ignore_policy",
+      "bytes": 73,
+      "sha256": "a430e5176ff9e517944a26e41d0ca16ff0e96e0348c2203a390924da68317ebc"
+    },
+    {
+      "path": "environment.yml",
+      "role": "declared_environment",
+      "bytes": 162,
+      "sha256": "f273f3483501652546b41655097eef2c7eae14eb752597905b67b7b98146b0cf"
+    },
+    {
+      "path": "configs/paper_v1/recognition.json",
+      "role": "paper_recognition_config",
+      "bytes": 2654,
+      "sha256": "23fd1cb0f0a6c2b874608fe4d88296875c76c4fb33e0e66dd96a258281b0e5c5"
+    },
+    {
+      "path": "configs/paper_v1/datasets.json",
+      "role": "paper_dataset_policy",
+      "bytes": 1206,
+      "sha256": "ebc9e7cb2dae7d9ae9aaf49f4b063f6c1b6388cf7d4e1688865480c70944da61"
+    },
+    {
+      "path": "configs/paper_v1/evaluation.json",
+      "role": "paper_evaluation_config",
+      "bytes": 925,
+      "sha256": "99606e72d5f78f693e44e4cc6c1159f3650d3a089450018837bbf1b61b0c373d"
+    },
+    {
+      "path": "configs/paper_v1/label_schema.json",
+      "role": "paper_label_schema",
+      "bytes": 1318,
+      "sha256": "a9f117c132a378cde13170a9d05a788f6254ab3680426a29b58a466f4e4a5cac"
+    },
+    {
+      "path": "run_paper_recognition_pipeline.py",
+      "role": "paper_entrypoint",
+      "bytes": 15032,
+      "sha256": "36ce4b607fd964efe5f6133c70f76500b8c5750ae6e465a8dcec5e430c2612ea"
+    },
+    {
+      "path": "run_gnn_inference.py",
+      "role": "recognition_runtime",
+      "bytes": 18698,
+      "sha256": "688b6d1df5544b002e2486cc5e0cc83a34cfff1d1af9746cac730cbb54e88b47"
+    },
+    {
+      "path": "prediction_to_feature_objects.py",
+      "role": "feature_object_runtime",
+      "bytes": 24749,
+      "sha256": "4d08035e870c9e59b641a916db354510e27bfd487404bc126a146af1e8ed4d51"
+    },
+    {
+      "path": "models/gnn_baseline.py",
+      "role": "recognition_runtime",
+      "bytes": 8378,
+      "sha256": "5bb99e969a3c2dc8eb002e62c2d691b286aeecb3fd597b9147c40a6caca7d0fa"
+    },
+    {
+      "path": "build_candidate_classifier_dataset.py",
+      "role": "candidate_feature_runtime_dependency",
+      "bytes": 15901,
+      "sha256": "9ab4f2c3f47f2830dd343f8cb546a048053a37ef51a584ba806fcc2161770d82"
+    },
+    {
+      "path": "build_rib_boundary_classifier_dataset.py",
+      "role": "rib_feature_runtime_dependency",
+      "bytes": 18265,
+      "sha256": "51c70b93070219d6b462520bc16e71e66c9a9b0f7b7d8db6e198cbd925cec43c"
+    },
+    {
+      "path": "utils/training_export.py",
+      "role": "graph_tensor_runtime",
+      "bytes": 27093,
+      "sha256": "aaa5a5117619b6af6311cb39692b2a98af52f2e5e0f0b023435ea87ad40a028a"
+    },
+    {
+      "path": "utils/topology_rules.py",
+      "role": "frozen_recognition_rules",
+      "bytes": 21510,
+      "sha256": "76213727a6a7a60041a714271153173933ea7c126419bb258203e2a2bf7d3c7e"
+    },
+    {
+      "path": "utils/topology_postprocess.py",
+      "role": "frozen_recognition_rules",
+      "bytes": 144115,
+      "sha256": "33df52e89f92bc1946ac89cc8a8eddc6319034ab384c9e447d03b31226feed6b"
+    },
+    {
+      "path": "utils/candidate_topology_features.py",
+      "role": "candidate_feature_runtime",
+      "bytes": 9043,
+      "sha256": "0296f5a60dd097b2ca5ec7a42a4de32b41478f0480ba8dfbcdc861d4ae4ccad8"
+    },
+    {
+      "path": "utils/candidate_classifier_postprocess.py",
+      "role": "candidate_classifier_runtime",
+      "bytes": 7109,
+      "sha256": "c7517335f1ffcea92bb146f4358ea0aaf898619e13f2f0b0af03fe7ae2604158"
+    },
+    {
+      "path": "utils/instance_candidate_assembly.py",
+      "role": "imported_runtime_dependency_disabled_path",
+      "bytes": 27119,
+      "sha256": "78e319d52000d6b4cc99b347256340fd968d65f0afc212a646a4769f956eca49"
+    },
+    {
+      "path": "utils/instance_candidate_features.py",
+      "role": "imported_runtime_dependency_disabled_path",
+      "bytes": 30049,
+      "sha256": "7c3a86ed555d5cdf1ff931d689facfebdf63f6bb1012dec3799141bbf600fae4"
+    },
+    {
+      "path": "utils/instance_candidate_postprocess.py",
+      "role": "imported_runtime_dependency_disabled_path",
+      "bytes": 7242,
+      "sha256": "381d959d0b16100614dc1624f20809b73d40333763c93a819c84e67f3b5b8d33"
+    },
+    {
+      "path": "utils/rib_candidate_features.py",
+      "role": "rib_candidate_runtime",
+      "bytes": 5194,
+      "sha256": "8aeaa0eda1541c8075c1533d2de91d2e9d3d68156306ca399b24ae6f575a8866"
+    },
+    {
+      "path": "utils/rib_candidate_proposer_postprocess.py",
+      "role": "rib_candidate_runtime",
+      "bytes": 7038,
+      "sha256": "be4850d0503786dd6024cee5424e98f55471f4757cbb81d28b61ccd27dbe6132"
+    },
+    {
+      "path": "utils/rib_boundary_classifier_postprocess.py",
+      "role": "rib_boundary_runtime",
+      "bytes": 8864,
+      "sha256": "91e1f81ee2bac61d7d9b9b155dc070f44e6f710c4bd7287db6427592d594a80f"
+    },
+    {
+      "path": "utils/selectable_regions.py",
+      "role": "selectable_region_runtime",
+      "bytes": 12730,
+      "sha256": "8b82e63fcf957900076cdd43a5fd99d887d9e245ef16bd401770c16c1e374805"
+    },
+    {
+      "path": "CAE_feature_ontology.yaml",
+      "role": "ontology_provenance",
+      "bytes": 19170,
+      "sha256": "54519a2dbc627a5f34a992382c04f26681f9d88b9b5ee7a98e9ba541517f9e92"
+    },
+    {
+      "path": "face_semantic_subtype_ontology.yaml",
+      "role": "ontology_provenance",
+      "bytes": 15487,
+      "sha256": "5de2ebd0c500b9e8817cc15d89b396dbda8107e7a9fe9ffbca54a2b65a9517f7"
+    },
+    {
+      "path": "schemas/feature_objects.schema.json",
+      "role": "feature_object_schema",
+      "bytes": 3553,
+      "sha256": "efbce5b8e91b5950e3c8c7892e4278ae7fec4f763f89bf074c1f54136a9b5bdf"
+    },
+    {
+      "path": "output_generation_v5_5_v51dist_looprole_5400/model_runs/edge_aware_v5_5_expanded_v51_compat_24dim/best.pt",
+      "role": "gnn_checkpoint",
+      "bytes": 1145167,
+      "sha256": "5a7c8cda2d60da5a2003ce165afbf30d81b0f884aebed7d2d75d79ce7a928c89"
+    },
+    {
+      "path": "output_generation_v5_5_v51dist_looprole_5400/model_runs/edge_aware_v5_5_expanded_v51_compat_24dim/config.json",
+      "role": "gnn_checkpoint_config_and_complete_label_spaces",
+      "bytes": 11966,
+      "sha256": "d94f0cad966558a909e4a74c196429868147abb052fa9cd9bf0d120cdf89e345"
+    },
+    {
+      "path": "output_generation_v5_5_v51dist_looprole_5400/model_runs/edge_aware_v5_5_expanded_v51_compat_24dim/metrics.json",
+      "role": "gnn_checkpoint_initialization_record",
+      "bytes": 174,
+      "sha256": "acef046062b20b255925652c6afd621e870a0b7633e0322b78ff3fdf3406fa25"
+    },
+    {
+      "path": "output_real_step_s2_v5_5_looprole/reports/v5_5_looprole_experiment_summary.md",
+      "role": "gnn_selection_evidence",
+      "bytes": 3382,
+      "sha256": "074fb96fa78f02a0acbde9db8134805defb831d59864676f51ab1cdf57621d92"
+    },
+    {
+      "path": "output_generation_v5_1_candidate_topology_dataset/model_runs/random_forest_v5_1_candidate_topology_hardw4/model.joblib",
+      "role": "candidate_classifier",
+      "bytes": 48680222,
+      "sha256": "a7f0dcfbf5007ecca8e162be6cc550b782db44ffb2934d97b12d3b187ea55dd5"
+    },
+    {
+      "path": "output_generation_v5_1_candidate_topology_dataset/model_runs/random_forest_v5_1_candidate_topology_hardw4/metrics.json",
+      "role": "candidate_classifier_metrics",
+      "bytes": 99643,
+      "sha256": "b2767091eb438360b319974199007141c54410438c2c486228f081f160eb9bbc"
+    },
+    {
+      "path": "output_generation_v5_9_b_rib_candidate_hardcase_dataset_predefinedfix_fulltrain/model_runs/random_forest_rib_candidate_proposer_v5_9_b_predefinedfix/model.joblib",
+      "role": "rib_candidate_proposer",
+      "bytes": 2468859,
+      "sha256": "37bec4caf0b527c0ae0725550f4e6bd652852bb2376e6c2e8e8c8cea5533a2b9"
+    },
+    {
+      "path": "output_generation_v5_9_b_rib_candidate_hardcase_dataset_predefinedfix_fulltrain/model_runs/random_forest_rib_candidate_proposer_v5_9_b_predefinedfix/metrics.json",
+      "role": "rib_candidate_proposer_metrics",
+      "bytes": 6605,
+      "sha256": "ed5ec8d0bf0bc98ad853c06d97ad5c8c1cfffaf8b66c9f4794d55a9244583c66"
+    },
+    {
+      "path": "output_generation_v5_8_c_rib_boundary_colored_dataset/model_runs/random_forest_rib_boundary_colored_v5_8_c/model.joblib",
+      "role": "rib_boundary_classifier",
+      "bytes": 6298618,
+      "sha256": "16df3b59ce47e71130e92451c04c07aa261a16fd585a98277cd22a087f433c64"
+    },
+    {
+      "path": "output_generation_v5_8_c_rib_boundary_colored_dataset/model_runs/random_forest_rib_boundary_colored_v5_8_c/metrics.json",
+      "role": "rib_boundary_classifier_metrics",
+      "bytes": 14393,
+      "sha256": "3f34a0f3a08008666c1dee24e288a7adc3573f74967744f44b6cc74d996af925"
+    }
+  ]
+}

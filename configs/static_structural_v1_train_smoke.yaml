@@ -1,0 +1,56 @@
+dataset:
+  num_samples: 24
+  random_seed: 20260601
+  stock_size_range:
+    L: [100.0, 140.0]
+    W: [100.0, 140.0]
+    H: [40.0, 60.0]
+  output_dir: null
+
+generation:
+  enabled_generators:
+    - SteppedHoleGenerator
+    - ThroughHoleGenerator
+    - BlindHoleGenerator
+    - CounterboreHoleGenerator
+    - CountersinkHoleGenerator
+    - ObroundHoleGenerator
+    - USlotGenerator
+    - SlotRectGenerator
+    - RectPocketGenerator
+    - CircularPocketGenerator
+    - BossFeatureGenerator
+    - PadGenerator
+    - RibGenerator
+    - WebGenerator
+    - FilletGenerator
+    - ChamferGenerator
+  instance_count_range: [0, 1]
+  require_nonempty_sample: true
+  max_generation_attempts: 10
+  coverage_control:
+    enabled: false
+    min_instances_per_macro: 0
+    target_macro_features: []
+    max_extra_samples: 0
+    max_attempts_per_target: 0
+
+exports:
+  write_step: true
+  write_graph: true
+  build_training_package: true
+  split_ratios:
+    train: 0.75
+    val: 0.125
+    test: 0.125
+  llm_round_ndigits: 4
+  gnn_round_ndigits: 6
+
+feature_catalog:
+  enabled: false
+  only: false
+  output_subdir: feature_catalog
+  variants_per_feature: 1
+  max_attempts_per_feature: 80
+  write_step: true
+  write_graph: true

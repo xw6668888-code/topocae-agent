@@ -1,0 +1,63 @@
+{
+  "schema": "topocae_paper_v1_clean_datasets_v1",
+  "phase": "P1-A1",
+  "formal_synthetic": {
+    "name": "Synthetic",
+    "root": "output_generation_v5_1_augmented_full_5400_clean",
+    "graph_root": "output_generation_v5_1_augmented_full_5400_clean/graphs",
+    "step_root": "output_generation_v5_1_augmented_full_5400_clean/steps",
+    "dataset_meta": "output_generation_v5_1_augmented_full_5400_clean/dataset_meta.json",
+    "training_metadata": "output_generation_v5_1_augmented_full_5400_clean/training/metadata/training_metadata.json",
+    "splits": {
+      "train": "output_generation_v5_1_augmented_full_5400_clean/splits/train.json",
+      "val": "output_generation_v5_1_augmented_full_5400_clean/splits/val.json",
+      "test": "output_generation_v5_1_augmented_full_5400_clean/splits/test.json"
+    },
+    "split_seed": 20260623,
+    "reason": "This is the original split used to train and select the v5.1 checkpoint from which the frozen 24D compatibility checkpoint was deterministically expanded. The later loop-role re-extraction used a different split seed and is not used as paper test truth."
+  },
+  "real_dev": {
+    "test_part": {
+      "graph_root": "output_real_step_test_part/graphs",
+      "truth": null,
+      "truth_status": "not_computable"
+    },
+    "test_part_s": {
+      "graph_root": "output_real_step_s_v5_6_b_rib_boundary/graphs",
+      "truth": null,
+      "truth_status": "not_computable"
+    },
+    "test_part_s1": {
+      "graph_root": "output_real_step_s1_v5_6_b_rib_boundary/graphs",
+      "truth": null,
+      "truth_status": "not_computable"
+    },
+    "test_part_s2": {
+      "graph_root": "output_real_step_s2_v5_4_g_looprole/graphs",
+      "truth": "configs/test_part_s2_area_truth_v5_4_g_looprole.json",
+      "truth_status": "area_truth_only"
+    }
+  },
+  "rotation_dev": {
+    "source_dataset": "test_part_s",
+    "provenance_report": "output_real_step_s_v4_0_invariant_current/reports/rotation_prediction_consistency.json",
+    "groups": {
+      "part1": ["part11", "part12", "part13"],
+      "part2": ["part21", "part22", "part23"],
+      "part3": ["part31", "part32", "part33"]
+    }
+  },
+  "excluded_tokens": [
+    "test_part_s3",
+    "real_step_s3",
+    "part_s3",
+    "s3_rib_colored"
+  ],
+  "guard": {
+    "reject_before_read": true,
+    "reject_recursive_ancestor": true,
+    "legacy_metadata_exception": [
+      "output_generation_v5_8_c_rib_boundary_colored_dataset/metadata.json"
+    ]
+  }
+}

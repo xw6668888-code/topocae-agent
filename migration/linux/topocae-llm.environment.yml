@@ -1,0 +1,10 @@
+name: topocae-llm
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - uv
+  - pip:
+      - vllm==0.26.0
+      - openai==2.48.0

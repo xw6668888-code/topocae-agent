@@ -1,0 +1,33 @@
+{
+  "schema_version": "topocae_cae_query_template_split_manifest_1",
+  "policy": "Template families and sentence constructions are disjoint across train, val, and test.",
+  "splits": {
+    "train": {
+      "families": [
+        "train.canonical.polite_request",
+        "train.en.apply_task",
+        "train.en.preprocessing_task",
+        "train.zh.polite_request"
+      ]
+    },
+    "val": {
+      "families": [
+        "val.canonical.configure_part",
+        "val.en.analysis_setup",
+        "val.en.required_setup",
+        "val.zh.configure_part"
+      ]
+    },
+    "test": {
+      "families": [
+        "test.canonical.definition",
+        "test.en.prescription",
+        "test.en.model_must",
+        "test.zh.model_must"
+      ]
+    }
+  },
+  "fixture_description_source_allowed": false,
+  "llm_paraphrase_allowed": false,
+  "h2_approved_requirements_usage": "style_reference_only"
+}

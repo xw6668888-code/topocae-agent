@@ -1,0 +1,91 @@
+schema_version: topocae_cae_query_phrase_bank_en_1
+language: en-US
+feature_labels:
+  through_hole_round: {singular: round through hole, plural: round through holes}
+  blind_hole_round: {singular: round blind hole, plural: round blind holes}
+  stepped_hole_round: {singular: stepped round hole, plural: stepped round holes}
+  counterbore_hole: {singular: counterbore hole, plural: counterbore holes}
+  countersink_hole: {singular: countersink hole, plural: countersink holes}
+  obround_hole: {singular: obround hole, plural: obround holes}
+  slot_rect: {singular: rectangular slot, plural: rectangular slots}
+  slot_u: {singular: U-shaped slot, plural: U-shaped slots}
+  slot_v: {singular: V-shaped slot, plural: V-shaped slots}
+  slot_o: {singular: O-shaped slot, plural: O-shaped slots}
+  pocket_rect: {singular: rectangular pocket, plural: rectangular pockets}
+  pocket_circular: {singular: circular pocket, plural: circular pockets}
+  cylinder_boss: {singular: cylindrical boss, plural: cylindrical bosses}
+  rectangular_boss: {singular: rectangular boss, plural: rectangular bosses}
+  rib: {singular: rib, plural: ribs}
+  fillet: {singular: fillet, plural: fillets}
+  chamfer: {singular: chamfer, plural: chamfers}
+face_role_labels:
+  feature_region: {singular: complete feature region, plural: complete feature regions}
+  hole_wall: {singular: hole wall, plural: hole walls}
+  hole_bottom: {singular: hole bottom, plural: hole bottoms}
+  large_hole_wall: {singular: large-hole wall, plural: large-hole walls}
+  step_face: {singular: step face, plural: step faces}
+  small_hole_wall: {singular: small-hole wall, plural: small-hole walls}
+  through_small_hole_wall: {singular: through small-hole wall, plural: through small-hole walls}
+  countersink_conical_face: {singular: conical countersink face, plural: conical countersink faces}
+  through_hole_wall: {singular: through-hole wall, plural: through-hole walls}
+  straight_side_wall: {singular: straight side wall, plural: straight side walls}
+  rounded_end_wall: {singular: rounded end wall, plural: rounded end walls}
+  complete_slot_inner_wall: {singular: complete slot inner wall, plural: complete slot inner walls}
+  side_wall: {singular: side wall, plural: side walls}
+  bottom_face: {singular: bottom face, plural: bottom faces}
+  closed_end_face: {singular: closed end face, plural: closed end faces}
+  bottom_or_root_face: {singular: bottom or root face, plural: bottom or root faces}
+  top_face: {singular: top face, plural: top faces}
+  side_face: {singular: side face, plural: side faces}
+  top_or_end_face: {singular: top or end face, plural: top or end faces}
+  blend_face: {singular: blend face, plural: blend faces}
+  bevel_face: {singular: bevel face, plural: bevel faces}
+metric_labels:
+  diameter: diameter
+  radius: radius
+  depth: depth
+  area: area
+  length: length
+  width: width
+  thickness: thickness
+  distance: distance
+split_templates:
+  train:
+    canonical:
+      family_id: train.canonical.polite_request
+      template_id: train.canonical.polite_request.v1
+      pattern: "Please {request}."
+    en-1:
+      family_id: train.en.apply_task
+      template_id: train.en.apply_task.v1
+      pattern: "Use the model to {request}."
+    en-2:
+      family_id: train.en.preprocessing_task
+      template_id: train.en.preprocessing_task.v1
+      pattern: "The preprocessing task is to {request}."
+  val:
+    canonical:
+      family_id: val.canonical.configure_part
+      template_id: val.canonical.configure_part.v1
+      pattern: "Configure the part to {request}."
+    en-1:
+      family_id: val.en.analysis_setup
+      template_id: val.en.analysis_setup.v1
+      pattern: "Set up the analysis so that it will {request}."
+    en-2:
+      family_id: val.en.required_setup
+      template_id: val.en.required_setup.v1
+      pattern: "The required setup shall {request}."
+  test:
+    canonical:
+      family_id: test.canonical.definition
+      template_id: test.canonical.definition.v1
+      pattern: "Create a preprocessing definition that will {request}."
+    en-1:
+      family_id: test.en.prescription
+      template_id: test.en.prescription.v1
+      pattern: "Prescribe this CAE requirement: {request}."
+    en-2:
+      family_id: test.en.model_must
+      template_id: test.en.model_must.v1
+      pattern: "The CAE model must {request}."

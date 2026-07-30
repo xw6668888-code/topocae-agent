@@ -1,0 +1,68 @@
+schema_version: topocae_cae_feature_aliases_1
+canonical_feature_count: 17
+canonical_features:
+- canonical_name: through_hole_round
+  family: hole
+  aliases:
+  - through_hole
+- canonical_name: blind_hole_round
+  family: hole
+  aliases:
+  - blind_hole
+- canonical_name: stepped_hole_round
+  family: hole
+  aliases:
+  - stepped_hole
+- canonical_name: counterbore_hole
+  family: hole
+  aliases: []
+- canonical_name: countersink_hole
+  family: hole
+  aliases: []
+- canonical_name: obround_hole
+  family: hole
+  aliases: []
+- canonical_name: slot_rect
+  family: slot
+  aliases: []
+- canonical_name: slot_u
+  family: slot
+  aliases: []
+- canonical_name: slot_v
+  family: slot
+  aliases:
+  - swept_slot_v
+- canonical_name: slot_o
+  family: slot
+  aliases:
+  - swept_slot_o
+- canonical_name: pocket_rect
+  family: pocket
+  aliases: []
+- canonical_name: pocket_circular
+  family: pocket
+  aliases: []
+- canonical_name: cylinder_boss
+  family: protrusion
+  aliases: []
+- canonical_name: rectangular_boss
+  family: protrusion
+  aliases:
+  - pad
+  - rectangle_boss
+- canonical_name: rib
+  family: stiffener
+  aliases:
+  - web
+- canonical_name: fillet
+  family: transition
+  aliases: []
+- canonical_name: chamfer
+  family: transition
+  aliases: []
+compatibility_rules:
+  web:
+    canonical: rib
+    accept_as_input_alias: true
+    emit_as_canonical_output: false
+    reason: P2-A1 paper taxonomy has 17 targets and treats web as a legacy rib synonym.

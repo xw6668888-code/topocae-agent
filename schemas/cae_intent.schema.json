@@ -1,0 +1,1254 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topocae.local/schemas/cae_intent.schema.json",
+  "title": "TopoCAE CAE Intent v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "analysis_type",
+    "operations",
+    "source_language",
+    "assumptions",
+    "unit_system",
+    "normalization_audit"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "cae-intent/1.0.0"
+    },
+    "analysis_type": {
+      "const": "static_structural"
+    },
+    "operations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/operation"
+      }
+    },
+    "source_language": {
+      "type": "string",
+      "pattern": "^[a-z]{2,3}(?:-[A-Z]{2})?$"
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/confirmedAssumption"
+      }
+    },
+    "unit_system": {
+      "$ref": "#/$defs/unitSystem"
+    },
+    "normalization_audit": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/conversionAudit"
+      }
+    }
+  },
+  "$defs": {
+    "featureType": {
+      "enum": [
+        "through_hole_round",
+        "blind_hole_round",
+        "stepped_hole_round",
+        "counterbore_hole",
+        "countersink_hole",
+        "obround_hole",
+        "slot_rect",
+        "slot_u",
+        "slot_v",
+        "slot_o",
+        "pocket_rect",
+        "pocket_circular",
+        "cylinder_boss",
+        "rectangular_boss",
+        "rib",
+        "fillet",
+        "chamfer"
+      ]
+    },
+    "quantityCore": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dimension",
+        "value",
+        "unit"
+      ],
+      "properties": {
+        "dimension": {
+          "enum": [
+            "length",
+            "area",
+            "force",
+            "pressure",
+            "displacement",
+            "angle"
+          ]
+        },
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "enum": [
+            "um",
+            "mm",
+            "cm",
+            "m",
+            "mm2",
+            "cm2",
+            "m2",
+            "N",
+            "kN",
+            "MN",
+            "Pa",
+            "kPa",
+            "MPa",
+            "GPa",
+            "N/mm2",
+            "deg",
+            "rad"
+          ]
+        },
+        "tolerance": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "lengthQuantity": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/quantityCore"
+        },
+        {
+          "properties": {
+            "dimension": {
+              "const": "length"
+            }
+          }
+        }
+      ]
+    },
+    "areaQuantity": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/quantityCore"
+        },
+        {
+          "properties": {
+            "dimension": {
+              "const": "area"
+            }
+          }
+        }
+      ]
+    },
+    "forceQuantity": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/quantityCore"
+        },
+        {
+          "properties": {
+            "dimension": {
+              "const": "force"
+            }
+          }
+        }
+      ]
+    },
+    "pressureQuantity": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/quantityCore"
+        },
+        {
+          "properties": {
+            "dimension": {
+              "const": "pressure"
+            }
+          }
+        }
+      ]
+    },
+    "displacementQuantity": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/quantityCore"
+        },
+        {
+          "properties": {
+            "dimension": {
+              "const": "displacement"
+            }
+          }
+        }
+      ]
+    },
+    "quantityFilter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operator",
+        "value"
+      ],
+      "properties": {
+        "operator": {
+          "enum": [
+            "eq",
+            "lt",
+            "lte",
+            "gt",
+            "gte",
+            "between"
+          ]
+        },
+        "value": {
+          "$ref": "#/$defs/quantityCore"
+        },
+        "upper_value": {
+          "$ref": "#/$defs/quantityCore"
+        }
+      }
+    },
+    "semanticReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reference_type"
+      ],
+      "properties": {
+        "reference_type": {
+          "enum": [
+            "part_centroid",
+            "bounding_box_min",
+            "bounding_box_max",
+            "datum_plane",
+            "datum_axis",
+            "feature_query"
+          ]
+        },
+        "axis": {
+          "enum": [
+            "X",
+            "Y",
+            "Z"
+          ]
+        },
+        "feature_type": {
+          "$ref": "#/$defs/featureType"
+        },
+        "face_role": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z][a-z0-9_]*$"
+        }
+      }
+    },
+    "spatialRelation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "relation",
+        "reference"
+      ],
+      "properties": {
+        "relation": {
+          "enum": [
+            "left_of",
+            "right_of",
+            "above",
+            "below",
+            "front_of",
+            "behind",
+            "within_distance"
+          ]
+        },
+        "reference": {
+          "$ref": "#/$defs/semanticReference"
+        },
+        "distance": {
+          "$ref": "#/$defs/lengthQuantity"
+        }
+      }
+    },
+    "referenceFrame": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "global_cartesian",
+            "part_local_cartesian"
+          ]
+        }
+      }
+    },
+    "direction": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "vector"
+          ],
+          "properties": {
+            "kind": {
+              "enum": [
+                "global_cartesian",
+                "part_local_cartesian"
+              ]
+            },
+            "vector": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "kind": {
+              "enum": [
+                "surface_normal",
+                "opposite_surface_normal"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "filters": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "diameter": {
+          "$ref": "#/$defs/quantityFilter"
+        },
+        "radius": {
+          "$ref": "#/$defs/quantityFilter"
+        },
+        "depth": {
+          "$ref": "#/$defs/quantityFilter"
+        },
+        "area": {
+          "$ref": "#/$defs/quantityFilter"
+        },
+        "length": {
+          "$ref": "#/$defs/quantityFilter"
+        },
+        "width": {
+          "$ref": "#/$defs/quantityFilter"
+        },
+        "thickness": {
+          "$ref": "#/$defs/quantityFilter"
+        },
+        "spatial_relation": {
+          "$ref": "#/$defs/spatialRelation"
+        },
+        "nearest_to": {
+          "$ref": "#/$defs/semanticReference"
+        }
+      }
+    },
+    "featureTarget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "feature_type",
+        "quantifier",
+        "face_role",
+        "filters"
+      ],
+      "properties": {
+        "feature_type": {
+          "$ref": "#/$defs/featureType"
+        },
+        "quantifier": {
+          "enum": [
+            "all",
+            "any_one",
+            "exactly_one",
+            "count",
+            "largest",
+            "smallest",
+            "nearest"
+          ]
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "comparison_metric": {
+          "enum": [
+            "diameter",
+            "radius",
+            "depth",
+            "area",
+            "length",
+            "width",
+            "thickness"
+          ]
+        },
+        "face_role": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "filters": {
+          "$ref": "#/$defs/filters"
+        },
+        "reference_frame": {
+          "$ref": "#/$defs/referenceFrame"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "quantifier": {
+                "const": "count"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "count"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "count"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "quantifier": {
+                "enum": [
+                  "largest",
+                  "smallest"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "comparison_metric"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "comparison_metric"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "quantifier": {
+                "const": "nearest"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "reference_frame"
+            ],
+            "properties": {
+              "filters": {
+                "required": [
+                  "nearest_to"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "filters": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "spatial_relation"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "nearest_to"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "reference_frame"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "reference_frame"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "wholePartTarget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope"
+      ],
+      "properties": {
+        "scope": {
+          "const": "whole_part"
+        }
+      }
+    },
+    "fixedSupport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "operation_type",
+        "target",
+        "parameters"
+      ],
+      "properties": {
+        "operation_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "operation_type": {
+          "const": "fixed_support"
+        },
+        "target": {
+          "$ref": "#/$defs/featureTarget"
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "constrained_dofs"
+          ],
+          "properties": {
+            "constrained_dofs": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "U1",
+                  "U2",
+                  "U3"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "displacement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "operation_type",
+        "target",
+        "parameters"
+      ],
+      "properties": {
+        "operation_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "operation_type": {
+          "const": "displacement"
+        },
+        "target": {
+          "$ref": "#/$defs/featureTarget"
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "components",
+            "reference_frame"
+          ],
+          "properties": {
+            "components": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 3,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "dof",
+                  "value"
+                ],
+                "properties": {
+                  "dof": {
+                    "enum": [
+                      "U1",
+                      "U2",
+                      "U3"
+                    ]
+                  },
+                  "value": {
+                    "$ref": "#/$defs/displacementQuantity"
+                  }
+                }
+              }
+            },
+            "reference_frame": {
+              "$ref": "#/$defs/referenceFrame"
+            }
+          }
+        }
+      }
+    },
+    "pressure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "operation_type",
+        "target",
+        "parameters"
+      ],
+      "properties": {
+        "operation_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "operation_type": {
+          "const": "pressure"
+        },
+        "target": {
+          "$ref": "#/$defs/featureTarget"
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "magnitude",
+            "direction"
+          ],
+          "properties": {
+            "magnitude": {
+              "$ref": "#/$defs/pressureQuantity"
+            },
+            "direction": {
+              "$ref": "#/$defs/direction"
+            }
+          }
+        }
+      }
+    },
+    "surfaceTraction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "operation_type",
+        "target",
+        "parameters"
+      ],
+      "properties": {
+        "operation_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "operation_type": {
+          "const": "surface_traction"
+        },
+        "target": {
+          "$ref": "#/$defs/featureTarget"
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "magnitude",
+            "direction"
+          ],
+          "properties": {
+            "magnitude": {
+              "$ref": "#/$defs/pressureQuantity"
+            },
+            "direction": {
+              "$ref": "#/$defs/direction"
+            }
+          }
+        }
+      }
+    },
+    "materialAssignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "operation_type",
+        "target",
+        "parameters"
+      ],
+      "properties": {
+        "operation_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "operation_type": {
+          "const": "material_assignment"
+        },
+        "target": {
+          "$ref": "#/$defs/wholePartTarget"
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "material_name",
+            "elastic"
+          ],
+          "properties": {
+            "material_name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "elastic": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "youngs_modulus",
+                "poisson_ratio"
+              ],
+              "properties": {
+                "youngs_modulus": {
+                  "$ref": "#/$defs/pressureQuantity"
+                },
+                "poisson_ratio": {
+                  "type": "number",
+                  "minimum": 0,
+                  "exclusiveMaximum": 0.5
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "globalMeshSize": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "operation_type",
+        "target",
+        "parameters"
+      ],
+      "properties": {
+        "operation_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "operation_type": {
+          "const": "global_mesh_size"
+        },
+        "target": {
+          "$ref": "#/$defs/wholePartTarget"
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "size"
+          ],
+          "properties": {
+            "size": {
+              "$ref": "#/$defs/lengthQuantity"
+            }
+          }
+        }
+      }
+    },
+    "localMeshSize": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "operation_type",
+        "target",
+        "parameters"
+      ],
+      "properties": {
+        "operation_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "operation_type": {
+          "const": "local_mesh_size"
+        },
+        "target": {
+          "$ref": "#/$defs/featureTarget"
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "size"
+          ],
+          "properties": {
+            "size": {
+              "$ref": "#/$defs/lengthQuantity"
+            }
+          }
+        }
+      }
+    },
+    "operation": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/fixedSupport"
+        },
+        {
+          "$ref": "#/$defs/displacement"
+        },
+        {
+          "$ref": "#/$defs/pressure"
+        },
+        {
+          "$ref": "#/$defs/surfaceTraction"
+        },
+        {
+          "$ref": "#/$defs/materialAssignment"
+        },
+        {
+          "$ref": "#/$defs/globalMeshSize"
+        },
+        {
+          "$ref": "#/$defs/localMeshSize"
+        }
+      ]
+    },
+    "confirmedAssumption": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assumption_id",
+        "text",
+        "confirmed_by"
+      ],
+      "properties": {
+        "assumption_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "confirmed_by": {
+          "const": "user"
+        }
+      }
+    },
+    "unitSystem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "length",
+        "area",
+        "force",
+        "pressure",
+        "displacement",
+        "angle"
+      ],
+      "properties": {
+        "length": {
+          "enum": [
+            "um",
+            "mm",
+            "cm",
+            "m"
+          ]
+        },
+        "area": {
+          "enum": [
+            "mm2",
+            "cm2",
+            "m2"
+          ]
+        },
+        "force": {
+          "enum": [
+            "N",
+            "kN",
+            "MN"
+          ]
+        },
+        "pressure": {
+          "enum": [
+            "Pa",
+            "kPa",
+            "MPa",
+            "GPa",
+            "N/mm2"
+          ]
+        },
+        "displacement": {
+          "enum": [
+            "um",
+            "mm",
+            "cm",
+            "m"
+          ]
+        },
+        "angle": {
+          "enum": [
+            "deg",
+            "rad"
+          ]
+        }
+      }
+    },
+    "conversionAudit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field_path",
+        "dimension",
+        "from_unit",
+        "to_unit",
+        "factor",
+        "original_value",
+        "normalized_value"
+      ],
+      "properties": {
+        "field_path": {
+          "type": "string",
+          "pattern": "^/"
+        },
+        "dimension": {
+          "enum": [
+            "length",
+            "area",
+            "force",
+            "pressure",
+            "displacement",
+            "angle"
+          ]
+        },
+        "from_unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "to_unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "factor": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "original_value": {
+          "type": "number"
+        },
+        "normalized_value": {
+          "type": "number"
+        },
+        "original_tolerance": {
+          "type": "number",
+          "minimum": 0
+        },
+        "normalized_tolerance": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "analysis_type": "static_structural",
+      "assumptions": [],
+      "normalization_audit": [],
+      "operations": [
+        {
+          "operation_id": "feature_op",
+          "operation_type": "fixed_support",
+          "parameters": {
+            "constrained_dofs": [
+              "U1",
+              "U2",
+              "U3"
+            ]
+          },
+          "target": {
+            "face_role": "feature_region",
+            "feature_type": "through_hole_round",
+            "filters": {},
+            "quantifier": "all"
+          }
+        }
+      ],
+      "schema_version": "cae-intent/1.0.0",
+      "source_language": "zh-CN",
+      "unit_system": {
+        "angle": "deg",
+        "area": "mm2",
+        "displacement": "mm",
+        "force": "N",
+        "length": "mm",
+        "pressure": "MPa"
+      }
+    },
+    {
+      "analysis_type": "static_structural",
+      "assumptions": [],
+      "normalization_audit": [],
+      "operations": [
+        {
+          "operation_id": "operation_coverage",
+          "operation_type": "displacement",
+          "parameters": {
+            "components": [
+              {
+                "dof": "U1",
+                "value": {
+                  "dimension": "displacement",
+                  "unit": "mm",
+                  "value": 0.2
+                }
+              }
+            ],
+            "reference_frame": {
+              "kind": "global_cartesian"
+            }
+          },
+          "target": {
+            "face_role": "top_face",
+            "feature_type": "cylinder_boss",
+            "filters": {},
+            "quantifier": "exactly_one"
+          }
+        }
+      ],
+      "schema_version": "cae-intent/1.0.0",
+      "source_language": "en-US",
+      "unit_system": {
+        "angle": "deg",
+        "area": "mm2",
+        "displacement": "mm",
+        "force": "N",
+        "length": "mm",
+        "pressure": "MPa"
+      }
+    },
+    {
+      "analysis_type": "static_structural",
+      "assumptions": [],
+      "normalization_audit": [],
+      "operations": [
+        {
+          "operation_id": "feature_op",
+          "operation_type": "pressure",
+          "parameters": {
+            "direction": {
+              "kind": "surface_normal"
+            },
+            "magnitude": {
+              "dimension": "pressure",
+              "unit": "MPa",
+              "value": 2.5
+            }
+          },
+          "target": {
+            "face_role": "feature_region",
+            "feature_type": "slot_u",
+            "filters": {},
+            "quantifier": "all"
+          }
+        }
+      ],
+      "schema_version": "cae-intent/1.0.0",
+      "source_language": "zh-CN",
+      "unit_system": {
+        "angle": "deg",
+        "area": "mm2",
+        "displacement": "mm",
+        "force": "N",
+        "length": "mm",
+        "pressure": "MPa"
+      }
+    },
+    {
+      "analysis_type": "static_structural",
+      "assumptions": [],
+      "normalization_audit": [],
+      "operations": [
+        {
+          "operation_id": "feature_op",
+          "operation_type": "surface_traction",
+          "parameters": {
+            "direction": {
+              "kind": "global_cartesian",
+              "vector": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "magnitude": {
+              "dimension": "pressure",
+              "unit": "MPa",
+              "value": 1.25
+            }
+          },
+          "target": {
+            "face_role": "feature_region",
+            "feature_type": "counterbore_hole",
+            "filters": {},
+            "quantifier": "all"
+          }
+        }
+      ],
+      "schema_version": "cae-intent/1.0.0",
+      "source_language": "zh-CN",
+      "unit_system": {
+        "angle": "deg",
+        "area": "mm2",
+        "displacement": "mm",
+        "force": "N",
+        "length": "mm",
+        "pressure": "MPa"
+      }
+    },
+    {
+      "analysis_type": "static_structural",
+      "assumptions": [],
+      "normalization_audit": [],
+      "operations": [
+        {
+          "operation_id": "operation_coverage",
+          "operation_type": "material_assignment",
+          "parameters": {
+            "elastic": {
+              "poisson_ratio": 0.3,
+              "youngs_modulus": {
+                "dimension": "pressure",
+                "unit": "GPa",
+                "value": 210
+              }
+            },
+            "material_name": "reviewed_linear_elastic_material"
+          },
+          "target": {
+            "scope": "whole_part"
+          }
+        }
+      ],
+      "schema_version": "cae-intent/1.0.0",
+      "source_language": "en-US",
+      "unit_system": {
+        "angle": "deg",
+        "area": "mm2",
+        "displacement": "mm",
+        "force": "N",
+        "length": "mm",
+        "pressure": "MPa"
+      }
+    },
+    {
+      "analysis_type": "static_structural",
+      "assumptions": [],
+      "normalization_audit": [],
+      "operations": [
+        {
+          "operation_id": "operation_coverage",
+          "operation_type": "global_mesh_size",
+          "parameters": {
+            "size": {
+              "dimension": "length",
+              "unit": "cm",
+              "value": 0.5
+            }
+          },
+          "target": {
+            "scope": "whole_part"
+          }
+        }
+      ],
+      "schema_version": "cae-intent/1.0.0",
+      "source_language": "en-US",
+      "unit_system": {
+        "angle": "deg",
+        "area": "mm2",
+        "displacement": "mm",
+        "force": "N",
+        "length": "mm",
+        "pressure": "MPa"
+      }
+    },
+    {
+      "analysis_type": "static_structural",
+      "assumptions": [],
+      "normalization_audit": [],
+      "operations": [
+        {
+          "operation_id": "feature_op",
+          "operation_type": "local_mesh_size",
+          "parameters": {
+            "size": {
+              "dimension": "length",
+              "value": 0.8,
+              "unit": "mm"
+            }
+          },
+          "target": {
+            "face_role": "feature_region",
+            "feature_type": "blind_hole_round",
+            "filters": {},
+            "quantifier": "all"
+          }
+        }
+      ],
+      "schema_version": "cae-intent/1.0.0",
+      "source_language": "zh-CN",
+      "unit_system": {
+        "angle": "deg",
+        "area": "mm2",
+        "displacement": "mm",
+        "force": "N",
+        "length": "mm",
+        "pressure": "MPa"
+      }
+    }
+  ]
+}

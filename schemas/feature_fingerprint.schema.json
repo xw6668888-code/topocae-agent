@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Software-Agnostic CAE Feature Fingerprint",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "coordinate_frame",
+    "units",
+    "round_ndigits",
+    "software_agnostic_signature",
+    "software_agnostic_signature_payload",
+    "area_total",
+    "area_mean",
+    "area_min",
+    "area_max",
+    "area_weighted_centroid",
+    "center_bbox_min",
+    "center_bbox_max",
+    "center_bbox_size",
+    "mean_normal",
+    "mean_axis",
+    "radius_stats",
+    "primitive_surface_histogram",
+    "semantic_subtype_histogram",
+    "derived_macro_feature_histogram",
+    "idealization_tag_histogram",
+    "adjacent_stock_face_count",
+    "adjacent_nonstock_face_count",
+    "adjacent_macro_feature_histogram",
+    "face_descriptors",
+    "matching_hints"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "cae_feature_fingerprint_v1"
+    },
+    "coordinate_frame": { "type": "string" },
+    "units": { "type": "string" },
+    "round_ndigits": { "type": "integer", "minimum": 0 },
+    "software_agnostic_signature": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "software_agnostic_signature_payload": { "type": "object" },
+    "area_total": { "type": "number" },
+    "area_mean": { "type": "number" },
+    "area_min": { "type": "number" },
+    "area_max": { "type": "number" },
+    "area_weighted_centroid": {
+      "type": "array",
+      "items": { "type": "number" },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "center_bbox_min": {
+      "type": "array",
+      "items": { "type": "number" },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "center_bbox_max": {
+      "type": "array",
+      "items": { "type": "number" },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "center_bbox_size": {
+      "type": "array",
+      "items": { "type": "number" },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "mean_normal": {
+      "type": "array",
+      "items": { "type": "number" }
+    },
+    "mean_axis": {
+      "type": "array",
+      "items": { "type": "number" }
+    },
+    "radius_stats": {
+      "type": "object",
+      "required": ["count", "min", "max", "mean"],
+      "properties": {
+        "count": { "type": "integer", "minimum": 0 },
+        "min": { "type": "number" },
+        "max": { "type": "number" },
+        "mean": { "type": "number" }
+      }
+    },
+    "primitive_surface_histogram": { "type": "object" },
+    "semantic_subtype_histogram": { "type": "object" },
+    "derived_macro_feature_histogram": { "type": "object" },
+    "idealization_tag_histogram": { "type": "object" },
+    "adjacent_stock_face_count": { "type": "integer", "minimum": 0 },
+    "adjacent_nonstock_face_count": { "type": "integer", "minimum": 0 },
+    "adjacent_macro_feature_histogram": { "type": "object" },
+    "face_descriptors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "face_idx",
+          "primitive_surface",
+          "primitive_surface_id",
+          "area",
+          "center",
+          "normal",
+          "axis",
+          "radius",
+          "macro_feature_id",
+          "macro_feature",
+          "semantic_subtype_id",
+          "semantic_subtype",
+          "macro_confidence",
+          "semantic_confidence"
+        ],
+        "properties": {
+          "face_idx": { "type": "integer" },
+          "primitive_surface": { "type": "string" },
+          "primitive_surface_id": { "type": "integer" },
+          "area": { "type": "number" },
+          "center": {
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "normal": {
+            "type": "array",
+            "items": { "type": "number" }
+          },
+          "axis": {
+            "type": "array",
+            "items": { "type": "number" }
+          },
+          "radius": { "type": "number" },
+          "macro_feature_id": { "type": "integer" },
+          "macro_feature": { "type": "string" },
+          "semantic_subtype_id": { "type": "integer" },
+          "semantic_subtype": { "type": "string" },
+          "macro_confidence": { "type": "number" },
+          "semantic_confidence": { "type": "number" }
+        }
+      }
+    },
+    "matching_hints": {
+      "type": "object",
+      "required": [
+        "intended_downstream_use",
+        "matching_priority",
+        "geometry_targets"
+      ],
+      "properties": {
+        "intended_downstream_use": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "matching_priority": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "geometry_targets": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}
