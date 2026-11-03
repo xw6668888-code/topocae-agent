@@ -16,6 +16,8 @@ Face accuracy measures predicted face classes and does not establish correct gro
 
 The retained learned-score-only control scores higher than the full calibrated system on the generated test set. It remains in the supplementary prediction data so the package supports the paper's stated calibration limitation.
 
+The original independent recount returns `status: PASS` for the numeric checks. Its legacy `reproducibility_pass: false` and `paper_MAIN_RESULTS_csv_verified: false` fields describe the scope of that one original function: it neither executes models/solvers nor checks the publication CSV. The public `reproduce.py` wrapper additionally checks the CSV values, and `VALIDATION.json` separately records the completed fresh inference, CAD and ODB checks. These legacy fields are preserved rather than relabeled as broader experimental acceptance.
+
 ## Engineering replay
 
 `run_case.py` first runs or accepts a fresh `infer.py` output and verifies the STEP SHA-256 identity. It parses the original archived Qwen response, converts the selector schema without changing its action or numeric values, and binds the semantic selector to the newly recognized objects. A hash-scoped object binding determines the affected face sets. Reference labels are used only by evaluation scripts.
