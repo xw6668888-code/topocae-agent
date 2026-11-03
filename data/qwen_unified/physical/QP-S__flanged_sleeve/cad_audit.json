@@ -1,0 +1,53 @@
+{
+  "actual_face_groups": [
+    [
+      13
+    ]
+  ],
+  "actual_volume_change_mm3": 30237.829290792666,
+  "added_outside_allowed_region_mm3": 7.275957614183426e-10,
+  "boolean_tolerance_adjustments": [],
+  "changes": [
+    {
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center_mm": [
+        175.5,
+        98.0,
+        -378.0
+      ],
+      "depth_mm": 55.0,
+      "face_number": 13,
+      "new_radius_mm": 15.0,
+      "object_index": 0,
+      "radius_mm": 20.0,
+      "start_mm": [
+        148.0,
+        98.0,
+        -378.0
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "radius_and_axis_extent_verified": true
+    }
+  ],
+  "execution_mode": "g11_direct_model_face_groups",
+  "expected_volume_change_mm3": 30237.829290801757,
+  "input_step": "W:\\python\\FEA\\dataset_generator\\test_part_0901\\Flanged Sleeve.stp",
+  "model_plan_sha256": "99904c8d86e8a739fc5ac950fd98369531d578b7c137c0e80c36ddc23022c2d0",
+  "non_target_verification": "valid-solid union/intersection volumetric containment",
+  "output_sha256": "6557a28f9bf50ce152158a5311100934dab7c94bd80a00eaf04bf0e6d1709aa8",
+  "output_step": "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-S__flanged_sleeve\\execution_v1\\work\\Flanged Sleeve_edited.stp",
+  "removed_outside_allowed_region_mm3": 5.908077582716942e-09,
+  "source_sha256": "af5669560aff44d525e0d49eae30fc5e9c9df5c142cf519ce330a5a00b83d034",
+  "status": "PASS",
+  "truth_used": false,
+  "valid_solid_count": 1,
+  "volume_after_mm3": 206460.17496271164,
+  "volume_before_mm3": 176222.34567191897
+}

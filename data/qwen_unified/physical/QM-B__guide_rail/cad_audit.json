@@ -1,0 +1,175 @@
+{
+  "actual_face_groups": [
+    [
+      31,
+      29,
+      30
+    ],
+    [
+      34,
+      32,
+      33
+    ],
+    [
+      37,
+      35,
+      36
+    ]
+  ],
+  "actual_volume_change_mm3": 7.031485438346863e-08,
+  "added_outside_allowed_region_mm3": 1.1641532182693481e-09,
+  "boolean_tolerance_adjustments": [],
+  "changes": [
+    {
+      "center_after_mm": [
+        149.4,
+        76.99999999999997,
+        564.0
+      ],
+      "center_before_mm": [
+        149.4,
+        27.0,
+        564.0
+      ],
+      "cylinders": [
+        {
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            149.4,
+            27.0,
+            564.0
+          ],
+          "depth_mm": 16.80000000000001,
+          "face_number": 31,
+          "radius_mm": 13.0,
+          "start_mm": [
+            141.0,
+            27.0,
+            564.0
+          ]
+        },
+        {
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            170.726517039153,
+            27.0,
+            564.0
+          ],
+          "depth_mm": 25.853034078305967,
+          "face_number": 29,
+          "radius_mm": 8.75,
+          "start_mm": [
+            157.8,
+            27.0,
+            564.0
+          ]
+        }
+      ],
+      "object_index": 0,
+      "translation_mm": [
+        0.0,
+        49.99999999999997,
+        0.0
+      ]
+    },
+    {
+      "center_after_mm": [
+        149.4,
+        377.0,
+        564.0
+      ],
+      "center_before_mm": [
+        149.4,
+        426.99999999999994,
+        564.0
+      ],
+      "cylinders": [
+        {
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            149.4,
+            426.99999999999994,
+            564.0
+          ],
+          "depth_mm": 16.80000000000001,
+          "face_number": 37,
+          "radius_mm": 13.0,
+          "start_mm": [
+            141.0,
+            427.0,
+            564.0
+          ]
+        },
+        {
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            170.726517039153,
+            427.0,
+            564.0
+          ],
+          "depth_mm": 25.853034078305967,
+          "face_number": 35,
+          "radius_mm": 8.75,
+          "start_mm": [
+            157.8,
+            427.0,
+            564.0
+          ]
+        }
+      ],
+      "object_index": 2,
+      "translation_mm": [
+        -0.0,
+        -49.99999999999997,
+        -0.0
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "central_center_mm": [
+        149.4,
+        226.99999999999997,
+        564.0
+      ],
+      "central_hole_unchanged": true,
+      "central_object_index": 1
+    },
+    {
+      "translated_hole_geometry_verified": true
+    },
+    {
+      "translated_hole_geometry_verified": true
+    }
+  ],
+  "execution_mode": "g11_direct_model_face_groups",
+  "expected_volume_change_mm3": 0.0,
+  "input_step": "W:\\python\\FEA\\dataset_generator\\test_part_0901\\Guide Rail.stp",
+  "model_plan_sha256": "aa5f2833f085a25363bb9bd4c49c43735e63d77c1aa221d569bcc5995ec71e13",
+  "non_target_verification": "valid-solid union/intersection volumetric containment",
+  "output_sha256": "3ddd152a63d7771780a3f0869634f912ee8ddce55b2c053cd76d603bee9d2932",
+  "output_step": "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QM-B__guide_rail\\execution_v1\\work\\Guide Rail_edited.stp",
+  "removed_outside_allowed_region_mm3": 7.217749953269958e-08,
+  "source_sha256": "b2f942c6844f8eb737692dd8aa23d6273068868e050c2541294accf27fe01c03",
+  "status": "PASS",
+  "truth_used": false,
+  "valid_solid_count": 1,
+  "volume_after_mm3": 1495978.2307647988,
+  "volume_before_mm3": 1495978.2307647285
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "g10_m8_independent_recount_acceptance_v3",
+  "status": "PASS",
+  "full_main_table_and_CI_match": true,
+  "paper_MAIN_RESULTS_csv_verified": false,
+  "scope_of_main_table_match": "all_one_time_T10_scored_method_seed_tier_channels_and_seed_summaries",
+  "sealed_T10_gate_verified": true,
+  "fixed_denominator": 1200,
+  "channels_recomputed": 21,
+  "paired_CI_replicates": 5000,
+  "actual_offline_recounts": 1,
+  "model_or_solver_executed": false,
+  "reproducibility_pass": false
+}

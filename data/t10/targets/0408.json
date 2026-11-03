@@ -1,0 +1,43 @@
+{
+  "sample_id": "g10_t10_v2_p_00008",
+  "source_step_sha256": "7fc7b2e78866d12bc32ee1611bfd1e50477997fac4120f6c3d04d419a3904ac3",
+  "face_count": 17,
+  "face_macro_classes": [
+    "stock",
+    "web",
+    "fillet",
+    "web",
+    "web",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "web",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock"
+  ],
+  "objects": [
+    {
+      "class": "web",
+      "instance_id": 1,
+      "faces": [
+        1,
+        3,
+        4,
+        9
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 2,
+      "faces": [
+        2
+      ]
+    }
+  ]
+}

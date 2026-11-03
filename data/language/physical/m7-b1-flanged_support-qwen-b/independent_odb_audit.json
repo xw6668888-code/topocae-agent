@@ -1,0 +1,41 @@
+{
+  "status": "PASS", 
+  "analysis_errors": 0, 
+  "string_adapter": "recursive_json_unicode_to_native_mbcs_on_python2", 
+  "equilibrium_relative_error": 6.336589219897928e-06, 
+  "expected_applied_force_N": [
+    0.0, 
+    0.0, 
+    500.0
+  ], 
+  "truth_used": false, 
+  "max_von_mises_mpa": 15.723366737365723, 
+  "reaction_force_N": [
+    -6.835689418949187e-07, 
+    -6.948603754608484e-07, 
+    -499.99683170554
+  ], 
+  "instance_count": 1, 
+  "odb_path": "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g10\\m7_model_cae_dispatch\\v3\\m7-b1-flanged_support-qwen-b\\attempt_001\\final.odb", 
+  "element_types": [
+    "C3D10"
+  ], 
+  "geometry_version": "61690b63de49bffc204e83f6ae0ae4c7ea821753bda94b0f946eab570e4cb4d6", 
+  "manifest_sha256": "180268aab6cdf1e633d293f1d035f19635cc96bc0c80bbce2e86ae87fe348a45", 
+  "prediction_sha256": "578db3a2b3e87bee49bd563bb2ce6f9d33b2e6c822f29f14a87d87f707ec0a7a", 
+  "analysis_warnings": 0, 
+  "diagnostic_status": "JOB_STATUS_COMPLETED_SUCCESSFULLY", 
+  "odb_sha256": "f425d61be695ed24272cc3fd11bfc80a168d1224574cd518a4047a7c597433f3", 
+  "element_count": 1092787, 
+  "verifier": {
+    "path": "W:/python/FEA/dataset_generator/tools/aei_case_suite/abaqus_verification.py", 
+    "sha256": "e598f5d650a431f747f4f4162afedb0b664734c149e7a07651d91e4a50e893a9", 
+    "bytes": 2003
+  }, 
+  "final_frame_time": 1.0, 
+  "execution_plan_sha256": "2d7d86a6a76bbed48d48b384121390663924daba7032b80d9375f582c22322a3", 
+  "python_major": 2, 
+  "node_count": 1555023, 
+  "max_displacement_mm": 0.0012976928846910596, 
+  "schema": "g10_independent_odb_audit_v2"
+}

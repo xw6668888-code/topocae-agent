@@ -1,0 +1,603 @@
+[
+  {
+    "case_id": "angle_bracket",
+    "domain": "cae",
+    "geometry": {
+      "bytes": 77685,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/geometry/angle_bracket.json",
+      "sha256": "fa134e04754a1686fd14a4542725903ee030054248ec94d6a8c7d72d38f8f3d2"
+    },
+    "instruction_en": "Assign 45 steel to the entire part and use a global mesh size of 2 mm. Fully constrain all faces of every counterbored hole. Apply a uniformly distributed force of 100 N to the inner walls of each obround hole in the negative global Y direction. Perform a linear-elastic static analysis with the stated material and loads.",
+    "instruction_zh": "整体45钢，全局网格2 mm；固定各沉孔全部主体面（不含独立倒角、圆角）；每个腰形孔内壁各受100 N，沿全局−Y；线弹性静力分析。",
+    "mapping": {
+      "bytes": 2369,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/angle_bracket.json",
+      "sha256": "8051fd96e929e993ba5e45205f2d6dd2707dd781ecf89be140d5b4465a171afa"
+    },
+    "part": "Angle Bracket.stp",
+    "requested_parameters": [
+      {
+        "action": "set_material",
+        "material_id": "Steel45"
+      },
+      {
+        "action": "set_global_mesh",
+        "size_mm": 2.0
+      },
+      {
+        "action": "fix_features"
+      },
+      {
+        "action": "apply_force",
+        "basis": "per_instance",
+        "direction": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "magnitude_N": 100.0
+      },
+      {
+        "action": "set_analysis",
+        "type": "linear_static"
+      }
+    ],
+    "source_dimension_tolerances_mm": {
+      "radius": 1e-05,
+      "spacing": 0.0001,
+      "thickness": 0.0001
+    },
+    "source_step": {
+      "bytes": 56988,
+      "path": "W:/python/FEA/dataset_generator/test_part_0901/Angle Bracket.stp",
+      "sha256": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195"
+    },
+    "units": "mm, N, MPa, tonne, s"
+  },
+  {
+    "case_id": "bearing_housing",
+    "domain": "cad",
+    "geometry": {
+      "bytes": 101406,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/geometry/bearing_housing.json",
+      "sha256": "a9d999e6eb490c17c34b6334db2b2019d241ec1053f1774ec884ce7a39cc1ad0"
+    },
+    "instruction_en": "Change the radius of all blind holes with an existing radius of 4 mm to 3 mm. Preserve their axes and axial extent, and leave unrelated geometry unchanged.",
+    "instruction_zh": "全部源半径4 mm圆形盲孔改为3 mm；选择孔壁与底面，保持各孔轴线、轴向范围和非目标几何。",
+    "mapping": {
+      "bytes": 2867,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/bearing_housing.json",
+      "sha256": "f8c165eae080ad202661320ab881ac1b35bb6c97846165fee1837cae26defb96"
+    },
+    "part": "Bearing Housing.stp",
+    "requested_parameters": [
+      {
+        "action": "set_hole_radius",
+        "new_radius_mm": 3.0
+      }
+    ],
+    "source_dimension_tolerances_mm": {
+      "radius": 1e-05,
+      "spacing": 0.0001,
+      "thickness": 0.0001
+    },
+    "source_step": {
+      "bytes": 80236,
+      "path": "W:/python/FEA/dataset_generator/test_part_0901/Bearing Housing.stp",
+      "sha256": "68c756ce4df6ba506348ea958cae4c264f1c542062a0fb58ba9b8152e92de6b8"
+    },
+    "units": "mm, N, MPa, tonne, s"
+  },
+  {
+    "case_id": "clevis",
+    "domain": "cae",
+    "geometry": {
+      "bytes": 35947,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/geometry/clevis.json",
+      "sha256": "368d3c6b650b870511281573f1441c55711fe0d3c4e1f5156b00964fa1b156ab"
+    },
+    "instruction_en": "Assign 45 steel to the entire part and use a global mesh size of 1 mm. Refine all chamfer faces to 0.3 mm. Fully constrain the walls of all through holes with a radius of 3.765 mm. Apply a uniform directional surface traction of 50 MPa to the outward end face of the cylindrical boss facing the negative global Z direction in the positive global Z direction. Perform a linear-elastic static analysis with the stated material and loads.",
+    "instruction_zh": "整体45钢，全局网格1 mm，全部倒角面局部0.3 mm；固定半径3.765 mm通孔内壁；圆柱凸台朝全局−Z的外端面受50 MPa均匀面力，力方向沿+Z；线弹性静力分析。",
+    "mapping": {
+      "bytes": 1711,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/clevis.json",
+      "sha256": "9a74bd2f38a3ae784e0b222eeda28d55e5ddb34251ae8d75fefe327d113ea043"
+    },
+    "part": "Clevis.stp",
+    "requested_parameters": [
+      {
+        "action": "set_material",
+        "material_id": "Steel45"
+      },
+      {
+        "action": "set_global_mesh",
+        "size_mm": 1.0
+      },
+      {
+        "action": "set_local_mesh",
+        "size_mm": 0.3
+      },
+      {
+        "action": "fix_features"
+      },
+      {
+        "action": "apply_traction",
+        "direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "magnitude_MPa": 50.0
+      },
+      {
+        "action": "set_analysis",
+        "type": "linear_static"
+      }
+    ],
+    "source_dimension_tolerances_mm": {
+      "radius": 1e-05,
+      "spacing": 0.0001,
+      "thickness": 0.0001
+    },
+    "source_step": {
+      "bytes": 38783,
+      "path": "W:/python/FEA/dataset_generator/test_part_0901/Clevis.stp",
+      "sha256": "0befb0c991dfbc9057dd644da22a4d99c0972374e1a98d8947d3da902fbd1f27"
+    },
+    "units": "mm, N, MPa, tonne, s"
+  },
+  {
+    "case_id": "flanged_sleeve",
+    "domain": "cad",
+    "geometry": {
+      "bytes": 30879,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/geometry/flanged_sleeve.json",
+      "sha256": "7c4ff0cef6032fa5ba9955d3008e102b31efe2767a9db80f9813164eb0c697f2"
+    },
+    "instruction_en": "Change the radius of all through holes with an existing radius of 20 mm to 15 mm. Preserve their axes and axial extent, and leave unrelated geometry unchanged.",
+    "instruction_zh": "全部源半径20 mm圆形通孔改为15 mm，保持轴线、轴向范围和非目标几何。",
+    "mapping": {
+      "bytes": 1657,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/flanged_sleeve.json",
+      "sha256": "9e9e016e5ed11c892cf5e543e76ba56527fa571f00091cb5b80b3ebdf55e30aa"
+    },
+    "part": "Flanged Sleeve.stp",
+    "requested_parameters": [
+      {
+        "action": "set_hole_radius",
+        "new_radius_mm": 15.0
+      }
+    ],
+    "source_dimension_tolerances_mm": {
+      "radius": 1e-05,
+      "spacing": 0.0001,
+      "thickness": 0.0001
+    },
+    "source_step": {
+      "bytes": 23581,
+      "path": "W:/python/FEA/dataset_generator/test_part_0901/Flanged Sleeve.stp",
+      "sha256": "af5669560aff44d525e0d49eae30fc5e9c9df5c142cf519ce330a5a00b83d034"
+    },
+    "units": "mm, N, MPa, tonne, s"
+  },
+  {
+    "case_id": "flanged_support",
+    "domain": "cae",
+    "geometry": {
+      "bytes": 74303,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/geometry/flanged_support.json",
+      "sha256": "2ced7983987ad19e8eec744e9f15c7f3687d367ea5b1ea24550bc45b38da7627"
+    },
+    "instruction_en": "Assign 45 steel to the entire part and use a global mesh size of 1 mm. Fully constrain all faces of every countersunk hole. Apply a uniformly distributed resultant force of 500 N to the wall of the through hole with a radius of 4 mm in the positive global Z direction. Perform a linear-elastic static analysis with the stated material and loads.",
+    "instruction_zh": "整体45钢，全局网格1 mm；固定所有锥形沉头孔的主体面，包含锥形沉头本身；半径4 mm通孔内壁受总合力500 N，沿+Z；线弹性静力分析。",
+    "mapping": {
+      "bytes": 2433,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/flanged_support.json",
+      "sha256": "cd207d978d31cc4100b5436edf2b531dfb98ab87aa37241edb2a994dfad5ec85"
+    },
+    "part": "Flanged Support.stp",
+    "requested_parameters": [
+      {
+        "action": "set_material",
+        "material_id": "Steel45"
+      },
+      {
+        "action": "set_global_mesh",
+        "size_mm": 1.0
+      },
+      {
+        "action": "fix_features"
+      },
+      {
+        "action": "apply_force",
+        "basis": "per_instance",
+        "direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "magnitude_N": 500.0
+      },
+      {
+        "action": "set_analysis",
+        "type": "linear_static"
+      }
+    ],
+    "source_dimension_tolerances_mm": {
+      "radius": 1e-05,
+      "spacing": 0.0001,
+      "thickness": 0.0001
+    },
+    "source_step": {
+      "bytes": 61090,
+      "path": "W:/python/FEA/dataset_generator/test_part_0901/Flanged Support.stp",
+      "sha256": "61690b63de49bffc204e83f6ae0ae4c7ea821753bda94b0f946eab570e4cb4d6"
+    },
+    "units": "mm, N, MPa, tonne, s"
+  },
+  {
+    "case_id": "guide_rail",
+    "domain": "cad",
+    "geometry": {
+      "bytes": 69132,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/geometry/guide_rail.json",
+      "sha256": "ec63da81b452d052f410700c37ddbccbe0c85cf6708d37ff8f262ec32af43490"
+    },
+    "instruction_en": "Reduce the adjacent center-to-center spacing of the three counterbored holes from 200 mm to 150 mm. Keep the central hole fixed and move the two outer holes toward it along the existing hole pattern. Preserve the hole geometry and unrelated features.",
+    "instruction_zh": "三个沉孔相邻中心距由200改为150 mm；中孔不动，两端孔沿既有排列方向向中孔移动，保持孔形和非目标几何。",
+    "mapping": {
+      "bytes": 2211,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/guide_rail.json",
+      "sha256": "12b7a37c96580d1ae9bbd31a0c0d6c32f168af4e7c78e29a6293e670a4bfbaa6"
+    },
+    "part": "Guide Rail.stp",
+    "requested_parameters": [
+      {
+        "action": "set_hole_spacing",
+        "anchor": "central_hole",
+        "new_spacing_mm": 150.0,
+        "old_spacing_mm": 200.0,
+        "spacing_definition": "adjacent_centers"
+      }
+    ],
+    "source_dimension_tolerances_mm": {
+      "radius": 1e-05,
+      "spacing": 0.0001,
+      "thickness": 0.0001
+    },
+    "source_step": {
+      "bytes": 51856,
+      "path": "W:/python/FEA/dataset_generator/test_part_0901/Guide Rail.stp",
+      "sha256": "b2f942c6844f8eb737692dd8aa23d6273068868e050c2541294accf27fe01c03"
+    },
+    "units": "mm, N, MPa, tonne, s"
+  },
+  {
+    "case_id": "mounting_plate",
+    "domain": "cad",
+    "geometry": {
+      "bytes": 68673,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/geometry/mounting_plate.json",
+      "sha256": "69c2ba3178c777789eff78292cea01682ab140057bb2fd6d6e5daccfd4566afa"
+    },
+    "instruction_en": "Change the radius of all through holes with an existing radius of 22.5 mm to 24 mm. Preserve their axes and axial extent, and leave unrelated geometry unchanged.",
+    "instruction_zh": "全部源半径22.5 mm圆形通孔改为24 mm，保持轴线、轴向范围和非目标几何。",
+    "mapping": {
+      "bytes": 2184,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/mounting_plate.json",
+      "sha256": "57e5dc4e8a0d2a8a877884b7a8dee9bd4a1de0e8ae0994e33aa510772ea9cd64"
+    },
+    "part": "Mounting Plate.stp",
+    "requested_parameters": [
+      {
+        "action": "set_hole_radius",
+        "new_radius_mm": 24.0
+      }
+    ],
+    "source_dimension_tolerances_mm": {
+      "radius": 1e-05,
+      "spacing": 0.0001,
+      "thickness": 0.0001
+    },
+    "source_step": {
+      "bytes": 54968,
+      "path": "W:/python/FEA/dataset_generator/test_part_0901/Mounting Plate.stp",
+      "sha256": "dccd20bb196660a6c1d5d52a813c2632c9d7291dec1712f8dc6b0aacecf6e14a"
+    },
+    "units": "mm, N, MPa, tonne, s"
+  },
+  {
+    "case_id": "sealing_cover",
+    "domain": "cae",
+    "geometry": {
+      "bytes": 34955,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/geometry/sealing_cover.json",
+      "sha256": "e140c899784a4c4309d3b570e9e93d39015447050d96019a9d3408123459967f"
+    },
+    "instruction_en": "Assign brass to the entire part and use a global mesh size of 5 mm. Refine all chamfer faces to 2 mm. Fully constrain all faces of every counterbored hole. Apply a uniform internal pressure of 10 MPa to all sidewalls and the bottom of the circular pocket. Perform a linear-elastic static analysis with the stated material and loads.",
+    "instruction_zh": "整体黄铜，全局网格5 mm，全部倒角面局部2 mm；固定所有沉孔主体面；圆形腔全部侧壁和底面施加10 MPa内压；线弹性静力分析。",
+    "mapping": {
+      "bytes": 1780,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/sealing_cover.json",
+      "sha256": "9800f2eaf437d328241a0f170484058f94471d66cedcaee1316c9e86ab2714c9"
+    },
+    "part": "Sealing Cover.stp",
+    "requested_parameters": [
+      {
+        "action": "set_material",
+        "material_id": "Brass"
+      },
+      {
+        "action": "set_global_mesh",
+        "size_mm": 5.0
+      },
+      {
+        "action": "set_local_mesh",
+        "size_mm": 2.0
+      },
+      {
+        "action": "fix_features"
+      },
+      {
+        "action": "apply_pressure",
+        "magnitude_MPa": 10.0
+      },
+      {
+        "action": "set_analysis",
+        "type": "linear_static"
+      }
+    ],
+    "source_dimension_tolerances_mm": {
+      "radius": 1e-05,
+      "spacing": 0.0001,
+      "thickness": 0.0001
+    },
+    "source_step": {
+      "bytes": 27119,
+      "path": "W:/python/FEA/dataset_generator/test_part_0901/Sealing Cover.stp",
+      "sha256": "661e71aba1a73ebf8e86e73694b9f704124cd8ca08c1163097c31ecce76d1738"
+    },
+    "units": "mm, N, MPa, tonne, s"
+  },
+  {
+    "case_id": "stiffened_panel",
+    "domain": "cae",
+    "geometry": {
+      "bytes": 142415,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/geometry/stiffened_panel.json",
+      "sha256": "46ca5dcd7c2363f00ab083d3590512841f0e8697064bd4c0c295dd46e4176bd9"
+    },
+    "instruction_en": "Assign 45 steel to the entire part and use a global mesh size of 10 mm. Fully constrain all faces of every counterbored hole. Apply a uniformly distributed force of 1000 N to the top face of each of the two rectangular bosses in the negative global Y direction. Perform a linear-elastic static analysis with the stated material and loads.",
+    "instruction_zh": "整体45钢，全局网格10 mm；固定全部沉孔主体面，排除独立孔口倒角；两个矩形凸台的各自顶面分别受1000 N，沿−Y；线弹性静力分析。",
+    "mapping": {
+      "bytes": 3860,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/stiffened_panel.json",
+      "sha256": "73aa9dbdf60603a66d434ac96db1589b6bc22aa4f8bb808bc1cb384a72b159cf"
+    },
+    "part": "Stiffened Panel.stp",
+    "requested_parameters": [
+      {
+        "action": "set_material",
+        "material_id": "Steel45"
+      },
+      {
+        "action": "set_global_mesh",
+        "size_mm": 10.0
+      },
+      {
+        "action": "fix_features"
+      },
+      {
+        "action": "apply_force",
+        "basis": "per_instance",
+        "direction": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "magnitude_N": 1000.0
+      },
+      {
+        "action": "set_analysis",
+        "type": "linear_static"
+      }
+    ],
+    "source_dimension_tolerances_mm": {
+      "radius": 1e-05,
+      "spacing": 0.0001,
+      "thickness": 0.0001
+    },
+    "source_step": {
+      "bytes": 115619,
+      "path": "W:/python/FEA/dataset_generator/test_part_0901/Stiffened Panel.stp",
+      "sha256": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5"
+    },
+    "units": "mm, N, MPa, tonne, s"
+  },
+  {
+    "case_id": "support_bracket",
+    "domain": "cad",
+    "geometry": {
+      "bytes": 71245,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/geometry/support_bracket.json",
+      "sha256": "47cbee8ceba946f6193f9c106f72da241fd61edb6ef5c28d4f7152756b449e41"
+    },
+    "instruction_en": "Change the thickness of both ribs from 2 mm to 4 mm by moving their two sides symmetrically about their existing midplanes. Keep the midplanes fixed and preserve unrelated geometry.",
+    "instruction_zh": "两个rib厚度由2改为4 mm，两侧关于各自原中面对称移动，保持中面和非目标几何。",
+    "mapping": {
+      "bytes": 2309,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/support_bracket.json",
+      "sha256": "71498ed4b08516e7ce81fc5564a3d6d987a6f7b183dc576f2e158fd54d626af6"
+    },
+    "part": "Support Bracket.stp",
+    "requested_parameters": [
+      {
+        "action": "set_thickness",
+        "anchor": "midplane",
+        "new_thickness_mm": 4.0,
+        "old_thickness_mm": 2.0
+      }
+    ],
+    "source_dimension_tolerances_mm": {
+      "radius": 1e-05,
+      "spacing": 0.0001,
+      "thickness": 0.0001
+    },
+    "source_step": {
+      "bytes": 57538,
+      "path": "W:/python/FEA/dataset_generator/test_part_0901/Support Bracket.stp",
+      "sha256": "c61acff8bd576b87100d2366b3b3ce559ac9f03a01dd157c31486bbb50fc1a47"
+    },
+    "units": "mm, N, MPa, tonne, s"
+  },
+  {
+    "case_id": "support_frame",
+    "domain": "cad",
+    "geometry": {
+      "bytes": 33075,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/geometry/support_frame.json",
+      "sha256": "f80524236ff70207cd58307608743a51e4faaa59ee8dedd3de0149af43789b08"
+    },
+    "instruction_en": "Change the thickness of both webs from 4.6985 mm to 3 mm by moving their two sides symmetrically about their existing midplanes. Keep the midplanes fixed and preserve unrelated geometry.",
+    "instruction_zh": "两个web源厚度4.6985 mm改为3 mm，两侧关于各自原中面对称移动；源厚度容差0.0001 mm，保持中面和非目标几何。",
+    "mapping": {
+      "bytes": 1563,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/support_frame.json",
+      "sha256": "94503c23fad9403ea8ffddef7eabf94329e9b7c640b7a8bb72e3116c5a21bd04"
+    },
+    "part": "Support Frame.stp",
+    "requested_parameters": [
+      {
+        "action": "set_thickness",
+        "anchor": "midplane",
+        "new_thickness_mm": 3.0,
+        "old_thickness_mm": 4.6985
+      }
+    ],
+    "source_dimension_tolerances_mm": {
+      "radius": 1e-05,
+      "spacing": 0.0001,
+      "thickness": 0.0001
+    },
+    "source_step": {
+      "bytes": 27127,
+      "path": "W:/python/FEA/dataset_generator/test_part_0901/Support Frame.stp",
+      "sha256": "79e3a204524f0de7284fd1318e5dd20353c3608b2a933eee12f83ff4ff655e70"
+    },
+    "units": "mm, N, MPa, tonne, s"
+  },
+  {
+    "case_id": "turbine_blade",
+    "domain": "cae",
+    "geometry": {
+      "bytes": 58124,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/geometry/turbine_blade.json",
+      "sha256": "a2a69057d826685ebcc394d378f7934cd0b70a4fd3b50e9be712d3c25268f4a4"
+    },
+    "instruction_en": "Assign plain carbon steel to the entire part and use a global mesh size of 1 mm. Fully constrain all faces of every slot_rect and slot_o feature. Apply a centrifugal body load to the entire part at an angular velocity of 100 rad/s about the axis through (0, 0, 0) mm with direction (0, 0, 1). Perform a linear-elastic static analysis with the stated material and loads.",
+    "instruction_zh": "整体普通碳素钢，全局网格1 mm；固定全部矩形槽及O形槽的主体壁面和槽底（如有），排除周边基体面与独立倒角、圆角；全体离心体载荷100 rad/s，轴过原点、方向(0,0,1)；线弹性静力分析。",
+    "mapping": {
+      "bytes": 1966,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/turbine_blade.json",
+      "sha256": "c8b2c290e13ba317bfd537fcedf2588469251f13bf3f3b6ad66c3e58b1134495"
+    },
+    "part": "Turbine Blade.stp",
+    "requested_parameters": [
+      {
+        "action": "set_material",
+        "material_id": "PlainCarbonSteel"
+      },
+      {
+        "action": "set_global_mesh",
+        "size_mm": 1.0
+      },
+      {
+        "action": "fix_features"
+      },
+      {
+        "action": "apply_centrifugal",
+        "angular_velocity_rad_s": 100.0,
+        "axis_direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "axis_point_mm": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "action": "set_analysis",
+        "type": "linear_static"
+      }
+    ],
+    "source_dimension_tolerances_mm": {
+      "radius": 1e-05,
+      "spacing": 0.0001,
+      "thickness": 0.0001
+    },
+    "source_step": {
+      "bytes": 73434,
+      "path": "W:/python/FEA/dataset_generator/test_part_0901/Turbine Blade.stp",
+      "sha256": "c8444c78edafc1f70357ec4e08c340ee1b40218485a5057fcf3e6c97d98c41ee"
+    },
+    "units": "mm, N, MPa, tonne, s"
+  },
+  {
+    "case_id": "u_shaped_bracket",
+    "domain": "cae",
+    "geometry": {
+      "bytes": 30886,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/geometry/u_shaped_bracket.json",
+      "sha256": "950bff843731b940f0ebd3b23af1dd050a2de0f7e83d3703045339d61a467714"
+    },
+    "instruction_en": "Assign 45 steel to the entire part and use a global mesh size of 1 mm. Fully constrain the walls of all through holes. Apply a uniformly distributed force of 500 N to the outward end face of each cylindrical boss facing the positive global Y direction in the negative global Y direction. Perform a linear-elastic static analysis with the stated material and loads.",
+    "instruction_zh": "整体45钢，全局网格1 mm；固定全部通孔内壁；圆柱凸台朝全局+Y的外端面每个对象各受500 N，力沿−Y；线弹性静力分析。",
+    "mapping": {
+      "bytes": 1504,
+      "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/u_shaped_bracket.json",
+      "sha256": "fe7be20983564519ce40451e13a8eba0c426bd01bddbf9db9c6af3e78ee31f27"
+    },
+    "part": "U-Shaped Bracket.stp",
+    "requested_parameters": [
+      {
+        "action": "set_material",
+        "material_id": "Steel45"
+      },
+      {
+        "action": "set_global_mesh",
+        "size_mm": 1.0
+      },
+      {
+        "action": "fix_features"
+      },
+      {
+        "action": "apply_force",
+        "basis": "per_instance",
+        "direction": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "magnitude_N": 500.0
+      },
+      {
+        "action": "set_analysis",
+        "type": "linear_static"
+      }
+    ],
+    "source_dimension_tolerances_mm": {
+      "radius": 1e-05,
+      "spacing": 0.0001,
+      "thickness": 0.0001
+    },
+    "source_step": {
+      "bytes": 23691,
+      "path": "W:/python/FEA/dataset_generator/test_part_0901/U-Shaped Bracket.stp",
+      "sha256": "72356e514bcd4f5a955819ba9143842bd9298c45c3e4d65a8b62a88d903903bc"
+    },
+    "units": "mm, N, MPa, tonne, s"
+  }
+]

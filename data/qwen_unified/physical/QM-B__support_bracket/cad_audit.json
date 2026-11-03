@@ -1,0 +1,93 @@
+{
+  "actual_face_groups": [
+    [
+      14,
+      15,
+      13
+    ],
+    [
+      17,
+      18,
+      16
+    ]
+  ],
+  "actual_volume_change_mm3": 3341.5363735102583,
+  "added_outside_allowed_region_mm3": 4.190951585769653e-09,
+  "boolean_tolerance_adjustments": [],
+  "changes": [
+    {
+      "anchor": "midplane",
+      "midpoint_mm": [
+        -303.887946311952,
+        -170.8028213545283,
+        797.6410066697574
+      ],
+      "new_thickness_mm": 4.0,
+      "normal": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "object_index": 0,
+      "side_area_mm2": 835.384093382967,
+      "side_faces": [
+        14,
+        15
+      ],
+      "sweep_vector_mm": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "thickness_mm": 2.0
+    },
+    {
+      "anchor": "midplane",
+      "midpoint_mm": [
+        -303.887946311952,
+        -170.80282135452893,
+        833.9829415412545
+      ],
+      "new_thickness_mm": 4.0,
+      "normal": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "object_index": 1,
+      "side_area_mm2": 835.3840933829946,
+      "side_faces": [
+        17,
+        18
+      ],
+      "sweep_vector_mm": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "thickness_mm": 2.0
+    }
+  ],
+  "checks": [
+    {
+      "symmetric_thickness_verified": true
+    },
+    {
+      "symmetric_thickness_verified": true
+    }
+  ],
+  "execution_mode": "g11_direct_model_face_groups",
+  "expected_volume_change_mm3": 3341.5363735319233,
+  "input_step": "W:\\python\\FEA\\dataset_generator\\test_part_0901\\Support Bracket.stp",
+  "model_plan_sha256": "705c0725314ad2574a9cfd81d82bdb16255f5e471fd55ddd9be7a9536ebc030b",
+  "non_target_verification": "valid-solid union/intersection volumetric containment",
+  "output_sha256": "63a9e284cc1ddf9318f5fea4416f20cf0c98bd59cf144679bc2d7f9cce74c386",
+  "output_step": "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QM-B__support_bracket\\execution_v1\\work\\Support Bracket_edited.stp",
+  "removed_outside_allowed_region_mm3": 1.0081566870212555e-07,
+  "source_sha256": "c61acff8bd576b87100d2366b3b3ce559ac9f03a01dd157c31486bbb50fc1a47",
+  "status": "PASS",
+  "truth_used": false,
+  "valid_solid_count": 1,
+  "volume_after_mm3": 1201027.492656038,
+  "volume_before_mm3": 1197685.9562825277
+}

@@ -1,0 +1,121 @@
+{
+  "sample_id": "g10_t10_v2_s_00204",
+  "source_step_sha256": "06a31439c6ed01373f053d7a6e177d4cf6d5db77110e87ab3bad1f1451527941",
+  "face_count": 32,
+  "face_macro_classes": [
+    "stock",
+    "fillet",
+    "stock",
+    "chamfer",
+    "fillet",
+    "stock",
+    "stock",
+    "slot_u",
+    "slot_u",
+    "slot_u",
+    "stepped_hole_round",
+    "stock",
+    "stock",
+    "slot_u",
+    "counterbore_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "stepped_hole_round",
+    "counterbore_hole",
+    "counterbore_hole",
+    "stepped_hole_round",
+    "stepped_hole_round"
+  ],
+  "objects": [
+    {
+      "class": "stepped_hole_round",
+      "instance_id": 1,
+      "faces": [
+        10,
+        27,
+        30,
+        31
+      ]
+    },
+    {
+      "class": "obround_hole",
+      "instance_id": 2,
+      "faces": [
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "class": "obround_hole",
+      "instance_id": 3,
+      "faces": [
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "class": "obround_hole",
+      "instance_id": 4,
+      "faces": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "class": "counterbore_hole",
+      "instance_id": 5,
+      "faces": [
+        14,
+        28,
+        29
+      ]
+    },
+    {
+      "class": "slot_u",
+      "instance_id": 6,
+      "faces": [
+        7,
+        8,
+        9,
+        13
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 7,
+      "faces": [
+        4
+      ]
+    },
+    {
+      "class": "chamfer",
+      "instance_id": 8,
+      "faces": [
+        3
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 9,
+      "faces": [
+        1
+      ]
+    }
+  ]
+}

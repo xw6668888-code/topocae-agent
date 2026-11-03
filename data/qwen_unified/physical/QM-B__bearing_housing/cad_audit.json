@@ -1,0 +1,141 @@
+{
+  "actual_face_groups": [
+    [
+      23,
+      24
+    ],
+    [
+      25,
+      26
+    ],
+    [
+      27,
+      28
+    ],
+    [
+      29,
+      30
+    ]
+  ],
+  "actual_volume_change_mm3": 791.6813487026084,
+  "added_outside_allowed_region_mm3": 5.820766091346741e-11,
+  "boolean_tolerance_adjustments": [],
+  "changes": [
+    {
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center_mm": [
+        191.612053688048,
+        19.0,
+        333.90502729106
+      ],
+      "depth_mm": 9.0,
+      "face_number": 23,
+      "new_radius_mm": 3,
+      "object_index": 0,
+      "radius_mm": 4.0,
+      "start_mm": [
+        196.112053688048,
+        19.0,
+        333.90502729106
+      ]
+    },
+    {
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center_mm": [
+        191.612053688048,
+        19.0,
+        243.718920919951
+      ],
+      "depth_mm": 9.0,
+      "face_number": 25,
+      "new_radius_mm": 3,
+      "object_index": 1,
+      "radius_mm": 4.0,
+      "start_mm": [
+        196.112053688048,
+        19.0,
+        243.718920919951
+      ]
+    },
+    {
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center_mm": [
+        191.612053688048,
+        -15.0,
+        333.90502729106
+      ],
+      "depth_mm": 9.0,
+      "face_number": 27,
+      "new_radius_mm": 3,
+      "object_index": 2,
+      "radius_mm": 4.0,
+      "start_mm": [
+        196.112053688048,
+        -15.0,
+        333.90502729106
+      ]
+    },
+    {
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center_mm": [
+        191.612053688048,
+        -15.0,
+        243.718920919951
+      ],
+      "depth_mm": 9.0,
+      "face_number": 29,
+      "new_radius_mm": 3,
+      "object_index": 3,
+      "radius_mm": 4.0,
+      "start_mm": [
+        196.112053688048,
+        -15.0,
+        243.718920919951
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "radius_and_axis_extent_verified": true
+    },
+    {
+      "radius_and_axis_extent_verified": true
+    },
+    {
+      "radius_and_axis_extent_verified": true
+    },
+    {
+      "radius_and_axis_extent_verified": true
+    }
+  ],
+  "execution_mode": "g11_direct_model_face_groups",
+  "expected_volume_change_mm3": 791.6813487046279,
+  "input_step": "W:\\python\\FEA\\dataset_generator\\test_part_0901\\Bearing Housing.stp",
+  "model_plan_sha256": "c22af0564c06c63acb603d816df77476ee41423b099415ffbc65362b22109d2b",
+  "non_target_verification": "valid-solid union/intersection volumetric containment",
+  "output_sha256": "af18bad583a29c6231f7e30a3ff82cfe0f27732f4b38cf30db886f3bbcf4ddb4",
+  "output_step": "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QM-B__bearing_housing\\execution_v1\\work\\Bearing Housing_edited.stp",
+  "removed_outside_allowed_region_mm3": 1.57160684466362e-09,
+  "source_sha256": "68c756ce4df6ba506348ea958cae4c264f1c542062a0fb58ba9b8152e92de6b8",
+  "status": "PASS",
+  "truth_used": false,
+  "valid_solid_count": 1,
+  "volume_after_mm3": 203010.5611888819,
+  "volume_before_mm3": 202218.8798401793
+}

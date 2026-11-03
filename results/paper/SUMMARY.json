@@ -1,0 +1,206 @@
+{
+  "recognition": {
+    "status": "PASS",
+    "parts": 1200,
+    "channels": 21,
+    "predictions": 25200,
+    "E3": {
+      "macro_f1": {
+        "mean": 0.9278658567046869,
+        "sample_standard_deviation": 0.0015155076481951411
+      },
+      "micro_f1": {
+        "mean": 0.9425295725762004,
+        "sample_standard_deviation": 0.0013144213838200156
+      },
+      "whole_part_exact_rate": {
+        "mean": 0.7708333333333334,
+        "sample_standard_deviation": 0.005464532103585008
+      },
+      "face_accuracy": {
+        "mean": 0.9968315722769943,
+        "sample_standard_deviation": 0.0006636503381639125
+      },
+      "face_macro_f1": {
+        "mean": 0.9954421096473465,
+        "sample_standard_deviation": 0.0009091869708633176
+      }
+    }
+  },
+  "engineering": {
+    "counts": {
+      "tp": 182,
+      "fp": 0,
+      "fn": 0,
+      "whole": 13,
+      "radii_mm_total": 106,
+      "radii_mm_pass": 106,
+      "full_cylinder_depths_total": 66,
+      "full_cylinder_depths_pass": 66,
+      "parameter_total": 126,
+      "parameter_pass": 126,
+      "thickness_mm_total": 20,
+      "thickness_mm_pass": 20,
+      "independent_targets_total": 18,
+      "independent_targets_pass": 18,
+      "reviewed_top_total": 3,
+      "reviewed_top_pass": 3,
+      "spacing_total": 1,
+      "spacing_pass": 1
+    },
+    "parts": [
+      {
+        "case_id": "angle_bracket",
+        "tp": 16,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "case_id": "bearing_housing",
+        "tp": 24,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "case_id": "clevis",
+        "tp": 8,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "case_id": "flanged_sleeve",
+        "tp": 13,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "case_id": "flanged_support",
+        "tp": 17,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "case_id": "guide_rail",
+        "tp": 13,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "case_id": "mounting_plate",
+        "tp": 14,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "case_id": "sealing_cover",
+        "tp": 10,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "case_id": "stiffened_panel",
+        "tp": 30,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "case_id": "support_bracket",
+        "tp": 17,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "case_id": "support_frame",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "case_id": "turbine_blade",
+        "tp": 11,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "case_id": "u_shaped_bracket",
+        "tp": 7,
+        "fp": 0,
+        "fn": 0
+      }
+    ],
+    "parameter_reference_is_geometric_not_independent_metrology": true,
+    "engineering_is_development_evidence": true,
+    "archived_reference_plan_artifacts": {
+      "cae": 7,
+      "cad": 6
+    }
+  },
+  "historical": {
+    "B": {
+      "tasks": 13,
+      "face_correct": 2,
+      "parameters_correct": 4,
+      "task_verified": 2
+    },
+    "S": {
+      "tasks": 13,
+      "face_correct": 13,
+      "parameters_correct": 13,
+      "task_verified": 13
+    }
+  },
+  "unified": [
+    {
+      "condition": "QP-B",
+      "tasks": 13,
+      "localization_correct": 3,
+      "task_success": 3,
+      "API_calls": 14,
+      "API_elapsed_total_s": 130.82999999999993,
+      "API_elapsed_mean_s": 10.063846153846148,
+      "API_elapsed_median_s": 10.094000000000051,
+      "prompt_tokens": 288332,
+      "output_tokens": 6292,
+      "total_tokens": 294624,
+      "cost_total_CNY": 0.652168,
+      "cost_mean_CNY": 0.05016676923076923,
+      "missing_usage_attempts": 1
+    },
+    {
+      "condition": "QP-S",
+      "tasks": 13,
+      "localization_correct": 12,
+      "task_success": 11,
+      "API_calls": 15,
+      "API_elapsed_total_s": 141.10800000001154,
+      "API_elapsed_mean_s": 10.854461538462427,
+      "API_elapsed_median_s": 10.436999999999898,
+      "prompt_tokens": 322027,
+      "output_tokens": 6913,
+      "total_tokens": 328940,
+      "cost_total_CNY": 0.7270099999999999,
+      "cost_mean_CNY": 0.05592384615384615,
+      "missing_usage_attempts": 2
+    },
+    {
+      "condition": "QM-B",
+      "tasks": 13,
+      "localization_correct": 10,
+      "task_success": 10,
+      "API_calls": 13,
+      "API_elapsed_total_s": 2683.624999999942,
+      "API_elapsed_mean_s": 206.43269230768783,
+      "API_elapsed_median_s": 238.88999999998487,
+      "prompt_tokens": 288800,
+      "output_tokens": 109802,
+      "total_tokens": 398602,
+      "cost_total_CNY": 7.289448,
+      "cost_mean_CNY": 0.5607267692307693,
+      "missing_usage_attempts": 0
+    }
+  ],
+  "robustness": {
+    "observations": 3600,
+    "status": "PASS"
+  }
+}

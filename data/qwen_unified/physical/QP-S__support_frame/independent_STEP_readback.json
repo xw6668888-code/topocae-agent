@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "kind": "target_thickness_and_fixed_midplane",
+      "measured_side_centers_mm": [
+        [
+          76.112053688044,
+          -18.00000000000173,
+          422.72188926444977
+        ],
+        [
+          76.112053688044,
+          -18.00000000000173,
+          419.5293559470198
+        ]
+      ],
+      "pass_": true,
+      "source_faces": [
+        4,
+        12
+      ],
+      "source_midpoint_mm": [
+        76.11205368804806,
+        -17.99999999999997,
+        421.12562260573605
+      ]
+    },
+    {
+      "kind": "target_thickness_and_fixed_midplane",
+      "measured_side_centers_mm": [
+        [
+          76.112053688044,
+          -18.00000000000173,
+          472.2806986350903
+        ],
+        [
+          76.112053688044,
+          -18.00000000000173,
+          469.08816531766024
+        ]
+      ],
+      "pass_": true,
+      "source_faces": [
+        8,
+        14
+      ],
+      "source_midpoint_mm": [
+        76.11205368804806,
+        -17.999999999999975,
+        470.68443197638396
+      ]
+    }
+  ],
+  "no_reference_or_object_service_read": true,
+  "original_face_groups": [
+    [
+      4,
+      12
+    ],
+    [
+      8,
+      14
+    ]
+  ],
+  "output_readable": true,
+  "output_step": {
+    "bytes": 60738,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-S__support_frame/execution_v1/work/Support Frame_edited.stp",
+    "sha256": "b8ee3016e6e28e47eabbb27164015ea3bed04ed0fad3ec392a22f45e3f7c05fb"
+  },
+  "schema": "g11_independent_STEP_readback_v1",
+  "source_step": {
+    "bytes": 27127,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Support Frame.stp",
+    "sha256": "79e3a204524f0de7284fd1318e5dd20353c3608b2a933eee12f83ff4ff655e70"
+  },
+  "status": "PASS",
+  "valid_solid_count": 1,
+  "volume_after_mm3": 182959.12517810368,
+  "volume_before_mm3": 200600.00000000035
+}

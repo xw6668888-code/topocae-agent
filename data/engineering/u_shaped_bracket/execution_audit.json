@@ -1,0 +1,313 @@
+{
+  "status": "PASS",
+  "abaqus_job_status": "None",
+  "execution_mode": "g10_frozen_e3_user_confirmed_reference_plan",
+  "material": {
+    "density_tonne_mm3": 7.8e-09,
+    "name": "PlainCarbonSteel",
+    "source": "SI_mm111111_PlainCarbonSteel",
+    "youngs_modulus_mpa": 210000.0,
+    "poisson_ratio": 0.28,
+    "library_sha256": "0eb83be6e7a848b471c00f1c3885693bce7d8a43835bf0b9a0977f5b1de35cd7"
+  },
+  "input_path": "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\u_shaped_bracket\\attempts\\attempt_001\\final.inp",
+  "equilibrium_relative_error": 1.0298125749823674e-07,
+  "face_mapping_bijective": true,
+  "truth_used": false,
+  "fixed_abaqus_indices": [
+    9,
+    10
+  ],
+  "matrix_solver": "DIRECT",
+  "frozen_binding": {
+    "prediction_source_identity_digest": "6b8a5d45878c7ce633e1f8ccabbf02a0044d0bf1407a25d337e3e92dcceab783",
+    "prediction_system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint",
+    "selections": [
+      {
+        "selection_count": 2,
+        "role_face_sets": [
+          [
+            11
+          ],
+          [
+            10
+          ]
+        ],
+        "object_ids": [
+          "e3:72356e514bcd:through_hole_round:b544850519e3d764",
+          "e3:72356e514bcd:through_hole_round:627de97f36e0dd48"
+        ],
+        "selector": {
+          "scope": "all",
+          "feature_classes": [
+            "through_hole_round"
+          ],
+          "radius_mm": null
+        },
+        "role": "whole_feature",
+        "action": "fix_features",
+        "object_indices": [
+          0,
+          1
+        ],
+        "operation_index": 2
+      },
+      {
+        "selection_count": 1,
+        "role_face_sets": [
+          [
+            12
+          ]
+        ],
+        "object_ids": [
+          "e3:72356e514bcd:cylinder_boss:8aa7c1b857ab1199"
+        ],
+        "selector": {
+          "scope": "all",
+          "feature_classes": [
+            "cylinder_boss"
+          ],
+          "radius_mm": null
+        },
+        "role": "top_face",
+        "action": "apply_force",
+        "object_indices": [
+          2
+        ],
+        "operation_index": 3
+      }
+    ],
+    "binding_digest": "2033ce3b678caecec657b9b691b826c8080d8c980c4f7a266faea3e38222be65",
+    "geometry_version": "72356e514bcd4f5a955819ba9143842bd9298c45c3e4d65a8b62a88d903903bc",
+    "plan_digest": "474a88d0e6a4427c7a79fe0fce4e347a56e79e59452b8440fc7afa8339490831"
+  },
+  "max_displacement_mm": 0.016479147598147392,
+  "local_mesh": [],
+  "element_types": {
+    "C3D10": 138441
+  },
+  "geometry_version": "72356e514bcd4f5a955819ba9143842bd9298c45c3e4d65a8b62a88d903903bc",
+  "analysis_errors": 0,
+  "model_checkpoint_sha256": "491655bfec5591c5a6a1b7f6300294f4818c29bf60b4c1b8dd5ff6078a057054",
+  "manifest_sha256": "fa1721714c99834daaf5db0cc8c5e85cabd97e8ef6938ca7ca69f25895866129",
+  "node_count": 211466,
+  "case": "U-Shaped Bracket.stp",
+  "prediction_sha256": "61b23caaabc9002cd5b0b438a4a93286dbc55e2526e7287fb298894ffe8c981e",
+  "analysis_warnings": 0,
+  "odb_path": "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\u_shaped_bracket\\attempts\\attempt_001\\final.odb",
+  "element_count": 138441,
+  "semantic_plan_sha256": "19ad39f00816ab430a883dceb8191bbfdbb705448be5d1d784d97bd118372b2a",
+  "max_von_mises_mpa": 73.51274108886719,
+  "diagnostic_status": "JOB_STATUS_COMPLETED_SUCCESSFULLY",
+  "source_sha256": "72356e514bcd4f5a955819ba9143842bd9298c45c3e4d65a8b62a88d903903bc",
+  "elapsed_seconds": 51.98900008201599,
+  "face_mapping": [
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 0,
+      "source_face": 1,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.0626696323396978e-15,
+      "abaqus_index": 1,
+      "source_face": 2,
+      "boundary_vertex_count": 5
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 5.049334101628453e-16,
+      "abaqus_index": 2,
+      "source_face": 3,
+      "boundary_vertex_count": 5
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.0626696323396978e-15,
+      "abaqus_index": 3,
+      "source_face": 4,
+      "boundary_vertex_count": 6
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 5.049334101628453e-16,
+      "abaqus_index": 4,
+      "source_face": 5,
+      "boundary_vertex_count": 5
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 5,
+      "source_face": 6,
+      "boundary_vertex_count": 5
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 6,
+      "source_face": 7,
+      "boundary_vertex_count": 12
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.341131740831046e-13,
+      "abaqus_index": 7,
+      "source_face": 8,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.341131740831046e-13,
+      "abaqus_index": 8,
+      "source_face": 9,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 9,
+      "source_face": 10,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 10,
+      "source_face": 11,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 11,
+      "source_face": 12,
+      "boundary_vertex_count": 1
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 12,
+      "source_face": 13,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 4.463098341236078e-14,
+      "abaqus_index": 13,
+      "source_face": 14,
+      "boundary_vertex_count": 12
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 6.0299097411054e-09,
+      "abaqus_index": 14,
+      "source_face": 15,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 6.029910166734542e-09,
+      "abaqus_index": 15,
+      "source_face": 16,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 5.832499233806072e-09,
+      "abaqus_index": 16,
+      "source_face": 17,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 5.832499233806072e-09,
+      "abaqus_index": 17,
+      "source_face": 18,
+      "boundary_vertex_count": 4
+    }
+  ],
+  "reaction_force_N": [
+    -8.42883309815079e-08,
+    499.9999485295266,
+    1.4380930224433541e-06
+  ],
+  "expected_applied_force_N": [
+    0.0,
+    -500.0,
+    0.0
+  ],
+  "final_frame_time": 1.0,
+  "fixed_regions": [
+    {
+      "face_numbers": [
+        11
+      ],
+      "object_id": "e3:72356e514bcd:through_hole_round:b544850519e3d764",
+      "object_index": 0,
+      "role": "whole_feature",
+      "geometry_version": "72356e514bcd4f5a955819ba9143842bd9298c45c3e4d65a8b62a88d903903bc",
+      "role_evidence": {
+        "instance_faces": [
+          11
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 75.39822368615503,
+      "class": "through_hole_round"
+    },
+    {
+      "face_numbers": [
+        10
+      ],
+      "object_id": "e3:72356e514bcd:through_hole_round:627de97f36e0dd48",
+      "object_index": 1,
+      "role": "whole_feature",
+      "geometry_version": "72356e514bcd4f5a955819ba9143842bd9298c45c3e4d65a8b62a88d903903bc",
+      "role_evidence": {
+        "instance_faces": [
+          10
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 75.39822368615503,
+      "class": "through_hole_round"
+    }
+  ],
+  "loads": [
+    {
+      "kind": "force",
+      "face_numbers": [
+        12
+      ],
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "object_id": "e3:72356e514bcd:cylinder_boss:8aa7c1b857ab1199",
+      "force_N": 500.0,
+      "object_index": 2,
+      "abaqus_indices": [
+        11
+      ],
+      "role": "top_face",
+      "geometry_version": "72356e514bcd4f5a955819ba9143842bd9298c45c3e4d65a8b62a88d903903bc",
+      "role_evidence": {
+        "instance_faces": [
+          12,
+          13
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 165.1299638543135,
+      "class": "cylinder_boss",
+      "traction_or_pressure_MPa": 3.0279180612013383
+    }
+  ],
+  "requested_solver_memory_mb": 20480,
+  "cae_path": "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\u_shaped_bracket\\attempts\\attempt_001\\final.cae",
+  "mesh_seed_mm": 1.0
+}

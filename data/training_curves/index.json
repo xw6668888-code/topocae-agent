@@ -1,0 +1,50 @@
+[
+  {
+    "branch": "R",
+    "seed": 20260718,
+    "sha256": "8170e84bcb70dd2414a979a12c2e2b2f10693a3e88a09ae2ff893d68330e0547",
+    "epochs": 30,
+    "frozen_checkpoint_hash_verified": true,
+    "history": "data/training_curves/R_20260718.json"
+  },
+  {
+    "branch": "R",
+    "seed": 20260719,
+    "sha256": "7c5fe8ba7dca5de2d0c1c9642a868187a1185ed8082891fcafb4a2c11dde08fd",
+    "epochs": 56,
+    "frozen_checkpoint_hash_verified": true,
+    "history": "data/training_curves/R_20260719.json"
+  },
+  {
+    "branch": "R",
+    "seed": 20260720,
+    "sha256": "a4bdd28f8aaf6b6550ca5059ccc3c5ef3a33a8f6abadc91dac3cd2f69cf798b9",
+    "epochs": 56,
+    "frozen_checkpoint_hash_verified": true,
+    "history": "data/training_curves/R_20260720.json"
+  },
+  {
+    "branch": "Q",
+    "seed": 20260718,
+    "sha256": "0392c84e220a20b9a1e48ccb1c1c951ba2d0fa7cc9d1b1dcb3a9c4f9656a21cc",
+    "epochs": 56,
+    "frozen_checkpoint_hash_verified": true,
+    "history": "data/training_curves/Q_20260718.json"
+  },
+  {
+    "branch": "Q",
+    "seed": 20260719,
+    "sha256": "a6c42e9fdcb6ab2a94c14ea7abf7e0565fd3d7ee5ef33485e270adb678af6211",
+    "epochs": 56,
+    "frozen_checkpoint_hash_verified": true,
+    "history": "data/training_curves/Q_20260719.json"
+  },
+  {
+    "branch": "Q",
+    "seed": 20260720,
+    "sha256": "111a68210af82ff5b27dedd72d35c3b14799c473c9e7cf0a813df621e8e2b0e9",
+    "epochs": 33,
+    "frozen_checkpoint_hash_verified": true,
+    "history": "data/training_curves/Q_20260720.json"
+  }
+]

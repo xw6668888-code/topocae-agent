@@ -1,0 +1,30 @@
+{
+  "sample_id": "g10_t10_v2_p_00084",
+  "source_step_sha256": "098c7d1604b438f63f689ba49f7997a7ca0339208b6063f696800b6f49c15a3c",
+  "face_count": 6,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "stock",
+    "pocket_circular",
+    "through_hole_round",
+    "pocket_circular"
+  ],
+  "objects": [
+    {
+      "class": "through_hole_round",
+      "instance_id": 1,
+      "faces": [
+        4
+      ]
+    },
+    {
+      "class": "pocket_circular",
+      "instance_id": 2,
+      "faces": [
+        3,
+        5
+      ]
+    }
+  ]
+}

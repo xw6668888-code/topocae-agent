@@ -1,0 +1,31 @@
+{
+  "sample_id": "g10_t10_v2_p_00358",
+  "source_step_sha256": "394dcace4d3b73fe324db1f1d1627d86ed57c1d89881cb8fc0dae8d5663b0e3a",
+  "face_count": 11,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "pocket_rect",
+    "pocket_rect",
+    "pocket_rect",
+    "pocket_rect",
+    "pocket_rect"
+  ],
+  "objects": [
+    {
+      "class": "pocket_rect",
+      "instance_id": 1,
+      "faces": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ]
+}

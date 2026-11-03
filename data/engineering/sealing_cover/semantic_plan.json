@@ -1,0 +1,55 @@
+{
+  "schema_version": "2",
+  "status": "ready",
+  "domain": "cae",
+  "operations": [
+    {
+      "action": "set_material",
+      "material_id": "Brass"
+    },
+    {
+      "action": "set_global_mesh",
+      "size_mm": 5.0
+    },
+    {
+      "action": "set_local_mesh",
+      "target": {
+        "feature_classes": [
+          "chamfer"
+        ],
+        "radius_mm": null,
+        "scope": "all"
+      },
+      "size_mm": 2.0
+    },
+    {
+      "action": "fix_features",
+      "target": {
+        "feature_classes": [
+          "counterbore_hole"
+        ],
+        "radius_mm": null,
+        "scope": "all"
+      },
+      "role": "whole_feature"
+    },
+    {
+      "action": "apply_pressure",
+      "target": {
+        "feature_classes": [
+          "pocket_circular"
+        ],
+        "radius_mm": null,
+        "scope": "all"
+      },
+      "role": "cavity_interior",
+      "magnitude_MPa": 10.0
+    },
+    {
+      "action": "set_analysis",
+      "type": "linear_static"
+    }
+  ],
+  "clarifications": [],
+  "reason": "G10 frozen user-confirmed reference plan; not an LLM result"
+}

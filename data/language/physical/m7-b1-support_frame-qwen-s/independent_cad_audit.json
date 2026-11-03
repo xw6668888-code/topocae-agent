@@ -1,0 +1,40 @@
+{
+  "schema": "g10_independent_cad_roundtrip_audit_v1",
+  "audited_utc": "2026-09-20T07:16:36.239930+00:00",
+  "case_id": "support_frame",
+  "status": "PASS",
+  "source_step": {
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Support Frame.stp",
+    "bytes": 27127,
+    "sha256": "79e3a204524f0de7284fd1318e5dd20353c3608b2a933eee12f83ff4ff655e70"
+  },
+  "prediction": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m6_engineering/frozen_e3_outputs/support_frame.json",
+    "bytes": 125582,
+    "sha256": "ff5958e28ca1cfd441af2b024c0fe763e326067242bec7bee38b55a5914e521d"
+  },
+  "output_step": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m7_model_cad_dispatch/v1/m7-b1-support_frame-qwen-s/attempt_001/Support Frame_edited.stp",
+    "bytes": 60738,
+    "sha256": "702dd5708d4e2f0263a0c35aa3a4c0d6a2260da873e96683eec21bcdb2371ac3"
+  },
+  "executor_audit": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m7_model_cad_dispatch/v1/m7-b1-support_frame-qwen-s/attempt_001/edit_audit.json",
+    "bytes": 2440,
+    "sha256": "d58851e8c3ecfc89cf28cbdd67306e1ed0cb304df6a00e7d38515918387b72a3"
+  },
+  "independent_roundtrip_volume_mm3": 182959.12517810368,
+  "independent_roundtrip_solid_count": 1,
+  "checks": {
+    "legacy_postcondition_pass": true,
+    "truth_not_used": true,
+    "prediction_hash_bound": true,
+    "source_version_bound": true,
+    "source_unchanged": true,
+    "output_hash_bound": true,
+    "roundtrip_one_valid_solid": true,
+    "roundtrip_volume_matches_executor": true,
+    "symmetric_midplane_check": true
+  },
+  "truth_used": false
+}

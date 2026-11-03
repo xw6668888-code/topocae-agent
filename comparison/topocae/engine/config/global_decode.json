@@ -1,0 +1,123 @@
+{
+  "schema_version": "topocae_p1_e3c_global_decode_selection_1",
+  "selection_split": "synthetic_val",
+  "objective": "mean_object_macro_micro_exact_boundary",
+  "global_subset_confidence_tolerance": 0.1,
+  "best_metrics": {
+    "selection_score": 0.9728719059220436,
+    "object_macro_f1": 0.9720493600483644,
+    "object_micro_f1": 0.972059779077323,
+    "exact_instance_ratio": 0.9515706806282722,
+    "boundary_f1": 0.9958078039342148,
+    "prediction_count": 775,
+    "subset_dominated_count": 873
+  },
+  "scan": [
+    {
+      "subset_confidence_tolerance": 0.0,
+      "selection_score": 0.9141477142279743,
+      "object_macro_f1": 0.9720493600483644,
+      "object_micro_f1": 0.972059779077323,
+      "exact_instance_ratio": 0.7630890052356021,
+      "boundary_f1": 0.9493927125506073,
+      "prediction_count": 775,
+      "subset_dominated_count": 676
+    },
+    {
+      "subset_confidence_tolerance": 0.0001,
+      "selection_score": 0.9162261635972482,
+      "object_macro_f1": 0.9720493600483644,
+      "object_micro_f1": 0.972059779077323,
+      "exact_instance_ratio": 0.7696335078534031,
+      "boundary_f1": 0.9511620074099023,
+      "prediction_count": 775,
+      "subset_dominated_count": 688
+    },
+    {
+      "subset_confidence_tolerance": 0.0005,
+      "selection_score": 0.9280979654096941,
+      "object_macro_f1": 0.9720493600483644,
+      "object_micro_f1": 0.972059779077323,
+      "exact_instance_ratio": 0.806282722513089,
+      "boundary_f1": 0.962,
+      "prediction_count": 775,
+      "subset_dominated_count": 732
+    },
+    {
+      "subset_confidence_tolerance": 0.001,
+      "selection_score": 0.9371860645500297,
+      "object_macro_f1": 0.9720493600483644,
+      "object_micro_f1": 0.972059779077323,
+      "exact_instance_ratio": 0.8350785340314136,
+      "boundary_f1": 0.9695565850430179,
+      "prediction_count": 775,
+      "subset_dominated_count": 757
+    },
+    {
+      "subset_confidence_tolerance": 0.002,
+      "selection_score": 0.9489641351543279,
+      "object_macro_f1": 0.9720493600483644,
+      "object_micro_f1": 0.972059779077323,
+      "exact_instance_ratio": 0.8717277486910995,
+      "boundary_f1": 0.980019652800524,
+      "prediction_count": 775,
+      "subset_dominated_count": 796
+    },
+    {
+      "subset_confidence_tolerance": 0.005,
+      "selection_score": 0.9558563600297675,
+      "object_macro_f1": 0.9720493600483644,
+      "object_micro_f1": 0.972059779077323,
+      "exact_instance_ratio": 0.893979057591623,
+      "boundary_f1": 0.9853372434017595,
+      "prediction_count": 775,
+      "subset_dominated_count": 826
+    },
+    {
+      "subset_confidence_tolerance": 0.01,
+      "selection_score": 0.9589691185191309,
+      "object_macro_f1": 0.9720493600483644,
+      "object_micro_f1": 0.972059779077323,
+      "exact_instance_ratio": 0.9044502617801047,
+      "boundary_f1": 0.9873170731707317,
+      "prediction_count": 775,
+      "subset_dominated_count": 835
+    },
+    {
+      "subset_confidence_tolerance": 0.02,
+      "selection_score": 0.9597058739602699,
+      "object_macro_f1": 0.9720493600483644,
+      "object_micro_f1": 0.972059779077323,
+      "exact_instance_ratio": 0.9070680628272252,
+      "boundary_f1": 0.9876462938881664,
+      "prediction_count": 775,
+      "subset_dominated_count": 837
+    },
+    {
+      "subset_confidence_tolerance": 0.05,
+      "selection_score": 0.9639618703132328,
+      "object_macro_f1": 0.9720493600483644,
+      "object_micro_f1": 0.972059779077323,
+      "exact_instance_ratio": 0.9214659685863874,
+      "boundary_f1": 0.9902723735408561,
+      "prediction_count": 775,
+      "subset_dominated_count": 850
+    },
+    {
+      "subset_confidence_tolerance": 0.1,
+      "selection_score": 0.9728719059220436,
+      "object_macro_f1": 0.9720493600483644,
+      "object_micro_f1": 0.972059779077323,
+      "exact_instance_ratio": 0.9515706806282722,
+      "boundary_f1": 0.9958078039342148,
+      "prediction_count": 775,
+      "subset_dominated_count": 873
+    }
+  ],
+  "contracts": {
+    "own_val_only": true,
+    "common_holdout_used": false,
+    "realdev_used": false
+  },
+  "selection_sha256": "CD237426E2206210177DC8310952FA0D71D50F8496329AF981822D57797BE6DA"
+}

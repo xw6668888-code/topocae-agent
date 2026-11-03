@@ -1,0 +1,482 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "clarifications": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "domain": {
+      "enum": [
+        "cad",
+        "cae"
+      ],
+      "type": "string"
+    },
+    "operations": {
+      "items": {
+        "oneOf": [
+          {
+            "additionalProperties": false,
+            "properties": {
+              "action": {
+                "enum": [
+                  "set_material"
+                ],
+                "type": "string"
+              },
+              "material_id": {
+                "enum": [
+                  "Steel45",
+                  "Brass",
+                  "PlainCarbonSteel"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "action",
+              "material_id"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "action": {
+                "enum": [
+                  "set_global_mesh"
+                ],
+                "type": "string"
+              },
+              "size_mm": {
+                "exclusiveMinimum": 0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "action",
+              "size_mm"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "action": {
+                "enum": [
+                  "set_local_mesh"
+                ],
+                "type": "string"
+              },
+              "face_groups": {
+                "items": {
+                  "items": {
+                    "pattern": "^fh_[0-9a-f]{16}$",
+                    "type": "string"
+                  },
+                  "minItems": 1,
+                  "type": "array",
+                  "uniqueItems": true
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "size_mm": {
+                "exclusiveMinimum": 0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "action",
+              "face_groups",
+              "size_mm"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "action": {
+                "enum": [
+                  "fix_features"
+                ],
+                "type": "string"
+              },
+              "face_groups": {
+                "items": {
+                  "items": {
+                    "pattern": "^fh_[0-9a-f]{16}$",
+                    "type": "string"
+                  },
+                  "minItems": 1,
+                  "type": "array",
+                  "uniqueItems": true
+                },
+                "minItems": 1,
+                "type": "array"
+              }
+            },
+            "required": [
+              "action",
+              "face_groups"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "action": {
+                "enum": [
+                  "apply_force"
+                ],
+                "type": "string"
+              },
+              "basis": {
+                "enum": [
+                  "per_instance",
+                  "total"
+                ],
+                "type": "string"
+              },
+              "direction": {
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 3,
+                "minItems": 3,
+                "type": "array"
+              },
+              "face_groups": {
+                "items": {
+                  "items": {
+                    "pattern": "^fh_[0-9a-f]{16}$",
+                    "type": "string"
+                  },
+                  "minItems": 1,
+                  "type": "array",
+                  "uniqueItems": true
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "magnitude_N": {
+                "exclusiveMinimum": 0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "action",
+              "face_groups",
+              "magnitude_N",
+              "direction",
+              "basis"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "action": {
+                "enum": [
+                  "apply_traction"
+                ],
+                "type": "string"
+              },
+              "direction": {
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 3,
+                "minItems": 3,
+                "type": "array"
+              },
+              "face_groups": {
+                "items": {
+                  "items": {
+                    "pattern": "^fh_[0-9a-f]{16}$",
+                    "type": "string"
+                  },
+                  "minItems": 1,
+                  "type": "array",
+                  "uniqueItems": true
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "magnitude_MPa": {
+                "exclusiveMinimum": 0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "action",
+              "face_groups",
+              "magnitude_MPa",
+              "direction"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "action": {
+                "enum": [
+                  "apply_pressure"
+                ],
+                "type": "string"
+              },
+              "face_groups": {
+                "items": {
+                  "items": {
+                    "pattern": "^fh_[0-9a-f]{16}$",
+                    "type": "string"
+                  },
+                  "minItems": 1,
+                  "type": "array",
+                  "uniqueItems": true
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "magnitude_MPa": {
+                "exclusiveMinimum": 0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "action",
+              "face_groups",
+              "magnitude_MPa"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "action": {
+                "enum": [
+                  "apply_centrifugal"
+                ],
+                "type": "string"
+              },
+              "angular_velocity_rad_s": {
+                "exclusiveMinimum": 0,
+                "type": "number"
+              },
+              "axis_direction": {
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 3,
+                "minItems": 3,
+                "type": "array"
+              },
+              "axis_point_mm": {
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 3,
+                "minItems": 3,
+                "type": "array"
+              }
+            },
+            "required": [
+              "action",
+              "angular_velocity_rad_s",
+              "axis_point_mm",
+              "axis_direction"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "action": {
+                "enum": [
+                  "set_analysis"
+                ],
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "linear_static"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "action",
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "action": {
+                "enum": [
+                  "set_hole_radius"
+                ],
+                "type": "string"
+              },
+              "face_groups": {
+                "items": {
+                  "items": {
+                    "pattern": "^fh_[0-9a-f]{16}$",
+                    "type": "string"
+                  },
+                  "minItems": 1,
+                  "type": "array",
+                  "uniqueItems": true
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "new_radius_mm": {
+                "exclusiveMinimum": 0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "action",
+              "face_groups",
+              "new_radius_mm"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "action": {
+                "enum": [
+                  "set_hole_spacing"
+                ],
+                "type": "string"
+              },
+              "anchor": {
+                "enum": [
+                  "central_hole"
+                ],
+                "type": "string"
+              },
+              "face_groups": {
+                "items": {
+                  "items": {
+                    "pattern": "^fh_[0-9a-f]{16}$",
+                    "type": "string"
+                  },
+                  "minItems": 1,
+                  "type": "array",
+                  "uniqueItems": true
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "new_spacing_mm": {
+                "exclusiveMinimum": 0,
+                "type": "number"
+              },
+              "old_spacing_mm": {
+                "exclusiveMinimum": 0,
+                "type": "number"
+              },
+              "spacing_definition": {
+                "enum": [
+                  "adjacent_centers"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "action",
+              "face_groups",
+              "old_spacing_mm",
+              "new_spacing_mm",
+              "anchor",
+              "spacing_definition"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "action": {
+                "enum": [
+                  "set_thickness"
+                ],
+                "type": "string"
+              },
+              "anchor": {
+                "enum": [
+                  "midplane"
+                ],
+                "type": "string"
+              },
+              "face_groups": {
+                "items": {
+                  "items": {
+                    "pattern": "^fh_[0-9a-f]{16}$",
+                    "type": "string"
+                  },
+                  "minItems": 1,
+                  "type": "array",
+                  "uniqueItems": true
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "new_thickness_mm": {
+                "exclusiveMinimum": 0,
+                "type": "number"
+              },
+              "old_thickness_mm": {
+                "exclusiveMinimum": 0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "action",
+              "face_groups",
+              "old_thickness_mm",
+              "new_thickness_mm",
+              "anchor"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "maxItems": 10,
+      "type": "array"
+    },
+    "reason": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_version": {
+      "enum": [
+        "g11-face-plan-1"
+      ],
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "ready",
+        "needs_clarification",
+        "unsupported"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "status",
+    "domain",
+    "operations",
+    "clarifications",
+    "reason"
+  ],
+  "type": "object"
+}

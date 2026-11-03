@@ -1,0 +1,30 @@
+{
+  "sample_id": "g10_t10_v2_p_00036",
+  "source_step_sha256": "975f40c5f59e788e6cf0b0f3218e1d554465c95665d088016f52290500ea05f3",
+  "face_count": 6,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "stock",
+    "blind_hole_round",
+    "through_hole_round",
+    "blind_hole_round"
+  ],
+  "objects": [
+    {
+      "class": "through_hole_round",
+      "instance_id": 1,
+      "faces": [
+        4
+      ]
+    },
+    {
+      "class": "blind_hole_round",
+      "instance_id": 2,
+      "faces": [
+        3,
+        5
+      ]
+    }
+  ]
+}

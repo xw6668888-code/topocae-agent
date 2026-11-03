@@ -1,0 +1,30 @@
+{
+  "deployment_seed": 20260719,
+  "temperature": 3,
+  "kappa": 20.0,
+  "selector_exact_limit": 32,
+  "selector_beam_width": 128,
+  "seeds": {
+    "20260718": {
+      "sparse_weights": "weights/sparse/20260718.pt",
+      "dense_weights": "weights/dense/20260718.pt",
+      "sparse_threshold": 0.27,
+      "dense_threshold": 0.95,
+      "shared_scorer_weights": "weights/scorer/20260719.pt"
+    },
+    "20260719": {
+      "sparse_weights": "weights/sparse/20260719.pt",
+      "dense_weights": "weights/dense/20260719.pt",
+      "sparse_threshold": 0.89,
+      "dense_threshold": 0.94,
+      "shared_scorer_weights": "weights/scorer/20260719.pt"
+    },
+    "20260720": {
+      "sparse_weights": "weights/sparse/20260720.pt",
+      "dense_weights": "weights/dense/20260720.pt",
+      "sparse_threshold": 0.84,
+      "dense_threshold": 0.87,
+      "shared_scorer_weights": "weights/scorer/20260719.pt"
+    }
+  }
+}

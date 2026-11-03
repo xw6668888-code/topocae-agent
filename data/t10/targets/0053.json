@@ -1,0 +1,121 @@
+{
+  "sample_id": "g10_t10_v2_i_00053",
+  "source_step_sha256": "5a890995e34c1fb8143adbbba0ac82896a21e0175a49368a84ef50188671d3cd",
+  "face_count": 32,
+  "face_macro_classes": [
+    "stock",
+    "chamfer",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "countersink_hole",
+    "blind_hole_round",
+    "stock",
+    "chamfer",
+    "counterbore_hole",
+    "rectangular_boss",
+    "rectangular_boss",
+    "rectangular_boss",
+    "rectangular_boss",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "fillet",
+    "fillet",
+    "fillet",
+    "fillet",
+    "counterbore_hole",
+    "countersink_hole",
+    "blind_hole_round",
+    "stepped_hole_round",
+    "counterbore_hole",
+    "rectangular_boss",
+    "stepped_hole_round",
+    "stepped_hole_round",
+    "stepped_hole_round"
+  ],
+  "objects": [
+    {
+      "class": "blind_hole_round",
+      "instance_id": 1,
+      "faces": [
+        7,
+        25
+      ]
+    },
+    {
+      "class": "stepped_hole_round",
+      "instance_id": 2,
+      "faces": [
+        26,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "class": "counterbore_hole",
+      "instance_id": 3,
+      "faces": [
+        10,
+        23,
+        27
+      ]
+    },
+    {
+      "class": "countersink_hole",
+      "instance_id": 4,
+      "faces": [
+        6,
+        24
+      ]
+    },
+    {
+      "class": "obround_hole",
+      "instance_id": 5,
+      "faces": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "class": "rectangular_boss",
+      "instance_id": 6,
+      "faces": [
+        11,
+        12,
+        13,
+        14,
+        28
+      ]
+    },
+    {
+      "class": "chamfer",
+      "instance_id": 7,
+      "faces": [
+        9
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 8,
+      "faces": [
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "class": "chamfer",
+      "instance_id": 9,
+      "faces": [
+        1
+      ]
+    }
+  ]
+}

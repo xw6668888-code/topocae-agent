@@ -1,0 +1,215 @@
+{
+  "status": "PASS", 
+  "abaqus_job_status": "None", 
+  "execution_mode": "g11_direct_model_face_groups", 
+  "truth_used": false, 
+  "input_path": "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-S__u_shaped_bracket\\execution_v1\\work\\run\\final.inp", 
+  "equilibrium_relative_error": 9.901382426542598e-08, 
+  "face_mapping_bijective": true, 
+  "material": {
+    "poisson_ratio": 0.3, 
+    "source": "previously confirmed user parameters", 
+    "density_tonne_mm3": 7.85e-09, 
+    "name": "Steel45", 
+    "youngs_modulus_mpa": 210000.0
+  }, 
+  "fixed_abaqus_indices": [
+    9, 
+    10
+  ], 
+  "matrix_solver": "DIRECT", 
+  "reaction_force_N": [
+    -2.493165993655566e-07, 
+    499.999950498066, 
+    6.562950147781521e-07
+  ], 
+  "local_mesh": [], 
+  "element_types": {
+    "C3D10": 138441
+  }, 
+  "expected_applied_force_N": [
+    0.0, 
+    -500.0, 
+    0.0
+  ], 
+  "analysis_errors": 0, 
+  "loads": [
+    {
+      "traction_or_pressure_MPa": 3.0279180612013383, 
+      "direction": [
+        0.0, 
+        -1.0, 
+        0.0
+      ], 
+      "abaqus_indices": [
+        11
+      ], 
+      "face_numbers": [
+        12
+      ], 
+      "area_mm2": 165.1299638543135, 
+      "group_index": 0, 
+      "kind": "force", 
+      "force_N": 500.0
+    }
+  ], 
+  "case": "U-Shaped Bracket.stp", 
+  "max_von_mises_mpa": 72.69651794433594, 
+  "analysis_warnings": 0, 
+  "element_count": 138441, 
+  "face_mapping": [
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 0.0, 
+      "abaqus_index": 0, 
+      "source_face": 1, 
+      "boundary_vertex_count": 4
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 1.0626696323396978e-15, 
+      "abaqus_index": 1, 
+      "source_face": 2, 
+      "boundary_vertex_count": 5
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 5.049334101628453e-16, 
+      "abaqus_index": 2, 
+      "source_face": 3, 
+      "boundary_vertex_count": 5
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 1.0626696323396978e-15, 
+      "abaqus_index": 3, 
+      "source_face": 4, 
+      "boundary_vertex_count": 6
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 5.049334101628453e-16, 
+      "abaqus_index": 4, 
+      "source_face": 5, 
+      "boundary_vertex_count": 5
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 0.0, 
+      "abaqus_index": 5, 
+      "source_face": 6, 
+      "boundary_vertex_count": 5
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 0.0, 
+      "abaqus_index": 6, 
+      "source_face": 7, 
+      "boundary_vertex_count": 12
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 1.341131740831046e-13, 
+      "abaqus_index": 7, 
+      "source_face": 8, 
+      "boundary_vertex_count": 4
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 1.341131740831046e-13, 
+      "abaqus_index": 8, 
+      "source_face": 9, 
+      "boundary_vertex_count": 4
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 0.0, 
+      "abaqus_index": 9, 
+      "source_face": 10, 
+      "boundary_vertex_count": 3
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 0.0, 
+      "abaqus_index": 10, 
+      "source_face": 11, 
+      "boundary_vertex_count": 2
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 0.0, 
+      "abaqus_index": 11, 
+      "source_face": 12, 
+      "boundary_vertex_count": 1
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 0.0, 
+      "abaqus_index": 12, 
+      "source_face": 13, 
+      "boundary_vertex_count": 2
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 4.463098341236078e-14, 
+      "abaqus_index": 13, 
+      "source_face": 14, 
+      "boundary_vertex_count": 12
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 6.0299097411054e-09, 
+      "abaqus_index": 14, 
+      "source_face": 15, 
+      "boundary_vertex_count": 4
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 6.029910166734542e-09, 
+      "abaqus_index": 15, 
+      "source_face": 16, 
+      "boundary_vertex_count": 4
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 5.832499233806072e-09, 
+      "abaqus_index": 16, 
+      "source_face": 17, 
+      "boundary_vertex_count": 4
+    }, 
+    {
+      "max_vertex_distance_mm": 0.0, 
+      "relative_area_error": 5.832499233806072e-09, 
+      "abaqus_index": 17, 
+      "source_face": 18, 
+      "boundary_vertex_count": 4
+    }
+  ], 
+  "odb_path": "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-S__u_shaped_bracket\\execution_v1\\work\\run\\final.odb", 
+  "diagnostic_status": "JOB_STATUS_COMPLETED_SUCCESSFULLY", 
+  "source_sha256": "72356e514bcd4f5a955819ba9143842bd9298c45c3e4d65a8b62a88d903903bc", 
+  "node_count": 211466, 
+  "elapsed_seconds": 61.59100008010864, 
+  "max_displacement_mm": 0.016524093225598335, 
+  "final_frame_time": 1.0, 
+  "fixed_regions": [
+    {
+      "face_numbers": [
+        11
+      ], 
+      "area_mm2": 75.39822368615503, 
+      "group_index": 0
+    }, 
+    {
+      "face_numbers": [
+        10
+      ], 
+      "area_mm2": 75.39822368615503, 
+      "group_index": 1
+    }
+  ], 
+  "model_plan_sha256": "65b2edc0bd10e40472f2eb97816c4f81c141e3a5e2f07419d46de179e491e1c7", 
+  "requested_solver_memory_mb": 6144, 
+  "cae_path": "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-S__u_shaped_bracket\\execution_v1\\work\\run\\final.cae", 
+  "mesh_seed_mm": 1.0
+}

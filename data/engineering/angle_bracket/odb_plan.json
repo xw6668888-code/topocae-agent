@@ -1,0 +1,8 @@
+{
+  "expected_force_N": [
+    0.0,
+    -400.0,
+    0.0
+  ],
+  "force_balance_scale_N": 400.0
+}

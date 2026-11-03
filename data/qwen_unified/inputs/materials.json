@@ -1,0 +1,25 @@
+{
+  "Brass": {
+    "density_tonne_mm3": 8.5e-09,
+    "library_sha256": "0eb83be6e7a848b471c00f1c3885693bce7d8a43835bf0b9a0977f5b1de35cd7",
+    "name": "Brass",
+    "poisson_ratio": 0.33,
+    "source": "SI_mm111111_Brass",
+    "youngs_modulus_mpa": 100000.0
+  },
+  "PlainCarbonSteel": {
+    "density_tonne_mm3": 7.8e-09,
+    "library_sha256": "0eb83be6e7a848b471c00f1c3885693bce7d8a43835bf0b9a0977f5b1de35cd7",
+    "name": "PlainCarbonSteel",
+    "poisson_ratio": 0.28,
+    "source": "SI_mm111111_PlainCarbonSteel",
+    "youngs_modulus_mpa": 210000.0
+  },
+  "Steel45": {
+    "density_tonne_mm3": 7.85e-09,
+    "name": "Steel45",
+    "poisson_ratio": 0.3,
+    "source": "previously confirmed user parameters",
+    "youngs_modulus_mpa": 210000.0
+  }
+}

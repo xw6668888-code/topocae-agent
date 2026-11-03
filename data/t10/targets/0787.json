@@ -1,0 +1,44 @@
+{
+  "sample_id": "g10_t10_v2_p_00389",
+  "source_step_sha256": "b730e7f54fdeac3bc76dc1a887a3e16e0a24b813afa9da7b8e015e53d9d10d6e",
+  "face_count": 10,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "stock",
+    "countersink_hole",
+    "cylinder_boss",
+    "counterbore_hole",
+    "countersink_hole",
+    "counterbore_hole",
+    "cylinder_boss",
+    "counterbore_hole"
+  ],
+  "objects": [
+    {
+      "class": "cylinder_boss",
+      "instance_id": 1,
+      "faces": [
+        4,
+        8
+      ]
+    },
+    {
+      "class": "counterbore_hole",
+      "instance_id": 2,
+      "faces": [
+        5,
+        7,
+        9
+      ]
+    },
+    {
+      "class": "countersink_hole",
+      "instance_id": 3,
+      "faces": [
+        3,
+        6
+      ]
+    }
+  ]
+}

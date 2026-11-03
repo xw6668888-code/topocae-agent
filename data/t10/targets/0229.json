@@ -1,0 +1,41 @@
+{
+  "sample_id": "g10_t10_v2_i_00229",
+  "source_step_sha256": "5ceaa03bc4e86ba430378c0cf8a47d963e2d051d4d95460177b13ee735c72405",
+  "face_count": 10,
+  "face_macro_classes": [
+    "stock",
+    "fillet",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "countersink_hole",
+    "through_hole_round",
+    "stock",
+    "countersink_hole"
+  ],
+  "objects": [
+    {
+      "class": "countersink_hole",
+      "instance_id": 1,
+      "faces": [
+        6,
+        9
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 2,
+      "faces": [
+        7
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 3,
+      "faces": [
+        1
+      ]
+    }
+  ]
+}

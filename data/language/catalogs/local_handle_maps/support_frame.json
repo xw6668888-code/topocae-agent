@@ -1,0 +1,47 @@
+{
+  "externalizable": false,
+  "extractor": {
+    "entry": {
+      "bytes": 11156,
+      "repo_relative_path": "tools/aei_paper_goals_v1/g07/step_entry.py",
+      "sha256": "a34f494d20c01eafc14ad5c9695174916888fa5658b84550b0ca182eb37ad288"
+    },
+    "frozen_core": {
+      "bytes": 8853,
+      "repo_relative_path": "paper_release/topocae_p1_legacy_baseline_v1/core/graph_v2_2_1.py",
+      "sha256": "e2ff614cefeb65a2cf482d03b1bea570f7f3fc1ef9b7aea06205ff345ed9f559"
+    },
+    "geometry_schema": "topocae_graph_v2_2_1_true_brep_planar_rank_policy_1"
+  },
+  "geometry_handle": "gh_49cddc2abaae2ad5",
+  "handle_to_final_step_face_number": {
+    "fh_12e03025ab684d06": 10,
+    "fh_139cabf01bfe6f7c": 15,
+    "fh_1b8c44b5bd93fe3e": 11,
+    "fh_1e6d537f6d062cb1": 19,
+    "fh_4eedbfcfc3feef7c": 4,
+    "fh_55e99c3ee738773d": 5,
+    "fh_6b37b3549b9912f6": 16,
+    "fh_84666bbf779d2400": 1,
+    "fh_8710cc666763ce01": 7,
+    "fh_8c8925656de01424": 8,
+    "fh_9891ceed1cb193dd": 6,
+    "fh_9bbbb33735e49e1d": 14,
+    "fh_a9832c20103f60d6": 12,
+    "fh_b552078196c035ea": 17,
+    "fh_b73bc3e64540e6b7": 9,
+    "fh_ba2ac325694dec48": 13,
+    "fh_c76a3fb3fbf3123e": 3,
+    "fh_d32881c46f80f13a": 20,
+    "fh_d356791d28dfecda": 2,
+    "fh_da3089b95b468c29": 18
+  },
+  "model_outputs_used": false,
+  "schema": "g10_m7_local_face_handle_map_v1",
+  "source_step": {
+    "bytes": 27127,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Support Frame.stp",
+    "sha256": "79e3a204524f0de7284fd1318e5dd20353c3608b2a933eee12f83ff4ff655e70"
+  },
+  "truth_used": false
+}

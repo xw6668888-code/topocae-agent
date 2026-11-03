@@ -1,0 +1,29 @@
+{
+  "applies_to": "Confirmed external process interruption; preserve original cumulative solver budget",
+  "at_utc": "2026-10-24T10:15:14.539798+00:00",
+  "config": {
+    "bytes": 187,
+    "path": "W:/python/FEA/dataset_generator/reports/aei_paper_goals_v1/g11/EXECUTION_CONFIG_PROCESS_RECOVERY_QP-S__clevis.json",
+    "sha256": "9604a513e0fd275b042ba8200af889ab9f3fca3134a452f7fbd4122df9e6f167"
+  },
+  "first_verified_absent_utc": "2026-10-24T10:06:40+00:00",
+  "implementation": {
+    "bytes": 7767,
+    "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g11/resume_interrupted_dispatch.py",
+    "sha256": "c7706cc15c32c14f94a04bfa4b37a00b13b9a7de3d1d9047b55cf291b7af7f14"
+  },
+  "interruption": {
+    "bytes": 2530,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-S__clevis/execution_v1_interrupted_20261024T100640/EXECUTION_RECEIPT.json",
+    "sha256": "b46dba8a4277ab3f269be9d509e92a4d6ca1fb582a28d1c752bc85c8b1b2cf75"
+  },
+  "no_API_request": true,
+  "no_model_resampling": true,
+  "original_model_response_unchanged": true,
+  "physical_inputs_unchanged": true,
+  "prior_charged_seconds": 1609,
+  "remaining_solver_seconds": 1991,
+  "schema": "g11_process_interruption_recovery_v1",
+  "slot_id": "QP-S__clevis",
+  "total_solver_budget_seconds": 3600
+}

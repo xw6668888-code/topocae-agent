@@ -1,0 +1,40 @@
+{
+  "sample_id": "g10_t10_v2_i_00179",
+  "source_step_sha256": "a5679029e92acfda0959825127d24a7a55210e7544dece7b337e636551aa955e",
+  "face_count": 11,
+  "face_macro_classes": [
+    "stock",
+    "chamfer",
+    "chamfer",
+    "chamfer",
+    "chamfer",
+    "stock",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "stock"
+  ],
+  "objects": [
+    {
+      "class": "obround_hole",
+      "instance_id": 1,
+      "faces": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "class": "chamfer",
+      "instance_id": 2,
+      "faces": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ]
+}

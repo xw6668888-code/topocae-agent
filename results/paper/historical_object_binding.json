@@ -1,0 +1,19 @@
+{
+  "counts": {
+    "B": {
+      "tasks": 13,
+      "face_correct": 2,
+      "parameters_correct": 4,
+      "task_verified": 2
+    },
+    "S": {
+      "tasks": 13,
+      "face_correct": 13,
+      "parameters_correct": 13,
+      "task_verified": 13
+    }
+  },
+  "evaluation": "posthoc physical-equivalence evaluation of original responses",
+  "artifact_reuse_included": true,
+  "both_execution_conditions_share_object_backed_backend": true
+}

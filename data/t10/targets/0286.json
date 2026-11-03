@@ -1,0 +1,48 @@
+{
+  "sample_id": "g10_t10_v2_i_00286",
+  "source_step_sha256": "0df8af058b3b110edc70b0cb0d049ebd3b8c48e24a258cd029b101054aa4ee7f",
+  "face_count": 12,
+  "face_macro_classes": [
+    "stock",
+    "fillet",
+    "fillet",
+    "fillet",
+    "fillet",
+    "stock",
+    "through_hole_round",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "stock"
+  ],
+  "objects": [
+    {
+      "class": "through_hole_round",
+      "instance_id": 1,
+      "faces": [
+        6
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 2,
+      "faces": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "class": "obround_hole",
+      "instance_id": 3,
+      "faces": [
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ]
+}

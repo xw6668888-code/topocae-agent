@@ -1,0 +1,94 @@
+{
+  "schema": "g10_m6_execution_receipt_v1",
+  "completed_utc": "2026-09-15T01:45:53.779102+00:00",
+  "run_id": "g10-m6-main-20260915",
+  "case_id": "support_bracket",
+  "domain": "cad",
+  "status": "PASS",
+  "actually_executed": true,
+  "manifest": {
+    "path": "W:/python/FEA/dataset_generator/reports/aei_paper_goals_v1/g10/M6_ENGINEERING_MANIFEST.json",
+    "bytes": 66304,
+    "sha256": "fa1721714c99834daaf5db0cc8c5e85cabd97e8ef6938ca7ca69f25895866129"
+  },
+  "job_spec": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/support_bracket/job_spec.json",
+    "bytes": 2903,
+    "sha256": "7b1f7645154c9e9cc4a0e96c2d08b0fc02b1ed40a64b51a1d72af7088af16678"
+  },
+  "source_step": {
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Support Bracket.stp",
+    "bytes": 57538,
+    "sha256": "c61acff8bd576b87100d2366b3b3ce559ac9f03a01dd157c31486bbb50fc1a47"
+  },
+  "prediction": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m6_engineering/frozen_e3_outputs/support_bracket.json",
+    "bytes": 416119,
+    "sha256": "6812d03393f9a25a82fb34cbc447a9eaf028433e4cdaabaf6f4f01e7e1073994"
+  },
+  "semantic_plan": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/support_bracket/semantic_plan.json",
+    "bytes": 457,
+    "sha256": "2faf4076bbb87e4ea36d5e3348f7de2663b5aa901fb93bccfcd0b709d7c986e6"
+  },
+  "frozen_binding": {
+    "geometry_version": "c61acff8bd576b87100d2366b3b3ce559ac9f03a01dd157c31486bbb50fc1a47",
+    "prediction_system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint",
+    "prediction_source_identity_digest": "6b8a5d45878c7ce633e1f8ccabbf02a0044d0bf1407a25d337e3e92dcceab783",
+    "plan_digest": "7bd1fa96097d4f3a029cea31b3157e44480f8e2bfe2375631686eb392b3e76d1",
+    "selections": [
+      {
+        "operation_index": 0,
+        "action": "set_thickness",
+        "selector": {
+          "feature_classes": [
+            "rib"
+          ],
+          "radius_mm": null,
+          "scope": "all"
+        },
+        "role": "whole_feature",
+        "object_ids": [
+          "e3:c61acff8bd57:rib:282d6b19142a45e2",
+          "e3:c61acff8bd57:rib:12ed2294fdf64d1b"
+        ],
+        "object_indices": [
+          11,
+          12
+        ],
+        "role_face_sets": [
+          [
+            13,
+            14,
+            15
+          ],
+          [
+            16,
+            17,
+            18
+          ]
+        ],
+        "selection_count": 2
+      }
+    ],
+    "binding_digest": "a8595b9153a50e9eb962b85ff6564b1d804003b301810b19cfd28143d2a62320"
+  },
+  "final_step": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/support_bracket/final.step",
+    "bytes": 154914,
+    "sha256": "30bc6621bffb10cf9e217cb59e5d0503d17228c96e2c1a2595cfb4de138a7596"
+  },
+  "executor_audit": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/support_bracket/attempts/attempt_001/edit_audit.json",
+    "bytes": 2314,
+    "sha256": "aa36c714184d966abb8e24935347e0d0ed560ed10ec4c55ceea8c2771f6ddbd7"
+  },
+  "independent_audit": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/support_bracket/independent_cad_audit.json",
+    "bytes": 1701,
+    "sha256": "c51c7773d88657b7468fcd09386fc24e393c3c7b64e224775d09c7c9114d8118"
+  },
+  "elapsed_seconds": 0.9482428000192158,
+  "attempt_count": 1,
+  "truth_used": false
+}

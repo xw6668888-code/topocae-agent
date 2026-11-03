@@ -1,0 +1,113 @@
+{
+  "sample_id": "g10_t10_v2_s_00081",
+  "source_step_sha256": "1e67e02e7c4f669f3ff6a187f535e5b6c69f09eab498c73fb4cda165339f033d",
+  "face_count": 28,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "fillet",
+    "stock",
+    "fillet",
+    "chamfer",
+    "chamfer",
+    "chamfer",
+    "chamfer",
+    "cylinder_boss",
+    "through_hole_round",
+    "countersink_hole",
+    "through_hole_round",
+    "stock",
+    "stock",
+    "fillet",
+    "stock",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "cylinder_boss",
+    "countersink_hole",
+    "fillet",
+    "stepped_hole_round",
+    "stepped_hole_round",
+    "stepped_hole_round",
+    "stepped_hole_round"
+  ],
+  "objects": [
+    {
+      "class": "countersink_hole",
+      "instance_id": 1,
+      "faces": [
+        11,
+        22
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 2,
+      "faces": [
+        10
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 3,
+      "faces": [
+        12
+      ]
+    },
+    {
+      "class": "stepped_hole_round",
+      "instance_id": 4,
+      "faces": [
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "class": "obround_hole",
+      "instance_id": 5,
+      "faces": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "class": "cylinder_boss",
+      "instance_id": 6,
+      "faces": [
+        9,
+        21
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 7,
+      "faces": [
+        23
+      ]
+    },
+    {
+      "class": "chamfer",
+      "instance_id": 8,
+      "faces": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 9,
+      "faces": [
+        2,
+        4,
+        15
+      ]
+    }
+  ]
+}

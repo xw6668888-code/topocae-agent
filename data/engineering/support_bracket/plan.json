@@ -1,0 +1,22 @@
+{
+  "schema_version": "2",
+  "status": "ready",
+  "domain": "cad",
+  "operations": [
+    {
+      "action": "set_thickness",
+      "target": {
+        "feature_classes": [
+          "rib"
+        ],
+        "radius_mm": null,
+        "scope": "all"
+      },
+      "old_thickness_mm": 2.0,
+      "new_thickness_mm": 4.0,
+      "anchor": "midplane"
+    }
+  ],
+  "clarifications": [],
+  "reason": "G10 frozen user-confirmed reference plan; not an LLM result"
+}

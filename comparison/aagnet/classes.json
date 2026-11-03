@@ -1,0 +1,21 @@
+[
+  "stock",
+  "through_hole_round",
+  "blind_hole_round",
+  "stepped_hole_round",
+  "counterbore_hole",
+  "countersink_hole",
+  "obround_hole",
+  "slot_u",
+  "slot_rect",
+  "pocket_rect",
+  "pocket_circular",
+  "cylinder_boss",
+  "rib",
+  "web",
+  "rectangular_boss",
+  "fillet",
+  "chamfer",
+  "slot_v",
+  "slot_o"
+]

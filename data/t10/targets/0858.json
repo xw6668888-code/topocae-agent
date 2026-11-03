@@ -1,0 +1,99 @@
+{
+  "sample_id": "g10_t10_v2_s_00058",
+  "source_step_sha256": "6954d1556b4b2843e9d08e32f317dfcc01b9f4cc185f7d73e4d20fe2faa9192a",
+  "face_count": 24,
+  "face_macro_classes": [
+    "stock",
+    "chamfer",
+    "stock",
+    "chamfer",
+    "stock",
+    "stock",
+    "stock",
+    "slot_o",
+    "chamfer",
+    "slot_o",
+    "counterbore_hole",
+    "counterbore_hole",
+    "counterbore_hole",
+    "countersink_hole",
+    "stock",
+    "chamfer",
+    "counterbore_hole",
+    "counterbore_hole",
+    "fillet",
+    "countersink_hole",
+    "counterbore_hole",
+    "counterbore_hole",
+    "counterbore_hole",
+    "counterbore_hole"
+  ],
+  "objects": [
+    {
+      "class": "counterbore_hole",
+      "instance_id": 1,
+      "faces": [
+        10,
+        16,
+        20
+      ]
+    },
+    {
+      "class": "counterbore_hole",
+      "instance_id": 2,
+      "faces": [
+        11,
+        17,
+        21
+      ]
+    },
+    {
+      "class": "countersink_hole",
+      "instance_id": 3,
+      "faces": [
+        13,
+        19
+      ]
+    },
+    {
+      "class": "counterbore_hole",
+      "instance_id": 4,
+      "faces": [
+        12,
+        22,
+        23
+      ]
+    },
+    {
+      "class": "slot_o",
+      "instance_id": 5,
+      "faces": [
+        7,
+        9
+      ]
+    },
+    {
+      "class": "chamfer",
+      "instance_id": 6,
+      "faces": [
+        3,
+        8,
+        15
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 7,
+      "faces": [
+        18
+      ]
+    },
+    {
+      "class": "chamfer",
+      "instance_id": 8,
+      "faces": [
+        1
+      ]
+    }
+  ]
+}

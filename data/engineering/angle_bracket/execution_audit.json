@@ -1,0 +1,732 @@
+{
+  "status": "PASS",
+  "abaqus_job_status": "None",
+  "execution_mode": "g10_frozen_e3_user_confirmed_reference_plan",
+  "material": {
+    "poisson_ratio": 0.3,
+    "source": "previously confirmed user parameters",
+    "density_tonne_mm3": 7.85e-09,
+    "name": "Steel45",
+    "youngs_modulus_mpa": 210000.0
+  },
+  "input_path": "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\angle_bracket\\attempts\\attempt_001\\final.inp",
+  "equilibrium_relative_error": 0.00015154944505237254,
+  "face_mapping_bijective": true,
+  "truth_used": false,
+  "fixed_abaqus_indices": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "matrix_solver": "DIRECT",
+  "frozen_binding": {
+    "prediction_source_identity_digest": "6b8a5d45878c7ce633e1f8ccabbf02a0044d0bf1407a25d337e3e92dcceab783",
+    "prediction_system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint",
+    "selections": [
+      {
+        "selection_count": 4,
+        "role_face_sets": [
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            32,
+            33,
+            34
+          ],
+          [
+            35,
+            36,
+            37
+          ],
+          [
+            38,
+            39,
+            40
+          ]
+        ],
+        "object_ids": [
+          "e3:25d25e8e0ae7:counterbore_hole:80a443ea815573c1",
+          "e3:25d25e8e0ae7:counterbore_hole:35311f7e1fc8d03a",
+          "e3:25d25e8e0ae7:counterbore_hole:73bf1d428da63300",
+          "e3:25d25e8e0ae7:counterbore_hole:a5c2abce77242199"
+        ],
+        "selector": {
+          "scope": "all",
+          "feature_classes": [
+            "counterbore_hole"
+          ],
+          "radius_mm": null
+        },
+        "role": "whole_feature",
+        "action": "fix_features",
+        "object_indices": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "operation_index": 2
+      },
+      {
+        "selection_count": 4,
+        "role_face_sets": [
+          [
+            21,
+            22,
+            23,
+            24
+          ],
+          [
+            25,
+            26,
+            27,
+            28
+          ],
+          [
+            13,
+            14,
+            15,
+            16
+          ],
+          [
+            17,
+            18,
+            19,
+            20
+          ]
+        ],
+        "object_ids": [
+          "e3:25d25e8e0ae7:obround_hole:fa34cba98379a1c5",
+          "e3:25d25e8e0ae7:obround_hole:d46bb0d29a608cfa",
+          "e3:25d25e8e0ae7:obround_hole:49818424f8880f98",
+          "e3:25d25e8e0ae7:obround_hole:bdc52b9e6ca5cc63"
+        ],
+        "selector": {
+          "scope": "all",
+          "feature_classes": [
+            "obround_hole"
+          ],
+          "radius_mm": null
+        },
+        "role": "inner_walls",
+        "action": "apply_force",
+        "object_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "operation_index": 3
+      }
+    ],
+    "binding_digest": "da6b2f8ed9e7d1d0f2b06bdfac2e72f9c1469158954a2629a8a2eceb1e622c16",
+    "geometry_version": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195",
+    "plan_digest": "231bf7d2c85bf096b4be931a67423b4955ccbc0ab4f672f6c97f9926031cd204"
+  },
+  "max_displacement_mm": 0.0362536795437336,
+  "local_mesh": [],
+  "element_types": {
+    "C3D10": 124103
+  },
+  "geometry_version": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195",
+  "analysis_errors": 0,
+  "model_checkpoint_sha256": "491655bfec5591c5a6a1b7f6300294f4818c29bf60b4c1b8dd5ff6078a057054",
+  "manifest_sha256": "fa1721714c99834daaf5db0cc8c5e85cabd97e8ef6938ca7ca69f25895866129",
+  "node_count": 187205,
+  "case": "Angle Bracket.stp",
+  "prediction_sha256": "4970efb7be7f397ae428fba5cd8c307dd606712c5e5dfb966218bd941e80b9ec",
+  "analysis_warnings": 0,
+  "odb_path": "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\angle_bracket\\attempts\\attempt_001\\final.odb",
+  "element_count": 124103,
+  "semantic_plan_sha256": "91184e30f7c25628adcc852427a3f9dd5e3c42c79bba37f29daf6165bf7bf006",
+  "max_von_mises_mpa": 40.94713592529297,
+  "diagnostic_status": "JOB_STATUS_COMPLETED_SUCCESSFULLY",
+  "source_sha256": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195",
+  "elapsed_seconds": 49.36999988555908,
+  "face_mapping": [
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 0,
+      "source_face": 1,
+      "boundary_vertex_count": 22
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 1,
+      "source_face": 2,
+      "boundary_vertex_count": 26
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.2747544316400107e-16,
+      "abaqus_index": 2,
+      "source_face": 3,
+      "boundary_vertex_count": 10
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 3,
+      "source_face": 4,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 4,
+      "source_face": 5,
+      "boundary_vertex_count": 14
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 5,
+      "source_face": 6,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 6,
+      "source_face": 7,
+      "boundary_vertex_count": 7
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.8512536416944615e-16,
+      "abaqus_index": 7,
+      "source_face": 8,
+      "boundary_vertex_count": 7
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 3.751880563259448e-16,
+      "abaqus_index": 8,
+      "source_face": 9,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.735072378437113e-15,
+      "abaqus_index": 9,
+      "source_face": 10,
+      "boundary_vertex_count": 5
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.113465019701406e-15,
+      "abaqus_index": 10,
+      "source_face": 11,
+      "boundary_vertex_count": 5
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.8847731445709732e-16,
+      "abaqus_index": 11,
+      "source_face": 12,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.5078185156567782e-16,
+      "abaqus_index": 12,
+      "source_face": 13,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 13,
+      "source_face": 14,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.5078185156567782e-16,
+      "abaqus_index": 14,
+      "source_face": 15,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 15,
+      "source_face": 16,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.5078185156567782e-16,
+      "abaqus_index": 16,
+      "source_face": 17,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 17,
+      "source_face": 18,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.5078185156567782e-16,
+      "abaqus_index": 18,
+      "source_face": 19,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 19,
+      "source_face": 20,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.5078185156567782e-16,
+      "abaqus_index": 20,
+      "source_face": 21,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 21,
+      "source_face": 22,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.5078185156567782e-16,
+      "abaqus_index": 22,
+      "source_face": 23,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 23,
+      "source_face": 24,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.5078185156567782e-16,
+      "abaqus_index": 24,
+      "source_face": 25,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 25,
+      "source_face": 26,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.5078185156567782e-16,
+      "abaqus_index": 26,
+      "source_face": 27,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 27,
+      "source_face": 28,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 28,
+      "source_face": 29,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.0678653929007238e-16,
+      "abaqus_index": 29,
+      "source_face": 30,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 30,
+      "source_face": 31,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 31,
+      "source_face": 32,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.0678653929007238e-16,
+      "abaqus_index": 32,
+      "source_face": 33,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 33,
+      "source_face": 34,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 34,
+      "source_face": 35,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.0678653929007238e-16,
+      "abaqus_index": 35,
+      "source_face": 36,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 36,
+      "source_face": 37,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 37,
+      "source_face": 38,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.0678653929007238e-16,
+      "abaqus_index": 38,
+      "source_face": 39,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 39,
+      "source_face": 40,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.9248747008384402e-16,
+      "abaqus_index": 40,
+      "source_face": 41,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 41,
+      "source_face": 42,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.2617277734851674e-16,
+      "abaqus_index": 42,
+      "source_face": 43,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.2617277734851674e-16,
+      "abaqus_index": 43,
+      "source_face": 44,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 8.142219984547265e-14,
+      "abaqus_index": 44,
+      "source_face": 45,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 6.351685497203777e-14,
+      "abaqus_index": 45,
+      "source_face": 46,
+      "boundary_vertex_count": 4
+    }
+  ],
+  "reaction_force_N": [
+    1.4525867300108075e-06,
+    399.9393802220002,
+    6.722111720591784e-07
+  ],
+  "expected_applied_force_N": [
+    0.0,
+    -400.0,
+    0.0
+  ],
+  "final_frame_time": 1.0,
+  "fixed_regions": [
+    {
+      "face_numbers": [
+        29,
+        30,
+        31
+      ],
+      "object_id": "e3:25d25e8e0ae7:counterbore_hole:80a443ea815573c1",
+      "object_index": 12,
+      "role": "whole_feature",
+      "geometry_version": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195",
+      "role_evidence": {
+        "instance_faces": [
+          29,
+          30,
+          31
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 228.5115956404877,
+      "class": "counterbore_hole"
+    },
+    {
+      "face_numbers": [
+        32,
+        33,
+        34
+      ],
+      "object_id": "e3:25d25e8e0ae7:counterbore_hole:35311f7e1fc8d03a",
+      "object_index": 13,
+      "role": "whole_feature",
+      "geometry_version": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195",
+      "role_evidence": {
+        "instance_faces": [
+          32,
+          33,
+          34
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 228.5115956404877,
+      "class": "counterbore_hole"
+    },
+    {
+      "face_numbers": [
+        35,
+        36,
+        37
+      ],
+      "object_id": "e3:25d25e8e0ae7:counterbore_hole:73bf1d428da63300",
+      "object_index": 14,
+      "role": "whole_feature",
+      "geometry_version": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195",
+      "role_evidence": {
+        "instance_faces": [
+          35,
+          36,
+          37
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 228.5115956404877,
+      "class": "counterbore_hole"
+    },
+    {
+      "face_numbers": [
+        38,
+        39,
+        40
+      ],
+      "object_id": "e3:25d25e8e0ae7:counterbore_hole:a5c2abce77242199",
+      "object_index": 15,
+      "role": "whole_feature",
+      "geometry_version": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195",
+      "role_evidence": {
+        "instance_faces": [
+          38,
+          39,
+          40
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 228.5115956404877,
+      "class": "counterbore_hole"
+    }
+  ],
+  "loads": [
+    {
+      "kind": "force",
+      "face_numbers": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "object_id": "e3:25d25e8e0ae7:obround_hole:fa34cba98379a1c5",
+      "force_N": 100.0,
+      "object_index": 0,
+      "abaqus_indices": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "role": "inner_walls",
+      "geometry_version": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195",
+      "role_evidence": {
+        "instance_faces": [
+          21,
+          22,
+          23,
+          24
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 238.2477796076938,
+      "class": "obround_hole",
+      "traction_or_pressure_MPa": 0.4197310890563728
+    },
+    {
+      "kind": "force",
+      "face_numbers": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "object_id": "e3:25d25e8e0ae7:obround_hole:d46bb0d29a608cfa",
+      "force_N": 100.0,
+      "object_index": 1,
+      "abaqus_indices": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "role": "inner_walls",
+      "geometry_version": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195",
+      "role_evidence": {
+        "instance_faces": [
+          25,
+          26,
+          27,
+          28
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 238.2477796076938,
+      "class": "obround_hole",
+      "traction_or_pressure_MPa": 0.4197310890563728
+    },
+    {
+      "kind": "force",
+      "face_numbers": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "object_id": "e3:25d25e8e0ae7:obround_hole:49818424f8880f98",
+      "force_N": 100.0,
+      "object_index": 2,
+      "abaqus_indices": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "role": "inner_walls",
+      "geometry_version": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195",
+      "role_evidence": {
+        "instance_faces": [
+          13,
+          14,
+          15,
+          16
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 238.2477796076938,
+      "class": "obround_hole",
+      "traction_or_pressure_MPa": 0.4197310890563728
+    },
+    {
+      "kind": "force",
+      "face_numbers": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "object_id": "e3:25d25e8e0ae7:obround_hole:bdc52b9e6ca5cc63",
+      "force_N": 100.0,
+      "object_index": 3,
+      "abaqus_indices": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "role": "inner_walls",
+      "geometry_version": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195",
+      "role_evidence": {
+        "instance_faces": [
+          17,
+          18,
+          19,
+          20
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 238.2477796076938,
+      "class": "obround_hole",
+      "traction_or_pressure_MPa": 0.4197310890563728
+    }
+  ],
+  "requested_solver_memory_mb": 20480,
+  "cae_path": "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\angle_bracket\\attempts\\attempt_001\\final.cae",
+  "mesh_seed_mm": 2.0
+}

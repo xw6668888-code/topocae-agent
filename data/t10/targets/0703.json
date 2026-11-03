@@ -1,0 +1,23 @@
+{
+  "sample_id": "g10_t10_v2_p_00305",
+  "source_step_sha256": "175c5ba47cb4d7e63a3720a400521925d551979a2c8c4aadc11a4bfb9d14f717",
+  "face_count": 7,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "fillet",
+    "stock",
+    "stock",
+    "stock",
+    "stock"
+  ],
+  "objects": [
+    {
+      "class": "fillet",
+      "instance_id": 1,
+      "faces": [
+        2
+      ]
+    }
+  ]
+}

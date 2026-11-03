@@ -1,0 +1,182 @@
+{
+  "schema": "g10_m6_execution_receipt_v1",
+  "completed_utc": "2026-09-15T02:34:55.972086+00:00",
+  "run_id": "g10-m6-cae-launcher-v3-20260915",
+  "case_id": "u_shaped_bracket",
+  "domain": "cae",
+  "status": "PASS",
+  "actually_executed": true,
+  "prepare_only": false,
+  "skip_mesh": false,
+  "manifest": {
+    "path": "workspace://reports/aei_paper_goals_v1/g10/M6_ENGINEERING_MANIFEST.json",
+    "bytes": 66304,
+    "sha256": "fa1721714c99834daaf5db0cc8c5e85cabd97e8ef6938ca7ca69f25895866129"
+  },
+  "job_spec": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/u_shaped_bracket/job_spec.json",
+    "bytes": 3711,
+    "sha256": "d551b4815a337897f0c3978ee54b6f29ec9fbf95d1c12a99c60c3956fe3a3a09"
+  },
+  "source_step": {
+    "path": "workspace://test_part_0901/U-Shaped Bracket.stp",
+    "bytes": 23691,
+    "sha256": "72356e514bcd4f5a955819ba9143842bd9298c45c3e4d65a8b62a88d903903bc"
+  },
+  "prediction": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/frozen_e3_outputs/u_shaped_bracket.json",
+    "bytes": 130082,
+    "sha256": "61b23caaabc9002cd5b0b438a4a93286dbc55e2526e7287fb298894ffe8c981e"
+  },
+  "semantic_plan": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/u_shaped_bracket/semantic_plan.json",
+    "bytes": 981,
+    "sha256": "19ad39f00816ab430a883dceb8191bbfdbb705448be5d1d784d97bd118372b2a"
+  },
+  "execution_plan": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/u_shaped_bracket/execution_plan.json",
+    "bytes": 23661,
+    "sha256": "4ddac39c34bc4e4bda5bc86d097b2eba240904a788cd297ade5e589c0c65e95a"
+  },
+  "program": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/u_shaped_bracket/final.py",
+    "bytes": 28569,
+    "sha256": "7e9dca439e0a244563d2bad5f7869ea6abc66c578729019a84fd34f376c3ad85"
+  },
+  "frozen_binding": {
+    "geometry_version": "72356e514bcd4f5a955819ba9143842bd9298c45c3e4d65a8b62a88d903903bc",
+    "prediction_system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint",
+    "prediction_source_identity_digest": "6b8a5d45878c7ce633e1f8ccabbf02a0044d0bf1407a25d337e3e92dcceab783",
+    "plan_digest": "474a88d0e6a4427c7a79fe0fce4e347a56e79e59452b8440fc7afa8339490831",
+    "selections": [
+      {
+        "operation_index": 2,
+        "action": "fix_features",
+        "selector": {
+          "feature_classes": [
+            "through_hole_round"
+          ],
+          "radius_mm": null,
+          "scope": "all"
+        },
+        "role": "whole_feature",
+        "object_ids": [
+          "e3:72356e514bcd:through_hole_round:b544850519e3d764",
+          "e3:72356e514bcd:through_hole_round:627de97f36e0dd48"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "role_face_sets": [
+          [
+            11
+          ],
+          [
+            10
+          ]
+        ],
+        "selection_count": 2
+      },
+      {
+        "operation_index": 3,
+        "action": "apply_force",
+        "selector": {
+          "feature_classes": [
+            "cylinder_boss"
+          ],
+          "radius_mm": null,
+          "scope": "all"
+        },
+        "role": "top_face",
+        "object_ids": [
+          "e3:72356e514bcd:cylinder_boss:8aa7c1b857ab1199"
+        ],
+        "object_indices": [
+          2
+        ],
+        "role_face_sets": [
+          [
+            12
+          ]
+        ],
+        "selection_count": 1
+      }
+    ],
+    "binding_digest": "2033ce3b678caecec657b9b691b826c8080d8c980c4f7a266faea3e38222be65"
+  },
+  "launcher_adapter": {
+    "path": "workspace://tools/aei_paper_goals_v1/g10/m6_cae_launcher_v3.py",
+    "bytes": 11544,
+    "sha256": "b5b459e418960e2cf6c9a47656c7bbbe702c0b8cfceee1227c9a1558715aab3a"
+  },
+  "launcher_adapter_unchanged": true,
+  "odb_adapter": {
+    "path": "workspace://tools/aei_paper_goals_v1/g10/m6_odb_reaudit_v2.py",
+    "bytes": 6022,
+    "sha256": "1b3ddc6d9e9f39f43c97b9b2d29d58a2f0a95f6242485b70d7dc2005df3fb250"
+  },
+  "odb_adapter_unchanged": true,
+  "launcher_mode": "direct_batch_argv_v3",
+  "launch_argv": [
+    "F:\\ABAQUS2020\\commands\\abaqus.bat",
+    "cae",
+    "noGUI=workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\u_shaped_bracket\\final.py"
+  ],
+  "reaudit_argv": [
+    "F:\\ABAQUS2020\\commands\\abaqus.bat",
+    "python",
+    "workspace://tools\\aei_paper_goals_v1\\g10\\m6_odb_reaudit_v2.py",
+    "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\u_shaped_bracket\\execution_plan.json",
+    "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\u_shaped_bracket\\attempts\\attempt_001\\independent_odb_audit_v2.json"
+  ],
+  "recovery_of": null,
+  "return_code": 0,
+  "independent_reaudit_return_code": 0,
+  "independent_status": "PASS",
+  "timed_out": false,
+  "solver": "AUTO",
+  "memory_mb": 20480,
+  "abaqus_release": {
+    "launcher": {
+      "path": "F:/ABAQUS2020/commands/abaqus.bat",
+      "bytes": 50,
+      "sha256": "b5d39a2d7e72c473f0929397b1f9d0f746a1f0d8270ab5db37eb9b82b8ad5dd6"
+    },
+    "return_code": 0,
+    "required_release": "Abaqus 2020",
+    "release_matched": true,
+    "stdout_sha256": "b83c1bf44ae621541e0e4cb2237460814ec0cd7429ef24d7c5fa8dc7a821c7e8",
+    "stderr_sha256": "c6e1531f4a254e3ec346ff110430c0cc20422d8656650c8e45a7a9ff99d49b41"
+  },
+  "artifacts": {
+    "final.cae": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/u_shaped_bracket/attempts/attempt_001/final.cae",
+      "bytes": 7327744,
+      "sha256": "da5ebc218a673d0a38cc031060aaf5eb88de7e326be5dafaae7382bc4d1bd976"
+    },
+    "final.odb": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/u_shaped_bracket/attempts/attempt_001/final.odb",
+      "bytes": 49242796,
+      "sha256": "e2cf3c50634f0746029d84664dc45384a11d90b566af474bb9488f6b9dfeb56f"
+    },
+    "final.inp": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/u_shaped_bracket/attempts/attempt_001/final.inp",
+      "bytes": 22982330,
+      "sha256": "eeab5cb307d888394f01316b551d9b44cc5cc0af9bcef14b979f072876a70436"
+    },
+    "execution_audit.json": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/u_shaped_bracket/attempts/attempt_001/execution_audit.json",
+      "bytes": 9511,
+      "sha256": "1c556cb81035a22032e49eddd4095521bd4d674a78b83630d89110fdb3929ea1"
+    },
+    "independent_odb_audit_v2.json": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/u_shaped_bracket/attempts/attempt_001/independent_odb_audit_v2.json",
+      "bytes": 1674,
+      "sha256": "a36608c4eb0451f8684244fb2bae705115d19f9a06e5695235e79d853a429f05"
+    }
+  },
+  "elapsed_seconds": 58.022580399992876,
+  "attempt_count": 1,
+  "truth_used": false
+}

@@ -1,0 +1,31 @@
+{
+  "sample_id": "g10_t10_v2_i_00106",
+  "source_step_sha256": "1b15d542504f598d504a09ea3f1c926987a481988f16b0a68cc7129f1e685089",
+  "face_count": 11,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "rectangular_boss",
+    "rectangular_boss",
+    "rectangular_boss",
+    "rectangular_boss",
+    "rectangular_boss"
+  ],
+  "objects": [
+    {
+      "class": "rectangular_boss",
+      "instance_id": 1,
+      "faces": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ]
+}

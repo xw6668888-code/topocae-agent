@@ -1,0 +1,216 @@
+{
+  "actual_step_groups": [
+    {
+      "action": "fix_features",
+      "groups": [
+        [
+          29,
+          30,
+          31
+        ],
+        [
+          32,
+          33,
+          34
+        ],
+        [
+          35,
+          36,
+          37
+        ],
+        [
+          38,
+          39,
+          40
+        ]
+      ]
+    },
+    {
+      "action": "apply_force",
+      "groups": [
+        [
+          13,
+          22,
+          23,
+          24
+        ],
+        [
+          25,
+          26,
+          27,
+          28
+        ],
+        [
+          17,
+          18,
+          19,
+          20
+        ],
+        [
+          21,
+          14,
+          15,
+          16
+        ]
+      ]
+    }
+  ],
+  "checks": {
+    "INP_fixed": true,
+    "INP_linear_static": true,
+    "INP_loads": true,
+    "INP_material": true,
+    "INP_material_name": true,
+    "fixed_groups": true,
+    "global_mesh": true,
+    "independent_ODB": true,
+    "load_groups": true,
+    "load_parameters": true,
+    "local_mesh": true,
+    "material_identity": true,
+    "payload_plan_hash": true,
+    "plan_preserved": true,
+    "saved_CAE": true
+  },
+  "details": {
+    "input_blocks": [
+      {
+        "data": [
+          []
+        ],
+        "header": "*Solid Section, elset=All-Cells, material=Steel45",
+        "key": "solid section"
+      },
+      {
+        "data": [],
+        "header": "*Material, name=Steel45",
+        "key": "material"
+      },
+      {
+        "data": [
+          [
+            "7.85e-09"
+          ]
+        ],
+        "header": "*Density",
+        "key": "density"
+      },
+      {
+        "data": [
+          [
+            "210000.",
+            "0.3"
+          ]
+        ],
+        "header": "*Elastic",
+        "key": "elastic"
+      },
+      {
+        "data": [
+          [
+            "FIXED-FEATURES",
+            "ENCASTRE"
+          ]
+        ],
+        "header": "*Boundary",
+        "key": "boundary"
+      },
+      {
+        "data": [],
+        "header": "*Step, name=Static-Load, nlgeom=NO",
+        "key": "step"
+      },
+      {
+        "data": [
+          [
+            "1.",
+            "1.",
+            "1e-06",
+            "1."
+          ]
+        ],
+        "header": "*Static",
+        "key": "static"
+      },
+      {
+        "data": [
+          [
+            "LOAD-01",
+            "TRVEC",
+            "0.419731",
+            "0.",
+            "-1.",
+            "0."
+          ]
+        ],
+        "header": "*Dsload, follower=NO, constant resultant=YES",
+        "key": "dsload"
+      },
+      {
+        "data": [
+          [
+            "LOAD-02",
+            "TRVEC",
+            "0.419731",
+            "0.",
+            "-1.",
+            "0."
+          ]
+        ],
+        "header": "*Dsload, follower=NO, constant resultant=YES",
+        "key": "dsload"
+      },
+      {
+        "data": [
+          [
+            "LOAD-03",
+            "TRVEC",
+            "0.419731",
+            "0.",
+            "-1.",
+            "0."
+          ]
+        ],
+        "header": "*Dsload, follower=NO, constant resultant=YES",
+        "key": "dsload"
+      },
+      {
+        "data": [
+          [
+            "LOAD-04",
+            "TRVEC",
+            "0.419731",
+            "0.",
+            "-1.",
+            "0."
+          ]
+        ],
+        "header": "*Dsload, follower=NO, constant resultant=YES",
+        "key": "dsload"
+      },
+      {
+        "data": [
+          [
+            "RF",
+            "U"
+          ]
+        ],
+        "header": "*Node Output",
+        "key": "node output"
+      },
+      {
+        "data": [
+          [
+            "S"
+          ]
+        ],
+        "header": "*Element Output, directions=YES",
+        "key": "element output"
+      }
+    ]
+  },
+  "input_sha256": "95bb5f1e3246f3bfb1c8fcd50742e0c63718dcbcb7c0df7601bb57ea4072c5eb",
+  "model_plan_sha256": "cb752cd3de45739d39413d31d87d37fc1564b38c2bf6849262d1b992e4414e10",
+  "schema": "g11_physical_readback_v1",
+  "status": "PASS"
+}

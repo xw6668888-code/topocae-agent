@@ -1,0 +1,221 @@
+{
+  "schema": "g10_m6_execution_receipt_v1",
+  "completed_utc": "2026-09-15T02:48:12.431949+00:00",
+  "run_id": "g10-m6-cae-launcher-v3-20260915",
+  "case_id": "clevis",
+  "domain": "cae",
+  "status": "PASS",
+  "actually_executed": true,
+  "prepare_only": false,
+  "skip_mesh": false,
+  "manifest": {
+    "path": "workspace://reports/aei_paper_goals_v1/g10/M6_ENGINEERING_MANIFEST.json",
+    "bytes": 66304,
+    "sha256": "fa1721714c99834daaf5db0cc8c5e85cabd97e8ef6938ca7ca69f25895866129"
+  },
+  "job_spec": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/clevis/job_spec.json",
+    "bytes": 4469,
+    "sha256": "2269576d7094265b875455b7d0a1672b1137277647d2ef644830614ccb003a49"
+  },
+  "source_step": {
+    "path": "workspace://test_part_0901/Clevis.stp",
+    "bytes": 38783,
+    "sha256": "0befb0c991dfbc9057dd644da22a4d99c0972374e1a98d8947d3da902fbd1f27"
+  },
+  "prediction": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/frozen_e3_outputs/clevis.json",
+    "bytes": 193784,
+    "sha256": "409ec7fb58e99b5783b102a672335104ded76cb1f6b4c3313f87d65c9ff18376"
+  },
+  "semantic_plan": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/clevis/semantic_plan.json",
+    "bytes": 1150,
+    "sha256": "9c1b5c9bd19339ba21b9d3654e6886d691e7ad55f5573124d230b7044f691b30"
+  },
+  "execution_plan": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/clevis/execution_plan.json",
+    "bytes": 30604,
+    "sha256": "4d356ac12f227ba025a698c7238a311c1d4157d18a67579a5cbb4eed4a444c74"
+  },
+  "program": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/clevis/final.py",
+    "bytes": 32390,
+    "sha256": "fc46b8b101bbdc5fd0b40bc7dc8cfbec1ca005b36c0c56e312c65b4d8429b0eb"
+  },
+  "frozen_binding": {
+    "geometry_version": "0befb0c991dfbc9057dd644da22a4d99c0972374e1a98d8947d3da902fbd1f27",
+    "prediction_system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint",
+    "prediction_source_identity_digest": "6b8a5d45878c7ce633e1f8ccabbf02a0044d0bf1407a25d337e3e92dcceab783",
+    "plan_digest": "9e0b3902b1f868fb51485ede259b8d5d3e1c7787adfc4ece29767997deb779ab",
+    "selections": [
+      {
+        "operation_index": 2,
+        "action": "set_local_mesh",
+        "selector": {
+          "feature_classes": [
+            "chamfer"
+          ],
+          "radius_mm": null,
+          "scope": "all"
+        },
+        "role": "whole_feature",
+        "object_ids": [
+          "e3:0befb0c991df:chamfer:32a54f3a2c382cc2",
+          "e3:0befb0c991df:chamfer:95ca7888c98b7b4b",
+          "e3:0befb0c991df:chamfer:06529fce1aaff4bc",
+          "e3:0befb0c991df:chamfer:2b202451b35ecb3b"
+        ],
+        "object_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "role_face_sets": [
+          [
+            22
+          ],
+          [
+            25
+          ],
+          [
+            23
+          ],
+          [
+            24
+          ]
+        ],
+        "selection_count": 4
+      },
+      {
+        "operation_index": 3,
+        "action": "fix_features",
+        "selector": {
+          "feature_classes": [
+            "through_hole_round"
+          ],
+          "radius_mm": 3.765,
+          "scope": "all"
+        },
+        "role": "whole_feature",
+        "object_ids": [
+          "e3:0befb0c991df:through_hole_round:0a695bc94a2beaee",
+          "e3:0befb0c991df:through_hole_round:157c12e58ceb8854"
+        ],
+        "object_indices": [
+          4,
+          5
+        ],
+        "role_face_sets": [
+          [
+            6
+          ],
+          [
+            5
+          ]
+        ],
+        "selection_count": 2
+      },
+      {
+        "operation_index": 4,
+        "action": "apply_traction",
+        "selector": {
+          "feature_classes": [
+            "cylinder_boss"
+          ],
+          "radius_mm": null,
+          "scope": "all"
+        },
+        "role": "top_face",
+        "object_ids": [
+          "e3:0befb0c991df:cylinder_boss:4cee534c62318149"
+        ],
+        "object_indices": [
+          6
+        ],
+        "role_face_sets": [
+          [
+            1
+          ]
+        ],
+        "selection_count": 1
+      }
+    ],
+    "binding_digest": "142adccc03e0f0723147684c013bbf80fa5912716e42b2852787cfae580e18bd"
+  },
+  "launcher_adapter": {
+    "path": "workspace://tools/aei_paper_goals_v1/g10/m6_cae_launcher_v3.py",
+    "bytes": 11544,
+    "sha256": "b5b459e418960e2cf6c9a47656c7bbbe702c0b8cfceee1227c9a1558715aab3a"
+  },
+  "launcher_adapter_unchanged": true,
+  "odb_adapter": {
+    "path": "workspace://tools/aei_paper_goals_v1/g10/m6_odb_reaudit_v2.py",
+    "bytes": 6022,
+    "sha256": "1b3ddc6d9e9f39f43c97b9b2d29d58a2f0a95f6242485b70d7dc2005df3fb250"
+  },
+  "odb_adapter_unchanged": true,
+  "launcher_mode": "direct_batch_argv_v3",
+  "launch_argv": [
+    "F:\\ABAQUS2020\\commands\\abaqus.bat",
+    "cae",
+    "noGUI=workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\clevis\\final.py"
+  ],
+  "reaudit_argv": [
+    "F:\\ABAQUS2020\\commands\\abaqus.bat",
+    "python",
+    "workspace://tools\\aei_paper_goals_v1\\g10\\m6_odb_reaudit_v2.py",
+    "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\clevis\\execution_plan.json",
+    "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\clevis\\attempts\\attempt_001\\independent_odb_audit_v2.json"
+  ],
+  "recovery_of": null,
+  "return_code": 0,
+  "independent_reaudit_return_code": 0,
+  "independent_status": "PASS",
+  "timed_out": false,
+  "solver": "AUTO",
+  "memory_mb": 20480,
+  "abaqus_release": {
+    "launcher": {
+      "path": "F:/ABAQUS2020/commands/abaqus.bat",
+      "bytes": 50,
+      "sha256": "b5d39a2d7e72c473f0929397b1f9d0f746a1f0d8270ab5db37eb9b82b8ad5dd6"
+    },
+    "return_code": 0,
+    "required_release": "Abaqus 2020",
+    "release_matched": true,
+    "stdout_sha256": "b83c1bf44ae621541e0e4cb2237460814ec0cd7429ef24d7c5fa8dc7a821c7e8",
+    "stderr_sha256": "c6e1531f4a254e3ec346ff110430c0cc20422d8656650c8e45a7a9ff99d49b41"
+  },
+  "artifacts": {
+    "final.cae": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/clevis/attempts/attempt_001/final.cae",
+      "bytes": 63733760,
+      "sha256": "2e2fe050c6ae35290f45f5161ac5bd97082cc7e988844ddabbf97165ea0b72d2"
+    },
+    "final.odb": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/clevis/attempts/attempt_001/final.odb",
+      "bytes": 433723204,
+      "sha256": "1cec67f01a51ea501936765a05978fa6eca22768e281690e43caf5ff9bf9bda7"
+    },
+    "final.inp": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/clevis/attempts/attempt_001/final.inp",
+      "bytes": 201918840,
+      "sha256": "efa1c9f8019edd5dcd1fab87abd25cb1a1c24436acf5bb18d42933a9c53be72f"
+    },
+    "execution_audit.json": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/clevis/attempts/attempt_001/execution_audit.json",
+      "bytes": 13079,
+      "sha256": "813a1c7664c8a041db911ab4a8eee1a4d62388a9e74a3345c5d76c100a595c80"
+    },
+    "independent_odb_audit_v2.json": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/clevis/attempts/attempt_001/independent_odb_audit_v2.json",
+      "bytes": 1679,
+      "sha256": "bf473a9d4ed301b2d20fc36017d26476422a8bcd1e9fcbc86431cd0a87b470e2"
+    }
+  },
+  "elapsed_seconds": 340.0867330999463,
+  "attempt_count": 1,
+  "truth_used": false
+}

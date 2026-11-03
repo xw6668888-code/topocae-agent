@@ -1,0 +1,47 @@
+{
+  "schema_version": "2",
+  "status": "ready",
+  "domain": "cae",
+  "operations": [
+    {
+      "action": "set_material",
+      "material_id": "PlainCarbonSteel"
+    },
+    {
+      "action": "set_global_mesh",
+      "size_mm": 1.0
+    },
+    {
+      "action": "fix_features",
+      "target": {
+        "feature_classes": [
+          "slot_rect",
+          "slot_o"
+        ],
+        "radius_mm": null,
+        "scope": "all"
+      },
+      "role": "whole_feature"
+    },
+    {
+      "action": "apply_centrifugal",
+      "angular_velocity_rad_s": 100.0,
+      "axis_point_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_direction": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "action": "set_analysis",
+      "type": "linear_static"
+    }
+  ],
+  "clarifications": [],
+  "reason": "G10 frozen user-confirmed reference plan; not an LLM result"
+}

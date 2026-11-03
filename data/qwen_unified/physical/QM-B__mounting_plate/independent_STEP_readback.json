@@ -1,0 +1,55 @@
+{
+  "checks": [
+    {
+      "kind": "radius_axis_extent",
+      "measured": [
+        {
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            131.0,
+            5.999999999999999,
+            -187.99999999999844
+          ],
+          "depth_mm": 6.0,
+          "face_number": 12,
+          "radius_mm": 24.0,
+          "start_mm": [
+            128.0,
+            6.0,
+            -188.0
+          ]
+        }
+      ],
+      "pass_": true,
+      "source_faces": [
+        17
+      ]
+    }
+  ],
+  "no_reference_or_object_service_read": true,
+  "original_face_groups": [
+    [
+      17
+    ]
+  ],
+  "output_readable": true,
+  "output_step": {
+    "bytes": 143170,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QM-B__mounting_plate/execution_v1/work/Mounting Plate_edited.stp",
+    "sha256": "48559d7f5586f35bb7a540e7eab8c3d7dfbeebfad6a74398bef0606fcca6653d"
+  },
+  "schema": "g11_independent_STEP_readback_v1",
+  "source_step": {
+    "bytes": 54968,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Mounting Plate.stp",
+    "sha256": "dccd20bb196660a6c1d5d52a813c2632c9d7291dec1712f8dc6b0aacecf6e14a"
+  },
+  "status": "PASS",
+  "valid_solid_count": 1,
+  "volume_after_mm3": 43232.51830717952,
+  "volume_before_mm3": 44547.27483270037
+}

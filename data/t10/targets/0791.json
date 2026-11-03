@@ -1,0 +1,47 @@
+{
+  "sample_id": "g10_t10_v2_p_00393",
+  "source_step_sha256": "da99a66e98691fe374dac6b84e71cfe71888633fc0e20fd1b44f1670c28eaaa8",
+  "face_count": 13,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "chamfer",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "chamfer",
+    "counterbore_hole",
+    "counterbore_hole",
+    "cylinder_boss",
+    "counterbore_hole",
+    "cylinder_boss"
+  ],
+  "objects": [
+    {
+      "class": "chamfer",
+      "instance_id": 1,
+      "faces": [
+        2,
+        7
+      ]
+    },
+    {
+      "class": "cylinder_boss",
+      "instance_id": 2,
+      "faces": [
+        10,
+        12
+      ]
+    },
+    {
+      "class": "counterbore_hole",
+      "instance_id": 3,
+      "faces": [
+        8,
+        9,
+        11
+      ]
+    }
+  ]
+}

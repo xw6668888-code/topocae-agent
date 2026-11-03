@@ -1,0 +1,1148 @@
+{
+  "status": "PASS",
+  "abaqus_job_status": "None",
+  "execution_mode": "g10_frozen_e3_user_confirmed_reference_plan",
+  "material": {
+    "poisson_ratio": 0.3,
+    "source": "previously confirmed user parameters",
+    "density_tonne_mm3": 7.85e-09,
+    "name": "Steel45",
+    "youngs_modulus_mpa": 210000.0
+  },
+  "input_path": "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\stiffened_panel\\attempts\\attempt_001\\final.inp",
+  "equilibrium_relative_error": 9.985703860699605e-07,
+  "face_mapping_bijective": true,
+  "truth_used": false,
+  "fixed_abaqus_indices": [
+    44,
+    45,
+    46,
+    48,
+    49,
+    50,
+    52,
+    53,
+    54,
+    56,
+    57,
+    58,
+    60,
+    61,
+    62,
+    64,
+    65,
+    66,
+    68,
+    69,
+    70,
+    72,
+    73,
+    74,
+    76,
+    77,
+    78,
+    80,
+    81,
+    82
+  ],
+  "matrix_solver": "DIRECT",
+  "frozen_binding": {
+    "prediction_source_identity_digest": "6b8a5d45878c7ce633e1f8ccabbf02a0044d0bf1407a25d337e3e92dcceab783",
+    "prediction_system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint",
+    "selections": [
+      {
+        "selection_count": 10,
+        "role_face_sets": [
+          [
+            57,
+            58,
+            59
+          ],
+          [
+            45,
+            46,
+            47
+          ],
+          [
+            53,
+            54,
+            55
+          ],
+          [
+            65,
+            66,
+            67
+          ],
+          [
+            69,
+            70,
+            71
+          ],
+          [
+            77,
+            78,
+            79
+          ],
+          [
+            81,
+            82,
+            83
+          ],
+          [
+            73,
+            74,
+            75
+          ],
+          [
+            49,
+            50,
+            51
+          ],
+          [
+            61,
+            62,
+            63
+          ]
+        ],
+        "object_ids": [
+          "e3:8de0640323ef:counterbore_hole:786a7061bfb006a0",
+          "e3:8de0640323ef:counterbore_hole:8eb1cb6057188f8d",
+          "e3:8de0640323ef:counterbore_hole:38a3b160bceae942",
+          "e3:8de0640323ef:counterbore_hole:afcebc0ead858498",
+          "e3:8de0640323ef:counterbore_hole:ff73a085ee325a95",
+          "e3:8de0640323ef:counterbore_hole:d5e697d99b2a1fe1",
+          "e3:8de0640323ef:counterbore_hole:ce96b567a9e4a8e3",
+          "e3:8de0640323ef:counterbore_hole:22a1e306c7cc13e4",
+          "e3:8de0640323ef:counterbore_hole:eb501c1af4287a75",
+          "e3:8de0640323ef:counterbore_hole:351e3adb9626e4d8"
+        ],
+        "selector": {
+          "scope": "all",
+          "feature_classes": [
+            "counterbore_hole"
+          ],
+          "radius_mm": null
+        },
+        "role": "whole_feature",
+        "action": "fix_features",
+        "object_indices": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "operation_index": 2
+      },
+      {
+        "selection_count": 2,
+        "role_face_sets": [
+          [
+            89
+          ],
+          [
+            94
+          ]
+        ],
+        "object_ids": [
+          "e3:8de0640323ef:rectangular_boss:145e05e9bd009afe",
+          "e3:8de0640323ef:rectangular_boss:d6dd651587433265"
+        ],
+        "selector": {
+          "scope": "all",
+          "feature_classes": [
+            "rectangular_boss"
+          ],
+          "radius_mm": null
+        },
+        "role": "top_face",
+        "action": "apply_force",
+        "object_indices": [
+          10,
+          11
+        ],
+        "operation_index": 3
+      }
+    ],
+    "binding_digest": "616476f1dc36f70c7aeebb0a9840e5dd88e569e49af1b61f9dbb2d83b7db021e",
+    "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+    "plan_digest": "5d957dcc3c64ade74299bce6985d124aafff24b9ab2583e75d786d5053776d35"
+  },
+  "max_displacement_mm": 0.001525866100564599,
+  "local_mesh": [],
+  "element_types": {
+    "C3D10": 33693
+  },
+  "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+  "analysis_errors": 0,
+  "model_checkpoint_sha256": "491655bfec5591c5a6a1b7f6300294f4818c29bf60b4c1b8dd5ff6078a057054",
+  "manifest_sha256": "fa1721714c99834daaf5db0cc8c5e85cabd97e8ef6938ca7ca69f25895866129",
+  "node_count": 59353,
+  "case": "Stiffened Panel.stp",
+  "prediction_sha256": "f2d4cb03aeac9895a65b1e474c8079f0b1dc79e7f257a16799cf15c757497b4a",
+  "analysis_warnings": 0,
+  "odb_path": "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\stiffened_panel\\attempts\\attempt_001\\final.odb",
+  "element_count": 33693,
+  "semantic_plan_sha256": "3c840eff35327bb6114b335f223ba0ee6bd077751ce2784848f22fad1fb69d4a",
+  "max_von_mises_mpa": 31.900653839111328,
+  "diagnostic_status": "JOB_STATUS_COMPLETED_SUCCESSFULLY",
+  "source_sha256": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+  "elapsed_seconds": 36.29700016975403,
+  "face_mapping": [
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 0,
+      "source_face": 1,
+      "boundary_vertex_count": 12
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.0439013692068856e-16,
+      "abaqus_index": 1,
+      "source_face": 2,
+      "boundary_vertex_count": 46
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 2,
+      "source_face": 3,
+      "boundary_vertex_count": 14
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 3,
+      "source_face": 4,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 4,
+      "source_face": 5,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 5,
+      "source_face": 6,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 6,
+      "source_face": 7,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.0295724251356535e-16,
+      "abaqus_index": 7,
+      "source_face": 8,
+      "boundary_vertex_count": 36
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 8,
+      "source_face": 9,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 9,
+      "source_face": 10,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.1368683772161564e-16,
+      "abaqus_index": 10,
+      "source_face": 11,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.1368683772161564e-16,
+      "abaqus_index": 11,
+      "source_face": 12,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.921864820170605e-16,
+      "abaqus_index": 12,
+      "source_face": 13,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.921864820170605e-16,
+      "abaqus_index": 13,
+      "source_face": 14,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.19294262111022e-14,
+      "abaqus_index": 14,
+      "source_face": 15,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.19294262111022e-14,
+      "abaqus_index": 15,
+      "source_face": 16,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.4609324100853025e-16,
+      "abaqus_index": 16,
+      "source_face": 17,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 5.843729640341212e-16,
+      "abaqus_index": 17,
+      "source_face": 18,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 4.237617072004866e-14,
+      "abaqus_index": 18,
+      "source_face": 19,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 3.5254125220881114e-14,
+      "abaqus_index": 19,
+      "source_face": 20,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.921864820170605e-16,
+      "abaqus_index": 20,
+      "source_face": 21,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.921864820170605e-16,
+      "abaqus_index": 21,
+      "source_face": 22,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.19294262111022e-14,
+      "abaqus_index": 22,
+      "source_face": 23,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.19294262111022e-14,
+      "abaqus_index": 23,
+      "source_face": 24,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.4609324100853025e-16,
+      "abaqus_index": 24,
+      "source_face": 25,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.921864820170605e-16,
+      "abaqus_index": 25,
+      "source_face": 26,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 9.080608011435812e-15,
+      "abaqus_index": 26,
+      "source_face": 27,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 9.080608011435812e-15,
+      "abaqus_index": 27,
+      "source_face": 28,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 7.304662050426506e-16,
+      "abaqus_index": 28,
+      "source_face": 29,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.921864820170605e-16,
+      "abaqus_index": 29,
+      "source_face": 30,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 30,
+      "source_face": 31,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 31,
+      "source_face": 32,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.4609324100853025e-16,
+      "abaqus_index": 32,
+      "source_face": 33,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.921864820170605e-16,
+      "abaqus_index": 33,
+      "source_face": 34,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 9.080608011435812e-15,
+      "abaqus_index": 34,
+      "source_face": 35,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 9.080608011435812e-15,
+      "abaqus_index": 35,
+      "source_face": 36,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 7.304662050426506e-16,
+      "abaqus_index": 36,
+      "source_face": 37,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 5.843729640341212e-16,
+      "abaqus_index": 37,
+      "source_face": 38,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.955648882153475e-14,
+      "abaqus_index": 38,
+      "source_face": 39,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.955648882153475e-14,
+      "abaqus_index": 39,
+      "source_face": 40,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 1.4609324100853025e-16,
+      "abaqus_index": 40,
+      "source_face": 41,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.921864820170605e-16,
+      "abaqus_index": 41,
+      "source_face": 42,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 9.080608011435812e-15,
+      "abaqus_index": 42,
+      "source_face": 43,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 9.080608011435812e-15,
+      "abaqus_index": 43,
+      "source_face": 44,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 1.6753539062853155e-15,
+      "abaqus_index": 44,
+      "source_face": 45,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 2.0678653929007238e-16,
+      "abaqus_index": 45,
+      "source_face": 46,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.355966430713716e-16,
+      "abaqus_index": 46,
+      "source_face": 47,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 3.6742508024309437e-11,
+      "abaqus_index": 47,
+      "source_face": 48,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 1.8847731445709684e-15,
+      "abaqus_index": 48,
+      "source_face": 49,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 2.0678653929007238e-16,
+      "abaqus_index": 49,
+      "source_face": 50,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.355966430713716e-16,
+      "abaqus_index": 50,
+      "source_face": 51,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 3.674271201449384e-11,
+      "abaqus_index": 51,
+      "source_face": 52,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 1.6753539062853155e-15,
+      "abaqus_index": 52,
+      "source_face": 53,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 2.0678653929007238e-16,
+      "abaqus_index": 53,
+      "source_face": 54,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.355966430713716e-16,
+      "abaqus_index": 54,
+      "source_face": 55,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 3.673434841693336e-11,
+      "abaqus_index": 55,
+      "source_face": 56,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 1.8847731445709684e-15,
+      "abaqus_index": 56,
+      "source_face": 57,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 2.0678653929007238e-16,
+      "abaqus_index": 57,
+      "source_face": 58,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.355966430713716e-16,
+      "abaqus_index": 58,
+      "source_face": 59,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 3.673434841693336e-11,
+      "abaqus_index": 59,
+      "source_face": 60,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 1.6753539062853155e-15,
+      "abaqus_index": 60,
+      "source_face": 61,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 2.0678653929007238e-16,
+      "abaqus_index": 61,
+      "source_face": 62,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.355966430713716e-16,
+      "abaqus_index": 62,
+      "source_face": 63,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 3.6732308515089335e-11,
+      "abaqus_index": 63,
+      "source_face": 64,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 1.8847731445709684e-15,
+      "abaqus_index": 64,
+      "source_face": 65,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 2.0678653929007238e-16,
+      "abaqus_index": 65,
+      "source_face": 66,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.355966430713716e-16,
+      "abaqus_index": 66,
+      "source_face": 67,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 3.673312447582695e-11,
+      "abaqus_index": 67,
+      "source_face": 68,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 1.6753539062853155e-15,
+      "abaqus_index": 68,
+      "source_face": 69,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 2.0678653929007238e-16,
+      "abaqus_index": 69,
+      "source_face": 70,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.355966430713716e-16,
+      "abaqus_index": 70,
+      "source_face": 71,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 3.673434841693336e-11,
+      "abaqus_index": 71,
+      "source_face": 72,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 1.8847731445709684e-15,
+      "abaqus_index": 72,
+      "source_face": 73,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 2.0678653929007238e-16,
+      "abaqus_index": 73,
+      "source_face": 74,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.355966430713716e-16,
+      "abaqus_index": 74,
+      "source_face": 75,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 3.673434841693336e-11,
+      "abaqus_index": 75,
+      "source_face": 76,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 1.6753539062853155e-15,
+      "abaqus_index": 76,
+      "source_face": 77,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 2.0678653929007238e-16,
+      "abaqus_index": 77,
+      "source_face": 78,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.355966430713716e-16,
+      "abaqus_index": 78,
+      "source_face": 79,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 3.6742508024309437e-11,
+      "abaqus_index": 79,
+      "source_face": 80,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 1.8847731445709684e-15,
+      "abaqus_index": 80,
+      "source_face": 81,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 1.1546319456101628e-14,
+      "relative_area_error": 2.0678653929007238e-16,
+      "abaqus_index": 81,
+      "source_face": 82,
+      "boundary_vertex_count": 3
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.355966430713716e-16,
+      "abaqus_index": 82,
+      "source_face": 83,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 3.674271201449384e-11,
+      "abaqus_index": 83,
+      "source_face": 84,
+      "boundary_vertex_count": 2
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 84,
+      "source_face": 85,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 85,
+      "source_face": 86,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 86,
+      "source_face": 87,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 87,
+      "source_face": 88,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 88,
+      "source_face": 89,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 89,
+      "source_face": 90,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 90,
+      "source_face": 91,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 91,
+      "source_face": 92,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 0.0,
+      "abaqus_index": 92,
+      "source_face": 93,
+      "boundary_vertex_count": 4
+    },
+    {
+      "max_vertex_distance_mm": 0.0,
+      "relative_area_error": 2.1849722565115388e-16,
+      "abaqus_index": 93,
+      "source_face": 94,
+      "boundary_vertex_count": 4
+    }
+  ],
+  "reaction_force_N": [
+    -2.348990619793767e-07,
+    1999.9980028926147,
+    1.154557685367763e-05
+  ],
+  "expected_applied_force_N": [
+    0.0,
+    -2000.0,
+    0.0
+  ],
+  "final_frame_time": 1.0,
+  "fixed_regions": [
+    {
+      "face_numbers": [
+        57,
+        58,
+        59
+      ],
+      "object_id": "e3:8de0640323ef:counterbore_hole:786a7061bfb006a0",
+      "object_index": 20,
+      "role": "whole_feature",
+      "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+      "role_evidence": {
+        "instance_faces": [
+          57,
+          58,
+          59
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 222.8567288640261,
+      "class": "counterbore_hole"
+    },
+    {
+      "face_numbers": [
+        45,
+        46,
+        47
+      ],
+      "object_id": "e3:8de0640323ef:counterbore_hole:8eb1cb6057188f8d",
+      "object_index": 21,
+      "role": "whole_feature",
+      "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+      "role_evidence": {
+        "instance_faces": [
+          45,
+          46,
+          47
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 222.8567288640257,
+      "class": "counterbore_hole"
+    },
+    {
+      "face_numbers": [
+        53,
+        54,
+        55
+      ],
+      "object_id": "e3:8de0640323ef:counterbore_hole:38a3b160bceae942",
+      "object_index": 22,
+      "role": "whole_feature",
+      "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+      "role_evidence": {
+        "instance_faces": [
+          53,
+          54,
+          55
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 222.8567288640257,
+      "class": "counterbore_hole"
+    },
+    {
+      "face_numbers": [
+        65,
+        66,
+        67
+      ],
+      "object_id": "e3:8de0640323ef:counterbore_hole:afcebc0ead858498",
+      "object_index": 23,
+      "role": "whole_feature",
+      "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+      "role_evidence": {
+        "instance_faces": [
+          65,
+          66,
+          67
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 222.8567288640261,
+      "class": "counterbore_hole"
+    },
+    {
+      "face_numbers": [
+        69,
+        70,
+        71
+      ],
+      "object_id": "e3:8de0640323ef:counterbore_hole:ff73a085ee325a95",
+      "object_index": 24,
+      "role": "whole_feature",
+      "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+      "role_evidence": {
+        "instance_faces": [
+          69,
+          70,
+          71
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 222.8567288640257,
+      "class": "counterbore_hole"
+    },
+    {
+      "face_numbers": [
+        77,
+        78,
+        79
+      ],
+      "object_id": "e3:8de0640323ef:counterbore_hole:d5e697d99b2a1fe1",
+      "object_index": 25,
+      "role": "whole_feature",
+      "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+      "role_evidence": {
+        "instance_faces": [
+          77,
+          78,
+          79
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 222.8567288640257,
+      "class": "counterbore_hole"
+    },
+    {
+      "face_numbers": [
+        81,
+        82,
+        83
+      ],
+      "object_id": "e3:8de0640323ef:counterbore_hole:ce96b567a9e4a8e3",
+      "object_index": 26,
+      "role": "whole_feature",
+      "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+      "role_evidence": {
+        "instance_faces": [
+          81,
+          82,
+          83
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 222.8567288640261,
+      "class": "counterbore_hole"
+    },
+    {
+      "face_numbers": [
+        73,
+        74,
+        75
+      ],
+      "object_id": "e3:8de0640323ef:counterbore_hole:22a1e306c7cc13e4",
+      "object_index": 27,
+      "role": "whole_feature",
+      "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+      "role_evidence": {
+        "instance_faces": [
+          73,
+          74,
+          75
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 222.8567288640261,
+      "class": "counterbore_hole"
+    },
+    {
+      "face_numbers": [
+        49,
+        50,
+        51
+      ],
+      "object_id": "e3:8de0640323ef:counterbore_hole:eb501c1af4287a75",
+      "object_index": 28,
+      "role": "whole_feature",
+      "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+      "role_evidence": {
+        "instance_faces": [
+          49,
+          50,
+          51
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 222.8567288640261,
+      "class": "counterbore_hole"
+    },
+    {
+      "face_numbers": [
+        61,
+        62,
+        63
+      ],
+      "object_id": "e3:8de0640323ef:counterbore_hole:351e3adb9626e4d8",
+      "object_index": 29,
+      "role": "whole_feature",
+      "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+      "role_evidence": {
+        "instance_faces": [
+          61,
+          62,
+          63
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 222.8567288640257,
+      "class": "counterbore_hole"
+    }
+  ],
+  "loads": [
+    {
+      "kind": "force",
+      "face_numbers": [
+        89
+      ],
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "object_id": "e3:8de0640323ef:rectangular_boss:145e05e9bd009afe",
+      "force_N": 1000.0,
+      "object_index": 10,
+      "abaqus_indices": [
+        88
+      ],
+      "role": "top_face",
+      "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+      "role_evidence": {
+        "instance_faces": [
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 33300.0,
+      "class": "rectangular_boss",
+      "traction_or_pressure_MPa": 0.03003003003003003
+    },
+    {
+      "kind": "force",
+      "face_numbers": [
+        94
+      ],
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "object_id": "e3:8de0640323ef:rectangular_boss:d6dd651587433265",
+      "force_N": 1000.0,
+      "object_index": 11,
+      "abaqus_indices": [
+        93
+      ],
+      "role": "top_face",
+      "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+      "role_evidence": {
+        "instance_faces": [
+          90,
+          91,
+          92,
+          93,
+          94
+        ],
+        "method": "within_recognized_instance"
+      },
+      "area_mm2": 33300.0,
+      "class": "rectangular_boss",
+      "traction_or_pressure_MPa": 0.03003003003003003
+    }
+  ],
+  "requested_solver_memory_mb": 20480,
+  "cae_path": "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\stiffened_panel\\attempts\\attempt_001\\final.cae",
+  "mesh_seed_mm": 10.0
+}

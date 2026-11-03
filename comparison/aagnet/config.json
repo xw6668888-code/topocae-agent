@@ -1,0 +1,19 @@
+{
+  "method": "AAGNet18-SI",
+  "seeds": {
+    "20260718": {
+      "original_weights": "weights/original/20260718.pt",
+      "original_validation_threshold": 0.8
+    },
+    "20260719": {
+      "original_weights": "weights/original/20260719.pt",
+      "original_validation_threshold": 0.8
+    },
+    "20260720": {
+      "original_weights": "weights/original/20260720.pt",
+      "original_validation_threshold": 0.7
+    }
+  },
+  "main_decoder": "row-greedy summed-logit vote",
+  "main_threshold": 0.5
+}

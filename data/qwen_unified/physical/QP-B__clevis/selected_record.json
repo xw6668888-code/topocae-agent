@@ -1,0 +1,81 @@
+{
+  "CAE_readback_process": {
+    "argv": [
+      "F:\\ABAQUS2020\\commands\\abaqus.bat",
+      "cae",
+      "noGUI=W:\\python\\FEA\\dataset_generator\\tools\\aei_paper_goals_v1\\g11\\cae_readback.py",
+      "--",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-B__clevis\\execution_v1\\work\\execution_plan.json",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-B__clevis\\execution_v1\\saved_cae_readback.json"
+    ],
+    "elapsed_seconds": 4.700450299999829,
+    "pid": 11380,
+    "returncode": 0,
+    "timed_out": false
+  },
+  "actually_executed": true,
+  "compiler_inputs_exclude_reference_and_service": true,
+  "elapsed_seconds": 1862.7119559999996,
+  "finished_utc": "2026-10-24T09:39:50.665846+00:00",
+  "mapping": {
+    "bytes": 1711,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/clevis.json",
+    "sha256": "9a74bd2f38a3ae784e0b222eeda28d55e5ddb34251ae8d75fefe327d113ea043"
+  },
+  "model_plan": {
+    "bytes": 1489,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/attempts/QP-B__clevis/attempt_001/parsed_plan.json",
+    "sha256": "c8b6aa8415fedb19cb261f3f69c715694f0a8347ba1a9010afcbef0d48bbad7d"
+  },
+  "physical_readback": {
+    "bytes": 2818,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-B__clevis/execution_v1/physical_readback.json",
+    "sha256": "85c65855f5c5c58770f730086196eb17910e6010cf7dc0a0382471beb46e92f1"
+  },
+  "raw_response": {
+    "bytes": 41832,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/attempts/QP-B__clevis/attempt_001/response.sse",
+    "sha256": "2ca30b506c615cffbb3e73aa094b14cf98eb85f5999e526fed74f7e4a85d99a7"
+  },
+  "saved_CAE_readback": {
+    "bytes": 2051,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-B__clevis/execution_v1/saved_cae_readback.json",
+    "sha256": "69cfd1f058318b64d6a403e06a52c36e015c4dfa2aa1df3007a2a0ff09d729dc"
+  },
+  "slot_id": "QP-B__clevis",
+  "source_step": {
+    "bytes": 38783,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Clevis.stp",
+    "sha256": "0befb0c991dfbc9057dd644da22a4d99c0972374e1a98d8947d3da902fbd1f27"
+  },
+  "started_utc": "2026-10-24T09:08:47.891601+00:00",
+  "status": "ARTIFACT_PASS",
+  "worker_process": {
+    "argv": [
+      "W:\\python\\envs\\feagpt\\python.exe",
+      "W:\\python\\FEA\\dataset_generator\\tools\\aei_paper_goals_v1\\g11\\worker_direct.py",
+      "--source",
+      "W:/python/FEA/dataset_generator/test_part_0901/Clevis.stp",
+      "--mapping",
+      "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/clevis.json",
+      "--plan",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\attempts\\QP-B__clevis\\attempt_001\\parsed_plan.json",
+      "--materials",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\inputs\\materials.json",
+      "--config",
+      "W:\\python\\FEA\\dataset_generator\\reports\\aei_paper_goals_v1\\g11\\EXECUTION_CONFIG_MEMORY6.json",
+      "--output",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-B__clevis\\execution_v1"
+    ],
+    "elapsed_seconds": 1857.0875111,
+    "pid": 33016,
+    "returncode": 0,
+    "timed_out": false
+  },
+  "worker_receipt": {
+    "bytes": 30638,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-B__clevis/execution_v1/EXECUTION_RECEIPT.json",
+    "sha256": "711923c8dbc92533fdba29b4b478b1d46fd74d27310e514b110083cbad873c02"
+  },
+  "worker_status": "EXECUTED"
+}

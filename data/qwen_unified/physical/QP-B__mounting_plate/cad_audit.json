@@ -1,0 +1,53 @@
+{
+  "actual_face_groups": [
+    [
+      17
+    ]
+  ],
+  "actual_volume_change_mm3": -1314.7565255208538,
+  "added_outside_allowed_region_mm3": 3.798049874603748e-09,
+  "boolean_tolerance_adjustments": [],
+  "changes": [
+    {
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center_mm": [
+        131.0,
+        5.999999999999979,
+        -188.0
+      ],
+      "depth_mm": 6.0,
+      "face_number": 17,
+      "new_radius_mm": 24.0,
+      "object_index": 0,
+      "radius_mm": 22.5,
+      "start_mm": [
+        128.0,
+        5.99999999999998,
+        -188.0
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "radius_and_axis_extent_verified": true
+    }
+  ],
+  "execution_mode": "g11_direct_model_face_groups",
+  "expected_volume_change_mm3": -1314.7565255273284,
+  "input_step": "W:\\python\\FEA\\dataset_generator\\test_part_0901\\Mounting Plate.stp",
+  "model_plan_sha256": "46c9a56ec61c439dbf3f5f36e472d84d101eff07471de67c39b134b4c2a3763d",
+  "non_target_verification": "valid-solid union/intersection volumetric containment",
+  "output_sha256": "85cef40e6c0ecb155376a744aefd8eb50301cfc8427bc2f4e033efefcb029275",
+  "output_step": "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-B__mounting_plate\\execution_v1\\work\\Mounting Plate_edited.stp",
+  "removed_outside_allowed_region_mm3": 3.1723175197839737e-09,
+  "source_sha256": "dccd20bb196660a6c1d5d52a813c2632c9d7291dec1712f8dc6b0aacecf6e14a",
+  "status": "PASS",
+  "truth_used": false,
+  "valid_solid_count": 1,
+  "volume_after_mm3": 43232.51830717952,
+  "volume_before_mm3": 44547.27483270037
+}

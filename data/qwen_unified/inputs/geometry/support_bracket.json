@@ -1,0 +1,3419 @@
+{
+  "adjacency": [
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_891ed2bdd84d9182",
+        "fh_138effe7db452725"
+      ],
+      "total_boundary_length_mm": 250.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_891ed2bdd84d9182",
+        "fh_b2d30bc7e48bfc75"
+      ],
+      "total_boundary_length_mm": 250.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_891ed2bdd84d9182",
+        "fh_a507a8a3f3a514d1"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_891ed2bdd84d9182",
+        "fh_993e8add38fec06d"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_138effe7db452725",
+        "fh_cbf9520e37f67674"
+      ],
+      "total_boundary_length_mm": 9.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_138effe7db452725",
+        "fh_6cc1133c756dee4a"
+      ],
+      "total_boundary_length_mm": 9.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_138effe7db452725",
+        "fh_26251903339805d7"
+      ],
+      "total_boundary_length_mm": 300.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_138effe7db452725",
+        "fh_c1a326f33cb8deda"
+      ],
+      "total_boundary_length_mm": 10.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_138effe7db452725",
+        "fh_d31fa03dfbed6334"
+      ],
+      "total_boundary_length_mm": 10.0
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        2.5
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_138effe7db452725",
+        "fh_47bcf8d1621598f7"
+      ],
+      "total_boundary_length_mm": 7.853981634
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        2.5
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_138effe7db452725",
+        "fh_a507a8a3f3a514d1"
+      ],
+      "total_boundary_length_mm": 7.853981634
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        2.5
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_138effe7db452725",
+        "fh_104aef9ef1258f60"
+      ],
+      "total_boundary_length_mm": 7.853981634
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        2.5
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_138effe7db452725",
+        "fh_7dc308f42e5f1656"
+      ],
+      "total_boundary_length_mm": 7.853981634
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        2.5
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_138effe7db452725",
+        "fh_993e8add38fec06d"
+      ],
+      "total_boundary_length_mm": 7.853981634
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        2.5
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_138effe7db452725",
+        "fh_0a588f6ca93f4d0b"
+      ],
+      "total_boundary_length_mm": 7.853981634
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_b2d30bc7e48bfc75",
+        "fh_cbf9520e37f67674"
+      ],
+      "total_boundary_length_mm": 9.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_b2d30bc7e48bfc75",
+        "fh_6cc1133c756dee4a"
+      ],
+      "total_boundary_length_mm": 9.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_b2d30bc7e48bfc75",
+        "fh_26251903339805d7"
+      ],
+      "total_boundary_length_mm": 300.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_b2d30bc7e48bfc75",
+        "fh_c1a326f33cb8deda"
+      ],
+      "total_boundary_length_mm": 10.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_b2d30bc7e48bfc75",
+        "fh_d31fa03dfbed6334"
+      ],
+      "total_boundary_length_mm": 10.0
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        2.5
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_b2d30bc7e48bfc75",
+        "fh_47bcf8d1621598f7"
+      ],
+      "total_boundary_length_mm": 7.853981634
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        2.5
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_b2d30bc7e48bfc75",
+        "fh_a507a8a3f3a514d1"
+      ],
+      "total_boundary_length_mm": 7.853981634
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        2.5
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_b2d30bc7e48bfc75",
+        "fh_104aef9ef1258f60"
+      ],
+      "total_boundary_length_mm": 7.853981634
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        2.5
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_b2d30bc7e48bfc75",
+        "fh_7dc308f42e5f1656"
+      ],
+      "total_boundary_length_mm": 7.853981634
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        2.5
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_b2d30bc7e48bfc75",
+        "fh_993e8add38fec06d"
+      ],
+      "total_boundary_length_mm": 7.853981634
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        2.5
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_b2d30bc7e48bfc75",
+        "fh_0a588f6ca93f4d0b"
+      ],
+      "total_boundary_length_mm": 7.853981634
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_cbf9520e37f67674",
+        "fh_26251903339805d7"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_cbf9520e37f67674",
+        "fh_7dc308f42e5f1656"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_6cc1133c756dee4a",
+        "fh_26251903339805d7"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_6cc1133c756dee4a",
+        "fh_47bcf8d1621598f7"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_1487c42502c0a7b1",
+        "fh_b6a4d6c26ae0cea7"
+      ],
+      "total_boundary_length_mm": 12.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_1487c42502c0a7b1",
+        "fh_26251903339805d7"
+      ],
+      "total_boundary_length_mm": 22.481555857
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_1487c42502c0a7b1",
+        "fh_f270dffbaf878ea6"
+      ],
+      "total_boundary_length_mm": 100.1372346
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_1487c42502c0a7b1",
+        "fh_2888d07dd6c5ba18"
+      ],
+      "total_boundary_length_mm": 100.1372346
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_1762fddafc38398a",
+        "fh_b6a4d6c26ae0cea7"
+      ],
+      "total_boundary_length_mm": 12.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_1762fddafc38398a",
+        "fh_26251903339805d7"
+      ],
+      "total_boundary_length_mm": 22.481555857
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_1762fddafc38398a",
+        "fh_f270dffbaf878ea6"
+      ],
+      "total_boundary_length_mm": 100.1372346
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_1762fddafc38398a",
+        "fh_2888d07dd6c5ba18"
+      ],
+      "total_boundary_length_mm": 100.1372346
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        0.746883993
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_a2b18528871f9f17"
+      ],
+      "total_boundary_length_mm": 4.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_f457259422304eea"
+      ],
+      "total_boundary_length_mm": 87.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_60135db793ee67a9"
+      ],
+      "total_boundary_length_mm": 87.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        0.746883993
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_9a1d31c9cc8b12dd"
+      ],
+      "total_boundary_length_mm": 4.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_64c97d6a2c367af4"
+      ],
+      "total_boundary_length_mm": 87.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_3c5e3d12a98ec9b4"
+      ],
+      "total_boundary_length_mm": 87.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_6f86aa84d18d8915"
+      ],
+      "total_boundary_length_mm": 352.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_d9ab3971282e3a78"
+      ],
+      "total_boundary_length_mm": 352.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        0.785398163
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_1cd90825158f682c"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        0.785398163
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_b3d6a18088265d0f"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        6.855
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_92e856857cfe0238"
+      ],
+      "total_boundary_length_mm": 86.142470561
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        6.855
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_f6cb7625abb38aec"
+      ],
+      "total_boundary_length_mm": 86.142470561
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        6.855
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_c5ea3ddcd0cafdb1"
+      ],
+      "total_boundary_length_mm": 86.142470561
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        6.855
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_10f83882056e8e78"
+      ],
+      "total_boundary_length_mm": 86.142470561
+    },
+    {
+      "boundary_count": 4,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.518436449
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_f270dffbaf878ea6"
+      ],
+      "total_boundary_length_mm": 396.0
+    },
+    {
+      "boundary_count": 4,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.518436449
+      ],
+      "faces": [
+        "fh_b6a4d6c26ae0cea7",
+        "fh_2888d07dd6c5ba18"
+      ],
+      "total_boundary_length_mm": 396.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_8bde0e4d600343fc",
+        "fh_833504734461daab"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_8bde0e4d600343fc",
+        "fh_6f86aa84d18d8915"
+      ],
+      "total_boundary_length_mm": 36.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_8bde0e4d600343fc",
+        "fh_d9ab3971282e3a78"
+      ],
+      "total_boundary_length_mm": 36.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        0.785398163
+      ],
+      "faces": [
+        "fh_8bde0e4d600343fc",
+        "fh_1cd90825158f682c"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_833504734461daab",
+        "fh_a46d707bb519925c"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_833504734461daab",
+        "fh_6f86aa84d18d8915"
+      ],
+      "total_boundary_length_mm": 360.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_833504734461daab",
+        "fh_d9ab3971282e3a78"
+      ],
+      "total_boundary_length_mm": 360.0
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        3.7
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_833504734461daab",
+        "fh_1c9686084372eb97"
+      ],
+      "total_boundary_length_mm": 46.495571273
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        3.7
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_833504734461daab",
+        "fh_e48911b9ecade7fb"
+      ],
+      "total_boundary_length_mm": 46.495571273
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        3.7
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_833504734461daab",
+        "fh_be9d3441f9e35f29"
+      ],
+      "total_boundary_length_mm": 46.495571273
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        3.7
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_833504734461daab",
+        "fh_1f8ef1e88e91cb8e"
+      ],
+      "total_boundary_length_mm": 46.495571273
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_a46d707bb519925c",
+        "fh_6f86aa84d18d8915"
+      ],
+      "total_boundary_length_mm": 36.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_a46d707bb519925c",
+        "fh_d9ab3971282e3a78"
+      ],
+      "total_boundary_length_mm": 36.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        0.785398163
+      ],
+      "faces": [
+        "fh_a46d707bb519925c",
+        "fh_b3d6a18088265d0f"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.518436449
+      ],
+      "faces": [
+        "fh_26251903339805d7",
+        "fh_f270dffbaf878ea6"
+      ],
+      "total_boundary_length_mm": 400.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.518436449
+      ],
+      "faces": [
+        "fh_26251903339805d7",
+        "fh_2888d07dd6c5ba18"
+      ],
+      "total_boundary_length_mm": 400.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_a2b18528871f9f17",
+        "fh_f457259422304eea"
+      ],
+      "total_boundary_length_mm": 113.073239746
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_a2b18528871f9f17",
+        "fh_60135db793ee67a9"
+      ],
+      "total_boundary_length_mm": 113.073239746
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        0.876272211
+      ],
+      "faces": [
+        "fh_a2b18528871f9f17",
+        "fh_2888d07dd6c5ba18"
+      ],
+      "total_boundary_length_mm": 4.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_f457259422304eea",
+        "fh_2888d07dd6c5ba18"
+      ],
+      "total_boundary_length_mm": 76.922347531
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_60135db793ee67a9",
+        "fh_2888d07dd6c5ba18"
+      ],
+      "total_boundary_length_mm": 76.922347531
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_9a1d31c9cc8b12dd",
+        "fh_64c97d6a2c367af4"
+      ],
+      "total_boundary_length_mm": 113.073239746
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_9a1d31c9cc8b12dd",
+        "fh_3c5e3d12a98ec9b4"
+      ],
+      "total_boundary_length_mm": 113.073239746
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        0.876272211
+      ],
+      "faces": [
+        "fh_9a1d31c9cc8b12dd",
+        "fh_f270dffbaf878ea6"
+      ],
+      "total_boundary_length_mm": 4.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_64c97d6a2c367af4",
+        "fh_f270dffbaf878ea6"
+      ],
+      "total_boundary_length_mm": 76.922347531
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_3c5e3d12a98ec9b4",
+        "fh_f270dffbaf878ea6"
+      ],
+      "total_boundary_length_mm": 76.922347531
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_6f86aa84d18d8915",
+        "fh_1cd90825158f682c"
+      ],
+      "total_boundary_length_mm": 5.656854249
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_6f86aa84d18d8915",
+        "fh_b3d6a18088265d0f"
+      ],
+      "total_boundary_length_mm": 5.656854249
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_d9ab3971282e3a78",
+        "fh_1cd90825158f682c"
+      ],
+      "total_boundary_length_mm": 5.656854249
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_d9ab3971282e3a78",
+        "fh_b3d6a18088265d0f"
+      ],
+      "total_boundary_length_mm": 5.656854249
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_c1a326f33cb8deda",
+        "fh_47bcf8d1621598f7"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_c1a326f33cb8deda",
+        "fh_104aef9ef1258f60"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_d31fa03dfbed6334",
+        "fh_7dc308f42e5f1656"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        1.570796327
+      ],
+      "faces": [
+        "fh_d31fa03dfbed6334",
+        "fh_0a588f6ca93f4d0b"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_a507a8a3f3a514d1",
+        "fh_104aef9ef1258f60"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "curve_families": [
+        "line"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_993e8add38fec06d",
+        "fh_0a588f6ca93f4d0b"
+      ],
+      "total_boundary_length_mm": 420.0
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        3.3
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_a487c09214d97c23",
+        "fh_92e856857cfe0238"
+      ],
+      "total_boundary_length_mm": 41.469023027
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        3.3
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_a487c09214d97c23",
+        "fh_1c9686084372eb97"
+      ],
+      "total_boundary_length_mm": 41.469023027
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        3.3
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_009e3f8284828db1",
+        "fh_f6cb7625abb38aec"
+      ],
+      "total_boundary_length_mm": 41.469023027
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        3.3
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_009e3f8284828db1",
+        "fh_e48911b9ecade7fb"
+      ],
+      "total_boundary_length_mm": 41.469023027
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        3.3
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_a1aa8e36a8734da1",
+        "fh_c5ea3ddcd0cafdb1"
+      ],
+      "total_boundary_length_mm": 41.469023027
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        3.3
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_a1aa8e36a8734da1",
+        "fh_be9d3441f9e35f29"
+      ],
+      "total_boundary_length_mm": 41.469023027
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        3.3
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_98b62a6e433b957d",
+        "fh_10f83882056e8e78"
+      ],
+      "total_boundary_length_mm": 41.469023027
+    },
+    {
+      "boundary_count": 2,
+      "circle_radii_mm": [
+        3.3
+      ],
+      "curve_families": [
+        "circle"
+      ],
+      "dihedral_angles_rad": [
+        0.0
+      ],
+      "faces": [
+        "fh_98b62a6e433b957d",
+        "fh_1f8ef1e88e91cb8e"
+      ],
+      "total_boundary_length_mm": 41.469023027
+    }
+  ],
+  "content_policy": {
+    "contains_feature_roles": false,
+    "contains_instance_groups": false,
+    "contains_model_scores": false,
+    "contains_semantic_classes": false,
+    "contains_truth": false,
+    "internal_face_indices_externalized": false,
+    "source": "direct unlabeled STEP geometry only"
+  },
+  "deterministic_query_results": {
+    "cylindrical_handles_by_radius_mm": [
+      {
+        "handles": [
+          "fh_0a588f6ca93f4d0b",
+          "fh_104aef9ef1258f60",
+          "fh_47bcf8d1621598f7",
+          "fh_7dc308f42e5f1656",
+          "fh_993e8add38fec06d",
+          "fh_a507a8a3f3a514d1"
+        ],
+        "radius_mm": 2.5
+      },
+      {
+        "handles": [
+          "fh_009e3f8284828db1",
+          "fh_98b62a6e433b957d",
+          "fh_a1aa8e36a8734da1",
+          "fh_a487c09214d97c23"
+        ],
+        "radius_mm": 3.3
+      }
+    ],
+    "handles_by_surface_family": {
+      "cone": [
+        "fh_10f83882056e8e78",
+        "fh_1c9686084372eb97",
+        "fh_1f8ef1e88e91cb8e",
+        "fh_92e856857cfe0238",
+        "fh_be9d3441f9e35f29",
+        "fh_c5ea3ddcd0cafdb1",
+        "fh_e48911b9ecade7fb",
+        "fh_f6cb7625abb38aec"
+      ],
+      "cylinder": [
+        "fh_009e3f8284828db1",
+        "fh_0a588f6ca93f4d0b",
+        "fh_104aef9ef1258f60",
+        "fh_47bcf8d1621598f7",
+        "fh_7dc308f42e5f1656",
+        "fh_98b62a6e433b957d",
+        "fh_993e8add38fec06d",
+        "fh_a1aa8e36a8734da1",
+        "fh_a487c09214d97c23",
+        "fh_a507a8a3f3a514d1"
+      ],
+      "plane": [
+        "fh_138effe7db452725",
+        "fh_1487c42502c0a7b1",
+        "fh_1762fddafc38398a",
+        "fh_1cd90825158f682c",
+        "fh_26251903339805d7",
+        "fh_2888d07dd6c5ba18",
+        "fh_3c5e3d12a98ec9b4",
+        "fh_60135db793ee67a9",
+        "fh_64c97d6a2c367af4",
+        "fh_6cc1133c756dee4a",
+        "fh_6f86aa84d18d8915",
+        "fh_833504734461daab",
+        "fh_891ed2bdd84d9182",
+        "fh_8bde0e4d600343fc",
+        "fh_9a1d31c9cc8b12dd",
+        "fh_a2b18528871f9f17",
+        "fh_a46d707bb519925c",
+        "fh_b2d30bc7e48bfc75",
+        "fh_b3d6a18088265d0f",
+        "fh_b6a4d6c26ae0cea7",
+        "fh_c1a326f33cb8deda",
+        "fh_cbf9520e37f67674",
+        "fh_d31fa03dfbed6334",
+        "fh_d9ab3971282e3a78",
+        "fh_f270dffbaf878ea6",
+        "fh_f457259422304eea"
+      ]
+    },
+    "neighbors": {
+      "fh_009e3f8284828db1": [
+        "fh_e48911b9ecade7fb",
+        "fh_f6cb7625abb38aec"
+      ],
+      "fh_0a588f6ca93f4d0b": [
+        "fh_138effe7db452725",
+        "fh_993e8add38fec06d",
+        "fh_b2d30bc7e48bfc75",
+        "fh_d31fa03dfbed6334"
+      ],
+      "fh_104aef9ef1258f60": [
+        "fh_138effe7db452725",
+        "fh_a507a8a3f3a514d1",
+        "fh_b2d30bc7e48bfc75",
+        "fh_c1a326f33cb8deda"
+      ],
+      "fh_10f83882056e8e78": [
+        "fh_98b62a6e433b957d",
+        "fh_b6a4d6c26ae0cea7"
+      ],
+      "fh_138effe7db452725": [
+        "fh_0a588f6ca93f4d0b",
+        "fh_104aef9ef1258f60",
+        "fh_26251903339805d7",
+        "fh_47bcf8d1621598f7",
+        "fh_6cc1133c756dee4a",
+        "fh_7dc308f42e5f1656",
+        "fh_891ed2bdd84d9182",
+        "fh_993e8add38fec06d",
+        "fh_a507a8a3f3a514d1",
+        "fh_c1a326f33cb8deda",
+        "fh_cbf9520e37f67674",
+        "fh_d31fa03dfbed6334"
+      ],
+      "fh_1487c42502c0a7b1": [
+        "fh_26251903339805d7",
+        "fh_2888d07dd6c5ba18",
+        "fh_b6a4d6c26ae0cea7",
+        "fh_f270dffbaf878ea6"
+      ],
+      "fh_1762fddafc38398a": [
+        "fh_26251903339805d7",
+        "fh_2888d07dd6c5ba18",
+        "fh_b6a4d6c26ae0cea7",
+        "fh_f270dffbaf878ea6"
+      ],
+      "fh_1c9686084372eb97": [
+        "fh_833504734461daab",
+        "fh_a487c09214d97c23"
+      ],
+      "fh_1cd90825158f682c": [
+        "fh_6f86aa84d18d8915",
+        "fh_8bde0e4d600343fc",
+        "fh_b6a4d6c26ae0cea7",
+        "fh_d9ab3971282e3a78"
+      ],
+      "fh_1f8ef1e88e91cb8e": [
+        "fh_833504734461daab",
+        "fh_98b62a6e433b957d"
+      ],
+      "fh_26251903339805d7": [
+        "fh_138effe7db452725",
+        "fh_1487c42502c0a7b1",
+        "fh_1762fddafc38398a",
+        "fh_2888d07dd6c5ba18",
+        "fh_6cc1133c756dee4a",
+        "fh_b2d30bc7e48bfc75",
+        "fh_cbf9520e37f67674",
+        "fh_f270dffbaf878ea6"
+      ],
+      "fh_2888d07dd6c5ba18": [
+        "fh_1487c42502c0a7b1",
+        "fh_1762fddafc38398a",
+        "fh_26251903339805d7",
+        "fh_60135db793ee67a9",
+        "fh_a2b18528871f9f17",
+        "fh_b6a4d6c26ae0cea7",
+        "fh_f457259422304eea"
+      ],
+      "fh_3c5e3d12a98ec9b4": [
+        "fh_9a1d31c9cc8b12dd",
+        "fh_b6a4d6c26ae0cea7",
+        "fh_f270dffbaf878ea6"
+      ],
+      "fh_47bcf8d1621598f7": [
+        "fh_138effe7db452725",
+        "fh_6cc1133c756dee4a",
+        "fh_b2d30bc7e48bfc75",
+        "fh_c1a326f33cb8deda"
+      ],
+      "fh_60135db793ee67a9": [
+        "fh_2888d07dd6c5ba18",
+        "fh_a2b18528871f9f17",
+        "fh_b6a4d6c26ae0cea7"
+      ],
+      "fh_64c97d6a2c367af4": [
+        "fh_9a1d31c9cc8b12dd",
+        "fh_b6a4d6c26ae0cea7",
+        "fh_f270dffbaf878ea6"
+      ],
+      "fh_6cc1133c756dee4a": [
+        "fh_138effe7db452725",
+        "fh_26251903339805d7",
+        "fh_47bcf8d1621598f7",
+        "fh_b2d30bc7e48bfc75"
+      ],
+      "fh_6f86aa84d18d8915": [
+        "fh_1cd90825158f682c",
+        "fh_833504734461daab",
+        "fh_8bde0e4d600343fc",
+        "fh_a46d707bb519925c",
+        "fh_b3d6a18088265d0f",
+        "fh_b6a4d6c26ae0cea7"
+      ],
+      "fh_7dc308f42e5f1656": [
+        "fh_138effe7db452725",
+        "fh_b2d30bc7e48bfc75",
+        "fh_cbf9520e37f67674",
+        "fh_d31fa03dfbed6334"
+      ],
+      "fh_833504734461daab": [
+        "fh_1c9686084372eb97",
+        "fh_1f8ef1e88e91cb8e",
+        "fh_6f86aa84d18d8915",
+        "fh_8bde0e4d600343fc",
+        "fh_a46d707bb519925c",
+        "fh_be9d3441f9e35f29",
+        "fh_d9ab3971282e3a78",
+        "fh_e48911b9ecade7fb"
+      ],
+      "fh_891ed2bdd84d9182": [
+        "fh_138effe7db452725",
+        "fh_993e8add38fec06d",
+        "fh_a507a8a3f3a514d1",
+        "fh_b2d30bc7e48bfc75"
+      ],
+      "fh_8bde0e4d600343fc": [
+        "fh_1cd90825158f682c",
+        "fh_6f86aa84d18d8915",
+        "fh_833504734461daab",
+        "fh_d9ab3971282e3a78"
+      ],
+      "fh_92e856857cfe0238": [
+        "fh_a487c09214d97c23",
+        "fh_b6a4d6c26ae0cea7"
+      ],
+      "fh_98b62a6e433b957d": [
+        "fh_10f83882056e8e78",
+        "fh_1f8ef1e88e91cb8e"
+      ],
+      "fh_993e8add38fec06d": [
+        "fh_0a588f6ca93f4d0b",
+        "fh_138effe7db452725",
+        "fh_891ed2bdd84d9182",
+        "fh_b2d30bc7e48bfc75"
+      ],
+      "fh_9a1d31c9cc8b12dd": [
+        "fh_3c5e3d12a98ec9b4",
+        "fh_64c97d6a2c367af4",
+        "fh_b6a4d6c26ae0cea7",
+        "fh_f270dffbaf878ea6"
+      ],
+      "fh_a1aa8e36a8734da1": [
+        "fh_be9d3441f9e35f29",
+        "fh_c5ea3ddcd0cafdb1"
+      ],
+      "fh_a2b18528871f9f17": [
+        "fh_2888d07dd6c5ba18",
+        "fh_60135db793ee67a9",
+        "fh_b6a4d6c26ae0cea7",
+        "fh_f457259422304eea"
+      ],
+      "fh_a46d707bb519925c": [
+        "fh_6f86aa84d18d8915",
+        "fh_833504734461daab",
+        "fh_b3d6a18088265d0f",
+        "fh_d9ab3971282e3a78"
+      ],
+      "fh_a487c09214d97c23": [
+        "fh_1c9686084372eb97",
+        "fh_92e856857cfe0238"
+      ],
+      "fh_a507a8a3f3a514d1": [
+        "fh_104aef9ef1258f60",
+        "fh_138effe7db452725",
+        "fh_891ed2bdd84d9182",
+        "fh_b2d30bc7e48bfc75"
+      ],
+      "fh_b2d30bc7e48bfc75": [
+        "fh_0a588f6ca93f4d0b",
+        "fh_104aef9ef1258f60",
+        "fh_26251903339805d7",
+        "fh_47bcf8d1621598f7",
+        "fh_6cc1133c756dee4a",
+        "fh_7dc308f42e5f1656",
+        "fh_891ed2bdd84d9182",
+        "fh_993e8add38fec06d",
+        "fh_a507a8a3f3a514d1",
+        "fh_c1a326f33cb8deda",
+        "fh_cbf9520e37f67674",
+        "fh_d31fa03dfbed6334"
+      ],
+      "fh_b3d6a18088265d0f": [
+        "fh_6f86aa84d18d8915",
+        "fh_a46d707bb519925c",
+        "fh_b6a4d6c26ae0cea7",
+        "fh_d9ab3971282e3a78"
+      ],
+      "fh_b6a4d6c26ae0cea7": [
+        "fh_10f83882056e8e78",
+        "fh_1487c42502c0a7b1",
+        "fh_1762fddafc38398a",
+        "fh_1cd90825158f682c",
+        "fh_2888d07dd6c5ba18",
+        "fh_3c5e3d12a98ec9b4",
+        "fh_60135db793ee67a9",
+        "fh_64c97d6a2c367af4",
+        "fh_6f86aa84d18d8915",
+        "fh_92e856857cfe0238",
+        "fh_9a1d31c9cc8b12dd",
+        "fh_a2b18528871f9f17",
+        "fh_b3d6a18088265d0f",
+        "fh_c5ea3ddcd0cafdb1",
+        "fh_d9ab3971282e3a78",
+        "fh_f270dffbaf878ea6",
+        "fh_f457259422304eea",
+        "fh_f6cb7625abb38aec"
+      ],
+      "fh_be9d3441f9e35f29": [
+        "fh_833504734461daab",
+        "fh_a1aa8e36a8734da1"
+      ],
+      "fh_c1a326f33cb8deda": [
+        "fh_104aef9ef1258f60",
+        "fh_138effe7db452725",
+        "fh_47bcf8d1621598f7",
+        "fh_b2d30bc7e48bfc75"
+      ],
+      "fh_c5ea3ddcd0cafdb1": [
+        "fh_a1aa8e36a8734da1",
+        "fh_b6a4d6c26ae0cea7"
+      ],
+      "fh_cbf9520e37f67674": [
+        "fh_138effe7db452725",
+        "fh_26251903339805d7",
+        "fh_7dc308f42e5f1656",
+        "fh_b2d30bc7e48bfc75"
+      ],
+      "fh_d31fa03dfbed6334": [
+        "fh_0a588f6ca93f4d0b",
+        "fh_138effe7db452725",
+        "fh_7dc308f42e5f1656",
+        "fh_b2d30bc7e48bfc75"
+      ],
+      "fh_d9ab3971282e3a78": [
+        "fh_1cd90825158f682c",
+        "fh_833504734461daab",
+        "fh_8bde0e4d600343fc",
+        "fh_a46d707bb519925c",
+        "fh_b3d6a18088265d0f",
+        "fh_b6a4d6c26ae0cea7"
+      ],
+      "fh_e48911b9ecade7fb": [
+        "fh_009e3f8284828db1",
+        "fh_833504734461daab"
+      ],
+      "fh_f270dffbaf878ea6": [
+        "fh_1487c42502c0a7b1",
+        "fh_1762fddafc38398a",
+        "fh_26251903339805d7",
+        "fh_3c5e3d12a98ec9b4",
+        "fh_64c97d6a2c367af4",
+        "fh_9a1d31c9cc8b12dd",
+        "fh_b6a4d6c26ae0cea7"
+      ],
+      "fh_f457259422304eea": [
+        "fh_2888d07dd6c5ba18",
+        "fh_a2b18528871f9f17",
+        "fh_b6a4d6c26ae0cea7"
+      ],
+      "fh_f6cb7625abb38aec": [
+        "fh_009e3f8284828db1",
+        "fh_b6a4d6c26ae0cea7"
+      ]
+    },
+    "planar_handles_by_oriented_normal": [
+      {
+        "handles": [
+          "fh_138effe7db452725",
+          "fh_6f86aa84d18d8915",
+          "fh_b2d30bc7e48bfc75",
+          "fh_d9ab3971282e3a78"
+        ],
+        "normal": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "handles": [
+          "fh_a2b18528871f9f17"
+        ],
+        "normal": [
+          0.0,
+          -0.733809,
+          -0.679356
+        ]
+      },
+      {
+        "handles": [
+          "fh_9a1d31c9cc8b12dd"
+        ],
+        "normal": [
+          0.0,
+          -0.733809,
+          0.679356
+        ]
+      },
+      {
+        "handles": [
+          "fh_891ed2bdd84d9182",
+          "fh_b6a4d6c26ae0cea7",
+          "fh_c1a326f33cb8deda",
+          "fh_d31fa03dfbed6334"
+        ],
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "handles": [
+          "fh_6cc1133c756dee4a",
+          "fh_8bde0e4d600343fc"
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "handles": [
+          "fh_a46d707bb519925c",
+          "fh_cbf9520e37f67674"
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "handles": [
+          "fh_2888d07dd6c5ba18"
+        ],
+        "normal": [
+          0.0,
+          0.052336,
+          -0.99863
+        ]
+      },
+      {
+        "handles": [
+          "fh_f270dffbaf878ea6"
+        ],
+        "normal": [
+          0.0,
+          0.052336,
+          0.99863
+        ]
+      },
+      {
+        "handles": [
+          "fh_b3d6a18088265d0f"
+        ],
+        "normal": [
+          0.0,
+          0.707107,
+          -0.707107
+        ]
+      },
+      {
+        "handles": [
+          "fh_1cd90825158f682c"
+        ],
+        "normal": [
+          0.0,
+          0.707107,
+          0.707107
+        ]
+      },
+      {
+        "handles": [
+          "fh_26251903339805d7",
+          "fh_833504734461daab"
+        ],
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "handles": [
+          "fh_1487c42502c0a7b1",
+          "fh_1762fddafc38398a",
+          "fh_3c5e3d12a98ec9b4",
+          "fh_60135db793ee67a9",
+          "fh_64c97d6a2c367af4",
+          "fh_f457259422304eea"
+        ],
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  "face_count": 44,
+  "faces": [
+    {
+      "area_mm2": 26250.0,
+      "bbox_extents_mm": [
+        210.0000002,
+        2e-07,
+        125.0000002
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -220.0,
+        815.811974106
+      ],
+      "handle": "fh_891ed2bdd84d9182",
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        210.0,
+        125.0
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 1697.317477042,
+      "bbox_extents_mm": [
+        2e-07,
+        12.0000002,
+        150.0000002
+      ],
+      "centroid_mm": [
+        -198.887946312,
+        -213.786957231,
+        815.811974106
+      ],
+      "handle": "fh_138effe7db452725",
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        150.0,
+        12.0
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 12,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 1697.317477042,
+      "bbox_extents_mm": [
+        2e-07,
+        12.0000002,
+        150.0000002
+      ],
+      "centroid_mm": [
+        -408.887946312,
+        -213.786957231,
+        815.811974106
+      ],
+      "handle": "fh_b2d30bc7e48bfc75",
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        150.0,
+        12.0
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 12,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 945.0,
+      "bbox_extents_mm": [
+        210.0000002,
+        4.5000002,
+        2e-07
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -210.25,
+        890.811974106
+      ],
+      "handle": "fh_cbf9520e37f67674",
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "projected_extents_mm": [
+        210.0,
+        4.5
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 945.0,
+      "bbox_extents_mm": [
+        210.0000002,
+        4.5000002,
+        2e-07
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -210.25,
+        740.811974106
+      ],
+      "handle": "fh_6cc1133c756dee4a",
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "projected_extents_mm": [
+        210.0,
+        4.5
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 431.019448208,
+      "bbox_extents_mm": [
+        2e-07,
+        50.0000002,
+        11.240778128
+      ],
+      "centroid_mm": [
+        -403.887946312,
+        -185.533131021,
+        815.811974106
+      ],
+      "handle": "fh_1487c42502c0a7b1",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        50.0,
+        11.240777928
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 431.019448208,
+      "bbox_extents_mm": [
+        2e-07,
+        50.0000002,
+        11.240778128
+      ],
+      "centroid_mm": [
+        -203.887946312,
+        -185.533131021,
+        815.811974106
+      ],
+      "handle": "fh_1762fddafc38398a",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        50.0,
+        11.240777928
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 34995.493364301,
+      "bbox_extents_mm": [
+        210.0000002,
+        2e-07,
+        176.0000002
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -158.0,
+        815.811974106
+      ],
+      "handle": "fh_b6a4d6c26ae0cea7",
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        210.0,
+        176.0
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 5,
+        "inner_loop_edge_count": 16,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 6
+      }
+    },
+    {
+      "area_mm2": 3780.0,
+      "bbox_extents_mm": [
+        210.0000002,
+        18.0000002,
+        2e-07
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -147.0,
+        725.811974106
+      ],
+      "handle": "fh_8bde0e4d600343fc",
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "projected_extents_mm": [
+        210.0,
+        18.0
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 37627.966386292,
+      "bbox_extents_mm": [
+        210.0000002,
+        2e-07,
+        180.0000002
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -138.0,
+        815.811974106
+      ],
+      "handle": "fh_833504734461daab",
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        210.0,
+        180.0
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 4,
+        "inner_loop_edge_count": 4,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 5
+      }
+    },
+    {
+      "area_mm2": 3780.0,
+      "bbox_extents_mm": [
+        210.0000002,
+        18.0000002,
+        2e-07
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -147.0,
+        905.811974106
+      ],
+      "handle": "fh_a46d707bb519925c",
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "projected_extents_mm": [
+        210.0,
+        18.0
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 29251.844414339,
+      "bbox_extents_mm": [
+        210.0000002,
+        2e-07,
+        150.0000002
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -208.0,
+        815.811974106
+      ],
+      "handle": "fh_26251903339805d7",
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        210.0,
+        150.0
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 1,
+        "inner_loop_edge_count": 4,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 2
+      }
+    },
+    {
+      "area_mm2": 113.073239746,
+      "bbox_extents_mm": [
+        2.0000002,
+        38.408464264,
+        41.487097893
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -177.204232032,
+        790.055522952
+      ],
+      "handle": "fh_a2b18528871f9f17",
+      "normal": [
+        0.0,
+        -0.733809304,
+        -0.679355507
+      ],
+      "projected_extents_mm": [
+        56.536619873,
+        2.0
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 835.384093383,
+      "bbox_extents_mm": [
+        2e-07,
+        38.408464264,
+        43.5000002
+      ],
+      "centroid_mm": [
+        -304.887946312,
+        -170.802821355,
+        797.64100667
+      ],
+      "handle": "fh_f457259422304eea",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        56.399131397,
+        31.195773649
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 835.384093383,
+      "bbox_extents_mm": [
+        2e-07,
+        38.408464264,
+        43.5000002
+      ],
+      "centroid_mm": [
+        -302.887946312,
+        -170.802821355,
+        797.64100667
+      ],
+      "handle": "fh_60135db793ee67a9",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        56.399131397,
+        31.195773649
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 113.073239746,
+      "bbox_extents_mm": [
+        2.0000002,
+        38.408464264,
+        41.487097893
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -177.204232032,
+        841.568425259
+      ],
+      "handle": "fh_9a1d31c9cc8b12dd",
+      "normal": [
+        0.0,
+        -0.733809304,
+        0.679355507
+      ],
+      "projected_extents_mm": [
+        56.536619873,
+        2.0
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 835.384093383,
+      "bbox_extents_mm": [
+        2e-07,
+        38.408464264,
+        43.5000002
+      ],
+      "centroid_mm": [
+        -304.887946312,
+        -170.802821355,
+        833.982941541
+      ],
+      "handle": "fh_64c97d6a2c367af4",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        56.399131397,
+        31.195773649
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 835.384093383,
+      "bbox_extents_mm": [
+        2e-07,
+        38.408464264,
+        43.5000002
+      ],
+      "centroid_mm": [
+        -302.887946312,
+        -170.802821355,
+        833.982941541
+      ],
+      "handle": "fh_3c5e3d12a98ec9b4",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        56.399131397,
+        31.195773649
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 3596.0,
+      "bbox_extents_mm": [
+        2e-07,
+        20.0000002,
+        180.0000002
+      ],
+      "centroid_mm": [
+        -198.887946312,
+        -147.989618094,
+        815.811974106
+      ],
+      "handle": "fh_6f86aa84d18d8915",
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        180.0,
+        20.0
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 6,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 3596.0,
+      "bbox_extents_mm": [
+        2e-07,
+        20.0000002,
+        180.0000002
+      ],
+      "centroid_mm": [
+        -408.887946312,
+        -147.989618094,
+        815.811974106
+      ],
+      "handle": "fh_d9ab3971282e3a78",
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        180.0,
+        20.0
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 6,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 1050.0,
+      "bbox_extents_mm": [
+        210.0000002,
+        2e-07,
+        5.0000002
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -215.0,
+        745.811974106
+      ],
+      "handle": "fh_c1a326f33cb8deda",
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        210.0,
+        5.0
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 1050.0,
+      "bbox_extents_mm": [
+        210.0000002,
+        2e-07,
+        5.0000002
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -215.0,
+        885.811974106
+      ],
+      "handle": "fh_d31fa03dfbed6334",
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "projected_extents_mm": [
+        210.0,
+        5.0
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 824.668071567,
+      "axis_direction": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "axis_origin_mm": [
+        -403.887946312,
+        -212.5,
+        743.311974106
+      ],
+      "bbox_extents_mm": [
+        210.0000002,
+        2.5000002,
+        2.5000002
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -214.091549431,
+        741.720424675
+      ],
+      "handle": "fh_47bcf8d1621598f7",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "radius_mm": 2.5,
+      "surface_family": "cylinder",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 824.668071567,
+      "axis_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_origin_mm": [
+        -403.887946312,
+        -217.5,
+        753.311974106
+      ],
+      "bbox_extents_mm": [
+        210.0000002,
+        2.5000002,
+        2.5000002
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -219.091549431,
+        751.720424675
+      ],
+      "handle": "fh_a507a8a3f3a514d1",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "radius_mm": 2.5,
+      "surface_family": "cylinder",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 824.668071567,
+      "axis_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_origin_mm": [
+        -413.887946312,
+        -217.5,
+        748.311974106
+      ],
+      "bbox_extents_mm": [
+        210.0000002,
+        2.5000002,
+        2.5000002
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -215.908450569,
+        749.903523536
+      ],
+      "handle": "fh_104aef9ef1258f60",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "radius_mm": 2.5,
+      "surface_family": "cylinder",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 824.668071567,
+      "axis_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_origin_mm": [
+        -403.887946312,
+        -212.5,
+        888.311974106
+      ],
+      "bbox_extents_mm": [
+        210.0000002,
+        2.5000002,
+        2.5000002
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -214.091549431,
+        889.903523536
+      ],
+      "handle": "fh_7dc308f42e5f1656",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "radius_mm": 2.5,
+      "surface_family": "cylinder",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 824.668071567,
+      "axis_direction": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "axis_origin_mm": [
+        -403.887946312,
+        -217.5,
+        878.311974106
+      ],
+      "bbox_extents_mm": [
+        210.0000002,
+        2.5000002,
+        2.5000002
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -219.091549431,
+        879.903523536
+      ],
+      "handle": "fh_993e8add38fec06d",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "radius_mm": 2.5,
+      "surface_family": "cylinder",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 824.668071567,
+      "axis_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_origin_mm": [
+        -413.887946312,
+        -217.5,
+        883.311974106
+      ],
+      "bbox_extents_mm": [
+        210.0000002,
+        2.5000002,
+        2.5000002
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -215.908450569,
+        881.720424675
+      ],
+      "handle": "fh_0a588f6ca93f4d0b",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "radius_mm": 2.5,
+      "surface_family": "cylinder",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 593.969696197,
+      "bbox_extents_mm": [
+        210.0000002,
+        2.0000002,
+        2.0000002
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -157.0,
+        726.811974106
+      ],
+      "handle": "fh_1cd90825158f682c",
+      "normal": [
+        0.0,
+        0.707106781,
+        0.707106781
+      ],
+      "projected_extents_mm": [
+        210.0,
+        2.828427125
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 593.969696197,
+      "bbox_extents_mm": [
+        210.0000002,
+        2.0000002,
+        2.0000002
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -157.0,
+        904.811974106
+      ],
+      "handle": "fh_b3d6a18088265d0f",
+      "normal": [
+        0.0,
+        0.707106781,
+        -0.707106781
+      ],
+      "projected_extents_mm": [
+        210.0,
+        2.828427125
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 4,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 332.685237238,
+      "axis_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_origin_mm": [
+        -383.887946312,
+        494999.289286908,
+        745.811974106
+      ],
+      "bbox_extents_mm": [
+        6.6000002,
+        16.0450002,
+        6.6000002
+      ],
+      "centroid_mm": [
+        -383.887946312,
+        -146.4225,
+        745.811974106
+      ],
+      "handle": "fh_a487c09214d97c23",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "radius_mm": 3.3,
+      "surface_family": "cylinder",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 160.392628073,
+      "axis_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "bbox_extents_mm": [
+        13.7100002,
+        3.555000203,
+        13.7100002
+      ],
+      "centroid_mm": [
+        -383.887946312,
+        -156.429918758,
+        745.811974106
+      ],
+      "handle": "fh_92e856857cfe0238",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "semi_angle_rad": 0.785398162,
+      "surface_family": "cone",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 12.440072226,
+      "axis_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "bbox_extents_mm": [
+        7.400000199,
+        0.4000002,
+        7.400000199
+      ],
+      "centroid_mm": [
+        -383.887946312,
+        -138.196190476,
+        745.811974106
+      ],
+      "handle": "fh_1c9686084372eb97",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "semi_angle_rad": 0.785398162,
+      "surface_family": "cone",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 332.685237238,
+      "axis_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_origin_mm": [
+        -383.887946312,
+        494999.058551823,
+        885.811974106
+      ],
+      "bbox_extents_mm": [
+        6.6000002,
+        16.0450002,
+        6.6000002
+      ],
+      "centroid_mm": [
+        -383.887946312,
+        -146.4225,
+        885.811974106
+      ],
+      "handle": "fh_009e3f8284828db1",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "radius_mm": 3.3,
+      "surface_family": "cylinder",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 160.392628073,
+      "axis_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "bbox_extents_mm": [
+        13.7100002,
+        3.555000203,
+        13.7100002
+      ],
+      "centroid_mm": [
+        -383.887946312,
+        -156.429918758,
+        885.811974106
+      ],
+      "handle": "fh_f6cb7625abb38aec",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "semi_angle_rad": 0.785398162,
+      "surface_family": "cone",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 12.440072226,
+      "axis_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "bbox_extents_mm": [
+        7.400000199,
+        0.4000002,
+        7.400000199
+      ],
+      "centroid_mm": [
+        -383.887946312,
+        -138.196190476,
+        885.811974106
+      ],
+      "handle": "fh_e48911b9ecade7fb",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "semi_angle_rad": 0.785398162,
+      "surface_family": "cone",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 332.685237238,
+      "axis_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_origin_mm": [
+        -223.887946312,
+        494999.387513446,
+        745.811974106
+      ],
+      "bbox_extents_mm": [
+        6.6000002,
+        16.0450002,
+        6.6000002
+      ],
+      "centroid_mm": [
+        -223.887946312,
+        -146.4225,
+        745.811974106
+      ],
+      "handle": "fh_a1aa8e36a8734da1",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "radius_mm": 3.3,
+      "surface_family": "cylinder",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 160.392628073,
+      "axis_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "bbox_extents_mm": [
+        13.7100002,
+        3.555000203,
+        13.7100002
+      ],
+      "centroid_mm": [
+        -223.887946312,
+        -156.429918758,
+        745.811974106
+      ],
+      "handle": "fh_c5ea3ddcd0cafdb1",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "semi_angle_rad": 0.785398162,
+      "surface_family": "cone",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 12.440072226,
+      "axis_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "bbox_extents_mm": [
+        7.400000199,
+        0.4000002,
+        7.400000199
+      ],
+      "centroid_mm": [
+        -223.887946312,
+        -138.196190476,
+        745.811974106
+      ],
+      "handle": "fh_be9d3441f9e35f29",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "semi_angle_rad": 0.785398162,
+      "surface_family": "cone",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 332.685237238,
+      "axis_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_origin_mm": [
+        -223.887946312,
+        494999.156778407,
+        885.811974106
+      ],
+      "bbox_extents_mm": [
+        6.6000002,
+        16.0450002,
+        6.6000002
+      ],
+      "centroid_mm": [
+        -223.887946312,
+        -146.4225,
+        885.811974106
+      ],
+      "handle": "fh_98b62a6e433b957d",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "radius_mm": 3.3,
+      "surface_family": "cylinder",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 160.392628073,
+      "axis_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "bbox_extents_mm": [
+        13.7100002,
+        3.555000203,
+        13.7100002
+      ],
+      "centroid_mm": [
+        -223.887946312,
+        -156.429918758,
+        885.811974106
+      ],
+      "handle": "fh_10f83882056e8e78",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "semi_angle_rad": 0.785398162,
+      "surface_family": "cone",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 12.440072226,
+      "axis_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "bbox_extents_mm": [
+        7.400000199,
+        0.4000002,
+        7.400000199
+      ],
+      "centroid_mm": [
+        -223.887946312,
+        -138.196190476,
+        885.811974106
+      ],
+      "handle": "fh_1f8ef1e88e91cb8e",
+      "projected_extents_mm": [
+        0.0,
+        0.0
+      ],
+      "semi_angle_rad": 0.785398162,
+      "surface_family": "cone",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 3,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 9936.801112448,
+      "bbox_extents_mm": [
+        200.0000002,
+        50.0000002,
+        2.620389164
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -183.044865956,
+        820.124519913
+      ],
+      "handle": "fh_f270dffbaf878ea6",
+      "normal": [
+        0.0,
+        0.052335956,
+        0.998629535
+      ],
+      "projected_extents_mm": [
+        200.0,
+        50.0686173
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 8,
+        "wire_count": 1
+      }
+    },
+    {
+      "area_mm2": 9936.801112448,
+      "bbox_extents_mm": [
+        200.0000002,
+        50.0000002,
+        2.620389164
+      ],
+      "centroid_mm": [
+        -303.887946312,
+        -183.044865956,
+        811.499428298
+      ],
+      "handle": "fh_2888d07dd6c5ba18",
+      "normal": [
+        0.0,
+        0.052335956,
+        -0.998629535
+      ],
+      "projected_extents_mm": [
+        200.0,
+        50.0686173
+      ],
+      "surface_family": "plane",
+      "topology": {
+        "inner_loop_count": 0,
+        "inner_loop_edge_count": 0,
+        "outer_loop_count": 1,
+        "outer_loop_edge_count": 8,
+        "wire_count": 1
+      }
+    }
+  ],
+  "geometry_handle": "gh_7ce59e56c6cd175f",
+  "part_measurements": {
+    "bbox_extents_mm": [
+      210.0000002,
+      82.0000002,
+      180.0000002
+    ],
+    "solid_volume_mm3": 1197685.956282528,
+    "total_surface_area_mm2": 182723.282665297
+  },
+  "schema": "g10_m7_unlabeled_geometry_catalog_v1",
+  "units": {
+    "angle": "rad",
+    "area": "mm^2",
+    "length": "mm",
+    "volume": "mm^3"
+  }
+}

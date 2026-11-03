@@ -1,0 +1,26 @@
+{
+  "QM-B": {
+    "cap": 65536,
+    "model": "qwen3.8-max-0902",
+    "provider": "qwen",
+    "reasoning_effort": "xhigh",
+    "service": false,
+    "thinking": true
+  },
+  "QP-B": {
+    "cap": 8192,
+    "model": "qwen3.6-plus",
+    "provider": "qwen",
+    "service": false,
+    "temperature": 0,
+    "thinking": false
+  },
+  "QP-S": {
+    "cap": 8192,
+    "model": "qwen3.6-plus",
+    "provider": "qwen",
+    "service": true,
+    "temperature": 0,
+    "thinking": false
+  }
+}

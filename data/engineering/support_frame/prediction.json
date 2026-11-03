@@ -1,0 +1,5051 @@
+{
+  "schema": "g09_e3_bayesian_step_service_v1",
+  "at_utc": "2026-09-13T14:36:43.915518+00:00",
+  "input_step": {
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Support Frame.stp",
+    "bytes": 27127,
+    "sha256": "79e3a204524f0de7284fd1318e5dd20353c3608b2a933eee12f83ff4ff655e70"
+  },
+  "system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint",
+  "device": "cpu",
+  "source_identity": {
+    "R": {
+      "dataset": "D0",
+      "seed": 20260719,
+      "branch": "R",
+      "configuration": "full",
+      "checkpoint": {
+        "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e6r2_r3_m2_m5_controlled_training_v1/training_runs/final_8370_seed_20260719/best.pt",
+        "bytes": 1403767,
+        "sha256": "491655bfec5591c5a6a1b7f6300294f4818c29bf60b4c1b8dd5ff6078a057054"
+      },
+      "normalization": {
+        "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/output_training_p1_e6r2_r3_graph_v2_2_1_v1/metadata.json",
+        "bytes": 12045,
+        "sha256": "a450467fcefad201130d35bba2fe907ca2ab49a6d504bf85a7d794b5724597ba"
+      },
+      "threshold": {
+        "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e6r2_r3_m2_m5_controlled_training_v1/training_runs/final_8370_seed_20260719/same_instance_threshold_selection.json",
+        "bytes": 20399,
+        "sha256": "9a94f60111ff77fd8c80885188e6886e476ad82140f011a8e44af1761403e02d"
+      },
+      "legacy_decoder_assets": [
+        {
+          "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e3c_seed_matched_candidate_v1/pipelines/old_same_instance_seed_20260718/candidate_model/candidate_threshold_selection.json",
+          "bytes": 1164,
+          "sha256": "448659d94ac868703ca6dfb74ff42095bb2205eac8cc92dc16d5b2f2d4208c8d"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e3c_seed_matched_candidate_v1/pipelines/old_same_instance_seed_20260718/global_decode_selection.json",
+          "bytes": 4316,
+          "sha256": "38d27f363f87df929c5648f27f55b6fb83a1cad7fbeb1458b960339ada844879"
+        }
+      ],
+      "training": {
+        "configuration_freeze": {
+          "path": "W:/python/FEA/dataset_generator/reports/aei_paper_goals_v1/g03/CONFIGURATION_FREEZE.json",
+          "bytes": 133219,
+          "sha256": "8e4bdc1338ab2c375ae74a1930187d6913d09454b4ce81e8138a731a18bd3922"
+        }
+      },
+      "inference_sources": [
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g07/topo_predictor.py",
+          "bytes": 5416,
+          "sha256": "528d549dc71b185ebcd66429e8a7822ff73267587d819f1f090f740d6a5f85db"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g07/step_entry.py",
+          "bytes": 11156,
+          "sha256": "a34f494d20c01eafc14ad5c9695174916888fa5658b84550b0ca182eb37ad288"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g07/decoder.py",
+          "bytes": 12656,
+          "sha256": "0531972f1635ad8547db51e871729b97d68481340809aa1669ed12edd7434228"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g03/inference.py",
+          "bytes": 6528,
+          "sha256": "a70b85d3ee15a00268b871755252dfb652234b7d3007f6142b83726b90b15fa8"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g03/stages.py",
+          "bytes": 13383,
+          "sha256": "f2ce5224028230246e380a2a91d6bcc5f05547bdc9dbc30a5d6b99f4bd7bce45"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g03/ablations.py",
+          "bytes": 6905,
+          "sha256": "f0716a27ea59b799ce53454b059ffdc9cfaefde5ad1c7ac71ddc31edacffa6e1"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g09/v09_predict_topo.py",
+          "bytes": 12028,
+          "sha256": "f6565818a158814de9688d1269c6117f85f06f57d56bad4985438daaa92ac30b"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g09/candidate_pool.py",
+          "bytes": 10503,
+          "sha256": "dc25f4d1f62f53d21e1b6604c830eda744db921c16f911fe2200c34941c994e5"
+        }
+      ]
+    },
+    "Q": {
+      "dataset": "D0",
+      "seed": 20260719,
+      "branch": "Q",
+      "configuration": "dense_instance",
+      "checkpoint": {
+        "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g03/training_runs/dense_instance/seed_20260719/best.pt",
+        "bytes": 1397751,
+        "sha256": "f6ca9bc84d88bc540134b598353b2a2a0f9b83e1b2779c986b2ecc6577bfb70e"
+      },
+      "normalization": {
+        "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/output_training_p1_e6r2_r3_graph_v2_2_1_v1/metadata.json",
+        "bytes": 12045,
+        "sha256": "a450467fcefad201130d35bba2fe907ca2ab49a6d504bf85a7d794b5724597ba"
+      },
+      "threshold": {
+        "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g03/training_runs/dense_instance/seed_20260719/same_instance_threshold_selection.json",
+        "bytes": 19904,
+        "sha256": "96ee358d24dcb1946531c123281826ad53f0e0580d7ef0c17bc729dc40e8d3c8"
+      },
+      "legacy_decoder_assets": [
+        {
+          "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e3c_seed_matched_candidate_v1/pipelines/old_same_instance_seed_20260718/candidate_model/candidate_threshold_selection.json",
+          "bytes": 1164,
+          "sha256": "448659d94ac868703ca6dfb74ff42095bb2205eac8cc92dc16d5b2f2d4208c8d"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e3c_seed_matched_candidate_v1/pipelines/old_same_instance_seed_20260718/global_decode_selection.json",
+          "bytes": 4316,
+          "sha256": "38d27f363f87df929c5648f27f55b6fb83a1cad7fbeb1458b960339ada844879"
+        }
+      ],
+      "training": {
+        "metrics": {
+          "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g03/training_runs/dense_instance/seed_20260719/metrics.json",
+          "bytes": 10014,
+          "sha256": "8718246756eea5140a74b48a5da18c163185af35505d1d85518d1d2fe3ad30f2"
+        },
+        "configuration_freeze": {
+          "path": "W:/python/FEA/dataset_generator/reports/aei_paper_goals_v1/g03/CONFIGURATION_FREEZE.json",
+          "bytes": 133219,
+          "sha256": "8e4bdc1338ab2c375ae74a1930187d6913d09454b4ce81e8138a731a18bd3922"
+        }
+      },
+      "inference_sources": [
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g07/topo_predictor.py",
+          "bytes": 5416,
+          "sha256": "528d549dc71b185ebcd66429e8a7822ff73267587d819f1f090f740d6a5f85db"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g07/step_entry.py",
+          "bytes": 11156,
+          "sha256": "a34f494d20c01eafc14ad5c9695174916888fa5658b84550b0ca182eb37ad288"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g07/decoder.py",
+          "bytes": 12656,
+          "sha256": "0531972f1635ad8547db51e871729b97d68481340809aa1669ed12edd7434228"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g03/inference.py",
+          "bytes": 6528,
+          "sha256": "a70b85d3ee15a00268b871755252dfb652234b7d3007f6142b83726b90b15fa8"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g03/stages.py",
+          "bytes": 13383,
+          "sha256": "f2ce5224028230246e380a2a91d6bcc5f05547bdc9dbc30a5d6b99f4bd7bce45"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g03/ablations.py",
+          "bytes": 6905,
+          "sha256": "f0716a27ea59b799ce53454b059ffdc9cfaefde5ad1c7ac71ddc31edacffa6e1"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g09/v09_predict_topo.py",
+          "bytes": 12028,
+          "sha256": "f6565818a158814de9688d1269c6117f85f06f57d56bad4985438daaa92ac30b"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g09/candidate_pool.py",
+          "bytes": 10503,
+          "sha256": "dc25f4d1f62f53d21e1b6604c830eda744db921c16f911fe2200c34941c994e5"
+        }
+      ]
+    },
+    "E3": {
+      "scorer": {
+        "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g09/e_joint_scorer/seed_20260719/COMPLETE.json",
+        "bytes": 1781,
+        "sha256": "e5ad625bd45eb5a066222b177125e8adb34818dd65d425e19d1a20eae2532808"
+      },
+      "protocol": {
+        "path": "W:/python/FEA/dataset_generator/reports/aei_paper_goals_v1/g09/E3_BAYESIAN_CALIBRATION_PROTOCOL.json",
+        "bytes": 2257,
+        "sha256": "0e280a6444da83508fdbc8165ee168e08b2fd903b363b9b8bb4b1f3c627f0b76"
+      },
+      "prior": {
+        "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g09/e_joint_source_priors/D0_train_seed_20260719.json",
+        "bytes": 29442,
+        "sha256": "76fe71d59527ec26738f0090ffe8ddf8116e5eda19d923b1939adaee4463cd6c"
+      }
+    },
+    "geometry_entry": {
+      "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g07/step_entry.py",
+      "bytes": 11156,
+      "sha256": "a34f494d20c01eafc14ad5c9695174916888fa5658b84550b0ca182eb37ad288"
+    },
+    "service": {
+      "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g09/infer_step_e3.py",
+      "bytes": 14210,
+      "sha256": "098ccbe1bfc5f1b8b0dbbaec4caae230261116fdcc5203f7f2edc535093fc1f9"
+    }
+  },
+  "face_macro_classes": [
+    "web",
+    "web",
+    "stock",
+    "web",
+    "stock",
+    "stock",
+    "stock",
+    "web",
+    "stock",
+    "stock",
+    "stock",
+    "web",
+    "stock",
+    "web",
+    "web",
+    "web",
+    "stock",
+    "stock",
+    "stock",
+    "stock"
+  ],
+  "objects": [
+    {
+      "class": "web",
+      "faces": [
+        3,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "class": "web",
+      "faces": [
+        0,
+        1,
+        7,
+        13
+      ]
+    }
+  ],
+  "feature_objects": [
+    {
+      "object_index": 0,
+      "class": "web",
+      "graph_node_indices": [
+        3,
+        11,
+        14,
+        15
+      ],
+      "original_face_numbers": [
+        4,
+        12,
+        15,
+        16
+      ],
+      "roles": {
+        "whole_feature": {
+          "object_index": 0,
+          "class": "web",
+          "role": "whole_feature",
+          "face_numbers": [
+            4,
+            12,
+            15,
+            16
+          ],
+          "area_mm2": 10786.375059364913,
+          "role_evidence": {
+            "method": "within_recognized_instance",
+            "instance_faces": [
+              4,
+              12,
+              15,
+              16
+            ]
+          }
+        }
+      },
+      "unavailable_roles": {},
+      "parameters": {
+        "thickness_mm": 4.698463103929661
+      }
+    },
+    {
+      "object_index": 1,
+      "class": "web",
+      "graph_node_indices": [
+        0,
+        1,
+        7,
+        13
+      ],
+      "original_face_numbers": [
+        1,
+        2,
+        8,
+        14
+      ],
+      "roles": {
+        "whole_feature": {
+          "object_index": 1,
+          "class": "web",
+          "role": "whole_feature",
+          "face_numbers": [
+            1,
+            2,
+            8,
+            14
+          ],
+          "area_mm2": 10786.375059364891,
+          "role_evidence": {
+            "method": "within_recognized_instance",
+            "instance_faces": [
+              1,
+              2,
+              8,
+              14
+            ]
+          }
+        }
+      },
+      "unavailable_roles": {},
+      "parameters": {
+        "thickness_mm": 4.698463103929479
+      }
+    }
+  ],
+  "spacing_if_three_counterbores": {},
+  "evidence_trace": {
+    "graph_digest": "c2ba9775259c889acaf1c8d7514359f13f023dd356e8432f497ddd4c9793b138",
+    "guard_change_count": 0,
+    "R_prediction": {
+      "faces": [
+        {
+          "idx": 0,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.9896845817565918,
+          "macro_probabilities": {
+            "stock": 0.00010304249735781923,
+            "through_hole_round": 0.0008076383383013308,
+            "blind_hole_round": 0.0005873209447599947,
+            "stepped_hole_round": 0.00039512207149527967,
+            "counterbore_hole": 0.0002257372543681413,
+            "countersink_hole": 0.0002754366723820567,
+            "obround_hole": 0.000541603600140661,
+            "slot_u": 0.0005685255746357143,
+            "slot_rect": 0.000644716783426702,
+            "pocket_rect": 0.0008190032094717026,
+            "pocket_circular": 0.0009377417154610157,
+            "cylinder_boss": 0.0005123111768625677,
+            "rib": 0.0005358806229196489,
+            "web": 0.9896845817565918,
+            "rectangular_boss": 0.00032288191141560674,
+            "fillet": 0.000300091749522835,
+            "chamfer": 0.0003952374099753797,
+            "slot_v": 0.0011445552809163928,
+            "slot_o": 0.0011986494064331055
+          },
+          "semantic_label": 45,
+          "semantic_confidence": 0.9915952086448669,
+          "embedding": []
+        },
+        {
+          "idx": 1,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.9896845817565918,
+          "macro_probabilities": {
+            "stock": 0.00010304239549441263,
+            "through_hole_round": 0.0008076371741481125,
+            "blind_hole_round": 0.0005873203626833856,
+            "stepped_hole_round": 0.00039512169314548373,
+            "counterbore_hole": 0.00022573703608941287,
+            "countersink_hole": 0.0002754364104475826,
+            "obround_hole": 0.0005416030762717128,
+            "slot_u": 0.0005685250507667661,
+            "slot_rect": 0.0006447162013500929,
+            "pocket_rect": 0.0008190025109797716,
+            "pocket_circular": 0.0009377407841384411,
+            "cylinder_boss": 0.0005123107112012804,
+            "rib": 0.0005358803318813443,
+            "web": 0.9896845817565918,
+            "rectangular_boss": 0.00032288130023516715,
+            "fillet": 0.00030009145848453045,
+            "chamfer": 0.0003952370025217533,
+            "slot_v": 0.0011445546988397837,
+            "slot_o": 0.0011986477766186
+          },
+          "semantic_label": 45,
+          "semantic_confidence": 0.9915952086448669,
+          "embedding": []
+        },
+        {
+          "idx": 2,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9643309712409973,
+          "macro_probabilities": {
+            "stock": 0.9643309712409973,
+            "through_hole_round": 0.0008160909055732191,
+            "blind_hole_round": 0.0018223095685243607,
+            "stepped_hole_round": 0.0009647373808547854,
+            "counterbore_hole": 0.0011650841915979981,
+            "countersink_hole": 0.0019243790302425623,
+            "obround_hole": 0.0010572478640824556,
+            "slot_u": 0.0021498692221939564,
+            "slot_rect": 0.0017521838890388608,
+            "pocket_rect": 0.0015000342391431332,
+            "pocket_circular": 0.0028260424733161926,
+            "cylinder_boss": 0.003083421615883708,
+            "rib": 0.001916480832733214,
+            "web": 0.003437409643083811,
+            "rectangular_boss": 0.0015395252266898751,
+            "fillet": 0.001469458220526576,
+            "chamfer": 0.002559368498623371,
+            "slot_v": 0.0024558070581406355,
+            "slot_o": 0.003229572670534253
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.972378134727478,
+          "embedding": []
+        },
+        {
+          "idx": 3,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.9930388331413269,
+          "macro_probabilities": {
+            "stock": 0.00014364886737894267,
+            "through_hole_round": 0.00042840378591790795,
+            "blind_hole_round": 0.00024997463333420455,
+            "stepped_hole_round": 0.0002631628012750298,
+            "counterbore_hole": 0.0002809599682223052,
+            "countersink_hole": 0.0004150537424720824,
+            "obround_hole": 0.00047691751387901604,
+            "slot_u": 0.0004780242743436247,
+            "slot_rect": 0.00038093773764558136,
+            "pocket_rect": 0.00029105113935656846,
+            "pocket_circular": 0.0005322607466951013,
+            "cylinder_boss": 0.0006388179608620703,
+            "rib": 0.000584012595936656,
+            "web": 0.9930388331413269,
+            "rectangular_boss": 0.00028522525099106133,
+            "fillet": 0.00030845412402413785,
+            "chamfer": 0.00015545141650363803,
+            "slot_v": 0.00046808377373963594,
+            "slot_o": 0.0005806937115266919
+          },
+          "semantic_label": 44,
+          "semantic_confidence": 0.995078444480896,
+          "embedding": []
+        },
+        {
+          "idx": 4,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9635102152824402,
+          "macro_probabilities": {
+            "stock": 0.9635102152824402,
+            "through_hole_round": 0.0009865628089755774,
+            "blind_hole_round": 0.0019047213718295097,
+            "stepped_hole_round": 0.0010688345646485686,
+            "counterbore_hole": 0.0013443155912682414,
+            "countersink_hole": 0.001992039382457733,
+            "obround_hole": 0.0010484893573448062,
+            "slot_u": 0.002405625768005848,
+            "slot_rect": 0.0019017402082681656,
+            "pocket_rect": 0.001527152955532074,
+            "pocket_circular": 0.0026385628152638674,
+            "cylinder_boss": 0.0031757683027535677,
+            "rib": 0.0019288671901449561,
+            "web": 0.0035190300550311804,
+            "rectangular_boss": 0.0017891095485538244,
+            "fillet": 0.0012949641095474362,
+            "chamfer": 0.002098601311445236,
+            "slot_v": 0.002319464460015297,
+            "slot_o": 0.0035460737999528646
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9721242785453796,
+          "embedding": []
+        },
+        {
+          "idx": 5,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9685049653053284,
+          "macro_probabilities": {
+            "stock": 0.9685049653053284,
+            "through_hole_round": 0.0009156010346487164,
+            "blind_hole_round": 0.001440876629203558,
+            "stepped_hole_round": 0.0013812839752063155,
+            "counterbore_hole": 0.0014243650948628783,
+            "countersink_hole": 0.0011883628321811557,
+            "obround_hole": 0.00100576167460531,
+            "slot_u": 0.0032520380336791277,
+            "slot_rect": 0.0020422544330358505,
+            "pocket_rect": 0.0015820180997252464,
+            "pocket_circular": 0.0028302944265305996,
+            "cylinder_boss": 0.0024861760903149843,
+            "rib": 0.0016512235160917044,
+            "web": 0.0013470809208229184,
+            "rectangular_boss": 0.0017662292812019587,
+            "fillet": 0.0011849632719531655,
+            "chamfer": 0.0012155768927186728,
+            "slot_v": 0.002123604528605938,
+            "slot_o": 0.0026572574861347675
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9747936129570007,
+          "embedding": []
+        },
+        {
+          "idx": 6,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9648371934890747,
+          "macro_probabilities": {
+            "stock": 0.9648371934890747,
+            "through_hole_round": 0.0013779762666672468,
+            "blind_hole_round": 0.0017415680922567844,
+            "stepped_hole_round": 0.0011309754336252809,
+            "counterbore_hole": 0.0014355664607137442,
+            "countersink_hole": 0.0016737733967602253,
+            "obround_hole": 0.0013599754311144352,
+            "slot_u": 0.001962633104994893,
+            "slot_rect": 0.002592268632724881,
+            "pocket_rect": 0.0018335679778829217,
+            "pocket_circular": 0.003010662505403161,
+            "cylinder_boss": 0.0031811187509447336,
+            "rib": 0.001534844865091145,
+            "web": 0.00221991166472435,
+            "rectangular_boss": 0.0019336516270413995,
+            "fillet": 0.001706085866317153,
+            "chamfer": 0.001457434380427003,
+            "slot_v": 0.0024309379514306784,
+            "slot_o": 0.0025798077695071697
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9716601371765137,
+          "embedding": []
+        },
+        {
+          "idx": 7,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.9934356212615967,
+          "macro_probabilities": {
+            "stock": 0.00023434616741724312,
+            "through_hole_round": 0.00034111656714230776,
+            "blind_hole_round": 0.00023339847393799573,
+            "stepped_hole_round": 0.00025393557734787464,
+            "counterbore_hole": 0.00029129604808986187,
+            "countersink_hole": 0.00040937596349976957,
+            "obround_hole": 0.00037095556035637856,
+            "slot_u": 0.0005061322008259594,
+            "slot_rect": 0.0003548177774064243,
+            "pocket_rect": 0.0002419029624434188,
+            "pocket_circular": 0.0004830106918234378,
+            "cylinder_boss": 0.0005361945950426161,
+            "rib": 0.0004699576529674232,
+            "web": 0.9934356212615967,
+            "rectangular_boss": 0.0002828059659805149,
+            "fillet": 0.00029949299641884863,
+            "chamfer": 0.0002382748352829367,
+            "slot_v": 0.0004159609379712492,
+            "slot_o": 0.0006013708189129829
+          },
+          "semantic_label": 44,
+          "semantic_confidence": 0.9953182339668274,
+          "embedding": []
+        },
+        {
+          "idx": 8,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9589241147041321,
+          "macro_probabilities": {
+            "stock": 0.9589241147041321,
+            "through_hole_round": 0.00150352343916893,
+            "blind_hole_round": 0.002197745954617858,
+            "stepped_hole_round": 0.0010431853588670492,
+            "counterbore_hole": 0.001721494016237557,
+            "countersink_hole": 0.0016230149194598198,
+            "obround_hole": 0.0017906604334712029,
+            "slot_u": 0.0025968223344534636,
+            "slot_rect": 0.002782057272270322,
+            "pocket_rect": 0.002158135874196887,
+            "pocket_circular": 0.003355231834575534,
+            "cylinder_boss": 0.003095469670370221,
+            "rib": 0.0017775058513507247,
+            "web": 0.0021634555887430906,
+            "rectangular_boss": 0.00293071661144495,
+            "fillet": 0.002133555244654417,
+            "chamfer": 0.0025556667242199183,
+            "slot_v": 0.0025189965963363647,
+            "slot_o": 0.0031286415178328753
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9668453931808472,
+          "embedding": []
+        },
+        {
+          "idx": 9,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.969810962677002,
+          "macro_probabilities": {
+            "stock": 0.969810962677002,
+            "through_hole_round": 0.0009757440420798957,
+            "blind_hole_round": 0.001433507539331913,
+            "stepped_hole_round": 0.0012830831110477448,
+            "counterbore_hole": 0.0014666543575003743,
+            "countersink_hole": 0.001126580755226314,
+            "obround_hole": 0.001079806126654148,
+            "slot_u": 0.0031412255484610796,
+            "slot_rect": 0.0020171799696981907,
+            "pocket_rect": 0.0014212509850040078,
+            "pocket_circular": 0.0021350025199353695,
+            "cylinder_boss": 0.0024481648579239845,
+            "rib": 0.0016143558314070106,
+            "web": 0.0016158944927155972,
+            "rectangular_boss": 0.001991795841604471,
+            "fillet": 0.0011130999773740768,
+            "chamfer": 0.0011414235923439264,
+            "slot_v": 0.0017846084665507078,
+            "slot_o": 0.002399543998762965
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9778243899345398,
+          "embedding": []
+        },
+        {
+          "idx": 10,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9589241147041321,
+          "macro_probabilities": {
+            "stock": 0.9589241147041321,
+            "through_hole_round": 0.00150352343916893,
+            "blind_hole_round": 0.002197747118771076,
+            "stepped_hole_round": 0.0010431858245283365,
+            "counterbore_hole": 0.001721494016237557,
+            "countersink_hole": 0.0016230149194598198,
+            "obround_hole": 0.0017906620632857084,
+            "slot_u": 0.0025968237314373255,
+            "slot_rect": 0.00278205843642354,
+            "pocket_rect": 0.0021581368055194616,
+            "pocket_circular": 0.0033552334643900394,
+            "cylinder_boss": 0.0030954713001847267,
+            "rib": 0.0017775058513507247,
+            "web": 0.00216345745138824,
+            "rectangular_boss": 0.002930718008428812,
+            "fillet": 0.002133555244654417,
+            "chamfer": 0.0025556678883731365,
+            "slot_v": 0.002518997760489583,
+            "slot_o": 0.0031286415178328753
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9668453931808472,
+          "embedding": []
+        },
+        {
+          "idx": 11,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.9934356212615967,
+          "macro_probabilities": {
+            "stock": 0.0002343459491385147,
+            "through_hole_round": 0.00034111624700017273,
+            "blind_hole_round": 0.0002333982556592673,
+            "stepped_hole_round": 0.00025393557734787464,
+            "counterbore_hole": 0.0002912957570515573,
+            "countersink_hole": 0.00040937558514997363,
+            "obround_hole": 0.0003709553857333958,
+            "slot_u": 0.0005061319679953158,
+            "slot_rect": 0.0003548174281604588,
+            "pocket_rect": 0.00024190272961277515,
+            "pocket_circular": 0.00048300999333150685,
+            "cylinder_boss": 0.0005361943040043116,
+            "rib": 0.00046995721640996635,
+            "web": 0.9934356212615967,
+            "rectangular_boss": 0.0002828056749422103,
+            "fillet": 0.00029949299641884863,
+            "chamfer": 0.0002382743841735646,
+            "slot_v": 0.00041596053051762283,
+            "slot_o": 0.0006013699457980692
+          },
+          "semantic_label": 44,
+          "semantic_confidence": 0.9953182339668274,
+          "embedding": []
+        },
+        {
+          "idx": 12,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9648371934890747,
+          "macro_probabilities": {
+            "stock": 0.9648371934890747,
+            "through_hole_round": 0.0013779762666672468,
+            "blind_hole_round": 0.0017415680922567844,
+            "stepped_hole_round": 0.0011309754336252809,
+            "counterbore_hole": 0.0014355664607137442,
+            "countersink_hole": 0.0016737733967602253,
+            "obround_hole": 0.0013599754311144352,
+            "slot_u": 0.001962633104994893,
+            "slot_rect": 0.002592268632724881,
+            "pocket_rect": 0.0018335679778829217,
+            "pocket_circular": 0.003010662505403161,
+            "cylinder_boss": 0.0031811187509447336,
+            "rib": 0.001534844865091145,
+            "web": 0.00221991166472435,
+            "rectangular_boss": 0.0019336516270413995,
+            "fillet": 0.001706085866317153,
+            "chamfer": 0.001457434380427003,
+            "slot_v": 0.0024309379514306784,
+            "slot_o": 0.0025798077695071697
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9716601371765137,
+          "embedding": []
+        },
+        {
+          "idx": 13,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.9930388331413269,
+          "macro_probabilities": {
+            "stock": 0.00014364899834617972,
+            "through_hole_round": 0.00042840419337153435,
+            "blind_hole_round": 0.00024997463333420455,
+            "stepped_hole_round": 0.0002631630632095039,
+            "counterbore_hole": 0.0002809602301567793,
+            "countersink_hole": 0.00041505414992570877,
+            "obround_hole": 0.00047691797954030335,
+            "slot_u": 0.000478024740004912,
+            "slot_rect": 0.0003809381159953773,
+            "pocket_rect": 0.0002910517214331776,
+            "pocket_circular": 0.0005322612123563886,
+            "cylinder_boss": 0.0006388179608620703,
+            "rib": 0.000584012595936656,
+            "web": 0.9930388331413269,
+            "rectangular_boss": 0.00028522551292553544,
+            "fillet": 0.0003084544150624424,
+            "chamfer": 0.00015545157657470554,
+            "slot_v": 0.0004680842102970928,
+            "slot_o": 0.000580694293603301
+          },
+          "semantic_label": 44,
+          "semantic_confidence": 0.995078444480896,
+          "embedding": []
+        },
+        {
+          "idx": 14,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.9896845817565918,
+          "macro_probabilities": {
+            "stock": 0.00010304239549441263,
+            "through_hole_round": 0.0008076375816017389,
+            "blind_hole_round": 0.000587320071645081,
+            "stepped_hole_round": 0.00039512169314548373,
+            "counterbore_hole": 0.00022573703608941287,
+            "countersink_hole": 0.0002754364104475826,
+            "obround_hole": 0.0005416030762717128,
+            "slot_u": 0.0005685250507667661,
+            "slot_rect": 0.0006447162013500929,
+            "pocket_rect": 0.0008190025109797716,
+            "pocket_circular": 0.0009377407841384411,
+            "cylinder_boss": 0.0005123107112012804,
+            "rib": 0.0005358800990507007,
+            "web": 0.9896845817565918,
+            "rectangular_boss": 0.0003228815912734717,
+            "fillet": 0.00030009119655005634,
+            "chamfer": 0.0003952370025217533,
+            "slot_v": 0.0011445541167631745,
+            "slot_o": 0.0011986477766186
+          },
+          "semantic_label": 45,
+          "semantic_confidence": 0.9915952086448669,
+          "embedding": []
+        },
+        {
+          "idx": 15,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.9896845817565918,
+          "macro_probabilities": {
+            "stock": 0.00010304239549441263,
+            "through_hole_round": 0.0008076375816017389,
+            "blind_hole_round": 0.000587320071645081,
+            "stepped_hole_round": 0.00039512169314548373,
+            "counterbore_hole": 0.00022573703608941287,
+            "countersink_hole": 0.0002754364104475826,
+            "obround_hole": 0.0005416030762717128,
+            "slot_u": 0.0005685250507667661,
+            "slot_rect": 0.0006447162013500929,
+            "pocket_rect": 0.0008190025109797716,
+            "pocket_circular": 0.0009377407841384411,
+            "cylinder_boss": 0.0005123107112012804,
+            "rib": 0.0005358800990507007,
+            "web": 0.9896845817565918,
+            "rectangular_boss": 0.0003228815912734717,
+            "fillet": 0.00030009119655005634,
+            "chamfer": 0.0003952370025217533,
+            "slot_v": 0.0011445541167631745,
+            "slot_o": 0.0011986477766186
+          },
+          "semantic_label": 45,
+          "semantic_confidence": 0.9915952086448669,
+          "embedding": []
+        },
+        {
+          "idx": 16,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9569242000579834,
+          "macro_probabilities": {
+            "stock": 0.9569242000579834,
+            "through_hole_round": 0.002029439900070429,
+            "blind_hole_round": 0.0019672743510454893,
+            "stepped_hole_round": 0.0011784429661929607,
+            "counterbore_hole": 0.0019555564504116774,
+            "countersink_hole": 0.001693506259471178,
+            "obround_hole": 0.00161211215890944,
+            "slot_u": 0.0027947172056883574,
+            "slot_rect": 0.0025303871370851994,
+            "pocket_rect": 0.0024023333098739386,
+            "pocket_circular": 0.0043225339613854885,
+            "cylinder_boss": 0.0031454963609576225,
+            "rib": 0.0017178127309307456,
+            "web": 0.0033375765196979046,
+            "rectangular_boss": 0.0028185078408569098,
+            "fillet": 0.00198357948102057,
+            "chamfer": 0.0016475848387926817,
+            "slot_v": 0.0019889166578650475,
+            "slot_o": 0.003949854057282209
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9662628173828125,
+          "embedding": []
+        },
+        {
+          "idx": 17,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9569242000579834,
+          "macro_probabilities": {
+            "stock": 0.9569242000579834,
+            "through_hole_round": 0.0020294389687478542,
+            "blind_hole_round": 0.001967275282368064,
+            "stepped_hole_round": 0.0011784429661929607,
+            "counterbore_hole": 0.0019555564504116774,
+            "countersink_hole": 0.001693506259471178,
+            "obround_hole": 0.0016121129738166928,
+            "slot_u": 0.0027947172056883574,
+            "slot_rect": 0.002530385972931981,
+            "pocket_rect": 0.0024023333098739386,
+            "pocket_circular": 0.004322536289691925,
+            "cylinder_boss": 0.0031454963609576225,
+            "rib": 0.0017178127309307456,
+            "web": 0.003337574889883399,
+            "rectangular_boss": 0.0028185078408569098,
+            "fillet": 0.00198357948102057,
+            "chamfer": 0.0016475848387926817,
+            "slot_v": 0.0019889166578650475,
+            "slot_o": 0.003949854057282209
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9662628173828125,
+          "embedding": []
+        },
+        {
+          "idx": 18,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9643359780311584,
+          "macro_probabilities": {
+            "stock": 0.9643359780311584,
+            "through_hole_round": 0.0014506862498819828,
+            "blind_hole_round": 0.0017490767640993,
+            "stepped_hole_round": 0.0011994093656539917,
+            "counterbore_hole": 0.001422410481609404,
+            "countersink_hole": 0.0016396797727793455,
+            "obround_hole": 0.0013310436625033617,
+            "slot_u": 0.0021671645808964968,
+            "slot_rect": 0.0025726452004164457,
+            "pocket_rect": 0.001873006927780807,
+            "pocket_circular": 0.0033287648111581802,
+            "cylinder_boss": 0.003213329706341028,
+            "rib": 0.0016341394511982799,
+            "web": 0.002322418848052621,
+            "rectangular_boss": 0.001895676483400166,
+            "fillet": 0.0015820771222934127,
+            "chamfer": 0.001210561371408403,
+            "slot_v": 0.002496116328984499,
+            "slot_o": 0.0025758170522749424
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9709892272949219,
+          "embedding": []
+        },
+        {
+          "idx": 19,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9643359780311584,
+          "macro_probabilities": {
+            "stock": 0.9643359780311584,
+            "through_hole_round": 0.0014506862498819828,
+            "blind_hole_round": 0.0017490767640993,
+            "stepped_hole_round": 0.0011994093656539917,
+            "counterbore_hole": 0.001422410481609404,
+            "countersink_hole": 0.0016396797727793455,
+            "obround_hole": 0.0013310436625033617,
+            "slot_u": 0.0021671645808964968,
+            "slot_rect": 0.0025726452004164457,
+            "pocket_rect": 0.001873006927780807,
+            "pocket_circular": 0.0033287648111581802,
+            "cylinder_boss": 0.003213329706341028,
+            "rib": 0.0016341394511982799,
+            "web": 0.002322418848052621,
+            "rectangular_boss": 0.001895676483400166,
+            "fillet": 0.0015820771222934127,
+            "chamfer": 0.001210561371408403,
+            "slot_v": 0.002496116328984499,
+            "slot_o": 0.0025758170522749424
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9709892272949219,
+          "embedding": []
+        }
+      ],
+      "edge_probabilities": [
+        1.1852072248075274e-06,
+        9.838057479782947e-08,
+        0.9999934434890747,
+        0.9999947547912598,
+        1.6143100083354511e-06,
+        1.510596092657579e-07,
+        0.9999971389770508,
+        0.999997615814209,
+        0.9999934434890747,
+        0.9999947547912598,
+        1.1852072248075274e-06,
+        9.838057479782947e-08,
+        0.9999971389770508,
+        0.999997615814209,
+        1.614311713638017e-06,
+        1.510596092657579e-07,
+        9.838057479782947e-08,
+        1.1852072248075274e-06,
+        1.0894678048600781e-08,
+        1.6468514729695016e-07,
+        9.838057479782947e-08,
+        1.1852072248075274e-06,
+        6.494842996751515e-10,
+        1.1187125892320182e-08,
+        1.0894678048600781e-08,
+        1.646849909775483e-07,
+        6.494842996751515e-10,
+        1.118710368785969e-08,
+        2.5937225457683954e-12,
+        4.328606917347599e-12,
+        4.404637678895318e-12,
+        8.876966002546727e-12,
+        2.5937225457683954e-12,
+        4.328606917347599e-12,
+        4.404637678895318e-12,
+        8.876966002546727e-12,
+        0.999997615814209,
+        0.9999971389770508,
+        2.2878596439568355e-07,
+        1.6415853565376892e-08,
+        0.999997615814209,
+        0.9999971389770508,
+        1.6415853565376892e-08,
+        2.2878596439568355e-07,
+        9.805920520022937e-10,
+        1.5270645192799748e-08,
+        1.510596092657579e-07,
+        1.6143100083354511e-06,
+        9.805901646231518e-10,
+        1.5270614994733478e-08,
+        1.510596092657579e-07,
+        1.6143100083354511e-06,
+        3.5123751129795266e-11,
+        8.102377102581215e-11,
+        1.0853138700250842e-11,
+        1.373426372630604e-11,
+        3.5123751129795266e-11,
+        8.102377102581215e-11,
+        1.0853138700250842e-11,
+        1.3734314900648581e-11,
+        8.002905005355387e-09,
+        1.2256693437961985e-08,
+        1.5075617199045155e-08,
+        2.5453513075035517e-08,
+        8.002905005355387e-09,
+        1.2256693437961985e-08,
+        1.5075617199045155e-08,
+        2.5453513075035517e-08,
+        2.445441893428324e-08,
+        3.172941021034603e-08,
+        2.445441893428324e-08,
+        3.172941021034603e-08,
+        2.980987403589097e-07,
+        5.412271661953127e-07,
+        4.596516944843643e-08,
+        4.7384840939912465e-08,
+        2.980984561418154e-07,
+        5.41226654604543e-07,
+        2.069325120146459e-07,
+        3.2105853620123526e-07,
+        4.7384929757754435e-08,
+        4.596516944843643e-08,
+        2.069325120146459e-07,
+        3.210582235624315e-07,
+        2.980987403589097e-07,
+        5.412276777860825e-07,
+        2.980984561418154e-07,
+        5.41226654604543e-07,
+        0.9999947547912598,
+        0.9999934434890747,
+        0.9999947547912598,
+        0.9999934434890747,
+        2.445441893428324e-08,
+        3.172941021034603e-08,
+        2.445441893428324e-08,
+        3.172941021034603e-08
+      ]
+    },
+    "Q_prediction": {
+      "faces": [
+        {
+          "idx": 0,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.9928533434867859,
+          "macro_probabilities": {
+            "stock": 5.699127723346464e-05,
+            "through_hole_round": 0.0004916180041618645,
+            "blind_hole_round": 0.0005334079032763839,
+            "stepped_hole_round": 0.0001875762245617807,
+            "counterbore_hole": 0.00030470589990727603,
+            "countersink_hole": 0.0002746759564615786,
+            "obround_hole": 0.00032722484320402145,
+            "slot_u": 0.00036590240779332817,
+            "slot_rect": 0.0006918286089785397,
+            "pocket_rect": 0.00035281790769658983,
+            "pocket_circular": 0.00043710152385756373,
+            "cylinder_boss": 0.00048604735638946295,
+            "rib": 0.0005215215496718884,
+            "web": 0.9928533434867859,
+            "rectangular_boss": 0.00021724222460761666,
+            "fillet": 0.000298653932986781,
+            "chamfer": 0.0006179254851303995,
+            "slot_v": 0.0005934313521720469,
+            "slot_o": 0.00038798776222392917
+          },
+          "semantic_label": 45,
+          "semantic_confidence": 0.9951379895210266,
+          "embedding": []
+        },
+        {
+          "idx": 1,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.9928533434867859,
+          "macro_probabilities": {
+            "stock": 5.699127723346464e-05,
+            "through_hole_round": 0.0004916177713312209,
+            "blind_hole_round": 0.0005334076704457402,
+            "stepped_hole_round": 0.0001875762245617807,
+            "counterbore_hole": 0.00030470589990727603,
+            "countersink_hole": 0.0002746759564615786,
+            "obround_hole": 0.00032722484320402145,
+            "slot_u": 0.00036590240779332817,
+            "slot_rect": 0.0006918286089785397,
+            "pocket_rect": 0.00035281790769658983,
+            "pocket_circular": 0.0004371012910269201,
+            "cylinder_boss": 0.00048604735638946295,
+            "rib": 0.0005215213168412447,
+            "web": 0.9928533434867859,
+            "rectangular_boss": 0.00021724222460761666,
+            "fillet": 0.000298653932986781,
+            "chamfer": 0.0006179254851303995,
+            "slot_v": 0.0005934313521720469,
+            "slot_o": 0.00038798776222392917
+          },
+          "semantic_label": 45,
+          "semantic_confidence": 0.9951379895210266,
+          "embedding": []
+        },
+        {
+          "idx": 2,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9622347950935364,
+          "macro_probabilities": {
+            "stock": 0.9622347950935364,
+            "through_hole_round": 0.0007306959596462548,
+            "blind_hole_round": 0.0020253208931535482,
+            "stepped_hole_round": 0.0011447555152699351,
+            "counterbore_hole": 0.0013477766187861562,
+            "countersink_hole": 0.002006775001063943,
+            "obround_hole": 0.0009082031319849193,
+            "slot_u": 0.002095514442771673,
+            "slot_rect": 0.0019221417605876923,
+            "pocket_rect": 0.0015308224828913808,
+            "pocket_circular": 0.0029695259872823954,
+            "cylinder_boss": 0.004031009506434202,
+            "rib": 0.0019549226853996515,
+            "web": 0.003409860422834754,
+            "rectangular_boss": 0.0018214681185781956,
+            "fillet": 0.0017091033514589071,
+            "chamfer": 0.0019346076296642423,
+            "slot_v": 0.00313868117518723,
+            "slot_o": 0.0030840514227747917
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9715543389320374,
+          "embedding": []
+        },
+        {
+          "idx": 3,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.993040919303894,
+          "macro_probabilities": {
+            "stock": 8.374803292099386e-05,
+            "through_hole_round": 0.00034455719287507236,
+            "blind_hole_round": 0.00038622738793492317,
+            "stepped_hole_round": 0.00022150563017930835,
+            "counterbore_hole": 0.0002460379328113049,
+            "countersink_hole": 0.00031107832910493016,
+            "obround_hole": 0.0004545095725916326,
+            "slot_u": 0.000382875616196543,
+            "slot_rect": 0.0005531805800274014,
+            "pocket_rect": 0.000435055437264964,
+            "pocket_circular": 0.0007287805201485753,
+            "cylinder_boss": 0.0006663925014436245,
+            "rib": 0.00034670744207687676,
+            "web": 0.993040919303894,
+            "rectangular_boss": 0.0002751208667177707,
+            "fillet": 0.0002869458112400025,
+            "chamfer": 0.00016617462097201496,
+            "slot_v": 0.0005304922233335674,
+            "slot_o": 0.0005397856584750116
+          },
+          "semantic_label": 44,
+          "semantic_confidence": 0.9959946870803833,
+          "embedding": []
+        },
+        {
+          "idx": 4,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9625741839408875,
+          "macro_probabilities": {
+            "stock": 0.9625741839408875,
+            "through_hole_round": 0.0007240732084028423,
+            "blind_hole_round": 0.0020004594698548317,
+            "stepped_hole_round": 0.0012045948533341289,
+            "counterbore_hole": 0.0014369295677170157,
+            "countersink_hole": 0.0018528549699112773,
+            "obround_hole": 0.000989378779195249,
+            "slot_u": 0.002124008722603321,
+            "slot_rect": 0.0020942373666912317,
+            "pocket_rect": 0.0015163294738158584,
+            "pocket_circular": 0.0028652253095060587,
+            "cylinder_boss": 0.003968578297644854,
+            "rib": 0.0019133115420117974,
+            "web": 0.0033389898017048836,
+            "rectangular_boss": 0.0019366489723324776,
+            "fillet": 0.001683523179963231,
+            "chamfer": 0.0015317867510020733,
+            "slot_v": 0.0028260224498808384,
+            "slot_o": 0.0034186069387942553
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9708654880523682,
+          "embedding": []
+        },
+        {
+          "idx": 5,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9638456702232361,
+          "macro_probabilities": {
+            "stock": 0.9638456702232361,
+            "through_hole_round": 0.0013190549798309803,
+            "blind_hole_round": 0.0014792000874876976,
+            "stepped_hole_round": 0.0013420337345451117,
+            "counterbore_hole": 0.00135510484687984,
+            "countersink_hole": 0.0016714698867872357,
+            "obround_hole": 0.0011428258148953319,
+            "slot_u": 0.002986488165333867,
+            "slot_rect": 0.0022813810501247644,
+            "pocket_rect": 0.0022465651854872704,
+            "pocket_circular": 0.0031125557143241167,
+            "cylinder_boss": 0.0025951513089239597,
+            "rib": 0.0017944287974387407,
+            "web": 0.0019423572812229395,
+            "rectangular_boss": 0.0019131330773234367,
+            "fillet": 0.0015265879919752479,
+            "chamfer": 0.001673406921327114,
+            "slot_v": 0.003414139151573181,
+            "slot_o": 0.0023585252929478884
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9764623045921326,
+          "embedding": []
+        },
+        {
+          "idx": 6,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9657623767852783,
+          "macro_probabilities": {
+            "stock": 0.9657623767852783,
+            "through_hole_round": 0.001160313026048243,
+            "blind_hole_round": 0.0018908103229478002,
+            "stepped_hole_round": 0.0010870075784623623,
+            "counterbore_hole": 0.0014695945428684354,
+            "countersink_hole": 0.001791932387277484,
+            "obround_hole": 0.001101052388548851,
+            "slot_u": 0.002028493909165263,
+            "slot_rect": 0.002307751914486289,
+            "pocket_rect": 0.0020368052646517754,
+            "pocket_circular": 0.0026011751033365726,
+            "cylinder_boss": 0.003296182258054614,
+            "rib": 0.001548026455566287,
+            "web": 0.001980623695999384,
+            "rectangular_boss": 0.002180443610996008,
+            "fillet": 0.0016230258625000715,
+            "chamfer": 0.0012663345551118255,
+            "slot_v": 0.0021293426398187876,
+            "slot_o": 0.0027388157323002815
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9730220437049866,
+          "embedding": []
+        },
+        {
+          "idx": 7,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.9938473105430603,
+          "macro_probabilities": {
+            "stock": 0.0001046918478095904,
+            "through_hole_round": 0.00029650088981725276,
+            "blind_hole_round": 0.00031769584165886045,
+            "stepped_hole_round": 0.00023815635358914733,
+            "counterbore_hole": 0.00023570544726680964,
+            "countersink_hole": 0.00028818019200116396,
+            "obround_hole": 0.00037866143975406885,
+            "slot_u": 0.0003362008719705045,
+            "slot_rect": 0.00045086423051543534,
+            "pocket_rect": 0.0003183548687957227,
+            "pocket_circular": 0.0005733793368563056,
+            "cylinder_boss": 0.0005658519803546369,
+            "rib": 0.0003071268438361585,
+            "web": 0.9938473105430603,
+            "rectangular_boss": 0.00028874221607111394,
+            "fillet": 0.00028988448320887983,
+            "chamfer": 0.00021350334282033145,
+            "slot_v": 0.0004141695681028068,
+            "slot_o": 0.000535203202161938
+          },
+          "semantic_label": 44,
+          "semantic_confidence": 0.9961406588554382,
+          "embedding": []
+        },
+        {
+          "idx": 8,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9578718543052673,
+          "macro_probabilities": {
+            "stock": 0.9578718543052673,
+            "through_hole_round": 0.0015515245031565428,
+            "blind_hole_round": 0.0023199706338346004,
+            "stepped_hole_round": 0.0011058718664571643,
+            "counterbore_hole": 0.0019570731092244387,
+            "countersink_hole": 0.0024607114028185606,
+            "obround_hole": 0.00132728461176157,
+            "slot_u": 0.0025016057770699263,
+            "slot_rect": 0.0026339953765273094,
+            "pocket_rect": 0.0020964895375072956,
+            "pocket_circular": 0.0033890476915985346,
+            "cylinder_boss": 0.003489109454676509,
+            "rib": 0.0016641300171613693,
+            "web": 0.002197030931711197,
+            "rectangular_boss": 0.0029790219850838184,
+            "fillet": 0.002546826610341668,
+            "chamfer": 0.0017381220823153853,
+            "slot_v": 0.002475789515301585,
+            "slot_o": 0.003694576909765601
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9664052128791809,
+          "embedding": []
+        },
+        {
+          "idx": 9,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9670875072479248,
+          "macro_probabilities": {
+            "stock": 0.9670875072479248,
+            "through_hole_round": 0.0015373114729300141,
+            "blind_hole_round": 0.0012475859839469194,
+            "stepped_hole_round": 0.0012012405786663294,
+            "counterbore_hole": 0.001255241222679615,
+            "countersink_hole": 0.0017748917452991009,
+            "obround_hole": 0.0011421861127018929,
+            "slot_u": 0.0024805578868836164,
+            "slot_rect": 0.0018124660709872842,
+            "pocket_rect": 0.0019608994480222464,
+            "pocket_circular": 0.002646130044013262,
+            "cylinder_boss": 0.0024353519547730684,
+            "rib": 0.0013819154119119048,
+            "web": 0.001994192833080888,
+            "rectangular_boss": 0.0019499489571899176,
+            "fillet": 0.0013627514708787203,
+            "chamfer": 0.0015268557472154498,
+            "slot_v": 0.0029348216485232115,
+            "slot_o": 0.0022682470735162497
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9786370992660522,
+          "embedding": []
+        },
+        {
+          "idx": 10,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9578718543052673,
+          "macro_probabilities": {
+            "stock": 0.9578718543052673,
+            "through_hole_round": 0.001551522291265428,
+            "blind_hole_round": 0.002319968305528164,
+            "stepped_hole_round": 0.0011058702366426587,
+            "counterbore_hole": 0.0019570710137486458,
+            "countersink_hole": 0.0024607102386653423,
+            "obround_hole": 0.0013272834476083517,
+            "slot_u": 0.0025016036815941334,
+            "slot_rect": 0.002633993048220873,
+            "pocket_rect": 0.0020964874420315027,
+            "pocket_circular": 0.0033890444319695234,
+            "cylinder_boss": 0.0034891061950474977,
+            "rib": 0.0016641292022541165,
+            "web": 0.002197030931711197,
+            "rectangular_boss": 0.0029790191911160946,
+            "fillet": 0.0025468242820352316,
+            "chamfer": 0.0017381204525008798,
+            "slot_v": 0.0024757871869951487,
+            "slot_o": 0.003694575047120452
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9664052128791809,
+          "embedding": []
+        },
+        {
+          "idx": 11,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.9938471913337708,
+          "macro_probabilities": {
+            "stock": 0.00010469184053363279,
+            "through_hole_round": 0.0002965005987789482,
+            "blind_hole_round": 0.00031769578345119953,
+            "stepped_hole_round": 0.00023815632448531687,
+            "counterbore_hole": 0.00023570562188979238,
+            "countersink_hole": 0.0002881801628973335,
+            "obround_hole": 0.0003786615561693907,
+            "slot_u": 0.0003362008137628436,
+            "slot_rect": 0.0004508641723077744,
+            "pocket_rect": 0.00031835513073019683,
+            "pocket_circular": 0.0005733795696869493,
+            "cylinder_boss": 0.0005658516311086714,
+            "rib": 0.0003071265236940235,
+            "web": 0.9938471913337708,
+            "rectangular_boss": 0.00028874215786345303,
+            "fillet": 0.0002898847160395235,
+            "chamfer": 0.000213503313716501,
+            "slot_v": 0.0004141695098951459,
+            "slot_o": 0.0005352036096155643
+          },
+          "semantic_label": 44,
+          "semantic_confidence": 0.9961406588554382,
+          "embedding": []
+        },
+        {
+          "idx": 12,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9657623767852783,
+          "macro_probabilities": {
+            "stock": 0.9657623767852783,
+            "through_hole_round": 0.001160313026048243,
+            "blind_hole_round": 0.0018908103229478002,
+            "stepped_hole_round": 0.0010870075784623623,
+            "counterbore_hole": 0.0014695945428684354,
+            "countersink_hole": 0.001791932387277484,
+            "obround_hole": 0.001101052388548851,
+            "slot_u": 0.002028493909165263,
+            "slot_rect": 0.002307751914486289,
+            "pocket_rect": 0.0020368052646517754,
+            "pocket_circular": 0.0026011751033365726,
+            "cylinder_boss": 0.003296182258054614,
+            "rib": 0.001548026455566287,
+            "web": 0.001980623695999384,
+            "rectangular_boss": 0.002180443610996008,
+            "fillet": 0.0016230258625000715,
+            "chamfer": 0.0012663345551118255,
+            "slot_v": 0.0021293426398187876,
+            "slot_o": 0.0027388157323002815
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9730220437049866,
+          "embedding": []
+        },
+        {
+          "idx": 13,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.993040919303894,
+          "macro_probabilities": {
+            "stock": 8.374796016141772e-05,
+            "through_hole_round": 0.0003445568436291069,
+            "blind_hole_round": 0.00038622666033916175,
+            "stepped_hole_round": 0.00022150541190057993,
+            "counterbore_hole": 0.00024603743804618716,
+            "countersink_hole": 0.0003110780380666256,
+            "obround_hole": 0.0004545093688648194,
+            "slot_u": 0.0003828752669505775,
+            "slot_rect": 0.0005531799979507923,
+            "pocket_rect": 0.0004350548260845244,
+            "pocket_circular": 0.0007287798216566443,
+            "cylinder_boss": 0.0006663922104053199,
+            "rib": 0.000346707267453894,
+            "web": 0.993040919303894,
+            "rectangular_boss": 0.0002751206047832966,
+            "fillet": 0.00028694552020169795,
+            "chamfer": 0.00016617430082987994,
+            "slot_v": 0.0005304916994646192,
+            "slot_o": 0.0005397851928137243
+          },
+          "semantic_label": 44,
+          "semantic_confidence": 0.9959946870803833,
+          "embedding": []
+        },
+        {
+          "idx": 14,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.9928533434867859,
+          "macro_probabilities": {
+            "stock": 5.699127723346464e-05,
+            "through_hole_round": 0.0004916180041618645,
+            "blind_hole_round": 0.0005334076704457402,
+            "stepped_hole_round": 0.00018757604993879795,
+            "counterbore_hole": 0.00030470589990727603,
+            "countersink_hole": 0.0002746759564615786,
+            "obround_hole": 0.00032722484320402145,
+            "slot_u": 0.00036590240779332817,
+            "slot_rect": 0.0006918289000168443,
+            "pocket_rect": 0.00035281790769658983,
+            "pocket_circular": 0.0004371012910269201,
+            "cylinder_boss": 0.00048604735638946295,
+            "rib": 0.0005215213168412447,
+            "web": 0.9928533434867859,
+            "rectangular_boss": 0.00021724222460761666,
+            "fillet": 0.000298653932986781,
+            "chamfer": 0.0006179254851303995,
+            "slot_v": 0.0005934316432103515,
+            "slot_o": 0.00038798776222392917
+          },
+          "semantic_label": 45,
+          "semantic_confidence": 0.9951379895210266,
+          "embedding": []
+        },
+        {
+          "idx": 15,
+          "macro_feature": "web",
+          "macro_class_id": 13,
+          "macro_confidence": 0.9928533434867859,
+          "macro_probabilities": {
+            "stock": 5.699127723346464e-05,
+            "through_hole_round": 0.0004916180041618645,
+            "blind_hole_round": 0.0005334076704457402,
+            "stepped_hole_round": 0.00018757604993879795,
+            "counterbore_hole": 0.00030470589990727603,
+            "countersink_hole": 0.0002746759564615786,
+            "obround_hole": 0.00032722484320402145,
+            "slot_u": 0.00036590240779332817,
+            "slot_rect": 0.0006918289000168443,
+            "pocket_rect": 0.00035281790769658983,
+            "pocket_circular": 0.0004371012910269201,
+            "cylinder_boss": 0.00048604735638946295,
+            "rib": 0.0005215213168412447,
+            "web": 0.9928533434867859,
+            "rectangular_boss": 0.00021724222460761666,
+            "fillet": 0.000298653932986781,
+            "chamfer": 0.0006179254851303995,
+            "slot_v": 0.0005934316432103515,
+            "slot_o": 0.00038798776222392917
+          },
+          "semantic_label": 45,
+          "semantic_confidence": 0.9951379895210266,
+          "embedding": []
+        },
+        {
+          "idx": 16,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9626666903495789,
+          "macro_probabilities": {
+            "stock": 0.9626666903495789,
+            "through_hole_round": 0.0016284887678921223,
+            "blind_hole_round": 0.0017689785454422235,
+            "stepped_hole_round": 0.0010285928146913648,
+            "counterbore_hole": 0.0017276722937822342,
+            "countersink_hole": 0.002295044017955661,
+            "obround_hole": 0.0012785049621015787,
+            "slot_u": 0.0020738968160003424,
+            "slot_rect": 0.0018784026615321636,
+            "pocket_rect": 0.001968504162505269,
+            "pocket_circular": 0.0032558361999690533,
+            "cylinder_boss": 0.0037223973777145147,
+            "rib": 0.0013761258451268077,
+            "web": 0.0023875937331467867,
+            "rectangular_boss": 0.002848240779712796,
+            "fillet": 0.0018245985265821218,
+            "chamfer": 0.0012820293195545673,
+            "slot_v": 0.0013193507911637425,
+            "slot_o": 0.0036690738052129745
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9704418182373047,
+          "embedding": []
+        },
+        {
+          "idx": 17,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9626666903495789,
+          "macro_probabilities": {
+            "stock": 0.9626666903495789,
+            "through_hole_round": 0.0016284887678921223,
+            "blind_hole_round": 0.0017689793603494763,
+            "stepped_hole_round": 0.0010285928146913648,
+            "counterbore_hole": 0.0017276722937822342,
+            "countersink_hole": 0.002295045182108879,
+            "obround_hole": 0.0012785062426701188,
+            "slot_u": 0.0020738989114761353,
+            "slot_rect": 0.0018784026615321636,
+            "pocket_rect": 0.001968504162505269,
+            "pocket_circular": 0.0032558361999690533,
+            "cylinder_boss": 0.0037223990075290203,
+            "rib": 0.0013761265436187387,
+            "web": 0.0023875960614532232,
+            "rectangular_boss": 0.00284824357368052,
+            "fillet": 0.0018245994579046965,
+            "chamfer": 0.0012820299016311765,
+            "slot_v": 0.0013193507911637425,
+            "slot_o": 0.0036690756678581238
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9704418182373047,
+          "embedding": []
+        },
+        {
+          "idx": 18,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9670290946960449,
+          "macro_probabilities": {
+            "stock": 0.9670290946960449,
+            "through_hole_round": 0.0011575327953323722,
+            "blind_hole_round": 0.0016880016773939133,
+            "stepped_hole_round": 0.0011505617294460535,
+            "counterbore_hole": 0.0016087059630081058,
+            "countersink_hole": 0.0017073953058570623,
+            "obround_hole": 0.0011412559542804956,
+            "slot_u": 0.002069850219413638,
+            "slot_rect": 0.001950294361449778,
+            "pocket_rect": 0.001992161152884364,
+            "pocket_circular": 0.002810131758451462,
+            "cylinder_boss": 0.0033437625970691442,
+            "rib": 0.0014300071634352207,
+            "web": 0.002115580253303051,
+            "rectangular_boss": 0.0020852070301771164,
+            "fillet": 0.0012686698464676738,
+            "chamfer": 0.0011604602914303541,
+            "slot_v": 0.0018434214871376753,
+            "slot_o": 0.002447859849780798
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9727266430854797,
+          "embedding": []
+        },
+        {
+          "idx": 19,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9670290946960449,
+          "macro_probabilities": {
+            "stock": 0.9670290946960449,
+            "through_hole_round": 0.0011575327953323722,
+            "blind_hole_round": 0.0016880016773939133,
+            "stepped_hole_round": 0.0011505617294460535,
+            "counterbore_hole": 0.0016087059630081058,
+            "countersink_hole": 0.0017073953058570623,
+            "obround_hole": 0.0011412559542804956,
+            "slot_u": 0.002069850219413638,
+            "slot_rect": 0.001950294361449778,
+            "pocket_rect": 0.001992161152884364,
+            "pocket_circular": 0.002810131758451462,
+            "cylinder_boss": 0.0033437625970691442,
+            "rib": 0.0014300071634352207,
+            "web": 0.002115580253303051,
+            "rectangular_boss": 0.0020852070301771164,
+            "fillet": 0.0012686698464676738,
+            "chamfer": 0.0011604602914303541,
+            "slot_v": 0.0018434214871376753,
+            "slot_o": 0.002447859849780798
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9727266430854797,
+          "embedding": []
+        }
+      ],
+      "edge_probabilities": [
+        7.861058470837179e-09,
+        4.643534889936518e-09,
+        0.9999948740005493,
+        0.999994158744812,
+        8.741088741714975e-09,
+        5.72000757870228e-09,
+        0.9999960660934448,
+        0.9999946355819702,
+        0.9999948740005493,
+        0.999994158744812,
+        7.861073569870314e-09,
+        4.643543771720715e-09,
+        0.9999960660934448,
+        0.9999946355819702,
+        8.741088741714975e-09,
+        5.720018680932526e-09,
+        4.643543771720715e-09,
+        7.861058470837179e-09,
+        6.110325756480961e-08,
+        3.758608357884441e-08,
+        4.643543771720715e-09,
+        7.861058470837179e-09,
+        5.344948372787428e-10,
+        2.6358770721657265e-10,
+        6.110325756480961e-08,
+        3.7586008971857154e-08,
+        5.344958919906162e-10,
+        2.6358770721657265e-10,
+        1.7401129148719718e-10,
+        6.96308427583503e-11,
+        3.008859827957622e-10,
+        1.2320527931208858e-10,
+        1.7401129148719718e-10,
+        6.96308427583503e-11,
+        3.008859827957622e-10,
+        1.2320527931208858e-10,
+        0.9999946355819702,
+        0.9999960660934448,
+        4.245499951593956e-08,
+        7.526831780069188e-08,
+        0.9999946355819702,
+        0.9999960660934448,
+        7.526831780069188e-08,
+        4.2454839643824016e-08,
+        6.117047979259382e-10,
+        2.9062474649066417e-10,
+        5.72000757870228e-09,
+        8.741088741714975e-09,
+        6.117024664575865e-10,
+        2.9062419137915185e-10,
+        5.72000757870228e-09,
+        8.741088741714975e-09,
+        1.3820889988025442e-09,
+        6.869152469057838e-10,
+        3.380926649754201e-10,
+        1.5818604759409993e-10,
+        1.3820889988025442e-09,
+        6.869165791734133e-10,
+        3.380933033536593e-10,
+        1.5818604759409993e-10,
+        3.238355716916885e-08,
+        4.813819742821579e-08,
+        1.1133997901424664e-07,
+        1.1186340742597167e-07,
+        3.238355716916885e-08,
+        4.813819742821579e-08,
+        1.1133997901424664e-07,
+        1.1186340742597167e-07,
+        8.899265253603517e-07,
+        7.690531447224203e-07,
+        8.899265253603517e-07,
+        7.690531447224203e-07,
+        2.5278695829911157e-06,
+        2.5912017918017227e-06,
+        3.742205834100787e-08,
+        2.6171786515760687e-08,
+        2.5278695829911157e-06,
+        2.5912042929121526e-06,
+        1.5722925184036285e-07,
+        2.1057583410311054e-07,
+        2.6171786515760687e-08,
+        3.7421983734020614e-08,
+        1.5722940815976472e-07,
+        2.1057603305507655e-07,
+        2.5278648081439314e-06,
+        2.5912042929121526e-06,
+        2.5278648081439314e-06,
+        2.5912042929121526e-06,
+        0.999994158744812,
+        0.9999948740005493,
+        0.999994158744812,
+        0.9999948740005493,
+        8.899265253603517e-07,
+        7.690531447224203e-07,
+        8.899265253603517e-07,
+        7.690531447224203e-07
+      ],
+      "relation_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          13
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          18
+        ],
+        [
+          18,
+          2
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          19,
+          2
+        ],
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          14
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          16,
+          4
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          4,
+          17
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          18,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          5,
+          19
+        ],
+        [
+          19,
+          5
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          18,
+          6
+        ],
+        [
+          6,
+          19
+        ],
+        [
+          19,
+          6
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          16,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          9,
+          17
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          16,
+          10
+        ],
+        [
+          10,
+          17
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          11,
+          15
+        ],
+        [
+          15,
+          11
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          14,
+          11
+        ],
+        [
+          12,
+          18
+        ],
+        [
+          18,
+          12
+        ],
+        [
+          12,
+          19
+        ],
+        [
+          19,
+          12
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          0,
+          12
+        ],
+        [
+          0,
+          14
+        ],
+        [
+          0,
+          15
+        ],
+        [
+          0,
+          16
+        ],
+        [
+          0,
+          17
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          0,
+          19
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          1,
+          15
+        ],
+        [
+          1,
+          16
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          1,
+          18
+        ],
+        [
+          1,
+          19
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          2,
+          17
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          3,
+          17
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          4,
+          18
+        ],
+        [
+          4,
+          19
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          5,
+          17
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          7,
+          15
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          7,
+          19
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          8,
+          18
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          9,
+          13
+        ],
+        [
+          9,
+          14
+        ],
+        [
+          9,
+          15
+        ],
+        [
+          9,
+          18
+        ],
+        [
+          9,
+          19
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          10,
+          15
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          10,
+          19
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          11,
+          16
+        ],
+        [
+          11,
+          17
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          11,
+          19
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          12,
+          9
+        ],
+        [
+          12,
+          10
+        ],
+        [
+          12,
+          11
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          12,
+          15
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          12,
+          17
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          13,
+          8
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          13,
+          10
+        ],
+        [
+          13,
+          11
+        ],
+        [
+          13,
+          12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          13,
+          17
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          13,
+          19
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          14,
+          9
+        ],
+        [
+          14,
+          10
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          14,
+          13
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          14,
+          17
+        ],
+        [
+          14,
+          18
+        ],
+        [
+          14,
+          19
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          15,
+          5
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          15,
+          8
+        ],
+        [
+          15,
+          9
+        ],
+        [
+          15,
+          10
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          15,
+          13
+        ],
+        [
+          15,
+          14
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          15,
+          17
+        ],
+        [
+          15,
+          18
+        ],
+        [
+          15,
+          19
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          16,
+          3
+        ],
+        [
+          16,
+          5
+        ],
+        [
+          16,
+          6
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          16,
+          11
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          16,
+          13
+        ],
+        [
+          16,
+          14
+        ],
+        [
+          16,
+          15
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          16,
+          18
+        ],
+        [
+          16,
+          19
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ],
+        [
+          17,
+          13
+        ],
+        [
+          17,
+          14
+        ],
+        [
+          17,
+          15
+        ],
+        [
+          17,
+          16
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          17,
+          19
+        ],
+        [
+          18,
+          0
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          18,
+          3
+        ],
+        [
+          18,
+          4
+        ],
+        [
+          18,
+          7
+        ],
+        [
+          18,
+          8
+        ],
+        [
+          18,
+          9
+        ],
+        [
+          18,
+          10
+        ],
+        [
+          18,
+          11
+        ],
+        [
+          18,
+          13
+        ],
+        [
+          18,
+          14
+        ],
+        [
+          18,
+          15
+        ],
+        [
+          18,
+          16
+        ],
+        [
+          18,
+          17
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          19,
+          3
+        ],
+        [
+          19,
+          4
+        ],
+        [
+          19,
+          7
+        ],
+        [
+          19,
+          8
+        ],
+        [
+          19,
+          9
+        ],
+        [
+          19,
+          10
+        ],
+        [
+          19,
+          11
+        ],
+        [
+          19,
+          13
+        ],
+        [
+          19,
+          14
+        ],
+        [
+          19,
+          15
+        ],
+        [
+          19,
+          16
+        ],
+        [
+          19,
+          17
+        ],
+        [
+          19,
+          18
+        ]
+      ],
+      "relation_probabilities": [
+        7.861058470837179e-09,
+        4.643534889936518e-09,
+        0.9999948740005493,
+        0.999994158744812,
+        8.741088741714975e-09,
+        5.72000757870228e-09,
+        0.9999960660934448,
+        0.9999946355819702,
+        0.9999948740005493,
+        0.999994158744812,
+        7.861073569870314e-09,
+        4.643543771720715e-09,
+        0.9999960660934448,
+        0.9999946355819702,
+        8.741088741714975e-09,
+        5.720018680932526e-09,
+        4.643543771720715e-09,
+        7.861058470837179e-09,
+        6.110325756480961e-08,
+        3.758608357884441e-08,
+        4.643543771720715e-09,
+        7.861058470837179e-09,
+        5.344948372787428e-10,
+        2.6358770721657265e-10,
+        6.110325756480961e-08,
+        3.7586008971857154e-08,
+        5.344958919906162e-10,
+        2.6358770721657265e-10,
+        1.7401129148719718e-10,
+        6.96308427583503e-11,
+        3.008859827957622e-10,
+        1.2320527931208858e-10,
+        1.7401129148719718e-10,
+        6.96308427583503e-11,
+        3.008859827957622e-10,
+        1.2320527931208858e-10,
+        0.9999946355819702,
+        0.9999960660934448,
+        4.245499951593956e-08,
+        7.526831780069188e-08,
+        0.9999946355819702,
+        0.9999960660934448,
+        7.526831780069188e-08,
+        4.2454839643824016e-08,
+        6.117047979259382e-10,
+        2.9062474649066417e-10,
+        5.72000757870228e-09,
+        8.741088741714975e-09,
+        6.117024664575865e-10,
+        2.9062419137915185e-10,
+        5.72000757870228e-09,
+        8.741088741714975e-09,
+        1.3820889988025442e-09,
+        6.869152469057838e-10,
+        3.380926649754201e-10,
+        1.5818604759409993e-10,
+        1.3820889988025442e-09,
+        6.869165791734133e-10,
+        3.380933033536593e-10,
+        1.5818604759409993e-10,
+        3.238355716916885e-08,
+        4.813819742821579e-08,
+        1.1133997901424664e-07,
+        1.1186340742597167e-07,
+        3.238355716916885e-08,
+        4.813819742821579e-08,
+        1.1133997901424664e-07,
+        1.1186340742597167e-07,
+        8.899265253603517e-07,
+        7.690531447224203e-07,
+        8.899265253603517e-07,
+        7.690531447224203e-07,
+        2.5278695829911157e-06,
+        2.5912017918017227e-06,
+        3.742205834100787e-08,
+        2.6171786515760687e-08,
+        2.5278695829911157e-06,
+        2.5912042929121526e-06,
+        1.5722925184036285e-07,
+        2.1057583410311054e-07,
+        2.6171786515760687e-08,
+        3.7421983734020614e-08,
+        1.5722940815976472e-07,
+        2.1057603305507655e-07,
+        2.5278648081439314e-06,
+        2.5912042929121526e-06,
+        2.5278648081439314e-06,
+        2.5912042929121526e-06,
+        0.999994158744812,
+        0.9999948740005493,
+        0.999994158744812,
+        0.9999948740005493,
+        8.899265253603517e-07,
+        7.690531447224203e-07,
+        8.899265253603517e-07,
+        7.690531447224203e-07,
+        0.999859094619751,
+        0.9998577833175659,
+        4.399231201546172e-08,
+        7.346119712536847e-09,
+        1.3257146491696403e-08,
+        1.5594032731769403e-08,
+        1.3257146491696403e-08,
+        0.9997929930686951,
+        7.346119712536847e-09,
+        0.999859094619751,
+        0.999859094619751,
+        1.8139077795353842e-08,
+        1.8139077795353842e-08,
+        2.016301969831602e-08,
+        2.016301969831602e-08,
+        0.999859094619751,
+        0.9998577833175659,
+        4.3992390175162654e-08,
+        7.346119712536847e-09,
+        1.3257171360692155e-08,
+        1.5594062929835673e-08,
+        1.3257171360692155e-08,
+        0.9997929930686951,
+        7.346119712536847e-09,
+        0.999859094619751,
+        0.999859094619751,
+        1.8139077795353842e-08,
+        1.8139077795353842e-08,
+        2.0163057001809648e-08,
+        2.0163057001809648e-08,
+        1.999427966942191e-12,
+        1.8125893008757998e-09,
+        5.911682254833295e-10,
+        7.807336444010105e-10,
+        5.911660050372802e-10,
+        2.624269135331758e-10,
+        2.624274131335369e-10,
+        0.9998161196708679,
+        0.9998161196708679,
+        8.85574351627838e-08,
+        1.487153156176646e-08,
+        0.9998058676719666,
+        2.7284933423743496e-08,
+        3.262690029259829e-08,
+        2.7284933423743496e-08,
+        0.9998058676719666,
+        1.487153156176646e-08,
+        0.9998140931129456,
+        3.798332315341213e-08,
+        3.7983248546424875e-08,
+        4.189664437603824e-08,
+        4.189664437603824e-08,
+        2.296806408258467e-12,
+        1.7094279325391426e-09,
+        2.117837294424163e-10,
+        7.362963017065738e-10,
+        2.117837294424163e-10,
+        1.5104845152436042e-10,
+        1.5104845152436042e-10,
+        1.656383297188313e-08,
+        1.656380099746002e-08,
+        5.962527693803565e-10,
+        3.873388010333656e-08,
+        4.76049200059947e-10,
+        5.480323039819268e-08,
+        2.751260694822122e-07,
+        3.4645316304704465e-07,
+        2.75125529469733e-07,
+        5.480323039819268e-08,
+        3.873388010333656e-08,
+        1.656383297188313e-08,
+        1.656383297188313e-08,
+        1.442684691710383e-07,
+        1.442684691710383e-07,
+        4.007484566415087e-09,
+        4.0074921159316546e-09,
+        9.917635601652819e-09,
+        7.845846888843155e-11,
+        1.4010190341195994e-08,
+        4.884211080025125e-08,
+        5.7099708072883004e-08,
+        4.8842206723520576e-08,
+        1.4010163695843403e-08,
+        1.9009553042792504e-08,
+        9.917635601652819e-09,
+        4.007484566415087e-09,
+        4.007484566415087e-09,
+        2.273211130443542e-08,
+        2.273202603930713e-08,
+        0.9998047947883606,
+        1.2749313782478566e-07,
+        2.1948746820044107e-08,
+        4.0494079200925626e-08,
+        4.687175092499274e-08,
+        4.049400104122469e-08,
+        0.9997960925102234,
+        2.1948746820044107e-08,
+        0.9998047947883606,
+        0.9998034834861755,
+        0.9998034834861755,
+        5.581573248036875e-08,
+        5.581573248036875e-08,
+        6.024308873975315e-08,
+        6.024308873975315e-08,
+        5.85604453817723e-09,
+        5.85604453817723e-09,
+        1.9535678630333564e-10,
+        1.597964605082325e-08,
+        2.8597236223504297e-07,
+        3.5429678746368154e-08,
+        2.260913412044374e-08,
+        9.326841876600156e-08,
+        2.2609093264236435e-08,
+        3.5429678746368154e-08,
+        1.597964605082325e-08,
+        5.85604453817723e-09,
+        5.85604453817723e-09,
+        2.5269116576964734e-08,
+        2.5269116576964734e-08,
+        7.2757013747093424e-09,
+        7.275715141474848e-09,
+        2.6330179703215606e-10,
+        1.794762916063064e-08,
+        2.1022060481268312e-10,
+        3.593141286728496e-07,
+        4.451614543654614e-08,
+        2.5393577018917313e-08,
+        2.539352905728265e-08,
+        4.451614543654614e-08,
+        1.794762916063064e-08,
+        7.275715141474848e-09,
+        7.275715141474848e-09,
+        3.1749753048870843e-08,
+        3.1749753048870843e-08,
+        5.85604453817723e-09,
+        5.85604453817723e-09,
+        1.9535641160306483e-10,
+        1.597964605082325e-08,
+        2.8597207801794866e-07,
+        3.5429614797521936e-08,
+        2.260913412044374e-08,
+        9.326824113031762e-08,
+        2.2609093264236435e-08,
+        3.5429614797521936e-08,
+        1.597961585275698e-08,
+        5.85604453817723e-09,
+        5.85604453817723e-09,
+        2.526907039168691e-08,
+        2.526907039168691e-08,
+        0.9998034834861755,
+        0.9998034834861755,
+        0.9998047947883606,
+        1.2749302413794794e-07,
+        2.194870418747996e-08,
+        0.9997960925102234,
+        4.0494079200925626e-08,
+        4.687166210715077e-08,
+        4.0494079200925626e-08,
+        2.194870418747996e-08,
+        0.9998047947883606,
+        5.581573248036875e-08,
+        5.5815633004385745e-08,
+        6.024297505291543e-08,
+        6.024297505291543e-08,
+        4.007484566415087e-09,
+        4.0074921159316546e-09,
+        9.917635601652819e-09,
+        7.845846888843155e-11,
+        1.9009553042792504e-08,
+        1.4010190341195994e-08,
+        4.884211080025125e-08,
+        5.7099708072883004e-08,
+        4.8842206723520576e-08,
+        1.4010163695843403e-08,
+        9.917635601652819e-09,
+        4.007484566415087e-09,
+        4.007484566415087e-09,
+        2.273211130443542e-08,
+        2.273202603930713e-08,
+        0.9998140931129456,
+        8.85574351627838e-08,
+        1.487153156176646e-08,
+        0.9998058676719666,
+        2.7284933423743496e-08,
+        3.262690029259829e-08,
+        2.7284933423743496e-08,
+        0.9998058676719666,
+        1.487153156176646e-08,
+        0.9998161196708679,
+        0.9998161196708679,
+        3.7983248546424875e-08,
+        3.7983248546424875e-08,
+        4.189664437603824e-08,
+        4.189664437603824e-08,
+        0.999859094619751,
+        0.999859094619751,
+        4.399231201546172e-08,
+        7.346119712536847e-09,
+        0.9997929930686951,
+        1.3257146491696403e-08,
+        1.5594002533703133e-08,
+        1.3257171360692155e-08,
+        7.346119712536847e-09,
+        0.9998577833175659,
+        0.999859094619751,
+        1.8139077795353842e-08,
+        1.8139077795353842e-08,
+        2.016301969831602e-08,
+        2.016301969831602e-08,
+        0.999859094619751,
+        0.999859094619751,
+        4.399231201546172e-08,
+        7.346119712536847e-09,
+        0.9997929930686951,
+        1.3257146491696403e-08,
+        1.5594002533703133e-08,
+        1.3257171360692155e-08,
+        7.346119712536847e-09,
+        0.9998577833175659,
+        0.999859094619751,
+        1.8139077795353842e-08,
+        1.8139077795353842e-08,
+        2.016301969831602e-08,
+        2.016301969831602e-08,
+        1.104650504402116e-08,
+        1.104650504402116e-08,
+        1.3847058222271613e-10,
+        2.768708107225848e-08,
+        2.32240381592419e-07,
+        2.6786199924799803e-08,
+        3.9173642107925843e-08,
+        3.917357105365227e-08,
+        2.6786199924799803e-08,
+        2.768708107225848e-08,
+        1.104650504402116e-08,
+        1.104650504402116e-08,
+        3.362376688187396e-08,
+        2.0521246923976832e-08,
+        2.0521246923976832e-08,
+        1.104650504402116e-08,
+        1.104650504402116e-08,
+        1.3847058222271613e-10,
+        2.768708107225848e-08,
+        2.3223994105592283e-07,
+        2.678614841045146e-08,
+        3.9173642107925843e-08,
+        3.9173642107925843e-08,
+        2.6786199924799803e-08,
+        2.768708107225848e-08,
+        1.104650504402116e-08,
+        1.104650504402116e-08,
+        3.362383438343386e-08,
+        2.0521246923976832e-08,
+        2.0521246923976832e-08,
+        1.1422141454886514e-08,
+        1.1422141454886514e-08,
+        2.824301859050138e-08,
+        8.662327105612988e-11,
+        3.993188002482384e-08,
+        5.392487878452812e-08,
+        6.304168209680938e-08,
+        5.392498536593848e-08,
+        3.993180186512291e-08,
+        2.824301859050138e-08,
+        1.1422141454886514e-08,
+        1.1422141454886514e-08,
+        2.6471555614193676e-08,
+        2.6471555614193676e-08,
+        1.995142717703402e-08,
+        1.1422141454886514e-08,
+        1.1422141454886514e-08,
+        2.824301859050138e-08,
+        8.662327105612988e-11,
+        3.993188002482384e-08,
+        5.392487878452812e-08,
+        6.304168209680938e-08,
+        5.392498536593848e-08,
+        3.993180186512291e-08,
+        2.824301859050138e-08,
+        1.1422141454886514e-08,
+        1.1422141454886514e-08,
+        2.6471555614193676e-08,
+        2.6471555614193676e-08,
+        1.995142540067718e-08
+      ]
+    },
+    "R_stages": {
+      "initial": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ]
+        }
+      ],
+      "geometric": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component",
+            "thin_wall_rib_web"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            0,
+            1,
+            2,
+            4,
+            7
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            0,
+            1,
+            2,
+            4,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            0,
+            2,
+            4,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            1,
+            2,
+            4,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            13
+          ],
+          "proposal_sources": [
+            "concave_boundary_region"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            11,
+            14
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            11,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            4,
+            11,
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            6,
+            12,
+            18
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            6,
+            12,
+            19
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            6,
+            18,
+            19
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            12,
+            18,
+            19
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component",
+            "thin_wall_rib_web"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            8,
+            9,
+            10,
+            16
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            8,
+            9,
+            10,
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            8,
+            9,
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            9,
+            10,
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            6,
+            12,
+            18,
+            19
+          ],
+          "proposal_sources": [
+            "thin_wall_rib_web"
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            8,
+            10,
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "thin_wall_rib_web"
+          ]
+        }
+      ],
+      "pre_validation": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component",
+            "thin_wall_rib_web"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            0,
+            1,
+            2,
+            4,
+            7
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            0,
+            1,
+            2,
+            4,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            0,
+            2,
+            4,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            1,
+            2,
+            4,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            13
+          ],
+          "proposal_sources": [
+            "concave_boundary_region"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            3
+          ],
+          "proposal_sources": [
+            "concave_boundary_region"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            11,
+            14
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            11,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            4,
+            11,
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            6,
+            12,
+            18
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            6,
+            12,
+            19
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            6,
+            18,
+            19
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            12,
+            18,
+            19
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component",
+            "thin_wall_rib_web"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            8,
+            9,
+            10,
+            16
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            8,
+            9,
+            10,
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            8,
+            9,
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            9,
+            10,
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            6,
+            12,
+            18,
+            19
+          ],
+          "proposal_sources": [
+            "thin_wall_rib_web"
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            8,
+            10,
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "thin_wall_rib_web"
+          ]
+        }
+      ],
+      "post_validation": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ]
+        }
+      ],
+      "global_selection": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ]
+        }
+      ],
+      "pre_boundary": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ]
+        }
+      ],
+      "post_boundary": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ]
+        }
+      ],
+      "final": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ]
+        }
+      ]
+    },
+    "Q_stages": {
+      "initial": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            3,
+            7,
+            11,
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "geometric": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "thin_wall_rib_web"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            0,
+            1,
+            2,
+            4,
+            7
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            0,
+            1,
+            2,
+            4,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            0,
+            2,
+            4,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            3,
+            7,
+            11,
+            13,
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            1,
+            2,
+            4,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            13
+          ],
+          "proposal_sources": [
+            "concave_boundary_region"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            11,
+            14
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            11,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            4,
+            11,
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            6,
+            12,
+            18
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            6,
+            12,
+            19
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            6,
+            18,
+            19
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            12,
+            18,
+            19
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "thin_wall_rib_web"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            8,
+            9,
+            10,
+            16
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            8,
+            9,
+            10,
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            8,
+            9,
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            9,
+            10,
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            6,
+            12,
+            18,
+            19
+          ],
+          "proposal_sources": [
+            "thin_wall_rib_web"
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            8,
+            10,
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "thin_wall_rib_web"
+          ]
+        }
+      ],
+      "pre_validation": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "thin_wall_rib_web"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            0,
+            1,
+            2,
+            4,
+            7
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            0,
+            1,
+            2,
+            4,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            0,
+            2,
+            4,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            3,
+            7,
+            11,
+            13,
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            1,
+            2,
+            4,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            13
+          ],
+          "proposal_sources": [
+            "concave_boundary_region"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            11,
+            14
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            11,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            3,
+            4,
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            4,
+            11,
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            6,
+            12,
+            18
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            6,
+            12,
+            19
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            6,
+            18,
+            19
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            2,
+            5,
+            12,
+            18,
+            19
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "thin_wall_rib_web"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            8,
+            9,
+            10,
+            16
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            8,
+            9,
+            10,
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            8,
+            9,
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            4,
+            9,
+            10,
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel"
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            6,
+            12,
+            18,
+            19
+          ],
+          "proposal_sources": [
+            "thin_wall_rib_web"
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            8,
+            10,
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "thin_wall_rib_web"
+          ]
+        }
+      ],
+      "post_validation": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ]
+        }
+      ],
+      "global_selection": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ]
+        }
+      ],
+      "pre_boundary": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ]
+        }
+      ],
+      "post_boundary": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ]
+        }
+      ],
+      "final": [
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            0,
+            1,
+            7,
+            13
+          ]
+        },
+        {
+          "macro_feature": "web",
+          "face_indices": [
+            3,
+            11,
+            14,
+            15
+          ]
+        }
+      ]
+    },
+    "candidate_count": 24,
+    "selector": {
+      "input_count": 24,
+      "unique_count": 24,
+      "positive_count": 2,
+      "negative_or_zero_rejected": 22,
+      "component_count": 2,
+      "components": [
+        {
+          "candidate_count": 1,
+          "selected_count": 1,
+          "method": "exact",
+          "objective": 8.657213938295952,
+          "selected_score": 8.657213938295952,
+          "optimal_solutions_visited": 1,
+          "nodes_visited": 3,
+          "ambiguous_objects": 0,
+          "optimality_certified": true,
+          "beam_truncated": false
+        },
+        {
+          "candidate_count": 1,
+          "selected_count": 1,
+          "method": "exact",
+          "objective": 8.657213978032383,
+          "selected_score": 8.657213978032383,
+          "optimal_solutions_visited": 1,
+          "nodes_visited": 3,
+          "ambiguous_objects": 0,
+          "optimality_certified": true,
+          "beam_truncated": false
+        }
+      ],
+      "all_optimality_certified": true,
+      "beam_truncation_count": 0
+    }
+  },
+  "inference_seconds": 0.24941869999747723,
+  "truth_used": false
+}

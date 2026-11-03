@@ -1,0 +1,38 @@
+{
+  "paired_constants": {
+    "R_Q_weights": "frozen paired seeds",
+    "candidate_pool": "canonical eight stages per R and Q; exact class+complete-face deduplication",
+    "candidate_normalization": "unchanged G09 candidate_pool.py",
+    "selector": "positive-score maximum-weight conflict-independent set, exact_limit=32, beam_width=128",
+    "E3_temperature": 3,
+    "E3_class_source_kappa": 20.0,
+    "truth_available_to_inference": false
+  },
+  "variants": [
+    {
+      "id": "G10_M3_A1_Q_FINAL",
+      "paper_label": "A1",
+      "setting": "frozen Q final objects",
+      "comparison_type": "control"
+    },
+    {
+      "id": "G10_M3_A3_GENERIC_SCORE_EXACT_PACK",
+      "paper_label": "A3",
+      "setting": "mean of fixed generic R and Q deterministic scores plus registered conflict selector",
+      "comparison_type": "same-candidate score control"
+    },
+    {
+      "id": "G10_M3_A4_E1_LEARNED_SCORE_EXACT_PACK",
+      "paper_label": "A4",
+      "setting": "E1 train-only learned joint score plus registered conflict selector",
+      "comparison_type": "same-candidate learned-score pair with A3"
+    },
+    {
+      "id": "G10_M3_A6_E3_FULL_CALIBRATION_EXACT_PACK",
+      "paper_label": "A6",
+      "setting": "frozen E3 full class/source calibration plus registered conflict selector",
+      "comparison_type": "final system"
+    }
+  ],
+  "generic_score_formula": "0.5 * (G09 deterministic_score(R evidence) + G09 deterministic_score(Q evidence))"
+}

@@ -1,85 +1,44 @@
-﻿# Local secret files must never be committed.
-.env
-.env.*
-!.env.example
-
-# Python bytecode and caches
 __pycache__/
 *.py[cod]
-*$py.class
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
-
-# Virtual environments and local dependency folders
-.venv/
-venv/
-env/
-ENV/
-.conda/
-
-# IDE, editor, and OS noise
-.vscode/
-.idea/
-*.code-workspace
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Codex/agent local scratch artifacts
-.agents/
-.claude/
-.codex_pdfdeps/
-.codex_pdf_text/
-_literature_reading_tmp/
-CODEX_CONTEXT.md
-CODEX_CONTEXT_SUMMARY.md
-
-# Generated experiment outputs and logs
-output*
-reports/
-tmp*/
-.tmp*/
-*.log
-*.tmp
-*.orig
-*.bak
-*~
-
-# Generated datasets, model checkpoints, and heavy binary artifacts
-*.csv
-*.tsv
-*.xlsx
-*.xls
-*.npy
-*.npz
-*.pkl
-*.joblib
-*.pt
-*.pth
-*.ckpt
-*.onnx
-*.h5
-*.hdf5
-
-# CAD/CAE generated artifacts and archives
-*.step
-*.stp
-*.iges
-*.igs
-*.sat
-*.odb
-*.prt
-*.brep
-*.zip
-*.7z
-*.rar
-
-# Keep intentional documentation or small manifests tracked by default.
-# If a generated file should be versioned, add it explicitly with:
-#   git add -f path/to/file
-
-
-
+.env
+.env.*
+results/reproduced*/
+results/runs/
+*.part
+/data/d0/aagnet_inputs.zip
+/data/d0/steps.zip
+/data/engineering/angle_bracket/solver_input.zip
+/data/engineering/angle_bracket/solver_output.zip
+/data/engineering/clevis/solver_input.zip
+/data/engineering/clevis/solver_output.zip
+/data/engineering/flanged_support/solver_input.zip
+/data/engineering/flanged_support/solver_output.zip
+/data/engineering/sealing_cover/solver_input.zip
+/data/engineering/sealing_cover/solver_output.zip
+/data/engineering/stiffened_panel/solver_input.zip
+/data/engineering/stiffened_panel/solver_output.zip
+/data/engineering/turbine_blade/solver_input.zip
+/data/engineering/turbine_blade/solver_output.zip
+/data/engineering/u_shaped_bracket/solver_input.zip
+/data/engineering/u_shaped_bracket/solver_output.zip
+/data/t10/steps.zip
+/comparison/aagnet/weights/original/20260718.pt
+/comparison/aagnet/weights/original/20260719.pt
+/comparison/aagnet/weights/original/20260720.pt
+/comparison/topocae/weights/dense/20260718.pt
+/comparison/topocae/weights/dense/20260719.pt
+/comparison/topocae/weights/dense/20260720.pt
+/comparison/topocae/weights/scorer/20260719.pt
+/comparison/mft/weights/20260718.pt
+/comparison/mft/weights/20260719.pt
+/comparison/mft/weights/20260720.pt
+/comparison/topocae/weights/sparse/20260718.pt
+/comparison/topocae/weights/sparse/20260719.pt
+/comparison/topocae/weights/sparse/20260720.pt
+/comparison/topocae/engine/weights/dense.pt
+/comparison/topocae/engine/weights/scorer.pt
+/comparison/topocae/engine/weights/sparse.pt
+/data/language/physical/m7-b1-clevis-qwen-s/solver_output.zip
+/data/language/physical/m7-b1-flanged_support-qwen-b/solver_output.zip
+/data/language/physical/m7-b1-flanged_support-qwen-s/solver_output.zip
+/data/language/physical/m7-b1-u_shaped_bracket-qwen-s/solver_output.zip

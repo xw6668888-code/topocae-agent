@@ -1,0 +1,36 @@
+{
+  "sample_id": "g10_t10_v2_i_00109",
+  "source_step_sha256": "edb71c161820b853519466ab76d1f75a54c7bfac95bb4f9cc88b0a328ea940ea",
+  "face_count": 9,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "stock",
+    "stepped_hole_round",
+    "cylinder_boss",
+    "stepped_hole_round",
+    "cylinder_boss",
+    "stepped_hole_round",
+    "stepped_hole_round"
+  ],
+  "objects": [
+    {
+      "class": "stepped_hole_round",
+      "instance_id": 1,
+      "faces": [
+        3,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "class": "cylinder_boss",
+      "instance_id": 2,
+      "faces": [
+        4,
+        6
+      ]
+    }
+  ]
+}

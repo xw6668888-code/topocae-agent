@@ -1,0 +1,82 @@
+{
+  "STEP_readback_process": {
+    "argv": [
+      "W:\\python\\envs\\feagpt\\python.exe",
+      "W:\\python\\FEA\\dataset_generator\\tools\\aei_paper_goals_v1\\g11\\cad_readback.py",
+      "--source",
+      "W:/python/FEA/dataset_generator/test_part_0901/Bearing Housing.stp",
+      "--plan",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\attempts\\QP-B__bearing_housing\\attempt_002\\parsed_plan.json",
+      "--mapping",
+      "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/bearing_housing.json",
+      "--output-step",
+      "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-B__bearing_housing/execution_v1/work/Bearing Housing_edited.stp",
+      "--result",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-B__bearing_housing\\execution_v1\\independent_STEP_readback.json"
+    ],
+    "elapsed_seconds": 0.5768470000002708,
+    "pid": 32748,
+    "returncode": 0,
+    "timed_out": false
+  },
+  "actually_executed": true,
+  "compiler_inputs_exclude_reference_and_service": true,
+  "elapsed_seconds": 1.6824242999996386,
+  "finished_utc": "2026-10-24T09:08:47.666342+00:00",
+  "independent_STEP_readback": {
+    "bytes": 3113,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-B__bearing_housing/execution_v1/independent_STEP_readback.json",
+    "sha256": "40caa6f5b65fa691a6c4be3051da9f15a191fbbfcfb2e56b9f528a36aed20d39"
+  },
+  "mapping": {
+    "bytes": 2867,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/bearing_housing.json",
+    "sha256": "f8c165eae080ad202661320ab881ac1b35bb6c97846165fee1837cae26defb96"
+  },
+  "model_plan": {
+    "bytes": 755,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/attempts/QP-B__bearing_housing/attempt_002/parsed_plan.json",
+    "sha256": "8921309d4ef95647cb4ed9d53ea9e9dc47442e371a401aa6b288d1bab3455518"
+  },
+  "raw_response": {
+    "bytes": 22945,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/attempts/QP-B__bearing_housing/attempt_002/response.sse",
+    "sha256": "71bd93c83292f861dca82e63f97fe1a7c4192416945d55e7169994d701416c39"
+  },
+  "slot_id": "QP-B__bearing_housing",
+  "source_step": {
+    "bytes": 80236,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Bearing Housing.stp",
+    "sha256": "68c756ce4df6ba506348ea958cae4c264f1c542062a0fb58ba9b8152e92de6b8"
+  },
+  "started_utc": "2026-10-24T09:08:45.983783+00:00",
+  "status": "ARTIFACT_PASS",
+  "worker_process": {
+    "argv": [
+      "W:\\python\\envs\\feagpt\\python.exe",
+      "W:\\python\\FEA\\dataset_generator\\tools\\aei_paper_goals_v1\\g11\\worker_direct.py",
+      "--source",
+      "W:/python/FEA/dataset_generator/test_part_0901/Bearing Housing.stp",
+      "--mapping",
+      "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/bearing_housing.json",
+      "--plan",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\attempts\\QP-B__bearing_housing\\attempt_002\\parsed_plan.json",
+      "--materials",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\inputs\\materials.json",
+      "--config",
+      "W:\\python\\FEA\\dataset_generator\\reports\\aei_paper_goals_v1\\g11\\EXECUTION_CONFIG_MEMORY6.json",
+      "--output",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-B__bearing_housing\\execution_v1"
+    ],
+    "elapsed_seconds": 1.1017821000000367,
+    "pid": 25160,
+    "returncode": 0,
+    "timed_out": false
+  },
+  "worker_receipt": {
+    "bytes": 27936,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-B__bearing_housing/execution_v1/EXECUTION_RECEIPT.json",
+    "sha256": "d845720d2717a5073f936e248d580cf0573e3856de12af719485d0f6f3a6fcef"
+  },
+  "worker_status": "EXECUTED"
+}

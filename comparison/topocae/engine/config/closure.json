@@ -1,0 +1,1328 @@
+{
+  "schema": "g10_m8_protected_e3_runtime_closure_v4",
+  "status": "SOURCE_ONLY_HASHED_RUNTIME_EDGE_AUDIT_NOT_RELEASE_OR_REPLAY",
+  "original_assets": {
+    "freeze": {
+      "relative_path": "reports/aei_paper_goals_v1/g03/CONFIGURATION_FREEZE.json",
+      "bytes": 133219,
+      "sha256": "8e4bdc1338ab2c375ae74a1930187d6913d09454b4ce81e8138a731a18bd3922",
+      "role": "binary_bound_json"
+    },
+    "q_metrics": {
+      "relative_path": "artifacts/aei_paper_goals_v1/g03/training_runs/dense_instance/seed_20260719/metrics.json",
+      "bytes": 10014,
+      "sha256": "8718246756eea5140a74b48a5da18c163185af35505d1d85518d1d2fe3ad30f2",
+      "role": "runtime_json"
+    },
+    "q_status": {
+      "relative_path": "artifacts/aei_paper_goals_v1/g03/training_runs/dense_instance/seed_20260719/STATUS.json",
+      "bytes": 187,
+      "sha256": "410da6f9a6567531e7def08ab548179d0ff1b1ac62050aae17025ba1ab7c78a6",
+      "role": "runtime_json"
+    },
+    "q_config": {
+      "relative_path": "artifacts/aei_paper_goals_v1/g03/training_runs/dense_instance/seed_20260719/config.json",
+      "bytes": 777,
+      "sha256": "6d62fa741f9444c006183311a4a97f68d77b53d94fdff7ef20bde025a0ebe1a1",
+      "role": "provenance_only"
+    },
+    "e3_protocol": {
+      "relative_path": "reports/aei_paper_goals_v1/g09/E3_BAYESIAN_CALIBRATION_PROTOCOL.json",
+      "bytes": 2257,
+      "sha256": "0e280a6444da83508fdbc8165ee168e08b2fd903b363b9b8bb4b1f3c627f0b76",
+      "role": "runtime_json"
+    },
+    "prior": {
+      "relative_path": "artifacts/aei_paper_goals_v1/g09/e_joint_source_priors/D0_train_seed_20260719.json",
+      "bytes": 29442,
+      "sha256": "76fe71d59527ec26738f0090ffe8ddf8116e5eda19d923b1939adaee4463cd6c",
+      "role": "runtime_json"
+    },
+    "scorer_complete": {
+      "relative_path": "artifacts/aei_paper_goals_v1/g09/e_joint_scorer/seed_20260719/COMPLETE.json",
+      "bytes": 1781,
+      "sha256": "e5ad625bd45eb5a066222b177125e8adb34818dd65d425e19d1a20eae2532808",
+      "role": "runtime_json"
+    },
+    "scorer_protocol": {
+      "relative_path": "reports/aei_paper_goals_v1/g09/E_JOINT_SCORER_PROTOCOL.json",
+      "bytes": 3452,
+      "sha256": "f4cb0a7dc552ee6a5ad795e561746d08426083adc06600458d5c978490274fef",
+      "role": "binary_bound_json"
+    },
+    "train_seal": {
+      "relative_path": "artifacts/aei_paper_goals_v1/g09/e_joint_train/full/COMPLETE.json",
+      "bytes": 6950,
+      "sha256": "580f91d335bf60b267dcbbf295c594d3270bdbf50f72a78825dad13d0987375b",
+      "role": "binary_bound_json"
+    },
+    "e2_protocol": {
+      "relative_path": "reports/aei_paper_goals_v1/g09/E2_RETENTION_PROTOCOL.json",
+      "bytes": 3803,
+      "sha256": "d9b4e49b9203243de074f391100fc30e260ae4d5af84d47c1b67e9673d5b0715",
+      "role": "provenance_only"
+    },
+    "metadata": {
+      "relative_path": "paper_release/topocae_p1_legacy_baseline_v1/output_training_p1_e6r2_r3_graph_v2_2_1_v1/metadata.json",
+      "bytes": 12045,
+      "sha256": "a450467fcefad201130d35bba2fe907ca2ab49a6d504bf85a7d794b5724597ba",
+      "role": "model_metadata"
+    },
+    "r_checkpoint": {
+      "relative_path": "paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e6r2_r3_m2_m5_controlled_training_v1/training_runs/final_8370_seed_20260719/best.pt",
+      "bytes": 1403767,
+      "sha256": "491655bfec5591c5a6a1b7f6300294f4818c29bf60b4c1b8dd5ff6078a057054",
+      "role": "model_checkpoint"
+    },
+    "r_threshold": {
+      "relative_path": "paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e6r2_r3_m2_m5_controlled_training_v1/training_runs/final_8370_seed_20260719/same_instance_threshold_selection.json",
+      "bytes": 20399,
+      "sha256": "9a94f60111ff77fd8c80885188e6886e476ad82140f011a8e44af1761403e02d",
+      "role": "decoder_parameter"
+    },
+    "q_checkpoint": {
+      "relative_path": "artifacts/aei_paper_goals_v1/g03/training_runs/dense_instance/seed_20260719/best.pt",
+      "bytes": 1397751,
+      "sha256": "f6ca9bc84d88bc540134b598353b2a2a0f9b83e1b2779c986b2ecc6577bfb70e",
+      "role": "model_checkpoint"
+    },
+    "q_threshold": {
+      "relative_path": "artifacts/aei_paper_goals_v1/g03/training_runs/dense_instance/seed_20260719/same_instance_threshold_selection.json",
+      "bytes": 19904,
+      "sha256": "96ee358d24dcb1946531c123281826ad53f0e0580d7ef0c17bc729dc40e8d3c8",
+      "role": "decoder_parameter"
+    },
+    "candidate_threshold": {
+      "relative_path": "paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e3c_seed_matched_candidate_v1/pipelines/old_same_instance_seed_20260718/candidate_model/candidate_threshold_selection.json",
+      "bytes": 1164,
+      "sha256": "448659d94ac868703ca6dfb74ff42095bb2205eac8cc92dc16d5b2f2d4208c8d",
+      "role": "decoder_parameter"
+    },
+    "global_decode": {
+      "relative_path": "paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e3c_seed_matched_candidate_v1/pipelines/old_same_instance_seed_20260718/global_decode_selection.json",
+      "bytes": 4316,
+      "sha256": "38d27f363f87df929c5648f27f55b6fb83a1cad7fbeb1458b960339ada844879",
+      "role": "decoder_parameter"
+    },
+    "scorer_checkpoint": {
+      "relative_path": "artifacts/aei_paper_goals_v1/g09/e_joint_scorer/seed_20260719/scorer.pt",
+      "bytes": 39669,
+      "sha256": "28668becd3ce4adf6f6f666f1ec1b35192c38da15df45fecc99df6a47061fd05",
+      "role": "model_checkpoint"
+    }
+  },
+  "templates": {
+    "freeze": {
+      "configs": {
+        "full": {
+          "node_mask": [],
+          "edge_mask": [],
+          "head": "sparse",
+          "semantic_weight": 0.55
+        },
+        "dense_instance": {
+          "node_mask": [],
+          "edge_mask": [],
+          "head": "dense",
+          "semantic_weight": 0.55
+        }
+      },
+      "seeds": [
+        20260719
+      ],
+      "frozen_files": [
+        {
+          "relative_path": "paper_release/topocae_p1_legacy_baseline_v1/output_training_p1_e6r2_r3_graph_v2_2_1_v1/metadata.json",
+          "bytes": 12045,
+          "sha256": "a450467fcefad201130d35bba2fe907ca2ab49a6d504bf85a7d794b5724597ba"
+        }
+      ],
+      "baseline_runs": [
+        {
+          "seed": 20260719,
+          "files": [
+            {
+              "relative_path": "paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e6r2_r3_m2_m5_controlled_training_v1/training_runs/final_8370_seed_20260719/best.pt",
+              "bytes": 1403767,
+              "sha256": "491655bfec5591c5a6a1b7f6300294f4818c29bf60b4c1b8dd5ff6078a057054"
+            }
+          ]
+        }
+      ]
+    },
+    "q_metrics": {
+      "config": "dense_instance",
+      "seed": 20260719,
+      "best_epoch": 53,
+      "completed_epochs": 56,
+      "new_test_read_count": 0,
+      "checkpoint": {
+        "relative_path": "artifacts/aei_paper_goals_v1/g03/training_runs/dense_instance/seed_20260719/best.pt",
+        "bytes": 1397751,
+        "sha256": "f6ca9bc84d88bc540134b598353b2a2a0f9b83e1b2779c986b2ecc6577bfb70e"
+      }
+    },
+    "q_status": {
+      "status": "completed"
+    },
+    "prior": {
+      "schema": "g09_e_joint_train_source_priors_v1",
+      "group_rule": "R_final if R:final; else R_other if any R; else Q_only",
+      "overall": {
+        "positive": 30359,
+        "candidates": 212442,
+        "negative": 182083,
+        "raw_precision": 0.14290488698091713,
+        "jeffreys_mean": 0.1429065678793841,
+        "credible_95": [
+          0.141421539807747,
+          0.1443979641855305
+        ]
+      },
+      "by_source": {
+        "R_final": {
+          "positive": 28771,
+          "candidates": 30557,
+          "negative": 1786,
+          "raw_precision": 0.9415518539123605,
+          "jeffreys_mean": 0.9415374042803848,
+          "credible_95": [
+            0.938879670905971,
+            0.9441403971207389
+          ]
+        },
+        "Q_only": {
+          "positive": 806,
+          "candidates": 23957,
+          "negative": 23151,
+          "raw_precision": 0.03364361147055141,
+          "jeffreys_mean": 0.033663077051506805,
+          "credible_95": [
+            0.0314164064950823,
+            0.03598348631802382
+          ]
+        },
+        "R_other": {
+          "positive": 782,
+          "candidates": 157928,
+          "negative": 157146,
+          "raw_precision": 0.004951623524644142,
+          "jeffreys_mean": 0.0049547581508146065,
+          "credible_95": [
+            0.004614437470367171,
+            0.005306953566543605
+          ]
+        }
+      },
+      "by_class": {
+        "blind_hole_round": {
+          "all": {
+            "positive": 2178,
+            "candidates": 9499,
+            "negative": 7321,
+            "raw_precision": 0.2292872933993052,
+            "jeffreys_mean": 0.22931578947368422,
+            "credible_95": [
+              0.22091692909472035,
+              0.23782259836171718
+            ]
+          },
+          "R_final": {
+            "positive": 1970,
+            "candidates": 2179,
+            "negative": 209,
+            "raw_precision": 0.9040844424047728,
+            "jeffreys_mean": 0.9038990825688074,
+            "credible_95": [
+              0.8911838538561044,
+              0.9159125325794664
+            ]
+          },
+          "Q_only": {
+            "positive": 79,
+            "candidates": 1477,
+            "negative": 1398,
+            "raw_precision": 0.05348679756262695,
+            "jeffreys_mean": 0.05378890392422192,
+            "credible_95": [
+              0.042875140166366045,
+              0.06584562597862052
+            ]
+          },
+          "R_other": {
+            "positive": 129,
+            "candidates": 5843,
+            "negative": 5714,
+            "raw_precision": 0.022077699811740546,
+            "jeffreys_mean": 0.022159479808350445,
+            "credible_95": [
+              0.018543090677813946,
+              0.026085490529065964
+            ]
+          }
+        },
+        "chamfer": {
+          "all": {
+            "positive": 3204,
+            "candidates": 6807,
+            "negative": 3603,
+            "raw_precision": 0.4706919347730278,
+            "jeffreys_mean": 0.47069623971797886,
+            "credible_95": [
+              0.45884900534620665,
+              0.48255978159713053
+            ]
+          },
+          "R_final": {
+            "positive": 3128,
+            "candidates": 3129,
+            "negative": 1,
+            "raw_precision": 0.9996804090763822,
+            "jeffreys_mean": 0.9995207667731629,
+            "credible_95": [
+              0.9985071635332322,
+              0.9999655147322539
+            ]
+          },
+          "Q_only": {
+            "positive": 1,
+            "candidates": 78,
+            "negative": 77,
+            "raw_precision": 0.01282051282051282,
+            "jeffreys_mean": 0.0189873417721519,
+            "credible_95": [
+              0.0013868009879363958,
+              0.058348318409433886
+            ]
+          },
+          "R_other": {
+            "positive": 75,
+            "candidates": 3600,
+            "negative": 3525,
+            "raw_precision": 0.020833333333333332,
+            "jeffreys_mean": 0.020966398222715912,
+            "credible_95": [
+              0.01654470074736673,
+              0.025891642672709124
+            ]
+          }
+        },
+        "counterbore_hole": {
+          "all": {
+            "positive": 1681,
+            "candidates": 9257,
+            "negative": 7576,
+            "raw_precision": 0.18159230852327968,
+            "jeffreys_mean": 0.18162670123136745,
+            "credible_95": [
+              0.17383929684736454,
+              0.18954439022311917
+            ]
+          },
+          "R_final": {
+            "positive": 1524,
+            "candidates": 1828,
+            "negative": 304,
+            "raw_precision": 0.8336980306345733,
+            "jeffreys_mean": 0.8335155822854019,
+            "credible_95": [
+              0.8161074234894963,
+              0.8502329583347732
+            ]
+          },
+          "Q_only": {
+            "positive": 153,
+            "candidates": 723,
+            "negative": 570,
+            "raw_precision": 0.21161825726141079,
+            "jeffreys_mean": 0.21201657458563536,
+            "credible_95": [
+              0.18303334969752624,
+              0.24250660573820257
+            ]
+          },
+          "R_other": {
+            "positive": 4,
+            "candidates": 6706,
+            "negative": 6702,
+            "raw_precision": 0.0005964807634953773,
+            "jeffreys_mean": 0.0006709408081109288,
+            "credible_95": [
+              0.0002013735807372279,
+              0.0014177037857436943
+            ]
+          }
+        },
+        "countersink_hole": {
+          "all": {
+            "positive": 1977,
+            "candidates": 11783,
+            "negative": 9806,
+            "raw_precision": 0.1677840957311381,
+            "jeffreys_mean": 0.1678122878479294,
+            "credible_95": [
+              0.16111904212604952,
+              0.1746123319622942
+            ]
+          },
+          "R_final": {
+            "positive": 1885,
+            "candidates": 2088,
+            "negative": 203,
+            "raw_precision": 0.9027777777777778,
+            "jeffreys_mean": 0.9025849688846338,
+            "credible_95": [
+              0.8895126695478565,
+              0.9149273053052092
+            ]
+          },
+          "Q_only": {
+            "positive": 92,
+            "candidates": 706,
+            "negative": 614,
+            "raw_precision": 0.13031161473087818,
+            "jeffreys_mean": 0.13083451202263083,
+            "credible_95": [
+              0.10700580653361973,
+              0.1566406597662135
+            ]
+          },
+          "R_other": {
+            "positive": 0,
+            "candidates": 8989,
+            "negative": 8989,
+            "raw_precision": 0.0,
+            "jeffreys_mean": 5.5617352614015575e-05,
+            "credible_95": [
+              5.462463998513521e-08,
+              0.00027939952241465125
+            ]
+          }
+        },
+        "cylinder_boss": {
+          "all": {
+            "positive": 663,
+            "candidates": 9023,
+            "negative": 8360,
+            "raw_precision": 0.07347888728804167,
+            "jeffreys_mean": 0.0735261524822695,
+            "credible_95": [
+              0.06823164879278447,
+              0.07899969171387361
+            ]
+          },
+          "R_final": {
+            "positive": 610,
+            "candidates": 663,
+            "negative": 53,
+            "raw_precision": 0.9200603318250377,
+            "jeffreys_mean": 0.9194277108433735,
+            "credible_95": [
+              0.8975780771791299,
+              0.9388864786972082
+            ]
+          },
+          "Q_only": {
+            "positive": 16,
+            "candidates": 1634,
+            "negative": 1618,
+            "raw_precision": 0.009791921664626682,
+            "jeffreys_mean": 0.010091743119266056,
+            "credible_95": [
+              0.005838932044659199,
+              0.015474897466517043
+            ]
+          },
+          "R_other": {
+            "positive": 37,
+            "candidates": 6726,
+            "negative": 6689,
+            "raw_precision": 0.005501040737436813,
+            "jeffreys_mean": 0.0055745503196075515,
+            "credible_95": [
+              0.003938558367113143,
+              0.007488472367128179
+            ]
+          }
+        },
+        "fillet": {
+          "all": {
+            "positive": 3429,
+            "candidates": 6279,
+            "negative": 2850,
+            "raw_precision": 0.5461060678451983,
+            "jeffreys_mean": 0.5460987261146497,
+            "credible_95": [
+              0.5337726333682713,
+              0.5583970080749379
+            ]
+          },
+          "R_final": {
+            "positive": 3419,
+            "candidates": 3461,
+            "negative": 42,
+            "raw_precision": 0.9878647789656169,
+            "jeffreys_mean": 0.9877238590410168,
+            "credible_95": [
+              0.9837974004652508,
+              0.9911174497176009
+            ]
+          },
+          "Q_only": {
+            "positive": 5,
+            "candidates": 26,
+            "negative": 21,
+            "raw_precision": 0.19230769230769232,
+            "jeffreys_mean": 0.2037037037037037,
+            "credible_95": [
+              0.07739796465286379,
+              0.37134754389058217
+            ]
+          },
+          "R_other": {
+            "positive": 5,
+            "candidates": 2792,
+            "negative": 2787,
+            "raw_precision": 0.0017908309455587394,
+            "jeffreys_mean": 0.0019692087361260296,
+            "credible_95": [
+              0.0006836534727942222,
+              0.00392097076599536
+            ]
+          }
+        },
+        "obround_hole": {
+          "all": {
+            "positive": 2020,
+            "candidates": 11801,
+            "negative": 9781,
+            "raw_precision": 0.1711719345818151,
+            "jeffreys_mean": 0.1711997966446365,
+            "credible_95": [
+              0.1644572360066592,
+              0.17804790544142368
+            ]
+          },
+          "R_final": {
+            "positive": 2020,
+            "candidates": 2020,
+            "negative": 0,
+            "raw_precision": 1.0,
+            "jeffreys_mean": 0.999752597723899,
+            "credible_95": [
+              0.9987573904038952,
+              0.9999997569436975
+            ]
+          },
+          "Q_only": {
+            "positive": 0,
+            "candidates": 212,
+            "negative": 212,
+            "raw_precision": 0.0,
+            "jeffreys_mean": 0.002347417840375587,
+            "credible_95": [
+              2.313468315024116e-06,
+              0.011765054139971278
+            ]
+          },
+          "R_other": {
+            "positive": 0,
+            "candidates": 9569,
+            "negative": 9569,
+            "raw_precision": 0.0,
+            "jeffreys_mean": 5.22466039707419e-05,
+            "credible_95": [
+              5.1313796360381e-08,
+              0.0002624671134849748
+            ]
+          }
+        },
+        "pocket_circular": {
+          "all": {
+            "positive": 668,
+            "candidates": 4286,
+            "negative": 3618,
+            "raw_precision": 0.1558562762482501,
+            "jeffreys_mean": 0.15593655236762305,
+            "credible_95": [
+              0.14523109998340844,
+              0.1669460546425748
+            ]
+          },
+          "R_final": {
+            "positive": 648,
+            "candidates": 648,
+            "negative": 0,
+            "raw_precision": 1.0,
+            "jeffreys_mean": 0.9992295839753467,
+            "credible_95": [
+              0.9961325383168186,
+              0.9999992425231993
+            ]
+          },
+          "Q_only": {
+            "positive": 20,
+            "candidates": 1660,
+            "negative": 1640,
+            "raw_precision": 0.012048192771084338,
+            "jeffreys_mean": 0.012341962673088501,
+            "credible_95": [
+              0.007610575240045712,
+              0.018181870287411438
+            ]
+          },
+          "R_other": {
+            "positive": 0,
+            "candidates": 1978,
+            "negative": 1978,
+            "raw_precision": 0.0,
+            "jeffreys_mean": 0.00025265285497726126,
+            "credible_95": [
+              2.4821660241316885e-07,
+              0.0012689745516577375
+            ]
+          }
+        },
+        "pocket_rect": {
+          "all": {
+            "positive": 657,
+            "candidates": 2048,
+            "negative": 1391,
+            "raw_precision": 0.32080078125,
+            "jeffreys_mean": 0.32088823816495854,
+            "credible_95": [
+              0.30084863099107206,
+              0.34125902649615397
+            ]
+          },
+          "R_final": {
+            "positive": 654,
+            "candidates": 803,
+            "negative": 149,
+            "raw_precision": 0.8144458281444583,
+            "jeffreys_mean": 0.8140547263681592,
+            "credible_95": [
+              0.7864532719448277,
+              0.8401765316156939
+            ]
+          },
+          "Q_only": {
+            "positive": 3,
+            "candidates": 106,
+            "negative": 103,
+            "raw_precision": 0.02830188679245283,
+            "jeffreys_mean": 0.03271028037383177,
+            "credible_95": [
+              0.008034162873377422,
+              0.07359365078085657
+            ]
+          },
+          "R_other": {
+            "positive": 0,
+            "candidates": 1139,
+            "negative": 1139,
+            "raw_precision": 0.0,
+            "jeffreys_mean": 0.0004385964912280702,
+            "credible_95": [
+              4.310155285838003e-07,
+              0.0022024802834724774
+            ]
+          }
+        },
+        "rectangular_boss": {
+          "all": {
+            "positive": 665,
+            "candidates": 665,
+            "negative": 0,
+            "raw_precision": 1.0,
+            "jeffreys_mean": 0.9992492492492493,
+            "credible_95": [
+              0.9962311820921939,
+              0.9999992618799809
+            ]
+          },
+          "R_final": {
+            "positive": 665,
+            "candidates": 665,
+            "negative": 0,
+            "raw_precision": 1.0,
+            "jeffreys_mean": 0.9992492492492493,
+            "credible_95": [
+              0.9962311820921939,
+              0.9999992618799809
+            ]
+          },
+          "Q_only": {
+            "positive": 0,
+            "candidates": 0,
+            "negative": 0,
+            "raw_precision": null,
+            "jeffreys_mean": 0.5,
+            "credible_95": [
+              0.001541333133436012,
+              0.9984586668665639
+            ]
+          },
+          "R_other": {
+            "positive": 0,
+            "candidates": 0,
+            "negative": 0,
+            "raw_precision": null,
+            "jeffreys_mean": 0.5,
+            "credible_95": [
+              0.001541333133436012,
+              0.9984586668665639
+            ]
+          }
+        },
+        "rib": {
+          "all": {
+            "positive": 1064,
+            "candidates": 10558,
+            "negative": 9494,
+            "raw_precision": 0.10077666224663762,
+            "jeffreys_mean": 0.10081447106733592,
+            "credible_95": [
+              0.09514401641699333,
+              0.10662814902848342
+            ]
+          },
+          "R_final": {
+            "positive": 947,
+            "candidates": 983,
+            "negative": 36,
+            "raw_precision": 0.9633774160732451,
+            "jeffreys_mean": 0.9629065040650406,
+            "credible_95": [
+              0.9502420804754295,
+              0.9737916967573194
+            ]
+          },
+          "Q_only": {
+            "positive": 35,
+            "candidates": 389,
+            "negative": 354,
+            "raw_precision": 0.08997429305912596,
+            "jeffreys_mean": 0.09102564102564102,
+            "credible_95": [
+              0.06456491818822827,
+              0.1214538566336752
+            ]
+          },
+          "R_other": {
+            "positive": 82,
+            "candidates": 9186,
+            "negative": 9104,
+            "raw_precision": 0.008926627476594819,
+            "jeffreys_mean": 0.008980080548601284,
+            "credible_95": [
+              0.007154334864556557,
+              0.01100814589522322
+            ]
+          }
+        },
+        "slot_o": {
+          "all": {
+            "positive": 846,
+            "candidates": 58721,
+            "negative": 57875,
+            "raw_precision": 0.014407111595510976,
+            "jeffreys_mean": 0.014415380947515412,
+            "credible_95": [
+              0.013467083309779953,
+              0.015395004899667875
+            ]
+          },
+          "R_final": {
+            "positive": 793,
+            "candidates": 846,
+            "negative": 53,
+            "raw_precision": 0.9373522458628841,
+            "jeffreys_mean": 0.9368358913813459,
+            "credible_95": [
+              0.9195131831684846,
+              0.9522066693871759
+            ]
+          },
+          "Q_only": {
+            "positive": 46,
+            "candidates": 6898,
+            "negative": 6852,
+            "raw_precision": 0.006668599594085242,
+            "jeffreys_mean": 0.0067401072619220175,
+            "credible_95": [
+              0.004948368530436035,
+              0.00880231012111783
+            ]
+          },
+          "R_other": {
+            "positive": 7,
+            "candidates": 50977,
+            "negative": 50970,
+            "raw_precision": 0.00013731682915824782,
+            "jeffreys_mean": 0.00014712228804582368,
+            "credible_95": [
+              6.14232372571989e-05,
+              0.0002695964822447242
+            ]
+          }
+        },
+        "slot_rect": {
+          "all": {
+            "positive": 856,
+            "candidates": 11729,
+            "negative": 10873,
+            "raw_precision": 0.07298149884900673,
+            "jeffreys_mean": 0.07301790281329923,
+            "credible_95": [
+              0.06837937662442405,
+              0.07779432930792962
+            ]
+          },
+          "R_final": {
+            "positive": 688,
+            "candidates": 715,
+            "negative": 27,
+            "raw_precision": 0.9622377622377623,
+            "jeffreys_mean": 0.9615921787709497,
+            "credible_95": [
+              0.9463505346807063,
+              0.9743969303986586
+            ]
+          },
+          "Q_only": {
+            "positive": 13,
+            "candidates": 1388,
+            "negative": 1375,
+            "raw_precision": 0.009365994236311239,
+            "jeffreys_mean": 0.009719222462203024,
+            "credible_95": [
+              0.005259674257333623,
+              0.015508995369065122
+            ]
+          },
+          "R_other": {
+            "positive": 155,
+            "candidates": 9626,
+            "negative": 9471,
+            "raw_precision": 0.016102223145647205,
+            "jeffreys_mean": 0.016152487794743948,
+            "credible_95": [
+              0.01373101249579014,
+              0.018764293699704875
+            ]
+          }
+        },
+        "slot_u": {
+          "all": {
+            "positive": 847,
+            "candidates": 14263,
+            "negative": 13416,
+            "raw_precision": 0.05938442122975531,
+            "jeffreys_mean": 0.059415311273135166,
+            "credible_95": [
+              0.05559484482134068,
+              0.06335279218293934
+            ]
+          },
+          "R_final": {
+            "positive": 651,
+            "candidates": 741,
+            "negative": 90,
+            "raw_precision": 0.8785425101214575,
+            "jeffreys_mean": 0.878032345013477,
+            "credible_95": [
+              0.8535586429374032,
+              0.9005766902372578
+            ]
+          },
+          "Q_only": {
+            "positive": 51,
+            "candidates": 2642,
+            "negative": 2591,
+            "raw_precision": 0.019303557910673733,
+            "jeffreys_mean": 0.019485433219825956,
+            "credible_95": [
+              0.014569567491306052,
+              0.02508919547290055
+            ]
+          },
+          "R_other": {
+            "positive": 145,
+            "candidates": 10880,
+            "negative": 10735,
+            "raw_precision": 0.01332720588235294,
+            "jeffreys_mean": 0.013371932726771436,
+            "credible_95": [
+              0.01129982056666422,
+              0.015613402275782149
+            ]
+          }
+        },
+        "slot_v": {
+          "all": {
+            "positive": 861,
+            "candidates": 14441,
+            "negative": 13580,
+            "raw_precision": 0.059621909840038775,
+            "jeffreys_mean": 0.0596524027143055,
+            "credible_95": [
+              0.05584795773945489,
+              0.06357235786447893
+            ]
+          },
+          "R_final": {
+            "positive": 758,
+            "candidates": 852,
+            "negative": 94,
+            "raw_precision": 0.8896713615023474,
+            "jeffreys_mean": 0.8892145369284877,
+            "credible_95": [
+              0.8673184844717196,
+              0.9093826726598985
+            ]
+          },
+          "Q_only": {
+            "positive": 83,
+            "candidates": 2314,
+            "negative": 2231,
+            "raw_precision": 0.035868625756266204,
+            "jeffreys_mean": 0.03606911447084233,
+            "credible_95": [
+              0.02886226864242577,
+              0.04403463821506134
+            ]
+          },
+          "R_other": {
+            "positive": 20,
+            "candidates": 11275,
+            "negative": 11255,
+            "raw_precision": 0.0017738359201773836,
+            "jeffreys_mean": 0.0018180205746718694,
+            "credible_95": [
+              0.0011185024859633947,
+              0.002684328937377327
+            ]
+          }
+        },
+        "stepped_hole_round": {
+          "all": {
+            "positive": 2017,
+            "candidates": 9113,
+            "negative": 7096,
+            "raw_precision": 0.2213321628442884,
+            "jeffreys_mean": 0.22136273864384465,
+            "credible_95": [
+              0.21289805289622926,
+              0.2299432506131594
+            ]
+          },
+          "R_final": {
+            "positive": 1686,
+            "candidates": 2162,
+            "negative": 476,
+            "raw_precision": 0.7798334875115633,
+            "jeffreys_mean": 0.779704114655571,
+            "credible_95": [
+              0.7620004115143724,
+              0.7969179173906413
+            ]
+          },
+          "Q_only": {
+            "positive": 208,
+            "candidates": 452,
+            "negative": 244,
+            "raw_precision": 0.46017699115044247,
+            "jeffreys_mean": 0.4602649006622517,
+            "credible_95": [
+              0.41460533371536107,
+              0.5062568277540307
+            ]
+          },
+          "R_other": {
+            "positive": 123,
+            "candidates": 6499,
+            "negative": 6376,
+            "raw_precision": 0.018925988613632868,
+            "jeffreys_mean": 0.019,
+            "credible_95": [
+              0.015823720132577684,
+              0.022456485186359634
+            ]
+          }
+        },
+        "through_hole_round": {
+          "all": {
+            "positive": 5986,
+            "candidates": 12871,
+            "negative": 6885,
+            "raw_precision": 0.46507652863025406,
+            "jeffreys_mean": 0.4650792417650715,
+            "credible_95": [
+              0.45646831021292855,
+              0.4737004515788468
+            ]
+          },
+          "R_final": {
+            "positive": 5985,
+            "candidates": 6034,
+            "negative": 49,
+            "raw_precision": 0.9918793503480279,
+            "jeffreys_mean": 0.991797845898923,
+            "credible_95": [
+              0.9893723382350833,
+              0.9939150538048244
+            ]
+          },
+          "Q_only": {
+            "positive": 1,
+            "candidates": 245,
+            "negative": 244,
+            "raw_precision": 0.004081632653061225,
+            "jeffreys_mean": 0.006097560975609756,
+            "credible_95": [
+              0.0004407516215548269,
+              0.01891670029491323
+            ]
+          },
+          "R_other": {
+            "positive": 0,
+            "candidates": 6592,
+            "negative": 6592,
+            "raw_precision": 0.0,
+            "jeffreys_mean": 7.583801001061732e-05,
+            "credible_95": [
+              7.44866380896747e-08,
+              0.00038097228838182703
+            ]
+          }
+        },
+        "web": {
+          "all": {
+            "positive": 740,
+            "candidates": 9298,
+            "negative": 8558,
+            "raw_precision": 0.0795870079587008,
+            "jeffreys_mean": 0.07963221851812023,
+            "credible_95": [
+              0.07421632988964309,
+              0.0852193622832025
+            ]
+          },
+          "R_final": {
+            "positive": 740,
+            "candidates": 740,
+            "negative": 0,
+            "raw_precision": 1.0,
+            "jeffreys_mean": 0.9993252361673415,
+            "credible_95": [
+              0.9966123802083574,
+              0.9999993366641435
+            ]
+          },
+          "Q_only": {
+            "positive": 0,
+            "candidates": 3007,
+            "negative": 3007,
+            "raw_precision": 0.0,
+            "jeffreys_mean": 0.00016622340425531914,
+            "credible_95": [
+              1.6328357030554942e-07,
+              0.0008349469631161293
+            ]
+          },
+          "R_other": {
+            "positive": 0,
+            "candidates": 5551,
+            "negative": 5551,
+            "raw_precision": 0.0,
+            "jeffreys_mean": 9.005763688760806e-05,
+            "credible_95": [
+              8.845476899299196e-08,
+              0.0004523980805903437
+            ]
+          }
+        }
+      },
+      "no_validation_or_engineering_labels": true
+    },
+    "train_seal": {
+      "schema": "g09_e_joint_train_data_v1",
+      "stats": {
+        "parts": 7440,
+        "candidates": 212442,
+        "positive": 30359
+      },
+      "identity": {
+        "schema": "g09_e_joint_train_identity_v1",
+        "dataset": "D0",
+        "split": "train",
+        "seed": 20260719,
+        "sample_count": 7440,
+        "feature_names": [
+          "R_face_count_log",
+          "R_class_mean",
+          "R_class_low_quantile",
+          "R_class_min",
+          "R_relation_applicable",
+          "R_relation_present",
+          "R_relation_coverage",
+          "R_internal_mean",
+          "R_internal_low_quantile",
+          "R_internal_contradiction_fraction",
+          "R_boundary_present",
+          "R_boundary_high_fraction",
+          "R_external_competition_fraction",
+          "R_geometry_present",
+          "R_axis_pair_parallel_fraction",
+          "R_axis_separation_max",
+          "R_axial_gap_max",
+          "R_radius_difference_max",
+          "R_host_contact_fraction",
+          "R_mechanism_count_log",
+          "R_cross_mechanism_agreement",
+          "R_mechanism_old_full",
+          "R_mechanism_pre_boundary",
+          "R_mechanism_initial_group",
+          "R_mechanism_raw_geometry",
+          "R_mechanism_bounded_geometry",
+          "R_mechanism_physical_split",
+          "R_mechanism_weak_relation_split",
+          "R_mechanism_axis_interval_split",
+          "R_mechanism_geometry_merge",
+          "R_mechanism_sparse_branch",
+          "R_mechanism_dense_branch",
+          "Q_face_count_log",
+          "Q_class_mean",
+          "Q_class_low_quantile",
+          "Q_class_min",
+          "Q_relation_applicable",
+          "Q_relation_present",
+          "Q_relation_coverage",
+          "Q_internal_mean",
+          "Q_internal_low_quantile",
+          "Q_internal_contradiction_fraction",
+          "Q_boundary_present",
+          "Q_boundary_high_fraction",
+          "Q_external_competition_fraction",
+          "Q_geometry_present",
+          "Q_axis_pair_parallel_fraction",
+          "Q_axis_separation_max",
+          "Q_axial_gap_max",
+          "Q_radius_difference_max",
+          "Q_host_contact_fraction",
+          "Q_mechanism_count_log",
+          "Q_cross_mechanism_agreement",
+          "Q_mechanism_old_full",
+          "Q_mechanism_pre_boundary",
+          "Q_mechanism_initial_group",
+          "Q_mechanism_raw_geometry",
+          "Q_mechanism_bounded_geometry",
+          "Q_mechanism_physical_split",
+          "Q_mechanism_weak_relation_split",
+          "Q_mechanism_axis_interval_split",
+          "Q_mechanism_geometry_merge",
+          "Q_mechanism_sparse_branch",
+          "Q_mechanism_dense_branch",
+          "proposed_by_R",
+          "proposed_by_Q"
+        ]
+      }
+    },
+    "scorer_protocol": {
+      "schema": "g09_e_joint_scorer_protocol_v1",
+      "feature_names": [
+        "R_face_count_log",
+        "R_class_mean",
+        "R_class_low_quantile",
+        "R_class_min",
+        "R_relation_applicable",
+        "R_relation_present",
+        "R_relation_coverage",
+        "R_internal_mean",
+        "R_internal_low_quantile",
+        "R_internal_contradiction_fraction",
+        "R_boundary_present",
+        "R_boundary_high_fraction",
+        "R_external_competition_fraction",
+        "R_geometry_present",
+        "R_axis_pair_parallel_fraction",
+        "R_axis_separation_max",
+        "R_axial_gap_max",
+        "R_radius_difference_max",
+        "R_host_contact_fraction",
+        "R_mechanism_count_log",
+        "R_cross_mechanism_agreement",
+        "R_mechanism_old_full",
+        "R_mechanism_pre_boundary",
+        "R_mechanism_initial_group",
+        "R_mechanism_raw_geometry",
+        "R_mechanism_bounded_geometry",
+        "R_mechanism_physical_split",
+        "R_mechanism_weak_relation_split",
+        "R_mechanism_axis_interval_split",
+        "R_mechanism_geometry_merge",
+        "R_mechanism_sparse_branch",
+        "R_mechanism_dense_branch",
+        "Q_face_count_log",
+        "Q_class_mean",
+        "Q_class_low_quantile",
+        "Q_class_min",
+        "Q_relation_applicable",
+        "Q_relation_present",
+        "Q_relation_coverage",
+        "Q_internal_mean",
+        "Q_internal_low_quantile",
+        "Q_internal_contradiction_fraction",
+        "Q_boundary_present",
+        "Q_boundary_high_fraction",
+        "Q_external_competition_fraction",
+        "Q_geometry_present",
+        "Q_axis_pair_parallel_fraction",
+        "Q_axis_separation_max",
+        "Q_axial_gap_max",
+        "Q_radius_difference_max",
+        "Q_host_contact_fraction",
+        "Q_mechanism_count_log",
+        "Q_cross_mechanism_agreement",
+        "Q_mechanism_old_full",
+        "Q_mechanism_pre_boundary",
+        "Q_mechanism_initial_group",
+        "Q_mechanism_raw_geometry",
+        "Q_mechanism_bounded_geometry",
+        "Q_mechanism_physical_split",
+        "Q_mechanism_weak_relation_split",
+        "Q_mechanism_axis_interval_split",
+        "Q_mechanism_geometry_merge",
+        "Q_mechanism_sparse_branch",
+        "Q_mechanism_dense_branch",
+        "proposed_by_R",
+        "proposed_by_Q"
+      ],
+      "fixed_rule": {
+        "architecture": "MLP_66_to_64_to_32_to_1",
+        "epochs": 30,
+        "batch_parts": 64,
+        "seed": 20260719,
+        "optimizer": "AdamW_lr_0.001_weight_decay_0.0001",
+        "normalization": "D0_train_candidate_mean_std_clamp_z_8",
+        "loss": "equal_positive_negative_BCE_per_part_then_mean_parts",
+        "inference": "one_joint_logit_per_canonical_candidate; independent-set packing; logit > 0; exact_limit 32; beam_width 128",
+        "validation_gradients": false,
+        "engineering_gradients": false,
+        "branch_prior": "none; R and Q source flags and predicted evidence learned from D0 train only"
+      },
+      "train_seal": {
+        "relative_path": "artifacts/aei_paper_goals_v1/g09/e_joint_train/full/COMPLETE.json",
+        "bytes": 6950,
+        "sha256": "580f91d335bf60b267dcbbf295c594d3270bdbf50f72a78825dad13d0987375b"
+      }
+    },
+    "scorer_complete": {
+      "schema": "g09_e_joint_scorer_v1",
+      "parts": 7440,
+      "candidates": 212442,
+      "positive": 30359,
+      "negative": 182083,
+      "checkpoint": {
+        "relative_path": "artifacts/aei_paper_goals_v1/g09/e_joint_scorer/seed_20260719/scorer.pt",
+        "bytes": 39669,
+        "sha256": "28668becd3ce4adf6f6f666f1ec1b35192c38da15df45fecc99df6a47061fd05"
+      },
+      "protocol": {
+        "relative_path": "reports/aei_paper_goals_v1/g09/E_JOINT_SCORER_PROTOCOL.json",
+        "bytes": 3452,
+        "sha256": "f4cb0a7dc552ee6a5ad795e561746d08426083adc06600458d5c978490274fef"
+      },
+      "train_seal": {
+        "relative_path": "artifacts/aei_paper_goals_v1/g09/e_joint_train/full/COMPLETE.json",
+        "bytes": 6950,
+        "sha256": "580f91d335bf60b267dcbbf295c594d3270bdbf50f72a78825dad13d0987375b"
+      }
+    },
+    "e3_protocol": {
+      "schema": "g09_e3_bayesian_calibration_protocol_v1",
+      "fixed_rule": {
+        "formula": "E1_logit / T + logit(p_class_source) - logit(p_all)",
+        "source_partition": "R_final if R:final; else R_other if any R; else Q_only",
+        "p_class_source": "(class_source_exact_positive + 20 * Jeffreys_source_mean) / (class_source_candidates + 20)",
+        "p_all": "Jeffreys Beta(0.5,0.5) overall training proposal mean",
+        "T": 3,
+        "T_from_train": "round_half_up(E1_R_final_exact_positive_q25 / logit(Jeffreys_R_final_train_precision))",
+        "T_train_ratio": 2.7265851194601924,
+        "q25_train": 7.577526092529297,
+        "R_final_train_precision": 0.9415374042803848,
+        "kappa": 20.0,
+        "threshold": 0.0,
+        "selector_exact_limit": 32,
+        "selector_beam_width": 128,
+        "no_identity_or_truth_in_inference": true,
+        "no_eng_or_validation_tuned_constants": true
+      },
+      "final_test_exposed": false,
+      "prior": {
+        "relative_path": "artifacts/aei_paper_goals_v1/g09/e_joint_source_priors/D0_train_seed_20260719.json",
+        "bytes": 29442,
+        "sha256": "76fe71d59527ec26738f0090ffe8ddf8116e5eda19d923b1939adaee4463cd6c"
+      },
+      "E1_scorer": {
+        "relative_path": "artifacts/aei_paper_goals_v1/g09/e_joint_scorer/seed_20260719/COMPLETE.json",
+        "bytes": 1781,
+        "sha256": "e5ad625bd45eb5a066222b177125e8adb34818dd65d425e19d1a20eae2532808"
+      }
+    }
+  },
+  "binary_bound_original_identity": {
+    "G03_configuration_freeze_sha256": "8e4bdc1338ab2c375ae74a1930187d6913d09454b4ce81e8138a731a18bd3922",
+    "E1_protocol_json_digest": "5aeb4737245480de8b68138b643a80c0cdf73e40a36fc743646f1266b09f3e21",
+    "E1_train_seal_json_digest": "d1f924bd5ed1e5498608b94bf1f5421a66c59c1e3d399856816fd52fdbe72e3e",
+    "E1_scorer_checkpoint_sha256": "28668becd3ce4adf6f6f666f1ec1b35192c38da15df45fecc99df6a47061fd05"
+  },
+  "training_sidecars_provenance_only": [
+    {
+      "name": "candidates.jsonl",
+      "bytes": 300848173,
+      "sha256": "5cf3c94a929fcbe7d7dd573638c66412d4034f988493f6a42ab3fbec6beccd3e",
+      "copied": false,
+      "contents_opened": false
+    },
+    {
+      "name": "labels.jsonl",
+      "bytes": 25710224,
+      "sha256": "87d3aca4a400f2424a2a61d25a64f7d1b95d9d14621616445181c1f1e1b78ca2",
+      "copied": false,
+      "contents_opened": false
+    }
+  ],
+  "historical_Q25_protocol_sha256": "d9b4e49b9203243de074f391100fc30e260ae4d5af84d47c1b67e9673d5b0715",
+  "historical_Q_training_config_sha256": "6d62fa741f9444c006183311a4a97f68d77b53d94fdff7ef20bde025a0ebe1a1",
+  "runtime_binary_keys": [
+    "metadata",
+    "r_checkpoint",
+    "r_threshold",
+    "q_checkpoint",
+    "q_threshold",
+    "candidate_threshold",
+    "global_decode",
+    "scorer_checkpoint"
+  ],
+  "runtime_json_keys": [
+    "freeze",
+    "q_metrics",
+    "q_status",
+    "prior",
+    "train_seal",
+    "scorer_protocol",
+    "scorer_complete",
+    "e3_protocol"
+  ],
+  "protected_source_files_modified": false,
+  "T10_truth_opened": false,
+  "training_labels_opened": false,
+  "actual_inferences": 0,
+  "actual_CAD_edits": 0,
+  "actual_CAE_solves": 0,
+  "license_and_full_import_closure_pass": false,
+  "binary_embedded_identity_verified": false,
+  "reproducibility_pass": false
+}

@@ -1,0 +1,2331 @@
+{
+  "schema": "g10_m7_operation_face_reevaluation_v1",
+  "date": "2026-10-23",
+  "posthoc_author_requested": true,
+  "primary_metric": "task_level_operation_face_accuracy",
+  "face_numbering": "final STEP face numbers, not Abaqus face indices",
+  "summary": {
+    "qwen_B": {
+      "n": 13,
+      "operation_faces_correct": 2,
+      "ready_wrong_faces": 2,
+      "needs_clarification": 9,
+      "engineering_parameters_equivalent": 4,
+      "engineering_plan_equivalent": 2,
+      "verified_engineering_task": 2,
+      "legacy_strict_match": 2,
+      "artifact_available": 3,
+      "clarification_no_dispatch": 9,
+      "cae_tasks": 7,
+      "cae_verified": 0,
+      "CAD_non_dispatch": 1,
+      "cad_tasks": 6,
+      "cad_verified": 2,
+      "old_equivalent_artifact": 2,
+      "new_CAE_ODB": 1
+    },
+    "qwen_S": {
+      "n": 13,
+      "operation_faces_correct": 13,
+      "ready_wrong_faces": 0,
+      "needs_clarification": 0,
+      "engineering_parameters_equivalent": 13,
+      "engineering_plan_equivalent": 13,
+      "verified_engineering_task": 13,
+      "legacy_strict_match": 9,
+      "artifact_available": 13,
+      "old_equivalent_artifact": 9,
+      "cae_tasks": 7,
+      "cae_verified": 7,
+      "cad_tasks": 6,
+      "cad_verified": 6,
+      "new_CAE_ODB": 3,
+      "new_CAD_STEP": 1
+    }
+  },
+  "rows": [
+    {
+      "slot_id": "m7-b1-angle_bracket-qwen-b",
+      "case_id": "angle_bracket",
+      "part": "Angle Bracket.stp",
+      "provider": "qwen",
+      "condition": "B",
+      "domain": "cae",
+      "status": "needs_clarification",
+      "engineering_request_en": "Assign 45 steel to the entire part and use a global mesh size of 2 mm. Fully constrain all faces of every counterbored hole. Apply a uniformly distributed force of 100 N to the inner walls of each obround hole in the negative global Y direction.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-angle_bracket-qwen-b/response.raw",
+        "bytes": 1330,
+        "sha256": "08dd42bd4c3426fda1c61d2de765eb29eddd1f9325544dd5122e247f349ee7e1"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\B\\angle_bracket.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": false,
+      "actual_face_groups_by_action": {},
+      "reference_face_groups_by_action": {
+        "fix_features": [
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            32,
+            33,
+            34
+          ],
+          [
+            35,
+            36,
+            37
+          ],
+          [
+            38,
+            39,
+            40
+          ]
+        ],
+        "apply_force": [
+          [
+            21,
+            22,
+            23,
+            24
+          ],
+          [
+            25,
+            26,
+            27,
+            28
+          ],
+          [
+            13,
+            14,
+            15,
+            16
+          ],
+          [
+            17,
+            18,
+            19,
+            20
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": false,
+      "engineering_plan_equivalent": false,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": false,
+      "existing_execution": {
+        "kind": "clarification_no_dispatch",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": false,
+        "correct_execution_evidence": false,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-angle_bracket-qwen-b/response.raw",
+          "bytes": 1330,
+          "sha256": "08dd42bd4c3426fda1c61d2de765eb29eddd1f9325544dd5122e247f349ee7e1",
+          "packaged_path": "data/language/physical/m7-b1-angle_bracket-qwen-b/evidence.raw"
+        }
+      },
+      "legacy_comparison_retained": null
+    },
+    {
+      "slot_id": "m7-b1-angle_bracket-qwen-s",
+      "case_id": "angle_bracket",
+      "part": "Angle Bracket.stp",
+      "provider": "qwen",
+      "condition": "S",
+      "domain": "cae",
+      "status": "ready",
+      "engineering_request_en": "Assign 45 steel to the entire part and use a global mesh size of 2 mm. Fully constrain all faces of every counterbored hole. Apply a uniformly distributed force of 100 N to the inner walls of each obround hole in the negative global Y direction.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-angle_bracket-qwen-s/response.raw",
+        "bytes": 1802,
+        "sha256": "809066f1cd27c7b3dd28f715c1ea80e36532f36d87c1be0035df98799006f2c4"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\S\\angle_bracket.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "fix_features": [
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            32,
+            33,
+            34
+          ],
+          [
+            35,
+            36,
+            37
+          ],
+          [
+            38,
+            39,
+            40
+          ]
+        ],
+        "apply_force": [
+          [
+            21,
+            22,
+            23,
+            24
+          ],
+          [
+            25,
+            26,
+            27,
+            28
+          ],
+          [
+            13,
+            14,
+            15,
+            16
+          ],
+          [
+            17,
+            18,
+            19,
+            20
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "fix_features": [
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            32,
+            33,
+            34
+          ],
+          [
+            35,
+            36,
+            37
+          ],
+          [
+            38,
+            39,
+            40
+          ]
+        ],
+        "apply_force": [
+          [
+            21,
+            22,
+            23,
+            24
+          ],
+          [
+            25,
+            26,
+            27,
+            28
+          ],
+          [
+            13,
+            14,
+            15,
+            16
+          ],
+          [
+            17,
+            18,
+            19,
+            20
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "old_equivalent_artifact",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/angle_bracket/execution_receipt.json",
+          "bytes": 8418,
+          "sha256": "49190468a7e96dfbe9a33afe47242e5320b7db4de308d03965c0a7248df9e0c1",
+          "packaged_path": "data/language/physical/m7-b1-angle_bracket-qwen-s/evidence.json"
+        },
+        "basis": "previously executed equivalent command; existing validated artifact"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": true,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": true
+      }
+    },
+    {
+      "slot_id": "m7-b1-bearing_housing-qwen-s",
+      "case_id": "bearing_housing",
+      "part": "Bearing Housing.stp",
+      "provider": "qwen",
+      "condition": "S",
+      "domain": "cad",
+      "status": "ready",
+      "engineering_request_en": "Change the radius of all blind holes with an existing radius of 4 mm to 3 mm. Preserve their axes and axial extent, and leave unrelated geometry unchanged.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-bearing_housing-qwen-s/response.raw",
+        "bytes": 996,
+        "sha256": "a25fbb4564eecc572f7aa5c6cb3d5524e0ca8d4d0720d0ed330a5ba14370864d"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\S\\bearing_housing.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "set_hole_radius": [
+          [
+            23,
+            24
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            29,
+            30
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "set_hole_radius": [
+          [
+            23,
+            24
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            29,
+            30
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "old_equivalent_artifact",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/bearing_housing/execution_receipt.json",
+          "bytes": 3892,
+          "sha256": "cf0417f142658142ed37e6604f7eb27ecdec823c0693c04a2c08fabb0f7cdb39",
+          "packaged_path": "data/language/physical/m7-b1-bearing_housing-qwen-s/evidence.json"
+        },
+        "basis": "previously executed equivalent command; existing validated artifact"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": true,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": true
+      }
+    },
+    {
+      "slot_id": "m7-b1-bearing_housing-qwen-b",
+      "case_id": "bearing_housing",
+      "part": "Bearing Housing.stp",
+      "provider": "qwen",
+      "condition": "B",
+      "domain": "cad",
+      "status": "ready",
+      "engineering_request_en": "Change the radius of all blind holes with an existing radius of 4 mm to 3 mm. Preserve their axes and axial extent, and leave unrelated geometry unchanged.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-bearing_housing-qwen-b/response.raw",
+        "bytes": 1299,
+        "sha256": "1c27e60ddd4b5d561db614690dfcda0e2e505be47fe2983d866195720e86cdb5"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\B\\bearing_housing.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": false,
+      "actual_face_groups_by_action": {
+        "set_hole_radius": [
+          [
+            23,
+            27,
+            25,
+            29
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "set_hole_radius": [
+          [
+            23,
+            24
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            29,
+            30
+          ]
+        ]
+      },
+      "face_differences": {
+        "set_hole_radius": {
+          "missing_step_face_numbers": [
+            24,
+            26,
+            28,
+            30
+          ],
+          "extra_step_face_numbers": []
+        }
+      },
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": false,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": false,
+      "existing_execution": {
+        "kind": "CAD_non_dispatch",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": false,
+        "correct_execution_evidence": false,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-bearing_housing-qwen-b/response.raw",
+          "bytes": 1299,
+          "sha256": "1c27e60ddd4b5d561db614690dfcda0e2e505be47fe2983d866195720e86cdb5",
+          "packaged_path": "data/language/physical/m7-b1-bearing_housing-qwen-b/evidence.raw"
+        }
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": true,
+        "target_face_sets_match_reference": false,
+        "wrong_target_operation_indices": [
+          0
+        ],
+        "exact_reference_plan_after_grounding": false
+      }
+    },
+    {
+      "slot_id": "m7-b1-clevis-qwen-b",
+      "case_id": "clevis",
+      "part": "Clevis.stp",
+      "provider": "qwen",
+      "condition": "B",
+      "domain": "cae",
+      "status": "needs_clarification",
+      "engineering_request_en": "Assign 45 steel to the entire part and use a global mesh size of 1 mm. Refine all chamfer faces to 0.3 mm. Fully constrain the walls of all through holes with a radius of 3.765 mm. Apply a uniform directional surface traction of 50 MPa to the top face of the cylindrical boss in the positive global Z direction.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-clevis-qwen-b/response.raw",
+        "bytes": 1474,
+        "sha256": "7a90714a182d9c364b603e38c07dccf643ba584feef132fb3dd8fe4ae4532235"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\B\\clevis.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": false,
+      "actual_face_groups_by_action": {},
+      "reference_face_groups_by_action": {
+        "set_local_mesh": [
+          [
+            22
+          ],
+          [
+            25
+          ],
+          [
+            23
+          ],
+          [
+            24
+          ]
+        ],
+        "fix_features": [
+          [
+            6
+          ],
+          [
+            5
+          ]
+        ],
+        "apply_traction": [
+          [
+            1
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": false,
+      "engineering_plan_equivalent": false,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": false,
+      "existing_execution": {
+        "kind": "clarification_no_dispatch",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": false,
+        "correct_execution_evidence": false,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-clevis-qwen-b/response.raw",
+          "bytes": 1474,
+          "sha256": "7a90714a182d9c364b603e38c07dccf643ba584feef132fb3dd8fe4ae4532235",
+          "packaged_path": "data/language/physical/m7-b1-clevis-qwen-b/evidence.raw"
+        }
+      },
+      "legacy_comparison_retained": null
+    },
+    {
+      "slot_id": "m7-b1-clevis-qwen-s",
+      "case_id": "clevis",
+      "part": "Clevis.stp",
+      "provider": "qwen",
+      "condition": "S",
+      "domain": "cae",
+      "status": "ready",
+      "engineering_request_en": "Assign 45 steel to the entire part and use a global mesh size of 1 mm. Refine all chamfer faces to 0.3 mm. Fully constrain the walls of all through holes with a radius of 3.765 mm. Apply a uniform directional surface traction of 50 MPa to the top face of the cylindrical boss in the positive global Z direction.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-clevis-qwen-s/response.raw",
+        "bytes": 2079,
+        "sha256": "d4ec5fa5b0511aeeb56b7fb13d9e4e3e27447f91bd275fdc3b8a2b991d0ea18d"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\S\\clevis.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "set_local_mesh": [
+          [
+            22
+          ],
+          [
+            25
+          ],
+          [
+            23
+          ],
+          [
+            24
+          ]
+        ],
+        "fix_features": [
+          [
+            6
+          ],
+          [
+            5
+          ]
+        ],
+        "apply_traction": [
+          [
+            1
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "set_local_mesh": [
+          [
+            22
+          ],
+          [
+            25
+          ],
+          [
+            23
+          ],
+          [
+            24
+          ]
+        ],
+        "fix_features": [
+          [
+            6
+          ],
+          [
+            5
+          ]
+        ],
+        "apply_traction": [
+          [
+            1
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [
+        {
+          "action": "fix_features",
+          "field": "role",
+          "model": "inner_walls",
+          "reference": "whole_feature",
+          "reason": "identical actual operation face set"
+        }
+      ],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "new_CAE_ODB",
+        "new_execution_in_historical_experiment": true,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_model_cae_dispatch/v3/m7-b1-clevis-qwen-s/attempt_001/final.odb",
+          "bytes": 433723204,
+          "sha256": "13a53c8f7904e3a18cb68633e090037c058e852a34838a985cc6526a7110c294",
+          "packaged_zip": "data/language/physical/m7-b1-clevis-qwen-s/solver_output.zip",
+          "zip_member": "model.odb"
+        },
+        "different_physical_fields": [],
+        "independent_odb_audit": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_model_cae_dispatch/v4_reaudit_only/m7-b1-clevis-qwen-s/independent_odb_audit_v2.json",
+          "bytes": 1654,
+          "sha256": "b5da8e52474aef0dcaa6276cb73855159343ae6e192823aea12dd2909b4c19c6",
+          "packaged_path": "data/language/physical/m7-b1-clevis-qwen-s/independent_odb_audit.json"
+        },
+        "basis": "existing solver result plus physical-input and ODB audit"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": false,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": false
+      }
+    },
+    {
+      "slot_id": "m7-b1-flanged_sleeve-qwen-s",
+      "case_id": "flanged_sleeve",
+      "part": "Flanged Sleeve.stp",
+      "provider": "qwen",
+      "condition": "S",
+      "domain": "cad",
+      "status": "ready",
+      "engineering_request_en": "Change the radius of all through holes with an existing radius of 20 mm to 15 mm. Preserve their axes and axial extent, and leave unrelated geometry unchanged.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_sleeve-qwen-s/response.raw",
+        "bytes": 1000,
+        "sha256": "b888784cd7c3cac3f3e6ca51ac6b86817f5219f90129011c364ab59b59a53224"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\S\\flanged_sleeve.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "set_hole_radius": [
+          [
+            13
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "set_hole_radius": [
+          [
+            13
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "old_equivalent_artifact",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/flanged_sleeve/execution_receipt.json",
+          "bytes": 3472,
+          "sha256": "e215d98a9fb70d1213ddea6dff149342994665fa068010000f4ea26273c02c51",
+          "packaged_path": "data/language/physical/m7-b1-flanged_sleeve-qwen-s/evidence.json"
+        },
+        "basis": "previously executed equivalent command; existing validated artifact"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": true,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": true
+      }
+    },
+    {
+      "slot_id": "m7-b1-flanged_sleeve-qwen-b",
+      "case_id": "flanged_sleeve",
+      "part": "Flanged Sleeve.stp",
+      "provider": "qwen",
+      "condition": "B",
+      "domain": "cad",
+      "status": "ready",
+      "engineering_request_en": "Change the radius of all through holes with an existing radius of 20 mm to 15 mm. Preserve their axes and axial extent, and leave unrelated geometry unchanged.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_sleeve-qwen-b/response.raw",
+        "bytes": 1220,
+        "sha256": "1f20ff00e59a2b67cb5b930ca78c9eb40bb1acf5d1c67707e5f8ec1d45b84f49"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\B\\flanged_sleeve.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "set_hole_radius": [
+          [
+            13
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "set_hole_radius": [
+          [
+            13
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "old_equivalent_artifact",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/flanged_sleeve/execution_receipt.json",
+          "bytes": 3472,
+          "sha256": "e215d98a9fb70d1213ddea6dff149342994665fa068010000f4ea26273c02c51",
+          "packaged_path": "data/language/physical/m7-b1-flanged_sleeve-qwen-b/evidence.json"
+        },
+        "basis": "previously executed equivalent command; existing validated artifact"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": true,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": true
+      }
+    },
+    {
+      "slot_id": "m7-b1-flanged_support-qwen-b",
+      "case_id": "flanged_support",
+      "part": "Flanged Support.stp",
+      "provider": "qwen",
+      "condition": "B",
+      "domain": "cae",
+      "status": "ready",
+      "engineering_request_en": "Assign 45 steel to the entire part and use a global mesh size of 1 mm. Fully constrain all faces of every countersunk hole. Apply a uniformly distributed force of 500 N to the wall of the through hole with a radius of 4 mm in the positive global Z direction.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_support-qwen-b/response.raw",
+        "bytes": 2122,
+        "sha256": "1345eb4b6e50bea2448150b4e17c306349443c4d0389bb519af28aecb25d38ba"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\B\\flanged_support.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": false,
+      "actual_face_groups_by_action": {
+        "fix_features": [
+          [
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ]
+        ],
+        "apply_force": [
+          [
+            44
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "fix_features": [
+          [
+            13,
+            14
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ],
+        "apply_force": [
+          [
+            44
+          ]
+        ]
+      },
+      "face_differences": {
+        "fix_features": {
+          "missing_step_face_numbers": [
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ],
+          "extra_step_face_numbers": []
+        }
+      },
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": false,
+      "accepted_equivalent_expressions": [
+        {
+          "action": "apply_force",
+          "field": "role",
+          "model": "whole_feature",
+          "reference": "inner_walls",
+          "reason": "identical actual operation face set"
+        },
+        {
+          "action": "apply_force",
+          "field": "basis",
+          "model": "total",
+          "reference": "per_instance",
+          "reason": "one loading object; equal force magnitude"
+        }
+      ],
+      "verified_engineering_task": false,
+      "existing_execution": {
+        "kind": "new_CAE_ODB",
+        "new_execution_in_historical_experiment": true,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": false,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_model_cae_dispatch/v3/m7-b1-flanged_support-qwen-b/attempt_001/final.odb",
+          "bytes": 378895676,
+          "sha256": "f425d61be695ed24272cc3fd11bfc80a168d1224574cd518a4047a7c597433f3",
+          "packaged_zip": "data/language/physical/m7-b1-flanged_support-qwen-b/solver_output.zip",
+          "zip_member": "model.odb"
+        },
+        "different_physical_fields": [
+          "fixed_abaqus_indices"
+        ],
+        "independent_odb_audit": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_model_cae_dispatch/v4_reaudit_only/m7-b1-flanged_support-qwen-b/independent_odb_audit_v2.json",
+          "bytes": 1650,
+          "sha256": "217c76c375cdd3cca55f287e33a7538af6d2cfb5a2b8f762f368024447cb75d0",
+          "packaged_path": "data/language/physical/m7-b1-flanged_support-qwen-b/independent_odb_audit.json"
+        },
+        "basis": "existing solver result plus physical-input and ODB audit"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": false,
+        "target_face_sets_match_reference": false,
+        "wrong_target_operation_indices": [
+          2
+        ],
+        "exact_reference_plan_after_grounding": false
+      }
+    },
+    {
+      "slot_id": "m7-b1-flanged_support-qwen-s",
+      "case_id": "flanged_support",
+      "part": "Flanged Support.stp",
+      "provider": "qwen",
+      "condition": "S",
+      "domain": "cae",
+      "status": "ready",
+      "engineering_request_en": "Assign 45 steel to the entire part and use a global mesh size of 1 mm. Fully constrain all faces of every countersunk hole. Apply a uniformly distributed force of 500 N to the wall of the through hole with a radius of 4 mm in the positive global Z direction.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_support-qwen-s/response.raw",
+        "bytes": 1791,
+        "sha256": "d31b5832dff6f8b9d4192868ce4aa419c8e6f8858b9198b9165583cc44839c0a"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\S\\flanged_support.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "fix_features": [
+          [
+            13,
+            14
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ],
+        "apply_force": [
+          [
+            44
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "fix_features": [
+          [
+            13,
+            14
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ],
+        "apply_force": [
+          [
+            44
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [
+        {
+          "action": "apply_force",
+          "field": "basis",
+          "model": "total",
+          "reference": "per_instance",
+          "reason": "one loading object; equal force magnitude"
+        }
+      ],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "new_CAE_ODB",
+        "new_execution_in_historical_experiment": true,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_model_cae_dispatch/v3/m7-b1-flanged_support-qwen-s/attempt_001/final.odb",
+          "bytes": 379018172,
+          "sha256": "3a1f40a7c4c94a08e213b054cae8d8b68216d4b5398010cc7aaac40da4acad19",
+          "packaged_zip": "data/language/physical/m7-b1-flanged_support-qwen-s/solver_output.zip",
+          "zip_member": "model.odb"
+        },
+        "different_physical_fields": [],
+        "independent_odb_audit": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_model_cae_dispatch/v4_reaudit_only/m7-b1-flanged_support-qwen-s/independent_odb_audit_v2.json",
+          "bytes": 1650,
+          "sha256": "dffdc3cec5cb45060dd4216935e9cf83bb1741b00ea1c8e0d56d2e9ad97e661f",
+          "packaged_path": "data/language/physical/m7-b1-flanged_support-qwen-s/independent_odb_audit.json"
+        },
+        "basis": "existing solver result plus physical-input and ODB audit"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": false,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": false
+      }
+    },
+    {
+      "slot_id": "m7-b1-guide_rail-qwen-s",
+      "case_id": "guide_rail",
+      "part": "Guide Rail.stp",
+      "provider": "qwen",
+      "condition": "S",
+      "domain": "cad",
+      "status": "ready",
+      "engineering_request_en": "Reduce the adjacent center-to-center spacing of the three counterbored holes from 200 mm to 150 mm. Keep the central hole fixed and move the two outer holes toward it along the existing hole pattern. Preserve the hole geometry and unrelated features.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-guide_rail-qwen-s/response.raw",
+        "bytes": 1168,
+        "sha256": "45e1d673a93083638226596d340712d32eff37d2b1bb127f203460633f2e143b"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\S\\guide_rail.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "set_hole_spacing": [
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            32,
+            33,
+            34
+          ],
+          [
+            35,
+            36,
+            37
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "set_hole_spacing": [
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            32,
+            33,
+            34
+          ],
+          [
+            35,
+            36,
+            37
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "old_equivalent_artifact",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/guide_rail/execution_receipt.json",
+          "bytes": 3765,
+          "sha256": "e6bc5a5183600d971b625f8210258d17cabe6261929586b5378de9a4f70dd7e7",
+          "packaged_path": "data/language/physical/m7-b1-guide_rail-qwen-s/evidence.json"
+        },
+        "basis": "previously executed equivalent command; existing validated artifact"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": true,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": true
+      }
+    },
+    {
+      "slot_id": "m7-b1-guide_rail-qwen-b",
+      "case_id": "guide_rail",
+      "part": "Guide Rail.stp",
+      "provider": "qwen",
+      "condition": "B",
+      "domain": "cad",
+      "status": "needs_clarification",
+      "engineering_request_en": "Reduce the adjacent center-to-center spacing of the three counterbored holes from 200 mm to 150 mm. Keep the central hole fixed and move the two outer holes toward it along the existing hole pattern. Preserve the hole geometry and unrelated features.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-guide_rail-qwen-b/response.raw",
+        "bytes": 1066,
+        "sha256": "f66d47c4f6058df6381d9c56861aa7d625d694875a4d89fa83657f5df9243531"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\B\\guide_rail.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": false,
+      "actual_face_groups_by_action": {},
+      "reference_face_groups_by_action": {
+        "set_hole_spacing": [
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            32,
+            33,
+            34
+          ],
+          [
+            35,
+            36,
+            37
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": false,
+      "engineering_plan_equivalent": false,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": false,
+      "existing_execution": {
+        "kind": "clarification_no_dispatch",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": false,
+        "correct_execution_evidence": false,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-guide_rail-qwen-b/response.raw",
+          "bytes": 1066,
+          "sha256": "f66d47c4f6058df6381d9c56861aa7d625d694875a4d89fa83657f5df9243531",
+          "packaged_path": "data/language/physical/m7-b1-guide_rail-qwen-b/evidence.raw"
+        }
+      },
+      "legacy_comparison_retained": null
+    },
+    {
+      "slot_id": "m7-b1-mounting_plate-qwen-b",
+      "case_id": "mounting_plate",
+      "part": "Mounting Plate.stp",
+      "provider": "qwen",
+      "condition": "B",
+      "domain": "cad",
+      "status": "ready",
+      "engineering_request_en": "Change the radius of all through holes with an existing radius of 22.5 mm to 24 mm. Preserve their axes and axial extent, and leave unrelated geometry unchanged.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-mounting_plate-qwen-b/response.raw",
+        "bytes": 1241,
+        "sha256": "ffc1abf559dee097a1a787679502ab356f2e8902b4ece3ac0664ed0d14fc2aff"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\B\\mounting_plate.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "set_hole_radius": [
+          [
+            17
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "set_hole_radius": [
+          [
+            17
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "old_equivalent_artifact",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/mounting_plate/execution_receipt.json",
+          "bytes": 3472,
+          "sha256": "1ab1e595a8f1f00bd61985536f8c768bcb128cb00f136d41eeaa4cb587bcf7ef",
+          "packaged_path": "data/language/physical/m7-b1-mounting_plate-qwen-b/evidence.json"
+        },
+        "basis": "previously executed equivalent command; existing validated artifact"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": true,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": true
+      }
+    },
+    {
+      "slot_id": "m7-b1-mounting_plate-qwen-s",
+      "case_id": "mounting_plate",
+      "part": "Mounting Plate.stp",
+      "provider": "qwen",
+      "condition": "S",
+      "domain": "cad",
+      "status": "ready",
+      "engineering_request_en": "Change the radius of all through holes with an existing radius of 22.5 mm to 24 mm. Preserve their axes and axial extent, and leave unrelated geometry unchanged.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-mounting_plate-qwen-s/response.raw",
+        "bytes": 1000,
+        "sha256": "5c7ff680a2889f1bb812cb8402c1c6b39d9ea66d890d73840676f1b59387ebd7"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\S\\mounting_plate.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "set_hole_radius": [
+          [
+            17
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "set_hole_radius": [
+          [
+            17
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "old_equivalent_artifact",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/mounting_plate/execution_receipt.json",
+          "bytes": 3472,
+          "sha256": "1ab1e595a8f1f00bd61985536f8c768bcb128cb00f136d41eeaa4cb587bcf7ef",
+          "packaged_path": "data/language/physical/m7-b1-mounting_plate-qwen-s/evidence.json"
+        },
+        "basis": "previously executed equivalent command; existing validated artifact"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": true,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": true
+      }
+    },
+    {
+      "slot_id": "m7-b1-sealing_cover-qwen-s",
+      "case_id": "sealing_cover",
+      "part": "Sealing Cover.stp",
+      "provider": "qwen",
+      "condition": "S",
+      "domain": "cae",
+      "status": "ready",
+      "engineering_request_en": "Assign brass to the entire part and use a global mesh size of 5 mm. Refine all chamfer faces to 2 mm. Fully constrain all faces of every counterbored hole. Apply a uniform internal pressure of 10 MPa to all sidewalls and the bottom of the circular pocket.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-sealing_cover-qwen-s/response.raw",
+        "bytes": 1930,
+        "sha256": "1edcd649044a37d33b4524fcbcdf248fd7d88e16f4a9964dddbedd0f67a9d932"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\S\\sealing_cover.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "set_local_mesh": [
+          [
+            22
+          ],
+          [
+            23
+          ]
+        ],
+        "fix_features": [
+          [
+            7,
+            8,
+            9
+          ],
+          [
+            10,
+            11,
+            12
+          ],
+          [
+            13,
+            14,
+            15
+          ],
+          [
+            16,
+            17,
+            18
+          ],
+          [
+            4,
+            5,
+            6
+          ],
+          [
+            19,
+            20,
+            21
+          ]
+        ],
+        "apply_pressure": [
+          [
+            25,
+            26
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "set_local_mesh": [
+          [
+            22
+          ],
+          [
+            23
+          ]
+        ],
+        "fix_features": [
+          [
+            7,
+            8,
+            9
+          ],
+          [
+            10,
+            11,
+            12
+          ],
+          [
+            13,
+            14,
+            15
+          ],
+          [
+            16,
+            17,
+            18
+          ],
+          [
+            4,
+            5,
+            6
+          ],
+          [
+            19,
+            20,
+            21
+          ]
+        ],
+        "apply_pressure": [
+          [
+            25,
+            26
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "old_equivalent_artifact",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/sealing_cover/execution_receipt.json",
+          "bytes": 8828,
+          "sha256": "1bca79c4b87edb86cdbea959b0c6933d4af6c45cab2e970f942e6ef8689d988d",
+          "packaged_path": "data/language/physical/m7-b1-sealing_cover-qwen-s/evidence.json"
+        },
+        "basis": "previously executed equivalent command; existing validated artifact"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": true,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": true
+      }
+    },
+    {
+      "slot_id": "m7-b1-sealing_cover-qwen-b",
+      "case_id": "sealing_cover",
+      "part": "Sealing Cover.stp",
+      "provider": "qwen",
+      "condition": "B",
+      "domain": "cae",
+      "status": "needs_clarification",
+      "engineering_request_en": "Assign brass to the entire part and use a global mesh size of 5 mm. Refine all chamfer faces to 2 mm. Fully constrain all faces of every counterbored hole. Apply a uniform internal pressure of 10 MPa to all sidewalls and the bottom of the circular pocket.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-sealing_cover-qwen-b/response.raw",
+        "bytes": 1632,
+        "sha256": "900041555706a1de8bd681800e04b7ad5defb1fc0a2651bcb03ec6a3a8f921fc"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\B\\sealing_cover.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": false,
+      "actual_face_groups_by_action": {},
+      "reference_face_groups_by_action": {
+        "set_local_mesh": [
+          [
+            22
+          ],
+          [
+            23
+          ]
+        ],
+        "fix_features": [
+          [
+            7,
+            8,
+            9
+          ],
+          [
+            10,
+            11,
+            12
+          ],
+          [
+            13,
+            14,
+            15
+          ],
+          [
+            16,
+            17,
+            18
+          ],
+          [
+            4,
+            5,
+            6
+          ],
+          [
+            19,
+            20,
+            21
+          ]
+        ],
+        "apply_pressure": [
+          [
+            25,
+            26
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": false,
+      "engineering_plan_equivalent": false,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": false,
+      "existing_execution": {
+        "kind": "clarification_no_dispatch",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": false,
+        "correct_execution_evidence": false,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-sealing_cover-qwen-b/response.raw",
+          "bytes": 1632,
+          "sha256": "900041555706a1de8bd681800e04b7ad5defb1fc0a2651bcb03ec6a3a8f921fc",
+          "packaged_path": "data/language/physical/m7-b1-sealing_cover-qwen-b/evidence.raw"
+        }
+      },
+      "legacy_comparison_retained": null
+    },
+    {
+      "slot_id": "m7-b1-stiffened_panel-qwen-b",
+      "case_id": "stiffened_panel",
+      "part": "Stiffened Panel.stp",
+      "provider": "qwen",
+      "condition": "B",
+      "domain": "cae",
+      "status": "needs_clarification",
+      "engineering_request_en": "Assign 45 steel to the entire part and use a global mesh size of 10 mm. Fully constrain all faces of every counterbored hole. Apply a uniformly distributed force of 1000 N to the top face of each of the two rectangular bosses in the negative global Y direction.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-stiffened_panel-qwen-b/response.raw",
+        "bytes": 1395,
+        "sha256": "9295c05279fcbdb925350082cfed30503c6433c936a1db50a3549a12dc869d2c"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\B\\stiffened_panel.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": false,
+      "actual_face_groups_by_action": {},
+      "reference_face_groups_by_action": {
+        "fix_features": [
+          [
+            57,
+            58,
+            59
+          ],
+          [
+            45,
+            46,
+            47
+          ],
+          [
+            53,
+            54,
+            55
+          ],
+          [
+            65,
+            66,
+            67
+          ],
+          [
+            69,
+            70,
+            71
+          ],
+          [
+            77,
+            78,
+            79
+          ],
+          [
+            81,
+            82,
+            83
+          ],
+          [
+            73,
+            74,
+            75
+          ],
+          [
+            49,
+            50,
+            51
+          ],
+          [
+            61,
+            62,
+            63
+          ]
+        ],
+        "apply_force": [
+          [
+            89
+          ],
+          [
+            94
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": false,
+      "engineering_plan_equivalent": false,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": false,
+      "existing_execution": {
+        "kind": "clarification_no_dispatch",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": false,
+        "correct_execution_evidence": false,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-stiffened_panel-qwen-b/response.raw",
+          "bytes": 1395,
+          "sha256": "9295c05279fcbdb925350082cfed30503c6433c936a1db50a3549a12dc869d2c",
+          "packaged_path": "data/language/physical/m7-b1-stiffened_panel-qwen-b/evidence.raw"
+        }
+      },
+      "legacy_comparison_retained": null
+    },
+    {
+      "slot_id": "m7-b1-stiffened_panel-qwen-s",
+      "case_id": "stiffened_panel",
+      "part": "Stiffened Panel.stp",
+      "provider": "qwen",
+      "condition": "S",
+      "domain": "cae",
+      "status": "ready",
+      "engineering_request_en": "Assign 45 steel to the entire part and use a global mesh size of 10 mm. Fully constrain all faces of every counterbored hole. Apply a uniformly distributed force of 1000 N to the top face of each of the two rectangular bosses in the negative global Y direction.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-stiffened_panel-qwen-s/response.raw",
+        "bytes": 1789,
+        "sha256": "413e7fde1173cedaa65a59c8bf7013f1e33e9ca14b511dedbce45e9ab908f9a1"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\S\\stiffened_panel.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "fix_features": [
+          [
+            57,
+            58,
+            59
+          ],
+          [
+            45,
+            46,
+            47
+          ],
+          [
+            53,
+            54,
+            55
+          ],
+          [
+            65,
+            66,
+            67
+          ],
+          [
+            69,
+            70,
+            71
+          ],
+          [
+            77,
+            78,
+            79
+          ],
+          [
+            81,
+            82,
+            83
+          ],
+          [
+            73,
+            74,
+            75
+          ],
+          [
+            49,
+            50,
+            51
+          ],
+          [
+            61,
+            62,
+            63
+          ]
+        ],
+        "apply_force": [
+          [
+            89
+          ],
+          [
+            94
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "fix_features": [
+          [
+            57,
+            58,
+            59
+          ],
+          [
+            45,
+            46,
+            47
+          ],
+          [
+            53,
+            54,
+            55
+          ],
+          [
+            65,
+            66,
+            67
+          ],
+          [
+            69,
+            70,
+            71
+          ],
+          [
+            77,
+            78,
+            79
+          ],
+          [
+            81,
+            82,
+            83
+          ],
+          [
+            73,
+            74,
+            75
+          ],
+          [
+            49,
+            50,
+            51
+          ],
+          [
+            61,
+            62,
+            63
+          ]
+        ],
+        "apply_force": [
+          [
+            89
+          ],
+          [
+            94
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "old_equivalent_artifact",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/stiffened_panel/execution_receipt.json",
+          "bytes": 9212,
+          "sha256": "5e060fa0b18d48420ba41cb76138992e0e7f8ed049ed518597a4078557a7711b",
+          "packaged_path": "data/language/physical/m7-b1-stiffened_panel-qwen-s/evidence.json"
+        },
+        "basis": "previously executed equivalent command; existing validated artifact"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": true,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": true
+      }
+    },
+    {
+      "slot_id": "m7-b1-support_bracket-qwen-s",
+      "case_id": "support_bracket",
+      "part": "Support Bracket.stp",
+      "provider": "qwen",
+      "condition": "S",
+      "domain": "cad",
+      "status": "ready",
+      "engineering_request_en": "Change the thickness of both ribs from 2 mm to 4 mm by moving their two sides symmetrically about their existing midplanes. Keep the midplanes fixed and preserve unrelated geometry.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_bracket-qwen-s/response.raw",
+        "bytes": 1066,
+        "sha256": "59e51e8091777778106260fa86665d8b3aadb1712c80fa6c0e52d65dcfb283c2"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\S\\support_bracket.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "set_thickness": [
+          [
+            13,
+            14,
+            15
+          ],
+          [
+            16,
+            17,
+            18
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "set_thickness": [
+          [
+            13,
+            14,
+            15
+          ],
+          [
+            16,
+            17,
+            18
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "old_equivalent_artifact",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/support_bracket/execution_receipt.json",
+          "bytes": 3618,
+          "sha256": "611c1a024b01f264167bb1ed6ffd706f3bbc67aa29c4251da43dec5134559f48",
+          "packaged_path": "data/language/physical/m7-b1-support_bracket-qwen-s/evidence.json"
+        },
+        "basis": "previously executed equivalent command; existing validated artifact"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": true,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": true
+      }
+    },
+    {
+      "slot_id": "m7-b1-support_bracket-qwen-b",
+      "case_id": "support_bracket",
+      "part": "Support Bracket.stp",
+      "provider": "qwen",
+      "condition": "B",
+      "domain": "cad",
+      "status": "needs_clarification",
+      "engineering_request_en": "Change the thickness of both ribs from 2 mm to 4 mm by moving their two sides symmetrically about their existing midplanes. Keep the midplanes fixed and preserve unrelated geometry.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_bracket-qwen-b/response.raw",
+        "bytes": 1314,
+        "sha256": "b682b72ce5cc3604e7d665a20e0b081a480e025a667727db3e7aaa13d004aeda"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\B\\support_bracket.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": false,
+      "actual_face_groups_by_action": {},
+      "reference_face_groups_by_action": {
+        "set_thickness": [
+          [
+            13,
+            14,
+            15
+          ],
+          [
+            16,
+            17,
+            18
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": false,
+      "engineering_plan_equivalent": false,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": false,
+      "existing_execution": {
+        "kind": "clarification_no_dispatch",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": false,
+        "correct_execution_evidence": false,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_bracket-qwen-b/response.raw",
+          "bytes": 1314,
+          "sha256": "b682b72ce5cc3604e7d665a20e0b081a480e025a667727db3e7aaa13d004aeda",
+          "packaged_path": "data/language/physical/m7-b1-support_bracket-qwen-b/evidence.raw"
+        }
+      },
+      "legacy_comparison_retained": null
+    },
+    {
+      "slot_id": "m7-b1-support_frame-qwen-b",
+      "case_id": "support_frame",
+      "part": "Support Frame.stp",
+      "provider": "qwen",
+      "condition": "B",
+      "domain": "cad",
+      "status": "needs_clarification",
+      "engineering_request_en": "Change the thickness of both webs from 4.6985 mm to 3 mm by moving their two sides symmetrically about their existing midplanes. Keep the midplanes fixed and preserve unrelated geometry.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_frame-qwen-b/response.raw",
+        "bytes": 1220,
+        "sha256": "5af0dd619e00d0a5db4fa5808a66b7377266b99e5dc2fcfb0e0eb8eba905a10b"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\B\\support_frame.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": false,
+      "actual_face_groups_by_action": {},
+      "reference_face_groups_by_action": {
+        "set_thickness": [
+          [
+            4,
+            12,
+            15,
+            16
+          ],
+          [
+            1,
+            2,
+            8,
+            14
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": false,
+      "engineering_plan_equivalent": false,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": false,
+      "existing_execution": {
+        "kind": "clarification_no_dispatch",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": false,
+        "correct_execution_evidence": false,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_frame-qwen-b/response.raw",
+          "bytes": 1220,
+          "sha256": "5af0dd619e00d0a5db4fa5808a66b7377266b99e5dc2fcfb0e0eb8eba905a10b",
+          "packaged_path": "data/language/physical/m7-b1-support_frame-qwen-b/evidence.raw"
+        }
+      },
+      "legacy_comparison_retained": null
+    },
+    {
+      "slot_id": "m7-b1-support_frame-qwen-s",
+      "case_id": "support_frame",
+      "part": "Support Frame.stp",
+      "provider": "qwen",
+      "condition": "S",
+      "domain": "cad",
+      "status": "ready",
+      "engineering_request_en": "Change the thickness of both webs from 4.6985 mm to 3 mm by moving their two sides symmetrically about their existing midplanes. Keep the midplanes fixed and preserve unrelated geometry.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_frame-qwen-s/response.raw",
+        "bytes": 1113,
+        "sha256": "b6e163be36329e005b4f607a67c68e94bb0184f317df4c3d2757f6599180ae9d"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\S\\support_frame.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "set_thickness": [
+          [
+            4,
+            12,
+            15,
+            16
+          ],
+          [
+            1,
+            2,
+            8,
+            14
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "set_thickness": [
+          [
+            4,
+            12,
+            15,
+            16
+          ],
+          [
+            1,
+            2,
+            8,
+            14
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [
+        {
+          "action": "set_thickness",
+          "field": "old_thickness_mm",
+          "model": 4.698463103929661,
+          "reference": 4.6985,
+          "difference_mm": 3.689607033940945e-05,
+          "tolerance_mm": 0.0001,
+          "reason": "existing source-geometry tolerance; target thickness unchanged"
+        }
+      ],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "new_CAD_STEP",
+        "new_execution_in_historical_experiment": true,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_model_cad_dispatch/v1/m7-b1-support_frame-qwen-s/attempt_001/Support Frame_edited.stp",
+          "bytes": 60738,
+          "sha256": "702dd5708d4e2f0263a0c35aa3a4c0d6a2260da873e96683eec21bcdb2371ac3",
+          "packaged_path": "data/language/physical/m7-b1-support_frame-qwen-s/evidence.stp"
+        },
+        "independent_cad_audit": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_model_cad_dispatch/v1/m7-b1-support_frame-qwen-s/independent_cad_audit.json",
+          "bytes": 1665,
+          "sha256": "f03f41c4d29a2071f4be03f2d896f04898e8dde5bd136a0fb630fab9c8580bf7",
+          "packaged_path": "data/language/physical/m7-b1-support_frame-qwen-s/independent_cad_audit.json"
+        },
+        "basis": "existing edited STEP with dimension, midplane and round-trip audit"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": false,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": false
+      }
+    },
+    {
+      "slot_id": "m7-b1-turbine_blade-qwen-s",
+      "case_id": "turbine_blade",
+      "part": "Turbine Blade.stp",
+      "provider": "qwen",
+      "condition": "S",
+      "domain": "cae",
+      "status": "ready",
+      "engineering_request_en": "Assign plain carbon steel to the entire part and use a global mesh size of 1 mm. Fully constrain all faces of every slot_rect and slot_o feature. Apply a centrifugal body load to the entire part at an angular velocity of 100 rad/s about the axis through (0, 0, 0) mm with direction (0, 0, 1).",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-turbine_blade-qwen-s/response.raw",
+        "bytes": 1556,
+        "sha256": "4cdb2438c0de5cd91e8ede124585cc96abb4d95c4518552551a45c2f6046775a"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\S\\turbine_blade.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "fix_features": [
+          [
+            15
+          ],
+          [
+            16,
+            17,
+            18
+          ],
+          [
+            22,
+            23,
+            24
+          ],
+          [
+            19,
+            20,
+            21
+          ],
+          [
+            25,
+            26,
+            27
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "fix_features": [
+          [
+            15
+          ],
+          [
+            16,
+            17,
+            18
+          ],
+          [
+            22,
+            23,
+            24
+          ],
+          [
+            19,
+            20,
+            21
+          ],
+          [
+            25,
+            26,
+            27
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "old_equivalent_artifact",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/turbine_blade/execution_receipt.json",
+          "bytes": 7462,
+          "sha256": "24c2b75dac4442cbc69e48e608c387e4cce93bac89905f3c07520acca9e16c11",
+          "packaged_path": "data/language/physical/m7-b1-turbine_blade-qwen-s/evidence.json"
+        },
+        "basis": "previously executed equivalent command; existing validated artifact"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": true,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": true
+      }
+    },
+    {
+      "slot_id": "m7-b1-turbine_blade-qwen-b",
+      "case_id": "turbine_blade",
+      "part": "Turbine Blade.stp",
+      "provider": "qwen",
+      "condition": "B",
+      "domain": "cae",
+      "status": "needs_clarification",
+      "engineering_request_en": "Assign plain carbon steel to the entire part and use a global mesh size of 1 mm. Fully constrain all faces of every slot_rect and slot_o feature. Apply a centrifugal body load to the entire part at an angular velocity of 100 rad/s about the axis through (0, 0, 0) mm with direction (0, 0, 1).",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-turbine_blade-qwen-b/response.raw",
+        "bytes": 1352,
+        "sha256": "96047b5ccff1636db6bd2c4ebe9d336feb6a1fcb3e633e8ecc871caff280a7cc"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\B\\turbine_blade.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": false,
+      "actual_face_groups_by_action": {},
+      "reference_face_groups_by_action": {
+        "fix_features": [
+          [
+            15
+          ],
+          [
+            16,
+            17,
+            18
+          ],
+          [
+            22,
+            23,
+            24
+          ],
+          [
+            19,
+            20,
+            21
+          ],
+          [
+            25,
+            26,
+            27
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": false,
+      "engineering_plan_equivalent": false,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": false,
+      "existing_execution": {
+        "kind": "clarification_no_dispatch",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": false,
+        "correct_execution_evidence": false,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-turbine_blade-qwen-b/response.raw",
+          "bytes": 1352,
+          "sha256": "96047b5ccff1636db6bd2c4ebe9d336feb6a1fcb3e633e8ecc871caff280a7cc",
+          "packaged_path": "data/language/physical/m7-b1-turbine_blade-qwen-b/evidence.raw"
+        }
+      },
+      "legacy_comparison_retained": null
+    },
+    {
+      "slot_id": "m7-b1-u_shaped_bracket-qwen-b",
+      "case_id": "u_shaped_bracket",
+      "part": "U-Shaped Bracket.stp",
+      "provider": "qwen",
+      "condition": "B",
+      "domain": "cae",
+      "status": "needs_clarification",
+      "engineering_request_en": "Assign plain carbon steel to the entire part and use a global mesh size of 1 mm. Fully constrain the walls of all through holes. Apply a uniformly distributed force of 500 N to the top face of the cylindrical boss in the negative global Y direction.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-u_shaped_bracket-qwen-b/response.raw",
+        "bytes": 1421,
+        "sha256": "bd8967f7641f7fd7b0f38fc911720fee29189ec5add2d619576cad93c48e9621"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\B\\u_shaped_bracket.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": false,
+      "actual_face_groups_by_action": {},
+      "reference_face_groups_by_action": {
+        "fix_features": [
+          [
+            11
+          ],
+          [
+            10
+          ]
+        ],
+        "apply_force": [
+          [
+            12
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": false,
+      "engineering_plan_equivalent": false,
+      "accepted_equivalent_expressions": [],
+      "verified_engineering_task": false,
+      "existing_execution": {
+        "kind": "clarification_no_dispatch",
+        "new_execution_in_historical_experiment": false,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": false,
+        "correct_execution_evidence": false,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-u_shaped_bracket-qwen-b/response.raw",
+          "bytes": 1421,
+          "sha256": "bd8967f7641f7fd7b0f38fc911720fee29189ec5add2d619576cad93c48e9621",
+          "packaged_path": "data/language/physical/m7-b1-u_shaped_bracket-qwen-b/evidence.raw"
+        }
+      },
+      "legacy_comparison_retained": null
+    },
+    {
+      "slot_id": "m7-b1-u_shaped_bracket-qwen-s",
+      "case_id": "u_shaped_bracket",
+      "part": "U-Shaped Bracket.stp",
+      "provider": "qwen",
+      "condition": "S",
+      "domain": "cae",
+      "status": "ready",
+      "engineering_request_en": "Assign plain carbon steel to the entire part and use a global mesh size of 1 mm. Fully constrain the walls of all through holes. Apply a uniformly distributed force of 500 N to the top face of the cylindrical boss in the negative global Y direction.",
+      "raw_response": {
+        "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-u_shaped_bracket-qwen-s/response.raw",
+        "bytes": 1748,
+        "sha256": "1566ccbc92cc12635b8045c1c45112a361d2ef6f0b40ab7fa4f9a72fc8e63856"
+      },
+      "request_preview": "source-workspace://artifacts\\aei_paper_goals_v1\\g10\\m7_api_preview\\v4\\requests\\b1\\qwen\\S\\u_shaped_bracket.json",
+      "B_uses_semantic_catalog": false,
+      "operation_faces_correct": true,
+      "actual_face_groups_by_action": {
+        "fix_features": [
+          [
+            11
+          ],
+          [
+            10
+          ]
+        ],
+        "apply_force": [
+          [
+            12
+          ]
+        ]
+      },
+      "reference_face_groups_by_action": {
+        "fix_features": [
+          [
+            11
+          ],
+          [
+            10
+          ]
+        ],
+        "apply_force": [
+          [
+            12
+          ]
+        ]
+      },
+      "face_differences": {},
+      "engineering_parameters_equivalent": true,
+      "engineering_plan_equivalent": true,
+      "accepted_equivalent_expressions": [
+        {
+          "action": "apply_force",
+          "field": "basis",
+          "model": "total",
+          "reference": "per_instance",
+          "reason": "one loading object; equal force magnitude"
+        },
+        {
+          "action": "fix_features",
+          "field": "role",
+          "model": "inner_walls",
+          "reference": "whole_feature",
+          "reason": "identical actual operation face set"
+        }
+      ],
+      "verified_engineering_task": true,
+      "existing_execution": {
+        "kind": "new_CAE_ODB",
+        "new_execution_in_historical_experiment": true,
+        "new_execution_this_reevaluation": false,
+        "artifact_available": true,
+        "correct_execution_evidence": true,
+        "evidence": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_model_cae_dispatch/v3/m7-b1-u_shaped_bracket-qwen-s/attempt_001/final.odb",
+          "bytes": 49242796,
+          "sha256": "540cf3a3f786d8619598fe10dcd526eabc32101b062768f7e3d3e8723886393c",
+          "packaged_zip": "data/language/physical/m7-b1-u_shaped_bracket-qwen-s/solver_output.zip",
+          "zip_member": "model.odb"
+        },
+        "different_physical_fields": [],
+        "independent_odb_audit": {
+          "path": "source-workspace://artifacts/aei_paper_goals_v1/g10/m7_model_cae_dispatch/v4_reaudit_only/m7-b1-u_shaped_bracket-qwen-s/independent_odb_audit_v2.json",
+          "bytes": 1649,
+          "sha256": "9a15ea945074ff8539b8fa9892283752cd448a74c29cb6873d72a62c791ef0fc",
+          "packaged_path": "data/language/physical/m7-b1-u_shaped_bracket-qwen-s/independent_odb_audit.json"
+        },
+        "basis": "existing solver result plus physical-input and ODB audit"
+      },
+      "legacy_comparison_retained": {
+        "parameter_and_action_match_reference": false,
+        "target_face_sets_match_reference": true,
+        "wrong_target_operation_indices": [],
+        "exact_reference_plan_after_grounding": false
+      }
+    }
+  ],
+  "paired_payloads_equal_except_semantic_service": true,
+  "frozen_source_records_modified": false,
+  "new_api_calls": 0,
+  "new_cad_edits": 0,
+  "new_cae_solves": 0,
+  "execution_boundary": "Both historical execution conditions use the shared E3-backed backend; B planning receives no E3 catalog.",
+  "source_binary_rehash_boundary": "Existing JSON receipt hashes verified; no fresh solver runs or ODB reopening. Artifact existence/size checked."
+}

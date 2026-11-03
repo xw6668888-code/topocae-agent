@@ -1,0 +1,20 @@
+{
+  "schema_version": "2",
+  "status": "ready",
+  "domain": "cad",
+  "operations": [
+    {
+      "action": "set_hole_radius",
+      "target": {
+        "feature_classes": [
+          "through_hole_round"
+        ],
+        "radius_mm": 22.5,
+        "scope": "all"
+      },
+      "new_radius_mm": 24.0
+    }
+  ],
+  "clarifications": [],
+  "reason": "G10 frozen user-confirmed reference plan; not an LLM result"
+}

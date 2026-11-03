@@ -1,0 +1,108 @@
+{
+  "status": "PASS", 
+  "face_mapping": {
+    "1": 0, 
+    "2": 1, 
+    "3": 2, 
+    "4": 3, 
+    "5": 4, 
+    "6": 5, 
+    "7": 6, 
+    "8": 7, 
+    "9": 8, 
+    "10": 9, 
+    "11": 10, 
+    "12": 11, 
+    "13": 12, 
+    "14": 13, 
+    "15": 14, 
+    "16": 15, 
+    "17": 16, 
+    "18": 17, 
+    "19": 18, 
+    "20": 19, 
+    "21": 20, 
+    "22": 21, 
+    "23": 22, 
+    "24": 23, 
+    "25": 24
+  }, 
+  "fixed_face_indices": [
+    4, 
+    5
+  ], 
+  "material": {
+    "name": "Steel45", 
+    "elastic": [
+      210000.0, 
+      0.3
+    ], 
+    "density": 7.85e-09
+  }, 
+  "local_mesh": [
+    {
+      "face_indices": [
+        21, 
+        22, 
+        23, 
+        24
+      ], 
+      "edges": [
+        0, 
+        11, 
+        12, 
+        15, 
+        18, 
+        19, 
+        28, 
+        37
+      ], 
+      "average_sizes": [
+        0.2994619497493794, 
+        0.2997976989425688, 
+        0.2997976989425688, 
+        0.29998666692173215, 
+        0.3000804351052547, 
+        0.2996223327716744, 
+        0.3007907859820015, 
+        0.30003974781475556
+      ]
+    }
+  ], 
+  "execution_plan_sha256": "b145d705e87d97c362c428ad5374f42c3ec0e97ea7eed96c27c090e6462fe88e", 
+  "no_solver_submitted": true, 
+  "loads": [
+    {
+      "kind": "traction", 
+      "magnitude": 50.0, 
+      "face_indices": [
+        7
+      ], 
+      "area_mm2": 822.344020631972, 
+      "direction": [
+        0.0, 
+        0.0, 
+        1.0
+      ], 
+      "resultant_N": [
+        0.0, 
+        0.0, 
+        41117.2010315986
+      ]
+    }
+  ], 
+  "cae_sha256": "d26d99b7f17224b9caa29ccd25c41ef20560090b6840a06c1fa2b678d624093a", 
+  "checks": {
+    "direction_1": true, 
+    "fixed_region": true, 
+    "global_mesh": true, 
+    "section_assignment": true, 
+    "analysis_step": true, 
+    "material": true, 
+    "field_outputs": true, 
+    "load_1": true, 
+    "local_mesh_0": true, 
+    "face_bijection": true
+  }, 
+  "schema": "g11_saved_CAE_readback_v1"
+}

@@ -1,0 +1,40 @@
+{
+  "status": "PASS", 
+  "analysis_errors": 0, 
+  "string_adapter": "recursive_json_unicode_to_native_mbcs_on_python2", 
+  "equilibrium_relative_error": 9.901382426542598e-08, 
+  "expected_applied_force_N": [
+    0.0, 
+    -500.0, 
+    0.0
+  ], 
+  "truth_used": false, 
+  "reaction_force_N": [
+    -2.493165993655566e-07, 
+    499.999950498066, 
+    6.562950147781521e-07
+  ], 
+  "instance_count": 1, 
+  "odb_path": "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-S__u_shaped_bracket\\execution_v1\\work\\run\\final.odb", 
+  "element_types": [
+    "C3D10"
+  ], 
+  "geometry_version": "72356e514bcd4f5a955819ba9143842bd9298c45c3e4d65a8b62a88d903903bc", 
+  "element_count": 138441, 
+  "node_count": 211466, 
+  "max_von_mises_mpa": 72.69651794433594, 
+  "analysis_warnings": 0, 
+  "diagnostic_status": "JOB_STATUS_COMPLETED_SUCCESSFULLY", 
+  "odb_sha256": "9650143569e43570604d4283178aca44cc6f9fee128af333af354d3af375b4fc", 
+  "verifier": {
+    "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g11/abaqus_verification.py", 
+    "sha256": "f184b4dbfcb9577db52c133ab4471c9ae80a78d066a2bdf5b64b35b72cd19f5e", 
+    "bytes": 2041
+  }, 
+  "final_frame_time": 1.0, 
+  "execution_plan_sha256": "62bea53b131f50acd435c0fb920ccb9da69e79d4ab023f767beaeaf016cfe204", 
+  "python_major": 2, 
+  "model_plan_sha256": "65b2edc0bd10e40472f2eb97816c4f81c141e3a5e2f07419d46de179e491e1c7", 
+  "max_displacement_mm": 0.016524093225598335, 
+  "schema": "g11_independent_odb_audit_v1"
+}

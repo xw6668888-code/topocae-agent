@@ -1,0 +1,37 @@
+{
+  "sample_id": "g10_t10_v2_i_00346",
+  "source_step_sha256": "c97b1188aee0984bb1f4f3aeb2adb0f6d220c307f695298bcb256e09dafc4265",
+  "face_count": 11,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "slot_o",
+    "slot_o",
+    "counterbore_hole",
+    "counterbore_hole",
+    "counterbore_hole"
+  ],
+  "objects": [
+    {
+      "class": "counterbore_hole",
+      "instance_id": 1,
+      "faces": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "class": "slot_o",
+      "instance_id": 2,
+      "faces": [
+        6,
+        7
+      ]
+    }
+  ]
+}

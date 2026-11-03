@@ -1,0 +1,71 @@
+{
+  "externalizable": false,
+  "extractor": {
+    "entry": {
+      "bytes": 11156,
+      "repo_relative_path": "tools/aei_paper_goals_v1/g07/step_entry.py",
+      "sha256": "a34f494d20c01eafc14ad5c9695174916888fa5658b84550b0ca182eb37ad288"
+    },
+    "frozen_core": {
+      "bytes": 8853,
+      "repo_relative_path": "paper_release/topocae_p1_legacy_baseline_v1/core/graph_v2_2_1.py",
+      "sha256": "e2ff614cefeb65a2cf482d03b1bea570f7f3fc1ef9b7aea06205ff345ed9f559"
+    },
+    "geometry_schema": "topocae_graph_v2_2_1_true_brep_planar_rank_policy_1"
+  },
+  "geometry_handle": "gh_7ce59e56c6cd175f",
+  "handle_to_final_step_face_number": {
+    "fh_009e3f8284828db1": 34,
+    "fh_0a588f6ca93f4d0b": 28,
+    "fh_104aef9ef1258f60": 25,
+    "fh_10f83882056e8e78": 41,
+    "fh_138effe7db452725": 2,
+    "fh_1487c42502c0a7b1": 6,
+    "fh_1762fddafc38398a": 7,
+    "fh_1c9686084372eb97": 33,
+    "fh_1cd90825158f682c": 29,
+    "fh_1f8ef1e88e91cb8e": 42,
+    "fh_26251903339805d7": 12,
+    "fh_2888d07dd6c5ba18": 44,
+    "fh_3c5e3d12a98ec9b4": 18,
+    "fh_47bcf8d1621598f7": 23,
+    "fh_60135db793ee67a9": 15,
+    "fh_64c97d6a2c367af4": 17,
+    "fh_6cc1133c756dee4a": 5,
+    "fh_6f86aa84d18d8915": 19,
+    "fh_7dc308f42e5f1656": 26,
+    "fh_833504734461daab": 10,
+    "fh_891ed2bdd84d9182": 1,
+    "fh_8bde0e4d600343fc": 9,
+    "fh_92e856857cfe0238": 32,
+    "fh_98b62a6e433b957d": 40,
+    "fh_993e8add38fec06d": 27,
+    "fh_9a1d31c9cc8b12dd": 16,
+    "fh_a1aa8e36a8734da1": 37,
+    "fh_a2b18528871f9f17": 13,
+    "fh_a46d707bb519925c": 11,
+    "fh_a487c09214d97c23": 31,
+    "fh_a507a8a3f3a514d1": 24,
+    "fh_b2d30bc7e48bfc75": 3,
+    "fh_b3d6a18088265d0f": 30,
+    "fh_b6a4d6c26ae0cea7": 8,
+    "fh_be9d3441f9e35f29": 39,
+    "fh_c1a326f33cb8deda": 21,
+    "fh_c5ea3ddcd0cafdb1": 38,
+    "fh_cbf9520e37f67674": 4,
+    "fh_d31fa03dfbed6334": 22,
+    "fh_d9ab3971282e3a78": 20,
+    "fh_e48911b9ecade7fb": 36,
+    "fh_f270dffbaf878ea6": 43,
+    "fh_f457259422304eea": 14,
+    "fh_f6cb7625abb38aec": 35
+  },
+  "model_outputs_used": false,
+  "schema": "g10_m7_local_face_handle_map_v1",
+  "source_step": {
+    "bytes": 57538,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Support Bracket.stp",
+    "sha256": "c61acff8bd576b87100d2366b3b3ce559ac9f03a01dd157c31486bbb50fc1a47"
+  },
+  "truth_used": false
+}

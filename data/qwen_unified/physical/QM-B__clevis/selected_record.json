@@ -1,0 +1,92 @@
+{
+  "CAE_readback_process": {
+    "argv": [
+      "F:\\ABAQUS2020\\commands\\abaqus.bat",
+      "cae",
+      "noGUI=W:\\python\\FEA\\dataset_generator\\tools\\aei_paper_goals_v1\\g11\\cae_readback.py",
+      "--",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QM-B__clevis\\execution_resource_final\\work\\execution_plan.json",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QM-B__clevis\\execution_resource_final\\saved_cae_readback.json"
+    ],
+    "elapsed_seconds": 6.068449300000793,
+    "pid": 41860,
+    "returncode": 0,
+    "timed_out": false
+  },
+  "actually_executed": true,
+  "amendment": {
+    "bytes": 1359,
+    "path": "W:/python/FEA/dataset_generator/reports/aei_paper_goals_v1/g11/RESOURCE_FINAL_PROTOCOL.json",
+    "sha256": "2ee4630c02f4ae0048c68374ffd1578f2a8534cbfc38c16e8da5b183de594f63"
+  },
+  "compiler_inputs_exclude_reference_and_service": true,
+  "elapsed_seconds": 1814.1434432000005,
+  "finished_utc": "2026-10-23T14:53:10.060468+00:00",
+  "mapping": {
+    "bytes": 1711,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/clevis.json",
+    "sha256": "9a74bd2f38a3ae784e0b222eeda28d55e5ddb34251ae8d75fefe327d113ea043"
+  },
+  "model_plan": {
+    "bytes": 1375,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/attempts/QM-B__clevis/attempt_001/parsed_plan.json",
+    "sha256": "eb3b96ca91ba1e1bcd405c6c9225b41de3fe4ef7d7827200ee524f3799e12f50"
+  },
+  "original_dispatch": {
+    "bytes": 3713,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QM-B__clevis/DISPATCH.json",
+    "sha256": "65d7725d24d7596e7edf5cfec64b7c6c7848d1919b94b132faf22f2e3fd22878"
+  },
+  "physical_inputs_unchanged": {
+    "bytes": 390,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QM-B__clevis/execution_resource_final/PHYSICAL_INPUTS_UNCHANGED.json",
+    "sha256": "e11f84cb091e0753eba48ac3093303e22c538b9b3f7a0a820ffeafd16feaaae5"
+  },
+  "physical_readback": {
+    "bytes": 2878,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QM-B__clevis/execution_resource_final/physical_readback.json",
+    "sha256": "feceadd53b390de680dca1c9d20f01a707abf48afe420bcd9e979099089fa300"
+  },
+  "repair": "Increase uniform cap 4096 to 6144 MB, DIRECT solver, same 8 CPUs and 3600 s",
+  "saved_CAE_readback": {
+    "bytes": 2054,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QM-B__clevis/execution_resource_final/saved_cae_readback.json",
+    "sha256": "52210615e54be16f607e45a60d7577f32fd93097a350cec751d6bb913e8ab5f5"
+  },
+  "slot_id": "QM-B__clevis",
+  "source_step": {
+    "bytes": 38783,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Clevis.stp",
+    "sha256": "0befb0c991dfbc9057dd644da22a4d99c0972374e1a98d8947d3da902fbd1f27"
+  },
+  "started_utc": "2026-10-23T14:22:55.914411+00:00",
+  "status": "ARTIFACT_PASS",
+  "worker_process": {
+    "argv": [
+      "W:\\python\\envs\\feagpt\\python.exe",
+      "W:\\python\\FEA\\dataset_generator\\tools\\aei_paper_goals_v1\\g11\\worker_direct.py",
+      "--source",
+      "W:/python/FEA/dataset_generator/test_part_0901/Clevis.stp",
+      "--mapping",
+      "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/clevis.json",
+      "--plan",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\attempts\\QM-B__clevis\\attempt_001\\parsed_plan.json",
+      "--materials",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\inputs\\materials.json",
+      "--config",
+      "W:\\python\\FEA\\dataset_generator\\reports\\aei_paper_goals_v1\\g11\\EXECUTION_CONFIG_MEMORY6.json",
+      "--output",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QM-B__clevis\\execution_resource_final"
+    ],
+    "elapsed_seconds": 1807.1293667999998,
+    "pid": 38184,
+    "returncode": 0,
+    "timed_out": false
+  },
+  "worker_receipt": {
+    "bytes": 30865,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QM-B__clevis/execution_resource_final/EXECUTION_RECEIPT.json",
+    "sha256": "aa8a47255f7c608f7444bb44e54ba650ef91b69f00995815b3cb4b101af64d54"
+  },
+  "worker_status": "EXECUTED"
+}

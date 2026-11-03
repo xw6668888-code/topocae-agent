@@ -1,0 +1,80 @@
+{
+  "checks": [
+    {
+      "expected_shift_mm": [
+        -0.0,
+        49.99999999999997,
+        -0.0
+      ],
+      "kind": "spacing_fixed_center_and_preserved_hole",
+      "pass_": true,
+      "source_faces": [
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "expected_shift_mm": [
+        0,
+        0,
+        0
+      ],
+      "kind": "spacing_fixed_center_and_preserved_hole",
+      "pass_": true,
+      "source_faces": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "expected_shift_mm": [
+        -0.0,
+        -49.99999999999997,
+        -0.0
+      ],
+      "kind": "spacing_fixed_center_and_preserved_hole",
+      "pass_": true,
+      "source_faces": [
+        35,
+        36,
+        37
+      ]
+    }
+  ],
+  "no_reference_or_object_service_read": true,
+  "original_face_groups": [
+    [
+      29,
+      30,
+      31
+    ],
+    [
+      32,
+      33,
+      34
+    ],
+    [
+      35,
+      36,
+      37
+    ]
+  ],
+  "output_readable": true,
+  "output_step": {
+    "bytes": 136021,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-S__guide_rail/execution_v1/work/Guide Rail_edited.stp",
+    "sha256": "d15eeb8d01f4947f11ce157d02ec91268598054cc5acac6decfb1e2befe9132b"
+  },
+  "schema": "g11_independent_STEP_readback_v1",
+  "source_step": {
+    "bytes": 51856,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Guide Rail.stp",
+    "sha256": "b2f942c6844f8eb737692dd8aa23d6273068868e050c2541294accf27fe01c03"
+  },
+  "status": "PASS",
+  "valid_solid_count": 1,
+  "volume_after_mm3": 1495978.2307647988,
+  "volume_before_mm3": 1495978.2307647285
+}

@@ -1,0 +1,343 @@
+[
+  {
+    "case_id": "angle_bracket",
+    "part": "Angle Bracket.stp",
+    "domain": "cae",
+    "run_id": "g10-m6-cae-launcher-v3-20260915",
+    "status": "PASS",
+    "actually_executed": true,
+    "semantic_plan_sha256": "91184e30f7c25628adcc852427a3f9dd5e3c42c79bba37f29daf6165bf7bf006",
+    "geometry_version": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195",
+    "prediction_sha256": "4970efb7be7f397ae428fba5cd8c307dd606712c5e5dfb966218bd941e80b9ec",
+    "binding_digest": "da6b2f8ed9e7d1d0f2b06bdfac2e72f9c1469158954a2629a8a2eceb1e622c16",
+    "truth_used": false,
+    "node_count": 187205,
+    "element_count": 124103,
+    "element_types": [
+      "C3D10"
+    ],
+    "final_frame_time": 1.0,
+    "max_displacement_mm": 0.0362536795437336,
+    "max_von_mises_mpa_trace_only": 40.94713592529297,
+    "reaction_force_N": [
+      1.4525867300108075e-06,
+      399.9393802220002,
+      6.722111720591784e-07
+    ],
+    "expected_applied_force_N": [
+      0.0,
+      -400.0,
+      0.0
+    ],
+    "equilibrium_relative_error": 0.00015154944505237254,
+    "analysis_warnings": 0,
+    "analysis_errors": 0,
+    "substantive_audit_status": "PASS"
+  },
+  {
+    "case_id": "bearing_housing",
+    "part": "Bearing Housing.stp",
+    "domain": "cad",
+    "run_id": "g10-m6-main-20260915",
+    "status": "PASS",
+    "actually_executed": true,
+    "semantic_plan_sha256": "b3e56ed1f9f21a4bcce734d5a0c25a9d43cb764bf37abc991f6e53d81c249f1e",
+    "geometry_version": "68c756ce4df6ba506348ea958cae4c264f1c542062a0fb58ba9b8152e92de6b8",
+    "prediction_sha256": "92097d0bf480e25f36b8cfde3354affbefb302004c06c4364d08453f6c25f1f9",
+    "binding_digest": "f9102a300dd3ee97c0a7036a1db642fa054788f3646f3695573c0afec82cdc25",
+    "truth_used": false,
+    "roundtrip_solid_count": 1,
+    "roundtrip_volume_mm3": 203010.5611888819,
+    "substantive_audit_status": "PASS"
+  },
+  {
+    "case_id": "clevis",
+    "part": "Clevis.stp",
+    "domain": "cae",
+    "run_id": "g10-m6-cae-launcher-v3-20260915",
+    "status": "PASS",
+    "actually_executed": true,
+    "semantic_plan_sha256": "9c1b5c9bd19339ba21b9d3654e6886d691e7ad55f5573124d230b7044f691b30",
+    "geometry_version": "0befb0c991dfbc9057dd644da22a4d99c0972374e1a98d8947d3da902fbd1f27",
+    "prediction_sha256": "409ec7fb58e99b5783b102a672335104ded76cb1f6b4c3313f87d65c9ff18376",
+    "binding_digest": "142adccc03e0f0723147684c013bbf80fa5912716e42b2852787cfae580e18bd",
+    "truth_used": false,
+    "node_count": 1769189,
+    "element_count": 1254069,
+    "element_types": [
+      "C3D10"
+    ],
+    "final_frame_time": 1.0,
+    "max_displacement_mm": 0.012510576285421848,
+    "max_von_mises_mpa_trace_only": 266.0073547363281,
+    "reaction_force_N": [
+      -2.4151813704520464e-06,
+      -6.79520599078387e-06,
+      -9134.469921900396
+    ],
+    "expected_applied_force_N": [
+      0.0,
+      0.0,
+      9134.471001029711
+    ],
+    "equilibrium_relative_error": 1.1814076721436568e-07,
+    "analysis_warnings": 0,
+    "analysis_errors": 0,
+    "substantive_audit_status": "PASS"
+  },
+  {
+    "case_id": "flanged_sleeve",
+    "part": "Flanged Sleeve.stp",
+    "domain": "cad",
+    "run_id": "g10-m6-main-20260915",
+    "status": "PASS",
+    "actually_executed": true,
+    "semantic_plan_sha256": "4b239ec591d460e46abea8c450d90b5b9f9e2e4ef5cba65ada857dfd416cd839",
+    "geometry_version": "af5669560aff44d525e0d49eae30fc5e9c9df5c142cf519ce330a5a00b83d034",
+    "prediction_sha256": "0cc73e24ddf94a9285744026f66efaf68568e59e9d45fb1455745e5d46dd72ec",
+    "binding_digest": "a38a0d52cf8481f93fbf0349e2c21a8cb2d3b0a4c3a5ff8f3766dee111ea5910",
+    "truth_used": false,
+    "roundtrip_solid_count": 1,
+    "roundtrip_volume_mm3": 206460.17496271164,
+    "substantive_audit_status": "PASS"
+  },
+  {
+    "case_id": "flanged_support",
+    "part": "Flanged Support.stp",
+    "domain": "cae",
+    "run_id": "g10-m6-cae-launcher-v3-20260915",
+    "status": "PASS",
+    "actually_executed": true,
+    "semantic_plan_sha256": "d6dc06671a2ae2d4836e5de88f37dbe15f8b35e5433f77f26d41c3f233f27415",
+    "geometry_version": "61690b63de49bffc204e83f6ae0ae4c7ea821753bda94b0f946eab570e4cb4d6",
+    "prediction_sha256": "578db3a2b3e87bee49bd563bb2ce6f9d33b2e6c822f29f14a87d87f707ec0a7a",
+    "binding_digest": "36102207f96224dcf2e485288887c340021e873a86a368a6936028c47252c7fd",
+    "truth_used": false,
+    "node_count": 1555023,
+    "element_count": 1092787,
+    "element_types": [
+      "C3D10"
+    ],
+    "final_frame_time": 1.0,
+    "max_displacement_mm": 0.0012196545721963048,
+    "max_von_mises_mpa_trace_only": 15.01334285736084,
+    "reaction_force_N": [
+      6.054081040929304e-07,
+      -2.2583299141842872e-07,
+      -499.9968249417884
+    ],
+    "expected_applied_force_N": [
+      0.0,
+      0.0,
+      500.0
+    ],
+    "equilibrium_relative_error": 6.35011655466365e-06,
+    "analysis_warnings": 0,
+    "analysis_errors": 0,
+    "substantive_audit_status": "PASS"
+  },
+  {
+    "case_id": "guide_rail",
+    "part": "Guide Rail.stp",
+    "domain": "cad",
+    "run_id": "g10-m6-main-20260915",
+    "status": "PASS",
+    "actually_executed": true,
+    "semantic_plan_sha256": "0578e6ef0934dc13e74ae1c7c4d6f77fa2ea2f48c7acc65e6effc8fbeccdb7a0",
+    "geometry_version": "b2f942c6844f8eb737692dd8aa23d6273068868e050c2541294accf27fe01c03",
+    "prediction_sha256": "c3ffba9e68d7979d43b9148ae7bfa260509e1ab3cb87757e4b7a78942ba285ff",
+    "binding_digest": "e1b434eb713e688a1dc3b729b5719e0d471125d70957e8278fcf4b6caee71b47",
+    "truth_used": false,
+    "roundtrip_solid_count": 1,
+    "roundtrip_volume_mm3": 1495978.2307647988,
+    "substantive_audit_status": "PASS"
+  },
+  {
+    "case_id": "mounting_plate",
+    "part": "Mounting Plate.stp",
+    "domain": "cad",
+    "run_id": "g10-m6-main-20260915",
+    "status": "PASS",
+    "actually_executed": true,
+    "semantic_plan_sha256": "f9ca8753b2d1311eb654b5a7902203f6540bfa7fc1043e000779e19eec8c5b0d",
+    "geometry_version": "dccd20bb196660a6c1d5d52a813c2632c9d7291dec1712f8dc6b0aacecf6e14a",
+    "prediction_sha256": "13b52dd38588e662873596fd5bb02e79cc95fe2f47cbcf701110e9183dbf0e2c",
+    "binding_digest": "28e25f867093f71f55bef56404c1495e1f60e6d6707cec7b262d0a1ea4e2bbbf",
+    "truth_used": false,
+    "roundtrip_solid_count": 1,
+    "roundtrip_volume_mm3": 43232.51830717952,
+    "substantive_audit_status": "PASS"
+  },
+  {
+    "case_id": "sealing_cover",
+    "part": "Sealing Cover.stp",
+    "domain": "cae",
+    "run_id": "g10-m6-cae-launcher-v3-20260915",
+    "status": "PASS",
+    "actually_executed": true,
+    "semantic_plan_sha256": "2d722865572ca4464b7b18509784dacdae706c452de603ee029df5a6ab050eec",
+    "geometry_version": "661e71aba1a73ebf8e86e73694b9f704124cd8ca08c1163097c31ecce76d1738",
+    "prediction_sha256": "88e4116270f47999c434e01c5fcd5a5e93e62454a461e2e3719d86b684b132cf",
+    "binding_digest": "725e5f9716fda8fdbc931182458e6721ac80fba7ffdc242dbb5a06d74d471e84",
+    "truth_used": false,
+    "node_count": 116153,
+    "element_count": 74626,
+    "element_types": [
+      "C3D10"
+    ],
+    "final_frame_time": 1.0,
+    "max_displacement_mm": 1.77853262424469,
+    "max_von_mises_mpa_trace_only": 793.9817504882812,
+    "reaction_force_N": [
+      -0.0002167224884033203,
+      8.054464706219733e-05,
+      45364.57085083518
+    ],
+    "expected_applied_force_N": [
+      0.0,
+      0.0,
+      -45364.59791783661
+    ],
+    "equilibrium_relative_error": 5.96676486292545e-07,
+    "analysis_warnings": 0,
+    "analysis_errors": 0,
+    "substantive_audit_status": "PASS"
+  },
+  {
+    "case_id": "stiffened_panel",
+    "part": "Stiffened Panel.stp",
+    "domain": "cae",
+    "run_id": "g10-m6-cae-launcher-v3-20260915",
+    "status": "PASS",
+    "actually_executed": true,
+    "semantic_plan_sha256": "3c840eff35327bb6114b335f223ba0ee6bd077751ce2784848f22fad1fb69d4a",
+    "geometry_version": "8de0640323efd148ff63de24f82cefc16612c24f44dbdfbb36096372204589a5",
+    "prediction_sha256": "f2d4cb03aeac9895a65b1e474c8079f0b1dc79e7f257a16799cf15c757497b4a",
+    "binding_digest": "616476f1dc36f70c7aeebb0a9840e5dd88e569e49af1b61f9dbb2d83b7db021e",
+    "truth_used": false,
+    "node_count": 59353,
+    "element_count": 33693,
+    "element_types": [
+      "C3D10"
+    ],
+    "final_frame_time": 1.0,
+    "max_displacement_mm": 0.001525866100564599,
+    "max_von_mises_mpa_trace_only": 31.900653839111328,
+    "reaction_force_N": [
+      -2.348990619793767e-07,
+      1999.9980028926147,
+      1.154557685367763e-05
+    ],
+    "expected_applied_force_N": [
+      0.0,
+      -2000.0,
+      0.0
+    ],
+    "equilibrium_relative_error": 9.985703860699605e-07,
+    "analysis_warnings": 0,
+    "analysis_errors": 0,
+    "substantive_audit_status": "PASS"
+  },
+  {
+    "case_id": "support_bracket",
+    "part": "Support Bracket.stp",
+    "domain": "cad",
+    "run_id": "g10-m6-main-20260915",
+    "status": "PASS",
+    "actually_executed": true,
+    "semantic_plan_sha256": "2faf4076bbb87e4ea36d5e3348f7de2663b5aa901fb93bccfcd0b709d7c986e6",
+    "geometry_version": "c61acff8bd576b87100d2366b3b3ce559ac9f03a01dd157c31486bbb50fc1a47",
+    "prediction_sha256": "6812d03393f9a25a82fb34cbc447a9eaf028433e4cdaabaf6f4f01e7e1073994",
+    "binding_digest": "a8595b9153a50e9eb962b85ff6564b1d804003b301810b19cfd28143d2a62320",
+    "truth_used": false,
+    "roundtrip_solid_count": 1,
+    "roundtrip_volume_mm3": 1201027.492656038,
+    "substantive_audit_status": "PASS"
+  },
+  {
+    "case_id": "support_frame",
+    "part": "Support Frame.stp",
+    "domain": "cad",
+    "run_id": "g10-m6-main-20260915",
+    "status": "PASS",
+    "actually_executed": true,
+    "semantic_plan_sha256": "c9634ce84b55b0695f2b7f11339630a56dd1fe08d1791b3392148ff5f5292008",
+    "geometry_version": "79e3a204524f0de7284fd1318e5dd20353c3608b2a933eee12f83ff4ff655e70",
+    "prediction_sha256": "ff5958e28ca1cfd441af2b024c0fe763e326067242bec7bee38b55a5914e521d",
+    "binding_digest": "7bce87af4e881aff013fc3ee6009b7c65c7a71b90cac1e32b58e69740ebfaaa9",
+    "truth_used": false,
+    "roundtrip_solid_count": 1,
+    "roundtrip_volume_mm3": 182959.12517810368,
+    "substantive_audit_status": "PASS"
+  },
+  {
+    "case_id": "turbine_blade",
+    "part": "Turbine Blade.stp",
+    "domain": "cae",
+    "run_id": "g10-m6-cae-launcher-v3-20260915",
+    "status": "PASS",
+    "actually_executed": true,
+    "semantic_plan_sha256": "a70f46a7237631399ddfb9471d4cbb8863e134ecace8399660c277c6c0a68e42",
+    "geometry_version": "c8444c78edafc1f70357ec4e08c340ee1b40218485a5057fcf3e6c97d98c41ee",
+    "prediction_sha256": "dd4c26c6e4bff75a0ec80c3ed117294dbe3451f404af01107aa92d92b83b1400",
+    "binding_digest": "c692acbae8ffab3351a8c95cf4b3a910ce69a1465c58a3e68176c7d452eb4456",
+    "truth_used": false,
+    "node_count": 1403901,
+    "element_count": 981410,
+    "element_types": [
+      "C3D10"
+    ],
+    "final_frame_time": 1.0,
+    "max_displacement_mm": 0.04786823317408562,
+    "max_von_mises_mpa_trace_only": 16.831724166870117,
+    "reaction_force_N": [
+      -4295.684165321525,
+      -145.78931278009907,
+      -5.372863967068042e-07
+    ],
+    "expected_applied_force_N": [
+      4296.010899275372,
+      145.79500966657042,
+      0.0
+    ],
+    "equilibrium_relative_error": 7.602298975649753e-05,
+    "analysis_warnings": 0,
+    "analysis_errors": 0,
+    "substantive_audit_status": "PASS"
+  },
+  {
+    "case_id": "u_shaped_bracket",
+    "part": "U-Shaped Bracket.stp",
+    "domain": "cae",
+    "run_id": "g10-m6-cae-launcher-v3-20260915",
+    "status": "PASS",
+    "actually_executed": true,
+    "semantic_plan_sha256": "19ad39f00816ab430a883dceb8191bbfdbb705448be5d1d784d97bd118372b2a",
+    "geometry_version": "72356e514bcd4f5a955819ba9143842bd9298c45c3e4d65a8b62a88d903903bc",
+    "prediction_sha256": "61b23caaabc9002cd5b0b438a4a93286dbc55e2526e7287fb298894ffe8c981e",
+    "binding_digest": "2033ce3b678caecec657b9b691b826c8080d8c980c4f7a266faea3e38222be65",
+    "truth_used": false,
+    "node_count": 211466,
+    "element_count": 138441,
+    "element_types": [
+      "C3D10"
+    ],
+    "final_frame_time": 1.0,
+    "max_displacement_mm": 0.016479147598147392,
+    "max_von_mises_mpa_trace_only": 73.51274108886719,
+    "reaction_force_N": [
+      -8.42883309815079e-08,
+      499.9999485295266,
+      1.4380930224433541e-06
+    ],
+    "expected_applied_force_N": [
+      0.0,
+      -500.0,
+      0.0
+    ],
+    "equilibrium_relative_error": 1.0298125749823674e-07,
+    "analysis_warnings": 0,
+    "analysis_errors": 0,
+    "substantive_audit_status": "PASS"
+  }
+]

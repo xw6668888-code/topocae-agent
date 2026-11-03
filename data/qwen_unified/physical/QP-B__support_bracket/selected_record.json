@@ -1,0 +1,58 @@
+{
+  "actually_executed": false,
+  "compiler_inputs_exclude_reference_and_service": true,
+  "elapsed_seconds": 0.5430446999998821,
+  "error": "parallel_congruent_sides_not_found",
+  "finished_utc": "2026-10-24T10:48:51.268325+00:00",
+  "mapping": {
+    "bytes": 2309,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/support_bracket.json",
+    "sha256": "71498ed4b08516e7ce81fc5564a3d6d987a6f7b183dc576f2e158fd54d626af6"
+  },
+  "model_plan": {
+    "bytes": 977,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/attempts/QP-B__support_bracket/attempt_001/parsed_plan.json",
+    "sha256": "53d02c1c2785b021fded002d208f1fc795073f4c430d096ed605e8be55e4afa0"
+  },
+  "raw_response": {
+    "bytes": 23425,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/attempts/QP-B__support_bracket/attempt_001/response.sse",
+    "sha256": "fe7068c7481ed0613423a5b90cbf028d80090d8dfbc2fcfb69dbfc8d10a61010"
+  },
+  "slot_id": "QP-B__support_bracket",
+  "source_step": {
+    "bytes": 57538,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Support Bracket.stp",
+    "sha256": "c61acff8bd576b87100d2366b3b3ce559ac9f03a01dd157c31486bbb50fc1a47"
+  },
+  "started_utc": "2026-10-24T10:48:50.725498+00:00",
+  "status": "REJECTED_OR_COMPILE_FAILED",
+  "worker_process": {
+    "argv": [
+      "W:\\python\\envs\\feagpt\\python.exe",
+      "W:\\python\\FEA\\dataset_generator\\tools\\aei_paper_goals_v1\\g11\\worker_direct.py",
+      "--source",
+      "W:/python/FEA/dataset_generator/test_part_0901/Support Bracket.stp",
+      "--mapping",
+      "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/support_bracket.json",
+      "--plan",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\attempts\\QP-B__support_bracket\\attempt_001\\parsed_plan.json",
+      "--materials",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\inputs\\materials.json",
+      "--config",
+      "W:\\python\\FEA\\dataset_generator\\reports\\aei_paper_goals_v1\\g11\\EXECUTION_CONFIG_MEMORY6.json",
+      "--output",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-B__support_bracket\\execution_v1"
+    ],
+    "elapsed_seconds": 0.5419072999993659,
+    "pid": 38252,
+    "returncode": 2,
+    "timed_out": false
+  },
+  "worker_receipt": {
+    "bytes": 28138,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-B__support_bracket/execution_v1/EXECUTION_RECEIPT.json",
+    "sha256": "a5610f330b03b0ffb3607324718f9ffb0b07f1a44e22035093ee9836f8ce8555"
+  },
+  "worker_status": "REJECTED_OR_COMPILE_FAILED"
+}

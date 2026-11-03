@@ -1,0 +1,68 @@
+{
+  "available_feature_classes": [
+    "web"
+  ],
+  "content_policy": {
+    "internal_face_indices_excluded": true,
+    "model_scores_excluded": true,
+    "prediction_only": true,
+    "truth_used": false
+  },
+  "geometry_handle": "gh_49cddc2abaae2ad5",
+  "objects": [
+    {
+      "feature_class": "web",
+      "measurements": {
+        "thickness_mm": 4.698463103929661
+      },
+      "member_face_handles": [
+        "fh_4eedbfcfc3feef7c",
+        "fh_a9832c20103f60d6",
+        "fh_139cabf01bfe6f7c",
+        "fh_6b37b3549b9912f6"
+      ],
+      "object_handle": "oh_4ede1f26ea1868ad",
+      "role_areas_mm2": {
+        "whole_feature": 10786.375059365
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_4eedbfcfc3feef7c",
+          "fh_a9832c20103f60d6",
+          "fh_139cabf01bfe6f7c",
+          "fh_6b37b3549b9912f6"
+        ]
+      }
+    },
+    {
+      "feature_class": "web",
+      "measurements": {
+        "thickness_mm": 4.698463103929479
+      },
+      "member_face_handles": [
+        "fh_84666bbf779d2400",
+        "fh_d356791d28dfecda",
+        "fh_8c8925656de01424",
+        "fh_9bbbb33735e49e1d"
+      ],
+      "object_handle": "oh_084bb2e059278900",
+      "role_areas_mm2": {
+        "whole_feature": 10786.375059365
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_84666bbf779d2400",
+          "fh_d356791d28dfecda",
+          "fh_8c8925656de01424",
+          "fh_9bbbb33735e49e1d"
+        ]
+      }
+    }
+  ],
+  "part_measurements": {
+    "three_counterbore_spacing": {}
+  },
+  "schema": "g10_m7_e3_semantic_instance_measurement_role_catalog_v1",
+  "service_version": "sv_83d47b8671c9cef6",
+  "system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint"
+}

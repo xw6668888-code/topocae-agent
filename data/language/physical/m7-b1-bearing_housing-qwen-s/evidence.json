@@ -1,0 +1,104 @@
+{
+  "schema": "g10_m6_execution_receipt_v1",
+  "completed_utc": "2026-09-15T01:45:47.410325+00:00",
+  "run_id": "g10-m6-main-20260915",
+  "case_id": "bearing_housing",
+  "domain": "cad",
+  "status": "PASS",
+  "actually_executed": true,
+  "manifest": {
+    "path": "W:/python/FEA/dataset_generator/reports/aei_paper_goals_v1/g10/M6_ENGINEERING_MANIFEST.json",
+    "bytes": 66304,
+    "sha256": "fa1721714c99834daaf5db0cc8c5e85cabd97e8ef6938ca7ca69f25895866129"
+  },
+  "job_spec": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/bearing_housing/job_spec.json",
+    "bytes": 3177,
+    "sha256": "18d50fda6fb776127fe0564ea522f90da6154d796092ca7ff7c4db53ff1d509d"
+  },
+  "source_step": {
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Bearing Housing.stp",
+    "bytes": 80236,
+    "sha256": "68c756ce4df6ba506348ea958cae4c264f1c542062a0fb58ba9b8152e92de6b8"
+  },
+  "prediction": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m6_engineering/frozen_e3_outputs/bearing_housing.json",
+    "bytes": 664719,
+    "sha256": "92097d0bf480e25f36b8cfde3354affbefb302004c06c4364d08453f6c25f1f9"
+  },
+  "semantic_plan": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/bearing_housing/semantic_plan.json",
+    "bytes": 409,
+    "sha256": "b3e56ed1f9f21a4bcce734d5a0c25a9d43cb764bf37abc991f6e53d81c249f1e"
+  },
+  "frozen_binding": {
+    "geometry_version": "68c756ce4df6ba506348ea958cae4c264f1c542062a0fb58ba9b8152e92de6b8",
+    "prediction_system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint",
+    "prediction_source_identity_digest": "6b8a5d45878c7ce633e1f8ccabbf02a0044d0bf1407a25d337e3e92dcceab783",
+    "plan_digest": "e19fe56ddbb62725f695818c9f2e93096dba6d78e7dc22a07f82526ee6e3416d",
+    "selections": [
+      {
+        "operation_index": 0,
+        "action": "set_hole_radius",
+        "selector": {
+          "feature_classes": [
+            "blind_hole_round"
+          ],
+          "radius_mm": 4.0,
+          "scope": "all"
+        },
+        "role": "whole_feature",
+        "object_ids": [
+          "e3:68c756ce4df6:blind_hole_round:19d930e4de9023db",
+          "e3:68c756ce4df6:blind_hole_round:40862d5e605359fa",
+          "e3:68c756ce4df6:blind_hole_round:427aba4ff28c5dc7",
+          "e3:68c756ce4df6:blind_hole_round:2d0d3720f3d24222"
+        ],
+        "object_indices": [
+          14,
+          15,
+          16,
+          17
+        ],
+        "role_face_sets": [
+          [
+            23,
+            24
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            29,
+            30
+          ]
+        ],
+        "selection_count": 4
+      }
+    ],
+    "binding_digest": "f9102a300dd3ee97c0a7036a1db642fa054788f3646f3695573c0afec82cdc25"
+  },
+  "final_step": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/bearing_housing/final.step",
+    "bytes": 214814,
+    "sha256": "72b0b39ee495303dff420552e7823b328794d0bc14ab5684451c861073e06f1d"
+  },
+  "executor_audit": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/bearing_housing/attempts/attempt_001/edit_audit.json",
+    "bytes": 5119,
+    "sha256": "9b2b99438dc55c63296f60a3c1a4290c29ee66a3e0e5aa15cd0ddf219c2e38e8"
+  },
+  "independent_audit": {
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/bearing_housing/independent_cad_audit.json",
+    "bytes": 1697,
+    "sha256": "52c7770d5e3d3b635bead55215a21ffaa6b3288bebfb449f9e89ed53e9fad1cb"
+  },
+  "elapsed_seconds": 0.9287592999753542,
+  "attempt_count": 1,
+  "truth_used": false
+}

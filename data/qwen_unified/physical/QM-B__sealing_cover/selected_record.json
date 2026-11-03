@@ -1,0 +1,81 @@
+{
+  "CAE_readback_process": {
+    "argv": [
+      "F:\\ABAQUS2020\\commands\\abaqus.bat",
+      "cae",
+      "noGUI=W:\\python\\FEA\\dataset_generator\\tools\\aei_paper_goals_v1\\g11\\cae_readback.py",
+      "--",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QM-B__sealing_cover\\execution_v1\\work\\execution_plan.json",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QM-B__sealing_cover\\execution_v1\\saved_cae_readback.json"
+    ],
+    "elapsed_seconds": 1.0878701999899931,
+    "pid": 6148,
+    "returncode": 0,
+    "timed_out": false
+  },
+  "actually_executed": true,
+  "compiler_inputs_exclude_reference_and_service": true,
+  "elapsed_seconds": 41.808982400019886,
+  "finished_utc": "2026-10-23T09:19:45.112215+00:00",
+  "mapping": {
+    "bytes": 1780,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/sealing_cover.json",
+    "sha256": "9800f2eaf437d328241a0f170484058f94471d66cedcaee1316c9e86ab2714c9"
+  },
+  "model_plan": {
+    "bytes": 1817,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/attempts/QM-B__sealing_cover/attempt_001/parsed_plan.json",
+    "sha256": "cfbb45deadec7863fcabb810aaab93edfdfee75908afdfeaba4f8f9a1739b043"
+  },
+  "physical_readback": {
+    "bytes": 3026,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QM-B__sealing_cover/execution_v1/physical_readback.json",
+    "sha256": "b04ba78529cc0df0104e886043bc74281572af317242ab1564ba160d57550fcb"
+  },
+  "raw_response": {
+    "bytes": 451188,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/attempts/QM-B__sealing_cover/attempt_001/response.sse",
+    "sha256": "f30bbe380c5bfa2d478c3256351586808628a602d4f844871d8692e7ef89ee08"
+  },
+  "saved_CAE_readback": {
+    "bytes": 1850,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QM-B__sealing_cover/execution_v1/saved_cae_readback.json",
+    "sha256": "0d2758b95f8151045f1eb8e65d5c406a1c808aa05f129c4f6715fd05da0c7ea1"
+  },
+  "slot_id": "QM-B__sealing_cover",
+  "source_step": {
+    "bytes": 27119,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Sealing Cover.stp",
+    "sha256": "661e71aba1a73ebf8e86e73694b9f704124cd8ca08c1163097c31ecce76d1738"
+  },
+  "started_utc": "2026-10-23T09:19:03.303276+00:00",
+  "status": "ARTIFACT_PASS",
+  "worker_process": {
+    "argv": [
+      "W:\\python\\envs\\feagpt\\python.exe",
+      "W:\\python\\FEA\\dataset_generator\\tools\\aei_paper_goals_v1\\g11\\worker.py",
+      "--source",
+      "W:/python/FEA/dataset_generator/test_part_0901/Sealing Cover.stp",
+      "--mapping",
+      "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/sealing_cover.json",
+      "--plan",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\attempts\\QM-B__sealing_cover\\attempt_001\\parsed_plan.json",
+      "--materials",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\inputs\\materials.json",
+      "--config",
+      "W:\\python\\FEA\\dataset_generator\\reports\\aei_paper_goals_v1\\g11\\EXECUTION_CONFIG.json",
+      "--output",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QM-B__sealing_cover\\execution_v1"
+    ],
+    "elapsed_seconds": 40.65494310000213,
+    "pid": 51420,
+    "returncode": 0,
+    "timed_out": false
+  },
+  "worker_receipt": {
+    "bytes": 31178,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QM-B__sealing_cover/execution_v1/EXECUTION_RECEIPT.json",
+    "sha256": "9efdc388c9fe194646e4b03925d14ff27573d2354156b5000192fc6fc88a6beb"
+  },
+  "worker_status": "EXECUTED"
+}

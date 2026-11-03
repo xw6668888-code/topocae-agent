@@ -1,0 +1,50 @@
+{
+  "sample_id": "g10_t10_v2_p_00151",
+  "source_step_sha256": "bd1cd0083180360e9da1858c60691baf41a32fa19624d85f45ed0b15e818a309",
+  "face_count": 16,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "slot_rect",
+    "counterbore_hole",
+    "pocket_rect",
+    "pocket_rect",
+    "pocket_rect",
+    "pocket_rect",
+    "stock",
+    "pocket_rect",
+    "stock",
+    "stock"
+  ],
+  "objects": [
+    {
+      "class": "counterbore_hole",
+      "instance_id": 1,
+      "faces": [
+        7
+      ]
+    },
+    {
+      "class": "pocket_rect",
+      "instance_id": 2,
+      "faces": [
+        8,
+        9,
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "class": "slot_rect",
+      "instance_id": 3,
+      "faces": [
+        6
+      ]
+    }
+  ]
+}

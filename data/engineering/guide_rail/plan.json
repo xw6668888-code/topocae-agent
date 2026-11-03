@@ -1,0 +1,23 @@
+{
+  "schema_version": "2",
+  "status": "ready",
+  "domain": "cad",
+  "operations": [
+    {
+      "action": "set_hole_spacing",
+      "target": {
+        "feature_classes": [
+          "counterbore_hole"
+        ],
+        "radius_mm": null,
+        "scope": "all"
+      },
+      "old_spacing_mm": 200.0,
+      "new_spacing_mm": 150.0,
+      "anchor": "central_hole",
+      "spacing_definition": "adjacent_centers"
+    }
+  ],
+  "clarifications": [],
+  "reason": "G10 frozen user-confirmed reference plan; not an LLM result"
+}

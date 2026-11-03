@@ -1,0 +1,50 @@
+{
+  "schema_version": "2",
+  "status": "ready",
+  "domain": "cae",
+  "operations": [
+    {
+      "action": "set_material",
+      "material_id": "Steel45"
+    },
+    {
+      "action": "set_global_mesh",
+      "size_mm": 1.0
+    },
+    {
+      "action": "fix_features",
+      "target": {
+        "feature_classes": [
+          "countersink_hole"
+        ],
+        "radius_mm": null,
+        "scope": "all"
+      },
+      "role": "whole_feature"
+    },
+    {
+      "action": "apply_force",
+      "target": {
+        "feature_classes": [
+          "through_hole_round"
+        ],
+        "radius_mm": 4.0,
+        "scope": "all"
+      },
+      "role": "inner_walls",
+      "magnitude_N": 500.0,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "basis": "per_instance"
+    },
+    {
+      "action": "set_analysis",
+      "type": "linear_static"
+    }
+  ],
+  "clarifications": [],
+  "reason": "G10 frozen user-confirmed reference plan; not an LLM result"
+}

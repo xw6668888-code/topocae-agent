@@ -1,0 +1,82 @@
+{
+  "STEP_readback_process": {
+    "argv": [
+      "W:\\python\\envs\\feagpt\\python.exe",
+      "W:\\python\\FEA\\dataset_generator\\tools\\aei_paper_goals_v1\\g11\\cad_readback.py",
+      "--source",
+      "W:/python/FEA/dataset_generator/test_part_0901/Flanged Sleeve.stp",
+      "--plan",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\attempts\\QP-B__flanged_sleeve\\attempt_001\\parsed_plan.json",
+      "--mapping",
+      "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/flanged_sleeve.json",
+      "--output-step",
+      "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-B__flanged_sleeve/execution_v1/work/Flanged Sleeve_edited.stp",
+      "--result",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-B__flanged_sleeve\\execution_v1\\independent_STEP_readback.json"
+    ],
+    "elapsed_seconds": 0.49807110000074317,
+    "pid": 32668,
+    "returncode": 0,
+    "timed_out": false
+  },
+  "actually_executed": true,
+  "compiler_inputs_exclude_reference_and_service": true,
+  "elapsed_seconds": 1.5310686000011628,
+  "finished_utc": "2026-10-24T10:48:40.837730+00:00",
+  "independent_STEP_readback": {
+    "bytes": 1344,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-B__flanged_sleeve/execution_v1/independent_STEP_readback.json",
+    "sha256": "466f64ff4ed82140232d43d06cc55d207cbdd97685f98e6471d339a809269fac"
+  },
+  "mapping": {
+    "bytes": 1657,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/flanged_sleeve.json",
+    "sha256": "9e9e016e5ed11c892cf5e543e76ba56527fa571f00091cb5b80b3ebdf55e30aa"
+  },
+  "model_plan": {
+    "bytes": 427,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/attempts/QP-B__flanged_sleeve/attempt_001/parsed_plan.json",
+    "sha256": "d039213399960022c9300a74ad206d28ea2d1e3888a3f3b8e0918e54f0599a2c"
+  },
+  "raw_response": {
+    "bytes": 13170,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/attempts/QP-B__flanged_sleeve/attempt_001/response.sse",
+    "sha256": "7ac7a2aff06942c507aa64f80d1ed1de89f32d78c8b9c9f5c8103dec4f07abde"
+  },
+  "slot_id": "QP-B__flanged_sleeve",
+  "source_step": {
+    "bytes": 23581,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Flanged Sleeve.stp",
+    "sha256": "af5669560aff44d525e0d49eae30fc5e9c9df5c142cf519ce330a5a00b83d034"
+  },
+  "started_utc": "2026-10-24T10:48:39.307393+00:00",
+  "status": "ARTIFACT_PASS",
+  "worker_process": {
+    "argv": [
+      "W:\\python\\envs\\feagpt\\python.exe",
+      "W:\\python\\FEA\\dataset_generator\\tools\\aei_paper_goals_v1\\g11\\worker_direct.py",
+      "--source",
+      "W:/python/FEA/dataset_generator/test_part_0901/Flanged Sleeve.stp",
+      "--mapping",
+      "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/flanged_sleeve.json",
+      "--plan",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\attempts\\QP-B__flanged_sleeve\\attempt_001\\parsed_plan.json",
+      "--materials",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\inputs\\materials.json",
+      "--config",
+      "W:\\python\\FEA\\dataset_generator\\reports\\aei_paper_goals_v1\\g11\\EXECUTION_CONFIG_MEMORY6.json",
+      "--output",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-B__flanged_sleeve\\execution_v1"
+    ],
+    "elapsed_seconds": 1.0294483999987278,
+    "pid": 15052,
+    "returncode": 0,
+    "timed_out": false
+  },
+  "worker_receipt": {
+    "bytes": 27915,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-B__flanged_sleeve/execution_v1/EXECUTION_RECEIPT.json",
+    "sha256": "354d0f44b6c26d40def1a7b3e8c6c3e712f48ba29e8e2279ee3462bb63e6c2df"
+  },
+  "worker_status": "EXECUTED"
+}

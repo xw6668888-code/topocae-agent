@@ -1,0 +1,41 @@
+{
+  "status": "PASS", 
+  "analysis_errors": 0, 
+  "string_adapter": "recursive_json_unicode_to_native_mbcs_on_python2", 
+  "equilibrium_relative_error": 1.1814076721436568e-07, 
+  "expected_applied_force_N": [
+    0.0, 
+    0.0, 
+    9134.471001029711
+  ], 
+  "truth_used": false, 
+  "max_von_mises_mpa": 266.0073547363281, 
+  "reaction_force_N": [
+    -2.4151813704520464e-06, 
+    -6.79520599078387e-06, 
+    -9134.469921900396
+  ], 
+  "instance_count": 1, 
+  "odb_path": "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g10\\m7_model_cae_dispatch\\v3\\m7-b1-clevis-qwen-s\\attempt_001\\final.odb", 
+  "element_types": [
+    "C3D10"
+  ], 
+  "geometry_version": "0befb0c991dfbc9057dd644da22a4d99c0972374e1a98d8947d3da902fbd1f27", 
+  "manifest_sha256": "180268aab6cdf1e633d293f1d035f19635cc96bc0c80bbce2e86ae87fe348a45", 
+  "prediction_sha256": "409ec7fb58e99b5783b102a672335104ded76cb1f6b4c3313f87d65c9ff18376", 
+  "analysis_warnings": 0, 
+  "diagnostic_status": "JOB_STATUS_COMPLETED_SUCCESSFULLY", 
+  "odb_sha256": "13a53c8f7904e3a18cb68633e090037c058e852a34838a985cc6526a7110c294", 
+  "element_count": 1254069, 
+  "verifier": {
+    "path": "W:/python/FEA/dataset_generator/tools/aei_case_suite/abaqus_verification.py", 
+    "sha256": "e598f5d650a431f747f4f4162afedb0b664734c149e7a07651d91e4a50e893a9", 
+    "bytes": 2003
+  }, 
+  "final_frame_time": 1.0, 
+  "execution_plan_sha256": "2f31efb9fdd370a8df8af9ce36b1268ca0d7f3937fa63d19e618c4c800d95e0a", 
+  "python_major": 2, 
+  "node_count": 1769189, 
+  "max_displacement_mm": 0.012510576285421848, 
+  "schema": "g10_independent_odb_audit_v2"
+}

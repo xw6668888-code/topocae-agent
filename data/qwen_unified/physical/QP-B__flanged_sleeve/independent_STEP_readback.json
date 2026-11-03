@@ -1,0 +1,55 @@
+{
+  "checks": [
+    {
+      "kind": "radius_axis_extent",
+      "measured": [
+        {
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            175.5,
+            98.0,
+            -377.99999999999903
+          ],
+          "depth_mm": 55.0,
+          "face_number": 5,
+          "radius_mm": 15.0,
+          "start_mm": [
+            148.0,
+            98.0,
+            -378.0
+          ]
+        }
+      ],
+      "pass_": true,
+      "source_faces": [
+        13
+      ]
+    }
+  ],
+  "no_reference_or_object_service_read": true,
+  "original_face_groups": [
+    [
+      13
+    ]
+  ],
+  "output_readable": true,
+  "output_step": {
+    "bytes": 66840,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-B__flanged_sleeve/execution_v1/work/Flanged Sleeve_edited.stp",
+    "sha256": "358e95c8a48c3528ea555b11080cb94f15cd309418f7bd8cbaef3623bce44f4a"
+  },
+  "schema": "g11_independent_STEP_readback_v1",
+  "source_step": {
+    "bytes": 23581,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Flanged Sleeve.stp",
+    "sha256": "af5669560aff44d525e0d49eae30fc5e9c9df5c142cf519ce330a5a00b83d034"
+  },
+  "status": "PASS",
+  "valid_solid_count": 1,
+  "volume_after_mm3": 206460.17496271164,
+  "volume_before_mm3": 176222.34567191897
+}

@@ -1,0 +1,38 @@
+{
+  "method": "MFTReNet-SI-D0",
+  "tasks": [
+    "face classification",
+    "same-instance grouping"
+  ],
+  "epochs": 100,
+  "swa": true,
+  "seeds": {
+    "20260718": {
+      "weights": "weights/20260718.pt",
+      "threshold": 0.7,
+      "optimization": {
+        "learning_rate": 0.001,
+        "batch_size": 32,
+        "epochs": 100
+      }
+    },
+    "20260719": {
+      "weights": "weights/20260719.pt",
+      "threshold": 0.7,
+      "optimization": {
+        "learning_rate": 0.001,
+        "batch_size": 32,
+        "epochs": 100
+      }
+    },
+    "20260720": {
+      "weights": "weights/20260720.pt",
+      "threshold": 0.7,
+      "optimization": {
+        "learning_rate": 0.001,
+        "batch_size": 32,
+        "epochs": 100
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "externalizable": false,
+  "extractor": {
+    "entry": {
+      "bytes": 11156,
+      "repo_relative_path": "tools/aei_paper_goals_v1/g07/step_entry.py",
+      "sha256": "a34f494d20c01eafc14ad5c9695174916888fa5658b84550b0ca182eb37ad288"
+    },
+    "frozen_core": {
+      "bytes": 8853,
+      "repo_relative_path": "paper_release/topocae_p1_legacy_baseline_v1/core/graph_v2_2_1.py",
+      "sha256": "e2ff614cefeb65a2cf482d03b1bea570f7f3fc1ef9b7aea06205ff345ed9f559"
+    },
+    "geometry_schema": "topocae_graph_v2_2_1_true_brep_planar_rank_policy_1"
+  },
+  "geometry_handle": "gh_5042d412533268f3",
+  "handle_to_final_step_face_number": {
+    "fh_17d0d8e27709c4e2": 21,
+    "fh_1c8153c9ea094795": 44,
+    "fh_2022dbef0d30889b": 26,
+    "fh_219f0148f46f8094": 38,
+    "fh_2a3c7712507638fb": 25,
+    "fh_2f7f99dffc7196ca": 11,
+    "fh_398d82133fcd3d43": 15,
+    "fh_3eb97cb9ccb13bbb": 45,
+    "fh_3eccaee146a349c9": 36,
+    "fh_465370763e74eb0a": 8,
+    "fh_5465ccfe256d8e2f": 16,
+    "fh_5490daf1224f6115": 28,
+    "fh_5641d903a430b300": 4,
+    "fh_586202b53dc9e59c": 39,
+    "fh_5d8ca79ff7f75bd8": 42,
+    "fh_675647c008a42015": 20,
+    "fh_6c9e09db88134201": 2,
+    "fh_85edbf4ff06549b8": 43,
+    "fh_8b41933b22c5d86e": 40,
+    "fh_8e01f713d7253054": 32,
+    "fh_9689b6e7130c09d8": 6,
+    "fh_97ff350bd1f29635": 1,
+    "fh_9fbff4a39bd07520": 23,
+    "fh_a290c477cefcf63f": 12,
+    "fh_a582f6d80c07644c": 18,
+    "fh_a87add202c393f8a": 27,
+    "fh_ad740072fc3ea11c": 30,
+    "fh_b31243081d6d70b8": 22,
+    "fh_b5cdeb96ff63855a": 37,
+    "fh_ba10df331d16debf": 35,
+    "fh_bc8da44bfe07a3b7": 10,
+    "fh_be19a9ca8ae8bb47": 46,
+    "fh_ca94063a45cfec58": 17,
+    "fh_d007f04e17118ac2": 29,
+    "fh_d36d8671cc648a62": 7,
+    "fh_e11ef8d7e9b03974": 13,
+    "fh_e2bd4db3d12ce455": 19,
+    "fh_e6026dfecb28a41b": 41,
+    "fh_e969baa36497d575": 14,
+    "fh_ee66cfa688120133": 3,
+    "fh_f0adef3914165494": 34,
+    "fh_f3f26c8d27c43d5a": 31,
+    "fh_f52b7bc236a60b9a": 33,
+    "fh_f545bdb4e976d678": 5,
+    "fh_f7748786efe826ec": 9,
+    "fh_f9cb12211568a784": 24
+  },
+  "model_outputs_used": false,
+  "schema": "g10_m7_local_face_handle_map_v1",
+  "source_step": {
+    "bytes": 56988,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Angle Bracket.stp",
+    "sha256": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195"
+  },
+  "truth_used": false
+}

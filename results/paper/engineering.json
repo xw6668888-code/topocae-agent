@@ -1,0 +1,108 @@
+{
+  "counts": {
+    "tp": 182,
+    "fp": 0,
+    "fn": 0,
+    "whole": 13,
+    "radii_mm_total": 106,
+    "radii_mm_pass": 106,
+    "full_cylinder_depths_total": 66,
+    "full_cylinder_depths_pass": 66,
+    "parameter_total": 126,
+    "parameter_pass": 126,
+    "thickness_mm_total": 20,
+    "thickness_mm_pass": 20,
+    "independent_targets_total": 18,
+    "independent_targets_pass": 18,
+    "reviewed_top_total": 3,
+    "reviewed_top_pass": 3,
+    "spacing_total": 1,
+    "spacing_pass": 1
+  },
+  "parts": [
+    {
+      "case_id": "angle_bracket",
+      "tp": 16,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "case_id": "bearing_housing",
+      "tp": 24,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "case_id": "clevis",
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "case_id": "flanged_sleeve",
+      "tp": 13,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "case_id": "flanged_support",
+      "tp": 17,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "case_id": "guide_rail",
+      "tp": 13,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "case_id": "mounting_plate",
+      "tp": 14,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "case_id": "sealing_cover",
+      "tp": 10,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "case_id": "stiffened_panel",
+      "tp": 30,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "case_id": "support_bracket",
+      "tp": 17,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "case_id": "support_frame",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "case_id": "turbine_blade",
+      "tp": 11,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "case_id": "u_shaped_bracket",
+      "tp": 7,
+      "fp": 0,
+      "fn": 0
+    }
+  ],
+  "parameter_reference_is_geometric_not_independent_metrology": true,
+  "engineering_is_development_evidence": true,
+  "archived_reference_plan_artifacts": {
+    "cae": 7,
+    "cad": 6
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "sample_id": "g10_t10_v2_i_00330",
+  "source_step_sha256": "a1ecd34c2ab219f6f94edefbd0f91784938fa1a2954a0fd097ca2891aaa17db4",
+  "face_count": 8,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "slot_o",
+    "stock"
+  ],
+  "objects": [
+    {
+      "class": "slot_o",
+      "instance_id": 1,
+      "faces": [
+        6
+      ]
+    }
+  ]
+}

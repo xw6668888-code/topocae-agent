@@ -1,0 +1,499 @@
+{
+  "files": [
+    {
+      "source": "comparison/topocae/engine/weights/dense.pt",
+      "runtime_path": "artifacts/aei_paper_goals_v1/g03/training_runs/dense_instance/seed_20260719/best.pt",
+      "sha256": "f6ca9bc84d88bc540134b598353b2a2a0f9b83e1b2779c986b2ecc6577bfb70e"
+    },
+    {
+      "source": "comparison/topocae/engine/config/dense_threshold.json",
+      "runtime_path": "artifacts/aei_paper_goals_v1/g03/training_runs/dense_instance/seed_20260719/same_instance_threshold_selection.json",
+      "sha256": "96ee358d24dcb1946531c123281826ad53f0e0580d7ef0c17bc729dc40e8d3c8"
+    },
+    {
+      "source": "comparison/topocae/engine/weights/scorer.pt",
+      "runtime_path": "artifacts/aei_paper_goals_v1/g09/e_joint_scorer/seed_20260719/scorer.pt",
+      "sha256": "28668becd3ce4adf6f6f666f1ec1b35192c38da15df45fecc99df6a47061fd05"
+    },
+    {
+      "source": "comparison/topocae/engine/graph/AAGExtractor.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/core/AAGExtractor.py",
+      "sha256": "a02c53232f8e230867365c327bd3042af0b79da8b1b286a67a3250ee49be4726"
+    },
+    {
+      "source": "comparison/topocae/engine/graph/graph_v2.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/core/graph_v2.py",
+      "sha256": "2ad81a26b5ecf99d43b796197f54a282480af6ee0c38b66460c132f0b4a873c7"
+    },
+    {
+      "source": "comparison/topocae/engine/graph/graph_v2_2_1.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/core/graph_v2_2_1.py",
+      "sha256": "e2ff614cefeb65a2cf482d03b1bea570f7f3fc1ef9b7aea06205ff345ed9f559"
+    },
+    {
+      "source": "comparison/topocae/engine/backbone/__init__.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/models/__init__.py",
+      "sha256": "c79a2fea26d651775da702e4a77bfcaf176a9c1557e007cdeea6930f6b396460"
+    },
+    {
+      "source": "comparison/topocae/engine/backbone/gnn_baseline.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/models/gnn_baseline.py",
+      "sha256": "5bb99e969a3c2dc8eb002e62c2d691b286aeecb3fd597b9147c40a6caca7d0fa"
+    },
+    {
+      "source": "comparison/topocae/engine/config/graph_metadata.json",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/output_training_p1_e6r2_r3_graph_v2_2_1_v1/metadata.json",
+      "sha256": "a450467fcefad201130d35bba2fe907ca2ab49a6d504bf85a7d794b5724597ba"
+    },
+    {
+      "source": "comparison/topocae/engine/cylinder_geometry/__init__.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/p1_c/__init__.py",
+      "sha256": "060f542a4523221569b45fa5537ce081fe6c55db2494e2e26c7d28100a8b723b"
+    },
+    {
+      "source": "comparison/topocae/engine/cylinder_geometry/oriented_cylinder_polarity_v1.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/p1_c/oriented_cylinder_polarity_v1.py",
+      "sha256": "3c8c9a2f2b484df4903f6f9a6f42da2f6445e54a8213625a38a95e4f4f9cdcd2"
+    },
+    {
+      "source": "comparison/topocae/engine/feature_contract/__init__.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/p1_e6/__init__.py",
+      "sha256": "122597088a0a948c5f4bead6ec05888a78f48e826f8479e5d3f50650af9a9e63"
+    },
+    {
+      "source": "comparison/topocae/engine/feature_contract/common.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/p1_e6/common.py",
+      "sha256": "076c185eb399b90f2be4fceb89643526ac7255262ea746f5040945e445328ba3"
+    },
+    {
+      "source": "comparison/topocae/engine/candidate_decision/__init__.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/p1_e6r/__init__.py",
+      "sha256": "6af70d0180910ad81c69c9ae45d52ec37401ac09a56d559756bdbf831dc3ef4a"
+    },
+    {
+      "source": "comparison/topocae/engine/candidate_decision/candidate_decision.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/p1_e6r/candidate_decision.py",
+      "sha256": "a27361cb4bfb26ba91d3222f78fb230b77685b9d4b8e3d8ff1e80289150d50df"
+    },
+    {
+      "source": "comparison/topocae/engine/candidate_decision/common.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/p1_e6r/common.py",
+      "sha256": "647e68f9299c2af6599f44d87167451f1926d48a39e525c23d13c8c036355b16"
+    },
+    {
+      "source": "comparison/topocae/engine/candidate_decision/evaluate.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/p1_e6r/evaluate.py",
+      "sha256": "2bf5f63e6769e288efa9765bb58fe77668e3b2cc70990c8f2d15ffd402014edc"
+    },
+    {
+      "source": "comparison/topocae/engine/candidate_decision/training_common.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/p1_e6r/training_common.py",
+      "sha256": "14b23a4a506a46efccf463af3391b7f785a422adcffd906813c4acb320877cf5"
+    },
+    {
+      "source": "comparison/topocae/engine/instance_boundary/__init__.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/p1_e6r2_r3/__init__.py",
+      "sha256": "525ff2038597a537ffa7e538a2f086a8de7f6519dfcc150a2bc444ffa3759ab8"
+    },
+    {
+      "source": "comparison/topocae/engine/instance_boundary/instance_boundary.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/p1_e6r2_r3/instance_boundary.py",
+      "sha256": "93bae3c08c9f88c56ec9cea65e5f05d0a0f99cac3666bd19d6032d3584d7b9e1"
+    },
+    {
+      "source": "comparison/topocae/engine/instance_boundary/training_common.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/p1_e6r2_r3/training_common.py",
+      "sha256": "2638c4ace7d504e4b544c70dde71672f6f885d0a91e4f573b36701c9ed4c77b2"
+    },
+    {
+      "source": "comparison/topocae/engine/boundary_rules/__init__.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/p1_m2/__init__.py",
+      "sha256": "5182deb4119cac6e904660bdf7defc8c12d166acdda4225e474a5e10d4fc9d5a"
+    },
+    {
+      "source": "comparison/topocae/engine/boundary_rules/boundary.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/p1_m2/boundary.py",
+      "sha256": "2fe519f8115873ee93044e28c19f6fd7b9b12128f3317e9e7fa1d34d9410f85c"
+    },
+    {
+      "source": "comparison/topocae/engine/config/candidate_threshold.json",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e3c_seed_matched_candidate_v1/pipelines/old_same_instance_seed_20260718/candidate_model/candidate_threshold_selection.json",
+      "sha256": "448659d94ac868703ca6dfb74ff42095bb2205eac8cc92dc16d5b2f2d4208c8d"
+    },
+    {
+      "source": "comparison/topocae/engine/config/global_decode.json",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e3c_seed_matched_candidate_v1/pipelines/old_same_instance_seed_20260718/global_decode_selection.json",
+      "sha256": "38d27f363f87df929c5648f27f55b6fb83a1cad7fbeb1458b960339ada844879"
+    },
+    {
+      "source": "comparison/topocae/engine/weights/sparse.pt",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e6r2_r3_m2_m5_controlled_training_v1/training_runs/final_8370_seed_20260719/best.pt",
+      "sha256": "491655bfec5591c5a6a1b7f6300294f4818c29bf60b4c1b8dd5ff6078a057054"
+    },
+    {
+      "source": "comparison/topocae/engine/config/sparse_threshold.json",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e6r2_r3_m2_m5_controlled_training_v1/training_runs/final_8370_seed_20260719/same_instance_threshold_selection.json",
+      "sha256": "9a94f60111ff77fd8c80885188e6886e476ad82140f011a8e44af1761403e02d"
+    },
+    {
+      "source": "comparison/topocae/engine/inference/run_inference.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/scripts/run_inference.py",
+      "sha256": "56ddcd3c5f1e256c8664535a82ef23c463b02865a5afdbd2cde1a53915cc9bbe"
+    },
+    {
+      "source": "comparison/topocae/engine/backbone_training/train_p1_b_gnn_ablation.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/train_p1_b_gnn_ablation.py",
+      "sha256": "3e08cc67b4f5decc8e657dda82bd7de2c0b8372b4e18d146f63cb26637a7583e"
+    },
+    {
+      "source": "comparison/topocae/engine/decoding/p1_b_candidate_features.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/utils/p1_b_candidate_features.py",
+      "sha256": "6f21f7e58debf287c11dd2b3a4e167ee38c4deff6b55e4c1f75b53d8dcc9f385"
+    },
+    {
+      "source": "comparison/topocae/engine/decoding/p1_b_candidate_proposer.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/utils/p1_b_candidate_proposer.py",
+      "sha256": "3abc98ef12354766db83946a52be565305f991641ba6ed32612cb6f580a0af97"
+    },
+    {
+      "source": "comparison/topocae/engine/decoding/p1_b_global_decode.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/utils/p1_b_global_decode.py",
+      "sha256": "b3ee92d5d294d609e64f4d37f0d3aaca7ac140f14ee35cac41f78a61eb7be4d1"
+    },
+    {
+      "source": "comparison/topocae/engine/decoding/p1_b_global_decode_v2.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/utils/p1_b_global_decode_v2.py",
+      "sha256": "687f389b7b2ed8e63df348e13a25f9ddbbe9fa1170d08e0273e344c8baa09630"
+    },
+    {
+      "source": "comparison/topocae/engine/decoding/p1_b_instance_assembly.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/utils/p1_b_instance_assembly.py",
+      "sha256": "0937996064031acc77346caf617debb010909d7fd48e939676a4674c171dc01c"
+    },
+    {
+      "source": "comparison/topocae/engine/decoding/p1_b_topology_verifier.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/utils/p1_b_topology_verifier.py",
+      "sha256": "0ecce6d83be38a24fa1491ebc2024e4f6cb287522106dc877ade4e772814bb15"
+    },
+    {
+      "source": "comparison/topocae/engine/decoding/p1_b_topology_verifier_v2.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/utils/p1_b_topology_verifier_v2.py",
+      "sha256": "eb3b56501dd421919015c55d1bf58dd5369f0e20f6a9d0a26d69c7de6265fcd6"
+    },
+    {
+      "source": "comparison/topocae/engine/decoding/p1_b_topology_verifier_v3.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/utils/p1_b_topology_verifier_v3.py",
+      "sha256": "c0bce4b57654f59ed7464f8f1220962797db5035b6a8c7fe413191b5178fb97e"
+    },
+    {
+      "source": "comparison/topocae/engine/decoding/p1_b_topology_verifier_v4.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/utils/p1_b_topology_verifier_v4.py",
+      "sha256": "26f76d67cb92b2f0087feefb706997885d16843bc759de51ce7f26b59acc5362"
+    },
+    {
+      "source": "comparison/topocae/engine/decoding/step_solid_validation.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/utils/step_solid_validation.py",
+      "sha256": "c59bb08b21d451e9e17ab052b943408f4bfa16bc7767ceccb822b379b24c9e09"
+    },
+    {
+      "source": "comparison/topocae/engine/decoding/training_export_v2.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/utils/training_export_v2.py",
+      "sha256": "6a44d2ada39fbc349aad64ab2ef0e55ef60bc1a77d68da16a54524722d3b200f"
+    },
+    {
+      "source": "comparison/topocae/engine/decoding/training_export_v2_1.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/utils/training_export_v2_1.py",
+      "sha256": "c087cd7c2e231eccd73bae1e97bf6b3764f8c5f200b2eb6bc9dd48232c0762a8"
+    },
+    {
+      "source": "comparison/topocae/engine/decoding/training_export_v2_2.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/utils/training_export_v2_2.py",
+      "sha256": "528f5a027a3249b8e683c18a1f1729f06cbf79702a8bc6bce6292af612d2f6e6"
+    },
+    {
+      "source": "comparison/topocae/engine/decoding/training_export_v2_2_1.py",
+      "runtime_path": "paper_release/topocae_p1_legacy_baseline_v1/utils/training_export_v2_2_1.py",
+      "sha256": "3d73cd7bf17142d216a34d3f7f3f7c9fe1cff08dcfd961334129ed01bed11009"
+    },
+    {
+      "source": "comparison/topocae/engine/config/closure.json",
+      "runtime_path": "PROTECTED_E3_CLOSURE.json",
+      "sha256": "5774defafb3db19bf7994149cf6feac54a07dbaa1f6ddd511376922db9fd2e2e"
+    },
+    {
+      "source": "comparison/topocae/engine/engineering/abaqus_generic.template.py",
+      "runtime_path": "tools/aei_case_suite/abaqus_generic.template.py",
+      "sha256": "b712fe6196fe76c28e05f978f327130941b75ff156484363e5b87b6e587e5c16"
+    },
+    {
+      "source": "comparison/topocae/engine/engineering/abaqus_verification.py",
+      "runtime_path": "tools/aei_case_suite/abaqus_verification.py",
+      "sha256": "e598f5d650a431f747f4f4162afedb0b664734c149e7a07651d91e4a50e893a9"
+    },
+    {
+      "source": "comparison/topocae/engine/engineering/cad_executor.py",
+      "runtime_path": "tools/aei_case_suite/cad_executor.py",
+      "sha256": "0a8c1676d46aea3c2d0e31868120d733bcc2eb03537ae3a20f026ce743f082ee"
+    },
+    {
+      "source": "comparison/topocae/engine/engineering/cae_executor.py",
+      "runtime_path": "tools/aei_case_suite/cae_executor.py",
+      "sha256": "89e3b0a13124162bc7329da3a29b032dda25362d07e25bd54689d174ea609e85"
+    },
+    {
+      "source": "comparison/topocae/engine/engineering/contracts.py",
+      "runtime_path": "tools/aei_case_suite/contracts.py",
+      "sha256": "e1db7f21ce9c47386d1d9d4cb55592ac2189f48735050a686f386cd68ea848ea"
+    },
+    {
+      "source": "comparison/topocae/engine/engineering/geometry.py",
+      "runtime_path": "tools/aei_case_suite/geometry.py",
+      "sha256": "a9b801d43e7c363a2e4dc43a67e887f08de1839adbbddc1c89518457cfbac5d1"
+    },
+    {
+      "source": "comparison/topocae/engine/engineering/parameter_policy.py",
+      "runtime_path": "tools/aei_case_suite/parameter_policy.py",
+      "sha256": "e0fd2f84a821fa2a25d1a9339391ae8ce81d46f365a1765e19d34f04a9c921d7"
+    },
+    {
+      "source": "comparison/topocae/engine/engineering/preflight.py",
+      "runtime_path": "tools/aei_case_suite/preflight.py",
+      "sha256": "d0daaf54ad8f0c333c4dfb23a308a91285a20a6de76d7e6bbbce4c264f87222f"
+    },
+    {
+      "source": "comparison/topocae/engine/dense_branch/ablations.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g03/ablations.py",
+      "sha256": "f0716a27ea59b799ce53454b059ffdc9cfaefde5ad1c7ac71ddc31edacffa6e1"
+    },
+    {
+      "source": "comparison/topocae/engine/dense_branch/common.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g03/common.py",
+      "sha256": "8803d59e1fd5873b6d9dbe61b9eaf8f5a8fd05800304294faf7b97869db467b4"
+    },
+    {
+      "source": "comparison/topocae/engine/dense_branch/inference.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g03/inference.py",
+      "sha256": "a70b85d3ee15a00268b871755252dfb652234b7d3007f6142b83726b90b15fa8"
+    },
+    {
+      "source": "comparison/topocae/engine/dense_branch/stages.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g03/stages.py",
+      "sha256": "f2ce5224028230246e380a2a91d6bcc5f05547bdc9dbc30a5d6b99f4bd7bce45"
+    },
+    {
+      "source": "comparison/topocae/engine/step_geometry/decoder.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g07/decoder.py",
+      "sha256": "0531972f1635ad8547db51e871729b97d68481340809aa1669ed12edd7434228"
+    },
+    {
+      "source": "comparison/topocae/engine/step_geometry/engineering_reference.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g07/engineering_reference.py",
+      "sha256": "672129da648c0969ec9465ffcb9b278dd5768fe4e532f80ce642c1f5f173b232"
+    },
+    {
+      "source": "comparison/topocae/engine/step_geometry/g07_common.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g07/g07_common.py",
+      "sha256": "5340304e3d0f0bc23321dd8685ba83d18980e8836bea4e222a44875f4c40328c"
+    },
+    {
+      "source": "comparison/topocae/engine/step_geometry/input_audit.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g07/input_audit.py",
+      "sha256": "911549acc0b4dd6a9653d2e0868f64efa1695b2d8f6a1d36e0b3e1f062ed30ab"
+    },
+    {
+      "source": "comparison/topocae/engine/step_geometry/input_audit_followup.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g07/input_audit_followup.py",
+      "sha256": "fd2e28846f8e75ec12b99f533c234f2239c60dc2d935290de6358e4d152cd053"
+    },
+    {
+      "source": "comparison/topocae/engine/step_geometry/relation_geometry.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g07/relation_geometry.py",
+      "sha256": "9f92e09e085f025dcbd86f60c4b9187baa2403f6cb5f1def3ab558faa225c164"
+    },
+    {
+      "source": "comparison/topocae/engine/step_geometry/step_entry.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g07/step_entry.py",
+      "sha256": "a34f494d20c01eafc14ad5c9695174916888fa5658b84550b0ca182eb37ad288"
+    },
+    {
+      "source": "comparison/topocae/engine/step_geometry/topo_predictor.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g07/topo_predictor.py",
+      "sha256": "528d549dc71b185ebcd66429e8a7822ff73267587d819f1f090f740d6a5f85db"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/cache_identity.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/cache_identity.py",
+      "sha256": "96f7fa08428ff4bffdf42db0037626e4abc59ac1a00a261bf69cb6abd635e714"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/candidate_pool.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/candidate_pool.py",
+      "sha256": "dc25f4d1f62f53d21e1b6604c830eda744db921c16f911fe2200c34941c994e5"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/e_fusion_analysis.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/e_fusion_analysis.py",
+      "sha256": "7f307b230c6d326b88c41f5467e6fdaea2d44b6f9762e3968b016979e91a32da"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/e_joint_calibration.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/e_joint_calibration.py",
+      "sha256": "bfabe44dd57d198f184cc61a11afc0e1394ebd1f678407d73d17ea96ef9fe7bb"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/e_joint_eval.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/e_joint_eval.py",
+      "sha256": "3652365f19c3e6d4fb9f61957874870435765b00cf53f5cef32d14ada668678b"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/e_joint_retention.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/e_joint_retention.py",
+      "sha256": "d757a016792553a763989d2cb88342415155eb6a6bc24382f9a7e5d3fe8a18f2"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/e_joint_retention_eval.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/e_joint_retention_eval.py",
+      "sha256": "8bf07a9e5fe5575c206a06c25b7339d3edbbba2b300b8085187a22c32a7a24f2"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/e_joint_scorer.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/e_joint_scorer.py",
+      "sha256": "dbbcb0e1329bb29cd6739fb61a28707cc57bfa7163a8526af30ece4c59f4aa2d"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/e_joint_source_priors.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/e_joint_source_priors.py",
+      "sha256": "0bf84cdc4bc2a492f0abea0b3a69d8bad2e236306a767b084cb7890e964817db"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/e_joint_train_data.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/e_joint_train_data.py",
+      "sha256": "8c1ba81d16356dd74dddc3ae69f8be56729d306ce1fbdc5055717f1f304afe15"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/e_v09_adapter.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/e_v09_adapter.py",
+      "sha256": "50c84ff73d5f0e97edd6cbb92e8124d0d936b7bc8cde347ac46f7f38fffa5bea"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/g09_common.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/g09_common.py",
+      "sha256": "e2a8403fadbf09660ec492e9a5c53694fc93933099ebf0b855233a4a0060ba1e"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/infer_step.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/infer_step.py",
+      "sha256": "325251c7e29a81002e32f3d12ad563eee6d5e8e26f1890eefa39993a7f5e9d62"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/infer_step_e3.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/infer_step_e3.py",
+      "sha256": "098ccbe1bfc5f1b8b0dbbaec4caae230261116fdcc5203f7f2edc535093fc1f9"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/m0_replay.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/m0_replay.py",
+      "sha256": "c39ffa6173a5d62d28d0e390d4c80234ee4f9637f12b953c885a590ec53f5bcd"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/object_features.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/object_features.py",
+      "sha256": "ce7a5a2fd82b85fb2f6ed5cc714ea55aa8775da2f422f75c93dada95849b172a"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/object_select.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/object_select.py",
+      "sha256": "10f8bacce2c1fc662688c018b3624b51494c14fd4153d3fac543743d69e9c53f"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/route_a4_eval.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/route_a4_eval.py",
+      "sha256": "ebeefba46e49913dec33a6a265a92d8e6a4d5a76e9cbfd87809c2b0393364d94"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/route_a_eval.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/route_a_eval.py",
+      "sha256": "97a44a64c3c652b9f17bdb6ded97728aef844e2ad67505951eb439a1c3a0c34d"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/train_candidate_data.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/train_candidate_data.py",
+      "sha256": "c064d269cdf73cde6fffa3e130a20696028b9172eb2d9c9e5df0815697701015"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/train_object_scorer.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/train_object_scorer.py",
+      "sha256": "0debf00695c8dfffc91d99d48c72d2d7d9f9a2e2dd4b4eecd2b60969f8fffd41"
+    },
+    {
+      "source": "comparison/topocae/engine/object_decision/v09_predict_topo.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g09/v09_predict_topo.py",
+      "sha256": "f6565818a158814de9688d1269c6117f85f06f57d56bad4985438daaa92ac30b"
+    },
+    {
+      "source": "comparison/topocae/engine/deployment/g10_common.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g10/g10_common.py",
+      "sha256": "dbd4d31a50da1cde86db4caa45b74da488364c191a5da919d4f0efbc452ccee7"
+    },
+    {
+      "source": "comparison/topocae/engine/deployment/m6_cae_launcher_v2.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g10/m6_cae_launcher_v2.py",
+      "sha256": "0f44f20e0c94106fb49d5dc60cff52e15c12c05429865e22c024b834180538a3"
+    },
+    {
+      "source": "comparison/topocae/engine/deployment/m6_cae_launcher_v3.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g10/m6_cae_launcher_v3.py",
+      "sha256": "b5b459e418960e2cf6c9a47656c7bbbe702c0b8cfceee1227c9a1558715aab3a"
+    },
+    {
+      "source": "comparison/topocae/engine/deployment/m6_contract.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g10/m6_contract.py",
+      "sha256": "f9aba3e7da3c18fda091a5f08ef3980d2f7ecf1de877ce84623b767069ed660c"
+    },
+    {
+      "source": "comparison/topocae/engine/deployment/m6_odb_reaudit_v2.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g10/m6_odb_reaudit_v2.py",
+      "sha256": "1b3ddc6d9e9f39f43c97b9b2d29d58a2f0a95f6242485b70d7dc2005df3fb250"
+    },
+    {
+      "source": "comparison/topocae/engine/deployment/m6_runner.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g10/m6_runner.py",
+      "sha256": "233bc62aadae729076fc35c959182a4029033daf8c52f00f4fac66e6115e39f5"
+    },
+    {
+      "source": "comparison/topocae/engine/deployment/m8_e3_runtime_adapter_v4.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g10/m8_e3_runtime_adapter_v4.py",
+      "sha256": "c6f793f86ec1c5d7f04fe97d7c85eead0c6edb4de3680a4c963a4d19d6f2ddb0"
+    },
+    {
+      "source": "comparison/topocae/engine/deployment/m8_embedded_identity_v4.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g10/m8_embedded_identity_v4.py",
+      "sha256": "b5ed6ab1343f60bacf675931d558fa1cea841eccb2ce6e745cac3249dc55fefc"
+    },
+    {
+      "source": "comparison/topocae/engine/deployment/m8_portable_rebase_v4.py",
+      "runtime_path": "tools/aei_paper_goals_v1/g10/m8_portable_rebase_v4.py",
+      "sha256": "76e8158d4c67649ca030dc1e3196c7c810de347203cb9c9c77c9b97de2f410d1"
+    },
+    {
+      "source": "comparison/topocae/engine/engineering_geometry/abaqus_angle_bracket.template.py",
+      "runtime_path": "tools/aei_two_case_pilot/abaqus_angle_bracket.template.py",
+      "sha256": "811b75d5d90061e84ee9f7347b0dfca633ded3679037f6fe92e38741c1d41bef"
+    },
+    {
+      "source": "comparison/topocae/engine/engineering_geometry/build_cases.py",
+      "runtime_path": "tools/aei_two_case_pilot/build_cases.py",
+      "sha256": "8712dc9b9cea512d9aaab92bde1efaa46310ff63b8ed4b86d08b8376b58fce1e"
+    },
+    {
+      "source": "comparison/topocae/engine/engineering_geometry/feature_service.py",
+      "runtime_path": "tools/aei_two_case_pilot/feature_service.py",
+      "sha256": "99c429780b7f4ee0ea7993c8c469bf30837dd080b651e45af6f72849ef741a18"
+    },
+    {
+      "source": "comparison/topocae/engine/engineering_geometry/plan_contract.py",
+      "runtime_path": "tools/aei_two_case_pilot/plan_contract.py",
+      "sha256": "96806406bda398070c03dc7f96180055864546092b3794ea2e65fa5eeca8f48d"
+    }
+  ]
+}

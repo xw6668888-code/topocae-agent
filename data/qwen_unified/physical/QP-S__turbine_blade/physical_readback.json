@@ -1,0 +1,151 @@
+{
+  "actual_step_groups": [
+    {
+      "action": "fix_features",
+      "groups": [
+        [
+          16,
+          17,
+          18
+        ],
+        [
+          22,
+          23,
+          24
+        ],
+        [
+          19,
+          20,
+          21
+        ],
+        [
+          25,
+          26,
+          27
+        ],
+        [
+          15
+        ]
+      ]
+    }
+  ],
+  "checks": {
+    "INP_fixed": true,
+    "INP_linear_static": true,
+    "INP_loads": true,
+    "INP_material": true,
+    "INP_material_name": true,
+    "fixed_groups": true,
+    "global_mesh": true,
+    "independent_ODB": true,
+    "load_groups": true,
+    "load_parameters": true,
+    "local_mesh": true,
+    "material_identity": true,
+    "payload_plan_hash": true,
+    "plan_preserved": true,
+    "saved_CAE": true
+  },
+  "details": {
+    "input_blocks": [
+      {
+        "data": [
+          []
+        ],
+        "header": "*Solid Section, elset=All-Cells, material=PlainCarbonSteel",
+        "key": "solid section"
+      },
+      {
+        "data": [],
+        "header": "*Material, name=PlainCarbonSteel",
+        "key": "material"
+      },
+      {
+        "data": [
+          [
+            "7.8e-09"
+          ]
+        ],
+        "header": "*Density",
+        "key": "density"
+      },
+      {
+        "data": [
+          [
+            "210000.",
+            "0.28"
+          ]
+        ],
+        "header": "*Elastic",
+        "key": "elastic"
+      },
+      {
+        "data": [
+          [
+            "FIXED-FEATURES",
+            "ENCASTRE"
+          ]
+        ],
+        "header": "*Boundary",
+        "key": "boundary"
+      },
+      {
+        "data": [],
+        "header": "*Step, name=Static-Load, nlgeom=NO",
+        "key": "step"
+      },
+      {
+        "data": [
+          [
+            "1.",
+            "1.",
+            "1e-06",
+            "1."
+          ]
+        ],
+        "header": "*Static",
+        "key": "static"
+      },
+      {
+        "data": [
+          [
+            "_PickedSet5",
+            "CENTRIF",
+            "10000.",
+            "0.",
+            "0.",
+            "0.",
+            "0.",
+            "0.",
+            "1."
+          ]
+        ],
+        "header": "*Dload",
+        "key": "dload"
+      },
+      {
+        "data": [
+          [
+            "RF",
+            "U"
+          ]
+        ],
+        "header": "*Node Output",
+        "key": "node output"
+      },
+      {
+        "data": [
+          [
+            "S"
+          ]
+        ],
+        "header": "*Element Output, directions=YES",
+        "key": "element output"
+      }
+    ]
+  },
+  "input_sha256": "e9798468e46a26a466c164955ec5cb7704dc0c41a2d0cc344d70cb56012c5e90",
+  "model_plan_sha256": "cd3a76347ab70dac7ae25531e233ebfbfeb0daa50a49b8e58f81b6f2ea5bac45",
+  "schema": "g11_physical_readback_v1",
+  "status": "PASS"
+}

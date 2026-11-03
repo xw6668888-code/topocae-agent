@@ -1,0 +1,265 @@
+{
+  "repository": "xw6668888-code/topocae-agent",
+  "release_tag": "paper-v1.0-20261103",
+  "assets": [
+    {
+      "path": "data/d0/aagnet_inputs.zip",
+      "asset_name": "data--d0--aagnet_inputs.zip",
+      "bytes": 28566307,
+      "sha256": "a914f0863ac510e7c7e68cc292fdd80e51b9f721d04b3b7352e44a083a60de91",
+      "group": "training"
+    },
+    {
+      "path": "data/d0/steps.zip",
+      "asset_name": "data--d0--steps.zip",
+      "bytes": 95164110,
+      "sha256": "7a1b8f298e097c903bb3efd00665ee7004c057f2252884e6a81576ef0ac4bdd2",
+      "group": "training"
+    },
+    {
+      "path": "data/engineering/angle_bracket/solver_input.zip",
+      "asset_name": "data--engineering--angle_bracket--solver_input.zip",
+      "bytes": 6974049,
+      "sha256": "fe798367dc48059cd7019c7859c68e20421b18853fa8f15511d0515993657dfe",
+      "group": "engineering"
+    },
+    {
+      "path": "data/engineering/angle_bracket/solver_output.zip",
+      "asset_name": "data--engineering--angle_bracket--solver_output.zip",
+      "bytes": 20350630,
+      "sha256": "de5c699afbaf077a0d656948c060e65ce280d1c79fc7f197a57dcaac5bcf2f96",
+      "group": "engineering"
+    },
+    {
+      "path": "data/engineering/clevis/solver_input.zip",
+      "asset_name": "data--engineering--clevis--solver_input.zip",
+      "bytes": 72614068,
+      "sha256": "c3336fd653f0c3e03a7d9ae0a3075d24ee6a9903c2175df87fd9db296b1001b8",
+      "group": "engineering"
+    },
+    {
+      "path": "data/engineering/clevis/solver_output.zip",
+      "asset_name": "data--engineering--clevis--solver_output.zip",
+      "bytes": 203442085,
+      "sha256": "fa29d6dc5f84fa8ad1c4819278e7f3a71cbae2dee8f47c6bd852ecccef630581",
+      "group": "engineering"
+    },
+    {
+      "path": "data/engineering/flanged_support/solver_input.zip",
+      "asset_name": "data--engineering--flanged_support--solver_input.zip",
+      "bytes": 63030131,
+      "sha256": "6dafb035b1b093ce5d9777a5e9d63ca92b59d49dd9b55bf92785da46f80204fe",
+      "group": "engineering"
+    },
+    {
+      "path": "data/engineering/flanged_support/solver_output.zip",
+      "asset_name": "data--engineering--flanged_support--solver_output.zip",
+      "bytes": 177173694,
+      "sha256": "488eea26e832eb83695dd166f903b536f3b704d2232651bbcce9e83291011cdf",
+      "group": "engineering"
+    },
+    {
+      "path": "data/engineering/sealing_cover/solver_input.zip",
+      "asset_name": "data--engineering--sealing_cover--solver_input.zip",
+      "bytes": 4146946,
+      "sha256": "8791867254fa6dd2979908f4ba1a6dd19699e09e4df0565879cd9cdb74e7c22c",
+      "group": "engineering"
+    },
+    {
+      "path": "data/engineering/sealing_cover/solver_output.zip",
+      "asset_name": "data--engineering--sealing_cover--solver_output.zip",
+      "bytes": 12249880,
+      "sha256": "71b288c62e5be21afa273ccdcbdf9427f4c9892825003b57eeab4f8001930123",
+      "group": "engineering"
+    },
+    {
+      "path": "data/engineering/stiffened_panel/solver_input.zip",
+      "asset_name": "data--engineering--stiffened_panel--solver_input.zip",
+      "bytes": 1693512,
+      "sha256": "2ea97fc35b45781948f9a16e779cd439c28369bad5fcc9cdcc048b0b83e47259",
+      "group": "engineering"
+    },
+    {
+      "path": "data/engineering/stiffened_panel/solver_output.zip",
+      "asset_name": "data--engineering--stiffened_panel--solver_output.zip",
+      "bytes": 5581022,
+      "sha256": "0b41d712f9cabefebd25ff76523be97aaa499332acc8faed395316d91efd1ba1",
+      "group": "engineering"
+    },
+    {
+      "path": "data/engineering/turbine_blade/solver_input.zip",
+      "asset_name": "data--engineering--turbine_blade--solver_input.zip",
+      "bytes": 56814218,
+      "sha256": "3bfbeb4f94ee29408cb0b40abf9cd395e9f04e9afdea3c70abe45d4b4a243bb4",
+      "group": "engineering"
+    },
+    {
+      "path": "data/engineering/turbine_blade/solver_output.zip",
+      "asset_name": "data--engineering--turbine_blade--solver_output.zip",
+      "bytes": 165274122,
+      "sha256": "abbb129c86df60ce28edc60091cf18e7697214cf6d4d8143b29666e23acfbf23",
+      "group": "engineering"
+    },
+    {
+      "path": "data/engineering/u_shaped_bracket/solver_input.zip",
+      "asset_name": "data--engineering--u_shaped_bracket--solver_input.zip",
+      "bytes": 7828065,
+      "sha256": "02ec932ab911495e115947b08591fb01ed452f98529df7fbb8c202799d784a2d",
+      "group": "engineering"
+    },
+    {
+      "path": "data/engineering/u_shaped_bracket/solver_output.zip",
+      "asset_name": "data--engineering--u_shaped_bracket--solver_output.zip",
+      "bytes": 22751542,
+      "sha256": "3a8a3fef97f9763b39748773ef6fdf03d245df297607055d8dfba441ee1067ca",
+      "group": "engineering"
+    },
+    {
+      "path": "data/t10/steps.zip",
+      "asset_name": "data--t10--steps.zip",
+      "bytes": 17257705,
+      "sha256": "27037d847d9a9ec29e63c05bfb4918b6469b85537220d1f4dd76eb8438111298",
+      "group": "test"
+    },
+    {
+      "path": "comparison/aagnet/weights/original/20260718.pt",
+      "asset_name": "model--17--best.pt",
+      "bytes": 1781206,
+      "sha256": "50e1955601983722655f66b041e1249e9510e3509e5e21981d3b42b5a80fa979",
+      "group": "models"
+    },
+    {
+      "path": "comparison/aagnet/weights/original/20260719.pt",
+      "asset_name": "model--18--best.pt",
+      "bytes": 1781206,
+      "sha256": "35998dcb726b8321959e65b8c81b0811cde45cbe0318e3d1f7de007cb757021d",
+      "group": "models"
+    },
+    {
+      "path": "comparison/aagnet/weights/original/20260720.pt",
+      "asset_name": "model--19--best.pt",
+      "bytes": 1781206,
+      "sha256": "087802324f7db23f07b5dd1350c2b947bdb8ebb3451ec97d34e3b4520c30420b",
+      "group": "models"
+    },
+    {
+      "path": "comparison/topocae/weights/dense/20260718.pt",
+      "asset_name": "model--20--best.pt",
+      "bytes": 1397751,
+      "sha256": "ceadeccf09036c96a12fd2b04e7fb6e05c935fd792b6446b52b96e0aa0779795",
+      "group": "models"
+    },
+    {
+      "path": "comparison/topocae/weights/dense/20260719.pt",
+      "asset_name": "model--21--best.pt",
+      "bytes": 1397751,
+      "sha256": "f6ca9bc84d88bc540134b598353b2a2a0f9b83e1b2779c986b2ecc6577bfb70e",
+      "group": "models"
+    },
+    {
+      "path": "comparison/topocae/weights/dense/20260720.pt",
+      "asset_name": "model--22--best.pt",
+      "bytes": 1397751,
+      "sha256": "8a70d7398ddd283b63134b3dab31b1b84a6ca6ce5f95d1fbee28afd5ae8e3137",
+      "group": "models"
+    },
+    {
+      "path": "comparison/topocae/weights/scorer/20260719.pt",
+      "asset_name": "model--23--scorer.pt",
+      "bytes": 39669,
+      "sha256": "28668becd3ce4adf6f6f666f1ec1b35192c38da15df45fecc99df6a47061fd05",
+      "group": "models"
+    },
+    {
+      "path": "comparison/mft/weights/20260718.pt",
+      "asset_name": "model--34--final_swa.pt",
+      "bytes": 14880011,
+      "sha256": "3f71897ae8d6ddb961dba3d8275f48d367d45581120b0545a3e2be84b6837a7e",
+      "group": "models"
+    },
+    {
+      "path": "comparison/mft/weights/20260719.pt",
+      "asset_name": "model--35--final_swa.pt",
+      "bytes": 14880011,
+      "sha256": "35362d2f4a0b11924b51db0f9ffe35e7bd3ffc7e954012906648742b3ceaaaab",
+      "group": "models"
+    },
+    {
+      "path": "comparison/mft/weights/20260720.pt",
+      "asset_name": "model--36--final_swa.pt",
+      "bytes": 14880011,
+      "sha256": "c3c0944c35e7749d49f1405829b7128398c24fe750ac54384990b349882b4136",
+      "group": "models"
+    },
+    {
+      "path": "comparison/topocae/weights/sparse/20260718.pt",
+      "asset_name": "model--37--best.pt",
+      "bytes": 1403767,
+      "sha256": "392a0d4138fba9d11c56c075da17b741e3cca3ce20bc9cb92cc9e15407aafc93",
+      "group": "models"
+    },
+    {
+      "path": "comparison/topocae/weights/sparse/20260719.pt",
+      "asset_name": "model--38--best.pt",
+      "bytes": 1403767,
+      "sha256": "491655bfec5591c5a6a1b7f6300294f4818c29bf60b4c1b8dd5ff6078a057054",
+      "group": "models"
+    },
+    {
+      "path": "comparison/topocae/weights/sparse/20260720.pt",
+      "asset_name": "model--39--best.pt",
+      "bytes": 1403767,
+      "sha256": "3031c0b209444073d740cb1136b98ed67cd426384cfe8d1c438c00c008860fbe",
+      "group": "models"
+    },
+    {
+      "path": "comparison/topocae/engine/weights/dense.pt",
+      "asset_name": "model--40--best.pt",
+      "bytes": 1397751,
+      "sha256": "f6ca9bc84d88bc540134b598353b2a2a0f9b83e1b2779c986b2ecc6577bfb70e",
+      "group": "models"
+    },
+    {
+      "path": "comparison/topocae/engine/weights/scorer.pt",
+      "asset_name": "model--41--scorer.pt",
+      "bytes": 39669,
+      "sha256": "28668becd3ce4adf6f6f666f1ec1b35192c38da15df45fecc99df6a47061fd05",
+      "group": "models"
+    },
+    {
+      "path": "comparison/topocae/engine/weights/sparse.pt",
+      "asset_name": "model--42--best.pt",
+      "bytes": 1403767,
+      "sha256": "491655bfec5591c5a6a1b7f6300294f4818c29bf60b4c1b8dd5ff6078a057054",
+      "group": "models"
+    },
+    {
+      "path": "data/language/physical/m7-b1-clevis-qwen-s/solver_output.zip",
+      "bytes": 206846838,
+      "sha256": "11fb2b4d7980868a29a8557121de807d4382d71a8b004503e0db919ef43e326d",
+      "asset_name": "historical-m7-b1-clevis-qwen-s-solver_output.zip",
+      "group": "engineering"
+    },
+    {
+      "path": "data/language/physical/m7-b1-flanged_support-qwen-b/solver_output.zip",
+      "bytes": 180153808,
+      "sha256": "1bececdc308a1f0ed524cf9a48ca6e87647eae5ca0dc3cf1e5cf1bcf3441f198",
+      "asset_name": "historical-m7-b1-flanged_support-qwen-b-solver_output.zip",
+      "group": "engineering"
+    },
+    {
+      "path": "data/language/physical/m7-b1-flanged_support-qwen-s/solver_output.zip",
+      "bytes": 180323313,
+      "sha256": "b1469eec40e6502534688730b196bf3793a99c748bd9641f005937cc970df2d1",
+      "asset_name": "historical-m7-b1-flanged_support-qwen-s-solver_output.zip",
+      "group": "engineering"
+    },
+    {
+      "path": "data/language/physical/m7-b1-u_shaped_bracket-qwen-s/solver_output.zip",
+      "bytes": 23060779,
+      "sha256": "5d0601e6e33882bdd76debbe40e4547351726bb83fc489e9372936cbd11f6088",
+      "asset_name": "historical-m7-b1-u_shaped_bracket-qwen-s-solver_output.zip",
+      "group": "engineering"
+    }
+  ]
+}

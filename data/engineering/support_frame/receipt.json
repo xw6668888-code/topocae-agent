@@ -1,0 +1,96 @@
+{
+  "schema": "g10_m6_execution_receipt_v1",
+  "completed_utc": "2026-09-15T01:45:54.831897+00:00",
+  "run_id": "g10-m6-main-20260915",
+  "case_id": "support_frame",
+  "domain": "cad",
+  "status": "PASS",
+  "actually_executed": true,
+  "manifest": {
+    "path": "workspace://reports/aei_paper_goals_v1/g10/M6_ENGINEERING_MANIFEST.json",
+    "bytes": 66304,
+    "sha256": "fa1721714c99834daaf5db0cc8c5e85cabd97e8ef6938ca7ca69f25895866129"
+  },
+  "job_spec": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/support_frame/job_spec.json",
+    "bytes": 2915,
+    "sha256": "2ecbb1a32337d74a067121e9a7bfed5617f535c898a8ca0b5cb7179f72a2196a"
+  },
+  "source_step": {
+    "path": "workspace://test_part_0901/Support Frame.stp",
+    "bytes": 27127,
+    "sha256": "79e3a204524f0de7284fd1318e5dd20353c3608b2a933eee12f83ff4ff655e70"
+  },
+  "prediction": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/frozen_e3_outputs/support_frame.json",
+    "bytes": 125582,
+    "sha256": "ff5958e28ca1cfd441af2b024c0fe763e326067242bec7bee38b55a5914e521d"
+  },
+  "semantic_plan": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/support_frame/semantic_plan.json",
+    "bytes": 460,
+    "sha256": "c9634ce84b55b0695f2b7f11339630a56dd1fe08d1791b3392148ff5f5292008"
+  },
+  "frozen_binding": {
+    "geometry_version": "79e3a204524f0de7284fd1318e5dd20353c3608b2a933eee12f83ff4ff655e70",
+    "prediction_system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint",
+    "prediction_source_identity_digest": "6b8a5d45878c7ce633e1f8ccabbf02a0044d0bf1407a25d337e3e92dcceab783",
+    "plan_digest": "3db79a193d7e217554fc11bd918b7a450f3bdb0ab36898bbee6a8bcfd24104a5",
+    "selections": [
+      {
+        "operation_index": 0,
+        "action": "set_thickness",
+        "selector": {
+          "feature_classes": [
+            "web"
+          ],
+          "radius_mm": null,
+          "scope": "all"
+        },
+        "role": "whole_feature",
+        "object_ids": [
+          "e3:79e3a204524f:web:c2de5953b3522afb",
+          "e3:79e3a204524f:web:e65c672bd4f8e56a"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "role_face_sets": [
+          [
+            4,
+            12,
+            15,
+            16
+          ],
+          [
+            1,
+            2,
+            8,
+            14
+          ]
+        ],
+        "selection_count": 2
+      }
+    ],
+    "binding_digest": "7bce87af4e881aff013fc3ee6009b7c65c7a71b90cac1e32b58e69740ebfaaa9"
+  },
+  "final_step": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/support_frame/final.step",
+    "bytes": 60738,
+    "sha256": "27eeb6d5e517ddd724455d688ae00123ea422822f35002e4d2c817556e6b01a1"
+  },
+  "executor_audit": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/support_frame/attempts/attempt_001/edit_audit.json",
+    "bytes": 2460,
+    "sha256": "cebb8756adb2854f6320ff49c1ab3a3ea0628aeeadea32715558562fdfdf01e1"
+  },
+  "independent_audit": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/support_frame/independent_cad_audit.json",
+    "bytes": 1689,
+    "sha256": "23f749f30bb75a00495bc85a07fc2984cd214f22a7c848c43e6263ff279e5e68"
+  },
+  "elapsed_seconds": 0.5720188000123017,
+  "attempt_count": 1,
+  "truth_used": false
+}

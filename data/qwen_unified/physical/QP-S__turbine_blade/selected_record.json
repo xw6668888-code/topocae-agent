@@ -1,0 +1,81 @@
+{
+  "CAE_readback_process": {
+    "argv": [
+      "F:\\ABAQUS2020\\commands\\abaqus.bat",
+      "cae",
+      "noGUI=W:\\python\\FEA\\dataset_generator\\tools\\aei_paper_goals_v1\\g11\\cae_readback.py",
+      "--",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-S__turbine_blade\\execution_v1\\work\\execution_plan.json",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-S__turbine_blade\\execution_v1\\saved_cae_readback.json"
+    ],
+    "elapsed_seconds": 3.756125500000053,
+    "pid": 18860,
+    "returncode": 0,
+    "timed_out": false
+  },
+  "actually_executed": true,
+  "compiler_inputs_exclude_reference_and_service": true,
+  "elapsed_seconds": 651.8751270000012,
+  "finished_utc": "2026-10-24T12:36:44.509687+00:00",
+  "mapping": {
+    "bytes": 1966,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/turbine_blade.json",
+    "sha256": "c8b2c290e13ba317bfd537fcedf2588469251f13bf3f3b6ad66c3e58b1134495"
+  },
+  "model_plan": {
+    "bytes": 1417,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/attempts/QP-S__turbine_blade/attempt_001/parsed_plan.json",
+    "sha256": "cd3a76347ab70dac7ae25531e233ebfbfeb0daa50a49b8e58f81b6f2ea5bac45"
+  },
+  "physical_readback": {
+    "bytes": 2823,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-S__turbine_blade/execution_v1/physical_readback.json",
+    "sha256": "92efe2af4ca67f45a6988d67ec56cd827638752143a8889f8a35ad1155ce571a"
+  },
+  "raw_response": {
+    "bytes": 42031,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/attempts/QP-S__turbine_blade/attempt_001/response.sse",
+    "sha256": "f6efa69ea1167183ed43f1d72d112634f6972195fb22c640d9d6f847077ee6d8"
+  },
+  "saved_CAE_readback": {
+    "bytes": 1644,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-S__turbine_blade/execution_v1/saved_cae_readback.json",
+    "sha256": "969edc2d95e7f833bb2615f428495494079ffcc57ec4d97720a9b3e023b20f8b"
+  },
+  "slot_id": "QP-S__turbine_blade",
+  "source_step": {
+    "bytes": 73434,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Turbine Blade.stp",
+    "sha256": "c8444c78edafc1f70357ec4e08c340ee1b40218485a5057fcf3e6c97d98c41ee"
+  },
+  "started_utc": "2026-10-24T12:25:52.633271+00:00",
+  "status": "ARTIFACT_PASS",
+  "worker_process": {
+    "argv": [
+      "W:\\python\\envs\\feagpt\\python.exe",
+      "W:\\python\\FEA\\dataset_generator\\tools\\aei_paper_goals_v1\\g11\\worker_direct.py",
+      "--source",
+      "W:/python/FEA/dataset_generator/test_part_0901/Turbine Blade.stp",
+      "--mapping",
+      "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/inputs/mapping/turbine_blade.json",
+      "--plan",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\attempts\\QP-S__turbine_blade\\attempt_001\\parsed_plan.json",
+      "--materials",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\inputs\\materials.json",
+      "--config",
+      "W:\\python\\FEA\\dataset_generator\\reports\\aei_paper_goals_v1\\g11\\EXECUTION_CONFIG_MEMORY6.json",
+      "--output",
+      "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-S__turbine_blade\\execution_v1"
+    ],
+    "elapsed_seconds": 647.3966999999993,
+    "pid": 39960,
+    "returncode": 0,
+    "timed_out": false
+  },
+  "worker_receipt": {
+    "bytes": 30834,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QP-S__turbine_blade/execution_v1/EXECUTION_RECEIPT.json",
+    "sha256": "867a0d7c26546f2442ae724c6abd45396e3bb6a9c39ece3b57237d188d8bde10"
+  },
+  "worker_status": "EXECUTED"
+}

@@ -1,0 +1,36 @@
+{
+  "sample_id": "g10_t10_v2_i_00352",
+  "source_step_sha256": "9bf1e3d3f44705f91aae5d40b3fe2dfc41cf5220ac3181fec0e599d466cc8618",
+  "face_count": 11,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "chamfer",
+    "stock",
+    "stock",
+    "stock",
+    "slot_rect",
+    "stock",
+    "slot_rect",
+    "slot_rect",
+    "stock"
+  ],
+  "objects": [
+    {
+      "class": "slot_rect",
+      "instance_id": 1,
+      "faces": [
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "class": "chamfer",
+      "instance_id": 2,
+      "faces": [
+        2
+      ]
+    }
+  ]
+}

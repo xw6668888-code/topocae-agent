@@ -1,0 +1,123 @@
+{
+  "sample_id": "g10_t10_v2_s_00140",
+  "source_step_sha256": "2b91dc4b582a1f16ce0452c93aa2be157aad1071468abb46483d3b69725a0cbc",
+  "face_count": 33,
+  "face_macro_classes": [
+    "stock",
+    "fillet",
+    "fillet",
+    "stock",
+    "stock",
+    "fillet",
+    "stock",
+    "stock",
+    "chamfer",
+    "chamfer",
+    "chamfer",
+    "chamfer",
+    "stock",
+    "countersink_hole",
+    "countersink_hole",
+    "pocket_rect",
+    "pocket_rect",
+    "pocket_rect",
+    "pocket_rect",
+    "counterbore_hole",
+    "counterbore_hole",
+    "fillet",
+    "counterbore_hole",
+    "countersink_hole",
+    "countersink_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "counterbore_hole",
+    "pocket_rect",
+    "counterbore_hole",
+    "counterbore_hole"
+  ],
+  "objects": [
+    {
+      "class": "counterbore_hole",
+      "instance_id": 1,
+      "faces": [
+        19,
+        29,
+        31
+      ]
+    },
+    {
+      "class": "countersink_hole",
+      "instance_id": 2,
+      "faces": [
+        14,
+        24
+      ]
+    },
+    {
+      "class": "counterbore_hole",
+      "instance_id": 3,
+      "faces": [
+        20,
+        22,
+        32
+      ]
+    },
+    {
+      "class": "obround_hole",
+      "instance_id": 4,
+      "faces": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "class": "countersink_hole",
+      "instance_id": 5,
+      "faces": [
+        13,
+        23
+      ]
+    },
+    {
+      "class": "pocket_rect",
+      "instance_id": 6,
+      "faces": [
+        15,
+        16,
+        17,
+        18,
+        30
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 7,
+      "faces": [
+        1
+      ]
+    },
+    {
+      "class": "chamfer",
+      "instance_id": 8,
+      "faces": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 9,
+      "faces": [
+        2,
+        5,
+        21
+      ]
+    }
+  ]
+}

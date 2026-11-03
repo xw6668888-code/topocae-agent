@@ -1,0 +1,157 @@
+{
+  "actual_step_groups": [
+    {
+      "action": "fix_features",
+      "groups": [
+        [
+          14,
+          13
+        ],
+        [
+          16,
+          15
+        ],
+        [
+          18,
+          17
+        ],
+        [
+          20,
+          19
+        ],
+        [
+          22,
+          21
+        ],
+        [
+          24,
+          23
+        ]
+      ]
+    },
+    {
+      "action": "apply_force",
+      "groups": [
+        [
+          44
+        ]
+      ]
+    }
+  ],
+  "checks": {
+    "INP_fixed": true,
+    "INP_linear_static": true,
+    "INP_loads": true,
+    "INP_material": true,
+    "INP_material_name": true,
+    "fixed_groups": true,
+    "global_mesh": true,
+    "independent_ODB": true,
+    "load_groups": true,
+    "load_parameters": true,
+    "local_mesh": true,
+    "material_identity": true,
+    "payload_plan_hash": true,
+    "plan_preserved": true,
+    "saved_CAE": true
+  },
+  "details": {
+    "input_blocks": [
+      {
+        "data": [
+          []
+        ],
+        "header": "*Solid Section, elset=All-Cells, material=Steel45",
+        "key": "solid section"
+      },
+      {
+        "data": [],
+        "header": "*Material, name=Steel45",
+        "key": "material"
+      },
+      {
+        "data": [
+          [
+            "7.85e-09"
+          ]
+        ],
+        "header": "*Density",
+        "key": "density"
+      },
+      {
+        "data": [
+          [
+            "210000.",
+            "0.3"
+          ]
+        ],
+        "header": "*Elastic",
+        "key": "elastic"
+      },
+      {
+        "data": [
+          [
+            "FIXED-FEATURES",
+            "ENCASTRE"
+          ]
+        ],
+        "header": "*Boundary",
+        "key": "boundary"
+      },
+      {
+        "data": [],
+        "header": "*Step, name=Static-Load, nlgeom=NO",
+        "key": "step"
+      },
+      {
+        "data": [
+          [
+            "1.",
+            "1.",
+            "1e-06",
+            "1."
+          ]
+        ],
+        "header": "*Static",
+        "key": "static"
+      },
+      {
+        "data": [
+          [
+            "LOAD-01",
+            "TRVEC",
+            "1.65786",
+            "0.",
+            "0.",
+            "1."
+          ]
+        ],
+        "header": "*Dsload, follower=NO, constant resultant=YES",
+        "key": "dsload"
+      },
+      {
+        "data": [
+          [
+            "RF",
+            "U"
+          ]
+        ],
+        "header": "*Node Output",
+        "key": "node output"
+      },
+      {
+        "data": [
+          [
+            "S"
+          ]
+        ],
+        "header": "*Element Output, directions=YES",
+        "key": "element output"
+      }
+    ]
+  },
+  "input_sha256": "a6215b1ece0a0013db11723ad1e4cad9caeeff2d18a15f7018851d61487129d7",
+  "model_plan_sha256": "9e32bfcf8bbe1463881dbb673ad3107df83c2bede43de86875475ce6008fc3c8",
+  "schema": "g11_physical_readback_v1",
+  "status": "PASS"
+}

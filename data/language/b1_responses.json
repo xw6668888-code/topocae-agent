@@ -1,0 +1,1457 @@
+[
+  {
+    "slot_id": "m7-b1-angle_bracket-qwen-b",
+    "case_id": "angle_bracket",
+    "provider": "qwen",
+    "condition": "B",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-angle_bracket-qwen-b/response.raw",
+      "bytes": 1330,
+      "sha256": "08dd42bd4c3426fda1c61d2de765eb29eddd1f9325544dd5122e247f349ee7e1"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-angle_bracket-qwen-b/outcome.json",
+      "bytes": 666,
+      "sha256": "30c5989bc6c95ee6d3ebf839bf6de9031b8100f4befe91cd02b05e2da8ad6196"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-angle_bracket-qwen-b/intent.json",
+      "bytes": 688,
+      "sha256": "13b9a8ab32f383fd31c354b30290765dad13be48efdffe15bc52fb11a90112f0"
+    },
+    "usage": {
+      "completion_tokens": 222,
+      "completion_tokens_details": {
+        "text_tokens": 222
+      },
+      "prompt_tokens": 27169,
+      "prompt_tokens_details": {
+        "text_tokens": 27169
+      },
+      "total_tokens": 27391
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.057002
+    },
+    "elapsed_wall_seconds": 5.374368,
+    "parsed": true,
+    "status": "needs_clarification",
+    "parse_error": null,
+    "target_grounded": false,
+    "reference_comparison": null,
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [
+      "material_id",
+      "target_selection"
+    ],
+    "actions": [],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"needs_clarification\",\n  \"domain\": \"cae\",\n  \"operations\": [],\n  \"clarifications\": [\n    {\n      \"field\": \"material_id\",\n      \"question\": \"The request specifies '45 steel', but the material registry contains 'Steel45', 'PlainCarbonSteel', and 'Brass'. Please confirm if 'Steel45' is the intended material.\"\n    },\n    {\n      \"field\": \"target_selection\",\n      \"question\": \"The semantic service is null, so feature classes like 'counterbored hole' and 'obround hole' cannot be used. Please provide the specific face handles (fh_*) for the faces to be constrained and loaded, or clarify how to identify these features from the unlabeled geometry.\"\n    }\n  ],\n  \"reason\": \"Ambiguity in material name mapping and inability to select semantic features without a semantic service or explicit face handles.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-angle_bracket-qwen-s",
+    "case_id": "angle_bracket",
+    "provider": "qwen",
+    "condition": "S",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-angle_bracket-qwen-s/response.raw",
+      "bytes": 1802,
+      "sha256": "809066f1cd27c7b3dd28f715c1ea80e36532f36d87c1be0035df98799006f2c4"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-angle_bracket-qwen-s/outcome.json",
+      "bytes": 666,
+      "sha256": "cee5c62eed04605f20cdbe65ad9cb182033dbbe01bf3f3a6375ae6de2811c0aa"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-angle_bracket-qwen-s/intent.json",
+      "bytes": 688,
+      "sha256": "06e38dc1a5e6972b87e00c936cf200c2edc3d8a088feed9aa09ac61a7f74223d"
+    },
+    "usage": {
+      "completion_tokens": 389,
+      "completion_tokens_details": {
+        "text_tokens": 389
+      },
+      "prompt_tokens": 30585,
+      "prompt_tokens_details": {
+        "text_tokens": 30585
+      },
+      "total_tokens": 30974
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.065838
+    },
+    "elapsed_wall_seconds": 8.430086,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": true,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": true
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_material",
+      "set_global_mesh",
+      "fix_features",
+      "apply_force",
+      "set_analysis"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cae\",\n  \"operations\": [\n    {\n      \"action\": \"set_material\",\n      \"material_id\": \"Steel45\"\n    },\n    {\n      \"action\": \"set_global_mesh\",\n      \"size_mm\": 2.0\n    },\n    {\n      \"action\": \"fix_features\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"counterbore_hole\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": null\n      },\n      \"role\": \"whole_feature\"\n    },\n    {\n      \"action\": \"apply_force\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"obround_hole\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": null\n      },\n      \"role\": \"inner_walls\",\n      \"magnitude_N\": 100.0,\n      \"direction\": [\n        0.0,\n        -1.0,\n        0.0\n      ],\n      \"basis\": \"per_instance\"\n    },\n    {\n      \"action\": \"set_analysis\",\n      \"type\": \"linear_static\"\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Plan includes material assignment (Steel45), global mesh (2mm), fixation of all counterbore holes (whole_feature), and per-instance force application (100N, -Y) to obround hole inner walls, followed by linear static analysis setup.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-bearing_housing-qwen-s",
+    "case_id": "bearing_housing",
+    "provider": "qwen",
+    "condition": "S",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-bearing_housing-qwen-s/response.raw",
+      "bytes": 996,
+      "sha256": "a25fbb4564eecc572f7aa5c6cb3d5524e0ca8d4d0720d0ed330a5ba14370864d"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-bearing_housing-qwen-s/outcome.json",
+      "bytes": 667,
+      "sha256": "4af8cf078ca4d3cd4d32421bde6bf1b319fb9aa9cadc4fa0d377d6997b7379bf"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-bearing_housing-qwen-s/intent.json",
+      "bytes": 690,
+      "sha256": "2525c6de3facce2bd5d8fb167f6c4786e400c347abafca8987678bd3a50efb18"
+    },
+    "usage": {
+      "completion_tokens": 169,
+      "completion_tokens_details": {
+        "text_tokens": 169
+      },
+      "prompt_tokens": 38970,
+      "prompt_tokens_details": {
+        "text_tokens": 38970
+      },
+      "total_tokens": 39139
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.079968
+    },
+    "elapsed_wall_seconds": 4.666742,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": true,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": true
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_hole_radius"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cad\",\n  \"operations\": [\n    {\n      \"action\": \"set_hole_radius\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"blind_hole_round\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": 4.0\n      },\n      \"new_radius_mm\": 3.0\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Apply set_hole_radius to all blind_hole_round features with radius 4.0 mm, changing them to 3.0 mm as requested.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-bearing_housing-qwen-b",
+    "case_id": "bearing_housing",
+    "provider": "qwen",
+    "condition": "B",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-bearing_housing-qwen-b/response.raw",
+      "bytes": 1299,
+      "sha256": "1c27e60ddd4b5d561db614690dfcda0e2e505be47fe2983d866195720e86cdb5"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-bearing_housing-qwen-b/outcome.json",
+      "bytes": 668,
+      "sha256": "e80af93b73452ca8a9c6d4a91cdf8522aee0478a2fcdeb36f5f3cb17396dabd6"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-bearing_housing-qwen-b/intent.json",
+      "bytes": 690,
+      "sha256": "386ba9e0be890b5c1b90bf91d110343e356da52e3d3bbfc69ebaa8b4f4ddd137"
+    },
+    "usage": {
+      "completion_tokens": 322,
+      "completion_tokens_details": {
+        "text_tokens": 322
+      },
+      "prompt_tokens": 35232,
+      "prompt_tokens_details": {
+        "text_tokens": 35232
+      },
+      "total_tokens": 35554
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.074328
+    },
+    "elapsed_wall_seconds": 7.216988,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": true,
+      "target_face_sets_match_reference": false,
+      "wrong_target_operation_indices": [
+        0
+      ],
+      "exact_reference_plan_after_grounding": false
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_hole_radius"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cad\",\n  \"operations\": [\n    {\n      \"action\": \"set_hole_radius\",\n      \"target\": {\n        \"selector_type\": \"face_handles\",\n        \"face_groups\": [\n          {\n            \"faces\": [\n              \"fh_b9ff2e8ddd6fa197\",\n              \"fh_146438a3a5f99e97\",\n              \"fh_a24e1881b2013dc7\",\n              \"fh_29e8569b49f1c214\"\n            ]\n          }\n        ],\n        \"scope\": \"all\"\n      },\n      \"new_radius_mm\": 3.0\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Identified four blind hole cylindrical faces with radius 4.0 mm from deterministic query results (fh_b9ff2e8ddd6fa197, fh_146438a3a5f99e97, fh_a24e1881b2013dc7, fh_29e8569b49f1c214). Applied set_hole_radius operation to change their radius to 3.0 mm.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-clevis-qwen-b",
+    "case_id": "clevis",
+    "provider": "qwen",
+    "condition": "B",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-clevis-qwen-b/response.raw",
+      "bytes": 1474,
+      "sha256": "7a90714a182d9c364b603e38c07dccf643ba584feef132fb3dd8fe4ae4532235"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-clevis-qwen-b/outcome.json",
+      "bytes": 659,
+      "sha256": "4c3d63d1e14bda55693c26bae0571e1e4eeb9cf5788eae294efd647be47aca0d"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-clevis-qwen-b/intent.json",
+      "bytes": 682,
+      "sha256": "286f30c07692aabda527d65bd5b0f81b1d4af40df289dd4d5d9cc696d125b64b"
+    },
+    "usage": {
+      "completion_tokens": 264,
+      "completion_tokens_details": {
+        "text_tokens": 264
+      },
+      "prompt_tokens": 14410,
+      "prompt_tokens_details": {
+        "text_tokens": 14410
+      },
+      "total_tokens": 14674
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.031988
+    },
+    "elapsed_wall_seconds": 5.539738,
+    "parsed": true,
+    "status": "needs_clarification",
+    "parse_error": null,
+    "target_grounded": false,
+    "reference_comparison": null,
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [
+      "material_id",
+      "target_selection"
+    ],
+    "actions": [],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"needs_clarification\",\n  \"domain\": \"cae\",\n  \"operations\": [],\n  \"clarifications\": [\n    {\n      \"field\": \"material_id\",\n      \"question\": \"The request specifies '45 steel', but the material registry contains 'Steel45', 'PlainCarbonSteel', and 'Brass'. Please confirm if 'Steel45' is the intended material.\"\n    },\n    {\n      \"field\": \"target_selection\",\n      \"question\": \"The semantic service is null, so feature classes like 'chamfer' or 'boss' cannot be used. Please identify the specific face handles (fh_*) for the chamfer faces to refine, the cylindrical boss top face for traction, or provide a deterministic geometric rule (e.g., radius, normal, adjacency) to select them from the unlabeled geometry catalog.\"\n    }\n  ],\n  \"reason\": \"Ambiguity in material name mapping ('45 steel' vs 'Steel45') and inability to select semantic targets ('chamfer faces', 'cylindrical boss top face') without a semantic service or explicit face handles.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-clevis-qwen-s",
+    "case_id": "clevis",
+    "provider": "qwen",
+    "condition": "S",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-clevis-qwen-s/response.raw",
+      "bytes": 2079,
+      "sha256": "d4ec5fa5b0511aeeb56b7fb13d9e4e3e27447f91bd275fdc3b8a2b991d0ea18d"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-clevis-qwen-s/outcome.json",
+      "bytes": 659,
+      "sha256": "cd910c669c344a3f7a5d192fc7651b3e54461fe5318085b88862140344a64280"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-clevis-qwen-s/intent.json",
+      "bytes": 682,
+      "sha256": "fe9461a42e6a74b526fa6ca79f534d0f3cc6bb3f6945811ad7471a485a63be52"
+    },
+    "usage": {
+      "completion_tokens": 473,
+      "completion_tokens_details": {
+        "text_tokens": 473
+      },
+      "prompt_tokens": 15633,
+      "prompt_tokens_details": {
+        "text_tokens": 15633
+      },
+      "total_tokens": 16106
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.036942
+    },
+    "elapsed_wall_seconds": 9.473511,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": false,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": false
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_material",
+      "set_global_mesh",
+      "set_local_mesh",
+      "fix_features",
+      "apply_traction",
+      "set_analysis"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cae\",\n  \"operations\": [\n    {\n      \"action\": \"set_material\",\n      \"material_id\": \"Steel45\"\n    },\n    {\n      \"action\": \"set_global_mesh\",\n      \"size_mm\": 1.0\n    },\n    {\n      \"action\": \"set_local_mesh\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"chamfer\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": null\n      },\n      \"size_mm\": 0.3\n    },\n    {\n      \"action\": \"fix_features\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"through_hole_round\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": 3.765\n      },\n      \"role\": \"inner_walls\"\n    },\n    {\n      \"action\": \"apply_traction\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"cylinder_boss\"\n        ],\n        \"scope\": \"single\",\n        \"radius_mm\": null\n      },\n      \"role\": \"top_face\",\n      \"magnitude_MPa\": 50.0,\n      \"direction\": [\n        0.0,\n        0.0,\n        1.0\n      ]\n    },\n    {\n      \"action\": \"set_analysis\",\n      \"type\": \"linear_static\"\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Plan includes material assignment (Steel45), global mesh (1 mm), local mesh refinement for chamfers (0.3 mm), fixation of through hole inner walls (radius 3.765 mm), application of 50 MPa traction to cylinder boss top face in +Z, and linear static analysis setup.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-flanged_sleeve-qwen-s",
+    "case_id": "flanged_sleeve",
+    "provider": "qwen",
+    "condition": "S",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_sleeve-qwen-s/response.raw",
+      "bytes": 1000,
+      "sha256": "b888784cd7c3cac3f3e6ca51ac6b86817f5219f90129011c364ab59b59a53224"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_sleeve-qwen-s/outcome.json",
+      "bytes": 667,
+      "sha256": "61bfbcaf9c78cc9d1fe2cc7368440096992f9cc4e2d5acf3c248c11541f443d2"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_sleeve-qwen-s/intent.json",
+      "bytes": 690,
+      "sha256": "eb63d0b5412bd78bcd32c704dbebfb01e86cbe674920cf3c706cb193f8c60ba1"
+    },
+    "usage": {
+      "completion_tokens": 169,
+      "completion_tokens_details": {
+        "text_tokens": 169
+      },
+      "prompt_tokens": 14881,
+      "prompt_tokens_details": {
+        "text_tokens": 14881
+      },
+      "total_tokens": 15050
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.03179
+    },
+    "elapsed_wall_seconds": 3.928416,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": true,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": true
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_hole_radius"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cad\",\n  \"operations\": [\n    {\n      \"action\": \"set_hole_radius\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"through_hole_round\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": 20.0\n      },\n      \"new_radius_mm\": 15.0\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Apply set_hole_radius to all through_hole_round features with radius 20 mm, changing them to 15 mm as requested.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-flanged_sleeve-qwen-b",
+    "case_id": "flanged_sleeve",
+    "provider": "qwen",
+    "condition": "B",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_sleeve-qwen-b/response.raw",
+      "bytes": 1220,
+      "sha256": "1f20ff00e59a2b67cb5b930ca78c9eb40bb1acf5d1c67707e5f8ec1d45b84f49"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_sleeve-qwen-b/outcome.json",
+      "bytes": 667,
+      "sha256": "1376185e612588233bf1b12ab6a99a4c87d54a09c8cd6a54ceb59c1a0d7f19e2"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_sleeve-qwen-b/intent.json",
+      "bytes": 690,
+      "sha256": "50bbbd039e924280cb30b15d61c2ae044c51b85e4708e04313b446c4fb8442f9"
+    },
+    "usage": {
+      "completion_tokens": 237,
+      "completion_tokens_details": {
+        "text_tokens": 237
+      },
+      "prompt_tokens": 12490,
+      "prompt_tokens_details": {
+        "text_tokens": 12490
+      },
+      "total_tokens": 12727
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.027824
+    },
+    "elapsed_wall_seconds": 5.187035,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": true,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": true
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_hole_radius"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cad\",\n  \"operations\": [\n    {\n      \"action\": \"set_hole_radius\",\n      \"target\": {\n        \"selector_type\": \"face_handles\",\n        \"face_groups\": [\n          {\n            \"faces\": [\n              \"fh_23a6334c1a340e42\"\n            ]\n          }\n        ],\n        \"scope\": \"all\"\n      },\n      \"new_radius_mm\": 15\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"The request is to change the radius of through holes with an existing radius of 20 mm to 15 mm. The deterministic query results identify fh_23a6334c1a340e42 as the only cylindrical face with a radius of 20.0 mm. This face is selected using face_handles to apply the set_hole_radius operation.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-flanged_support-qwen-b",
+    "case_id": "flanged_support",
+    "provider": "qwen",
+    "condition": "B",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_support-qwen-b/response.raw",
+      "bytes": 2122,
+      "sha256": "1345eb4b6e50bea2448150b4e17c306349443c4d0389bb519af28aecb25d38ba"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_support-qwen-b/outcome.json",
+      "bytes": 668,
+      "sha256": "007f22ee5b4769aca0537d2922ff28c0ba262bf94f38fba44781bf687f1c8982"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_support-qwen-b/intent.json",
+      "bytes": 691,
+      "sha256": "18e59cf28f2b416651a08585f967beef928cf4c0149d466d585dd20098b49384"
+    },
+    "usage": {
+      "completion_tokens": 551,
+      "completion_tokens_details": {
+        "text_tokens": 551
+      },
+      "prompt_tokens": 26956,
+      "prompt_tokens_details": {
+        "text_tokens": 26956
+      },
+      "total_tokens": 27507
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.060524
+    },
+    "elapsed_wall_seconds": 10.979313,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": false,
+      "target_face_sets_match_reference": false,
+      "wrong_target_operation_indices": [
+        2
+      ],
+      "exact_reference_plan_after_grounding": false
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_material",
+      "set_global_mesh",
+      "fix_features",
+      "apply_force",
+      "set_analysis"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cae\",\n  \"operations\": [\n    {\n      \"action\": \"set_material\",\n      \"material_id\": \"Steel45\"\n    },\n    {\n      \"action\": \"set_global_mesh\",\n      \"size_mm\": 1.0\n    },\n    {\n      \"action\": \"fix_features\",\n      \"target\": {\n        \"selector_type\": \"face_handles\",\n        \"face_groups\": [\n          {\n            \"faces\": [\n              \"fh_c279f0758042e7f6\",\n              \"fh_c57728bf3a40ee58\",\n              \"fh_42735b274c468230\",\n              \"fh_54e6a109de7880cf\",\n              \"fh_ef9d1667769fb426\",\n              \"fh_956e017ff5897f83\"\n            ]\n          }\n        ],\n        \"scope\": \"all\"\n      },\n      \"role\": \"whole_feature\"\n    },\n    {\n      \"action\": \"apply_force\",\n      \"target\": {\n        \"selector_type\": \"face_handles\",\n        \"face_groups\": [\n          {\n            \"faces\": [\n              \"fh_4c095aa7a6f1e97c\"\n            ]\n          }\n        ],\n        \"scope\": \"single\"\n      },\n      \"role\": \"whole_feature\",\n      \"magnitude_N\": 500.0,\n      \"direction\": [\n        0.0,\n        0.0,\n        1.0\n      ],\n      \"basis\": \"total\"\n    },\n    {\n      \"action\": \"set_analysis\",\n      \"type\": \"linear_static\"\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Plan generated for Steel45 material assignment, 1mm global mesh, fixation of all countersunk hole faces (identified by cone surfaces), and application of 500N total force in +Z direction to the 4mm radius through-hole wall (cylindrical face fh_4c095aa7a6f1e97c).\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-flanged_support-qwen-s",
+    "case_id": "flanged_support",
+    "provider": "qwen",
+    "condition": "S",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_support-qwen-s/response.raw",
+      "bytes": 1791,
+      "sha256": "d31b5832dff6f8b9d4192868ce4aa419c8e6f8858b9198b9165583cc44839c0a"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_support-qwen-s/outcome.json",
+      "bytes": 668,
+      "sha256": "aa58ab09dcd80a067cb06bd9a5b39c199099f5663b7434216c722bbe6ccaa6fd"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-flanged_support-qwen-s/intent.json",
+      "bytes": 691,
+      "sha256": "dffa490f1aa05c8fe489224cbad3a88d2dd449c81243a36b2a81352ada6958b5"
+    },
+    "usage": {
+      "completion_tokens": 392,
+      "completion_tokens_details": {
+        "text_tokens": 392
+      },
+      "prompt_tokens": 30303,
+      "prompt_tokens_details": {
+        "text_tokens": 30303
+      },
+      "total_tokens": 30695
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.06531
+    },
+    "elapsed_wall_seconds": 8.745558,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": false,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": false
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_material",
+      "set_global_mesh",
+      "fix_features",
+      "apply_force",
+      "set_analysis"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cae\",\n  \"operations\": [\n    {\n      \"action\": \"set_material\",\n      \"material_id\": \"Steel45\"\n    },\n    {\n      \"action\": \"set_global_mesh\",\n      \"size_mm\": 1.0\n    },\n    {\n      \"action\": \"fix_features\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"countersink_hole\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": null\n      },\n      \"role\": \"whole_feature\"\n    },\n    {\n      \"action\": \"apply_force\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"through_hole_round\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": 4.0\n      },\n      \"role\": \"inner_walls\",\n      \"magnitude_N\": 500.0,\n      \"direction\": [\n        0.0,\n        0.0,\n        1.0\n      ],\n      \"basis\": \"total\"\n    },\n    {\n      \"action\": \"set_analysis\",\n      \"type\": \"linear_static\"\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Plan generated for linear static analysis of Steel45 part with 1mm global mesh. All countersink holes are fixed. A total force of 500 N is applied in the +Z direction to the inner walls of the through hole with radius 4 mm.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-guide_rail-qwen-s",
+    "case_id": "guide_rail",
+    "provider": "qwen",
+    "condition": "S",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-guide_rail-qwen-s/response.raw",
+      "bytes": 1168,
+      "sha256": "45e1d673a93083638226596d340712d32eff37d2b1bb127f203460633f2e143b"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-guide_rail-qwen-s/outcome.json",
+      "bytes": 663,
+      "sha256": "79cc10209e94f1d06c9d3de150d81c08bbc9d880603b91a7f16fce1fe8261868"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-guide_rail-qwen-s/intent.json",
+      "bytes": 686,
+      "sha256": "577ce902eeb0429695928348e7b93d26909c9ca61fd422efef00af22866c239b"
+    },
+    "usage": {
+      "completion_tokens": 213,
+      "completion_tokens_details": {
+        "text_tokens": 213
+      },
+      "prompt_tokens": 27334,
+      "prompt_tokens_details": {
+        "text_tokens": 27334
+      },
+      "total_tokens": 27547
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.057224
+    },
+    "elapsed_wall_seconds": 5.432476,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": true,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": true
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_hole_spacing"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cad\",\n  \"operations\": [\n    {\n      \"action\": \"set_hole_spacing\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"counterbore_hole\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": null\n      },\n      \"old_spacing_mm\": 200.0,\n      \"new_spacing_mm\": 150.0,\n      \"anchor\": \"central_hole\",\n      \"spacing_definition\": \"adjacent_centers\"\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Apply set_hole_spacing to all counterbore_hole features, reducing adjacent center-to-center spacing from 200 mm to 150 mm while anchoring the central hole.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-guide_rail-qwen-b",
+    "case_id": "guide_rail",
+    "provider": "qwen",
+    "condition": "B",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-guide_rail-qwen-b/response.raw",
+      "bytes": 1066,
+      "sha256": "f66d47c4f6058df6381d9c56861aa7d625d694875a4d89fa83657f5df9243531"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-guide_rail-qwen-b/outcome.json",
+      "bytes": 663,
+      "sha256": "77c9519688770b8d2203c18dacbb9c550b9056e8c1bb521d1e9968baa918ff38"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-guide_rail-qwen-b/intent.json",
+      "bytes": 686,
+      "sha256": "c19dd3ef037c39f5b4fff9a9f731a14059a2ed8d6ffa7131cd0b9fee9144ea5f"
+    },
+    "usage": {
+      "completion_tokens": 156,
+      "completion_tokens_details": {
+        "text_tokens": 156
+      },
+      "prompt_tokens": 24833,
+      "prompt_tokens_details": {
+        "text_tokens": 24833
+      },
+      "total_tokens": 24989
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.051538
+    },
+    "elapsed_wall_seconds": 4.166505,
+    "parsed": true,
+    "status": "needs_clarification",
+    "parse_error": null,
+    "target_grounded": false,
+    "reference_comparison": null,
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [
+      "spacing_definition"
+    ],
+    "actions": [],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"needs_clarification\",\n  \"domain\": \"cad\",\n  \"operations\": [],\n  \"clarifications\": [\n    {\n      \"field\": \"spacing_definition\",\n      \"question\": \"The requested spacing change (200 mm to 150 mm) requires a definition of the current spacing metric (e.g., adjacent_centers) and an anchor feature (e.g., central_hole) to deterministically identify the hole pattern and calculate the transformation. Please specify the anchor and spacing definition.\"\n    }\n  ],\n  \"reason\": \"Missing spacing definition and anchor required for set_hole_spacing operation.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-mounting_plate-qwen-b",
+    "case_id": "mounting_plate",
+    "provider": "qwen",
+    "condition": "B",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-mounting_plate-qwen-b/response.raw",
+      "bytes": 1241,
+      "sha256": "ffc1abf559dee097a1a787679502ab356f2e8902b4ece3ac0664ed0d14fc2aff"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-mounting_plate-qwen-b/outcome.json",
+      "bytes": 667,
+      "sha256": "038d82338ba94181e813b9dfa523032e53883177d8d61c89ed76860a896cf898"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-mounting_plate-qwen-b/intent.json",
+      "bytes": 690,
+      "sha256": "7ef39fa8097dcb3d40961b28480d89f07433ca034f4bbfcfdafe25a0f981887e"
+    },
+    "usage": {
+      "completion_tokens": 233,
+      "completion_tokens_details": {
+        "text_tokens": 233
+      },
+      "prompt_tokens": 24806,
+      "prompt_tokens_details": {
+        "text_tokens": 24806
+      },
+      "total_tokens": 25039
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.052408
+    },
+    "elapsed_wall_seconds": 5.444355,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": true,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": true
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_hole_radius"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cad\",\n  \"operations\": [\n    {\n      \"action\": \"set_hole_radius\",\n      \"target\": {\n        \"selector_type\": \"face_handles\",\n        \"face_groups\": [\n          {\n            \"faces\": [\n              \"fh_f1ab76eefa3b5f2e\"\n            ]\n          }\n        ],\n        \"scope\": \"all\"\n      },\n      \"new_radius_mm\": 24\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"The request specifies changing the radius of through holes with an existing radius of 22.5 mm to 24 mm. The geometry catalog identifies exactly one cylindrical face handle, fh_f1ab76eefa3b5f2e, with a radius of 22.5 mm. This face is selected using the face_handles selector to apply the set_hole_radius operation.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-mounting_plate-qwen-s",
+    "case_id": "mounting_plate",
+    "provider": "qwen",
+    "condition": "S",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-mounting_plate-qwen-s/response.raw",
+      "bytes": 1000,
+      "sha256": "5c7ff680a2889f1bb812cb8402c1c6b39d9ea66d890d73840676f1b59387ebd7"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-mounting_plate-qwen-s/outcome.json",
+      "bytes": 667,
+      "sha256": "46c0b552af0f236a9367475fb1728711a4a1ef494f36e19478a0d279b44e7527"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-mounting_plate-qwen-s/intent.json",
+      "bytes": 690,
+      "sha256": "0c1466792f82aa1762edeb5adaa740a071eb47774163dfc0e8ebbb00eebd5212"
+    },
+    "usage": {
+      "completion_tokens": 169,
+      "completion_tokens_details": {
+        "text_tokens": 169
+      },
+      "prompt_tokens": 27877,
+      "prompt_tokens_details": {
+        "text_tokens": 27877
+      },
+      "total_tokens": 28046
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.057782
+    },
+    "elapsed_wall_seconds": 4.874922,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": true,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": true
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_hole_radius"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cad\",\n  \"operations\": [\n    {\n      \"action\": \"set_hole_radius\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"through_hole_round\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": 22.5\n      },\n      \"new_radius_mm\": 24\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Apply set_hole_radius to all through_hole_round features with radius 22.5 mm, changing them to 24 mm as requested.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-sealing_cover-qwen-s",
+    "case_id": "sealing_cover",
+    "provider": "qwen",
+    "condition": "S",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-sealing_cover-qwen-s/response.raw",
+      "bytes": 1930,
+      "sha256": "1edcd649044a37d33b4524fcbcdf248fd7d88e16f4a9964dddbedd0f67a9d932"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-sealing_cover-qwen-s/outcome.json",
+      "bytes": 666,
+      "sha256": "d0297bc8c4cffa385ba290c80cf5a75e0f367f0cad8d726577f84fce58193d1a"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-sealing_cover-qwen-s/intent.json",
+      "bytes": 689,
+      "sha256": "269b5ae777877fec174cf663c00cab27c9aa2dd9c661a801df2aec7e600fab95"
+    },
+    "usage": {
+      "completion_tokens": 405,
+      "completion_tokens_details": {
+        "text_tokens": 405
+      },
+      "prompt_tokens": 16243,
+      "prompt_tokens_details": {
+        "text_tokens": 16243
+      },
+      "total_tokens": 16648
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.037346
+    },
+    "elapsed_wall_seconds": 8.040208,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": true,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": true
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_material",
+      "set_global_mesh",
+      "set_local_mesh",
+      "fix_features",
+      "apply_pressure",
+      "set_analysis"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cae\",\n  \"operations\": [\n    {\n      \"action\": \"set_material\",\n      \"material_id\": \"Brass\"\n    },\n    {\n      \"action\": \"set_global_mesh\",\n      \"size_mm\": 5.0\n    },\n    {\n      \"action\": \"set_local_mesh\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"chamfer\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": null\n      },\n      \"size_mm\": 2.0\n    },\n    {\n      \"action\": \"fix_features\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"counterbore_hole\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": null\n      },\n      \"role\": \"whole_feature\"\n    },\n    {\n      \"action\": \"apply_pressure\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"pocket_circular\"\n        ],\n        \"scope\": \"single\",\n        \"radius_mm\": null\n      },\n      \"role\": \"cavity_interior\",\n      \"magnitude_MPa\": 10.0\n    },\n    {\n      \"action\": \"set_analysis\",\n      \"type\": \"linear_static\"\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Plan includes material assignment, global and local meshing, constraints on counterbore holes, internal pressure on the circular pocket, and linear static analysis setup as requested.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-sealing_cover-qwen-b",
+    "case_id": "sealing_cover",
+    "provider": "qwen",
+    "condition": "B",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-sealing_cover-qwen-b/response.raw",
+      "bytes": 1632,
+      "sha256": "900041555706a1de8bd681800e04b7ad5defb1fc0a2651bcb03ec6a3a8f921fc"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-sealing_cover-qwen-b/outcome.json",
+      "bytes": 666,
+      "sha256": "4519b0ade33572632e63c6d29577f2c2a223cc17508b1d0cf8c57f4579e6405b"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-sealing_cover-qwen-b/intent.json",
+      "bytes": 689,
+      "sha256": "853979ebc997977b41b3fed3708f6ca2511f2c6eff177d4b065d137a09f3cc1b"
+    },
+    "usage": {
+      "completion_tokens": 274,
+      "completion_tokens_details": {
+        "text_tokens": 274
+      },
+      "prompt_tokens": 14025,
+      "prompt_tokens_details": {
+        "text_tokens": 14025
+      },
+      "total_tokens": 14299
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.031338
+    },
+    "elapsed_wall_seconds": 5.895282,
+    "parsed": true,
+    "status": "needs_clarification",
+    "parse_error": null,
+    "target_grounded": false,
+    "reference_comparison": null,
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [
+      "material_id",
+      "target_selection"
+    ],
+    "actions": [],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"needs_clarification\",\n  \"domain\": \"cae\",\n  \"operations\": [],\n  \"clarifications\": [\n    {\n      \"field\": \"material_id\",\n      \"question\": \"The request specifies 'brass', but the material registry contains 'Brass'. Please confirm if 'Brass' is the intended material ID.\"\n    },\n    {\n      \"field\": \"target_selection\",\n      \"question\": \"The semantic service is null, so feature classes like 'chamfer' and 'counterbored hole' cannot be resolved semantically. Please provide the specific face handles (fh_*) for the chamfer faces to refine, the counterbored hole faces to constrain, and the circular pocket sidewalls/bottom for pressure application, or clarify how these features should be identified from the unlabeled geometry.\"\n    }\n  ],\n  \"reason\": \"Cannot proceed with CAE plan because semantic selectors are unavailable (semantic_service is null) and the request relies on semantic feature names ('chamfer', 'counterbored hole', 'circular pocket') that cannot be deterministically mapped to face handles without further clarification. Additionally, material ID case sensitivity needs confirmation.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-stiffened_panel-qwen-b",
+    "case_id": "stiffened_panel",
+    "provider": "qwen",
+    "condition": "B",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-stiffened_panel-qwen-b/response.raw",
+      "bytes": 1395,
+      "sha256": "9295c05279fcbdb925350082cfed30503c6433c936a1db50a3549a12dc869d2c"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-stiffened_panel-qwen-b/outcome.json",
+      "bytes": 668,
+      "sha256": "51d0398aae770860a9256f58d0fc9c37e6fb60acf18cf750d268fe8a77f42fbe"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-stiffened_panel-qwen-b/intent.json",
+      "bytes": 691,
+      "sha256": "c54f6f7134d3e6775254cb3a229ffd5e69e59b996082c1db0997cd0eecf40670"
+    },
+    "usage": {
+      "completion_tokens": 233,
+      "completion_tokens_details": {
+        "text_tokens": 233
+      },
+      "prompt_tokens": 48759,
+      "prompt_tokens_details": {
+        "text_tokens": 48759
+      },
+      "total_tokens": 48992
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.100314
+    },
+    "elapsed_wall_seconds": 15.704356,
+    "parsed": true,
+    "status": "needs_clarification",
+    "parse_error": null,
+    "target_grounded": false,
+    "reference_comparison": null,
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [
+      "material_id",
+      "target_selection"
+    ],
+    "actions": [],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"needs_clarification\",\n  \"domain\": \"cae\",\n  \"operations\": [],\n  \"clarifications\": [\n    {\n      \"field\": \"material_id\",\n      \"question\": \"The request specifies '45 steel', but the material registry contains 'Steel45', 'PlainCarbonSteel', and 'Brass'. Please confirm if 'Steel45' is the intended material.\"\n    },\n    {\n      \"field\": \"target_selection\",\n      \"question\": \"The semantic service is null, so feature classes like 'counterbored hole' or 'rectangular boss' cannot be used. Please provide the specific face handles (fh_*) for the counterbored holes to constrain and the top faces of the rectangular bosses for load application, or clarify how to identify these features from the unlabeled geometry.\"\n    }\n  ],\n  \"reason\": \"Ambiguity in material name mapping and inability to select semantic features without a semantic service or explicit face handles.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-stiffened_panel-qwen-s",
+    "case_id": "stiffened_panel",
+    "provider": "qwen",
+    "condition": "S",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-stiffened_panel-qwen-s/response.raw",
+      "bytes": 1789,
+      "sha256": "413e7fde1173cedaa65a59c8bf7013f1e33e9ca14b511dedbce45e9ab908f9a1"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-stiffened_panel-qwen-s/outcome.json",
+      "bytes": 668,
+      "sha256": "8a21a7a1f80b4c8545c9e94745985ba257bb26975de00657fe0bdef3e3676bd1"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-stiffened_panel-qwen-s/intent.json",
+      "bytes": 691,
+      "sha256": "7d24e71723c4b8032aa338a2e920feee5c9d1cfa14d61dde9497977e449fb335"
+    },
+    "usage": {
+      "completion_tokens": 380,
+      "completion_tokens_details": {
+        "text_tokens": 380
+      },
+      "prompt_tokens": 54750,
+      "prompt_tokens_details": {
+        "text_tokens": 54750
+      },
+      "total_tokens": 55130
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.11406
+    },
+    "elapsed_wall_seconds": 16.804063,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": true,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": true
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_material",
+      "set_global_mesh",
+      "fix_features",
+      "apply_force",
+      "set_analysis"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cae\",\n  \"operations\": [\n    {\n      \"action\": \"set_material\",\n      \"material_id\": \"Steel45\"\n    },\n    {\n      \"action\": \"set_global_mesh\",\n      \"size_mm\": 10\n    },\n    {\n      \"action\": \"fix_features\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"counterbore_hole\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": null\n      },\n      \"role\": \"whole_feature\"\n    },\n    {\n      \"action\": \"apply_force\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"rectangular_boss\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": null\n      },\n      \"role\": \"top_face\",\n      \"magnitude_N\": 1000,\n      \"direction\": [\n        0,\n        -1,\n        0\n      ],\n      \"basis\": \"per_instance\"\n    },\n    {\n      \"action\": \"set_analysis\",\n      \"type\": \"linear_static\"\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Plan generated for linear static analysis of Steel45 part with global mesh 10mm. All counterbore holes are fixed. A force of 1000 N per instance is applied to the top face of each rectangular boss in the negative Y direction.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-support_bracket-qwen-s",
+    "case_id": "support_bracket",
+    "provider": "qwen",
+    "condition": "S",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_bracket-qwen-s/response.raw",
+      "bytes": 1066,
+      "sha256": "59e51e8091777778106260fa86665d8b3aadb1712c80fa6c0e52d65dcfb283c2"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_bracket-qwen-s/outcome.json",
+      "bytes": 668,
+      "sha256": "e548385881168fbf2fd3b3f661f73adec7ee44a8f6e8813ed08b830b407cda58"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_bracket-qwen-s/intent.json",
+      "bytes": 691,
+      "sha256": "266d7a5002f879a07586714fb4afd7afd13381eaf30b9124b83ef847d94b0a27"
+    },
+    "usage": {
+      "completion_tokens": 182,
+      "completion_tokens_details": {
+        "text_tokens": 182
+      },
+      "prompt_tokens": 28447,
+      "prompt_tokens_details": {
+        "text_tokens": 28447
+      },
+      "total_tokens": 28629
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.059078
+    },
+    "elapsed_wall_seconds": 4.887116,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": true,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": true
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_thickness"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cad\",\n  \"operations\": [\n    {\n      \"action\": \"set_thickness\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"rib\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": null\n      },\n      \"old_thickness_mm\": 2.0,\n      \"new_thickness_mm\": 4.0,\n      \"anchor\": \"midplane\"\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Apply set_thickness operation to all rib features, changing thickness from 2.0 mm to 4.0 mm with midplane anchor as requested.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-support_bracket-qwen-b",
+    "case_id": "support_bracket",
+    "provider": "qwen",
+    "condition": "B",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_bracket-qwen-b/response.raw",
+      "bytes": 1314,
+      "sha256": "b682b72ce5cc3604e7d665a20e0b081a480e025a667727db3e7aaa13d004aeda"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_bracket-qwen-b/outcome.json",
+      "bytes": 668,
+      "sha256": "a281774abd927063603550fade634cf4a72449da4d7d7a3ce1d708e0cbdaa730"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_bracket-qwen-b/intent.json",
+      "bytes": 691,
+      "sha256": "fe1c186a1a4486074e4f91ae5c8fbd1cb005f8c9d4525624a5a47b5e8f9ef94e"
+    },
+    "usage": {
+      "completion_tokens": 247,
+      "completion_tokens_details": {
+        "text_tokens": 247
+      },
+      "prompt_tokens": 25884,
+      "prompt_tokens_details": {
+        "text_tokens": 25884
+      },
+      "total_tokens": 26131
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.054732
+    },
+    "elapsed_wall_seconds": 5.80548,
+    "parsed": true,
+    "status": "needs_clarification",
+    "parse_error": null,
+    "target_grounded": false,
+    "reference_comparison": null,
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [
+      "target"
+    ],
+    "actions": [],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"needs_clarification\",\n  \"domain\": \"cad\",\n  \"operations\": [],\n  \"clarifications\": [\n    {\n      \"field\": \"target\",\n      \"question\": \"The geometry catalog contains multiple planar faces with a thickness of approximately 2 mm (e.g., fh_cbf9520e37f67674, fh_6cc1133c756dee4a, fh_c1a326f33cb8deda, fh_d31fa03dfbed6334). Please specify which face handles correspond to the 'two sides' of the 'both ribs' to be thickened, as semantic selectors are unavailable.\"\n    }\n  ],\n  \"reason\": \"Ambiguous target selection for set_thickness operation. The request specifies 'both ribs' and 'two sides', but without semantic services, multiple candidate thin planar features exist in the unlabeled geometry. Specific face handles are required to define the target groups for the midplane-anchor thickness change.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-support_frame-qwen-b",
+    "case_id": "support_frame",
+    "provider": "qwen",
+    "condition": "B",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_frame-qwen-b/response.raw",
+      "bytes": 1220,
+      "sha256": "5af0dd619e00d0a5db4fa5808a66b7377266b99e5dc2fcfb0e0eb8eba905a10b"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_frame-qwen-b/outcome.json",
+      "bytes": 666,
+      "sha256": "63ffd4105e9bbee79d1d7d4d8555d75da94b005e07b660ae2774b0ec712cc77a"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_frame-qwen-b/intent.json",
+      "bytes": 689,
+      "sha256": "05c4161fc5d431be2392c9c7e5ec5b58d2eedc31a7f7e11ddcccdf01093aa558"
+    },
+    "usage": {
+      "completion_tokens": 179,
+      "completion_tokens_details": {
+        "text_tokens": 179
+      },
+      "prompt_tokens": 13684,
+      "prompt_tokens_details": {
+        "text_tokens": 13684
+      },
+      "total_tokens": 13863
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.029516
+    },
+    "elapsed_wall_seconds": 4.420507,
+    "parsed": true,
+    "status": "needs_clarification",
+    "parse_error": null,
+    "target_grounded": false,
+    "reference_comparison": null,
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [
+      "target"
+    ],
+    "actions": [],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"needs_clarification\",\n  \"domain\": \"cad\",\n  \"operations\": [],\n  \"clarifications\": [\n    {\n      \"field\": \"target\",\n      \"question\": \"The geometry catalog contains no semantic service and no feature roles. Please identify the specific face handles (fh_*) that constitute the two webs to be modified, or provide a deterministic geometric rule to select them from the available planar faces.\"\n    }\n  ],\n  \"reason\": \"Cannot safely identify the 'webs' target for the set_thickness operation without semantic classes or explicit face handles. The request specifies modifying 'both webs' but the unlabeled geometry does not define this feature class. Ambiguity must be resolved before generating a CAD plan.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-support_frame-qwen-s",
+    "case_id": "support_frame",
+    "provider": "qwen",
+    "condition": "S",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_frame-qwen-s/response.raw",
+      "bytes": 1113,
+      "sha256": "b6e163be36329e005b4f607a67c68e94bb0184f317df4c3d2757f6599180ae9d"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_frame-qwen-s/outcome.json",
+      "bytes": 666,
+      "sha256": "1374a978c8ac26c30d8af0fbbf4c1dbc61be8cc81800b2e3f14d08488ce5effb"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-support_frame-qwen-s/intent.json",
+      "bytes": 689,
+      "sha256": "12d88ebd5392a6bbb38ad5b33554b3d6f602ece744921001db0e66e31628d209"
+    },
+    "usage": {
+      "completion_tokens": 205,
+      "completion_tokens_details": {
+        "text_tokens": 205
+      },
+      "prompt_tokens": 14244,
+      "prompt_tokens_details": {
+        "text_tokens": 14244
+      },
+      "total_tokens": 14449
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.030948
+    },
+    "elapsed_wall_seconds": 4.890493,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": false,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": false
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_thickness"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cad\",\n  \"operations\": [\n    {\n      \"action\": \"set_thickness\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"web\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": null\n      },\n      \"old_thickness_mm\": 4.698463103929661,\n      \"new_thickness_mm\": 3.0,\n      \"anchor\": \"midplane\"\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Apply set_thickness operation to all semantic 'web' features, reducing thickness from the measured ~4.6985 mm to 3.0 mm using the midplane anchor as requested.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-turbine_blade-qwen-s",
+    "case_id": "turbine_blade",
+    "provider": "qwen",
+    "condition": "S",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-turbine_blade-qwen-s/response.raw",
+      "bytes": 1556,
+      "sha256": "4cdb2438c0de5cd91e8ede124585cc96abb4d95c4518552551a45c2f6046775a"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-turbine_blade-qwen-s/outcome.json",
+      "bytes": 666,
+      "sha256": "353e92fb7683ae8b19a98cc55e39b0528e055e151935081de178db23df4fff17"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-turbine_blade-qwen-s/intent.json",
+      "bytes": 689,
+      "sha256": "3041cdcd8201b82289896a35349fdc96b131739c708453b6e8d4cfa73859b272"
+    },
+    "usage": {
+      "completion_tokens": 329,
+      "completion_tokens_details": {
+        "text_tokens": 329
+      },
+      "prompt_tokens": 24328,
+      "prompt_tokens_details": {
+        "text_tokens": 24328
+      },
+      "total_tokens": 24657
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.052604
+    },
+    "elapsed_wall_seconds": 7.089764,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": true,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": true
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_material",
+      "set_global_mesh",
+      "fix_features",
+      "apply_centrifugal",
+      "set_analysis"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cae\",\n  \"operations\": [\n    {\n      \"action\": \"set_material\",\n      \"material_id\": \"PlainCarbonSteel\"\n    },\n    {\n      \"action\": \"set_global_mesh\",\n      \"size_mm\": 1.0\n    },\n    {\n      \"action\": \"fix_features\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"slot_rect\",\n          \"slot_o\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": null\n      },\n      \"role\": \"whole_feature\"\n    },\n    {\n      \"action\": \"apply_centrifugal\",\n      \"angular_velocity_rad_s\": 100.0,\n      \"axis_point_mm\": [\n        0.0,\n        0.0,\n        0.0\n      ],\n      \"axis_direction\": [\n        0.0,\n        0.0,\n        1.0\n      ]\n    },\n    {\n      \"action\": \"set_analysis\",\n      \"type\": \"linear_static\"\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Plan includes material assignment, global mesh, semantic fixation of slot features, centrifugal load, and analysis type as requested.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-turbine_blade-qwen-b",
+    "case_id": "turbine_blade",
+    "provider": "qwen",
+    "condition": "B",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-turbine_blade-qwen-b/response.raw",
+      "bytes": 1352,
+      "sha256": "96047b5ccff1636db6bd2c4ebe9d336feb6a1fcb3e633e8ecc871caff280a7cc"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-turbine_blade-qwen-b/outcome.json",
+      "bytes": 666,
+      "sha256": "97796623374c4bebe07fea2e751eab59d0c4f9e727ebc1c9f32a20e0646358ea"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-turbine_blade-qwen-b/intent.json",
+      "bytes": 689,
+      "sha256": "2abc95fe3a2034046c8fbb928d66e47dcd75b1a6406d3b5ca4414d3d7061ed5a"
+    },
+    "usage": {
+      "completion_tokens": 226,
+      "completion_tokens_details": {
+        "text_tokens": 226
+      },
+      "prompt_tokens": 22793,
+      "prompt_tokens_details": {
+        "text_tokens": 22793
+      },
+      "total_tokens": 23019
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.048298
+    },
+    "elapsed_wall_seconds": 5.35164,
+    "parsed": true,
+    "status": "needs_clarification",
+    "parse_error": null,
+    "target_grounded": false,
+    "reference_comparison": null,
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [
+      "material_id",
+      "target_selector"
+    ],
+    "actions": [],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"needs_clarification\",\n  \"domain\": \"cae\",\n  \"operations\": [],\n  \"clarifications\": [\n    {\n      \"field\": \"material_id\",\n      \"question\": \"The request specifies 'plain carbon steel', but the material registry contains distinct records for 'PlainCarbonSteel' and 'Steel45'. Please confirm which material ID to assign.\"\n    },\n    {\n      \"field\": \"target_selector\",\n      \"question\": \"The semantic service is null, so feature classes 'slot_rect' and 'slot_o' cannot be resolved. Please provide the face_handles (fh_*) for the faces to be constrained, or clarify how to identify these features from the unlabeled geometry.\"\n    }\n  ],\n  \"reason\": \"Ambiguity in material selection between 'PlainCarbonSteel' and 'Steel45', and inability to resolve semantic feature classes 'slot_rect' and 'slot_o' without a semantic service.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-u_shaped_bracket-qwen-b",
+    "case_id": "u_shaped_bracket",
+    "provider": "qwen",
+    "condition": "B",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-u_shaped_bracket-qwen-b/response.raw",
+      "bytes": 1421,
+      "sha256": "bd8967f7641f7fd7b0f38fc911720fee29189ec5add2d619576cad93c48e9621"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-u_shaped_bracket-qwen-b/outcome.json",
+      "bytes": 669,
+      "sha256": "83702009ae6b898628bbf622a92bf0c6af12c1e56141dc005a231a56400d1ae4"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-u_shaped_bracket-qwen-b/intent.json",
+      "bytes": 692,
+      "sha256": "c664ab42fa254a64249c71b4bfd443ba5ca5b5be0e858453274168d745509913"
+    },
+    "usage": {
+      "completion_tokens": 233,
+      "completion_tokens_details": {
+        "text_tokens": 233
+      },
+      "prompt_tokens": 13133,
+      "prompt_tokens_details": {
+        "text_tokens": 13133
+      },
+      "total_tokens": 13366
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.029062
+    },
+    "elapsed_wall_seconds": 5.226889,
+    "parsed": true,
+    "status": "needs_clarification",
+    "parse_error": null,
+    "target_grounded": false,
+    "reference_comparison": null,
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [
+      "material_id",
+      "target_selection"
+    ],
+    "actions": [],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"needs_clarification\",\n  \"domain\": \"cae\",\n  \"operations\": [],\n  \"clarifications\": [\n    {\n      \"field\": \"material_id\",\n      \"question\": \"The request specifies 'plain carbon steel', but the material registry contains 'PlainCarbonSteel' and 'Steel45'. Please confirm which material ID to use.\"\n    },\n    {\n      \"field\": \"target_selection\",\n      \"question\": \"The semantic service is null, so 'top face of the cylindrical boss' cannot be resolved semantically. Please identify the specific face handle(s) for the top face of the cylindrical boss or provide a deterministic geometric rule to select it from the available planar faces.\"\n    }\n  ],\n  \"reason\": \"Ambiguity in material selection between 'PlainCarbonSteel' and 'Steel45' despite the name match, and inability to resolve the semantic selector 'top face of the cylindrical boss' without a semantic service or explicit face handles.\"\n}"
+  },
+  {
+    "slot_id": "m7-b1-u_shaped_bracket-qwen-s",
+    "case_id": "u_shaped_bracket",
+    "provider": "qwen",
+    "condition": "S",
+    "batch": "B1",
+    "round": 1,
+    "returned_model": "qwen3.6-plus",
+    "raw_response": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-u_shaped_bracket-qwen-s/response.raw",
+      "bytes": 1748,
+      "sha256": "1566ccbc92cc12635b8045c1c45112a361d2ef6f0b40ab7fa4f9a72fc8e63856"
+    },
+    "outcome": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-u_shaped_bracket-qwen-s/outcome.json",
+      "bytes": 669,
+      "sha256": "d69932163630e87a61cdde1d393fdbe7d283de48fef167bf86adbd8693b47491"
+    },
+    "intent": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m7_live_sender/v1/attempts/m7-b1-u_shaped_bracket-qwen-s/intent.json",
+      "bytes": 692,
+      "sha256": "3afcfe02a36b9fc3e6e993be971a9065893c9c970c1d0b9303034edf72ac5463"
+    },
+    "usage": {
+      "completion_tokens": 364,
+      "completion_tokens_details": {
+        "text_tokens": 364
+      },
+      "prompt_tokens": 14274,
+      "prompt_tokens_details": {
+        "text_tokens": 14274
+      },
+      "total_tokens": 14638
+    },
+    "list_cost_estimate": {
+      "currency": "CNY",
+      "list_price_estimate": 0.032916
+    },
+    "elapsed_wall_seconds": 7.33496,
+    "parsed": true,
+    "status": "ready",
+    "parse_error": null,
+    "target_grounded": true,
+    "reference_comparison": {
+      "parameter_and_action_match_reference": false,
+      "target_face_sets_match_reference": true,
+      "wrong_target_operation_indices": [],
+      "exact_reference_plan_after_grounding": false
+    },
+    "artifact_execution_status": "not_executed_from_this_model_plan",
+    "clarification_fields": [],
+    "actions": [
+      "set_material",
+      "set_global_mesh",
+      "fix_features",
+      "apply_force",
+      "set_analysis"
+    ],
+    "response_content": "{\n  \"schema_version\": \"g10-m7-1\",\n  \"status\": \"ready\",\n  \"domain\": \"cae\",\n  \"operations\": [\n    {\n      \"action\": \"set_material\",\n      \"material_id\": \"PlainCarbonSteel\"\n    },\n    {\n      \"action\": \"set_global_mesh\",\n      \"size_mm\": 1.0\n    },\n    {\n      \"action\": \"fix_features\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"through_hole_round\"\n        ],\n        \"scope\": \"all\",\n        \"radius_mm\": null\n      },\n      \"role\": \"inner_walls\"\n    },\n    {\n      \"action\": \"apply_force\",\n      \"target\": {\n        \"selector_type\": \"semantic\",\n        \"feature_classes\": [\n          \"cylinder_boss\"\n        ],\n        \"scope\": \"single\",\n        \"radius_mm\": null\n      },\n      \"role\": \"top_face\",\n      \"magnitude_N\": 500.0,\n      \"direction\": [\n        0.0,\n        -1.0,\n        0.0\n      ],\n      \"basis\": \"total\"\n    },\n    {\n      \"action\": \"set_analysis\",\n      \"type\": \"linear_static\"\n    }\n  ],\n  \"clarifications\": [],\n  \"reason\": \"Plan includes material assignment, global meshing, fixing through-hole inner walls, applying force to cylinder boss top face, and setting linear static analysis as requested.\"\n}"
+  }
+]

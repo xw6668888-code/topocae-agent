@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "analysis_errors": 0,
+  "string_adapter": "recursive_json_unicode_to_native_mbcs_on_python2",
+  "equilibrium_relative_error": 1.0298125749823674e-07,
+  "expected_applied_force_N": [
+    0.0,
+    -500.0,
+    0.0
+  ],
+  "truth_used": false,
+  "max_von_mises_mpa": 73.51274108886719,
+  "reaction_force_N": [
+    -8.42883309815079e-08,
+    499.9999485295266,
+    1.4380930224433541e-06
+  ],
+  "instance_count": 1,
+  "odb_path": "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\u_shaped_bracket\\attempts\\attempt_001\\final.odb",
+  "element_types": [
+    "C3D10"
+  ],
+  "geometry_version": "72356e514bcd4f5a955819ba9143842bd9298c45c3e4d65a8b62a88d903903bc",
+  "manifest_sha256": "fa1721714c99834daaf5db0cc8c5e85cabd97e8ef6938ca7ca69f25895866129",
+  "prediction_sha256": "61b23caaabc9002cd5b0b438a4a93286dbc55e2526e7287fb298894ffe8c981e",
+  "analysis_warnings": 0,
+  "diagnostic_status": "JOB_STATUS_COMPLETED_SUCCESSFULLY",
+  "odb_sha256": "e2cf3c50634f0746029d84664dc45384a11d90b566af474bb9488f6b9dfeb56f",
+  "element_count": 138441,
+  "verifier": {
+    "path": "workspace://tools/aei_case_suite/abaqus_verification.py",
+    "sha256": "e598f5d650a431f747f4f4162afedb0b664734c149e7a07651d91e4a50e893a9",
+    "bytes": 2003
+  },
+  "final_frame_time": 1.0,
+  "execution_plan_sha256": "4ddac39c34bc4e4bda5bc86d097b2eba240904a788cd297ade5e589c0c65e95a",
+  "python_major": 2,
+  "node_count": 211466,
+  "max_displacement_mm": 0.016479147598147392,
+  "schema": "g10_independent_odb_audit_v2"
+}

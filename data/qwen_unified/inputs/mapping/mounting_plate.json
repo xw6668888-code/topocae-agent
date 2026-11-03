@@ -1,0 +1,67 @@
+{
+  "externalizable": false,
+  "extractor": {
+    "entry": {
+      "bytes": 11156,
+      "repo_relative_path": "tools/aei_paper_goals_v1/g07/step_entry.py",
+      "sha256": "a34f494d20c01eafc14ad5c9695174916888fa5658b84550b0ca182eb37ad288"
+    },
+    "frozen_core": {
+      "bytes": 8853,
+      "repo_relative_path": "paper_release/topocae_p1_legacy_baseline_v1/core/graph_v2_2_1.py",
+      "sha256": "e2ff614cefeb65a2cf482d03b1bea570f7f3fc1ef9b7aea06205ff345ed9f559"
+    },
+    "geometry_schema": "topocae_graph_v2_2_1_true_brep_planar_rank_policy_1"
+  },
+  "geometry_handle": "gh_5dcd525a4686e2b7",
+  "handle_to_final_step_face_number": {
+    "fh_0994f7f50e58b759": 5,
+    "fh_0e59789b32697f4d": 37,
+    "fh_1247ec192f675008": 36,
+    "fh_15e01c9f36f18a97": 20,
+    "fh_31d7392547144506": 23,
+    "fh_337f2ac126f8c76b": 28,
+    "fh_354cf49435354cb4": 27,
+    "fh_374012a2a25b3d61": 39,
+    "fh_3771e99a9ae38419": 9,
+    "fh_3a81bf7f671429ab": 22,
+    "fh_43cb8c3a65f14c98": 40,
+    "fh_458387fb1c8cbda2": 35,
+    "fh_5da4bbbd88e137ae": 3,
+    "fh_605ccb8788f86c4c": 18,
+    "fh_71a150cefd60897d": 4,
+    "fh_79071006732c447c": 13,
+    "fh_7b16c6903df60a80": 10,
+    "fh_80c47478948f2ced": 32,
+    "fh_81c70a133b20b7f0": 31,
+    "fh_82392a9e94cd389b": 7,
+    "fh_881d18d7515d55d8": 24,
+    "fh_88efdb92a8eab7d4": 11,
+    "fh_8ef11efa3daa3863": 16,
+    "fh_9047dc6c17e2e986": 6,
+    "fh_93589467f38a246e": 8,
+    "fh_a24a8b826e750040": 21,
+    "fh_a38ec2bc43466a20": 26,
+    "fh_bc6d06c3dc832c9e": 15,
+    "fh_c0518e40f6377c84": 1,
+    "fh_c6420ac69f3bb0a1": 12,
+    "fh_ca8e96d6a59a3ef2": 29,
+    "fh_d70bc15fe59d86dd": 30,
+    "fh_dbf2999f71e39666": 25,
+    "fh_de3225510047e4a8": 33,
+    "fh_e884b43d1f7a4a10": 2,
+    "fh_e8de0f1fc2353686": 34,
+    "fh_f1ab76eefa3b5f2e": 17,
+    "fh_f5d521fb97a61012": 38,
+    "fh_f87fa3b284a1053f": 19,
+    "fh_f9462a0600fbfe3a": 14
+  },
+  "model_outputs_used": false,
+  "schema": "g10_m7_local_face_handle_map_v1",
+  "source_step": {
+    "bytes": 54968,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Mounting Plate.stp",
+    "sha256": "dccd20bb196660a6c1d5d52a813c2632c9d7291dec1712f8dc6b0aacecf6e14a"
+  },
+  "truth_used": false
+}

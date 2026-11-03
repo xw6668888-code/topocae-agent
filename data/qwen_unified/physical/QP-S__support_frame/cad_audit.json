@@ -1,0 +1,91 @@
+{
+  "actual_face_groups": [
+    [
+      4,
+      12
+    ],
+    [
+      8,
+      14
+    ]
+  ],
+  "actual_volume_change_mm3": -17640.874821896665,
+  "added_outside_allowed_region_mm3": 8.440110832452774e-10,
+  "boolean_tolerance_adjustments": [],
+  "changes": [
+    {
+      "anchor": "midplane",
+      "midpoint_mm": [
+        76.11205368804806,
+        -17.99999999999997,
+        421.12562260573605
+      ],
+      "new_thickness_mm": 3.0,
+      "normal": [
+        -0.0,
+        -0.3420201433256691,
+        0.9396926207859083
+      ],
+      "object_index": 0,
+      "side_area_mm2": 5193.187529682449,
+      "side_faces": [
+        4,
+        12
+      ],
+      "sweep_vector_mm": [
+        0.0,
+        3.552713678800501e-14,
+        -5.000000000000114
+      ],
+      "thickness_mm": 4.698463103929661
+    },
+    {
+      "anchor": "midplane",
+      "midpoint_mm": [
+        76.11205368804806,
+        -17.999999999999975,
+        470.68443197638396
+      ],
+      "new_thickness_mm": 3.0,
+      "normal": [
+        -0.0,
+        0.3420201433256691,
+        0.9396926207859083
+      ],
+      "object_index": 1,
+      "side_area_mm2": 5193.18752968245,
+      "side_faces": [
+        8,
+        14
+      ],
+      "sweep_vector_mm": [
+        0.0,
+        2.842170943040401e-14,
+        -4.999999999999943
+      ],
+      "thickness_mm": 4.698463103929479
+    }
+  ],
+  "checks": [
+    {
+      "symmetric_thickness_verified": true
+    },
+    {
+      "symmetric_thickness_verified": true
+    }
+  ],
+  "execution_mode": "g11_direct_model_face_groups",
+  "expected_volume_change_mm3": -17640.874821905578,
+  "input_step": "W:\\python\\FEA\\dataset_generator\\test_part_0901\\Support Frame.stp",
+  "model_plan_sha256": "d7bc8050a220898d44b214c110e2b4bcfe6b17ca2ba31874f150978efae19dcf",
+  "non_target_verification": "valid-solid union/intersection volumetric containment",
+  "output_sha256": "b8ee3016e6e28e47eabbb27164015ea3bed04ed0fad3ec392a22f45e3f7c05fb",
+  "output_step": "W:\\python\\FEA\\dataset_generator\\artifacts\\aei_paper_goals_v1\\g11\\executions\\QP-S__support_frame\\execution_v1\\work\\Support Frame_edited.stp",
+  "removed_outside_allowed_region_mm3": 3.7834979593753815e-09,
+  "source_sha256": "79e3a204524f0de7284fd1318e5dd20353c3608b2a933eee12f83ff4ff655e70",
+  "status": "PASS",
+  "truth_used": false,
+  "valid_solid_count": 1,
+  "volume_after_mm3": 182959.12517810368,
+  "volume_before_mm3": 200600.00000000035
+}

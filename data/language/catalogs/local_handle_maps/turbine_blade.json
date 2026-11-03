@@ -1,0 +1,60 @@
+{
+  "externalizable": false,
+  "extractor": {
+    "entry": {
+      "bytes": 11156,
+      "repo_relative_path": "tools/aei_paper_goals_v1/g07/step_entry.py",
+      "sha256": "a34f494d20c01eafc14ad5c9695174916888fa5658b84550b0ca182eb37ad288"
+    },
+    "frozen_core": {
+      "bytes": 8853,
+      "repo_relative_path": "paper_release/topocae_p1_legacy_baseline_v1/core/graph_v2_2_1.py",
+      "sha256": "e2ff614cefeb65a2cf482d03b1bea570f7f3fc1ef9b7aea06205ff345ed9f559"
+    },
+    "geometry_schema": "topocae_graph_v2_2_1_true_brep_planar_rank_policy_1"
+  },
+  "geometry_handle": "gh_db2143ca72503eac",
+  "handle_to_final_step_face_number": {
+    "fh_03d8ff0d3803258c": 15,
+    "fh_098d81b10d0130de": 10,
+    "fh_0d8b2b1272d4895f": 2,
+    "fh_1e05ee6f29bd5b9a": 17,
+    "fh_32f784f4a489f874": 19,
+    "fh_35b0282a6b5c943e": 3,
+    "fh_44ba19c65190cb37": 22,
+    "fh_47539861c28f538a": 20,
+    "fh_4e121eef443d2828": 16,
+    "fh_619be989b5fc10ba": 25,
+    "fh_628c8573576a1380": 30,
+    "fh_63d732ea3e29eb7a": 32,
+    "fh_687b43696e7e6e54": 13,
+    "fh_697fbd245f7b1314": 5,
+    "fh_6ba606bcaa19dea8": 33,
+    "fh_6e0c3c4a42f6d4e3": 27,
+    "fh_7c7543553d1a088e": 4,
+    "fh_7ef2101d127473f1": 9,
+    "fh_84b3fc16dcc04495": 12,
+    "fh_8a01af53388081e8": 24,
+    "fh_966f2a285fc83cf7": 8,
+    "fh_a4ce1a2dbb7e56fe": 14,
+    "fh_a844f013dfc11581": 31,
+    "fh_ab36ada9b704433d": 28,
+    "fh_bac67694cabce104": 26,
+    "fh_c38338c95f13be20": 11,
+    "fh_ce8db495feeca05e": 6,
+    "fh_d3a44d2627d94a51": 23,
+    "fh_d6dc89f974a747c4": 29,
+    "fh_e074ec7164762544": 18,
+    "fh_eed1248224b8214e": 7,
+    "fh_fcd3f553729dd93f": 21,
+    "fh_ff33dbc41a2a69d6": 1
+  },
+  "model_outputs_used": false,
+  "schema": "g10_m7_local_face_handle_map_v1",
+  "source_step": {
+    "bytes": 73434,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Turbine Blade.stp",
+    "sha256": "c8444c78edafc1f70357ec4e08c340ee1b40218485a5057fcf3e6c97d98c41ee"
+  },
+  "truth_used": false
+}

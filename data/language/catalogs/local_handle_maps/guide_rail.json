@@ -1,0 +1,68 @@
+{
+  "externalizable": false,
+  "extractor": {
+    "entry": {
+      "bytes": 11156,
+      "repo_relative_path": "tools/aei_paper_goals_v1/g07/step_entry.py",
+      "sha256": "a34f494d20c01eafc14ad5c9695174916888fa5658b84550b0ca182eb37ad288"
+    },
+    "frozen_core": {
+      "bytes": 8853,
+      "repo_relative_path": "paper_release/topocae_p1_legacy_baseline_v1/core/graph_v2_2_1.py",
+      "sha256": "e2ff614cefeb65a2cf482d03b1bea570f7f3fc1ef9b7aea06205ff345ed9f559"
+    },
+    "geometry_schema": "topocae_graph_v2_2_1_true_brep_planar_rank_policy_1"
+  },
+  "geometry_handle": "gh_8c0fdc8ade770950",
+  "handle_to_final_step_face_number": {
+    "fh_0161976466cfc121": 8,
+    "fh_0314c1605019969d": 4,
+    "fh_10fc7777901b62f5": 30,
+    "fh_1415e6cf4f5bef6e": 34,
+    "fh_196cadb29f68fe87": 37,
+    "fh_1b4cbbaf1a80b5da": 26,
+    "fh_22858812a5082de6": 10,
+    "fh_28969d2ac09bce83": 12,
+    "fh_2dfa81a6649817bc": 14,
+    "fh_305610a1c54ba8c5": 2,
+    "fh_3b2cc68bd400e8a6": 1,
+    "fh_3cde81a3be01b3a2": 6,
+    "fh_3e4dc6eb0e478964": 27,
+    "fh_4510add53344a1df": 23,
+    "fh_45e4ed27c02c5e93": 40,
+    "fh_4f13107ffd321e91": 15,
+    "fh_5e9318bbd6d3da51": 39,
+    "fh_69a0d399f682b6b5": 29,
+    "fh_6b1162b70761bae8": 16,
+    "fh_6c191ee15b8b8ac7": 7,
+    "fh_6f0e9f594fb4acf9": 5,
+    "fh_71300716843f6e06": 25,
+    "fh_7ce483bbe6f6462d": 35,
+    "fh_870acaaa872f340e": 18,
+    "fh_962524b5ab7c9ecf": 13,
+    "fh_98b8e91f9d5ed0b5": 36,
+    "fh_9f8acb29424a97a2": 33,
+    "fh_a28a7e37f955e2ed": 19,
+    "fh_a78edbacb53a3e07": 22,
+    "fh_b8b35e10129785d4": 3,
+    "fh_b8f12fa6c0872ec9": 21,
+    "fh_c018398823f2fa97": 41,
+    "fh_c0c7718249d1c4bc": 38,
+    "fh_c1c843d91bc0fbd5": 9,
+    "fh_c2e83227a75d0aa5": 28,
+    "fh_ca52fce1a82e5916": 17,
+    "fh_d21ec13accd8c576": 20,
+    "fh_e32af6b6b117887f": 24,
+    "fh_e501c8d9f7a29ba5": 32,
+    "fh_e5e64d46b43fd255": 31,
+    "fh_f9ce8026a8158ff4": 11
+  },
+  "model_outputs_used": false,
+  "schema": "g10_m7_local_face_handle_map_v1",
+  "source_step": {
+    "bytes": 51856,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Guide Rail.stp",
+    "sha256": "b2f942c6844f8eb737692dd8aa23d6273068868e050c2541294accf27fe01c03"
+  },
+  "truth_used": false
+}

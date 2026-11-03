@@ -1,0 +1,107 @@
+{
+  "sample_id": "g10_t10_v2_s_00000",
+  "source_step_sha256": "9d8b8cfc9b6d7a2d82075149a7fe3584c49856ae79eecf0514cc3864b329ddfa",
+  "face_count": 25,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "web",
+    "fillet",
+    "web",
+    "web",
+    "stock",
+    "web",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "stock"
+  ],
+  "objects": [
+    {
+      "class": "web",
+      "instance_id": 1,
+      "faces": [
+        9,
+        11,
+        12,
+        14
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 2,
+      "faces": [
+        10
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 3,
+      "faces": [
+        20
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 4,
+      "faces": [
+        5
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 5,
+      "faces": [
+        21
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 6,
+      "faces": [
+        6
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 7,
+      "faces": [
+        22
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 8,
+      "faces": [
+        7
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 9,
+      "faces": [
+        23
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 10,
+      "faces": [
+        8
+      ]
+    }
+  ]
+}

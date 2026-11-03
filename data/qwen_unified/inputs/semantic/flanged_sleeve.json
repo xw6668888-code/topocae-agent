@@ -1,0 +1,388 @@
+{
+  "available_feature_classes": [
+    "blind_hole_round",
+    "fillet",
+    "slot_o",
+    "through_hole_round"
+  ],
+  "content_policy": {
+    "internal_face_indices_excluded": true,
+    "model_scores_excluded": true,
+    "prediction_only": true,
+    "truth_used": false
+  },
+  "geometry_handle": "gh_d3474759a960e32b",
+  "objects": [
+    {
+      "feature_class": "through_hole_round",
+      "measurements": {
+        "full_cylinder_depths": [
+          {
+            "depth_mm": 10.0,
+            "face_handle": "fh_22d9e6fc1aeadf77",
+            "radius_mm": 3.0
+          }
+        ],
+        "radii_mm": [
+          3.0
+        ]
+      },
+      "member_face_handles": [
+        "fh_22d9e6fc1aeadf77"
+      ],
+      "object_handle": "oh_b6e3eb3e738e663d",
+      "role_areas_mm2": {
+        "inner_walls": 188.495559215,
+        "whole_feature": 188.495559215
+      },
+      "roles": {
+        "inner_walls": [
+          "fh_22d9e6fc1aeadf77"
+        ],
+        "whole_feature": [
+          "fh_22d9e6fc1aeadf77"
+        ]
+      }
+    },
+    {
+      "feature_class": "through_hole_round",
+      "measurements": {
+        "full_cylinder_depths": [
+          {
+            "depth_mm": 10.0,
+            "face_handle": "fh_a2980aad0ba7c328",
+            "radius_mm": 3.0
+          }
+        ],
+        "radii_mm": [
+          3.0
+        ]
+      },
+      "member_face_handles": [
+        "fh_a2980aad0ba7c328"
+      ],
+      "object_handle": "oh_d4c51764b584d37e",
+      "role_areas_mm2": {
+        "inner_walls": 188.495559215,
+        "whole_feature": 188.495559215
+      },
+      "roles": {
+        "inner_walls": [
+          "fh_a2980aad0ba7c328"
+        ],
+        "whole_feature": [
+          "fh_a2980aad0ba7c328"
+        ]
+      }
+    },
+    {
+      "feature_class": "through_hole_round",
+      "measurements": {
+        "full_cylinder_depths": [
+          {
+            "depth_mm": 10.0,
+            "face_handle": "fh_3d4249b908389966",
+            "radius_mm": 3.0
+          }
+        ],
+        "radii_mm": [
+          3.0
+        ]
+      },
+      "member_face_handles": [
+        "fh_3d4249b908389966"
+      ],
+      "object_handle": "oh_363002d9c9ce213d",
+      "role_areas_mm2": {
+        "inner_walls": 188.495559215,
+        "whole_feature": 188.495559215
+      },
+      "roles": {
+        "inner_walls": [
+          "fh_3d4249b908389966"
+        ],
+        "whole_feature": [
+          "fh_3d4249b908389966"
+        ]
+      }
+    },
+    {
+      "feature_class": "through_hole_round",
+      "measurements": {
+        "full_cylinder_depths": [
+          {
+            "depth_mm": 10.0,
+            "face_handle": "fh_d208185fe1e03c63",
+            "radius_mm": 3.0
+          }
+        ],
+        "radii_mm": [
+          3.0
+        ]
+      },
+      "member_face_handles": [
+        "fh_d208185fe1e03c63"
+      ],
+      "object_handle": "oh_d1325cdb21957d52",
+      "role_areas_mm2": {
+        "inner_walls": 188.495559215,
+        "whole_feature": 188.495559215
+      },
+      "roles": {
+        "inner_walls": [
+          "fh_d208185fe1e03c63"
+        ],
+        "whole_feature": [
+          "fh_d208185fe1e03c63"
+        ]
+      }
+    },
+    {
+      "feature_class": "through_hole_round",
+      "measurements": {
+        "full_cylinder_depths": [
+          {
+            "depth_mm": 10.0,
+            "face_handle": "fh_2566c7158009fdb0",
+            "radius_mm": 3.0
+          }
+        ],
+        "radii_mm": [
+          3.0
+        ]
+      },
+      "member_face_handles": [
+        "fh_2566c7158009fdb0"
+      ],
+      "object_handle": "oh_5743afdf0817f5bf",
+      "role_areas_mm2": {
+        "inner_walls": 188.495559215,
+        "whole_feature": 188.495559215
+      },
+      "roles": {
+        "inner_walls": [
+          "fh_2566c7158009fdb0"
+        ],
+        "whole_feature": [
+          "fh_2566c7158009fdb0"
+        ]
+      }
+    },
+    {
+      "feature_class": "through_hole_round",
+      "measurements": {
+        "full_cylinder_depths": [
+          {
+            "depth_mm": 10.0,
+            "face_handle": "fh_7f6569ff35be1804",
+            "radius_mm": 3.0
+          }
+        ],
+        "radii_mm": [
+          3.0
+        ]
+      },
+      "member_face_handles": [
+        "fh_7f6569ff35be1804"
+      ],
+      "object_handle": "oh_4d99f9b6af4aa247",
+      "role_areas_mm2": {
+        "inner_walls": 188.495559215,
+        "whole_feature": 188.495559215
+      },
+      "roles": {
+        "inner_walls": [
+          "fh_7f6569ff35be1804"
+        ],
+        "whole_feature": [
+          "fh_7f6569ff35be1804"
+        ]
+      }
+    },
+    {
+      "feature_class": "through_hole_round",
+      "measurements": {
+        "full_cylinder_depths": [
+          {
+            "depth_mm": 55.0,
+            "face_handle": "fh_23a6334c1a340e42",
+            "radius_mm": 20.0
+          }
+        ],
+        "radii_mm": [
+          20.0
+        ]
+      },
+      "member_face_handles": [
+        "fh_23a6334c1a340e42"
+      ],
+      "object_handle": "oh_df8c10c69d5e62a6",
+      "role_areas_mm2": {
+        "inner_walls": 6911.503837898,
+        "whole_feature": 6911.503837898
+      },
+      "roles": {
+        "inner_walls": [
+          "fh_23a6334c1a340e42"
+        ],
+        "whole_feature": [
+          "fh_23a6334c1a340e42"
+        ]
+      }
+    },
+    {
+      "feature_class": "fillet",
+      "measurements": {},
+      "member_face_handles": [
+        "fh_05c2dff12221692f"
+      ],
+      "object_handle": "oh_d724f29361c34716",
+      "role_areas_mm2": {
+        "whole_feature": 452.20164101
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_05c2dff12221692f"
+        ]
+      }
+    },
+    {
+      "feature_class": "blind_hole_round",
+      "measurements": {
+        "full_cylinder_depths": [
+          {
+            "depth_mm": 9.0,
+            "face_handle": "fh_1e27f817b80be87b",
+            "radius_mm": 1.75
+          }
+        ],
+        "radii_mm": [
+          1.75
+        ]
+      },
+      "member_face_handles": [
+        "fh_1e27f817b80be87b",
+        "fh_ea34074b3a6e7fb4"
+      ],
+      "object_handle": "oh_4587119971c092f8",
+      "role_areas_mm2": {
+        "whole_feature": 108.58129609
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_1e27f817b80be87b",
+          "fh_ea34074b3a6e7fb4"
+        ]
+      }
+    },
+    {
+      "feature_class": "blind_hole_round",
+      "measurements": {
+        "full_cylinder_depths": [
+          {
+            "depth_mm": 9.0,
+            "face_handle": "fh_c45ed5001b3015f1",
+            "radius_mm": 1.75
+          }
+        ],
+        "radii_mm": [
+          1.75
+        ]
+      },
+      "member_face_handles": [
+        "fh_c45ed5001b3015f1",
+        "fh_69748c6e5bcb6fea"
+      ],
+      "object_handle": "oh_a4013e9152190934",
+      "role_areas_mm2": {
+        "whole_feature": 108.58129609
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_c45ed5001b3015f1",
+          "fh_69748c6e5bcb6fea"
+        ]
+      }
+    },
+    {
+      "feature_class": "blind_hole_round",
+      "measurements": {
+        "full_cylinder_depths": [
+          {
+            "depth_mm": 9.0,
+            "face_handle": "fh_cc0a155e48fc6843",
+            "radius_mm": 1.75
+          }
+        ],
+        "radii_mm": [
+          1.75
+        ]
+      },
+      "member_face_handles": [
+        "fh_cc0a155e48fc6843",
+        "fh_8d7a945e32c935ed"
+      ],
+      "object_handle": "oh_4e66c04d8bd39413",
+      "role_areas_mm2": {
+        "whole_feature": 108.58129609
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_cc0a155e48fc6843",
+          "fh_8d7a945e32c935ed"
+        ]
+      }
+    },
+    {
+      "feature_class": "blind_hole_round",
+      "measurements": {
+        "full_cylinder_depths": [
+          {
+            "depth_mm": 9.0,
+            "face_handle": "fh_8a976944824e6cff",
+            "radius_mm": 1.75
+          }
+        ],
+        "radii_mm": [
+          1.75
+        ]
+      },
+      "member_face_handles": [
+        "fh_8a976944824e6cff",
+        "fh_2be458f0991b8f3a"
+      ],
+      "object_handle": "oh_301ff966fc540554",
+      "role_areas_mm2": {
+        "whole_feature": 108.58129609
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_8a976944824e6cff",
+          "fh_2be458f0991b8f3a"
+        ]
+      }
+    },
+    {
+      "feature_class": "slot_o",
+      "measurements": {},
+      "member_face_handles": [
+        "fh_497a25cd63c5c09c"
+      ],
+      "object_handle": "oh_c6bdcd011beaeef8",
+      "role_areas_mm2": {
+        "whole_feature": 1776.528792196
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_497a25cd63c5c09c"
+        ]
+      }
+    }
+  ],
+  "part_measurements": {
+    "three_counterbore_spacing": {}
+  },
+  "schema": "g10_m7_e3_semantic_instance_measurement_role_catalog_v1",
+  "service_version": "sv_77f0d70b4d3c9ad4",
+  "system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint"
+}

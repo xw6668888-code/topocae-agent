@@ -1,0 +1,227 @@
+{
+  "schema": "g10_m6_execution_receipt_v1",
+  "completed_utc": "2026-09-15T02:36:01.463213+00:00",
+  "run_id": "g10-m6-cae-launcher-v3-20260915",
+  "case_id": "angle_bracket",
+  "domain": "cae",
+  "status": "PASS",
+  "actually_executed": true,
+  "prepare_only": false,
+  "skip_mesh": false,
+  "manifest": {
+    "path": "workspace://reports/aei_paper_goals_v1/g10/M6_ENGINEERING_MANIFEST.json",
+    "bytes": 66304,
+    "sha256": "fa1721714c99834daaf5db0cc8c5e85cabd97e8ef6938ca7ca69f25895866129"
+  },
+  "job_spec": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/angle_bracket/job_spec.json",
+    "bytes": 4574,
+    "sha256": "636ad73e25c1a5746858c20d9a599b12a74a96842799a35c48e89afab0f61d6e"
+  },
+  "source_step": {
+    "path": "workspace://test_part_0901/Angle Bracket.stp",
+    "bytes": 56988,
+    "sha256": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195"
+  },
+  "prediction": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/frozen_e3_outputs/angle_bracket.json",
+    "bytes": 430624,
+    "sha256": "4970efb7be7f397ae428fba5cd8c307dd606712c5e5dfb966218bd941e80b9ec"
+  },
+  "semantic_plan": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/angle_bracket/semantic_plan.json",
+    "bytes": 972,
+    "sha256": "91184e30f7c25628adcc852427a3f9dd5e3c42c79bba37f29daf6165bf7bf006"
+  },
+  "execution_plan": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/angle_bracket/execution_plan.json",
+    "bytes": 51940,
+    "sha256": "6aa0a8eae126c2eaeeeeb928bc11e44aecb7d90e0a467cc9b6342192802da4be"
+  },
+  "program": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/angle_bracket/final.py",
+    "bytes": 40465,
+    "sha256": "e3666fb0f69db407d2104314290bb333ea5e4d58ece553fdd76b90913b2dceef"
+  },
+  "frozen_binding": {
+    "geometry_version": "25d25e8e0ae79ae6a084a22a5d42c19828b3be2a43bea8ad3e767b1714154195",
+    "prediction_system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint",
+    "prediction_source_identity_digest": "6b8a5d45878c7ce633e1f8ccabbf02a0044d0bf1407a25d337e3e92dcceab783",
+    "plan_digest": "231bf7d2c85bf096b4be931a67423b4955ccbc0ab4f672f6c97f9926031cd204",
+    "selections": [
+      {
+        "operation_index": 2,
+        "action": "fix_features",
+        "selector": {
+          "feature_classes": [
+            "counterbore_hole"
+          ],
+          "radius_mm": null,
+          "scope": "all"
+        },
+        "role": "whole_feature",
+        "object_ids": [
+          "e3:25d25e8e0ae7:counterbore_hole:80a443ea815573c1",
+          "e3:25d25e8e0ae7:counterbore_hole:35311f7e1fc8d03a",
+          "e3:25d25e8e0ae7:counterbore_hole:73bf1d428da63300",
+          "e3:25d25e8e0ae7:counterbore_hole:a5c2abce77242199"
+        ],
+        "object_indices": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "role_face_sets": [
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            32,
+            33,
+            34
+          ],
+          [
+            35,
+            36,
+            37
+          ],
+          [
+            38,
+            39,
+            40
+          ]
+        ],
+        "selection_count": 4
+      },
+      {
+        "operation_index": 3,
+        "action": "apply_force",
+        "selector": {
+          "feature_classes": [
+            "obround_hole"
+          ],
+          "radius_mm": null,
+          "scope": "all"
+        },
+        "role": "inner_walls",
+        "object_ids": [
+          "e3:25d25e8e0ae7:obround_hole:fa34cba98379a1c5",
+          "e3:25d25e8e0ae7:obround_hole:d46bb0d29a608cfa",
+          "e3:25d25e8e0ae7:obround_hole:49818424f8880f98",
+          "e3:25d25e8e0ae7:obround_hole:bdc52b9e6ca5cc63"
+        ],
+        "object_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "role_face_sets": [
+          [
+            21,
+            22,
+            23,
+            24
+          ],
+          [
+            25,
+            26,
+            27,
+            28
+          ],
+          [
+            13,
+            14,
+            15,
+            16
+          ],
+          [
+            17,
+            18,
+            19,
+            20
+          ]
+        ],
+        "selection_count": 4
+      }
+    ],
+    "binding_digest": "da6b2f8ed9e7d1d0f2b06bdfac2e72f9c1469158954a2629a8a2eceb1e622c16"
+  },
+  "launcher_adapter": {
+    "path": "workspace://tools/aei_paper_goals_v1/g10/m6_cae_launcher_v3.py",
+    "bytes": 11544,
+    "sha256": "b5b459e418960e2cf6c9a47656c7bbbe702c0b8cfceee1227c9a1558715aab3a"
+  },
+  "launcher_adapter_unchanged": true,
+  "odb_adapter": {
+    "path": "workspace://tools/aei_paper_goals_v1/g10/m6_odb_reaudit_v2.py",
+    "bytes": 6022,
+    "sha256": "1b3ddc6d9e9f39f43c97b9b2d29d58a2f0a95f6242485b70d7dc2005df3fb250"
+  },
+  "odb_adapter_unchanged": true,
+  "launcher_mode": "direct_batch_argv_v3",
+  "launch_argv": [
+    "F:\\ABAQUS2020\\commands\\abaqus.bat",
+    "cae",
+    "noGUI=workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\angle_bracket\\final.py"
+  ],
+  "reaudit_argv": [
+    "F:\\ABAQUS2020\\commands\\abaqus.bat",
+    "python",
+    "workspace://tools\\aei_paper_goals_v1\\g10\\m6_odb_reaudit_v2.py",
+    "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\angle_bracket\\execution_plan.json",
+    "workspace://artifacts\\aei_paper_goals_v1\\g10\\m6_engineering\\runs\\g10-m6-cae-launcher-v3-20260915\\angle_bracket\\attempts\\attempt_001\\independent_odb_audit_v2.json"
+  ],
+  "recovery_of": null,
+  "return_code": 0,
+  "independent_reaudit_return_code": 0,
+  "independent_status": "PASS",
+  "timed_out": false,
+  "solver": "AUTO",
+  "memory_mb": 20480,
+  "abaqus_release": {
+    "launcher": {
+      "path": "F:/ABAQUS2020/commands/abaqus.bat",
+      "bytes": 50,
+      "sha256": "b5d39a2d7e72c473f0929397b1f9d0f746a1f0d8270ab5db37eb9b82b8ad5dd6"
+    },
+    "return_code": 0,
+    "required_release": "Abaqus 2020",
+    "release_matched": true,
+    "stdout_sha256": "b83c1bf44ae621541e0e4cb2237460814ec0cd7429ef24d7c5fa8dc7a821c7e8",
+    "stderr_sha256": "c6e1531f4a254e3ec346ff110430c0cc20422d8656650c8e45a7a9ff99d49b41"
+  },
+  "artifacts": {
+    "final.cae": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/angle_bracket/attempts/attempt_001/final.cae",
+      "bytes": 6623232,
+      "sha256": "61fdd392fdd6b697b7d2daee2c2579a7ca5ba94924b1cfa00f69b3de39d55e2b"
+    },
+    "final.odb": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/angle_bracket/attempts/attempt_001/final.odb",
+      "bytes": 44019680,
+      "sha256": "417e44762c11ac4e1d7fced76b1e3b5f2ea8a257a08a0c4ca01e9fb3809d9e0a"
+    },
+    "final.inp": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/angle_bracket/attempts/attempt_001/final.inp",
+      "bytes": 20487959,
+      "sha256": "e31f7342e3ced9e276aad5a33e04f5df9e38632ef70442a382cd74303c33133d"
+    },
+    "execution_audit.json": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/angle_bracket/attempts/attempt_001/execution_audit.json",
+      "bytes": 19714,
+      "sha256": "e8c83ac36ac6685950354f91ee2e34a0fc61a94e07895df4dcb6d31d8397d7cb"
+    },
+    "independent_odb_audit_v2.json": {
+      "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-cae-launcher-v3-20260915/angle_bracket/attempts/attempt_001/independent_odb_audit_v2.json",
+      "bytes": 1669,
+      "sha256": "dc619d3afe0b4b83d404d649d00dbdf729571bcbfbce064f665431640fb0f773"
+    }
+  },
+  "elapsed_seconds": 56.02257690002443,
+  "attempt_count": 1,
+  "truth_used": false
+}

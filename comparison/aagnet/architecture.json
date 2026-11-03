@@ -1,0 +1,22 @@
+{
+  "num_classes": 19,
+  "arch": "AAGNetGraphEncoder",
+  "edge_attr_dim": 12,
+  "node_attr_dim": 10,
+  "edge_attr_emb": 64,
+  "node_attr_emb": 64,
+  "edge_grid_dim": 0,
+  "node_grid_dim": 7,
+  "edge_grid_emb": 0,
+  "node_grid_emb": 64,
+  "num_layers": 3,
+  "delta": 2,
+  "mlp_ratio": 2,
+  "drop": 0.25,
+  "drop_path": 0.25,
+  "head_hidden_dim": 64,
+  "conv_on_edge": false,
+  "use_uv_gird": true,
+  "use_edge_attr": true,
+  "use_face_attr": true
+}

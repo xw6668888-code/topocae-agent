@@ -1,0 +1,60 @@
+{
+  "schema_version": "2",
+  "status": "ready",
+  "domain": "cae",
+  "operations": [
+    {
+      "action": "set_material",
+      "material_id": "Steel45"
+    },
+    {
+      "action": "set_global_mesh",
+      "size_mm": 1.0
+    },
+    {
+      "action": "set_local_mesh",
+      "target": {
+        "feature_classes": [
+          "chamfer"
+        ],
+        "radius_mm": null,
+        "scope": "all"
+      },
+      "size_mm": 0.3
+    },
+    {
+      "action": "fix_features",
+      "target": {
+        "feature_classes": [
+          "through_hole_round"
+        ],
+        "radius_mm": 3.765,
+        "scope": "all"
+      },
+      "role": "whole_feature"
+    },
+    {
+      "action": "apply_traction",
+      "target": {
+        "feature_classes": [
+          "cylinder_boss"
+        ],
+        "radius_mm": null,
+        "scope": "all"
+      },
+      "role": "top_face",
+      "magnitude_MPa": 50.0,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "action": "set_analysis",
+      "type": "linear_static"
+    }
+  ],
+  "clarifications": [],
+  "reason": "G10 frozen user-confirmed reference plan; not an LLM result"
+}

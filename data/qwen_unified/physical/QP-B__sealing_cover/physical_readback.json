@@ -1,0 +1,174 @@
+{
+  "actual_step_groups": [
+    {
+      "action": "set_local_mesh",
+      "groups": [
+        [
+          5,
+          8,
+          11,
+          14,
+          17,
+          20
+        ]
+      ]
+    },
+    {
+      "action": "fix_features",
+      "groups": [
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          7,
+          8,
+          9
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          13,
+          14,
+          15
+        ],
+        [
+          16,
+          17,
+          18
+        ],
+        [
+          19,
+          20,
+          21
+        ]
+      ]
+    },
+    {
+      "action": "apply_pressure",
+      "groups": [
+        [
+          26,
+          25
+        ]
+      ]
+    }
+  ],
+  "checks": {
+    "INP_fixed": true,
+    "INP_linear_static": true,
+    "INP_loads": true,
+    "INP_material": true,
+    "INP_material_name": true,
+    "fixed_groups": true,
+    "global_mesh": true,
+    "independent_ODB": true,
+    "load_groups": true,
+    "load_parameters": true,
+    "local_mesh": true,
+    "material_identity": true,
+    "payload_plan_hash": true,
+    "plan_preserved": true,
+    "saved_CAE": true
+  },
+  "details": {
+    "input_blocks": [
+      {
+        "data": [
+          []
+        ],
+        "header": "*Solid Section, elset=All-Cells, material=Brass",
+        "key": "solid section"
+      },
+      {
+        "data": [],
+        "header": "*Material, name=Brass",
+        "key": "material"
+      },
+      {
+        "data": [
+          [
+            "8.5e-09"
+          ]
+        ],
+        "header": "*Density",
+        "key": "density"
+      },
+      {
+        "data": [
+          [
+            "100000.",
+            "0.33"
+          ]
+        ],
+        "header": "*Elastic",
+        "key": "elastic"
+      },
+      {
+        "data": [
+          [
+            "FIXED-FEATURES",
+            "ENCASTRE"
+          ]
+        ],
+        "header": "*Boundary",
+        "key": "boundary"
+      },
+      {
+        "data": [],
+        "header": "*Step, name=Static-Load, nlgeom=NO",
+        "key": "step"
+      },
+      {
+        "data": [
+          [
+            "1.",
+            "1.",
+            "1e-06",
+            "1."
+          ]
+        ],
+        "header": "*Static",
+        "key": "static"
+      },
+      {
+        "data": [
+          [
+            "LOAD-01",
+            "P",
+            "10."
+          ]
+        ],
+        "header": "*Dsload",
+        "key": "dsload"
+      },
+      {
+        "data": [
+          [
+            "RF",
+            "U"
+          ]
+        ],
+        "header": "*Node Output",
+        "key": "node output"
+      },
+      {
+        "data": [
+          [
+            "S"
+          ]
+        ],
+        "header": "*Element Output, directions=YES",
+        "key": "element output"
+      }
+    ]
+  },
+  "input_sha256": "405e6fd74eb24844683476d2c2f030c976bfbf80c8fe3dc76fea3617741436aa",
+  "model_plan_sha256": "8c3920204c612881bcb537013dbff2d00698f390878106b0e257870570f4290e",
+  "schema": "g11_physical_readback_v1",
+  "status": "PASS"
+}

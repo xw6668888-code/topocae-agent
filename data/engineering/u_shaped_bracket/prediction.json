@@ -1,0 +1,5107 @@
+{
+  "schema": "g09_e3_bayesian_step_service_v1",
+  "at_utc": "2026-09-13T14:36:34.773829+00:00",
+  "input_step": {
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/U-Shaped Bracket.stp",
+    "bytes": 23691,
+    "sha256": "72356e514bcd4f5a955819ba9143842bd9298c45c3e4d65a8b62a88d903903bc"
+  },
+  "system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint",
+  "device": "cpu",
+  "source_identity": {
+    "R": {
+      "dataset": "D0",
+      "seed": 20260719,
+      "branch": "R",
+      "configuration": "full",
+      "checkpoint": {
+        "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e6r2_r3_m2_m5_controlled_training_v1/training_runs/final_8370_seed_20260719/best.pt",
+        "bytes": 1403767,
+        "sha256": "491655bfec5591c5a6a1b7f6300294f4818c29bf60b4c1b8dd5ff6078a057054"
+      },
+      "normalization": {
+        "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/output_training_p1_e6r2_r3_graph_v2_2_1_v1/metadata.json",
+        "bytes": 12045,
+        "sha256": "a450467fcefad201130d35bba2fe907ca2ab49a6d504bf85a7d794b5724597ba"
+      },
+      "threshold": {
+        "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e6r2_r3_m2_m5_controlled_training_v1/training_runs/final_8370_seed_20260719/same_instance_threshold_selection.json",
+        "bytes": 20399,
+        "sha256": "9a94f60111ff77fd8c80885188e6886e476ad82140f011a8e44af1761403e02d"
+      },
+      "legacy_decoder_assets": [
+        {
+          "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e3c_seed_matched_candidate_v1/pipelines/old_same_instance_seed_20260718/candidate_model/candidate_threshold_selection.json",
+          "bytes": 1164,
+          "sha256": "448659d94ac868703ca6dfb74ff42095bb2205eac8cc92dc16d5b2f2d4208c8d"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e3c_seed_matched_candidate_v1/pipelines/old_same_instance_seed_20260718/global_decode_selection.json",
+          "bytes": 4316,
+          "sha256": "38d27f363f87df929c5648f27f55b6fb83a1cad7fbeb1458b960339ada844879"
+        }
+      ],
+      "training": {
+        "configuration_freeze": {
+          "path": "W:/python/FEA/dataset_generator/reports/aei_paper_goals_v1/g03/CONFIGURATION_FREEZE.json",
+          "bytes": 133219,
+          "sha256": "8e4bdc1338ab2c375ae74a1930187d6913d09454b4ce81e8138a731a18bd3922"
+        }
+      },
+      "inference_sources": [
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g07/topo_predictor.py",
+          "bytes": 5416,
+          "sha256": "528d549dc71b185ebcd66429e8a7822ff73267587d819f1f090f740d6a5f85db"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g07/step_entry.py",
+          "bytes": 11156,
+          "sha256": "a34f494d20c01eafc14ad5c9695174916888fa5658b84550b0ca182eb37ad288"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g07/decoder.py",
+          "bytes": 12656,
+          "sha256": "0531972f1635ad8547db51e871729b97d68481340809aa1669ed12edd7434228"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g03/inference.py",
+          "bytes": 6528,
+          "sha256": "a70b85d3ee15a00268b871755252dfb652234b7d3007f6142b83726b90b15fa8"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g03/stages.py",
+          "bytes": 13383,
+          "sha256": "f2ce5224028230246e380a2a91d6bcc5f05547bdc9dbc30a5d6b99f4bd7bce45"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g03/ablations.py",
+          "bytes": 6905,
+          "sha256": "f0716a27ea59b799ce53454b059ffdc9cfaefde5ad1c7ac71ddc31edacffa6e1"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g09/v09_predict_topo.py",
+          "bytes": 12028,
+          "sha256": "f6565818a158814de9688d1269c6117f85f06f57d56bad4985438daaa92ac30b"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g09/candidate_pool.py",
+          "bytes": 10503,
+          "sha256": "dc25f4d1f62f53d21e1b6604c830eda744db921c16f911fe2200c34941c994e5"
+        }
+      ]
+    },
+    "Q": {
+      "dataset": "D0",
+      "seed": 20260719,
+      "branch": "Q",
+      "configuration": "dense_instance",
+      "checkpoint": {
+        "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g03/training_runs/dense_instance/seed_20260719/best.pt",
+        "bytes": 1397751,
+        "sha256": "f6ca9bc84d88bc540134b598353b2a2a0f9b83e1b2779c986b2ecc6577bfb70e"
+      },
+      "normalization": {
+        "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/output_training_p1_e6r2_r3_graph_v2_2_1_v1/metadata.json",
+        "bytes": 12045,
+        "sha256": "a450467fcefad201130d35bba2fe907ca2ab49a6d504bf85a7d794b5724597ba"
+      },
+      "threshold": {
+        "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g03/training_runs/dense_instance/seed_20260719/same_instance_threshold_selection.json",
+        "bytes": 19904,
+        "sha256": "96ee358d24dcb1946531c123281826ad53f0e0580d7ef0c17bc729dc40e8d3c8"
+      },
+      "legacy_decoder_assets": [
+        {
+          "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e3c_seed_matched_candidate_v1/pipelines/old_same_instance_seed_20260718/candidate_model/candidate_threshold_selection.json",
+          "bytes": 1164,
+          "sha256": "448659d94ac868703ca6dfb74ff42095bb2205eac8cc92dc16d5b2f2d4208c8d"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/paper_release/topocae_p1_legacy_baseline_v1/reports/p1_e3c_seed_matched_candidate_v1/pipelines/old_same_instance_seed_20260718/global_decode_selection.json",
+          "bytes": 4316,
+          "sha256": "38d27f363f87df929c5648f27f55b6fb83a1cad7fbeb1458b960339ada844879"
+        }
+      ],
+      "training": {
+        "metrics": {
+          "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g03/training_runs/dense_instance/seed_20260719/metrics.json",
+          "bytes": 10014,
+          "sha256": "8718246756eea5140a74b48a5da18c163185af35505d1d85518d1d2fe3ad30f2"
+        },
+        "configuration_freeze": {
+          "path": "W:/python/FEA/dataset_generator/reports/aei_paper_goals_v1/g03/CONFIGURATION_FREEZE.json",
+          "bytes": 133219,
+          "sha256": "8e4bdc1338ab2c375ae74a1930187d6913d09454b4ce81e8138a731a18bd3922"
+        }
+      },
+      "inference_sources": [
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g07/topo_predictor.py",
+          "bytes": 5416,
+          "sha256": "528d549dc71b185ebcd66429e8a7822ff73267587d819f1f090f740d6a5f85db"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g07/step_entry.py",
+          "bytes": 11156,
+          "sha256": "a34f494d20c01eafc14ad5c9695174916888fa5658b84550b0ca182eb37ad288"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g07/decoder.py",
+          "bytes": 12656,
+          "sha256": "0531972f1635ad8547db51e871729b97d68481340809aa1669ed12edd7434228"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g03/inference.py",
+          "bytes": 6528,
+          "sha256": "a70b85d3ee15a00268b871755252dfb652234b7d3007f6142b83726b90b15fa8"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g03/stages.py",
+          "bytes": 13383,
+          "sha256": "f2ce5224028230246e380a2a91d6bcc5f05547bdc9dbc30a5d6b99f4bd7bce45"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g03/ablations.py",
+          "bytes": 6905,
+          "sha256": "f0716a27ea59b799ce53454b059ffdc9cfaefde5ad1c7ac71ddc31edacffa6e1"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g09/v09_predict_topo.py",
+          "bytes": 12028,
+          "sha256": "f6565818a158814de9688d1269c6117f85f06f57d56bad4985438daaa92ac30b"
+        },
+        {
+          "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g09/candidate_pool.py",
+          "bytes": 10503,
+          "sha256": "dc25f4d1f62f53d21e1b6604c830eda744db921c16f911fe2200c34941c994e5"
+        }
+      ]
+    },
+    "E3": {
+      "scorer": {
+        "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g09/e_joint_scorer/seed_20260719/COMPLETE.json",
+        "bytes": 1781,
+        "sha256": "e5ad625bd45eb5a066222b177125e8adb34818dd65d425e19d1a20eae2532808"
+      },
+      "protocol": {
+        "path": "W:/python/FEA/dataset_generator/reports/aei_paper_goals_v1/g09/E3_BAYESIAN_CALIBRATION_PROTOCOL.json",
+        "bytes": 2257,
+        "sha256": "0e280a6444da83508fdbc8165ee168e08b2fd903b363b9b8bb4b1f3c627f0b76"
+      },
+      "prior": {
+        "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g09/e_joint_source_priors/D0_train_seed_20260719.json",
+        "bytes": 29442,
+        "sha256": "76fe71d59527ec26738f0090ffe8ddf8116e5eda19d923b1939adaee4463cd6c"
+      }
+    },
+    "geometry_entry": {
+      "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g07/step_entry.py",
+      "bytes": 11156,
+      "sha256": "a34f494d20c01eafc14ad5c9695174916888fa5658b84550b0ca182eb37ad288"
+    },
+    "service": {
+      "path": "W:/python/FEA/dataset_generator/tools/aei_paper_goals_v1/g09/infer_step_e3.py",
+      "bytes": 14210,
+      "sha256": "098ccbe1bfc5f1b8b0dbbaec4caae230261116fdcc5203f7f2edc535093fc1f9"
+    }
+  },
+  "face_macro_classes": [
+    "slot_rect",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "through_hole_round",
+    "through_hole_round",
+    "cylinder_boss",
+    "cylinder_boss",
+    "stock",
+    "fillet",
+    "fillet",
+    "fillet",
+    "fillet"
+  ],
+  "objects": [
+    {
+      "class": "through_hole_round",
+      "faces": [
+        10
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "faces": [
+        9
+      ]
+    },
+    {
+      "class": "cylinder_boss",
+      "faces": [
+        11,
+        12
+      ]
+    },
+    {
+      "class": "fillet",
+      "faces": [
+        15
+      ]
+    },
+    {
+      "class": "fillet",
+      "faces": [
+        14
+      ]
+    },
+    {
+      "class": "fillet",
+      "faces": [
+        17
+      ]
+    },
+    {
+      "class": "fillet",
+      "faces": [
+        16
+      ]
+    }
+  ],
+  "feature_objects": [
+    {
+      "object_index": 0,
+      "class": "through_hole_round",
+      "graph_node_indices": [
+        10
+      ],
+      "original_face_numbers": [
+        11
+      ],
+      "roles": {
+        "whole_feature": {
+          "object_index": 0,
+          "class": "through_hole_round",
+          "role": "whole_feature",
+          "face_numbers": [
+            11
+          ],
+          "area_mm2": 75.39822368615503,
+          "role_evidence": {
+            "method": "within_recognized_instance",
+            "instance_faces": [
+              11
+            ]
+          }
+        },
+        "inner_walls": {
+          "object_index": 0,
+          "class": "through_hole_round",
+          "role": "inner_walls",
+          "face_numbers": [
+            11
+          ],
+          "area_mm2": 75.39822368615503,
+          "role_evidence": {
+            "method": "within_recognized_instance",
+            "instance_faces": [
+              11
+            ]
+          }
+        }
+      },
+      "unavailable_roles": {},
+      "parameters": {
+        "radii_mm": [
+          4.0
+        ],
+        "full_cylinder_depths": [
+          {
+            "face_number": 11,
+            "radius_mm": 4.0,
+            "depth_mm": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "object_index": 1,
+      "class": "through_hole_round",
+      "graph_node_indices": [
+        9
+      ],
+      "original_face_numbers": [
+        10
+      ],
+      "roles": {
+        "whole_feature": {
+          "object_index": 1,
+          "class": "through_hole_round",
+          "role": "whole_feature",
+          "face_numbers": [
+            10
+          ],
+          "area_mm2": 75.39822368615503,
+          "role_evidence": {
+            "method": "within_recognized_instance",
+            "instance_faces": [
+              10
+            ]
+          }
+        },
+        "inner_walls": {
+          "object_index": 1,
+          "class": "through_hole_round",
+          "role": "inner_walls",
+          "face_numbers": [
+            10
+          ],
+          "area_mm2": 75.39822368615503,
+          "role_evidence": {
+            "method": "within_recognized_instance",
+            "instance_faces": [
+              10
+            ]
+          }
+        }
+      },
+      "unavailable_roles": {},
+      "parameters": {
+        "radii_mm": [
+          4.0
+        ],
+        "full_cylinder_depths": [
+          {
+            "face_number": 10,
+            "radius_mm": 4.0,
+            "depth_mm": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "object_index": 2,
+      "class": "cylinder_boss",
+      "graph_node_indices": [
+        11,
+        12
+      ],
+      "original_face_numbers": [
+        12,
+        13
+      ],
+      "roles": {
+        "whole_feature": {
+          "object_index": 2,
+          "class": "cylinder_boss",
+          "role": "whole_feature",
+          "face_numbers": [
+            12,
+            13
+          ],
+          "area_mm2": 1440.6165812117695,
+          "role_evidence": {
+            "method": "within_recognized_instance",
+            "instance_faces": [
+              12,
+              13
+            ]
+          }
+        },
+        "top_face": {
+          "object_index": 2,
+          "class": "cylinder_boss",
+          "role": "top_face",
+          "face_numbers": [
+            12
+          ],
+          "area_mm2": 165.1299638543135,
+          "role_evidence": {
+            "method": "within_recognized_instance",
+            "instance_faces": [
+              12,
+              13
+            ]
+          }
+        }
+      },
+      "unavailable_roles": {},
+      "parameters": {
+        "radii_mm": [
+          7.25
+        ],
+        "full_cylinder_depths": [
+          {
+            "face_number": 13,
+            "radius_mm": 7.25,
+            "depth_mm": 28.0
+          }
+        ]
+      }
+    },
+    {
+      "object_index": 3,
+      "class": "fillet",
+      "graph_node_indices": [
+        15
+      ],
+      "original_face_numbers": [
+        16
+      ],
+      "roles": {
+        "whole_feature": {
+          "object_index": 3,
+          "class": "fillet",
+          "role": "whole_feature",
+          "face_numbers": [
+            16
+          ],
+          "area_mm2": 133.5515204358268,
+          "role_evidence": {
+            "method": "within_recognized_instance",
+            "instance_faces": [
+              16
+            ]
+          }
+        }
+      },
+      "unavailable_roles": {},
+      "parameters": {
+        "radii_mm": [
+          2.0
+        ]
+      }
+    },
+    {
+      "object_index": 4,
+      "class": "fillet",
+      "graph_node_indices": [
+        14
+      ],
+      "original_face_numbers": [
+        15
+      ],
+      "roles": {
+        "whole_feature": {
+          "object_index": 4,
+          "class": "fillet",
+          "role": "whole_feature",
+          "face_numbers": [
+            15
+          ],
+          "area_mm2": 133.55152043582683,
+          "role_evidence": {
+            "method": "within_recognized_instance",
+            "instance_faces": [
+              15
+            ]
+          }
+        }
+      },
+      "unavailable_roles": {},
+      "parameters": {
+        "radii_mm": [
+          2.0
+        ]
+      }
+    },
+    {
+      "object_index": 5,
+      "class": "fillet",
+      "graph_node_indices": [
+        17
+      ],
+      "original_face_numbers": [
+        18
+      ],
+      "roles": {
+        "whole_feature": {
+          "object_index": 5,
+          "class": "fillet",
+          "role": "whole_feature",
+          "face_numbers": [
+            18
+          ],
+          "area_mm2": 130.0759161988292,
+          "role_evidence": {
+            "method": "within_recognized_instance",
+            "instance_faces": [
+              18
+            ]
+          }
+        }
+      },
+      "unavailable_roles": {},
+      "parameters": {
+        "radii_mm": [
+          2.0
+        ]
+      }
+    },
+    {
+      "object_index": 6,
+      "class": "fillet",
+      "graph_node_indices": [
+        16
+      ],
+      "original_face_numbers": [
+        17
+      ],
+      "roles": {
+        "whole_feature": {
+          "object_index": 6,
+          "class": "fillet",
+          "role": "whole_feature",
+          "face_numbers": [
+            17
+          ],
+          "area_mm2": 130.0759161988292,
+          "role_evidence": {
+            "method": "within_recognized_instance",
+            "instance_faces": [
+              17
+            ]
+          }
+        }
+      },
+      "unavailable_roles": {},
+      "parameters": {
+        "radii_mm": [
+          2.0
+        ]
+      }
+    }
+  ],
+  "spacing_if_three_counterbores": {},
+  "evidence_trace": {
+    "graph_digest": "5507523e9d6f7bcc4d9f93766d127f8a26131941a299eac7f0b897f7b703099b",
+    "guard_change_count": 0,
+    "R_prediction": {
+      "faces": [
+        {
+          "idx": 0,
+          "macro_feature": "slot_rect",
+          "macro_class_id": 8,
+          "macro_confidence": 0.8888243436813354,
+          "macro_probabilities": {
+            "stock": 0.010871175676584244,
+            "through_hole_round": 0.015559623017907143,
+            "blind_hole_round": 0.005192043725401163,
+            "stepped_hole_round": 0.0007307892083190382,
+            "counterbore_hole": 0.003129280637949705,
+            "countersink_hole": 0.005806035827845335,
+            "obround_hole": 0.0033440038096159697,
+            "slot_u": 0.017509592697024345,
+            "slot_rect": 0.8888243436813354,
+            "pocket_rect": 0.0024899181444197893,
+            "pocket_circular": 0.004353248048573732,
+            "cylinder_boss": 0.009715402498841286,
+            "rib": 0.007087500765919685,
+            "web": 0.002899107290431857,
+            "rectangular_boss": 0.0039061398711055517,
+            "fillet": 0.0051944260485470295,
+            "chamfer": 0.0010767135536298156,
+            "slot_v": 0.010067828930914402,
+            "slot_o": 0.0022426622454077005
+          },
+          "semantic_label": 27,
+          "semantic_confidence": 0.7449779510498047,
+          "embedding": []
+        },
+        {
+          "idx": 1,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9526407718658447,
+          "macro_probabilities": {
+            "stock": 0.9526407718658447,
+            "through_hole_round": 0.001828633132390678,
+            "blind_hole_round": 0.0016544020036235452,
+            "stepped_hole_round": 0.0019325509201735258,
+            "counterbore_hole": 0.0025906795635819435,
+            "countersink_hole": 0.0013117104535922408,
+            "obround_hole": 0.0013730687787756324,
+            "slot_u": 0.00292775547131896,
+            "slot_rect": 0.0028305682353675365,
+            "pocket_rect": 0.0024475485552102327,
+            "pocket_circular": 0.0033834120258688927,
+            "cylinder_boss": 0.008297625929117203,
+            "rib": 0.0030848667956888676,
+            "web": 0.0026599224656820297,
+            "rectangular_boss": 0.002284212736412883,
+            "fillet": 0.0034484085626900196,
+            "chamfer": 0.0009064903715625405,
+            "slot_v": 0.0016916415188461542,
+            "slot_o": 0.002705791499465704
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9671056866645813,
+          "embedding": []
+        },
+        {
+          "idx": 2,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9181515574455261,
+          "macro_probabilities": {
+            "stock": 0.9181515574455261,
+            "through_hole_round": 0.0040159085765480995,
+            "blind_hole_round": 0.003867344930768013,
+            "stepped_hole_round": 0.002228379948064685,
+            "counterbore_hole": 0.004910537973046303,
+            "countersink_hole": 0.0025571342557668686,
+            "obround_hole": 0.002203121082857251,
+            "slot_u": 0.004911830648779869,
+            "slot_rect": 0.009754299186170101,
+            "pocket_rect": 0.005208246875554323,
+            "pocket_circular": 0.005443040747195482,
+            "cylinder_boss": 0.011515727266669273,
+            "rib": 0.0038873066660016775,
+            "web": 0.002988626481965184,
+            "rectangular_boss": 0.0029772771522402763,
+            "fillet": 0.005097418092191219,
+            "chamfer": 0.0008478206000290811,
+            "slot_v": 0.00255333143286407,
+            "slot_o": 0.0068810912780463696
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9304813146591187,
+          "embedding": []
+        },
+        {
+          "idx": 3,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9497520327568054,
+          "macro_probabilities": {
+            "stock": 0.9497520327568054,
+            "through_hole_round": 0.0019890812691301107,
+            "blind_hole_round": 0.002347080036997795,
+            "stepped_hole_round": 0.002223008079454303,
+            "counterbore_hole": 0.0032143883872777224,
+            "countersink_hole": 0.0021438668482005596,
+            "obround_hole": 0.001450875075533986,
+            "slot_u": 0.0028234103228896856,
+            "slot_rect": 0.0026277052238583565,
+            "pocket_rect": 0.002186280209571123,
+            "pocket_circular": 0.003920462913811207,
+            "cylinder_boss": 0.0073658786714077,
+            "rib": 0.0028828091453760862,
+            "web": 0.0025968672707676888,
+            "rectangular_boss": 0.002100015291944146,
+            "fillet": 0.003915997222065926,
+            "chamfer": 0.0007369380909949541,
+            "slot_v": 0.0019436640432104468,
+            "slot_o": 0.003779653925448656
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9603488445281982,
+          "embedding": []
+        },
+        {
+          "idx": 4,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9154337048530579,
+          "macro_probabilities": {
+            "stock": 0.9154337048530579,
+            "through_hole_round": 0.004472400527447462,
+            "blind_hole_round": 0.004000845365226269,
+            "stepped_hole_round": 0.0023374699521809816,
+            "counterbore_hole": 0.004602891858667135,
+            "countersink_hole": 0.002404348226264119,
+            "obround_hole": 0.0024723426904529333,
+            "slot_u": 0.005038633942604065,
+            "slot_rect": 0.010657704435288906,
+            "pocket_rect": 0.004968313034623861,
+            "pocket_circular": 0.005226218607276678,
+            "cylinder_boss": 0.012320021167397499,
+            "rib": 0.004072811920195818,
+            "web": 0.00298516103066504,
+            "rectangular_boss": 0.003250090405344963,
+            "fillet": 0.00513722887262702,
+            "chamfer": 0.0008637771825306118,
+            "slot_v": 0.0025858411099761724,
+            "slot_o": 0.007170237600803375
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9266764521598816,
+          "embedding": []
+        },
+        {
+          "idx": 5,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9572771191596985,
+          "macro_probabilities": {
+            "stock": 0.9572771191596985,
+            "through_hole_round": 0.0016132050659507513,
+            "blind_hole_round": 0.0017059353413060308,
+            "stepped_hole_round": 0.001944650080986321,
+            "counterbore_hole": 0.0016687869792804122,
+            "countersink_hole": 0.0010113604366779327,
+            "obround_hole": 0.0018100315937772393,
+            "slot_u": 0.002091151662170887,
+            "slot_rect": 0.0023499075323343277,
+            "pocket_rect": 0.0027704087551683187,
+            "pocket_circular": 0.002590369200333953,
+            "cylinder_boss": 0.006876096129417419,
+            "rib": 0.0037907124496996403,
+            "web": 0.003027434693649411,
+            "rectangular_boss": 0.0024988893419504166,
+            "fillet": 0.0022110638674348593,
+            "chamfer": 0.00077866978244856,
+            "slot_v": 0.0015967151848599315,
+            "slot_o": 0.0023874673061072826
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9631168246269226,
+          "embedding": []
+        },
+        {
+          "idx": 6,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.943868100643158,
+          "macro_probabilities": {
+            "stock": 0.943868100643158,
+            "through_hole_round": 0.0016208706656470895,
+            "blind_hole_round": 0.0018285453552380204,
+            "stepped_hole_round": 0.0019495119340717793,
+            "counterbore_hole": 0.0035201609134674072,
+            "countersink_hole": 0.002581271342933178,
+            "obround_hole": 0.0009060921147465706,
+            "slot_u": 0.001643820316530764,
+            "slot_rect": 0.004435268230736256,
+            "pocket_rect": 0.006629171781241894,
+            "pocket_circular": 0.003583361394703388,
+            "cylinder_boss": 0.011193200014531612,
+            "rib": 0.0017295527504757047,
+            "web": 0.0018731902819126844,
+            "rectangular_boss": 0.003091462654992938,
+            "fillet": 0.003450768068432808,
+            "chamfer": 0.001160183921456337,
+            "slot_v": 0.0014023968251422048,
+            "slot_o": 0.0035330031532794237
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9651978611946106,
+          "embedding": []
+        },
+        {
+          "idx": 7,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.8491791486740112,
+          "macro_probabilities": {
+            "stock": 0.8491791486740112,
+            "through_hole_round": 0.0021796133369207382,
+            "blind_hole_round": 0.0030819925013929605,
+            "stepped_hole_round": 0.004833617713302374,
+            "counterbore_hole": 0.004010578151792288,
+            "countersink_hole": 0.002494475804269314,
+            "obround_hole": 0.00190396374091506,
+            "slot_u": 0.003097302746027708,
+            "slot_rect": 0.002926065819337964,
+            "pocket_rect": 0.004380593076348305,
+            "pocket_circular": 0.004697707481682301,
+            "cylinder_boss": 0.08291663974523544,
+            "rib": 0.004478244576603174,
+            "web": 0.004421629011631012,
+            "rectangular_boss": 0.006323627196252346,
+            "fillet": 0.0060814134776592255,
+            "chamfer": 0.001521479687653482,
+            "slot_v": 0.003143983194604516,
+            "slot_o": 0.008327770978212357
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.769238293170929,
+          "embedding": []
+        },
+        {
+          "idx": 8,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.840717613697052,
+          "macro_probabilities": {
+            "stock": 0.840717613697052,
+            "through_hole_round": 0.002200488932430744,
+            "blind_hole_round": 0.0031741284765303135,
+            "stepped_hole_round": 0.0050829253159463406,
+            "counterbore_hole": 0.0040261452086269855,
+            "countersink_hole": 0.0026642277371138334,
+            "obround_hole": 0.0020129410549998283,
+            "slot_u": 0.003206870751455426,
+            "slot_rect": 0.002975182607769966,
+            "pocket_rect": 0.004535611718893051,
+            "pocket_circular": 0.004913159180432558,
+            "cylinder_boss": 0.08956621587276459,
+            "rib": 0.0046628001146018505,
+            "web": 0.004524738062173128,
+            "rectangular_boss": 0.006473276764154434,
+            "fillet": 0.0062601263634860516,
+            "chamfer": 0.0014958922984078526,
+            "slot_v": 0.003159842686727643,
+            "slot_o": 0.008347675204277039
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.754474401473999,
+          "embedding": []
+        },
+        {
+          "idx": 9,
+          "macro_feature": "through_hole_round",
+          "macro_class_id": 1,
+          "macro_confidence": 0.9007749557495117,
+          "macro_probabilities": {
+            "stock": 0.00013910818961448967,
+            "through_hole_round": 0.9007749557495117,
+            "blind_hole_round": 0.0006143254577182233,
+            "stepped_hole_round": 0.002062190091237426,
+            "counterbore_hole": 0.049582988023757935,
+            "countersink_hole": 0.019461739808321,
+            "obround_hole": 0.0023720036260783672,
+            "slot_u": 0.0009492377866990864,
+            "slot_rect": 0.006875085178762674,
+            "pocket_rect": 0.0012778380187228322,
+            "pocket_circular": 0.003260877216234803,
+            "cylinder_boss": 0.0028197672218084335,
+            "rib": 0.0011761295609176159,
+            "web": 0.002017116639763117,
+            "rectangular_boss": 0.0015039303107187152,
+            "fillet": 0.0012328411685302854,
+            "chamfer": 0.0001658637629589066,
+            "slot_v": 0.0019217014778405428,
+            "slot_o": 0.0017924446146935225
+          },
+          "semantic_label": 5,
+          "semantic_confidence": 0.9012864232063293,
+          "embedding": []
+        },
+        {
+          "idx": 10,
+          "macro_feature": "through_hole_round",
+          "macro_class_id": 1,
+          "macro_confidence": 0.952579140663147,
+          "macro_probabilities": {
+            "stock": 5.4691314289812e-05,
+            "through_hole_round": 0.952579140663147,
+            "blind_hole_round": 0.00034053585841320455,
+            "stepped_hole_round": 0.0006208738195709884,
+            "counterbore_hole": 0.029062503948807716,
+            "countersink_hole": 0.004585477523505688,
+            "obround_hole": 0.0002760598435997963,
+            "slot_u": 0.00039333628956228495,
+            "slot_rect": 0.0033906837925314903,
+            "pocket_rect": 0.0006539401365444064,
+            "pocket_circular": 0.002177514834329486,
+            "cylinder_boss": 0.0013125553959980607,
+            "rib": 0.0003716160717885941,
+            "web": 0.0010461615165695548,
+            "rectangular_boss": 0.0008344195666722953,
+            "fillet": 0.0005153017700649798,
+            "chamfer": 0.0001540911034680903,
+            "slot_v": 0.0008488151361234486,
+            "slot_o": 0.0007822624174878001
+          },
+          "semantic_label": 5,
+          "semantic_confidence": 0.9626800417900085,
+          "embedding": []
+        },
+        {
+          "idx": 11,
+          "macro_feature": "cylinder_boss",
+          "macro_class_id": 11,
+          "macro_confidence": 0.9783821105957031,
+          "macro_probabilities": {
+            "stock": 9.099767339648679e-05,
+            "through_hole_round": 0.00010335744445910677,
+            "blind_hole_round": 0.005926580633968115,
+            "stepped_hole_round": 0.00045451498590409756,
+            "counterbore_hole": 0.0006582954083569348,
+            "countersink_hole": 0.000992358778603375,
+            "obround_hole": 0.00025832647224888206,
+            "slot_u": 0.00126488390378654,
+            "slot_rect": 0.0012247294653207064,
+            "pocket_rect": 0.0014685761416330934,
+            "pocket_circular": 0.0007523111999034882,
+            "cylinder_boss": 0.9783821105957031,
+            "rib": 0.0025472771376371384,
+            "web": 0.0006270157173275948,
+            "rectangular_boss": 0.0008110495400615036,
+            "fillet": 0.0005245391512289643,
+            "chamfer": 0.0004577369836624712,
+            "slot_v": 0.0011016018688678741,
+            "slot_o": 0.002353822812438011
+          },
+          "semantic_label": 13,
+          "semantic_confidence": 0.9911330342292786,
+          "embedding": []
+        },
+        {
+          "idx": 12,
+          "macro_feature": "cylinder_boss",
+          "macro_class_id": 11,
+          "macro_confidence": 0.9565889835357666,
+          "macro_probabilities": {
+            "stock": 0.0008341360371559858,
+            "through_hole_round": 0.008658473379909992,
+            "blind_hole_round": 0.008599716238677502,
+            "stepped_hole_round": 0.001338092377409339,
+            "counterbore_hole": 0.0014653517864644527,
+            "countersink_hole": 0.003071409650146961,
+            "obround_hole": 0.0008745481609366834,
+            "slot_u": 0.0016922220820561051,
+            "slot_rect": 0.002285296330228448,
+            "pocket_rect": 0.0009737508371472359,
+            "pocket_circular": 0.0024843388237059116,
+            "cylinder_boss": 0.9565889835357666,
+            "rib": 0.002559538697823882,
+            "web": 0.0020071174949407578,
+            "rectangular_boss": 0.0019872738048434258,
+            "fillet": 0.001810630550608039,
+            "chamfer": 0.0009117586305364966,
+            "slot_v": 0.001073344494216144,
+            "slot_o": 0.0007840587641112506
+          },
+          "semantic_label": 12,
+          "semantic_confidence": 0.976945161819458,
+          "embedding": []
+        },
+        {
+          "idx": 13,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.947795033454895,
+          "macro_probabilities": {
+            "stock": 0.947795033454895,
+            "through_hole_round": 0.0018389761680737138,
+            "blind_hole_round": 0.0019066102104261518,
+            "stepped_hole_round": 0.0018456437392160296,
+            "counterbore_hole": 0.002970693865790963,
+            "countersink_hole": 0.0036336348857730627,
+            "obround_hole": 0.0012923902831971645,
+            "slot_u": 0.0016790640074759722,
+            "slot_rect": 0.003665087977424264,
+            "pocket_rect": 0.005688630044460297,
+            "pocket_circular": 0.003728635609149933,
+            "cylinder_boss": 0.006828658282756805,
+            "rib": 0.0020530421752482653,
+            "web": 0.0017321601044386625,
+            "rectangular_boss": 0.003165553556755185,
+            "fillet": 0.0038280615117400885,
+            "chamfer": 0.0015532203251495957,
+            "slot_v": 0.002058895770460367,
+            "slot_o": 0.0027360476087778807
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9663349986076355,
+          "embedding": []
+        },
+        {
+          "idx": 14,
+          "macro_feature": "fillet",
+          "macro_class_id": 15,
+          "macro_confidence": 0.9733288884162903,
+          "macro_probabilities": {
+            "stock": 0.0006522364565171301,
+            "through_hole_round": 0.0006350321345962584,
+            "blind_hole_round": 0.001310813589952886,
+            "stepped_hole_round": 0.0012369932373985648,
+            "counterbore_hole": 0.0008755194721743464,
+            "countersink_hole": 0.0008558585541322827,
+            "obround_hole": 0.0005214945995248854,
+            "slot_u": 0.001284338883124292,
+            "slot_rect": 0.00100552081130445,
+            "pocket_rect": 0.001308416249230504,
+            "pocket_circular": 0.0013947916449978948,
+            "cylinder_boss": 0.008730881847441196,
+            "rib": 0.0018573011038824916,
+            "web": 0.0010894061997532845,
+            "rectangular_boss": 0.0011573268566280603,
+            "fillet": 0.9733288884162903,
+            "chamfer": 7.447612733813003e-05,
+            "slot_v": 0.001733717042952776,
+            "slot_o": 0.0009469687938690186
+          },
+          "semantic_label": 33,
+          "semantic_confidence": 0.9777686595916748,
+          "embedding": []
+        },
+        {
+          "idx": 15,
+          "macro_feature": "fillet",
+          "macro_class_id": 15,
+          "macro_confidence": 0.9732497334480286,
+          "macro_probabilities": {
+            "stock": 0.0005499196122400463,
+            "through_hole_round": 0.0005808087298646569,
+            "blind_hole_round": 0.0012866710312664509,
+            "stepped_hole_round": 0.0012040967121720314,
+            "counterbore_hole": 0.0008373282616958022,
+            "countersink_hole": 0.0009219895582646132,
+            "obround_hole": 0.0004927083500660956,
+            "slot_u": 0.0012143950443714857,
+            "slot_rect": 0.0009779235115274787,
+            "pocket_rect": 0.0013215867802500725,
+            "pocket_circular": 0.0013990423176437616,
+            "cylinder_boss": 0.00924620684236288,
+            "rib": 0.0018550860695540905,
+            "web": 0.001114510465413332,
+            "rectangular_boss": 0.0011389112332835793,
+            "fillet": 0.9732497334480286,
+            "chamfer": 6.69334112899378e-05,
+            "slot_v": 0.0016561179654672742,
+            "slot_o": 0.0008859743247739971
+          },
+          "semantic_label": 33,
+          "semantic_confidence": 0.9774845242500305,
+          "embedding": []
+        },
+        {
+          "idx": 16,
+          "macro_feature": "fillet",
+          "macro_class_id": 15,
+          "macro_confidence": 0.8963025808334351,
+          "macro_probabilities": {
+            "stock": 0.001217232784256339,
+            "through_hole_round": 0.0013908648397773504,
+            "blind_hole_round": 0.001358638284727931,
+            "stepped_hole_round": 0.004745241720229387,
+            "counterbore_hole": 0.002112479880452156,
+            "countersink_hole": 0.00287624285556376,
+            "obround_hole": 0.003634086577221751,
+            "slot_u": 0.004502158146351576,
+            "slot_rect": 0.004116636235266924,
+            "pocket_rect": 0.004588583018630743,
+            "pocket_circular": 0.004073109477758408,
+            "cylinder_boss": 0.005739370360970497,
+            "rib": 0.004812831059098244,
+            "web": 0.0013694883091375232,
+            "rectangular_boss": 0.0024173837155103683,
+            "fillet": 0.8963025808334351,
+            "chamfer": 0.00016030242841225117,
+            "slot_v": 0.002527679316699505,
+            "slot_o": 0.05205506831407547
+          },
+          "semantic_label": 33,
+          "semantic_confidence": 0.9359090328216553,
+          "embedding": []
+        },
+        {
+          "idx": 17,
+          "macro_feature": "fillet",
+          "macro_class_id": 15,
+          "macro_confidence": 0.8964120745658875,
+          "macro_probabilities": {
+            "stock": 0.0012209638953208923,
+            "through_hole_round": 0.0013902854407206178,
+            "blind_hole_round": 0.0013596552889794111,
+            "stepped_hole_round": 0.0047494168393313885,
+            "counterbore_hole": 0.002114971401169896,
+            "countersink_hole": 0.002871401607990265,
+            "obround_hole": 0.0036207856610417366,
+            "slot_u": 0.0045017097145318985,
+            "slot_rect": 0.004117702599614859,
+            "pocket_rect": 0.004582504276186228,
+            "pocket_circular": 0.004075486212968826,
+            "cylinder_boss": 0.005714768078178167,
+            "rib": 0.004819822032004595,
+            "web": 0.001369509263895452,
+            "rectangular_boss": 0.0024125727359205484,
+            "fillet": 0.8964120745658875,
+            "chamfer": 0.00016185302229132503,
+            "slot_v": 0.002518335124477744,
+            "slot_o": 0.05198618769645691
+          },
+          "semantic_label": 33,
+          "semantic_confidence": 0.9359601140022278,
+          "embedding": []
+        }
+      ],
+      "edge_probabilities": [
+        2.7813800898002228e-06,
+        8.182024089364859e-07,
+        0.002416483126580715,
+        0.00030423657153733075,
+        5.911637117606006e-07,
+        2.3506424895458622e-07,
+        0.002351912437006831,
+        0.000296042620902881,
+        2.0681564905089544e-08,
+        2.0618142748674018e-09,
+        1.80016678646977e-11,
+        2.5612774054439846e-11,
+        5.274694103718502e-07,
+        1.631767432286324e-08,
+        9.616283463964592e-12,
+        1.5152362004000608e-11,
+        1.3176432389627735e-07,
+        1.0451860710247729e-08,
+        2.915739969466813e-07,
+        2.1354230383963113e-08,
+        4.882278470397239e-10,
+        4.2563685909158266e-10,
+        2.2982736481935717e-05,
+        9.188178751173837e-07,
+        8.224781411492188e-10,
+        6.582567269042272e-10,
+        4.413056444718677e-07,
+        2.884035232852966e-08,
+        3.300934192651539e-09,
+        4.933934372175486e-10,
+        3.300934192651539e-09,
+        4.933934372175486e-10,
+        2.1747096311253156e-12,
+        3.265074191918793e-12,
+        2.271660122232788e-07,
+        5.384663381846622e-09,
+        4.071052956550192e-12,
+        5.032826152356895e-12,
+        3.295154726856708e-08,
+        2.591036496468746e-09,
+        4.327097542500269e-07,
+        5.595002861014109e-08,
+        9.602602046854258e-10,
+        7.527887202485317e-10,
+        2.2272206479101442e-05,
+        9.192876859742682e-07,
+        5.700160898847173e-10,
+        4.86761464468799e-10,
+        5.304689238982974e-07,
+        3.4985401242693115e-08,
+        1.9012455609868084e-08,
+        2.0532433531172956e-09,
+        2.740645817927989e-12,
+        1.7718411373518483e-12,
+        1.7419233699911274e-07,
+        3.3507681074240736e-09,
+        1.9709667925527086e-11,
+        1.0224500066047248e-11,
+        1.9993146338492807e-07,
+        3.718978458522315e-09,
+        3.8650378542115504e-07,
+        4.624972849143205e-09,
+        3.547672600134888e-09,
+        2.86221657486152e-10,
+        8.800644764050958e-07,
+        1.7091712933847703e-08,
+        8.666758049002965e-07,
+        1.684426287340557e-08,
+        3.923075198031256e-09,
+        3.1130517608168873e-10,
+        4.511943529905693e-07,
+        5.171017392058275e-09,
+        1.7015613917870098e-10,
+        2.564863432752418e-09,
+        1.8345037988698465e-10,
+        2.7616184894441176e-09,
+        0.999996542930603,
+        0.9999974966049194,
+        9.083072960436311e-09,
+        1.2945586269630383e-10,
+        1.0876157752193194e-08,
+        1.4448513219189607e-10,
+        1.4797936209731688e-08,
+        4.1227238289920365e-10,
+        1.504020552545171e-08,
+        4.1798031702455773e-10
+      ]
+    },
+    "Q_prediction": {
+      "faces": [
+        {
+          "idx": 0,
+          "macro_feature": "slot_rect",
+          "macro_class_id": 8,
+          "macro_confidence": 0.9044609665870667,
+          "macro_probabilities": {
+            "stock": 0.012806489132344723,
+            "through_hole_round": 0.005017286632210016,
+            "blind_hole_round": 0.0019035390578210354,
+            "stepped_hole_round": 0.0014200691366568208,
+            "counterbore_hole": 0.002989773638546467,
+            "countersink_hole": 0.004335220903158188,
+            "obround_hole": 0.0035002061631530523,
+            "slot_u": 0.0221648421138525,
+            "slot_rect": 0.9044609665870667,
+            "pocket_rect": 0.005429734475910664,
+            "pocket_circular": 0.004580656997859478,
+            "cylinder_boss": 0.0027838852256536484,
+            "rib": 0.006788685917854309,
+            "web": 0.004193617030978203,
+            "rectangular_boss": 0.0013353609247133136,
+            "fillet": 0.0023012033198028803,
+            "chamfer": 0.0008968461188487709,
+            "slot_v": 0.010049168020486832,
+            "slot_o": 0.0030426664743572474
+          },
+          "semantic_label": 27,
+          "semantic_confidence": 0.4370083212852478,
+          "embedding": []
+        },
+        {
+          "idx": 1,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.948019802570343,
+          "macro_probabilities": {
+            "stock": 0.948019802570343,
+            "through_hole_round": 0.0016865276265889406,
+            "blind_hole_round": 0.0014446057612076402,
+            "stepped_hole_round": 0.00177099893335253,
+            "counterbore_hole": 0.002711160806939006,
+            "countersink_hole": 0.0010424955980852246,
+            "obround_hole": 0.0008446928695775568,
+            "slot_u": 0.003511123824864626,
+            "slot_rect": 0.004042377695441246,
+            "pocket_rect": 0.003602101933211088,
+            "pocket_circular": 0.001968348864465952,
+            "cylinder_boss": 0.012064903043210506,
+            "rib": 0.00228251819498837,
+            "web": 0.004109782632440329,
+            "rectangular_boss": 0.0026636586990207434,
+            "fillet": 0.0014425332192331553,
+            "chamfer": 0.001099823391996324,
+            "slot_v": 0.0025937026366591454,
+            "slot_o": 0.0030988457147032022
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9665383100509644,
+          "embedding": []
+        },
+        {
+          "idx": 2,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9402322173118591,
+          "macro_probabilities": {
+            "stock": 0.9402322173118591,
+            "through_hole_round": 0.0018420283449813724,
+            "blind_hole_round": 0.001600843039341271,
+            "stepped_hole_round": 0.0013590629678219557,
+            "counterbore_hole": 0.003089632373303175,
+            "countersink_hole": 0.001046065241098404,
+            "obround_hole": 0.0014289577957242727,
+            "slot_u": 0.00493552815169096,
+            "slot_rect": 0.009988304227590561,
+            "pocket_rect": 0.005426793359220028,
+            "pocket_circular": 0.0028099084738641977,
+            "cylinder_boss": 0.007600273471325636,
+            "rib": 0.002380187390372157,
+            "web": 0.002578583313152194,
+            "rectangular_boss": 0.0022381863091140985,
+            "fillet": 0.0012863330775871873,
+            "chamfer": 0.0012717257486656308,
+            "slot_v": 0.00445746211335063,
+            "slot_o": 0.004427855368703604
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.945685625076294,
+          "embedding": []
+        },
+        {
+          "idx": 3,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.949705183506012,
+          "macro_probabilities": {
+            "stock": 0.949705183506012,
+            "through_hole_round": 0.002419291762635112,
+            "blind_hole_round": 0.0017781032947823405,
+            "stepped_hole_round": 0.0016479487530887127,
+            "counterbore_hole": 0.003499564016237855,
+            "countersink_hole": 0.001687467098236084,
+            "obround_hole": 0.001079276204109192,
+            "slot_u": 0.002743191085755825,
+            "slot_rect": 0.0031258452218025923,
+            "pocket_rect": 0.003584530670195818,
+            "pocket_circular": 0.002989168046042323,
+            "cylinder_boss": 0.008696121163666248,
+            "rib": 0.0019231400219723582,
+            "web": 0.003595901420339942,
+            "rectangular_boss": 0.002344841370359063,
+            "fillet": 0.0014893322950229049,
+            "chamfer": 0.0012558208545669913,
+            "slot_v": 0.0026317345909774303,
+            "slot_o": 0.0038035856559872627
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9676304459571838,
+          "embedding": []
+        },
+        {
+          "idx": 4,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.934719979763031,
+          "macro_probabilities": {
+            "stock": 0.934719979763031,
+            "through_hole_round": 0.0020214158575981855,
+            "blind_hole_round": 0.0016327881021425128,
+            "stepped_hole_round": 0.001391522353515029,
+            "counterbore_hole": 0.0032434465829283,
+            "countersink_hole": 0.0011236343998461962,
+            "obround_hole": 0.001832874258980155,
+            "slot_u": 0.005287941079586744,
+            "slot_rect": 0.011538981460034847,
+            "pocket_rect": 0.0056740473955869675,
+            "pocket_circular": 0.0027459783013910055,
+            "cylinder_boss": 0.009283245541155338,
+            "rib": 0.002501491457223892,
+            "web": 0.0027803031262010336,
+            "rectangular_boss": 0.002593150595203042,
+            "fillet": 0.0013650497421622276,
+            "chamfer": 0.001299890223890543,
+            "slot_v": 0.0042657870799303055,
+            "slot_o": 0.004698408767580986
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9366689920425415,
+          "embedding": []
+        },
+        {
+          "idx": 5,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9604294896125793,
+          "macro_probabilities": {
+            "stock": 0.9604294896125793,
+            "through_hole_round": 0.0008999189012683928,
+            "blind_hole_round": 0.0015262378146871924,
+            "stepped_hole_round": 0.0015423675067722797,
+            "counterbore_hole": 0.0015322755789384246,
+            "countersink_hole": 0.0007458337931893766,
+            "obround_hole": 0.0008136826218105853,
+            "slot_u": 0.0029557307716459036,
+            "slot_rect": 0.003714566584676504,
+            "pocket_rect": 0.002605537883937359,
+            "pocket_circular": 0.0016785325715318322,
+            "cylinder_boss": 0.005634035915136337,
+            "rib": 0.00272405450232327,
+            "web": 0.0042845625430345535,
+            "rectangular_boss": 0.0023550367914140224,
+            "fillet": 0.0012982272310182452,
+            "chamfer": 0.0008819537470117211,
+            "slot_v": 0.002212907187640667,
+            "slot_o": 0.0021651939023286104
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9729203581809998,
+          "embedding": []
+        },
+        {
+          "idx": 6,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9182651042938232,
+          "macro_probabilities": {
+            "stock": 0.9182651042938232,
+            "through_hole_round": 0.0027431498747318983,
+            "blind_hole_round": 0.002638163510710001,
+            "stepped_hole_round": 0.0018688058480620384,
+            "counterbore_hole": 0.004817558452486992,
+            "countersink_hole": 0.005326591897755861,
+            "obround_hole": 0.0010370834497734904,
+            "slot_u": 0.0037248905282467604,
+            "slot_rect": 0.004755927249789238,
+            "pocket_rect": 0.007190069183707237,
+            "pocket_circular": 0.004048518370836973,
+            "cylinder_boss": 0.023029301315546036,
+            "rib": 0.0024876336101442575,
+            "web": 0.006461901590228081,
+            "rectangular_boss": 0.0025083161890506744,
+            "fillet": 0.00232483958825469,
+            "chamfer": 0.0026740601751953363,
+            "slot_v": 0.0014759375480934978,
+            "slot_o": 0.0026222041342407465
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9586897492408752,
+          "embedding": []
+        },
+        {
+          "idx": 7,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.7844220399856567,
+          "macro_probabilities": {
+            "stock": 0.7844220399856567,
+            "through_hole_round": 0.0028273819480091333,
+            "blind_hole_round": 0.003350159153342247,
+            "stepped_hole_round": 0.005860134027898312,
+            "counterbore_hole": 0.0030710233841091394,
+            "countersink_hole": 0.003464382141828537,
+            "obround_hole": 0.0013366079656407237,
+            "slot_u": 0.0030028901528567076,
+            "slot_rect": 0.0025848897639662027,
+            "pocket_rect": 0.0021695205941796303,
+            "pocket_circular": 0.005055329296737909,
+            "cylinder_boss": 0.15302447974681854,
+            "rib": 0.005462187808007002,
+            "web": 0.004441163502633572,
+            "rectangular_boss": 0.004053652286529541,
+            "fillet": 0.004098397679626942,
+            "chamfer": 0.002338019898161292,
+            "slot_v": 0.003644154407083988,
+            "slot_o": 0.005793554242700338
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.6316015124320984,
+          "embedding": []
+        },
+        {
+          "idx": 8,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.7669863104820251,
+          "macro_probabilities": {
+            "stock": 0.7669863104820251,
+            "through_hole_round": 0.0026768932584673166,
+            "blind_hole_round": 0.0034207156859338284,
+            "stepped_hole_round": 0.006015473045408726,
+            "counterbore_hole": 0.0031312976498156786,
+            "countersink_hole": 0.003465853864327073,
+            "obround_hole": 0.0013480541529133916,
+            "slot_u": 0.0030171896796673536,
+            "slot_rect": 0.002666359068825841,
+            "pocket_rect": 0.0023424909450113773,
+            "pocket_circular": 0.005510663613677025,
+            "cylinder_boss": 0.16932956874370575,
+            "rib": 0.005802192725241184,
+            "web": 0.004300870932638645,
+            "rectangular_boss": 0.0040601519867777824,
+            "fillet": 0.004157095216214657,
+            "chamfer": 0.0022900360636413097,
+            "slot_v": 0.0038276859559118748,
+            "slot_o": 0.005651142913848162
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.6011155247688293,
+          "embedding": []
+        },
+        {
+          "idx": 9,
+          "macro_feature": "through_hole_round",
+          "macro_class_id": 1,
+          "macro_confidence": 0.8263054490089417,
+          "macro_probabilities": {
+            "stock": 0.0001769650261849165,
+            "through_hole_round": 0.8263054490089417,
+            "blind_hole_round": 0.0005845504347234964,
+            "stepped_hole_round": 0.0020595199894160032,
+            "counterbore_hole": 0.06521166115999222,
+            "countersink_hole": 0.07127784937620163,
+            "obround_hole": 0.0026745512150228024,
+            "slot_u": 0.0010574812768027186,
+            "slot_rect": 0.0043556480668485165,
+            "pocket_rect": 0.001574931782670319,
+            "pocket_circular": 0.0034627029672265053,
+            "cylinder_boss": 0.00554319703951478,
+            "rib": 0.0034220509696751833,
+            "web": 0.0027580023743212223,
+            "rectangular_boss": 0.001916325418278575,
+            "fillet": 0.0020639803260564804,
+            "chamfer": 0.0008336352184414864,
+            "slot_v": 0.001310721505433321,
+            "slot_o": 0.0034107828978449106
+          },
+          "semantic_label": 5,
+          "semantic_confidence": 0.825653076171875,
+          "embedding": []
+        },
+        {
+          "idx": 10,
+          "macro_feature": "through_hole_round",
+          "macro_class_id": 1,
+          "macro_confidence": 0.971276044845581,
+          "macro_probabilities": {
+            "stock": 0.00014490060857497156,
+            "through_hole_round": 0.971276044845581,
+            "blind_hole_round": 0.0003575077571440488,
+            "stepped_hole_round": 0.0007705306634306908,
+            "counterbore_hole": 0.012034349143505096,
+            "countersink_hole": 0.0036031226627528667,
+            "obround_hole": 0.0003607783291954547,
+            "slot_u": 0.0006090486422181129,
+            "slot_rect": 0.001511475769802928,
+            "pocket_rect": 0.0008042306872084737,
+            "pocket_circular": 0.0016135928453877568,
+            "cylinder_boss": 0.0015832511708140373,
+            "rib": 0.0007267544860951602,
+            "web": 0.0010073041776195168,
+            "rectangular_boss": 0.0009329056483693421,
+            "fillet": 0.0005596505361609161,
+            "chamfer": 0.000590479641687125,
+            "slot_v": 0.0006106101791374385,
+            "slot_o": 0.0009033774258568883
+          },
+          "semantic_label": 5,
+          "semantic_confidence": 0.9767926335334778,
+          "embedding": []
+        },
+        {
+          "idx": 11,
+          "macro_feature": "cylinder_boss",
+          "macro_class_id": 11,
+          "macro_confidence": 0.9548172354698181,
+          "macro_probabilities": {
+            "stock": 0.00034190641599707305,
+            "through_hole_round": 0.0005300893099047244,
+            "blind_hole_round": 0.01878700964152813,
+            "stepped_hole_round": 0.0008990749483928084,
+            "counterbore_hole": 0.001237057731486857,
+            "countersink_hole": 0.0006414984236471355,
+            "obround_hole": 0.0007959204376675189,
+            "slot_u": 0.0023981938138604164,
+            "slot_rect": 0.0030623124912381172,
+            "pocket_rect": 0.0014561902498826385,
+            "pocket_circular": 0.0011541383573785424,
+            "cylinder_boss": 0.9548172354698181,
+            "rib": 0.002924941014498472,
+            "web": 0.002785240299999714,
+            "rectangular_boss": 0.0021976130083203316,
+            "fillet": 0.001484538079239428,
+            "chamfer": 0.0008974858210422099,
+            "slot_v": 0.0007463537040166557,
+            "slot_o": 0.002843060065060854
+          },
+          "semantic_label": 13,
+          "semantic_confidence": 0.973258912563324,
+          "embedding": []
+        },
+        {
+          "idx": 12,
+          "macro_feature": "cylinder_boss",
+          "macro_class_id": 11,
+          "macro_confidence": 0.9432849884033203,
+          "macro_probabilities": {
+            "stock": 0.004001520108431578,
+            "through_hole_round": 0.005438795778900385,
+            "blind_hole_round": 0.01803762838244438,
+            "stepped_hole_round": 0.0013863538624718785,
+            "counterbore_hole": 0.0009081804309971631,
+            "countersink_hole": 0.001452955068089068,
+            "obround_hole": 0.0007215602672658861,
+            "slot_u": 0.0027701230719685555,
+            "slot_rect": 0.0023472069296985865,
+            "pocket_rect": 0.0018427689792588353,
+            "pocket_circular": 0.0016967157134786248,
+            "cylinder_boss": 0.9432849884033203,
+            "rib": 0.0031292554922401905,
+            "web": 0.0026089244056493044,
+            "rectangular_boss": 0.003661534981802106,
+            "fillet": 0.0007173368358053267,
+            "chamfer": 0.0008075614459812641,
+            "slot_v": 0.0018323700642213225,
+            "slot_o": 0.0033541815355420113
+          },
+          "semantic_label": 12,
+          "semantic_confidence": 0.9688831567764282,
+          "embedding": []
+        },
+        {
+          "idx": 13,
+          "macro_feature": "stock",
+          "macro_class_id": 0,
+          "macro_confidence": 0.9367029666900635,
+          "macro_probabilities": {
+            "stock": 0.9367029666900635,
+            "through_hole_round": 0.0026759791653603315,
+            "blind_hole_round": 0.0024304313119500875,
+            "stepped_hole_round": 0.0017305932706221938,
+            "counterbore_hole": 0.003773179603740573,
+            "countersink_hole": 0.005186700262129307,
+            "obround_hole": 0.0012239082716405392,
+            "slot_u": 0.00283363601192832,
+            "slot_rect": 0.005041284952312708,
+            "pocket_rect": 0.005187157541513443,
+            "pocket_circular": 0.004362901672720909,
+            "cylinder_boss": 0.010671845637261868,
+            "rib": 0.002270336728543043,
+            "web": 0.005547354929149151,
+            "rectangular_boss": 0.002110555302351713,
+            "fillet": 0.0026395281311124563,
+            "chamfer": 0.0021426696330308914,
+            "slot_v": 0.0016727758338674903,
+            "slot_o": 0.0017962009878829122
+          },
+          "semantic_label": 0,
+          "semantic_confidence": 0.9647890329360962,
+          "embedding": []
+        },
+        {
+          "idx": 14,
+          "macro_feature": "fillet",
+          "macro_class_id": 15,
+          "macro_confidence": 0.9716173410415649,
+          "macro_probabilities": {
+            "stock": 0.0005024396814405918,
+            "through_hole_round": 0.0006865287432447076,
+            "blind_hole_round": 0.0013590488815680146,
+            "stepped_hole_round": 0.0013543566456064582,
+            "counterbore_hole": 0.0007733358070254326,
+            "countersink_hole": 0.0010760315926745534,
+            "obround_hole": 0.0003361376002430916,
+            "slot_u": 0.0011845603585243225,
+            "slot_rect": 0.0016853369306772947,
+            "pocket_rect": 0.0011348230764269829,
+            "pocket_circular": 0.0020276012364774942,
+            "cylinder_boss": 0.007895148359239101,
+            "rib": 0.002126464620232582,
+            "web": 0.0018161030020564795,
+            "rectangular_boss": 0.0010521423537284136,
+            "fillet": 0.9716173410415649,
+            "chamfer": 0.0001642074203118682,
+            "slot_v": 0.002203249139711261,
+            "slot_o": 0.001005097059533
+          },
+          "semantic_label": 33,
+          "semantic_confidence": 0.9816452264785767,
+          "embedding": []
+        },
+        {
+          "idx": 15,
+          "macro_feature": "fillet",
+          "macro_class_id": 15,
+          "macro_confidence": 0.9720374345779419,
+          "macro_probabilities": {
+            "stock": 0.00044124352280050516,
+            "through_hole_round": 0.0006657998310402036,
+            "blind_hole_round": 0.0013298611156642437,
+            "stepped_hole_round": 0.0013358320575207472,
+            "counterbore_hole": 0.0007540742517448962,
+            "countersink_hole": 0.0010915176244452596,
+            "obround_hole": 0.0003364843432791531,
+            "slot_u": 0.0011859458172693849,
+            "slot_rect": 0.0015841544372960925,
+            "pocket_rect": 0.0011401899391785264,
+            "pocket_circular": 0.0019915110897272825,
+            "cylinder_boss": 0.007744268514215946,
+            "rib": 0.0021199937909841537,
+            "web": 0.001884099212475121,
+            "rectangular_boss": 0.0010378211736679077,
+            "fillet": 0.9720374345779419,
+            "chamfer": 0.0001630268816370517,
+            "slot_v": 0.0022103453520685434,
+            "slot_o": 0.0009464038885198534
+          },
+          "semantic_label": 33,
+          "semantic_confidence": 0.9821109175682068,
+          "embedding": []
+        },
+        {
+          "idx": 16,
+          "macro_feature": "fillet",
+          "macro_class_id": 15,
+          "macro_confidence": 0.9438720345497131,
+          "macro_probabilities": {
+            "stock": 0.00018251007713843137,
+            "through_hole_round": 0.00102908443659544,
+            "blind_hole_round": 0.0011641760356724262,
+            "stepped_hole_round": 0.002143832156434655,
+            "counterbore_hole": 0.0021225721575319767,
+            "countersink_hole": 0.0022546027321368456,
+            "obround_hole": 0.001562954275868833,
+            "slot_u": 0.006431517656892538,
+            "slot_rect": 0.004713523667305708,
+            "pocket_rect": 0.002074560848996043,
+            "pocket_circular": 0.006187342572957277,
+            "cylinder_boss": 0.0046757301315665245,
+            "rib": 0.0028002469334751368,
+            "web": 0.001622801530174911,
+            "rectangular_boss": 0.0015951249515637755,
+            "fillet": 0.9438720345497131,
+            "chamfer": 0.00017455570923630148,
+            "slot_v": 0.0015153216663748026,
+            "slot_o": 0.013877419754862785
+          },
+          "semantic_label": 33,
+          "semantic_confidence": 0.967113733291626,
+          "embedding": []
+        },
+        {
+          "idx": 17,
+          "macro_feature": "fillet",
+          "macro_class_id": 15,
+          "macro_confidence": 0.9441488981246948,
+          "macro_probabilities": {
+            "stock": 0.00018025109602604061,
+            "through_hole_round": 0.001023871824145317,
+            "blind_hole_round": 0.001157265854999423,
+            "stepped_hole_round": 0.0021253551822155714,
+            "counterbore_hole": 0.0021197369787842035,
+            "countersink_hole": 0.0022502904757857323,
+            "obround_hole": 0.0015585731016471982,
+            "slot_u": 0.006428872235119343,
+            "slot_rect": 0.004668779205530882,
+            "pocket_rect": 0.0020692821126431227,
+            "pocket_circular": 0.006144320592284203,
+            "cylinder_boss": 0.004661436192691326,
+            "rib": 0.002793052699416876,
+            "web": 0.0016233238857239485,
+            "rectangular_boss": 0.0015864033484831452,
+            "fillet": 0.9441488981246948,
+            "chamfer": 0.0001746582129271701,
+            "slot_v": 0.001514623872935772,
+            "slot_o": 0.013771073892712593
+          },
+          "semantic_label": 33,
+          "semantic_confidence": 0.9672402739524841,
+          "embedding": []
+        }
+      ],
+      "edge_probabilities": [
+        9.600687917554751e-05,
+        9.895777475321665e-05,
+        1.5139655261009466e-05,
+        5.795124252472306e-06,
+        5.002060061087832e-05,
+        6.834793748566881e-05,
+        1.4835708498139866e-05,
+        5.7151305554725695e-06,
+        1.5368183881037112e-07,
+        1.0096287184069297e-07,
+        9.262397071552186e-09,
+        9.8460128938882e-09,
+        7.17965731311665e-09,
+        7.641394184076944e-09,
+        9.213272811336992e-09,
+        1.5243609041704076e-08,
+        0.011405057273805141,
+        0.03290099650621414,
+        3.848115071036773e-08,
+        2.6499341387875575e-08,
+        5.367267931433162e-06,
+        1.068482561095152e-05,
+        2.0242094933564658e-07,
+        1.0526408544819787e-07,
+        4.15302974943188e-06,
+        5.406981017586077e-06,
+        0.0013670880580320954,
+        0.002625429769977927,
+        2.20197371447739e-08,
+        8.513736382553816e-09,
+        2.20197371447739e-08,
+        8.513736382553816e-09,
+        9.658811528368005e-10,
+        6.31241614534872e-10,
+        9.945552159607018e-10,
+        1.2025400675241826e-09,
+        8.865385092704514e-10,
+        4.077258253243343e-10,
+        0.003815713804215193,
+        0.0041013313457369804,
+        5.2881972578688874e-08,
+        2.867683868146287e-08,
+        4.949552476318786e-06,
+        6.2007434280531015e-06,
+        3.3809951105467917e-07,
+        1.545585774920255e-07,
+        6.396678145392798e-06,
+        1.164214154414367e-05,
+        0.0018423093715682626,
+        0.0033356528729200363,
+        7.603791891597211e-05,
+        3.306326107122004e-05,
+        2.7489598153351835e-08,
+        2.405720245235443e-08,
+        3.1541258493916757e-09,
+        2.6459174851112266e-09,
+        8.595174705305908e-08,
+        8.001473617014199e-08,
+        3.341265486511702e-09,
+        2.777036822720902e-09,
+        1.0439467956757653e-08,
+        3.553463079342123e-09,
+        1.4530274761170858e-08,
+        5.643972400548591e-09,
+        2.8645185778941595e-08,
+        4.829322719501761e-09,
+        2.8202535418131447e-08,
+        4.748025972389769e-09,
+        1.4293277672550175e-08,
+        5.700011573850361e-09,
+        1.0507507752777201e-08,
+        3.5919502927583835e-09,
+        7.236961696577282e-09,
+        2.0029895964057687e-08,
+        7.217195285846856e-09,
+        1.9397910833163223e-08,
+        0.9998358488082886,
+        0.9998704195022583,
+        7.167308413436047e-11,
+        1.634362783997645e-11,
+        7.292351444920797e-11,
+        1.662248463873972e-11,
+        1.4152881089302127e-09,
+        1.4667675407586955e-10,
+        1.4365423295359392e-09,
+        1.4933623782020788e-10
+      ],
+      "relation_edges": [
+        [
+          0,
+          6
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          0,
+          16
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          0,
+          13
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          0,
+          17
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          4,
+          17
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          15,
+          5
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          16,
+          6
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          13,
+          8
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          11
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          13
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          15,
+          13
+        ],
+        [
+          13,
+          17
+        ],
+        [
+          17,
+          13
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          16,
+          13
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          0,
+          12
+        ],
+        [
+          0,
+          14
+        ],
+        [
+          0,
+          15
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          15
+        ],
+        [
+          1,
+          16
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          2,
+          17
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          3,
+          14
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          3,
+          17
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          5,
+          17
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          7,
+          15
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          9,
+          13
+        ],
+        [
+          9,
+          14
+        ],
+        [
+          9,
+          15
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          9,
+          17
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          10,
+          15
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          10,
+          17
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          11,
+          15
+        ],
+        [
+          11,
+          16
+        ],
+        [
+          11,
+          17
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          12,
+          9
+        ],
+        [
+          12,
+          10
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          12,
+          15
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          12,
+          17
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          13,
+          10
+        ],
+        [
+          13,
+          11
+        ],
+        [
+          13,
+          12
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          14,
+          9
+        ],
+        [
+          14,
+          10
+        ],
+        [
+          14,
+          11
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          14,
+          17
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          15,
+          8
+        ],
+        [
+          15,
+          9
+        ],
+        [
+          15,
+          10
+        ],
+        [
+          15,
+          11
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          15,
+          14
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          15,
+          17
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          16,
+          3
+        ],
+        [
+          16,
+          4
+        ],
+        [
+          16,
+          5
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          16,
+          9
+        ],
+        [
+          16,
+          10
+        ],
+        [
+          16,
+          11
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          16,
+          14
+        ],
+        [
+          16,
+          15
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ],
+        [
+          17,
+          14
+        ],
+        [
+          17,
+          15
+        ],
+        [
+          17,
+          16
+        ]
+      ],
+      "relation_probabilities": [
+        9.600687917554751e-05,
+        9.895777475321665e-05,
+        1.5139655261009466e-05,
+        5.795124252472306e-06,
+        5.002060061087832e-05,
+        6.834793748566881e-05,
+        1.4835708498139866e-05,
+        5.7151305554725695e-06,
+        1.5368183881037112e-07,
+        1.0096287184069297e-07,
+        9.262397071552186e-09,
+        9.8460128938882e-09,
+        7.17965731311665e-09,
+        7.641394184076944e-09,
+        9.213272811336992e-09,
+        1.5243609041704076e-08,
+        0.011405057273805141,
+        0.03290099650621414,
+        3.848115071036773e-08,
+        2.6499341387875575e-08,
+        5.367267931433162e-06,
+        1.068482561095152e-05,
+        2.0242094933564658e-07,
+        1.0526408544819787e-07,
+        4.15302974943188e-06,
+        5.406981017586077e-06,
+        0.0013670880580320954,
+        0.002625429769977927,
+        2.20197371447739e-08,
+        8.513736382553816e-09,
+        2.20197371447739e-08,
+        8.513736382553816e-09,
+        9.658811528368005e-10,
+        6.31241614534872e-10,
+        9.945552159607018e-10,
+        1.2025400675241826e-09,
+        8.865385092704514e-10,
+        4.077258253243343e-10,
+        0.003815713804215193,
+        0.0041013313457369804,
+        5.2881972578688874e-08,
+        2.867683868146287e-08,
+        4.949552476318786e-06,
+        6.2007434280531015e-06,
+        3.3809951105467917e-07,
+        1.545585774920255e-07,
+        6.396678145392798e-06,
+        1.164214154414367e-05,
+        0.0018423093715682626,
+        0.0033356528729200363,
+        7.603791891597211e-05,
+        3.306326107122004e-05,
+        2.7489598153351835e-08,
+        2.405720245235443e-08,
+        3.1541258493916757e-09,
+        2.6459174851112266e-09,
+        8.595174705305908e-08,
+        8.001473617014199e-08,
+        3.341265486511702e-09,
+        2.777036822720902e-09,
+        1.0439467956757653e-08,
+        3.553463079342123e-09,
+        1.4530274761170858e-08,
+        5.643972400548591e-09,
+        2.8645185778941595e-08,
+        4.829322719501761e-09,
+        2.8202535418131447e-08,
+        4.748025972389769e-09,
+        1.4293277672550175e-08,
+        5.700011573850361e-09,
+        1.0507507752777201e-08,
+        3.5919502927583835e-09,
+        7.236961696577282e-09,
+        2.0029895964057687e-08,
+        7.217195285846856e-09,
+        1.9397910833163223e-08,
+        0.9998358488082886,
+        0.9998704195022583,
+        7.167308413436047e-11,
+        1.634362783997645e-11,
+        7.292351444920797e-11,
+        1.662248463873972e-11,
+        1.4152881089302127e-09,
+        1.4667675407586955e-10,
+        1.4365423295359392e-09,
+        1.4933623782020788e-10,
+        0.00016211179899983108,
+        0.004411707166582346,
+        5.9972571762045845e-06,
+        0.007803034503012896,
+        0.0002364595711696893,
+        3.4405297810735647e-06,
+        3.5695652513823006e-06,
+        4.843640155627327e-09,
+        7.170037008563668e-09,
+        3.6432855267776176e-05,
+        3.0761922971578315e-05,
+        1.348997025196752e-09,
+        1.503615232323341e-09,
+        0.00016559402865823358,
+        7.289090262929676e-06,
+        2.4143420773725666e-07,
+        8.462299774691928e-06,
+        7.481626198568847e-06,
+        5.152663220542308e-07,
+        9.622356730853987e-12,
+        4.81446313926881e-08,
+        3.8671572610837757e-08,
+        6.228221272053247e-10,
+        1.443568264924977e-09,
+        1.4231192890790112e-09,
+        0.0026030316948890686,
+        6.477420811279444e-06,
+        2.0478809403812193e-07,
+        3.638691850937903e-05,
+        9.075574780581519e-06,
+        1.687653963244884e-07,
+        3.318351886674731e-12,
+        3.2515202974536805e-08,
+        3.7666243457579185e-08,
+        8.204204676731663e-11,
+        8.467783418897312e-11,
+        2.380985131278379e-10,
+        1.8530654415371828e-05,
+        3.539176134381705e-07,
+        2.700759864637803e-07,
+        3.2905296620810986e-07,
+        3.0201763934201153e-07,
+        2.6013276865910484e-08,
+        5.864060972915475e-12,
+        2.0540580347727655e-09,
+        2.1730461874369666e-09,
+        9.571127917995526e-11,
+        2.91061341695098e-10,
+        2.8693331044493675e-10,
+        0.004277046769857407,
+        8.865129530022386e-06,
+        3.627542537287809e-05,
+        2.5550241389282746e-07,
+        1.1323074431857094e-05,
+        2.7474979447106307e-07,
+        1.1621885745438654e-11,
+        5.799247659865614e-08,
+        6.728515700160642e-08,
+        1.2868751897432418e-10,
+        1.328218923735136e-10,
+        3.66921215633198e-10,
+        0.00019236264051869512,
+        8.250081009464338e-06,
+        9.80280583462445e-06,
+        2.331778006237073e-07,
+        1.182351479656063e-05,
+        2.0488029406351416e-07,
+        1.9961386499289802e-07,
+        2.2219713048665657e-12,
+        4.816198221485601e-12,
+        3.787400615351544e-08,
+        4.997743885404304e-10,
+        4.926947183570007e-10,
+        2.2818096899273298e-14,
+        4.945928378224246e-14,
+        1.9445407090090683e-11,
+        1.796500101458598e-11,
+        7.38933914057327e-11,
+        3.1400538773596054e-06,
+        6.5950369609879544e-09,
+        7.131537671511978e-08,
+        7.539389912381012e-08,
+        1.1555475509794633e-07,
+        9.675733825265098e-11,
+        1.271480004616521e-10,
+        5.643629918949955e-08,
+        2.843387036932654e-08,
+        1.7863683865471103e-08,
+        1.9090252934006458e-08,
+        3.56101601539649e-08,
+        3.504737833281979e-08,
+        3.0682947453897214e-06,
+        1.618432037275852e-07,
+        6.183319811725596e-08,
+        7.914455579793866e-08,
+        1.1079067974151258e-07,
+        1.2131136373216833e-10,
+        1.601334342904437e-10,
+        7.080561914563077e-08,
+        3.6877594311590656e-08,
+        2.1426322049933333e-08,
+        2.339120719341281e-08,
+        4.576361689601072e-08,
+        4.5040280838293256e-08,
+        2.6137751962806988e-09,
+        1.2984249092573563e-12,
+        6.013755032147072e-13,
+        2.3491029000483055e-13,
+        2.2848178003845613e-15,
+        2.2677339173160505e-11,
+        2.928648989986016e-11,
+        3.971835394622758e-05,
+        1.7935617435682616e-08,
+        2.112597652370596e-09,
+        5.326585323533507e-15,
+        3.428952766171278e-07,
+        3.914399826498993e-07,
+        2.9319483019207837e-06,
+        2.873153562177322e-06,
+        3.934960801643683e-09,
+        6.173228703394706e-13,
+        2.2736573908332947e-12,
+        6.395750357275631e-13,
+        5.831571967126418e-15,
+        3.7614498321625334e-11,
+        4.8453904083478605e-11,
+        2.9081331376801245e-05,
+        3.2859787779671024e-08,
+        3.969372386336545e-09,
+        1.3668073461502606e-14,
+        6.633707982928172e-08,
+        7.952026948032653e-08,
+        4.142050897826266e-07,
+        4.067456416123605e-07,
+        1.7087062587961555e-05,
+        2.3859154651972858e-08,
+        8.3283735463624e-09,
+        9.884167928575494e-10,
+        1.3850850244523372e-08,
+        1.5315272605676e-08,
+        2.2001777136293477e-11,
+        2.2086686612965423e-07,
+        2.861163750367268e-07,
+        4.254717467233604e-08,
+        8.823489139331286e-08,
+        2.4630953526783017e-11,
+        3.987674119798612e-07,
+        4.709812628789223e-07,
+        1.895436184895516e-06,
+        1.8588654029372265e-06,
+        1.0194516107731033e-05,
+        1.7290084031174047e-08,
+        7.603245144593984e-09,
+        6.224218918049473e-10,
+        1.2218997369473072e-08,
+        1.4773716972005246e-11,
+        6.744332381458662e-08,
+        8.677520213495882e-08,
+        2.6461508539910028e-08,
+        3.2540022232296906e-08,
+        1.834828122770915e-11,
+        6.801155638669343e-09,
+        8.032817966352468e-09,
+        3.415359373093452e-08,
+        3.3503926744060664e-08,
+        5.956943271989701e-11,
+        3.8052091181793243e-14,
+        8.247967060856162e-14,
+        2.9031433507187288e-11,
+        2.414303305886545e-11,
+        2.2107160546624982e-10,
+        1.3569386933531824e-11,
+        4.3019251355636e-11,
+        1.8559256562133974e-11,
+        1.4586866825538891e-08,
+        1.7440022759274143e-08,
+        3.0161149311425106e-07,
+        3.690911754006265e-08,
+        6.38606323377644e-08,
+        1.1928927845517023e-09,
+        0.974859356880188,
+        0.8398122787475586,
+        0.8388586044311523,
+        2.4422136535307004e-10,
+        2.023195500022723e-10,
+        1.463709535520774e-11,
+        2.001959015229815e-11,
+        1.5707707134993143e-08,
+        1.8780133004270283e-08,
+        3.277898201758944e-07,
+        4.066901482246976e-08,
+        7.544856117647214e-08,
+        1.432233331932764e-09,
+        0.9730466604232788,
+        0.844656765460968,
+        0.843726396560669,
+        3.819811411620577e-10,
+        7.800530360535518e-11,
+        5.2783950821311265e-11,
+        1.1454069637206743e-10,
+        3.748763788280485e-08,
+        4.7937902536432375e-08,
+        4.3807949623442255e-06,
+        2.115680075576165e-07,
+        3.277979203630821e-07,
+        7.577720673168642e-09,
+        0.8279841542243958,
+        0.8328681588172913,
+        0.9592446684837341,
+        3.7518071982489687e-10,
+        3.7960162790895424e-11,
+        7.671659141283982e-11,
+        1.1247191372687482e-10,
+        3.6784655321753235e-08,
+        4.7038867023729836e-08,
+        4.276169420336373e-06,
+        2.0651513921166043e-07,
+        3.2056382792688964e-07,
+        7.395296375278804e-09,
+        0.8265016078948975,
+        0.8313164114952087,
+        0.959277331829071
+      ]
+    },
+    "R_stages": {
+      "initial": [
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ]
+        }
+      ],
+      "geometric": [
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0,
+            2,
+            6,
+            13,
+            16
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0,
+            4,
+            6,
+            13,
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0,
+            2,
+            4,
+            6,
+            13,
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "concave_boundary_region"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            1,
+            2,
+            10
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            1,
+            2,
+            6,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            1,
+            5,
+            6,
+            13,
+            14
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            3,
+            4,
+            9
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            3,
+            4,
+            6,
+            8,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            3,
+            5,
+            6,
+            13,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "blind_hole_round",
+          "face_indices": [
+            5,
+            11,
+            12
+          ],
+          "proposal_sources": [
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            12
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition",
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition",
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition",
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition",
+            "same_instance_strong_component"
+          ]
+        }
+      ],
+      "pre_validation": [
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            16
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0
+          ],
+          "proposal_sources": [
+            "concave_boundary_region"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            16
+          ],
+          "proposal_sources": [
+            "concave_boundary_region"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            17
+          ],
+          "proposal_sources": [
+            "concave_boundary_region"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            1,
+            2,
+            10
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            1,
+            2,
+            6,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            1,
+            5,
+            6,
+            13,
+            14
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            3,
+            4,
+            9
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            3,
+            4,
+            6,
+            8,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            3,
+            5,
+            6,
+            13,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "blind_hole_round",
+          "face_indices": [
+            5,
+            11,
+            12
+          ],
+          "proposal_sources": [
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            12
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition",
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition",
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition",
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition",
+            "same_instance_strong_component"
+          ]
+        }
+      ],
+      "post_validation": [
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            12
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ]
+        }
+      ],
+      "global_selection": [
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ]
+        }
+      ],
+      "pre_boundary": [
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ]
+        }
+      ],
+      "post_boundary": [
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ]
+        }
+      ],
+      "final": [
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ]
+        }
+      ]
+    },
+    "Q_stages": {
+      "initial": [
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14,
+            15
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16,
+            17
+          ]
+        }
+      ],
+      "geometric": [
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0,
+            2,
+            6,
+            13,
+            16
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0,
+            4,
+            6,
+            13,
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0,
+            2,
+            4,
+            6,
+            13,
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "concave_boundary_region"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            1,
+            2,
+            10
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            1,
+            2,
+            6,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            1,
+            5,
+            6,
+            13,
+            14
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            3,
+            4,
+            9
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            3,
+            4,
+            6,
+            8,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            3,
+            5,
+            6,
+            13,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "blind_hole_round",
+          "face_indices": [
+            5,
+            11,
+            12
+          ],
+          "proposal_sources": [
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            12
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition"
+          ]
+        }
+      ],
+      "pre_validation": [
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            16
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            17
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "slot_rect",
+          "face_indices": [
+            0
+          ],
+          "proposal_sources": [
+            "concave_boundary_region"
+          ]
+        },
+        {
+          "macro_feature": "slot_o",
+          "face_indices": [
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "concave_boundary_region"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            1,
+            2,
+            10
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            1,
+            2,
+            6,
+            7,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            1,
+            5,
+            6,
+            13,
+            14
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            3,
+            4,
+            9
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            3,
+            4,
+            6,
+            8,
+            13
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            3,
+            5,
+            6,
+            13,
+            15
+          ],
+          "proposal_sources": [
+            "elongated_swept_channel",
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "blind_hole_round",
+          "face_indices": [
+            5,
+            11,
+            12
+          ],
+          "proposal_sources": [
+            "loop_material_side_guided"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            12
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14,
+            15
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16,
+            17
+          ],
+          "proposal_sources": [
+            "same_instance_strong_component"
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ],
+          "proposal_sources": [
+            "coaxial_cylinder_cone_chain",
+            "parent_surface_transition"
+          ]
+        }
+      ],
+      "post_validation": [
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ]
+        },
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            12
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ]
+        }
+      ],
+      "global_selection": [
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ]
+        }
+      ],
+      "pre_boundary": [
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ]
+        }
+      ],
+      "post_boundary": [
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ]
+        }
+      ],
+      "final": [
+        {
+          "macro_feature": "cylinder_boss",
+          "face_indices": [
+            11,
+            12
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            9
+          ]
+        },
+        {
+          "macro_feature": "through_hole_round",
+          "face_indices": [
+            10
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            14
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            15
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            16
+          ]
+        },
+        {
+          "macro_feature": "fillet",
+          "face_indices": [
+            17
+          ]
+        }
+      ]
+    },
+    "candidate_count": 25,
+    "selector": {
+      "input_count": 25,
+      "unique_count": 25,
+      "positive_count": 7,
+      "negative_or_zero_rejected": 18,
+      "component_count": 7,
+      "components": [
+        {
+          "candidate_count": 1,
+          "selected_count": 1,
+          "method": "exact",
+          "objective": 7.69929914938616,
+          "selected_score": 7.69929914938616,
+          "optimal_solutions_visited": 1,
+          "nodes_visited": 3,
+          "ambiguous_objects": 0,
+          "optimality_certified": true,
+          "beam_truncated": false
+        },
+        {
+          "candidate_count": 1,
+          "selected_count": 1,
+          "method": "exact",
+          "objective": 5.293887975538669,
+          "selected_score": 5.293887975538669,
+          "optimal_solutions_visited": 1,
+          "nodes_visited": 3,
+          "ambiguous_objects": 0,
+          "optimality_certified": true,
+          "beam_truncated": false
+        },
+        {
+          "candidate_count": 1,
+          "selected_count": 1,
+          "method": "exact",
+          "objective": 5.294230821455417,
+          "selected_score": 5.294230821455417,
+          "optimal_solutions_visited": 1,
+          "nodes_visited": 3,
+          "ambiguous_objects": 0,
+          "optimality_certified": true,
+          "beam_truncated": false
+        },
+        {
+          "candidate_count": 1,
+          "selected_count": 1,
+          "method": "exact",
+          "objective": 5.236644389952121,
+          "selected_score": 5.236644389952121,
+          "optimal_solutions_visited": 1,
+          "nodes_visited": 3,
+          "ambiguous_objects": 0,
+          "optimality_certified": true,
+          "beam_truncated": false
+        },
+        {
+          "candidate_count": 1,
+          "selected_count": 1,
+          "method": "exact",
+          "objective": 5.236938439533013,
+          "selected_score": 5.236938439533013,
+          "optimal_solutions_visited": 1,
+          "nodes_visited": 3,
+          "ambiguous_objects": 0,
+          "optimality_certified": true,
+          "beam_truncated": false
+        },
+        {
+          "candidate_count": 1,
+          "selected_count": 1,
+          "method": "exact",
+          "objective": 8.508303658809657,
+          "selected_score": 8.508303658809657,
+          "optimal_solutions_visited": 1,
+          "nodes_visited": 3,
+          "ambiguous_objects": 0,
+          "optimality_certified": true,
+          "beam_truncated": false
+        },
+        {
+          "candidate_count": 1,
+          "selected_count": 1,
+          "method": "exact",
+          "objective": 8.983918524430589,
+          "selected_score": 8.983918524430589,
+          "optimal_solutions_visited": 1,
+          "nodes_visited": 3,
+          "ambiguous_objects": 0,
+          "optimality_certified": true,
+          "beam_truncated": false
+        }
+      ],
+      "all_optimality_certified": true,
+      "beam_truncation_count": 0
+    }
+  },
+  "inference_seconds": 0.2250493000028655,
+  "truth_used": false
+}

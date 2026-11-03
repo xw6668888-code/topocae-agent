@@ -1,0 +1,117 @@
+{
+  "sample_id": "g10_t10_v2_s_00384",
+  "source_step_sha256": "d9361d922f0ffc69f1b12c32c76ca7d98e0707cda905c9cbb1878c266d224023",
+  "face_count": 30,
+  "face_macro_classes": [
+    "stock",
+    "fillet",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stepped_hole_round",
+    "blind_hole_round",
+    "fillet",
+    "stock",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "pocket_circular",
+    "chamfer",
+    "chamfer",
+    "chamfer",
+    "chamfer",
+    "stepped_hole_round",
+    "stepped_hole_round",
+    "blind_hole_round",
+    "blind_hole_round",
+    "pocket_circular",
+    "stepped_hole_round",
+    "stepped_hole_round",
+    "blind_hole_round",
+    "stepped_hole_round",
+    "stepped_hole_round",
+    "stepped_hole_round"
+  ],
+  "objects": [
+    {
+      "class": "obround_hole",
+      "instance_id": 1,
+      "faces": [
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "class": "blind_hole_round",
+      "instance_id": 2,
+      "faces": [
+        22,
+        26
+      ]
+    },
+    {
+      "class": "blind_hole_round",
+      "instance_id": 3,
+      "faces": [
+        7,
+        21
+      ]
+    },
+    {
+      "class": "stepped_hole_round",
+      "instance_id": 4,
+      "faces": [
+        19,
+        24,
+        27,
+        29
+      ]
+    },
+    {
+      "class": "stepped_hole_round",
+      "instance_id": 5,
+      "faces": [
+        6,
+        20,
+        25,
+        28
+      ]
+    },
+    {
+      "class": "pocket_circular",
+      "instance_id": 6,
+      "faces": [
+        14,
+        23
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 7,
+      "faces": [
+        8
+      ]
+    },
+    {
+      "class": "chamfer",
+      "instance_id": 8,
+      "faces": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 9,
+      "faces": [
+        1
+      ]
+    }
+  ]
+}

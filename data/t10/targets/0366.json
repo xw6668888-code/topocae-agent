@@ -1,0 +1,58 @@
+{
+  "sample_id": "g10_t10_v2_i_00366",
+  "source_step_sha256": "b8d86febfadd12941bd3819a6af29aa72ede8feb06d1879860b3bf2db1b78feb",
+  "face_count": 14,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "stock",
+    "through_hole_round",
+    "rectangular_boss",
+    "rectangular_boss",
+    "rectangular_boss",
+    "rectangular_boss",
+    "countersink_hole",
+    "counterbore_hole",
+    "countersink_hole",
+    "counterbore_hole",
+    "rectangular_boss",
+    "counterbore_hole"
+  ],
+  "objects": [
+    {
+      "class": "through_hole_round",
+      "instance_id": 1,
+      "faces": [
+        3
+      ]
+    },
+    {
+      "class": "rectangular_boss",
+      "instance_id": 2,
+      "faces": [
+        4,
+        5,
+        6,
+        7,
+        12
+      ]
+    },
+    {
+      "class": "counterbore_hole",
+      "instance_id": 3,
+      "faces": [
+        9,
+        11,
+        13
+      ]
+    },
+    {
+      "class": "countersink_hole",
+      "instance_id": 4,
+      "faces": [
+        8,
+        10
+      ]
+    }
+  ]
+}

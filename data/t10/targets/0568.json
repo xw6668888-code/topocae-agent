@@ -1,0 +1,29 @@
+{
+  "sample_id": "g10_t10_v2_p_00170",
+  "source_step_sha256": "1bc1b1d314409f48d4c4e69397fa80870c5b795d14825e11470117077029fdc6",
+  "face_count": 10,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole",
+    "obround_hole"
+  ],
+  "objects": [
+    {
+      "class": "obround_hole",
+      "instance_id": 1,
+      "faces": [
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ]
+}

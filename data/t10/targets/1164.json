@@ -1,0 +1,251 @@
+{
+  "sample_id": "g10_t10_v2_s_00377",
+  "source_step_sha256": "a33d4b72f03405e5c7dcc166c532b9f1d67960bef206c0c82ebd2bc92da5b6a6",
+  "face_count": 43,
+  "face_macro_classes": [
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "web",
+    "fillet",
+    "web",
+    "web",
+    "stock",
+    "web",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "stock",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "through_hole_round",
+    "stock"
+  ],
+  "objects": [
+    {
+      "class": "web",
+      "instance_id": 1,
+      "faces": [
+        18,
+        20,
+        21,
+        23
+      ]
+    },
+    {
+      "class": "fillet",
+      "instance_id": 2,
+      "faces": [
+        19
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 3,
+      "faces": [
+        29
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 4,
+      "faces": [
+        5
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 5,
+      "faces": [
+        32
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 6,
+      "faces": [
+        8
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 7,
+      "faces": [
+        35
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 8,
+      "faces": [
+        11
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 9,
+      "faces": [
+        38
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 10,
+      "faces": [
+        14
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 11,
+      "faces": [
+        40
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 12,
+      "faces": [
+        16
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 13,
+      "faces": [
+        30
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 14,
+      "faces": [
+        6
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 15,
+      "faces": [
+        33
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 16,
+      "faces": [
+        9
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 17,
+      "faces": [
+        36
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 18,
+      "faces": [
+        12
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 19,
+      "faces": [
+        39
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 20,
+      "faces": [
+        15
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 21,
+      "faces": [
+        41
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 22,
+      "faces": [
+        17
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 23,
+      "faces": [
+        31
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 24,
+      "faces": [
+        7
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 25,
+      "faces": [
+        34
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 26,
+      "faces": [
+        10
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 27,
+      "faces": [
+        37
+      ]
+    },
+    {
+      "class": "through_hole_round",
+      "instance_id": 28,
+      "faces": [
+        13
+      ]
+    }
+  ]
+}

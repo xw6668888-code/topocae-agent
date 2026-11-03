@@ -1,0 +1,38 @@
+{
+  "sample_id": "g10_t10_v2_p_00208",
+  "source_step_sha256": "e95830c4769cf966f51bd3b9820f0e94bf782c1f1c78fceba8f966f430a7afeb",
+  "face_count": 7,
+  "face_macro_classes": [
+    "stock",
+    "chamfer",
+    "stock",
+    "through_hole_round",
+    "countersink_hole",
+    "stock",
+    "countersink_hole"
+  ],
+  "objects": [
+    {
+      "class": "through_hole_round",
+      "instance_id": 1,
+      "faces": [
+        3
+      ]
+    },
+    {
+      "class": "chamfer",
+      "instance_id": 2,
+      "faces": [
+        1
+      ]
+    },
+    {
+      "class": "countersink_hole",
+      "instance_id": 3,
+      "faces": [
+        4,
+        6
+      ]
+    }
+  ]
+}

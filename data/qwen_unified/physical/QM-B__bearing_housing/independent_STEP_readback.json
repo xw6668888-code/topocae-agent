@@ -1,0 +1,159 @@
+{
+  "checks": [
+    {
+      "kind": "radius_axis_extent",
+      "measured": [
+        {
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            191.61205368804,
+            19.0,
+            333.90502729105975
+          ],
+          "depth_mm": 9.0,
+          "face_number": 14,
+          "radius_mm": 3.0,
+          "start_mm": [
+            196.11205368804,
+            19.0,
+            333.90502729106
+          ]
+        }
+      ],
+      "pass_": true,
+      "source_faces": [
+        23,
+        24
+      ]
+    },
+    {
+      "kind": "radius_axis_extent",
+      "measured": [
+        {
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            191.61205368804,
+            19.0,
+            243.7189209199498
+          ],
+          "depth_mm": 9.0,
+          "face_number": 45,
+          "radius_mm": 3.0,
+          "start_mm": [
+            196.11205368804,
+            19.0,
+            243.71892091995
+          ]
+        }
+      ],
+      "pass_": true,
+      "source_faces": [
+        25,
+        26
+      ]
+    },
+    {
+      "kind": "radius_axis_extent",
+      "measured": [
+        {
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            191.61205368804,
+            -15.0,
+            333.90502729105975
+          ],
+          "depth_mm": 9.0,
+          "face_number": 15,
+          "radius_mm": 3.0,
+          "start_mm": [
+            196.11205368804,
+            -15.0,
+            333.90502729106
+          ]
+        }
+      ],
+      "pass_": true,
+      "source_faces": [
+        27,
+        28
+      ]
+    },
+    {
+      "kind": "radius_axis_extent",
+      "measured": [
+        {
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            191.61205368804,
+            -15.0,
+            243.7189209199498
+          ],
+          "depth_mm": 9.0,
+          "face_number": 56,
+          "radius_mm": 3.0,
+          "start_mm": [
+            196.11205368804,
+            -15.0,
+            243.71892091995
+          ]
+        }
+      ],
+      "pass_": true,
+      "source_faces": [
+        29,
+        30
+      ]
+    }
+  ],
+  "no_reference_or_object_service_read": true,
+  "original_face_groups": [
+    [
+      23,
+      24
+    ],
+    [
+      25,
+      26
+    ],
+    [
+      27,
+      28
+    ],
+    [
+      29,
+      30
+    ]
+  ],
+  "output_readable": true,
+  "output_step": {
+    "bytes": 214584,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QM-B__bearing_housing/execution_v1/work/Bearing Housing_edited.stp",
+    "sha256": "af18bad583a29c6231f7e30a3ff82cfe0f27732f4b38cf30db886f3bbcf4ddb4"
+  },
+  "schema": "g11_independent_STEP_readback_v1",
+  "source_step": {
+    "bytes": 80236,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Bearing Housing.stp",
+    "sha256": "68c756ce4df6ba506348ea958cae4c264f1c542062a0fb58ba9b8152e92de6b8"
+  },
+  "status": "PASS",
+  "valid_solid_count": 1,
+  "volume_after_mm3": 203010.5611888819,
+  "volume_before_mm3": 202218.8798401793
+}

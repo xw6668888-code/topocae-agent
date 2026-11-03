@@ -1,0 +1,85 @@
+{
+  "checks": [
+    {
+      "kind": "target_thickness_and_fixed_midplane",
+      "measured_side_centers_mm": [
+        [
+          -305.8879463119,
+          -170.80282135451037,
+          797.6410066697617
+        ],
+        [
+          -301.8879463119,
+          -170.80282135451037,
+          797.6410066697617
+        ]
+      ],
+      "pass_": true,
+      "source_faces": [
+        14,
+        15,
+        13
+      ],
+      "source_midpoint_mm": [
+        -303.887946311952,
+        -170.8028213545283,
+        797.6410066697574
+      ]
+    },
+    {
+      "kind": "target_thickness_and_fixed_midplane",
+      "measured_side_centers_mm": [
+        [
+          -301.8879463119,
+          -170.80282135447186,
+          833.9829415412304
+        ],
+        [
+          -305.8879463119,
+          -170.80282135447186,
+          833.9829415412304
+        ]
+      ],
+      "pass_": true,
+      "source_faces": [
+        17,
+        18,
+        16
+      ],
+      "source_midpoint_mm": [
+        -303.887946311952,
+        -170.80282135452893,
+        833.9829415412545
+      ]
+    }
+  ],
+  "no_reference_or_object_service_read": true,
+  "original_face_groups": [
+    [
+      14,
+      15,
+      13
+    ],
+    [
+      17,
+      18,
+      16
+    ]
+  ],
+  "output_readable": true,
+  "output_step": {
+    "bytes": 154914,
+    "path": "W:/python/FEA/dataset_generator/artifacts/aei_paper_goals_v1/g11/executions/QM-B__support_bracket/execution_v1/work/Support Bracket_edited.stp",
+    "sha256": "63a9e284cc1ddf9318f5fea4416f20cf0c98bd59cf144679bc2d7f9cce74c386"
+  },
+  "schema": "g11_independent_STEP_readback_v1",
+  "source_step": {
+    "bytes": 57538,
+    "path": "W:/python/FEA/dataset_generator/test_part_0901/Support Bracket.stp",
+    "sha256": "c61acff8bd576b87100d2366b3b3ce559ac9f03a01dd157c31486bbb50fc1a47"
+  },
+  "status": "PASS",
+  "valid_solid_count": 1,
+  "volume_after_mm3": 1201027.492656038,
+  "volume_before_mm3": 1197685.9562825277
+}

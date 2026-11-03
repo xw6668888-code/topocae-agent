@@ -1,0 +1,101 @@
+{
+  "schema": "g10_m6_execution_receipt_v1",
+  "completed_utc": "2026-09-15T01:45:49.844509+00:00",
+  "run_id": "g10-m6-main-20260915",
+  "case_id": "guide_rail",
+  "domain": "cad",
+  "status": "PASS",
+  "actually_executed": true,
+  "manifest": {
+    "path": "workspace://reports/aei_paper_goals_v1/g10/M6_ENGINEERING_MANIFEST.json",
+    "bytes": 66304,
+    "sha256": "fa1721714c99834daaf5db0cc8c5e85cabd97e8ef6938ca7ca69f25895866129"
+  },
+  "job_spec": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/guide_rail/job_spec.json",
+    "bytes": 3056,
+    "sha256": "a87c5da3580ce3185c964021a8a08694ce2165115f95e39b9bfc193a7ed2bb45"
+  },
+  "source_step": {
+    "path": "workspace://test_part_0901/Guide Rail.stp",
+    "bytes": 51856,
+    "sha256": "b2f942c6844f8eb737692dd8aa23d6273068868e050c2541294accf27fe01c03"
+  },
+  "prediction": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/frozen_e3_outputs/guide_rail.json",
+    "bytes": 363470,
+    "sha256": "c3ffba9e68d7979d43b9148ae7bfa260509e1ab3cb87757e4b7a78942ba285ff"
+  },
+  "semantic_plan": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/guide_rail/semantic_plan.json",
+    "bytes": 525,
+    "sha256": "0578e6ef0934dc13e74ae1c7c4d6f77fa2ea2f48c7acc65e6effc8fbeccdb7a0"
+  },
+  "frozen_binding": {
+    "geometry_version": "b2f942c6844f8eb737692dd8aa23d6273068868e050c2541294accf27fe01c03",
+    "prediction_system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint",
+    "prediction_source_identity_digest": "6b8a5d45878c7ce633e1f8ccabbf02a0044d0bf1407a25d337e3e92dcceab783",
+    "plan_digest": "22c4c7ab7f73071e1d350c9dfc5ea8fac9f23c58ac53781c812beab47c95d5e0",
+    "selections": [
+      {
+        "operation_index": 0,
+        "action": "set_hole_spacing",
+        "selector": {
+          "feature_classes": [
+            "counterbore_hole"
+          ],
+          "radius_mm": null,
+          "scope": "all"
+        },
+        "role": "whole_feature",
+        "object_ids": [
+          "e3:b2f942c6844f:counterbore_hole:0dcca58fbb7de7ae",
+          "e3:b2f942c6844f:counterbore_hole:1e177f78e79d15bf",
+          "e3:b2f942c6844f:counterbore_hole:331d5b4dc4c53021"
+        ],
+        "object_indices": [
+          4,
+          5,
+          6
+        ],
+        "role_face_sets": [
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            32,
+            33,
+            34
+          ],
+          [
+            35,
+            36,
+            37
+          ]
+        ],
+        "selection_count": 3
+      }
+    ],
+    "binding_digest": "e1b434eb713e688a1dc3b729b5719e0d471125d70957e8278fcf4b6caee71b47"
+  },
+  "final_step": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/guide_rail/final.step",
+    "bytes": 136021,
+    "sha256": "da4f93d1b31d0a3aebce39c3bc92eb0ce5db0f793da38f1f80c8c6cda1c29a66"
+  },
+  "executor_audit": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/guide_rail/attempts/attempt_001/edit_audit.json",
+    "bytes": 3847,
+    "sha256": "4025304749a9dd90e58166e5c1dc7d36d5236cc7c778ba4dbe0cfe9f3e499be7"
+  },
+  "independent_audit": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/guide_rail/independent_cad_audit.json",
+    "bytes": 1680,
+    "sha256": "6f55ff2b7ac026694a49ec23056373bcffa68fdf4f07cf52684b294a43dfe849"
+  },
+  "elapsed_seconds": 0.792665200016927,
+  "attempt_count": 1,
+  "truth_used": false
+}

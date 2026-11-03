@@ -1,0 +1,221 @@
+{
+  "available_feature_classes": [
+    "chamfer",
+    "fillet",
+    "slot_o",
+    "slot_rect"
+  ],
+  "content_policy": {
+    "internal_face_indices_excluded": true,
+    "model_scores_excluded": true,
+    "prediction_only": true,
+    "truth_used": false
+  },
+  "geometry_handle": "gh_db2143ca72503eac",
+  "objects": [
+    {
+      "feature_class": "chamfer",
+      "measurements": {},
+      "member_face_handles": [
+        "fh_d6dc89f974a747c4"
+      ],
+      "object_handle": "oh_192382d7001ac20b",
+      "role_areas_mm2": {
+        "whole_feature": 357.009003131
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_d6dc89f974a747c4"
+        ]
+      }
+    },
+    {
+      "feature_class": "chamfer",
+      "measurements": {},
+      "member_face_handles": [
+        "fh_ab36ada9b704433d"
+      ],
+      "object_handle": "oh_1fab97a95fdd46bb",
+      "role_areas_mm2": {
+        "whole_feature": 357.009003131
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_ab36ada9b704433d"
+        ]
+      }
+    },
+    {
+      "feature_class": "chamfer",
+      "measurements": {},
+      "member_face_handles": [
+        "fh_a844f013dfc11581"
+      ],
+      "object_handle": "oh_66b3c7ac7c235619",
+      "role_areas_mm2": {
+        "whole_feature": 274.700504112
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_a844f013dfc11581"
+        ]
+      }
+    },
+    {
+      "feature_class": "chamfer",
+      "measurements": {},
+      "member_face_handles": [
+        "fh_628c8573576a1380"
+      ],
+      "object_handle": "oh_d0b0ba75eff64059",
+      "role_areas_mm2": {
+        "whole_feature": 274.700504112
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_628c8573576a1380"
+        ]
+      }
+    },
+    {
+      "feature_class": "fillet",
+      "measurements": {},
+      "member_face_handles": [
+        "fh_63d732ea3e29eb7a",
+        "fh_6ba606bcaa19dea8"
+      ],
+      "object_handle": "oh_34321a521e8e4331",
+      "role_areas_mm2": {
+        "whole_feature": 539.183087647
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_63d732ea3e29eb7a",
+          "fh_6ba606bcaa19dea8"
+        ]
+      }
+    },
+    {
+      "feature_class": "slot_o",
+      "measurements": {
+        "radii_mm": [
+          2.07555700082156
+        ]
+      },
+      "member_face_handles": [
+        "fh_03d8ff0d3803258c"
+      ],
+      "object_handle": "oh_fa43a09f8fed3ead",
+      "role_areas_mm2": {
+        "whole_feature": 978.083193883
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_03d8ff0d3803258c"
+        ]
+      }
+    },
+    {
+      "feature_class": "fillet",
+      "measurements": {},
+      "member_face_handles": [
+        "fh_84b3fc16dcc04495"
+      ],
+      "object_handle": "oh_ffe8059dedb46a67",
+      "role_areas_mm2": {
+        "whole_feature": 15069.108144935
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_84b3fc16dcc04495"
+        ]
+      }
+    },
+    {
+      "feature_class": "slot_rect",
+      "measurements": {},
+      "member_face_handles": [
+        "fh_4e121eef443d2828",
+        "fh_1e05ee6f29bd5b9a",
+        "fh_e074ec7164762544"
+      ],
+      "object_handle": "oh_fc64c52d29afd4ae",
+      "role_areas_mm2": {
+        "whole_feature": 1050.217472267
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_4e121eef443d2828",
+          "fh_1e05ee6f29bd5b9a",
+          "fh_e074ec7164762544"
+        ]
+      }
+    },
+    {
+      "feature_class": "slot_rect",
+      "measurements": {},
+      "member_face_handles": [
+        "fh_44ba19c65190cb37",
+        "fh_d3a44d2627d94a51",
+        "fh_8a01af53388081e8"
+      ],
+      "object_handle": "oh_da3b0654de875c2f",
+      "role_areas_mm2": {
+        "whole_feature": 1050.217472267
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_44ba19c65190cb37",
+          "fh_d3a44d2627d94a51",
+          "fh_8a01af53388081e8"
+        ]
+      }
+    },
+    {
+      "feature_class": "slot_rect",
+      "measurements": {},
+      "member_face_handles": [
+        "fh_32f784f4a489f874",
+        "fh_47539861c28f538a",
+        "fh_fcd3f553729dd93f"
+      ],
+      "object_handle": "oh_98d32c2f7861b740",
+      "role_areas_mm2": {
+        "whole_feature": 1050.217472267
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_32f784f4a489f874",
+          "fh_47539861c28f538a",
+          "fh_fcd3f553729dd93f"
+        ]
+      }
+    },
+    {
+      "feature_class": "slot_rect",
+      "measurements": {},
+      "member_face_handles": [
+        "fh_619be989b5fc10ba",
+        "fh_bac67694cabce104",
+        "fh_6e0c3c4a42f6d4e3"
+      ],
+      "object_handle": "oh_cca5440e55dca13f",
+      "role_areas_mm2": {
+        "whole_feature": 1050.217472267
+      },
+      "roles": {
+        "whole_feature": [
+          "fh_619be989b5fc10ba",
+          "fh_bac67694cabce104",
+          "fh_6e0c3c4a42f6d4e3"
+        ]
+      }
+    }
+  ],
+  "part_measurements": {
+    "three_counterbore_spacing": {}
+  },
+  "schema": "g10_m7_e3_semantic_instance_measurement_role_catalog_v1",
+  "service_version": "sv_aea175885bce40f0",
+  "system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint"
+}

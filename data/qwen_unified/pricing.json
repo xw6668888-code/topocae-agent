@@ -1,0 +1,24 @@
+{
+  "price_kind": "official_list_estimate_not_invoice",
+  "prices_per_million": {
+    "qwen3.6-plus": {
+      "currency": "CNY",
+      "input": 2.0,
+      "output": 12.0,
+      "tier": "input <=256k; Beijing"
+    },
+    "qwen3.8-max-0902": {
+      "cached_input": 1.5,
+      "currency": "CNY",
+      "input": 12.0,
+      "output": 36.0,
+      "tier": "Beijing"
+    }
+  },
+  "sources": [
+    "https://help.aliyun.com/zh/model-studio/qwen3-6-plus",
+    "https://help.aliyun.com/zh/model-studio/qwen3-8-max",
+    "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions"
+  ],
+  "verified_date": "2026-10-23"
+}

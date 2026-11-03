@@ -1,0 +1,43 @@
+{
+  "sample_id": "g10_t10_v2_i_00293",
+  "source_step_sha256": "804e44ee0ca81714eb4969670ad71beec2dfb412eddd6aa9886db36fbd3aa002",
+  "face_count": 14,
+  "face_macro_classes": [
+    "slot_rect",
+    "stock",
+    "stock",
+    "slot_rect",
+    "slot_rect",
+    "stock",
+    "stock",
+    "stock",
+    "slot_rect",
+    "stock",
+    "stepped_hole_round",
+    "stepped_hole_round",
+    "stepped_hole_round",
+    "stepped_hole_round"
+  ],
+  "objects": [
+    {
+      "class": "stepped_hole_round",
+      "instance_id": 1,
+      "faces": [
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "class": "slot_rect",
+      "instance_id": 2,
+      "faces": [
+        0,
+        3,
+        4,
+        8
+      ]
+    }
+  ]
+}

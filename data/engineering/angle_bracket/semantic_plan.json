@@ -1,0 +1,50 @@
+{
+  "schema_version": "2",
+  "status": "ready",
+  "domain": "cae",
+  "operations": [
+    {
+      "action": "set_material",
+      "material_id": "Steel45"
+    },
+    {
+      "action": "set_global_mesh",
+      "size_mm": 2.0
+    },
+    {
+      "action": "fix_features",
+      "target": {
+        "feature_classes": [
+          "counterbore_hole"
+        ],
+        "radius_mm": null,
+        "scope": "all"
+      },
+      "role": "whole_feature"
+    },
+    {
+      "action": "apply_force",
+      "target": {
+        "feature_classes": [
+          "obround_hole"
+        ],
+        "radius_mm": null,
+        "scope": "all"
+      },
+      "role": "inner_walls",
+      "magnitude_N": 100.0,
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "basis": "per_instance"
+    },
+    {
+      "action": "set_analysis",
+      "type": "linear_static"
+    }
+  ],
+  "clarifications": [],
+  "reason": "G10 frozen user-confirmed reference plan; not an LLM result"
+}

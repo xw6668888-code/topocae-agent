@@ -1,0 +1,85 @@
+{
+  "schema": "g10_m6_execution_receipt_v1",
+  "completed_utc": "2026-09-15T01:45:48.572911+00:00",
+  "run_id": "g10-m6-main-20260915",
+  "case_id": "flanged_sleeve",
+  "domain": "cad",
+  "status": "PASS",
+  "actually_executed": true,
+  "manifest": {
+    "path": "workspace://reports/aei_paper_goals_v1/g10/M6_ENGINEERING_MANIFEST.json",
+    "bytes": 66304,
+    "sha256": "fa1721714c99834daaf5db0cc8c5e85cabd97e8ef6938ca7ca69f25895866129"
+  },
+  "job_spec": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/flanged_sleeve/job_spec.json",
+    "bytes": 2759,
+    "sha256": "951222770edc5e6e1e2b48f28d8618c4d035525a3b4219354baa5080982a9519"
+  },
+  "source_step": {
+    "path": "workspace://test_part_0901/Flanged Sleeve.stp",
+    "bytes": 23581,
+    "sha256": "af5669560aff44d525e0d49eae30fc5e9c9df5c142cf519ce330a5a00b83d034"
+  },
+  "prediction": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/frozen_e3_outputs/flanged_sleeve.json",
+    "bytes": 185290,
+    "sha256": "0cc73e24ddf94a9285744026f66efaf68568e59e9d45fb1455745e5d46dd72ec"
+  },
+  "semantic_plan": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/flanged_sleeve/semantic_plan.json",
+    "bytes": 413,
+    "sha256": "4b239ec591d460e46abea8c450d90b5b9f9e2e4ef5cba65ada857dfd416cd839"
+  },
+  "frozen_binding": {
+    "geometry_version": "af5669560aff44d525e0d49eae30fc5e9c9df5c142cf519ce330a5a00b83d034",
+    "prediction_system": "frozen_D0_R_Q_seed_20260719_E3_bayesian_joint",
+    "prediction_source_identity_digest": "6b8a5d45878c7ce633e1f8ccabbf02a0044d0bf1407a25d337e3e92dcceab783",
+    "plan_digest": "b1aee200f5a6f00e38f909e32a1bdf4a3b1f907619121907b4f352f9be6e8507",
+    "selections": [
+      {
+        "operation_index": 0,
+        "action": "set_hole_radius",
+        "selector": {
+          "feature_classes": [
+            "through_hole_round"
+          ],
+          "radius_mm": 20.0,
+          "scope": "all"
+        },
+        "role": "whole_feature",
+        "object_ids": [
+          "e3:af5669560aff:through_hole_round:9e75bd2adbb6444c"
+        ],
+        "object_indices": [
+          6
+        ],
+        "role_face_sets": [
+          [
+            13
+          ]
+        ],
+        "selection_count": 1
+      }
+    ],
+    "binding_digest": "a38a0d52cf8481f93fbf0349e2c21a8cb2d3b0a4c3a5ff8f3766dee111ea5910"
+  },
+  "final_step": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/flanged_sleeve/final.step",
+    "bytes": 66840,
+    "sha256": "3607071bd0b0c0b7fb5e5bc179fe96a277f69077248c00d2dffe134a16a72d5c"
+  },
+  "executor_audit": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/flanged_sleeve/attempts/attempt_001/edit_audit.json",
+    "bytes": 1625,
+    "sha256": "f4f42e57a170817ad10ee97b18e6136eb73f5f9085e126c79d4405c4f3569e6d"
+  },
+  "independent_audit": {
+    "path": "workspace://artifacts/aei_paper_goals_v1/g10/m6_engineering/runs/g10-m6-main-20260915/flanged_sleeve/independent_cad_audit.json",
+    "bytes": 1695,
+    "sha256": "8164b494396db64972583a0b76ea3caa3ec25abf99e19725e2bba4c89fd83829"
+  },
+  "elapsed_seconds": 0.6730672999983653,
+  "attempt_count": 1,
+  "truth_used": false
+}
