@@ -6,7 +6,7 @@
   "scope_of_main_table_match": "all_one_time_T10_scored_method_seed_tier_channels_and_seed_summaries",
   "sealed_T10_gate_verified": true,
   "fixed_denominator": 1200,
-  "channels_recomputed": 21,
+  "channels_recomputed": 18,
   "paired_CI_replicates": 5000,
   "actual_offline_recounts": 1,
   "model_or_solver_executed": false,

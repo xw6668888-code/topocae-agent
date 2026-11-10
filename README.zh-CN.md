@@ -1,39 +1,43 @@
-# TopoCAE-Agent 论文最小复现包
+# TopoCAE-Agent：论文最小复现包
 
-本项目对应 STEP-FO18 数据集和 BiRel-FO 识别方法，保留论文主线所需的代码、冻结模型、逐例预测、标注、真实语言模型响应及 CAD/CAE 工件。研究开发目录和废弃实验队列不进入当前发布版本。
+按2026年11月10日英文稿收束：仅保留论文中的四组识别消融、两种文献方法对比、13个工程案例、三组Qwen实验及其必要运行代码与证据。
 
-## 最小闭环
-
-```bash
-conda env create -f environment-inference.yml
-conda activate topocae-inference
-python fetch_assets.py --profile demo
-python run_case.py bearing_housing --output results/runs/bearing
-python run_case.py angle_bracket --output results/runs/angle
-```
-
-流程为：STEP → 新执行的 BiRel-FO 识别 → 解析真实存档 Qwen 响应 → 特征对象与操作区域绑定 → CAD 编辑或 Abaqus 脚本生成。不是直接复制已有编辑结果，也不以人工参考计划代替模型响应。无需再次支付 API 费用。
-
-Bearing Housing 会实际修改盲孔半径并回读 STEP。Angle Bracket 默认生成完整 Abaqus 脚本；提供 `--abaqus "实际的abaqus启动路径"` 后会提交求解。可以对 `data/engineering/cases.json` 内其余案例使用同一入口。求解需自行安装并获得 Abaqus 许可。
-
-## 论文表格与图像
+## 复算论文表格
 
 ```bash
 python -m pip install -r requirements-recount.txt
 python verify.py --code-only
 python reproduce.py
-python plot_training.py
+python export_training_data.py
 ```
 
-识别表格从 1,200 件测试零件的逐例预测重新计算，包含三种子及 I/P/S 子集；语言模型表格从真实原始响应重新解析、定位评价并汇总耗时和 token。训练曲线由实际记录重绘，保留各次运行的真实轮数。
+结果写入 `results/reproduced/`，已核对副本在 `results/paper/`。识别部分完整保留6种配置×3种子×1200件，即21,600份预测，不删除失败样本。表1、表2的数值与稿件一致；BiRel-FO的精确实例macro F1为92.79%，零件识别准确率为77.08%。
 
-全部大文件通过 `python fetch_assets.py` 下载，总计约 1.61 GB；`python verify.py` 校验完整性。使用 `--profile demo` 仅下载最小演示需要的约 2.84 MB 权重。完整数据含 8,370 件训练/验证 STEP、1,200 件测试 STEP、冻结权重及工程求解工件。
+表4按照统一的工程验收标准复核原始39项任务：CAD检查正确对象上的编辑结果；CAE检查实际物理模型，求解完成状态单独保留。结果为 **4/13、13/13、11/13**。稿件中纯Plus的3/13需要改为4/13，因为Bearing Housing只选择孔壁也确实完成了四个目标盲孔的半径修改。这个规则同样适用于全部比较组。原先的完整面集合评分、求解超时以及全部42次API尝试均保留，未新增API调用或改写模型输出。
 
-## 结果使用边界
+## 最小闭环
 
-- 历史对象绑定流程：Qwen 辅助组为 13/13 项定位正确，并有 6 项 CAD、7 项 CAE 的核验工件；其中包含等价命令的既有工件复用。
-- 统一面组输出实验：Qwen3.6-Plus、Qwen3.6-Plus＋BiRel-FO、Qwen3.8-Max-0902 分别为 3/13、12/13、10/13 定位正确，任务通过为 3/13、11/13、10/13。
-- 两种协议的结果分别保存，不能将历史 13/13 填入统一比较表。均值、中位数、总费用、平均费用也分别输出。
-- 本包验证冻结模型推理、实际 CAD 编辑、CAE 脚本生成、已存 ODB 读取及表格复算；不把这些检查表述为重新完成全部训练或全部求解。
+创建 `environment-inference.yml` 环境后执行：
 
-详细文件对应及初稿数值核对见 [PAPER_RESULTS.md](docs/PAPER_RESULTS.md)。仓库仍为私有；上游许可声明已保留，作者代码尚未指定面向公众的统一许可证。原研究目录和 Git 历史未删除。
+```bash
+python fetch_assets.py --profile demo
+python run_case.py bearing_housing --output results/runs/bearing
+python run_case.py angle_bracket --output results/runs/angle
+```
+
+从STEP重新识别，读取真实归档Qwen回答，再绑定操作对象，执行CAD编辑或生成Abaqus脚本。`replay_plan.py`可按三组对照的统一面选择接口重放原始回答，例如：
+
+```bash
+python replay_plan.py QP-B bearing_housing --output results/runs/plus_bearing
+python replay_plan.py QP-S clevis --output results/runs/assisted_clevis
+```
+
+需要实际求解时提供 `--abaqus`；默认仅生成CAE脚本。`python fetch_assets.py`下载全部大文件，`python verify.py`校验完整包。Abaqus需自行安装并具备许可证。
+
+## 图表与数据
+
+`figures/`放作者最新8张TIFF，Fig. 3仅保留作者版本。`data/training_curves/fig3_data.csv`包含287行真实训练记录，另有6份原始JSON、种子对应表和Origin源文件。导出脚本不会插值、补齐轮数或重新绘制另一张Fig. 3。
+
+图与稿件仍有需要作者修改的标注，详见 [稿件核对清单](docs/MANUSCRIPT_ALIGNMENT.md)。原始实验数据不会为了匹配图中错误而修改。未写入当前稿件的补充试验和旧图已从当前发布树中移除；未重写Git历史。
+
+该包验证的是冻结模型推理、工程操作及表格复算；不等同于已验证全部模型从零训练。仓库目前仍为私有，公开代码/数据许可证尚未由作者确定。参考 [README](README.md) 中的具体命令与证据范围。

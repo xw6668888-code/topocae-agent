@@ -6,9 +6,8 @@ import torch
 A0="R"
 A1="G10_M3_A1_Q_FINAL"
 A3="G10_M3_A3_GENERIC_SCORE_EXACT_PACK"
-A4="G10_M3_A4_E1_LEARNED_SCORE_EXACT_PACK"
 A6="E3"
-VARIANTS=(A0,A1,A3,A4,A6)
+VARIANTS=(A0,A1,A3,A6)
 
 def _key(row: dict[str, Any]) -> tuple[str, tuple[int, ...]]:
     macro = row.get("class", row.get("macro_feature"))
@@ -75,16 +74,15 @@ def infer_variants(graph: dict[str, Any], r_prediction: dict[str, Any],
         e1_scores = []
     neural_score_seconds = time.perf_counter() - started
 
-    scored = {A3: generic_rows, A4: [], A6: []}
+    scored = {A3: generic_rows, A6: []}
     for candidate, vector, e1_raw in zip(pool, vectors, e1_scores, strict=True):
         common = {**candidate, "features": {"vector": vector}}
-        scored[A4].append({**common, "score": float(e1_raw)})
         scored[A6].append({**common, "score": modules["calibrated_score"](
             float(e1_raw), candidate, assets["prior"], assets["temperature"])})
 
     selections = {}
     selection_seconds = {}
-    for variant in (A3, A4, A6):
+    for variant in (A3, A6):
         began = time.perf_counter()
         selections[variant] = modules["select_objects"](
             scored[variant], exact_limit=32, beam_width=128

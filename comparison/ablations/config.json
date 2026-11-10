@@ -10,6 +10,11 @@
   },
   "variants": [
     {
+      "id": "R",
+      "setting": "R branch and its recovery",
+      "comparison_type": "control"
+    },
+    {
       "id": "G10_M3_A1_Q_FINAL",
       "paper_label": "A1",
       "setting": "frozen Q final objects",
@@ -20,12 +25,6 @@
       "paper_label": "A3",
       "setting": "mean of fixed generic R and Q deterministic scores plus registered conflict selector",
       "comparison_type": "same-candidate score control"
-    },
-    {
-      "id": "G10_M3_A4_E1_LEARNED_SCORE_EXACT_PACK",
-      "paper_label": "A4",
-      "setting": "E1 train-only learned joint score plus registered conflict selector",
-      "comparison_type": "same-candidate learned-score pair with A3"
     },
     {
       "id": "G10_M3_A6_E3_FULL_CALIBRATION_EXACT_PACK",

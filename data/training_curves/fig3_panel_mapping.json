@@ -1,0 +1,62 @@
+[
+  {
+    "panel": "a",
+    "branch": "R",
+    "display_seed": 1,
+    "seed": 20260720,
+    "observed_epochs": 56,
+    "history": "data/training_curves/R_20260720.json",
+    "first_train_loss": 2.170364848544301,
+    "first_validation_loss": 0.5417600556602206
+  },
+  {
+    "panel": "b",
+    "branch": "R",
+    "display_seed": 2,
+    "seed": 20260719,
+    "observed_epochs": 56,
+    "history": "data/training_curves/R_20260719.json",
+    "first_train_loss": 2.1378597494878444,
+    "first_validation_loss": 0.49740220734891044
+  },
+  {
+    "panel": "c",
+    "branch": "R",
+    "display_seed": 3,
+    "seed": 20260718,
+    "observed_epochs": 30,
+    "history": "data/training_curves/R_20260718.json",
+    "first_train_loss": 2.387955744058354,
+    "first_validation_loss": 0.5794525068732914
+  },
+  {
+    "panel": "d",
+    "branch": "Q",
+    "display_seed": 1,
+    "seed": 20260720,
+    "observed_epochs": 33,
+    "history": "data/training_curves/Q_20260720.json",
+    "first_train_loss": 2.369117793221341,
+    "first_validation_loss": 0.6866311047222584
+  },
+  {
+    "panel": "e",
+    "branch": "Q",
+    "display_seed": 2,
+    "seed": 20260719,
+    "observed_epochs": 56,
+    "history": "data/training_curves/Q_20260719.json",
+    "first_train_loss": 2.4125391236442133,
+    "first_validation_loss": 0.6538230368808012
+  },
+  {
+    "panel": "f",
+    "branch": "Q",
+    "display_seed": 3,
+    "seed": 20260718,
+    "observed_epochs": 56,
+    "history": "data/training_curves/Q_20260718.json",
+    "first_train_loss": 2.6804829655887947,
+    "first_validation_loss": 0.7477884023718081
+  }
+]

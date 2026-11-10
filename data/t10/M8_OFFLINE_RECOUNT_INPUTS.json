@@ -10901,24 +10901,6 @@
         "sha256": "098cbba5d1af62e38cd29aa9dd9c049a3b392f04f2173ce06df1fd40b94c7dc6",
         "original_channel_sha256": "d1e3b586367169b9dbfa6bd20c79cfdc7950f0915c1f0a3b2b7ab593758f1121"
       },
-      "G10_M3_A4_E1_LEARNED_SCORE_EXACT_PACK|20260718": {
-        "relative_path": "predictions/channel_027.jsonl",
-        "bytes": 801692,
-        "sha256": "007de7423b666d143e49b2b36c1b81337c4365dba3a90b357981b03bc00399a8",
-        "original_channel_sha256": "2920b9bf90d2916349e8a1efb619de5710f58a1849795c3a40e0a164d0dcc3ab"
-      },
-      "G10_M3_A4_E1_LEARNED_SCORE_EXACT_PACK|20260719": {
-        "relative_path": "predictions/channel_028.jsonl",
-        "bytes": 801078,
-        "sha256": "bef9045ef470c1ee3e08667023aa573149fc7dd1c869b605258fc6ff628c1968",
-        "original_channel_sha256": "e8e058a90a5b076ad9d4a7b499e9bc2825e2ff7b7bb32a00d9eac669b0d88ef5"
-      },
-      "G10_M3_A4_E1_LEARNED_SCORE_EXACT_PACK|20260720": {
-        "relative_path": "predictions/channel_029.jsonl",
-        "bytes": 800946,
-        "sha256": "83e0a65148037e3ca3f518fae8ace2e8dff5a6552d962a010f961d79b3275f04",
-        "original_channel_sha256": "e93aebb87e22fa382bf88574c40a36633e5b0edc8ca6b22d68ed57c7d690e6b9"
-      },
       "MFTReNet-SI-D0|20260718": {
         "relative_path": "predictions/channel_048.jsonl",
         "bytes": 818151,
@@ -10958,8 +10940,8 @@
     },
     "recorded_main_results": {
       "relative_path": "recorded_main_results.json",
-      "bytes": 868166,
-      "sha256": "3e9c86ddc6337d46cb84dec152cc896d7fd56c20e05b60f64e13af3087f0da7f"
+      "bytes": 747980,
+      "sha256": "f32b284b9fe96b75b91fb079f5740ed2b5078b87066b245e57f6dc29d7918c90"
     },
     "recorded_bootstrap_results": {
       "relative_path": "recorded_bootstrap_results.json",
@@ -10969,5 +10951,15 @@
   },
   "truth_opened_only_after_scoring": true,
   "machine_paths_exported": false,
-  "public_release_authorized": false
+  "public_release_authorized": false,
+  "publication_scope": {
+    "tables": [
+      1,
+      2
+    ],
+    "method_count": 6,
+    "seed_count": 3,
+    "parts_per_channel": 1200,
+    "selection": "All observations for the four paper ablations and two paper baselines; an unpublished supplementary configuration is excluded. Existing observations are unchanged."
+  }
 }

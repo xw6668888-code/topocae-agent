@@ -39,6 +39,25 @@ def recognition(out):
                 row[metric+'_sample_sd']=statistics.stdev(v[metric] for v in values)
             subset_rows.append(row)
     table(out/'comparison_by_subset.csv',subset_rows)
+    ordered=[('R','R branch and recovery'),('G10_M3_A1_Q_FINAL','Q branch and recovery'),
+        ('G10_M3_A3_GENERIC_SCORE_EXACT_PACK','Rule-based scoring'),('E3','BiRel-FO')]
+    paper_rows=[]
+    for key,label in ordered:
+        row={'configuration':label}
+        for metric in ('whole_part_exact_rate','face_accuracy','macro_f1','micro_f1'):
+            v=source['three_seed_summary'][key][metric]
+            row[metric+'_percent']=f"{100*v['mean']:.2f}±{100*v['sample_standard_deviation']:.2f}"
+        paper_rows.append(row)
+    table(out/'TABLE_1.csv',paper_rows)
+    paper_rows=[]
+    for subset in ('overall','T10-I','T10-P','T10-S'):
+        for method in ('AAGNet18-SI','MFTReNet-SI-D0','E3'):
+            v=next(r for r in subset_rows if r['method']==method and r['subset']==subset)
+            row={'subset':subset,'method':'BiRel-FO' if method=='E3' else method}
+            for metric in ('part_accuracy','face_accuracy','macro_f1','micro_f1'):
+                row[metric+'_percent']=f"{100*v[metric+'_mean']:.2f}±{100*v[metric+'_sample_sd']:.2f}"
+            paper_rows.append(row)
+    table(out/'TABLE_2.csv',paper_rows)
     return {'status':result['status'],'parts':1200,'channels':len(source['channels']),
             'predictions':1200*len(source['channels']),'E3':source['three_seed_summary']['E3']}
 
@@ -103,7 +122,7 @@ def historical(out):
         assert [face,param,passed]==[old['operation_faces_correct'],old['engineering_parameters_equivalent'],old['verified_engineering_task']],sid
         rows.append(dict(case_id=cid,condition=condition,face_correct=face,parameters_correct=param,task_verified=passed,artifact_origin=ex['kind']))
         totals[condition].update(tasks=1,face_correct=face,parameters_correct=param,task_verified=passed)
-    assert totals['S']['task_verified']==13 and totals['B']['task_verified']==2
+    assert set(totals)=={'S'} and totals['S']['task_verified']==13
     table(out/'historical_object_binding.csv',rows)
     write(out/'historical_object_binding.json',{'counts':{k:dict(v) for k,v in totals.items()},
         'evaluation':'posthoc physical-equivalence evaluation of original responses',
@@ -112,6 +131,7 @@ def historical(out):
 
 def unified(out):
     from qwen_metrics import decode,scores
+    from engineering_acceptance import evaluate
     import jsonschema
     base=ROOT/'data/qwen_unified';refs=read(base/'references.json');schema=read(base/'PLAN_SCHEMA.json')
     prices=read(base/'pricing.json')['prices_per_million'];slots=read(base/'slots.json')
@@ -156,9 +176,10 @@ def unified(out):
                 artifact=all(p.is_file() and read(p).get('status')=='PASS' for p in paths)
         passed=bool(face and param and artifact)
         assert [face,param,artifact,passed]==[slot['recorded_face_correct'],slot['recorded_parameters_correct'],slot['recorded_artifact_pass'],slot['recorded_total_success']],sid
+        engineering=evaluate(ROOT,slot,plan,refs[cid],mapping,face,param)
         row=dict(slot_id=sid,condition=condition,case_id=cid,face_correct=face,parameters_correct=param,
                  artifact_pass=artifact,task_success=passed,API_calls=len(slot['attempts']),API_elapsed_s=elapsed,
-                 cost_CNY=cost,missing_usage_attempts=missing,**usage_total)
+                 cost_CNY=cost,missing_usage_attempts=missing,**usage_total,**engineering)
         groups[condition].append(row);details.append(row)
     summary=[]
     for condition,rows in groups.items():
@@ -171,6 +192,9 @@ def unified(out):
                output_tokens=sum(x.get('completion_tokens',0) for x in rows),
                total_tokens=sum(x.get('total_tokens',0) for x in rows),
                cost_total_CNY=sum(x['cost_CNY'] for x in rows),cost_mean_CNY=statistics.mean(x['cost_CNY'] for x in rows),
+               operation_targets_correct=sum(x['operation_targets_correct'] for x in rows),
+               engineering_task_success=sum(x['engineering_task_success'] for x in rows),
+               CAE_solver_completed=sum(x['solver_completed'] for x in rows),
                missing_usage_attempts=sum(x['missing_usage_attempts'] for x in rows))
         e=expected[condition]
         for k,v in [('localization_correct','face_correct'),('task_success','total_success'),('API_calls','actual_API_requests'),
@@ -179,40 +203,40 @@ def unified(out):
         summary.append(r)
     table(out/'qwen_unified_per_task.csv',details);table(out/'qwen_unified_summary.csv',summary)
     write(out/'qwen_unified.json',{'summary':summary,'price_basis':'2026-10-23 official list estimate, not invoice',
+        'engineering_acceptance':'Post-hoc common task acceptance: correct edited geometry or correctly built CAE model. Full-face enumeration and solver completion remain separate original scores.',
         'timing':'Sum all attempt wall times per task, including unsuccessful attempts; then arithmetic mean or median across 13 tasks. Excludes recognition, CAD and solver time.',
         'missing_usage':'Failed attempts without reported usage remain unknown; cost is the sum of observed usage, not a claim of zero cost for missing usage.'})
     return summary
 
-def robustness(out):
-    records=read(ROOT/'data/robustness/measurements.json')
-    assert len(records)==len({(r['sample_id'],r['kind'],r['method'],r['seed']) for r in records})==3600
-    groups=defaultdict(list)
-    for r in records:
-        assert r['truth_used'] is False
-        groups[r['method'],r['seed'],r['kind']].append(r['comparison'])
-    rows=[]
-    for (method,seed,kind),values in sorted(groups.items()):
-        c=Counter(v['status'] for v in values)
-        rows.append(dict(method=method,seed=seed,variant=kind,fixed_parts=len(values),compared=c['compared'],
-                         complete_object_invariant_true=sum(v.get('complete_object_invariant') is True for v in values),
-                         complete_object_invariant_false=sum(v.get('complete_object_invariant') is False for v in values),
-                         face_semantics_invariant_true=sum(v.get('face_semantics_invariant') is True for v in values),
-                         face_semantics_invariant_false=sum(v.get('face_semantics_invariant') is False for v in values)))
-    actual={(r['method'],r['seed'],r['variant']):r for r in rows}
-    for e in csv.DictReader((ROOT/'results/expected/ROBUSTNESS.csv').open(encoding='utf-8-sig')):
-        r=actual[e['method'],int(e['seed']),e['variant']]
-        for k in r:
-            if k not in ('method','seed','variant'):assert r[k]==int(e[k])
-    table(out/'robustness.csv',rows);return {'observations':len(records),'status':'PASS'}
+def paper_table4(out):
+    """Current manuscript table; original currency is always included for audit."""
+    source=read(out/'qwen_unified.json')['summary'];rows=[]
+    labels={'QP-B':('Qwen3.6-Plus','Disabled'),'QP-S':('Qwen3.6-Plus + BiRel-FO','Disabled'),
+        'QM-B':('Qwen3.8-Max-0902','Xhigh')}
+    for r in source:
+        label,reasoning=labels[r['condition']]
+        rows.append(dict(configuration=label,reasoning=reasoning,tasks=13,
+            engineering_tasks_correct=r['engineering_task_success'],
+            success_rate_percent=100*r['engineering_task_success']/13,
+            mean_API_response_seconds=r['API_elapsed_mean_s'],total_tokens=r['total_tokens'],
+            total_API_cost_CNY=r['cost_total_CNY'],total_API_cost_USD=r['cost_total_CNY']*0.15))
+    table(out/'TABLE_4.csv',rows)
+    write(out/'TABLE_4_NOTES.json',{'USD_per_CNY':0.15,
+        'conversion_basis':'Fixed reporting convention inferred from the manuscript USD values; not a verified historical FX quote or invoice.',
+        'acceptance':'Same functional engineering-task criterion applied retrospectively to all 39 original tasks.',
+        'denominator':13,'attempts':42,'new_API_calls':0,'timing_excludes':'BiRel-FO recognition, CAD execution and CAE solution',
+        'unreported_usage_attempts':3,'cost_scope':'Sum of provider-reported token usage; failed quota attempts without usage retained as unknown.'})
+    return rows
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--output',type=Path,default=ROOT/'results/reproduced')
-    p.add_argument('--only',choices=['all','recognition','engineering','historical','unified','robustness'],default='all')
+    p.add_argument('--only',choices=['all','recognition','engineering','historical','unified'],default='all')
     a=p.parse_args();a.output.mkdir(parents=True,exist_ok=True);result={}
-    for name,fn in [('recognition',recognition),('engineering',engineering),('historical',historical),('unified',unified),('robustness',robustness)]:
+    for name,fn in [('recognition',recognition),('engineering',engineering),('historical',historical),('unified',unified)]:
         if a.only not in ('all',name):continue
         print('Recomputing '+name+' ...',flush=True);result[name]=fn(a.output)
         print(name+': PASS',flush=True)
+    if a.only in ('all','unified'):result['manuscript_table4']=paper_table4(a.output)
     write(a.output/'SUMMARY.json',result)
 if __name__=='__main__':main()

@@ -1,0 +1,5 @@
+configuration,whole_part_exact_rate_percent,face_accuracy_percent,macro_f1_percent,micro_f1_percent
+R branch and recovery,68.75±0.60,99.68±0.07,90.68±0.15,91.75±0.11
+Q branch and recovery,61.36±1.69,99.64±0.13,85.89±0.66,84.75±0.56
+Rule-based scoring,35.19±0.17,99.68±0.07,74.20±0.27,60.47±0.13
+BiRel-FO,77.08±0.55,99.68±0.07,92.79±0.15,94.25±0.13

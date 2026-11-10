@@ -1,0 +1,44 @@
+[
+  {
+    "file": "geometry.py",
+    "source_sha256": "942db4d45947a83230385886b16e56c5518ffd751c29da00b2d2f16af86cf0fd",
+    "packaged_sha256": "942db4d45947a83230385886b16e56c5518ffd751c29da00b2d2f16af86cf0fd",
+    "changes": "None except text newline normalization"
+  },
+  {
+    "file": "contract.py",
+    "source_sha256": "52d5bff7aace3bd1189bb335492e287b05bab57fb143de528fa9fcc589e220f1",
+    "packaged_sha256": "c8733e4b539d13c8ba2a4e367caada6ed42ae101589a962e600a5992316c6f85",
+    "changes": "None except text newline normalization"
+  },
+  {
+    "file": "cad_edit.py",
+    "source_sha256": "990b38b9b22ccc11ebf9d7164c62737c7d759a695b07dd24adfb969599b83a3c",
+    "packaged_sha256": "990b38b9b22ccc11ebf9d7164c62737c7d759a695b07dd24adfb969599b83a3c",
+    "changes": "None except text newline normalization"
+  },
+  {
+    "file": "cae_compile.py",
+    "source_sha256": "6e0342461753e975b66cc961ad6f5b8e3582960de6210f52f874cf8ae47f8556",
+    "packaged_sha256": "52e3e4800e5295fb92a2041b955801cdccddca7bd27416c69d112e88c8a1c626",
+    "changes": "None except text newline normalization; trailing empty lines removed"
+  },
+  {
+    "file": "abaqus_direct.template.py",
+    "source_sha256": "f1d96b9a138618b9da7b4c895bbad44f327d54664d9b1346be2b0c8338203f3e",
+    "packaged_sha256": "f1d96b9a138618b9da7b4c895bbad44f327d54664d9b1346be2b0c8338203f3e",
+    "changes": "None except text newline normalization"
+  },
+  {
+    "file": "abaqus_verification.py",
+    "source_sha256": "f184b4dbfcb9577db52c133ab4471c9ae80a78d066a2bdf5b64b35b72cd19f5e",
+    "packaged_sha256": "f184b4dbfcb9577db52c133ab4471c9ae80a78d066a2bdf5b64b35b72cd19f5e",
+    "changes": "None except text newline normalization"
+  },
+  {
+    "file": "common.py",
+    "source_sha256": "795fee038af0e23ebdd377e217b2073b18b9ba29765474b47844094c1fcf48d0",
+    "packaged_sha256": "8a780e10ed253539bb0d65c49859ee7a1666be9ace5268f5c69f83f21188cbd7",
+    "changes": "Relocated common paths only; trailing empty lines removed"
+  }
+]

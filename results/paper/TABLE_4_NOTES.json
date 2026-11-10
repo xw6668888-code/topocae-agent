@@ -1,0 +1,11 @@
+{
+  "USD_per_CNY": 0.15,
+  "conversion_basis": "Fixed reporting convention inferred from the manuscript USD values; not a verified historical FX quote or invoice.",
+  "acceptance": "Same functional engineering-task criterion applied retrospectively to all 39 original tasks.",
+  "denominator": 13,
+  "attempts": 42,
+  "new_API_calls": 0,
+  "timing_excludes": "BiRel-FO recognition, CAD execution and CAE solution",
+  "unreported_usage_attempts": 3,
+  "cost_scope": "Sum of provider-reported token usage; failed quota attempts without usage retained as unknown."
+}

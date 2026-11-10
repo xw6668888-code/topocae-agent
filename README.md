@@ -1,10 +1,21 @@
 # TopoCAE-Agent: BiRel-FO and STEP-FO18
 
-Reproducibility artifact for engineering feature-object recognition from STEP B-Rep and its use in CAD editing and CAE preparation.
+Paper artifact for engineering feature-object recognition from STEP B-Rep, CAD editing and CAE modeling. This checkout contains the experiments in the author's 10 November 2026 manuscript: four recognition ablations, two literature baselines, 13 engineering cases, and three Qwen configurations.
 
-The package contains the frozen **BiRel-FO** recognition system, the **STEP-FO18** data used by the paper, per-part predictions for the reported comparisons, actual Qwen requests/responses, and the 13 engineering examples. The deployment system is identified as `E3` in the original machine-readable records.
+## Reproduce the tables
 
-## Start with the smallest closed loop
+```bash
+python -m pip install -r requirements-recount.txt
+python verify.py --code-only
+python reproduce.py
+python export_training_data.py
+```
+
+The recount checks **21,600 individual predictions** (six configurations × three seeds × 1,200 parts), all 18 classes, I/P/S subsets, and the paired bootstrap comparisons. Tables 1–2 reproduce the manuscript's 92.79% exact-instance macro F1 and 77.08% whole-part accuracy. Table 3 is supported by the 13 object-bound engineering demonstrations. Outputs are written to `results/reproduced/`; checked copies are in `results/paper/`.
+
+For Table 4, the same engineering acceptance criterion is applied to all 39 archived tasks: correct edited geometry for CAD, and a correctly constructed physical model for CAE. The resulting counts are **4/13, 13/13 and 11/13** for Qwen3.6-Plus, Plus + BiRel-FO and Qwen3.8-Max-0902. The manuscript's first count (3/13) needs correction: Plus correctly edits all four Bearing Housing holes using their cylindrical walls. The original complete-member-face and solver-completion scores remain in the per-task records. See [acceptance and costs](docs/ENGINEERING_ACCEPTANCE.md) and [manuscript alignment](docs/MANUSCRIPT_ALIGNMENT.md).
+
+## Run the smallest closed loop
 
 ```bash
 git clone https://github.com/xw6668888-code/topocae-agent.git
@@ -16,71 +27,48 @@ python run_case.py bearing_housing --output results/runs/bearing
 python run_case.py angle_bracket --output results/runs/angle
 ```
 
-The demo downloads approximately 2.84 MB of deployment weights. Engineering STEP inputs and archived language responses are already in Git.
+`run_case.py` performs fresh STEP recognition, reads an actual archived assisted Qwen response, binds its targets to recognized objects, and executes CAD editing or generates an Abaqus script. It makes no new API call. The demo needs about 2.84 MB of deployment weights. For a new STEP file, use `python infer.py part.step --output results/runs/prediction.json`.
 
-- **Bearing Housing:** fresh recognition of the input STEP; parse the actual archived Qwen response; locate the blind holes of radius 4 mm; edit their radius to 3 mm; read back the edited STEP.
-- **Angle Bracket:** fresh recognition; bind the archived material, mesh, support and load plan to recognized objects; generate a complete Abaqus script. To also solve, add `--abaqus /path/to/abaqus` (Windows example: `--abaqus "F:/ABAQUS2020/commands/abaqus.bat"`). A licensed Abaqus 2020 installation is required for this step.
-
-These commands replay an actual language-model response and execute fresh geometry recognition and engineering operations. They make **no new API calls** and do not substitute an author reference plan. Generated files are written into a new output directory. The frozen model is a closed-set recognizer for the paper's 18 feature classes.
-
-For a new STEP file:
+The three-condition comparison uses a separate, common direct-face plan interface. Replay any original model response with:
 
 ```bash
-python infer.py /path/to/part.step --output results/runs/part_prediction.json
+python replay_plan.py QP-B bearing_housing --output results/runs/plus_bearing
+python replay_plan.py QP-S clevis --output results/runs/assisted_clevis
 ```
 
-## Reproduce the paper's numbers
+Conditions are `QP-B` (Plus), `QP-S` (Plus + BiRel-FO), and `QM-B` (Max). Non-executable responses remain non-executable; the replay does not repair model plans. To submit a generated CAE model, add `--abaqus /path/to/abaqus` and choose available CPU/memory resources. A licensed Abaqus installation is required. Solver completion is reported separately from modeling correctness.
 
-The lightweight table reproduction uses the per-part observations in Git and does not require an API key, GPU, CAD kernel or solver:
-
-```bash
-python -m pip install -r requirements-recount.txt
-python verify.py --code-only
-python reproduce.py
-python plot_training.py
-```
-
-Outputs appear in `results/reproduced/` and `results/reproduced_figures/`. `reproduce.py` independently recounts 25,200 predictions (seven reported/supplementary configurations, three seeds, 1,200 parts), the registered 5,000-resample paired comparisons, the engineering face/instance records, and the archived language responses. The training plot uses six recorded R/Q histories; Times New Roman must be installed to recreate the paper styling.
-
-The principal recognition result is 92.7866% exact-instance macro F1, 94.2530% exact-instance micro F1, 77.0833% whole-part accuracy and 99.6832% face accuracy, averaged over the three frozen seeds. Full per-seed and I/P/S results remain available.
-
-## Full data and solver results
+## Data, weights and solver outputs
 
 ```bash
-python fetch_assets.py                  # all 37 immutable assets, about 1.61 GB
+python fetch_assets.py
 python verify.py
 python replay_cad.py --output results/runs/reference_cad
 abaqus python read_odb.py --output results/runs/odb_readback.json
 ```
 
-Downloads are also selectable with `--group training`, `test`, `models` or `engineering`. Private-release downloads use `GH_TOKEN`, `GITHUB_TOKEN`, or the local Git credential manager. Credentials are never stored in the artifact. Every downloaded file is verified against its SHA-256 digest. See [the release](https://github.com/xw6668888-code/topocae-agent/releases/tag/paper-v1.0-20261103).
+Large immutable files are downloaded from the releases identified in `assets.json`, with size and SHA-256 verification. Private-repository access uses a local Git credential manager or `GH_TOKEN`/`GITHUB_TOKEN`; credentials are never stored here. Existing data assets are reused without re-encoding them.
 
-`replay_cad.py` replays the six **author-reference** CAD plans. `run_case.py` instead consumes the actual archived **Qwen-assisted** plan. `read_odb.py` reopens seven archived reference-case ODBs and verifies their fields and equilibrium; it does not rerun those solvers.
-
-## What is included
-
-| Directory / entry | Purpose |
+| Location | Paper content |
 | --- | --- |
-| `infer.py`, `run_case.py` | Fresh STEP recognition and reproducible engineering examples |
-| `comparison/topocae/` | R/Q encoders, task heads, candidate recovery, object scorer, calibration and constrained selection |
-| `comparison/aagnet/`, `comparison/mft/` | Paper-specific baseline implementations, configurations and frozen checkpoints |
-| `data/d0/` | 7,440 training and 930 validation STEP parts, split and annotations |
-| `data/t10/` | 1,200 final STEP parts; I/P/S subsets of 400 each; targets and complete per-seed predictions |
-| `data/engineering/` | 13 STEP parts, recognition outputs, operation plans, six edited STEPs and seven solver input/output archives |
-| `data/language/` | Historical Qwen object-binding requests/responses and operation-equivalence evidence |
-| `data/qwen_unified/` | Three Qwen conditions on the same 13 tasks; 42 API attempts for 39 slots, including quota failures |
-| `data/training_curves/`, `data/robustness/` | Recorded training curves and supplementary geometric perturbation observations |
-| `reproduce.py`, `src/` | Independent metric recalculation |
-| `assets.json`, `MANIFEST.json`, `VALIDATION.json` | Download identities, source integrity and measured package validation |
+| `comparison/topocae/` | Frozen R/Q networks, feature recovery, scorer, calibration and object selection |
+| `comparison/ablations/` | R-only, Q-only, rule-scored and complete BiRel-FO configurations |
+| `comparison/aagnet/`, `comparison/mft/` | AAGNet18-SI and MFTReNet-SI-D0 adaptations and checkpoints |
+| `data/d0/`, `data/t10/` | 7,440 training, 930 validation and 1,200 test STEP parts and labels |
+| `data/engineering/` | 13 engineering inputs, annotations, predictions, six edited STEPs and seven archived solver results |
+| `data/language/` | Assisted object-binding responses supporting Table 3 and the minimum replay |
+| `data/qwen_unified/` | All three Table 4 groups, 39 tasks, 42 API attempts, execution and readback evidence |
+| `direct_execution/`, `replay_plan.py` | Common face-based CAD/CAE execution for the three-condition comparison |
+| `figures/` | The author's eight current TIFF figures; only one Fig. 3 image |
+| `data/training_curves/` | Six raw histories, 287-row CSV, seed/panel mapping and author Origin project |
+| `results/paper/` | Recomputed paper tables and per-task evidence |
 
-## Interpretation of the experiments
+The figures are the author's supplied exports. Their drawing/label discrepancies are documented in [manuscript alignment](docs/MANUSCRIPT_ALIGNMENT.md); raw observations have not been changed to match a drawing. No old alternate Fig. 3 image, unpublished robustness dataset, experimental queue, paper draft or API key is included in the current paper tree. Historical module names that remain in the inference dependency closure are required executable code.
 
-The historical object-binding demonstration and the unified face-output comparison are distinct experiments. In the historical Qwen-assisted workflow, 13/13 tasks have correct operation-face sets and verified engineering artifacts, including reuse of equivalent previously executed commands. In the unified comparison, Qwen3.6-Plus alone, Qwen3.6-Plus with BiRel-FO, and Qwen3.8-Max-0902 locate 3/13, 12/13 and 10/13 tasks correctly; complete task success is 3/13, 11/13 and 10/13. Both records are retained. They must not be combined into a single supposedly uniform 3/13–13/13–10/13 comparison.
+## Scope and availability
 
-See [paper/result mapping](docs/PAPER_RESULTS.md), [reproduction scope and methods](docs/REPRODUCTION.md), [data layout](docs/DATA.md) and [中文说明](README.zh-CN.md).
+This minimum artifact supports frozen inference, fresh CAD operations, CAE script generation, reading archived ODBs, and independent table reconstruction. Exact data, seeds, weights and training histories are provided; a portable, fully certified from-scratch training/regeneration workflow is not claimed. The 13 engineering cases are development/application examples. Baseline results apply to the paper's dataset, 18-class ontology and task-compatible adaptations.
 
-This release reproduces frozen-model inference, CAD execution, CAE script generation and archived-result evaluation. It does not claim a new end-to-end retraining run or renewed provider/solver experiments. The 13 engineering cases were used during development and application validation; they are not a blind estimate of general industrial performance. The adapted AAGNet18-SI and MFTReNet-SI-D0 scores apply to this dataset and task definition.
+The repository remains **private** under the author's earlier instruction. It is prepared as a paper artifact, not yet a publicly licensed open-source release. Public availability and the authors' code/data license must be finalized before a public-access claim is made. Third-party licenses are preserved in `licenses/` and [THIRD_PARTY.md](THIRD_PARTY.md).
 
-## Access and attribution
-
-This repository remains **private**, as requested by the authors. It is prepared for a future paper code release; repository visibility and a repository-wide public license have not been changed. Third-party notices are in [THIRD_PARTY.md](THIRD_PARTY.md) and `licenses/`. Abaqus, Open CASCADE and other dependencies must be installed separately. No API key, paper draft, downloaded publication, experimental queue or abandoned run archive is included in the current paper tree. Earlier Git history is retained.
+See [reproduction scope](docs/REPRODUCTION.md), [paper-to-file mapping](docs/PAPER_RESULTS.md), [data layout](docs/DATA.md) and [中文说明](README.zh-CN.md).

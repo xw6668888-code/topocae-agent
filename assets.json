@@ -241,13 +241,6 @@
       "group": "engineering"
     },
     {
-      "path": "data/language/physical/m7-b1-flanged_support-qwen-b/solver_output.zip",
-      "bytes": 180153808,
-      "sha256": "1bececdc308a1f0ed524cf9a48ca6e87647eae5ca0dc3cf1e5cf1bcf3441f198",
-      "asset_name": "historical-m7-b1-flanged_support-qwen-b-solver_output.zip",
-      "group": "engineering"
-    },
-    {
       "path": "data/language/physical/m7-b1-flanged_support-qwen-s/solver_output.zip",
       "bytes": 180323313,
       "sha256": "b1469eec40e6502534688730b196bf3793a99c748bd9641f005937cc970df2d1",
@@ -260,6 +253,14 @@
       "sha256": "5d0601e6e33882bdd76debbe40e4547351726bb83fc489e9372936cbd11f6088",
       "asset_name": "historical-m7-b1-u_shaped_bracket-qwen-s-solver_output.zip",
       "group": "engineering"
+    },
+    {
+      "path": "data/qwen_unified/physical/QP-S__clevis/solver_input.zip",
+      "asset_name": "data--qwen_unified--QP-S--clevis--solver_input.zip",
+      "bytes": 72614050,
+      "sha256": "fee864bf4e8da79128b6dcd58a0da6fd95145e4bb5579f2c8a550b6dd94dce89",
+      "group": "engineering",
+      "release_tag": "paper-v1.1-20261110"
     }
   ]
 }

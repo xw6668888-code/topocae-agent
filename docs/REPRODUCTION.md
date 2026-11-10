@@ -14,7 +14,7 @@ Exact-instance matching requires both the category and the complete member-face 
 
 Face accuracy measures predicted face classes and does not establish correct grouping into complete objects. R-derived face outputs can therefore be identical across several object-decoding variants while object scores differ. The supplied AAGNet and MFT implementations are the task-compatible adaptations named in the paper, not claims of reproducing their original benchmark scores. Dataset supervision, model capacity and object-level training differ across systems and are described in their configuration files.
 
-The retained learned-score-only control scores higher than the full calibrated system on the generated test set. It remains in the supplementary prediction data so the package supports the paper's stated calibration limitation.
+The current manuscript reports R, Q, rule scoring and the full BiRel-FO system. Only those component comparisons and the two literature baselines are distributed in the current prediction bundle. The full system comparison does not isolate a benefit from empirical calibration alone.
 
 The original independent recount returns `status: PASS` for the numeric checks. Its legacy `reproducibility_pass: false` and `paper_MAIN_RESULTS_csv_verified: false` fields describe the scope of that one original function: it neither executes models/solvers nor checks the publication CSV. The public `reproduce.py` wrapper additionally checks the CSV values, and `VALIDATION.json` separately records the completed fresh inference, CAD and ODB checks. These legacy fields are preserved rather than relabeled as broader experimental acceptance.
 
@@ -28,7 +28,7 @@ The archived reference cases use a consistent mm–N–MPa–tonne–s unit syst
 
 ## Environment and validation limits
 
-- Lightweight recount: Python, NumPy, JSON Schema; Matplotlib for figures.
+- Lightweight recount: Python, NumPy and JSON Schema. Fig. 3 uses the author TIFF and exported raw CSV; the package does not generate alternate training figures.
 - Frozen BiRel-FO inference and CAD: `environment-inference.yml`, CPU supported. CUDA is not required for the minimum replay.
 - Abaqus result reading and new solving: a licensed Abaqus 2020 installation. ODB reading uses the Abaqus Python interpreter.
 - The baseline code/checkpoints are supplied for inspection and further use; their author-library dependencies are separate from the minimal BiRel-FO environment. The portable package independently rechecks their complete archived prediction tables.
@@ -36,3 +36,7 @@ The archived reference cases use a consistent mm–N–MPa–tonne–s unit syst
 - Validation on 2026-11-03 reruns the packaged inference and CAD paths, compiles CAE scripts, and reads the archived ODBs. It does not start competing solver jobs while other Abaqus jobs are running on the host. See `VALIDATION.json` for the actual completed checks.
 
 The 13 engineering parts are development/application examples. No result in this package establishes open-set recognition of unsupported feature classes or universal CAD editing.
+
+## Current manuscript functional assessment
+
+The original strict direct-face score is retained as an additional per-task field. The paper-facing CAD/CAE task criterion checks actual engineering correctness, with solver completion separate. `replay_plan.py` runs the original direct-face plan through the packaged shared CAD/CAE executor. See `ENGINEERING_ACCEPTANCE.md` for the common rule and `MANUSCRIPT_ALIGNMENT.md` for corrections to the current manuscript.

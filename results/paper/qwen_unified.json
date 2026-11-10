@@ -12,8 +12,11 @@
       "prompt_tokens": 288332,
       "output_tokens": 6292,
       "total_tokens": 294624,
-      "cost_total_CNY": 0.652168,
+      "cost_total_CNY": 0.6521679999999999,
       "cost_mean_CNY": 0.05016676923076923,
+      "operation_targets_correct": 4,
+      "engineering_task_success": 4,
+      "CAE_solver_completed": 6,
       "missing_usage_attempts": 1
     },
     {
@@ -28,8 +31,11 @@
       "prompt_tokens": 322027,
       "output_tokens": 6913,
       "total_tokens": 328940,
-      "cost_total_CNY": 0.7270099999999999,
+      "cost_total_CNY": 0.7270099999999998,
       "cost_mean_CNY": 0.05592384615384615,
+      "operation_targets_correct": 13,
+      "engineering_task_success": 13,
+      "CAE_solver_completed": 6,
       "missing_usage_attempts": 2
     },
     {
@@ -44,12 +50,16 @@
       "prompt_tokens": 288800,
       "output_tokens": 109802,
       "total_tokens": 398602,
-      "cost_total_CNY": 7.289448,
+      "cost_total_CNY": 7.289447999999999,
       "cost_mean_CNY": 0.5607267692307693,
+      "operation_targets_correct": 11,
+      "engineering_task_success": 11,
+      "CAE_solver_completed": 6,
       "missing_usage_attempts": 0
     }
   ],
   "price_basis": "2026-10-23 official list estimate, not invoice",
+  "engineering_acceptance": "Post-hoc common task acceptance: correct edited geometry or correctly built CAE model. Full-face enumeration and solver completion remain separate original scores.",
   "timing": "Sum all attempt wall times per task, including unsuccessful attempts; then arithmetic mean or median across 13 tasks. Excludes recognition, CAD and solver time.",
   "missing_usage": "Failed attempts without reported usage remain unknown; cost is the sum of observed usage, not a claim of zero cost for missing usage."
 }

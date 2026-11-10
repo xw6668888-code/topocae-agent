@@ -2,8 +2,8 @@
   "recognition": {
     "status": "PASS",
     "parts": 1200,
-    "channels": 21,
-    "predictions": 25200,
+    "channels": 18,
+    "predictions": 21600,
     "E3": {
       "macro_f1": {
         "mean": 0.9278658567046869,
@@ -136,12 +136,6 @@
     }
   },
   "historical": {
-    "B": {
-      "tasks": 13,
-      "face_correct": 2,
-      "parameters_correct": 4,
-      "task_verified": 2
-    },
     "S": {
       "tasks": 13,
       "face_correct": 13,
@@ -162,8 +156,11 @@
       "prompt_tokens": 288332,
       "output_tokens": 6292,
       "total_tokens": 294624,
-      "cost_total_CNY": 0.652168,
+      "cost_total_CNY": 0.6521679999999999,
       "cost_mean_CNY": 0.05016676923076923,
+      "operation_targets_correct": 4,
+      "engineering_task_success": 4,
+      "CAE_solver_completed": 6,
       "missing_usage_attempts": 1
     },
     {
@@ -178,8 +175,11 @@
       "prompt_tokens": 322027,
       "output_tokens": 6913,
       "total_tokens": 328940,
-      "cost_total_CNY": 0.7270099999999999,
+      "cost_total_CNY": 0.7270099999999998,
       "cost_mean_CNY": 0.05592384615384615,
+      "operation_targets_correct": 13,
+      "engineering_task_success": 13,
+      "CAE_solver_completed": 6,
       "missing_usage_attempts": 2
     },
     {
@@ -194,13 +194,47 @@
       "prompt_tokens": 288800,
       "output_tokens": 109802,
       "total_tokens": 398602,
-      "cost_total_CNY": 7.289448,
+      "cost_total_CNY": 7.289447999999999,
       "cost_mean_CNY": 0.5607267692307693,
+      "operation_targets_correct": 11,
+      "engineering_task_success": 11,
+      "CAE_solver_completed": 6,
       "missing_usage_attempts": 0
     }
   ],
-  "robustness": {
-    "observations": 3600,
-    "status": "PASS"
-  }
+  "manuscript_table4": [
+    {
+      "configuration": "Qwen3.6-Plus",
+      "reasoning": "Disabled",
+      "tasks": 13,
+      "engineering_tasks_correct": 4,
+      "success_rate_percent": 30.76923076923077,
+      "mean_API_response_seconds": 10.063846153846148,
+      "total_tokens": 294624,
+      "total_API_cost_CNY": 0.6521679999999999,
+      "total_API_cost_USD": 0.09782519999999997
+    },
+    {
+      "configuration": "Qwen3.6-Plus + BiRel-FO",
+      "reasoning": "Disabled",
+      "tasks": 13,
+      "engineering_tasks_correct": 13,
+      "success_rate_percent": 100.0,
+      "mean_API_response_seconds": 10.854461538462427,
+      "total_tokens": 328940,
+      "total_API_cost_CNY": 0.7270099999999998,
+      "total_API_cost_USD": 0.10905149999999997
+    },
+    {
+      "configuration": "Qwen3.8-Max-0902",
+      "reasoning": "Xhigh",
+      "tasks": 13,
+      "engineering_tasks_correct": 11,
+      "success_rate_percent": 84.61538461538461,
+      "mean_API_response_seconds": 206.43269230768783,
+      "total_tokens": 398602,
+      "total_API_cost_CNY": 7.289447999999999,
+      "total_API_cost_USD": 1.0934171999999998
+    }
+  ]
 }

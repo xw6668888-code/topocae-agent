@@ -1,0 +1,419 @@
+{
+  "schema": "inp_physical_equivalence_v1",
+  "status": "PASS",
+  "evaluation": "Exact section data and normalized keywords; only *Step solver= option excluded.",
+  "reference": {
+    "member": "model.inp",
+    "member_sha256": "efa1c9f8019edd5dcd1fab87abd25cb1a1c24436acf5bb18d42933a9c53be72f",
+    "sections": [
+      {
+        "keyword": "*Heading",
+        "original_keyword": "*Heading",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Preprint,echo=NO,model=NO,history=NO,contact=NO",
+        "original_keyword": "*Preprint, echo=NO, model=NO, history=NO, contact=NO",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Part,name=Part-1",
+        "original_keyword": "*Part, name=Part-1",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Node",
+        "original_keyword": "*Node",
+        "data_lines": 1769189,
+        "data_sha256": "b85a803a7310216ad2451add4dd3bd73feec7ba97ff720c8ca3510549a84dc0f"
+      },
+      {
+        "keyword": "*Element,type=C3D10",
+        "original_keyword": "*Element, type=C3D10",
+        "data_lines": 1254069,
+        "data_sha256": "ed147cf146ba0b49add93c1a5bdb3126195c2605f6234ded28a8e2e48f1e6f4c"
+      },
+      {
+        "keyword": "*Nset,nset=All-Cells,generate",
+        "original_keyword": "*Nset, nset=All-Cells, generate",
+        "data_lines": 1,
+        "data_sha256": "9f1d58858d7ff4eb4bb9fb31ac27e8756a9cf8040393fbdef5dedf871a44e6a6"
+      },
+      {
+        "keyword": "*Elset,elset=All-Cells,generate",
+        "original_keyword": "*Elset, elset=All-Cells, generate",
+        "data_lines": 1,
+        "data_sha256": "5657e7fbeac76860c8009f4ebeb9389b2a8d48da9e73b79f73c150a7292c9ae9"
+      },
+      {
+        "keyword": "*Solid Section,elset=All-Cells,material=Steel45",
+        "original_keyword": "*Solid Section, elset=All-Cells, material=Steel45",
+        "data_lines": 1,
+        "data_sha256": "beadba836315747fc95ae304452514b72fe122a6e345974638d70c4e8ebace6a"
+      },
+      {
+        "keyword": "*End Part",
+        "original_keyword": "*End Part",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Assembly,name=Assembly",
+        "original_keyword": "*Assembly, name=Assembly",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Instance,name=Part-1-1,part=Part-1",
+        "original_keyword": "*Instance, name=Part-1-1, part=Part-1",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*End Instance",
+        "original_keyword": "*End Instance",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Nset,nset=FIXED-FEATURES,instance=Part-1-1",
+        "original_keyword": "*Nset, nset=FIXED-FEATURES, instance=Part-1-1",
+        "data_lines": 102,
+        "data_sha256": "a3b3f8a7962c67a2a930125f1e3f2a36555e39c19f7f1a0c57e5d3da49bd46d9"
+      },
+      {
+        "keyword": "*Elset,elset=FIXED-FEATURES,instance=Part-1-1",
+        "original_keyword": "*Elset, elset=FIXED-FEATURES, instance=Part-1-1",
+        "data_lines": 48,
+        "data_sha256": "a644f4b431d3b20bfb616dbd58c0fce2d40d358b43bd06ef6db16c6e7fae29ec"
+      },
+      {
+        "keyword": "*Elset,elset=_LOAD-01_S3,internal,instance=Part-1-1",
+        "original_keyword": "*Elset, elset=_LOAD-01_S3, internal, instance=Part-1-1",
+        "data_lines": 368,
+        "data_sha256": "d6cfc9b69e32a669a563577416315cd84d76b9cbcfd8b63c19d7116d110e9c96"
+      },
+      {
+        "keyword": "*Elset,elset=_LOAD-01_S2,internal,instance=Part-1-1",
+        "original_keyword": "*Elset, elset=_LOAD-01_S2, internal, instance=Part-1-1",
+        "data_lines": 5,
+        "data_sha256": "3049e35099aa430443a7f4e82138f69c69de73df2bafcdf3512b2d134ebcb160"
+      },
+      {
+        "keyword": "*Elset,elset=_LOAD-01_S4,internal,instance=Part-1-1",
+        "original_keyword": "*Elset, elset=_LOAD-01_S4, internal, instance=Part-1-1",
+        "data_lines": 5,
+        "data_sha256": "6345c7826d1412980bdab3a23e2da821d91af7f638d064364dfbfdc6705dedf3"
+      },
+      {
+        "keyword": "*Elset,elset=_LOAD-01_S1,internal,instance=Part-1-1",
+        "original_keyword": "*Elset, elset=_LOAD-01_S1, internal, instance=Part-1-1",
+        "data_lines": 2,
+        "data_sha256": "d6461c04d99c4619ad3b2d453b299e9088202c3116c43395302f55a803c8d835"
+      },
+      {
+        "keyword": "*Surface,type=ELEMENT,name=LOAD-01",
+        "original_keyword": "*Surface, type=ELEMENT, name=LOAD-01",
+        "data_lines": 4,
+        "data_sha256": "357a0223603aa4b55a8b0f0fe8a1dec87193aadff43657d792e3432a16ce0c71"
+      },
+      {
+        "keyword": "*End Assembly",
+        "original_keyword": "*End Assembly",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Material,name=Steel45",
+        "original_keyword": "*Material, name=Steel45",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Density",
+        "original_keyword": "*Density",
+        "data_lines": 1,
+        "data_sha256": "3ba24c2d5448c5e0f77c56a53b27566f50a1c43d31c2e7e8f9f816a4cf0f3846"
+      },
+      {
+        "keyword": "*Elastic",
+        "original_keyword": "*Elastic",
+        "data_lines": 1,
+        "data_sha256": "b72e1e092d89b58fa83e8e7b6870df6cb3e7fb222ada51f4b14a87a31fe7b156"
+      },
+      {
+        "keyword": "*Boundary",
+        "original_keyword": "*Boundary",
+        "data_lines": 1,
+        "data_sha256": "e1c0ff2ce77ce6c910fbedaf73b2431a3f195c3f0648fd5e63ec893c28a62a4a"
+      },
+      {
+        "keyword": "*Step,name=Static-Load,nlgeom=NO",
+        "original_keyword": "*Step, name=Static-Load, nlgeom=NO, solver=ITERATIVE",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Static",
+        "original_keyword": "*Static",
+        "data_lines": 1,
+        "data_sha256": "93f5bafe98652e58e911b2e4f9dc0cbd274b66e027888405548625f04b752133"
+      },
+      {
+        "keyword": "*Dsload,follower=NO,constant resultant=YES",
+        "original_keyword": "*Dsload, follower=NO, constant resultant=YES",
+        "data_lines": 1,
+        "data_sha256": "01304b779e7299829fb497e406e6d531e1f0269595f4ca05d63504673e592369"
+      },
+      {
+        "keyword": "*Restart,write,frequency=0",
+        "original_keyword": "*Restart, write, frequency=0",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Output,field",
+        "original_keyword": "*Output, field",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Node Output",
+        "original_keyword": "*Node Output",
+        "data_lines": 1,
+        "data_sha256": "4f5674fe67451b84ac74cbbf0cc17470b7026db434d92ea0d9da870b48bcd392"
+      },
+      {
+        "keyword": "*Element Output,directions=YES",
+        "original_keyword": "*Element Output, directions=YES",
+        "data_lines": 1,
+        "data_sha256": "a4ac39df757b82e32cecc9d879f9dfbc63e1917238da5893b24480c3b74f1cf5"
+      },
+      {
+        "keyword": "*Output,history,variable=PRESELECT",
+        "original_keyword": "*Output, history, variable=PRESELECT",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*End Step",
+        "original_keyword": "*End Step",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "comparison": {
+    "member": "model.inp",
+    "member_sha256": "961e73a3acbff88a84be05c912e5372ddc68e014c07c55ab19083b49bc5ea28e",
+    "sections": [
+      {
+        "keyword": "*Heading",
+        "original_keyword": "*Heading",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Preprint,echo=NO,model=NO,history=NO,contact=NO",
+        "original_keyword": "*Preprint, echo=NO, model=NO, history=NO, contact=NO",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Part,name=Part-1",
+        "original_keyword": "*Part, name=Part-1",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Node",
+        "original_keyword": "*Node",
+        "data_lines": 1769189,
+        "data_sha256": "b85a803a7310216ad2451add4dd3bd73feec7ba97ff720c8ca3510549a84dc0f"
+      },
+      {
+        "keyword": "*Element,type=C3D10",
+        "original_keyword": "*Element, type=C3D10",
+        "data_lines": 1254069,
+        "data_sha256": "ed147cf146ba0b49add93c1a5bdb3126195c2605f6234ded28a8e2e48f1e6f4c"
+      },
+      {
+        "keyword": "*Nset,nset=All-Cells,generate",
+        "original_keyword": "*Nset, nset=All-Cells, generate",
+        "data_lines": 1,
+        "data_sha256": "9f1d58858d7ff4eb4bb9fb31ac27e8756a9cf8040393fbdef5dedf871a44e6a6"
+      },
+      {
+        "keyword": "*Elset,elset=All-Cells,generate",
+        "original_keyword": "*Elset, elset=All-Cells, generate",
+        "data_lines": 1,
+        "data_sha256": "5657e7fbeac76860c8009f4ebeb9389b2a8d48da9e73b79f73c150a7292c9ae9"
+      },
+      {
+        "keyword": "*Solid Section,elset=All-Cells,material=Steel45",
+        "original_keyword": "*Solid Section, elset=All-Cells, material=Steel45",
+        "data_lines": 1,
+        "data_sha256": "beadba836315747fc95ae304452514b72fe122a6e345974638d70c4e8ebace6a"
+      },
+      {
+        "keyword": "*End Part",
+        "original_keyword": "*End Part",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Assembly,name=Assembly",
+        "original_keyword": "*Assembly, name=Assembly",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Instance,name=Part-1-1,part=Part-1",
+        "original_keyword": "*Instance, name=Part-1-1, part=Part-1",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*End Instance",
+        "original_keyword": "*End Instance",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Nset,nset=FIXED-FEATURES,instance=Part-1-1",
+        "original_keyword": "*Nset, nset=FIXED-FEATURES, instance=Part-1-1",
+        "data_lines": 102,
+        "data_sha256": "a3b3f8a7962c67a2a930125f1e3f2a36555e39c19f7f1a0c57e5d3da49bd46d9"
+      },
+      {
+        "keyword": "*Elset,elset=FIXED-FEATURES,instance=Part-1-1",
+        "original_keyword": "*Elset, elset=FIXED-FEATURES, instance=Part-1-1",
+        "data_lines": 48,
+        "data_sha256": "a644f4b431d3b20bfb616dbd58c0fce2d40d358b43bd06ef6db16c6e7fae29ec"
+      },
+      {
+        "keyword": "*Elset,elset=_LOAD-01_S3,internal,instance=Part-1-1",
+        "original_keyword": "*Elset, elset=_LOAD-01_S3, internal, instance=Part-1-1",
+        "data_lines": 368,
+        "data_sha256": "d6cfc9b69e32a669a563577416315cd84d76b9cbcfd8b63c19d7116d110e9c96"
+      },
+      {
+        "keyword": "*Elset,elset=_LOAD-01_S2,internal,instance=Part-1-1",
+        "original_keyword": "*Elset, elset=_LOAD-01_S2, internal, instance=Part-1-1",
+        "data_lines": 5,
+        "data_sha256": "3049e35099aa430443a7f4e82138f69c69de73df2bafcdf3512b2d134ebcb160"
+      },
+      {
+        "keyword": "*Elset,elset=_LOAD-01_S4,internal,instance=Part-1-1",
+        "original_keyword": "*Elset, elset=_LOAD-01_S4, internal, instance=Part-1-1",
+        "data_lines": 5,
+        "data_sha256": "6345c7826d1412980bdab3a23e2da821d91af7f638d064364dfbfdc6705dedf3"
+      },
+      {
+        "keyword": "*Elset,elset=_LOAD-01_S1,internal,instance=Part-1-1",
+        "original_keyword": "*Elset, elset=_LOAD-01_S1, internal, instance=Part-1-1",
+        "data_lines": 2,
+        "data_sha256": "d6461c04d99c4619ad3b2d453b299e9088202c3116c43395302f55a803c8d835"
+      },
+      {
+        "keyword": "*Surface,type=ELEMENT,name=LOAD-01",
+        "original_keyword": "*Surface, type=ELEMENT, name=LOAD-01",
+        "data_lines": 4,
+        "data_sha256": "357a0223603aa4b55a8b0f0fe8a1dec87193aadff43657d792e3432a16ce0c71"
+      },
+      {
+        "keyword": "*End Assembly",
+        "original_keyword": "*End Assembly",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Material,name=Steel45",
+        "original_keyword": "*Material, name=Steel45",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Density",
+        "original_keyword": "*Density",
+        "data_lines": 1,
+        "data_sha256": "3ba24c2d5448c5e0f77c56a53b27566f50a1c43d31c2e7e8f9f816a4cf0f3846"
+      },
+      {
+        "keyword": "*Elastic",
+        "original_keyword": "*Elastic",
+        "data_lines": 1,
+        "data_sha256": "b72e1e092d89b58fa83e8e7b6870df6cb3e7fb222ada51f4b14a87a31fe7b156"
+      },
+      {
+        "keyword": "*Boundary",
+        "original_keyword": "*Boundary",
+        "data_lines": 1,
+        "data_sha256": "e1c0ff2ce77ce6c910fbedaf73b2431a3f195c3f0648fd5e63ec893c28a62a4a"
+      },
+      {
+        "keyword": "*Step,name=Static-Load,nlgeom=NO",
+        "original_keyword": "*Step, name=Static-Load, nlgeom=NO",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Static",
+        "original_keyword": "*Static",
+        "data_lines": 1,
+        "data_sha256": "93f5bafe98652e58e911b2e4f9dc0cbd274b66e027888405548625f04b752133"
+      },
+      {
+        "keyword": "*Dsload,follower=NO,constant resultant=YES",
+        "original_keyword": "*Dsload, follower=NO, constant resultant=YES",
+        "data_lines": 1,
+        "data_sha256": "01304b779e7299829fb497e406e6d531e1f0269595f4ca05d63504673e592369"
+      },
+      {
+        "keyword": "*Restart,write,frequency=0",
+        "original_keyword": "*Restart, write, frequency=0",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Output,field",
+        "original_keyword": "*Output, field",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*Node Output",
+        "original_keyword": "*Node Output",
+        "data_lines": 1,
+        "data_sha256": "4f5674fe67451b84ac74cbbf0cc17470b7026db434d92ea0d9da870b48bcd392"
+      },
+      {
+        "keyword": "*Element Output,directions=YES",
+        "original_keyword": "*Element Output, directions=YES",
+        "data_lines": 1,
+        "data_sha256": "a4ac39df757b82e32cecc9d879f9dfbc63e1917238da5893b24480c3b74f1cf5"
+      },
+      {
+        "keyword": "*Output,history,variable=PRESELECT",
+        "original_keyword": "*Output, history, variable=PRESELECT",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "keyword": "*End Step",
+        "original_keyword": "*End Step",
+        "data_lines": 0,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "different_keyword_lines": [
+    {
+      "reference": "*Step, name=Static-Load, nlgeom=NO, solver=ITERATIVE",
+      "comparison": "*Step, name=Static-Load, nlgeom=NO"
+    }
+  ]
+}

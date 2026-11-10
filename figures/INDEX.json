@@ -1,0 +1,110 @@
+{
+  "source": "Author supplied exports, 2026-11-10",
+  "figures": [
+    {
+      "path": "figures/fig1.tif",
+      "sha256": "6a1631abb0b33e1f0d4c812a74bdd3dd6551a8d29fc9669f81fd3e1dffbff6bd",
+      "bytes": 9354682,
+      "pixels": [
+        12401,
+        7474
+      ],
+      "dpi": [
+        1000.0,
+        1000.0
+      ]
+    },
+    {
+      "path": "figures/fig2.tif",
+      "sha256": "25119a1dd98e14ccfcc26721825a8675fe74dfb83f71aa18d88a87349bf20f09",
+      "bytes": 7890592,
+      "pixels": [
+        13027,
+        6423
+      ],
+      "dpi": [
+        1000.0,
+        1000.0
+      ]
+    },
+    {
+      "path": "figures/fig3.tif",
+      "sha256": "3c151e36d4cfe88270cc82ac71aa720e32f628f75b8bc06eadaa5d57ac7eec76",
+      "bytes": 3537324,
+      "pixels": [
+        9579,
+        5681
+      ],
+      "dpi": [
+        1000.0,
+        1000.0
+      ]
+    },
+    {
+      "path": "figures/fig4.tif",
+      "sha256": "7532b5f287875cdc40a30c2e81662f2a0c7e116a6b6015076ffd853afaaf818f",
+      "bytes": 5908160,
+      "pixels": [
+        12154,
+        3619
+      ],
+      "dpi": [
+        1000.0,
+        1000.0
+      ]
+    },
+    {
+      "path": "figures/fig5.tif",
+      "sha256": "e7051081538885f1e6edbd264ef7081532d81e84f8e2471287b4f6d7b1ee6807",
+      "bytes": 8741506,
+      "pixels": [
+        11260,
+        6805
+      ],
+      "dpi": [
+        1000.0,
+        1000.0
+      ]
+    },
+    {
+      "path": "figures/fig6.tif",
+      "sha256": "20d8e1afdf61491639b08accc71cb93fa106fbed9268e1a6b066a2a2a16b847e",
+      "bytes": 9420266,
+      "pixels": [
+        9496,
+        4571
+      ],
+      "dpi": [
+        1000.0,
+        1000.0
+      ]
+    },
+    {
+      "path": "figures/fig7.tif",
+      "sha256": "0cd0f741281b25f83d022e1765fc3ab58a140db7e860be062a2d3098c3355a91",
+      "bytes": 8258308,
+      "pixels": [
+        13021,
+        5032
+      ],
+      "dpi": [
+        1000.0,
+        1000.0
+      ]
+    },
+    {
+      "path": "figures/fig8.tif",
+      "sha256": "78d598d44065c4193c32248d8ad88cc0f33d0bdb362e1bbcdb9dadadf452a667",
+      "bytes": 27776790,
+      "pixels": [
+        12307,
+        6351
+      ],
+      "dpi": [
+        1000.0,
+        1000.0
+      ]
+    }
+  ],
+  "drawing_notes": "../docs/MANUSCRIPT_ALIGNMENT.md"
+}

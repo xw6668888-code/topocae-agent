@@ -55,12 +55,14 @@ def main():
         print('All selected assets are present and verified.'); return
     headers = {'Authorization': 'Bearer ' + token(), 'Accept': 'application/vnd.github+json', 'User-Agent': 'TopoCAE-reproduce'}
     base = 'https://api.github.com/repos/' + manifest['repository']
-    request = urllib.request.Request(base + '/releases/tags/' + manifest['release_tag'], headers=headers)
-    with urllib.request.urlopen(request, timeout=60) as response: release = json.load(response)
-    byname = {r['name']: r for r in release['assets']}
+    bytag = {}
+    for tag in sorted({r.get('release_tag',manifest['release_tag']) for r in todo}):
+        request = urllib.request.Request(base + '/releases/tags/' + tag, headers=headers)
+        with urllib.request.urlopen(request, timeout=60) as response: release = json.load(response)
+        bytag[tag] = {r['name']: r for r in release['assets']}
     opener = urllib.request.build_opener(SafeRedirect())
     for row in todo:
-        asset = byname[row['asset_name']]
+        asset = bytag[row.get('release_tag',manifest['release_tag'])][row['asset_name']]
         assert asset['size'] == row['bytes']
         p = ROOT / row['path']; p.parent.mkdir(parents=True, exist_ok=True)
         tmp = p.with_name(p.name + '.part')

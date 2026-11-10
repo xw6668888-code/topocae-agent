@@ -39,6 +39,7 @@ results/runs/
 /comparison/topocae/engine/weights/scorer.pt
 /comparison/topocae/engine/weights/sparse.pt
 /data/language/physical/m7-b1-clevis-qwen-s/solver_output.zip
-/data/language/physical/m7-b1-flanged_support-qwen-b/solver_output.zip
 /data/language/physical/m7-b1-flanged_support-qwen-s/solver_output.zip
 /data/language/physical/m7-b1-u_shaped_bracket-qwen-s/solver_output.zip
+
+/data/qwen_unified/physical/QP-S__clevis/solver_input.zip
