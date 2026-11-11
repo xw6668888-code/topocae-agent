@@ -1,6 +1,6 @@
 # TopoCAE-Agent: BiRel-FO and STEP-FO18
 
-Paper artifact for engineering feature-object recognition from STEP B-Rep, CAD editing and CAE modeling. This checkout contains the experiments in the author's 10 November 2026 manuscript: four recognition ablations, two literature baselines, 13 engineering cases, and three Qwen configurations.
+Paper artifact for engineering feature-object recognition from STEP B-Rep, CAD editing and CAE modeling. This checkout contains the experiments in the author's 11 November 2026 manuscript: four recognition ablations, two literature baselines, 13 engineering cases, and three Qwen configurations.
 
 ## Reproduce the tables
 
@@ -13,7 +13,7 @@ python export_training_data.py
 
 The recount checks **21,600 individual predictions** (six configurations × three seeds × 1,200 parts), all 18 classes, I/P/S subsets, and the paired bootstrap comparisons. Tables 1–2 reproduce the manuscript's 92.79% exact-instance macro F1 and 77.08% whole-part accuracy. Table 3 is supported by the 13 object-bound engineering demonstrations. Outputs are written to `results/reproduced/`; checked copies are in `results/paper/`.
 
-For Table 4, the same engineering acceptance criterion is applied to all 39 archived tasks: correct edited geometry for CAD, and a correctly constructed physical model for CAE. The resulting counts are **4/13, 13/13 and 11/13** for Qwen3.6-Plus, Plus + BiRel-FO and Qwen3.8-Max-0902. The manuscript's first count (3/13) needs correction: Plus correctly edits all four Bearing Housing holes using their cylindrical walls. The original complete-member-face and solver-completion scores remain in the per-task records. See [acceptance and costs](docs/ENGINEERING_ACCEPTANCE.md) and [manuscript alignment](docs/MANUSCRIPT_ALIGNMENT.md).
+For Table 4, the same engineering acceptance criterion is applied to all 39 archived tasks: correct edited geometry for CAD, and a correctly constructed physical model for CAE. The resulting counts are **4/13, 13/13 and 11/13** for Qwen3.6-Plus, Plus + BiRel-FO and Qwen3.8-Max-0902. These counts agree with the updated manuscript. Plus correctly edits all four Bearing Housing holes using their cylindrical walls. The original complete-member-face and solver-completion scores remain in the per-task records. See [acceptance and costs](docs/ENGINEERING_ACCEPTANCE.md) and [manuscript alignment](docs/MANUSCRIPT_ALIGNMENT.md).
 
 ## Run the smallest closed loop
 
@@ -70,5 +70,7 @@ The figures are the author's supplied exports. Their drawing/label discrepancies
 This minimum artifact supports frozen inference, fresh CAD operations, CAE script generation, reading archived ODBs, and independent table reconstruction. Exact data, seeds, weights and training histories are provided; a portable, fully certified from-scratch training/regeneration workflow is not claimed. The 13 engineering cases are development/application examples. Baseline results apply to the paper's dataset, 18-class ontology and task-compatible adaptations.
 
 The repository remains **private** under the author's earlier instruction. It is prepared as a paper artifact, not yet a publicly licensed open-source release. Public availability and the authors' code/data license must be finalized before a public-access claim is made. Third-party licenses are preserved in `licenses/` and [THIRD_PARTY.md](THIRD_PARTY.md).
+
+The current manuscript-aligned snapshot is [paper-v1.2-20261111](https://github.com/xw6668888-code/topocae-agent/releases/tag/paper-v1.2-20261111). See [data and code availability](docs/AVAILABILITY.md).
 
 See [reproduction scope](docs/REPRODUCTION.md), [paper-to-file mapping](docs/PAPER_RESULTS.md), [data layout](docs/DATA.md) and [中文说明](README.zh-CN.md).

@@ -15,6 +15,6 @@ Recognition tables report percentages, with sample standard deviation over three
 
 Six model configurations remain in the paper package: R, Q, rule-scored, BiRel-FO, AAGNet18-SI and MFTReNet-SI-D0. An unpublished learned-score-only supplementary comparison and geometric-perturbation study are outside this manuscript's release scope. This packaging choice does not establish a separate causal benefit for empirical calibration; the current four-row ablation supports the combined learned object decision system against rule scoring.
 
-The historical Table 3 demonstration and the Table 4 common direct-face experiment have different interfaces and are not merged. Table 4 is now independently evaluated from its own original responses under the author's common functional engineering criterion. See `ENGINEERING_ACCEPTANCE.md` for the 4/13–13/13–11/13 counts and the required manuscript correction.
+The historical Table 3 demonstration and the Table 4 common direct-face experiment have different interfaces and are not merged. Table 4 is now independently evaluated from its own original responses under the author's common functional engineering criterion. See `ENGINEERING_ACCEPTANCE.md` for the 4/13–13/13–11/13 counts and the matching counts in the 11 November manuscript.
 
 Internal IDs such as E3, R and legacy module names identify the frozen executable system. Active imported files are retained for reproduction; they are not experiment queue logs.

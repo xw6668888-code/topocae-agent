@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "artifact_checks": "PASS",
   "manuscript_alignment": "CORRECTIONS_REQUIRED",
   "recount": {
@@ -296,5 +296,21 @@
   "portable_from_scratch_training_certified": false,
   "publicly_accessible": false,
   "author_public_license_selected": false,
-  "figure_and_text_corrections": "docs/MANUSCRIPT_ALIGNMENT.md"
+  "figure_and_text_corrections": "docs/MANUSCRIPT_ALIGNMENT.md",
+  "latest_update": {
+    "date": "2026-11-11",
+    "changed_figures": [
+      "figures/fig3.tif",
+      "figures/fig7.tif"
+    ],
+    "origin_project_updated": true,
+    "manuscript_sha256": "ee133d1dea54ed303d17f7d1f07943bdb4f7e4bc90dcac733b3203e06b0e2e1f",
+    "all_reported_table_values_match": true,
+    "remaining_figure_and_text_corrections": "docs/MANUSCRIPT_ALIGNMENT.md",
+    "unchanged_manifest_files_verified": 1944,
+    "new_API_calls": 0,
+    "new_training_runs": 0,
+    "new_CAE_solves": 0
+  },
+  "prior_execution_validation_date": "2026-11-10"
 }

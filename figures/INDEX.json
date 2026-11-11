@@ -1,5 +1,5 @@
 {
-  "source": "Author supplied exports, 2026-11-10",
+  "source": "Author supplied exports, 2026-11-11",
   "figures": [
     {
       "path": "figures/fig1.tif",
@@ -29,11 +29,11 @@
     },
     {
       "path": "figures/fig3.tif",
-      "sha256": "3c151e36d4cfe88270cc82ac71aa720e32f628f75b8bc06eadaa5d57ac7eec76",
-      "bytes": 3537324,
+      "sha256": "7b037c75df532b46403290434e4e878153b6db1b1dfd8ba681232f3c57fe1fca",
+      "bytes": 3537854,
       "pixels": [
-        9579,
-        5681
+        9528,
+        5706
       ],
       "dpi": [
         1000.0,
@@ -81,11 +81,11 @@
     },
     {
       "path": "figures/fig7.tif",
-      "sha256": "0cd0f741281b25f83d022e1765fc3ab58a140db7e860be062a2d3098c3355a91",
-      "bytes": 8258308,
+      "sha256": "32c60262d5f198bb2dc59a72baaf7d2980bf73c6cd7d404e0e1fa6115df418a7",
+      "bytes": 8181666,
       "pixels": [
-        13021,
-        5032
+        12964,
+        4919
       ],
       "dpi": [
         1000.0,
