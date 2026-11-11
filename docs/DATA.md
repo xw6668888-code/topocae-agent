@@ -1,13 +1,39 @@
-# Data, labels and identities
+# STEP-FO18, engineering cases and model weights
 
-`data/d0/steps.zip` contains the exact 8,370 training/validation STEP parts; `split_and_labels.json` defines 7,440 training and 930 validation members and their labels. `data/t10/steps.zip` contains a separate 1,200-part test set, with 400 same-strategy (I), 400 parameter-variation (P) and 400 structural-combination (S) parts. Per-part targets and the STEP index are stored outside the ZIP so table reproduction does not require downloading large geometry files.
+## STEP-FO18
 
-Target records define the 18 local feature classes, face classes and full instance membership. Stock/base faces belong to the background category for face classification. These labels are evaluation/training data; the `infer.py` entry point constructs its numeric input from the STEP file.
+STEP-FO18 covers 18 local engineering feature classes and provides face-level labels, complete instance membership and same-instance relations associated with the final STEP geometry.
 
-The engineering folder contains 13 author-supplied or author-created STEP parts and independent face annotations. Each case's `prediction.json` is an archived frozen-model result. `input.step` is the original input; `output.step` is the historical edited result for CAD cases. Each CAE `solver_input.zip` contains `model.inp`, and `solver_output.zip` contains `model.odb`. The `.stp` and `.step` suffixes refer to the same exchange-format family.
+| Split | Parts | Geometry | Labels and membership |
+| --- | ---: | --- | --- |
+| Training | 7,440 | `data/d0/steps.zip` | `data/d0/split_and_labels.json` |
+| Validation | 930 | `data/d0/steps.zip` | `data/d0/split_and_labels.json` |
+| Test | 1,200 | `data/t10/steps.zip` | Per-part targets and indices in `data/t10/` |
 
-`data/language/physical/` additionally includes the original Qwen-driven engineering artifacts that differed in plan expression from the reference cases. Archive member and original SHA-256 identities are recorded in `recorded_equivalence.json`.
+The test set contains 400 same-strategy (I), 400 parameter-variation (P) and 400 structural-combination (S) parts. Base-body faces use the background category for face classification. Each feature instance specifies its class and complete set of final STEP member faces.
 
-`data/qwen_unified/requests/` stores the exact provider request bodies (without authentication headers), and `responses/` stores the raw streaming content. Per-attempt metadata retains failed quota calls, timing, model IDs and reported usage. Physical execution readbacks and all 15 actual generated CAD STEP files are retained. An additional complete Clevis solver-input archive supports the model-equivalence check for the timed-out assisted run. The selected 13-case demonstration solver binaries are supplied separately; equivalent additional ODB binaries are not duplicated.
+Use `python fetch_assets.py --group training` and `python fetch_assets.py --group test` to download the geometry archives. Labels, indices and prediction records are available directly in the repository for table reproduction. `infer.py` constructs the model input from STEP geometry.
 
-Stored historical provenance may include source-workspace path strings. They are provenance only; the public entry points use paths relative to this repository and temporary runtime directories. Hashes identify the actual files and prevent silent substitution. All large release attachments are enumerated in `assets.json`.
+## Engineering parts
+
+`data/engineering/` contains the 13 application parts and their independent face annotations. Each case includes an input STEP, recognized objects, its operation plan and a result summary. CAD cases include an edited STEP; CAE cases provide `solver_input.zip` with `model.inp` and `solver_output.zip` with `model.odb`.
+
+The `.step` and `.stp` extensions denote the same STEP exchange-format family. The engineering parts were also used during application development and are reported as engineering case studies.
+
+## Language-model experiments
+
+`data/language/` provides the recorded Qwen responses and object-based operation plans for the application workflow. Additional engineering artifacts are in `data/language/physical/`, with identities recorded in `recorded_equivalence.json`.
+
+`data/qwen_unified/` contains the three-condition comparison: input geometry descriptions, task instructions, request bodies, responses, token usage, timings and execution records. The dataset covers 39 tasks and 42 API attempts. It includes all 15 generated CAD STEP files and the saved-model/INP evidence used for CAE evaluation. The primary case-study ODBs are supplied in `data/engineering/`.
+
+## Model checkpoints
+
+- `comparison/topocae/engine/weights/`: the deployed R encoder, Q encoder and object scorer used by `infer.py` and `run_case.py`.
+- `comparison/topocae/weights/`: recognition-model checkpoints for the reported seed runs.
+- `comparison/aagnet/weights/` and `comparison/mft/weights/`: the adapted baseline checkpoints.
+
+`python fetch_assets.py --profile demo` downloads the deployment models. `python fetch_assets.py --group models` downloads the model asset group.
+
+## File integrity
+
+`assets.json` records the size, SHA-256 and release location of large files. `MANIFEST.json` records the remaining package files. `python verify.py` checks the downloaded package. Historical source-path fields provide provenance; execution uses repository-relative paths.

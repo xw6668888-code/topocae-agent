@@ -1,42 +1,83 @@
-# Reproduction scope and implementation
+# Reproduction guide
 
-## Frozen recognition
+## 1. Reproduce the reported tables
 
-`infer.py` reads STEP geometry through pythonocc-core 7.9.0, extracts the B-Rep attributes, runs the sparse R and dense Q networks, recovers candidates, scores their 66-dimensional evidence, applies the frozen class/source calibration and selects compatible feature objects. The output includes category, complete member faces, supported operation roles, measured parameters and the input geometry hash.
+Install `requirements-recount.txt`, then run:
 
-The two four-layer graph encoders have independent weights. Node input combines 40 numeric attributes with the surface-type embedding; edge observations contain 20 attributes. Both encoders propagate on physical adjacency. R predicts same-instance relations for adjacent face pairs; Q also predicts non-adjacent face pairs. The object scorer is a 66→64→32→1 MLP. The frozen calibration uses temperature 3 and smoothing strength 20. Conflict selection uses exact search for components of at most 32 candidates and beam width 128 for larger components. Precise feature construction, recovery and selection code is included under `comparison/topocae/`.
+```bash
+python verify.py --code-only
+python reproduce.py
+```
 
-`runtime_loader.py` materializes the 99 hash-checked dependencies into a temporary namespace. Some internal module identifiers retain their historical names because the frozen code imports them. These files are the active inference/execution dependency closure, not copies of the original run directories. No original drive path is needed to run the public entry points.
+The generated CSV and JSON files are written to `results/reproduced/`. The corresponding paper tables are in `results/paper/`. To run one evaluation, use `--only recognition`, `--only engineering`, `--only historical` or `--only unified`.
 
-## Evaluation
+The recognition evaluation aggregates 21,600 predictions across six configurations, three seeds and 1,200 parts. Exact-instance matching requires the predicted class and complete member-face set to match the reference. Results include whole-part accuracy, face accuracy, exact-instance macro F1 and micro F1, together with I/P/S subset results and paired bootstrap comparisons. Each method uses the same test parts and 18-class definition.
 
-Exact-instance matching requires both the category and the complete member-face set to agree. Missing and extra predictions remain false negatives and false positives. The 1,200-part denominator is fixed for every method and seed. The result package contains all seeds and all cases, including failures. Archived predictions are used for offline table reproduction; a fresh STEP inference is a separate computation.
+The ablations compare R-only, Q-only, rule-based scoring and BiRel-FO. AAGNet18-SI and MFTReNet-SI-D0 are the literature-method adaptations evaluated on STEP-FO18. The supplied settings document their supervision, capacity and decoding configurations.
 
-Face accuracy measures predicted face classes and does not establish correct grouping into complete objects. R-derived face outputs can therefore be identical across several object-decoding variants while object scores differ. The supplied AAGNet and MFT implementations are the task-compatible adaptations named in the paper, not claims of reproducing their original benchmark scores. Dataset supervision, model capacity and object-level training differ across systems and are described in their configuration files.
+## 2. Run STEP recognition
 
-The current manuscript reports R, Q, rule scoring and the full BiRel-FO system. Only those component comparisons and the two literature baselines are distributed in the current prediction bundle. The full system comparison does not isolate a benefit from empirical calibration alone.
+Create and activate `environment-inference.yml`, then download the deployment weights:
 
-The original independent recount returns `status: PASS` for the numeric checks. Its legacy `reproducibility_pass: false` and `paper_MAIN_RESULTS_csv_verified: false` fields describe the scope of that one original function: it neither executes models/solvers nor checks the publication CSV. The public `reproduce.py` wrapper additionally checks the CSV values, and `VALIDATION.json` separately records the completed fresh inference, CAD and ODB checks. These legacy fields are preserved rather than relabeled as broader experimental acceptance.
+```bash
+python fetch_assets.py --profile demo
+python infer.py data/engineering/bearing_housing/input.step --output results/runs/bearing_prediction.json
+```
 
-## Engineering replay
+The recognition entry point extracts a B-Rep graph from the STEP file and runs the pretrained BiRel-FO system on CPU. Output objects contain the feature class, complete member-face set, supported operation roles, measured parameters and source STEP hash. Use a new output filename for each run.
 
-`run_case.py` first runs or accepts a fresh `infer.py` output and verifies the STEP SHA-256 identity. It parses the original archived Qwen response, converts the selector schema without changing its action or numeric values, and binds the semantic selector to the newly recognized objects. A hash-scoped object binding determines the affected face sets. Reference labels are used only by evaluation scripts.
+The R and Q encoders have independent weights and four message-passing layers. Node input combines 40 numerical attributes with a surface-type embedding; edge observations contain 20 attributes. Both encoders propagate over physical adjacency. R scores adjacent face pairs, while Q additionally scores non-adjacent pairs. Recovered candidates are evaluated by a 66→64→32→1 object scorer, calibrated with temperature 3 and smoothing strength 20, and selected under feature constraints. Conflict components of at most 32 candidates use exact search; larger components use beam search with width 128.
 
-CAD operations create a new STEP and run geometric readback. CAE operations generate a script covering import, material, section, mesh, boundary/load application, job submission and output checks. The compiler maintains the actual plan-to-geometry binding. Abaqus face indices are derived geometrically from the source STEP, rather than copied as permanent IDs across exports.
+The executable implementation is under `comparison/topocae/`. `runtime_loader.py` prepares the required modules in a temporary directory and verifies their identities. All entry points resolve inputs relative to the repository.
 
-The archived reference cases use a consistent mm–N–MPa–tonne–s unit system. Material values and mesh settings are recorded in the individual plans. The Qwen replay retains its historical material choice; subsequent edits to author instructions do not overwrite these original observations.
+## 3. Run the CAD/CAE applications
 
-## Environment and validation limits
+```bash
+python run_case.py bearing_housing --output results/runs/bearing
+python run_case.py angle_bracket --output results/runs/angle
+```
 
-- Lightweight recount: Python, NumPy and JSON Schema. Fig. 3 uses the author TIFF and exported raw CSV; the package does not generate alternate training figures.
-- Frozen BiRel-FO inference and CAD: `environment-inference.yml`, CPU supported. CUDA is not required for the minimum replay.
-- Abaqus result reading and new solving: a licensed Abaqus 2020 installation. ODB reading uses the Abaqus Python interpreter.
-- The baseline code/checkpoints are supplied for inspection and further use; their author-library dependencies are separate from the minimal BiRel-FO environment. The portable package independently rechecks their complete archived prediction tables.
-- Complete retraining and random regeneration of the entire dataset are outside this minimum replay. The exact training/validation data, labels, split, frozen settings, weights and observed curves are supplied. The frozen dependency source contains the relevant graph and scorer training components, but this release does not certify a portable from-scratch training driver.
-- Validation on 2026-11-03 reruns the packaged inference and CAD paths, compiles CAE scripts, and reads the archived ODBs. It does not start competing solver jobs while other Abaqus jobs are running on the host. See `VALIDATION.json` for the actual completed checks.
+Each run performs recognition, parses the recorded Qwen response, binds its semantic targets to feature objects, and executes the corresponding CAD operation or generates an Abaqus script. The saved language-model responses provide a deterministic replay of the reported application workflow without a live API call. A fresh prediction can also be supplied with `--prediction`.
 
-The 13 engineering parts are development/application examples. No result in this package establishes open-set recognition of unsupported feature classes or universal CAD editing.
+CAD execution writes an edited STEP and performs geometric readback. CAE scripts cover import, material and section assignment, meshing, boundary conditions, loads, job submission and result checks. The engineering cases use the mm–N–MPa–tonne–s unit system. Material and mesh settings are included in each task plan.
 
-## Current manuscript functional assessment
+To submit the Angle Bracket analysis, provide the Abaqus command and use a new output directory:
 
-The original strict direct-face score is retained as an additional per-task field. The paper-facing CAD/CAE task criterion checks actual engineering correctness, with solver completion separate. `replay_plan.py` runs the original direct-face plan through the packaged shared CAD/CAE executor. See `ENGINEERING_ACCEPTANCE.md` for the common rule and `MANUSCRIPT_ALIGNMENT.md` for corrections to the current manuscript.
+```bash
+python run_case.py angle_bracket --output results/runs/angle_solved --abaqus abaqus
+```
+
+The package's CAE environment was validated with Abaqus 2020. A licensed installation is required for job submission and ODB access.
+
+## 4. Replay the language-model comparison
+
+The three conditions are `QP-B` (Qwen3.6-Plus), `QP-S` (Qwen3.6-Plus + BiRel-FO), and `QM-B` (Qwen3.8-Max-0902). They share the direct-face operation interface implemented in `direct_execution/`.
+
+```bash
+python replay_plan.py QP-B bearing_housing --output results/runs/plus_bearing
+python replay_plan.py QP-S clevis --output results/runs/assisted_clevis
+```
+
+`replay_plan.py` parses the selected recorded response and executes its face selections, actions and parameters. Clarification responses are recorded without execution. For CAE solving, add `--abaqus abaqus`; `--cpus` and `--memory-mb` configure solver resources. Model correctness and solver completion are recorded separately. [ENGINEERING_ACCEPTANCE.md](ENGINEERING_ACCEPTANCE.md) defines the task metrics and API accounting.
+
+## 5. Read the supplied engineering outputs
+
+```bash
+python fetch_assets.py --group engineering
+python replay_cad.py --output results/runs/reference_cad
+abaqus python read_odb.py --output odb_readback.json
+```
+
+The engineering data include six edited STEP files, seven solver-input archives and seven primary ODB archives. The readback script checks the supplied ODBs against their recorded fields and engineering checks. Per-case plans and result summaries are included alongside these files.
+
+## 6. Training records and checkpoints
+
+`comparison/` contains model implementations, settings and checkpoints for the three recorded seed runs. The corresponding training and validation inputs, labels and fixed split are provided under `data/d0/`. Model-specific baseline dependencies are documented with the supplied source configurations; the minimal inference environment above is for BiRel-FO.
+
+```bash
+python fetch_assets.py --group training
+python fetch_assets.py --group models
+python export_training_data.py
+```
+
+The last command exports the six R/Q training histories for Fig. 3. The release's main reproduction commands evaluate saved predictions, run pretrained recognition and replay CAD/CAE applications. File checks and completed inference, CAD and ODB validation records are provided in `VALIDATION.json`.

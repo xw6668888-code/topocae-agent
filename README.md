@@ -1,8 +1,53 @@
-# TopoCAE-Agent: BiRel-FO and STEP-FO18
+# BiRel-FO: Engineering Geometric Feature Object Recognition for CAD Editing and CAE Modeling
 
-Paper artifact for engineering feature-object recognition from STEP B-Rep, CAD editing and CAE modeling. This checkout contains the experiments in the author's 11 November 2026 manuscript: four recognition ablations, two literature baselines, 13 engineering cases, and three Qwen configurations.
+[中文](README.zh-CN.md) | [Dataset and checkpoints](docs/DATA.md) | [Reproduction guide](docs/REPRODUCTION.md) | [Paper results](docs/PAPER_RESULTS.md)
 
-## Reproduce the tables
+This repository provides the implementation of **BiRel-FO**, the **STEP-FO18** dataset, pretrained models, and the experiments accompanying *BiRel-FO: Engineering geometric feature object recognition for CAD editing and CAE modeling*.
+
+BiRel-FO recognizes engineering feature objects directly from STEP B-Rep geometry. It combines sparse and dense same-instance relations with object-level scoring and conflict selection to recover feature categories and complete member-face sets. The resulting feature objects, face roles and measured geometric parameters support language-guided CAD editing and CAE model preparation.
+
+## Main results
+
+- **Feature recognition:** 92.79% exact-instance macro F1 and 77.08% whole-part accuracy on 1,200 test parts, averaged over three random seeds.
+- **Engineering applications:** 182 recognized feature instances across 13 parts, with six CAD edits and seven CAE modeling and analysis examples.
+- **Language-model assistance:** 4/13, 13/13 and 11/13 successful engineering tasks for Qwen3.6-Plus, Qwen3.6-Plus + BiRel-FO and Qwen3.8-Max-0902, respectively, under the common task criterion described in [evaluation and API accounting](docs/ENGINEERING_ACCEPTANCE.md).
+
+The release includes the model implementations, dataset splits and annotations, checkpoints, training histories, predictions, language-model responses, and engineering outputs used to obtain these results.
+
+## Installation
+
+```bash
+git clone https://github.com/xw6668888-code/topocae-agent.git
+cd topocae-agent
+conda env create -f environment-inference.yml
+conda activate topocae-inference
+```
+
+The environment includes PyTorch and pythonocc-core for recognition and CAD operations. The supplied inference entry point runs on CPU. CAE solving and ODB reading use a separately installed, licensed Abaqus installation.
+
+## Quick start
+
+Download the deployment checkpoints and run the CAD and CAE examples:
+
+```bash
+python fetch_assets.py --profile demo
+python run_case.py bearing_housing --output results/runs/bearing
+python run_case.py angle_bracket --output results/runs/angle
+```
+
+`run_case.py` recognizes the input STEP, binds the recorded Qwen operation plan to the recognized feature objects, and executes the CAD edit or generates an Abaqus script. Recorded language-model responses make the examples reproducible without an API key. The deployment checkpoints total approximately 2.84 MB.
+
+To recognize a new part:
+
+```bash
+python infer.py part.step --output results/runs/prediction.json
+```
+
+The prediction contains feature classes, member-face sets, operation roles, geometric parameters and the STEP identity. See the [reproduction guide](docs/REPRODUCTION.md) for submitting CAE jobs and replaying the three language-model configurations.
+
+## Reproduce the paper tables
+
+The table-reproduction workflow requires Python, NumPy and JSON Schema:
 
 ```bash
 python -m pip install -r requirements-recount.txt
@@ -11,66 +56,44 @@ python reproduce.py
 python export_training_data.py
 ```
 
-The recount checks **21,600 individual predictions** (six configurations × three seeds × 1,200 parts), all 18 classes, I/P/S subsets, and the paired bootstrap comparisons. Tables 1–2 reproduce the manuscript's 92.79% exact-instance macro F1 and 77.08% whole-part accuracy. Table 3 is supported by the 13 object-bound engineering demonstrations. Outputs are written to `results/reproduced/`; checked copies are in `results/paper/`.
+`reproduce.py` reconstructs the recognition, engineering and language-model tables from the supplied per-part and per-task records. The recognition evaluation includes **21,600 predictions** from six configurations, three seeds and 1,200 test parts. Generated tables are written to `results/reproduced/`; the paper tables are provided in `results/paper/`.
 
-For Table 4, the same engineering acceptance criterion is applied to all 39 archived tasks: correct edited geometry for CAD, and a correctly constructed physical model for CAE. The resulting counts are **4/13, 13/13 and 11/13** for Qwen3.6-Plus, Plus + BiRel-FO and Qwen3.8-Max-0902. These counts agree with the updated manuscript. Plus correctly edits all four Bearing Housing holes using their cylindrical walls. The original complete-member-face and solver-completion scores remain in the per-task records. See [acceptance and costs](docs/ENGINEERING_ACCEPTANCE.md) and [manuscript alignment](docs/MANUSCRIPT_ALIGNMENT.md).
+`export_training_data.py` exports the six training and validation histories used in Fig. 3. The CSV contains 287 recorded epochs across the R/Q branches and three seeds.
 
-## Run the smallest closed loop
-
-```bash
-git clone https://github.com/xw6668888-code/topocae-agent.git
-cd topocae-agent
-conda env create -f environment-inference.yml
-conda activate topocae-inference
-python fetch_assets.py --profile demo
-python run_case.py bearing_housing --output results/runs/bearing
-python run_case.py angle_bracket --output results/runs/angle
-```
-
-`run_case.py` performs fresh STEP recognition, reads an actual archived assisted Qwen response, binds its targets to recognized objects, and executes CAD editing or generates an Abaqus script. It makes no new API call. The demo needs about 2.84 MB of deployment weights. For a new STEP file, use `python infer.py part.step --output results/runs/prediction.json`.
-
-The three-condition comparison uses a separate, common direct-face plan interface. Replay any original model response with:
-
-```bash
-python replay_plan.py QP-B bearing_housing --output results/runs/plus_bearing
-python replay_plan.py QP-S clevis --output results/runs/assisted_clevis
-```
-
-Conditions are `QP-B` (Plus), `QP-S` (Plus + BiRel-FO), and `QM-B` (Max). Non-executable responses remain non-executable; the replay does not repair model plans. To submit a generated CAE model, add `--abaqus /path/to/abaqus` and choose available CPU/memory resources. A licensed Abaqus installation is required. Solver completion is reported separately from modeling correctness.
-
-## Data, weights and solver outputs
+## Download data and checkpoints
 
 ```bash
 python fetch_assets.py
 python verify.py
-python replay_cad.py --output results/runs/reference_cad
-abaqus python read_odb.py --output results/runs/odb_readback.json
 ```
 
-Large immutable files are downloaded from the releases identified in `assets.json`, with size and SHA-256 verification. Public releases can be downloaded with `python fetch_assets.py --anonymous`, without Git or a token. While this repository is private, authorized access uses a local Git credential manager or `GH_TOKEN`/`GITHUB_TOKEN`; credentials are never stored here. Existing data assets are reused without re-encoding them.
+Large files are distributed through GitHub Releases. `assets.json` specifies each file's release, download name, size and SHA-256 checksum. The downloader places files in the expected directories and verifies their integrity. Use `--group training`, `--group test`, `--group engineering` or `--group models` to download a subset; `--anonymous` explicitly downloads public assets without credentials.
 
-| Location | Paper content |
+The fixed paper package is [paper-v1.4-20261111](https://github.com/xw6668888-code/topocae-agent/releases/tag/paper-v1.4-20261111).
+
+## Repository structure
+
+| Location | Contents |
 | --- | --- |
-| `comparison/topocae/` | Frozen R/Q networks, feature recovery, scorer, calibration and object selection |
+| `comparison/topocae/` | BiRel-FO graph networks, candidate recovery, object scorer, calibration and selection |
 | `comparison/ablations/` | R-only, Q-only, rule-scored and complete BiRel-FO configurations |
-| `comparison/aagnet/`, `comparison/mft/` | AAGNet18-SI and MFTReNet-SI-D0 adaptations and checkpoints |
-| `data/d0/`, `data/t10/` | 7,440 training, 930 validation and 1,200 test STEP parts and labels |
-| `data/engineering/` | 13 engineering inputs, annotations, predictions, six edited STEPs and seven archived solver results |
-| `data/language/` | Assisted object-binding responses supporting Table 3 and the minimum replay |
-| `data/qwen_unified/` | All three Table 4 groups, 39 tasks, 42 API attempts, execution and readback evidence |
-| `direct_execution/`, `replay_plan.py` | Common face-based CAD/CAE execution for the three-condition comparison |
-| `figures/` | The author's eight current TIFF figures; only one Fig. 3 image |
-| `data/training_curves/` | Six raw histories, 287-row CSV and seed/panel mapping |
-| `results/paper/` | Recomputed paper tables and per-task evidence |
+| `comparison/aagnet/`, `comparison/mft/` | AAGNet18-SI and MFTReNet-SI-D0 implementations, settings and checkpoints |
+| `data/d0/`, `data/t10/` | 7,440 training, 930 validation and 1,200 test parts with annotations |
+| `data/engineering/` | 13 engineering parts, annotations, predictions, edited STEP files and Abaqus results |
+| `data/language/` | Object-based operation plans and the engineering demonstration records |
+| `data/qwen_unified/` | Three language-model configurations, 39 tasks, API records and engineering outputs |
+| `direct_execution/` | Shared CAD/CAE executor for the language-model comparison |
+| `figures/`, `data/training_curves/` | Paper figures, training histories and Fig. 3 source data |
+| `results/paper/` | Paper tables and per-task results |
 
-The figures are the author's supplied exports. The corrected Fig. 3(d) shows 33 observed Q epochs, and Fig. 6(a) uses R4/R3. See [manuscript alignment](docs/MANUSCRIPT_ALIGNMENT.md) for the data-to-paper correspondence. No old alternate Fig. 3 image, unpublished robustness dataset, experimental queue, paper draft or API key is included in the current paper tree. Historical module names that remain in the inference dependency closure are required executable code.
+## Documentation
 
-## Scope and availability
+- [Reproduction guide](docs/REPRODUCTION.md)
+- [Dataset, annotations and model weights](docs/DATA.md)
+- [Paper-to-file mapping](docs/PAPER_RESULTS.md)
+- [Engineering evaluation and API accounting](docs/ENGINEERING_ACCEPTANCE.md)
+- [Data and code availability](docs/AVAILABILITY.md)
 
-This minimum artifact supports frozen inference, fresh CAD operations, CAE script generation, reading archived ODBs, and independent table reconstruction. Exact data, seeds, weights and training histories are provided; a portable, fully certified from-scratch training/regeneration workflow is not claimed. The 13 engineering cases are development/application examples. Baseline results apply to the paper's dataset, 18-class ontology and task-compatible adaptations.
+## Acknowledgments
 
-The repository remains **private** under the author's earlier instruction. It is prepared as a paper artifact, not yet a publicly licensed open-source release. Public availability and the authors' code/data license must be finalized before a public-access claim is made. Third-party licenses are preserved in `licenses/` and [THIRD_PARTY.md](THIRD_PARTY.md).
-
-The current manuscript-aligned snapshot is [paper-v1.3-20261111](https://github.com/xw6668888-code/topocae-agent/releases/tag/paper-v1.3-20261111). See [data and code availability](docs/AVAILABILITY.md).
-
-See [reproduction scope](docs/REPRODUCTION.md), [paper-to-file mapping](docs/PAPER_RESULTS.md), [data layout](docs/DATA.md) and [中文说明](README.zh-CN.md).
+The baseline comparisons build on [AAGNet](https://github.com/whjdark/AAGNet) and MFTReNet. Their license notices are included in `licenses/`; dependency information is provided in [THIRD_PARTY.md](THIRD_PARTY.md).

@@ -340,5 +340,14 @@
     "new_training_runs": 0,
     "new_CAE_solves": 0
   },
-  "prior_execution_validation_date": "2026-11-10"
+  "prior_execution_validation_date": "2026-11-10",
+  "documentation_update": {
+    "date": "2026-11-11",
+    "release": "paper-v1.4-20261111",
+    "scope": "Research-project overview, installation, evaluation, data and reproduction documentation",
+    "unchanged_manifest_files_verified": 1944,
+    "large_assets_verified": 37,
+    "relative_markdown_links_verified": 25,
+    "model_code_and_results_unchanged": true
+  }
 }

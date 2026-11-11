@@ -1,23 +1,31 @@
-# Engineering-task acceptance and API accounting
+# Engineering-task evaluation and API accounting
 
-The three Qwen groups are evaluated on their original 13 task slots each. No response, parameter or face selection is edited during evaluation. All 42 attempts, including three quota failures, remain in the evidence. The current functional assessment was performed after the original experiment; it is a retrospective, common acceptance rule, not a new blind experiment.
+## Evaluation design
 
-For **CAD**, the selected operating faces must belong to every intended target object and to no other object. The archived edited STEP must match its recorded hash, pass solid/readback checks, achieve the requested dimensions and satisfy geometric constraints. Selecting the two side faces is sufficient for a verified symmetric thickness edit; selecting the cylinder wall is sufficient for a verified hole-radius edit. Full feature membership remains the recognition metric, rather than an additional CAD-output requirement.
+The language-model comparison evaluates three configurations on the same 13 engineering tasks. The recorded responses are assessed using one common engineering criterion applied to all 39 tasks. This assessment was applied retrospectively to the recorded experiments. The original face-set scores, solver states and all 42 API attempts are retained in the per-task records.
 
-For **CAE**, face regions and physical action parameters must match the requested model. Actual saved-model/INP readbacks verify material, mesh, supports and loads. Solver completion is a separate operational outcome. The assisted Clevis run reached its time limit with a different solver configuration; its actual INP has the same 33 physical sections as the successfully solved reference model, with only the matrix-solver setting changed. Recheck the two complete INPs after downloading assets:
+## CAD editing
+
+A task succeeds when the operating faces identify all intended target objects and the resulting STEP satisfies the requested dimensions and geometric constraints. The edited solid is checked by geometric readback. Hole-radius changes can act on the cylindrical wall, and symmetric thickness changes can act on the two side faces. Complete feature membership is evaluated separately in the recognition experiment.
+
+## CAE modeling
+
+A task succeeds when the operating regions, materials, mesh settings, boundary conditions and loads match the requested physical model. Checks use the saved model and solver input. Solver completion is recorded as an additional outcome.
+
+For the assisted Clevis case, the time-limited run and the completed reference analysis have identical 33 physical input sections, with different matrix-solver settings. Their complete input files are included for comparison:
 
 ```bash
 python src/inp_equivalence.py data/engineering/clevis/solver_input.zip data/qwen_unified/physical/QP-S__clevis/solver_input.zip
 ```
 
-`src/engineering_acceptance.py` applies these criteria to every group. The original scores remain in `qwen_unified_per_task.csv` (`face_correct`, `task_success`); the manuscript-facing assessment uses `operation_targets_correct` and `engineering_task_success`. Differences affect Plus/Bearing Housing, assisted/Clevis, assisted/Support Frame, and Max/Support Frame. The resulting functional task counts are 4, 13 and 11. No model plan has been silently repaired.
+`src/engineering_acceptance.py` implements the shared criteria. The paper table uses `operation_targets_correct` and `engineering_task_success`; the original `face_correct` and `task_success` fields are also provided. The engineering-task counts are 4/13 for Qwen3.6-Plus, 13/13 for Qwen3.6-Plus + BiRel-FO and 11/13 for Qwen3.8-Max-0902.
 
-## Timing, tokens and currency
+## Time, tokens and API cost
 
-Elapsed API time is the sum of all attempt times for a task, from request dispatch to complete response; the table reports the arithmetic mean across 13 tasks. This excludes recognition, CAD execution and CAE solution. Token totals sum provider-reported input and output tokens across the recorded attempts. Pricing comes from the archived 23 October 2026 configuration, with separate cached-input rates where reported.
+API time is measured from request dispatch to complete response. All attempts belonging to a task are summed, and the reported mean is the arithmetic mean over 13 tasks. Recognition, CAD execution and CAE solution time are measured outside this API-time metric.
 
-The original total costs are CNY 0.652168, 0.727010 and 7.289448. The manuscript's USD values are reproduced with a **fixed reporting conversion of USD 0.15 per CNY**, not a verified historical exchange quote. This gives USD 0.0978252, 0.1090515 and 1.0934172 (rounded: 0.098, 0.109, 1.093). These are list-price estimates, not account invoices or proof of an actual payment. Three failed quota attempts have no reported usage; their time remains included and their unknown billing is explicitly recorded.
+Token consumption sums provider-reported input and output tokens. API cost is estimated from those counts and the archived 23 October 2026 service prices, including cached-input rates when available. The three group totals are CNY 0.652168, 0.727010 and 7.289448. The paper reports USD using the fixed conversion USD 0.15 per CNY, giving USD 0.0978252, 0.1090515 and 1.0934172. These values represent usage-based estimates at the listed prices. Three quota-failure attempts have no reported usage; their durations are included, and their usage and cost remain marked as unknown.
 
-## Experimental settings
+## Application and comparison settings
 
-The three-condition requests all use Steel45 for U-Shaped Bracket, as confirmed by the author for that experiment. The separate reference demonstration in Appendix A uses PlainCarbonSteel. These two material settings and their artifacts are preserved separately. They should be stated explicitly rather than described as identical instructions across the two experiments.
+The object-based application examples and the three-condition comparison have separate task records. The U-Shaped Bracket case uses PlainCarbonSteel in the application example and Steel45 in all three comparison conditions. The associated material parameters and plans are retained with each experiment.

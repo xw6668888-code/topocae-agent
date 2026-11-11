@@ -1,26 +1,17 @@
-# Manuscript alignment: 11 November 2026
+# Paper-to-package correspondence
 
-The current authority is the author's updated `Manuscript.docx`; its hash is in `MANUSCRIPT_SOURCE.json`. Only publication-relevant data, code, results and author figures are distributed. The manuscript file is not included.
+The package accompanies *BiRel-FO: Engineering geometric feature object recognition for CAD editing and CAE modeling*. The manuscript identity is recorded in `MANUSCRIPT_SOURCE.json`.
 
-## Verified results and updates
+## Recognition experiments
 
-- Tables 1 and 2: all 64 mean/standard-deviation entries agree with the independent reconstruction from 21,600 retained predictions.
-- Table 3: the separate object-binding demonstrations support 13/13 target selections, 6/6 CAD edits and 7/7 CAE analyses.
-- Table 4: the updated manuscript agrees with the common functional engineering assessment: Plus 4/13 (30.77%), Plus + BiRel-FO 13/13 (100%), Max 11/13 (84.62%). The assisted gain over Plus is correctly stated as 69.23 percentage points. API times and costs match the archived calls. The original strict scores and solver outcomes remain available separately.
-- Fig. 7 now correctly labels radius changes R4 to R3, R20 to R15 and R22.5 to R24, and thickness changes 2 to 4 and 4.7 to 3 mm.
-- Fig. 3(d) now uses the 33-epoch Q/20260720 curve. Fig. 6(a) uses R4/R3. Both corrected TIFFs match the current Word manuscript byte for byte. Only one author Fig. 3 image is included, with all six raw histories and the unchanged 287-row CSV.
-- Appendix A, Table 5 now matches the Fig. 7 panel order: Bearing Housing 7a; Flanged Sleeve 7b; Support Bracket 7c; Guide Rail 7d; Mounting Plate 7e; Support Frame 7f.
+Tables 1 and 2 are reconstructed from 21,600 predictions covering six model configurations, three seeds and 1,200 test parts. Their 64 mean and standard-deviation entries match the manuscript tables. The overall BiRel-FO scores are 92.79% exact-instance macro F1 and 77.08% whole-part accuracy.
 
-## Remaining figure and text corrections
+## Engineering experiments
 
-1. **Appendix A, Table 6:** Clevis corresponds to Fig. 8f and U-Shaped Bracket to Fig. 8g. These two references remain reversed in the manuscript.
-2. **Paragraph after Table 4:** calculate relative increases from unrounded data. Assisted Plus increases mean API time by **7.86%** and API cost by **11.48%** over Plus. The manuscript uses 7.85% and 11.22%, obtained from rounded display values.
-3. **Table 4 currency note:** USD values use a fixed reporting conversion of **USD 0.15 per CNY**. State this convention; it is not a verified historical exchange quotation.
-4. **Task settings:** Appendix A's U-Shaped Bracket demonstration uses carbon steel; the separately frozen Table 4 comparison uses Steel45. Identify this setting difference where Appendix A is used to describe comparison tasks.
-5. **Data availability:** the manuscript still says that the data are confidential. Replace that statement when the paper package becomes publicly accessible; the present repository remains private. See `AVAILABILITY.md`.
+The application records support 182 recognized instances, 13/13 target selections, six CAD edits and seven CAE analyses. The language-model comparison evaluates 13 tasks per configuration and reports engineering-task counts of 4/13, 13/13 and 11/13. The two experiments have separate task records and are reproduced through the commands in [PAPER_RESULTS.md](PAPER_RESULTS.md).
 
-Fig. 1 presents five illustrated base-body groups while the dataset describes six generator families. If the composite example represents multiple families, clarify the grouping in the caption.
+## Figures
 
-## Reproduction scope
+`figures/` contains the eight paper figures. The six recorded training histories and their 287-row CSV provide the data for Fig. 3. Display seeds 1, 2 and 3 correspond to random seeds 20260720, 20260719 and 20260718. Fig. 3(d) shows the 33-epoch Q/20260720 history. Fig. 6(a) shows the Bearing Housing radius edit from R4 to R3.
 
-This update changes author figure/source files and publication documentation. The inference code, weights, training/test inputs, original predictions, language responses and CAD/CAE outputs are unchanged. No API call, training run or solver execution was added. The reported tables retain the previously verified reconstruction; current source and asset hashes were checked again. Public anonymous and authenticated private downloads were both exercised successfully. Frozen inference and engineering execution retain the previously recorded validation scope. A fully portable from-scratch training/regeneration workflow is not certified by this package.
+Figure file identities are listed in `figures/INDEX.json`; dataset, checkpoint and result-file identities are recorded in the package manifests.
