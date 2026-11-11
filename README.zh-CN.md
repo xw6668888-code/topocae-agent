@@ -36,8 +36,10 @@ python replay_plan.py QP-S clevis --output results/runs/assisted_clevis
 
 ## 图表与数据
 
-`figures/`放作者最新8张TIFF，Fig. 3仅保留作者版本。`data/training_curves/fig3_data.csv`包含287行真实训练记录，另有6份原始JSON、种子对应表和Origin源文件。导出脚本不会插值、补齐轮数或重新绘制另一张Fig. 3。
+`figures/`放作者最新8张TIFF，Fig. 3仅保留作者版本。`data/training_curves/fig3_data.csv`包含287行真实训练记录，另有6份原始JSON和种子对应表。导出脚本不会插值、补齐轮数或重新绘制另一张Fig. 3。
 
 图与稿件仍有需要作者修改的标注，详见 [稿件核对清单](docs/MANUSCRIPT_ALIGNMENT.md)。原始实验数据不会为了匹配图中错误而修改。未写入当前稿件的补充试验和旧图已从当前发布树中移除；未重写Git历史。
 
 该包验证的是冻结模型推理、工程操作及表格复算；不等同于已验证全部模型从零训练。仓库目前仍为私有，公开代码/数据许可证尚未由作者确定。参考 [README](README.md) 中的具体命令与证据范围。
+
+最新固定版本为 `paper-v1.3-20261111`。Fig. 3(d)已对应33轮Q分支记录，Fig. 6(a)已使用R4/R3。仓库公开后可运行 `python fetch_assets.py --anonymous` 下载，无需GitHub密钥；当前私有访问仍需已获授权的凭据。

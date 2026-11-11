@@ -47,7 +47,7 @@ python replay_cad.py --output results/runs/reference_cad
 abaqus python read_odb.py --output results/runs/odb_readback.json
 ```
 
-Large immutable files are downloaded from the releases identified in `assets.json`, with size and SHA-256 verification. Private-repository access uses a local Git credential manager or `GH_TOKEN`/`GITHUB_TOKEN`; credentials are never stored here. Existing data assets are reused without re-encoding them.
+Large immutable files are downloaded from the releases identified in `assets.json`, with size and SHA-256 verification. Public releases can be downloaded with `python fetch_assets.py --anonymous`, without Git or a token. While this repository is private, authorized access uses a local Git credential manager or `GH_TOKEN`/`GITHUB_TOKEN`; credentials are never stored here. Existing data assets are reused without re-encoding them.
 
 | Location | Paper content |
 | --- | --- |
@@ -60,10 +60,10 @@ Large immutable files are downloaded from the releases identified in `assets.jso
 | `data/qwen_unified/` | All three Table 4 groups, 39 tasks, 42 API attempts, execution and readback evidence |
 | `direct_execution/`, `replay_plan.py` | Common face-based CAD/CAE execution for the three-condition comparison |
 | `figures/` | The author's eight current TIFF figures; only one Fig. 3 image |
-| `data/training_curves/` | Six raw histories, 287-row CSV, seed/panel mapping and author Origin project |
+| `data/training_curves/` | Six raw histories, 287-row CSV and seed/panel mapping |
 | `results/paper/` | Recomputed paper tables and per-task evidence |
 
-The figures are the author's supplied exports. Their drawing/label discrepancies are documented in [manuscript alignment](docs/MANUSCRIPT_ALIGNMENT.md); raw observations have not been changed to match a drawing. No old alternate Fig. 3 image, unpublished robustness dataset, experimental queue, paper draft or API key is included in the current paper tree. Historical module names that remain in the inference dependency closure are required executable code.
+The figures are the author's supplied exports. The corrected Fig. 3(d) shows 33 observed Q epochs, and Fig. 6(a) uses R4/R3. See [manuscript alignment](docs/MANUSCRIPT_ALIGNMENT.md) for the data-to-paper correspondence. No old alternate Fig. 3 image, unpublished robustness dataset, experimental queue, paper draft or API key is included in the current paper tree. Historical module names that remain in the inference dependency closure are required executable code.
 
 ## Scope and availability
 
@@ -71,6 +71,6 @@ This minimum artifact supports frozen inference, fresh CAD operations, CAE scrip
 
 The repository remains **private** under the author's earlier instruction. It is prepared as a paper artifact, not yet a publicly licensed open-source release. Public availability and the authors' code/data license must be finalized before a public-access claim is made. Third-party licenses are preserved in `licenses/` and [THIRD_PARTY.md](THIRD_PARTY.md).
 
-The current manuscript-aligned snapshot is [paper-v1.2-20261111](https://github.com/xw6668888-code/topocae-agent/releases/tag/paper-v1.2-20261111). See [data and code availability](docs/AVAILABILITY.md).
+The current manuscript-aligned snapshot is [paper-v1.3-20261111](https://github.com/xw6668888-code/topocae-agent/releases/tag/paper-v1.3-20261111). See [data and code availability](docs/AVAILABILITY.md).
 
 See [reproduction scope](docs/REPRODUCTION.md), [paper-to-file mapping](docs/PAPER_RESULTS.md), [data layout](docs/DATA.md) and [中文说明](README.zh-CN.md).

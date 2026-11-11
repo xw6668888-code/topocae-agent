@@ -299,16 +299,44 @@
   "figure_and_text_corrections": "docs/MANUSCRIPT_ALIGNMENT.md",
   "latest_update": {
     "date": "2026-11-11",
+    "release": "paper-v1.3-20261111",
     "changed_figures": [
       "figures/fig3.tif",
-      "figures/fig7.tif"
+      "figures/fig6.tif"
     ],
-    "origin_project_updated": true,
-    "manuscript_sha256": "ee133d1dea54ed303d17f7d1f07943bdb4f7e4bc90dcac733b3203e06b0e2e1f",
+    "corrected_figures_match_manuscript": true,
+    "superseded_origin_project_omitted": true,
+    "manuscript_sha256": "448ede03dbbdcd5daf25f90bff28b1075510c848f6fa7dd3a420937e2980f92a",
     "all_reported_table_values_match": true,
-    "remaining_figure_and_text_corrections": "docs/MANUSCRIPT_ALIGNMENT.md",
     "unchanged_manifest_files_verified": 1944,
-    "new_API_calls": 0,
+    "download_validation": {
+      "status": "PASS",
+      "checks": [
+        {
+          "check": "missing_git_and_credentials_falls_back",
+          "status": "PASS"
+        },
+        {
+          "check": "redirect_drops_authorization",
+          "status": "PASS"
+        },
+        {
+          "check": "anonymous_public_download",
+          "status": "PASS",
+          "repository": "jqlang/jq",
+          "bytes": 2302,
+          "sha256": "dc86824a41c165ece971ff691aff6e08bbfe6e1d1f531688b47ee78c283a85cd"
+        },
+        {
+          "check": "authenticated_private_download",
+          "status": "PASS",
+          "path": "comparison/topocae/weights/scorer/20260719.pt",
+          "bytes": 39669,
+          "sha256": "28668becd3ce4adf6f6f666f1ec1b35192c38da15df45fecc99df6a47061fd05"
+        }
+      ]
+    },
+    "new_LLM_API_calls": 0,
     "new_training_runs": 0,
     "new_CAE_solves": 0
   },
